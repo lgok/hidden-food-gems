@@ -1,9 +1,0 @@
-﻿{
-  "name": "hidden-food-gems",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Hidden Food Gems: verified independent restaurants across the United States.",
-  "scripts": {
-    "start": "node server.js"
-  }
-}

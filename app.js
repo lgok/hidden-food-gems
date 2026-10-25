@@ -1,6 +1,16 @@
 ﻿if (typeof window === 'undefined') {
   const fs = require('fs');
   const path = require('path');
+  const NFT_FILES = [
+    path.join(__dirname, 'index.html'),
+    path.join(__dirname, 'styles.css'),
+    path.join(__dirname, 'seed-data.js'),
+    path.join(__dirname, 'app.js'),
+    path.join(__dirname, 'icon.svg'),
+    path.join(__dirname, 'manifest.webmanifest'),
+    path.join(__dirname, 'business-card.html'),
+    path.join(__dirname, 'img')
+  ];
   const MIME = {
     '.html': 'text/html; charset=utf-8',
     '.js': 'text/javascript; charset=utf-8',
@@ -2370,4 +2380,5 @@
 })();
 
 }
+
 

@@ -190,6 +190,11 @@
   }
 
   async function recordClickEvent(restaurantId, type, extra = {}) {
+    try {
+      if (typeof window !== 'undefined' && typeof window.va === 'function') {
+        window.va('event', { name: type === 'call' ? 'restaurant_call_click' : 'restaurant_directions_click', data: { restaurantId: String(restaurantId) } });
+      }
+    } catch {}
     if (restaurantId === '__custom__') {
       if (type === 'call') state.customBiz.calls++;
       else if (type === 'direction') state.customBiz.directions++;

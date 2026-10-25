@@ -2018,7 +2018,7 @@
           </div>
         ` : ''}
 
-        ${curatedPhotos.length ? `
+        ${(r.verifiedPhoto || r.ownerVerified) && curatedPhotos.length ? `
           <div class="photo-trio" aria-label="3 Signature Dish Photos">
             ${curatedPhotos.map((p) => {
               const pUrl = normImg(p.file);

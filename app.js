@@ -1,115 +1,149 @@
-﻿const fs = require('fs');
-const path = require('path');
+﻿const http = require('http');
 
-const BUNDLED_ASSETS = [
-    path.join(__dirname, 'index.html'),
-    path.join(__dirname, 'styles.css'),
-    path.join(__dirname, 'seed-data.js'),
-    path.join(__dirname, 'gems-client.js'),
-    path.join(__dirname, 'icon.svg'),
-    path.join(__dirname, 'manifest.webmanifest'),
-    path.join(__dirname, 'business-card.html'),
-    path.join(__dirname, 'img/addis-table.jpg'),
-    path.join(__dirname, 'img/cluck-co.jpg'),
-    path.join(__dirname, 'img/golden-wok.jpg'),
-    path.join(__dirname, 'img/hero.jpg'),
-    path.join(__dirname, 'img/island-breeze.jpg'),
-    path.join(__dirname, 'img/mama-lupe.jpg'),
-    path.join(__dirname, 'img/nonna-kitchen.jpg'),
-    path.join(__dirname, 'img/pho-corner.jpg'),
-    path.join(__dirname, 'img/smokehouse-sally.jpg'),
-    path.join(__dirname, 'img/sunrise-griddle.jpg'),
-    path.join(__dirname, 'img/taj-spice.jpg'),
-    path.join(__dirname, 'img/batch1/bombay-1.jpg'),
-    path.join(__dirname, 'img/batch1/bombay-2.jpg'),
-    path.join(__dirname, 'img/batch1/bombay-3.jpg'),
-    path.join(__dirname, 'img/batch1/calle-1.jpg'),
-    path.join(__dirname, 'img/batch1/calle-2.jpg'),
-    path.join(__dirname, 'img/batch1/calle-3.jpg'),
-    path.join(__dirname, 'img/batch1/catrina-1.jpg'),
-    path.join(__dirname, 'img/batch1/catrina-2.jpg'),
-    path.join(__dirname, 'img/batch1/catrina-3.jpg'),
-    path.join(__dirname, 'img/batch1/cebollines-1.jpg'),
-    path.join(__dirname, 'img/batch1/cebollines-2.jpg'),
-    path.join(__dirname, 'img/batch1/cebollines-3.jpg'),
-    path.join(__dirname, 'img/batch1/changan-1.jpg'),
-    path.join(__dirname, 'img/batch1/changan-2.jpg'),
-    path.join(__dirname, 'img/batch1/changan-3.jpg'),
-    path.join(__dirname, 'img/batch1/fortune-1.jpg'),
-    path.join(__dirname, 'img/batch1/fortune-2.jpg'),
-    path.join(__dirname, 'img/batch1/fortune-3.jpg'),
-    path.join(__dirname, 'img/batch1/greenhills-1.jpg'),
-    path.join(__dirname, 'img/batch1/greenhills-2.jpg'),
-    path.join(__dirname, 'img/batch1/greenhills-3.jpg'),
-    path.join(__dirname, 'img/batch1/joanne-1.jpg'),
-    path.join(__dirname, 'img/batch1/joanne-2.jpg'),
-    path.join(__dirname, 'img/batch1/joanne-3.jpg'),
-    path.join(__dirname, 'img/batch1/nymk-1.jpg'),
-    path.join(__dirname, 'img/batch1/nymk-2.jpg'),
-    path.join(__dirname, 'img/batch1/nymk-3.jpg'),
-    path.join(__dirname, 'img/batch1/phok-1.jpg'),
-    path.join(__dirname, 'img/batch1/phok-2.jpg'),
-    path.join(__dirname, 'img/batch1/phok-3.jpg'),
-    path.join(__dirname, 'img/batch1/potrillos-1.jpg'),
-    path.join(__dirname, 'img/batch1/potrillos-2.jpg'),
-    path.join(__dirname, 'img/batch1/potrillos-3.jpg'),
-    path.join(__dirname, 'img/batch1/tanya-1.jpg'),
-    path.join(__dirname, 'img/batch1/tanya-2.jpg'),
-    path.join(__dirname, 'img/batch1/tanya-3.jpg'),
-    path.join(__dirname, 'img/batch1/thai-1.jpg'),
-    path.join(__dirname, 'img/batch1/thai-2.jpg'),
-    path.join(__dirname, 'img/batch1/thai-3.jpg'),
-    path.join(__dirname, 'img/batch1/vinces-1.jpg'),
-    path.join(__dirname, 'img/batch1/vinces-2.jpg'),
-    path.join(__dirname, 'img/batch1/vinces-3.jpg'),
-    path.join(__dirname, 'img/small/addis-table.jpg'),
-    path.join(__dirname, 'img/small/cluck-co.jpg'),
-    path.join(__dirname, 'img/small/golden-wok.jpg'),
-    path.join(__dirname, 'img/small/hero.jpg'),
-    path.join(__dirname, 'img/small/island-breeze.jpg'),
-    path.join(__dirname, 'img/small/mama-lupe.jpg'),
-    path.join(__dirname, 'img/small/nonna-kitchen.jpg'),
-    path.join(__dirname, 'img/small/pho-corner.jpg'),
-    path.join(__dirname, 'img/small/smokehouse-sally.jpg'),
-    path.join(__dirname, 'img/small/sunrise-griddle.jpg'),
-    path.join(__dirname, 'img/small/taj-spice.jpg'),
-];
-
-const MIME = {
-  '.html': 'text/html; charset=utf-8',
-  '.js': 'text/javascript; charset=utf-8',
-  '.css': 'text/css; charset=utf-8',
-  '.json': 'application/json; charset=utf-8',
-  '.svg': 'image/svg+xml',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.png': 'image/png',
-  '.webp': 'image/webp',
-  '.webmanifest': 'application/manifest+json'
+const INDEX_HTML = {
+    "value":  "\u003c!doctype html\u003e\r\n\u003chtml lang=\"en\"\u003e\r\n\u003chead\u003e\r\n  \u003cmeta charset=\"utf-8\" /\u003e\r\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" /\u003e\r\n  \u003cmeta name=\"theme-color\" content=\"#1f1612\" /\u003e\r\n  \u003cmeta name=\"description\" content=\"Hidden Food Gems: discover verified independent family-run restaurants across the United States. Live menus, verified health grades, direct counter calling \u0026 turn-by-turn directions.\" /\u003e\r\n  \u003ctitle\u003eHidden Food Gems: Verified Independent Restaurants\u003c/title\u003e\r\n  \u003clink rel=\"manifest\" href=\"/manifest.webmanifest\" /\u003e\r\n  \u003clink rel=\"icon\" href=\"/icon.svg\" type=\"image/svg+xml\" /\u003e\r\n  \u003clink rel=\"stylesheet\" href=\"/styles.css?v=37\" /\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n  \u003cheader class=\"topbar\"\u003e\r\n    \u003ca href=\"#/\" class=\"brand\" aria-label=\"Hidden Food Gems home\"\u003e\r\n      \u003cspan class=\"brand-gem\"\u003eðŸ’Ž\u003c/span\u003e\r\n      \u003cspan class=\"brand-text\"\u003eHidden \u003cem\u003eFood\u003c/em\u003e Gems\u003c/span\u003e\r\n    \u003c/a\u003e\r\n    \u003cdiv style=\"display:flex;gap:8px;align-items:center\"\u003e\r\n      \u003ca href=\"#/add\" class=\"btn btn-ghost btn-sm\"\u003eðŸ“© Contact Us\u003c/a\u003e\r\n    \u003c/div\u003e\r\n  \u003c/header\u003e\r\n\r\n  \u003cmain id=\"view\"\u003e\u003c/main\u003e\r\n\r\n  \u003cnav class=\"bottomnav\" aria-label=\"Main\"\u003e\r\n    \u003ca href=\"#/\" data-nav=\"home\"\u003e\u003cspan\u003eðŸ”Ž\u003c/span\u003eDiscover\u003c/a\u003e\r\n    \u003ca href=\"#/add\" data-nav=\"add\"\u003e\u003cspan\u003eðŸ“©\u003c/span\u003eContact Us\u003c/a\u003e\r\n  \u003c/nav\u003e\r\n\r\n  \u003cdiv id=\"sheet\" class=\"sheet\" hidden\u003e\r\n    \u003cdiv class=\"sheet-backdrop\" data-close\u003e\u003c/div\u003e\r\n    \u003carticle class=\"sheet-panel\" role=\"dialog\" aria-modal=\"true\"\u003e\r\n      \u003cbutton class=\"sheet-close\" data-close aria-label=\"Close\"\u003eâœ•\u003c/button\u003e\r\n      \u003cdiv id=\"sheet-body\"\u003e\u003c/div\u003e\r\n    \u003c/article\u003e\r\n  \u003c/div\u003e\r\n\r\n  \u003cdiv id=\"lightbox\" class=\"lightbox\" hidden\u003e\r\n    \u003cbutton class=\"sheet-close\" data-close-lightbox aria-label=\"Close\"\u003eâœ•\u003c/button\u003e\r\n    \u003cimg id=\"lightbox-img\" alt=\"Menu\" /\u003e\r\n  \u003c/div\u003e\r\n\r\n  \u003cdiv id=\"toast\" class=\"toast\" role=\"status\" aria-live=\"polite\"\u003e\u003c/div\u003e\r\n\r\n  \u003cscript src=\"/seed-data.js?v=37\"\u003e\u003c/script\u003e\r\n  \u003cscript src=\"/gems-client.js?v=37\"\u003e\u003c/script\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n\r\n",
+    "PSPath":  "T:\\antigravity\\mibees\\hidden-food-gems\\index.html",
+    "PSParentPath":  "T:\\antigravity\\mibees\\hidden-food-gems",
+    "PSChildName":  "index.html",
+    "PSDrive":  {
+                    "CurrentLocation":  "antigravity\\mibees\\hidden-food-gems",
+                    "Name":  "T",
+                    "Provider":  {
+                                     "ImplementingType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                     "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                                     "Name":  "FileSystem",
+                                     "PSSnapIn":  "Microsoft.PowerShell.Core",
+                                     "ModuleName":  "Microsoft.PowerShell.Core",
+                                     "Module":  null,
+                                     "Description":  "",
+                                     "Capabilities":  52,
+                                     "Home":  "C:\\Users\\mikic",
+                                     "Drives":  "C B T U"
+                                 },
+                    "Root":  "T:\\",
+                    "Description":  "",
+                    "MaximumSize":  null,
+                    "Credential":  {
+                                       "UserName":  null,
+                                       "Password":  null
+                                   },
+                    "DisplayRoot":  "\\\\synology\\share"
+                },
+    "PSProvider":  {
+                       "ImplementingType":  {
+                                                "Module":  "System.Management.Automation.dll",
+                                                "Assembly":  "System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+                                                "TypeHandle":  "System.RuntimeTypeHandle",
+                                                "DeclaringMethod":  null,
+                                                "BaseType":  "System.Management.Automation.Provider.NavigationCmdletProvider",
+                                                "UnderlyingSystemType":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                                "FullName":  "Microsoft.PowerShell.Commands.FileSystemProvider",
+                                                "AssemblyQualifiedName":  "Microsoft.PowerShell.Commands.FileSystemProvider, System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+                                                "Namespace":  "Microsoft.PowerShell.Commands",
+                                                "GUID":  "b4755d19-b6a7-38dc-ae06-4167f801062f",
+                                                "IsEnum":  false,
+                                                "GenericParameterAttributes":  null,
+                                                "IsSecurityCritical":  true,
+                                                "IsSecuritySafeCritical":  false,
+                                                "IsSecurityTransparent":  false,
+                                                "IsGenericTypeDefinition":  false,
+                                                "IsGenericParameter":  false,
+                                                "GenericParameterPosition":  null,
+                                                "IsGenericType":  false,
+                                                "IsConstructedGenericType":  false,
+                                                "ContainsGenericParameters":  false,
+                                                "StructLayoutAttribute":  "System.Runtime.InteropServices.StructLayoutAttribute",
+                                                "Name":  "FileSystemProvider",
+                                                "MemberType":  32,
+                                                "DeclaringType":  null,
+                                                "ReflectedType":  null,
+                                                "MetadataToken":  33556359,
+                                                "GenericTypeParameters":  "",
+                                                "DeclaredConstructors":  "Void .ctor() Void .cctor()",
+                                                "DeclaredEvents":  "",
+                                                "DeclaredFields":  "System.Collections.ObjectModel.Collection`1[System.Management.Automation.WildcardPattern] excludeMatcher System.Management.Automation.PSTraceSource tracer Char[] s_remoteCopyNameInvalidChars Int32 FILETRANSFERSIZE System.String ProviderName",
+                                                "DeclaredMembers":  "System.String NormalizePath(System.String) System.IO.FileSystemInfo GetFileSystemInfo(System.String, Boolean ByRef) Boolean IsFilterSet() System.Object GetChildNamesDynamicParameters(System.String) System.Object GetChildItemsDynamicParameters(System.String, Boolean) System.Object CopyItemDynamicParameters(System.String, System.String, Boolean) Boolean IsNetworkMappedDrive(System.Management.Automation.PSDriveInfo) Boolean IsSupportedDriveForPersistence(System.Management.Automation.PSDriveInfo) System.String GetRootPathForNetworkDriveOrDosDevice(System.IO.DriveInfo) System.Collections.ObjectModel.Collection`1[System.Management.Automation.PSDriveInfo] InitializeDefaultDrives() System.Object GetItemDynamicParameters(System.String) Void InvokeDefaultAction(System.String) Void GetChildItems(System.String, Boolean, UInt32) Void GetChildNames(System.String, System.Management.Automation.ReturnContainers) Boolean CheckItemExists(System.String, Boolean ByRef) System.Object RemoveItemDynamicParameters(System.String, Boolean) Void RemoveFileInfoItem(System.IO.FileInfo, Boolean) Boolean ItemExists(System.String) System.Object ItemExistsDynamicParameters(System.String) Boolean HasChildItems(System.String) Void CopyItemLocalOrToSession(System.String, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) Void InitilizeFunctionPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell) Boolean ValidRemoteSessionForScripting(System.Management.Automation.Runspaces.Runspace) Void InitilizeFunctionsPSCopyFileToRemoteSession(System.Management.Automation.PowerShell) Boolean PathIsReservedDeviceName(System.String, System.String) Boolean IsAbsolutePath(System.String) System.String GetCommonBase(System.String, System.String) System.String CreateNormalizedRelativePathFromStack(System.Collections.Generic.Stack`1[System.String]) Boolean IsItemContainer(System.String) Void MoveDirectoryInfoUnchecked(System.IO.DirectoryInfo, System.String, Boolean) Boolean IsSameVolume(System.String, System.String) System.Object GetPropertyDynamicParameters(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Object SetPropertyDynamicParameters(System.String, System.Management.Automation.PSObject) System.Object ClearPropertyDynamicParameters(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Object GetContentWriterDynamicParameters(System.String) System.Object ClearContentDynamicParameters(System.String) Int32 SafeGetFileAttributes(System.String) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptorFromPath(System.String, System.Security.AccessControl.AccessControlSections) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptorOfType(System.String, System.Security.AccessControl.AccessControlSections) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptor(ItemType) System.Management.Automation.ErrorRecord CreateErrorRecord(System.String, System.String) System.String GetHelpMaml(System.String, System.String) System.Management.Automation.ProviderInfo Start(System.Management.Automation.ProviderInfo) System.Management.Automation.PSDriveInfo NewDrive(System.Management.Automation.PSDriveInfo) Void MapNetworkDrive(System.Management.Automation.PSDriveInfo) System.Management.Automation.PSDriveInfo RemoveDrive(System.Management.Automation.PSDriveInfo) System.String GetUNCForNetworkDrive(System.String) System.String GetSubstitutedPathForNetworkDosDevice(System.String) Boolean IsValidPath(System.String) Void GetItem(System.String) System.IO.FileSystemInfo GetFileSystemItem(System.String, Boolean ByRef, Boolean) Boolean ConvertPath(System.String, System.String, System.String ByRef, System.String ByRef) Void GetPathItems(System.String, Boolean, UInt32, Boolean, System.Management.Automation.ReturnContainers) Void Dir(System.IO.DirectoryInfo, Boolean, UInt32, Boolean, System.Management.Automation.ReturnContainers, InodeTracker) System.Management.Automation.FlagsExpression`1[System.IO.FileAttributes] FormatAttributeSwitchParamters() System.String Mode(System.Management.Automation.PSObject) Void RenameItem(System.String, System.String) Void NewItem(System.String, System.String, System.Object) ItemType GetItemType(System.String) Void CreateDirectory(System.String, Boolean) Boolean CreateIntermediateDirectories(System.String) Void RemoveItem(System.String, Boolean) Void RemoveDirectoryInfoItem(System.IO.DirectoryInfo, Boolean, Boolean, Boolean) Void RemoveFileSystemItem(System.IO.FileSystemInfo, Boolean) Boolean ItemExists(System.String, System.Management.Automation.ErrorRecord ByRef) Boolean DirectoryInfoHasChildItems(System.IO.DirectoryInfo) Void CopyItem(System.String, System.String, Boolean) Void CopyItemFromRemoteSession(System.String, System.String, Boolean, Boolean, System.Management.Automation.Runspaces.PSSession) Void CopyDirectoryInfoItem(System.IO.DirectoryInfo, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) Void CopyFileInfoItem(System.IO.FileInfo, System.String, Boolean, System.Management.Automation.PowerShell) Void CopyDirectoryFromRemoteSession(System.String, System.String, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) System.Collections.ArrayList GetRemoteSourceAlternateStreams(System.Management.Automation.PowerShell, System.String) Void RemoveFunctionsPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell) System.Collections.Hashtable GetRemoteFileMetadata(System.String, System.Management.Automation.PowerShell) Void SetFileMetadata(System.String, System.IO.FileInfo, System.Management.Automation.PowerShell) Void CopyFileFromRemoteSession(System.String, System.String, System.String, Boolean, System.Management.Automation.PowerShell, Int64) Boolean PerformCopyFileFromRemoteSession(System.String, System.IO.FileInfo, System.String, Boolean, System.Management.Automation.PowerShell, Int64, Boolean, System.String) Void RemoveFunctionPSCopyFileToRemoteSession(System.Management.Automation.PowerShell) Boolean RemoteTargetSupportsAlternateStreams(System.Management.Automation.PowerShell, System.String) System.String MakeRemotePath(System.Management.Automation.PowerShell, System.String, System.String) Boolean RemoteDirectoryExist(System.Management.Automation.PowerShell, System.String) Boolean CopyFileStreamToRemoteSession(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell, Boolean, System.String) System.Collections.Hashtable GetFileMetadata(System.IO.FileInfo) Void SetRemoteFileMetadata(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell) Boolean PerformCopyFileToRemoteSession(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell) Boolean RemoteDestinationPathIsFile(System.String, System.Management.Automation.PowerShell) System.String CreateDirectoryOnRemoteSession(System.String, Boolean, System.Management.Automation.PowerShell) Boolean IsValidRemoteName(System.String) Void ValidateRemoteName(System.String) System.String GetParentPath(System.String, System.String) Boolean IsUNCPath(System.String) Boolean IsUNCRoot(System.String) Boolean IsPathRoot(System.String) System.String NormalizeRelativePath(System.String, System.String) System.String NormalizeRelativePathHelper(System.String, System.String) System.String RemoveRelativeTokens(System.String) System.Collections.Generic.Stack`1[System.String] TokenizePathToStack(System.String, System.String) System.Collections.Generic.Stack`1[System.String] NormalizeThePath(System.String, System.Collections.Generic.Stack`1[System.String]) System.String GetChildName(System.String) System.String EnsureDriveIsRooted(System.String) Void MoveItem(System.String, System.String) Void MoveFileInfoItem(System.IO.FileInfo, System.String, Boolean, Boolean) Void MoveDirectoryInfoItem(System.IO.DirectoryInfo, System.String, Boolean) Void CopyAndDelete(System.IO.DirectoryInfo, System.String, Boolean) Void GetProperty(System.String, System.Collections.ObjectModel.Collection`1[System.String]) Void SetProperty(System.String, System.Management.Automation.PSObject) Void ClearProperty(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Management.Automation.Provider.IContentReader GetContentReader(System.String) System.Object GetContentReaderDynamicParameters(System.String) System.Management.Automation.Provider.IContentWriter GetContentWriter(System.String) Void ClearContent(System.String) Void ValidateParameters(Boolean) Void GetSecurityDescriptor(System.String, System.Security.AccessControl.AccessControlSections) Void SetSecurityDescriptor(System.String, System.Security.AccessControl.ObjectSecurity) Void SetSecurityDescriptor(System.String, System.Security.AccessControl.ObjectSecurity, System.Security.AccessControl.AccessControlSections) Void \u003cRemoveDirectoryInfoItem\u003eg__WriteErrorHelper|43_0(System.Exception, \u003c\u003ec__DisplayClass43_0 ByRef) Void .ctor() Void .cctor() System.Collections.ObjectModel.Collection`1[System.Management.Automation.WildcardPattern] excludeMatcher System.Management.Automation.PSTraceSource tracer Char[] s_remoteCopyNameInvalidChars Int32 FILETRANSFERSIZE System.String ProviderName Microsoft.PowerShell.Commands.FileSystemProvider+ItemType Microsoft.PowerShell.Commands.FileSystemProvider+NativeMethods Microsoft.PowerShell.Commands.FileSystemProvider+NetResource Microsoft.PowerShell.Commands.FileSystemProvider+InodeTracker Microsoft.PowerShell.Commands.FileSystemProvider+\u003c\u003ec__DisplayClass43_0",
+                                                "DeclaredMethods":  "System.String Mode(System.Management.Automation.PSObject) System.String NormalizePath(System.String) System.IO.FileSystemInfo GetFileSystemInfo(System.String, Boolean ByRef) Boolean IsFilterSet() System.Object GetChildNamesDynamicParameters(System.String) System.Object GetChildItemsDynamicParameters(System.String, Boolean) System.Object CopyItemDynamicParameters(System.String, System.String, Boolean) Boolean IsNetworkMappedDrive(System.Management.Automation.PSDriveInfo) Boolean IsSupportedDriveForPersistence(System.Management.Automation.PSDriveInfo) System.String GetRootPathForNetworkDriveOrDosDevice(System.IO.DriveInfo) System.Collections.ObjectModel.Collection`1[System.Management.Automation.PSDriveInfo] InitializeDefaultDrives() System.Object GetItemDynamicParameters(System.String) Void InvokeDefaultAction(System.String) Void GetChildItems(System.String, Boolean, UInt32) Void GetChildNames(System.String, System.Management.Automation.ReturnContainers) Boolean CheckItemExists(System.String, Boolean ByRef) System.Object RemoveItemDynamicParameters(System.String, Boolean) Void RemoveFileInfoItem(System.IO.FileInfo, Boolean) Boolean ItemExists(System.String) System.Object ItemExistsDynamicParameters(System.String) Boolean HasChildItems(System.String) Void CopyItemLocalOrToSession(System.String, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) Void InitilizeFunctionPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell) Boolean ValidRemoteSessionForScripting(System.Management.Automation.Runspaces.Runspace) Void InitilizeFunctionsPSCopyFileToRemoteSession(System.Management.Automation.PowerShell) Boolean PathIsReservedDeviceName(System.String, System.String) Boolean IsAbsolutePath(System.String) System.String GetCommonBase(System.String, System.String) System.String CreateNormalizedRelativePathFromStack(System.Collections.Generic.Stack`1[System.String]) Boolean IsItemContainer(System.String) Void MoveDirectoryInfoUnchecked(System.IO.DirectoryInfo, System.String, Boolean) Boolean IsSameVolume(System.String, System.String) System.Object GetPropertyDynamicParameters(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Object SetPropertyDynamicParameters(System.String, System.Management.Automation.PSObject) System.Object ClearPropertyDynamicParameters(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Object GetContentWriterDynamicParameters(System.String) System.Object ClearContentDynamicParameters(System.String) Int32 SafeGetFileAttributes(System.String) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptorFromPath(System.String, System.Security.AccessControl.AccessControlSections) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptorOfType(System.String, System.Security.AccessControl.AccessControlSections) System.Security.AccessControl.ObjectSecurity NewSecurityDescriptor(ItemType) System.Management.Automation.ErrorRecord CreateErrorRecord(System.String, System.String) System.String GetHelpMaml(System.String, System.String) System.Management.Automation.ProviderInfo Start(System.Management.Automation.ProviderInfo) System.Management.Automation.PSDriveInfo NewDrive(System.Management.Automation.PSDriveInfo) Void MapNetworkDrive(System.Management.Automation.PSDriveInfo) System.Management.Automation.PSDriveInfo RemoveDrive(System.Management.Automation.PSDriveInfo) System.String GetUNCForNetworkDrive(System.String) System.String GetSubstitutedPathForNetworkDosDevice(System.String) Boolean IsValidPath(System.String) Void GetItem(System.String) System.IO.FileSystemInfo GetFileSystemItem(System.String, Boolean ByRef, Boolean) Boolean ConvertPath(System.String, System.String, System.String ByRef, System.String ByRef) Void GetPathItems(System.String, Boolean, UInt32, Boolean, System.Management.Automation.ReturnContainers) Void Dir(System.IO.DirectoryInfo, Boolean, UInt32, Boolean, System.Management.Automation.ReturnContainers, InodeTracker) System.Management.Automation.FlagsExpression`1[System.IO.FileAttributes] FormatAttributeSwitchParamters() Void RenameItem(System.String, System.String) Void NewItem(System.String, System.String, System.Object) ItemType GetItemType(System.String) Void CreateDirectory(System.String, Boolean) Boolean CreateIntermediateDirectories(System.String) Void RemoveItem(System.String, Boolean) Void RemoveDirectoryInfoItem(System.IO.DirectoryInfo, Boolean, Boolean, Boolean) Void RemoveFileSystemItem(System.IO.FileSystemInfo, Boolean) Boolean ItemExists(System.String, System.Management.Automation.ErrorRecord ByRef) Boolean DirectoryInfoHasChildItems(System.IO.DirectoryInfo) Void CopyItem(System.String, System.String, Boolean) Void CopyItemFromRemoteSession(System.String, System.String, Boolean, Boolean, System.Management.Automation.Runspaces.PSSession) Void CopyDirectoryInfoItem(System.IO.DirectoryInfo, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) Void CopyFileInfoItem(System.IO.FileInfo, System.String, Boolean, System.Management.Automation.PowerShell) Void CopyDirectoryFromRemoteSession(System.String, System.String, System.String, Boolean, Boolean, System.Management.Automation.PowerShell) System.Collections.ArrayList GetRemoteSourceAlternateStreams(System.Management.Automation.PowerShell, System.String) Void RemoveFunctionsPSCopyFileFromRemoteSession(System.Management.Automation.PowerShell) System.Collections.Hashtable GetRemoteFileMetadata(System.String, System.Management.Automation.PowerShell) Void SetFileMetadata(System.String, System.IO.FileInfo, System.Management.Automation.PowerShell) Void CopyFileFromRemoteSession(System.String, System.String, System.String, Boolean, System.Management.Automation.PowerShell, Int64) Boolean PerformCopyFileFromRemoteSession(System.String, System.IO.FileInfo, System.String, Boolean, System.Management.Automation.PowerShell, Int64, Boolean, System.String) Void RemoveFunctionPSCopyFileToRemoteSession(System.Management.Automation.PowerShell) Boolean RemoteTargetSupportsAlternateStreams(System.Management.Automation.PowerShell, System.String) System.String MakeRemotePath(System.Management.Automation.PowerShell, System.String, System.String) Boolean RemoteDirectoryExist(System.Management.Automation.PowerShell, System.String) Boolean CopyFileStreamToRemoteSession(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell, Boolean, System.String) System.Collections.Hashtable GetFileMetadata(System.IO.FileInfo) Void SetRemoteFileMetadata(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell) Boolean PerformCopyFileToRemoteSession(System.IO.FileInfo, System.String, System.Management.Automation.PowerShell) Boolean RemoteDestinationPathIsFile(System.String, System.Management.Automation.PowerShell) System.String CreateDirectoryOnRemoteSession(System.String, Boolean, System.Management.Automation.PowerShell) Boolean IsValidRemoteName(System.String) Void ValidateRemoteName(System.String) System.String GetParentPath(System.String, System.String) Boolean IsUNCPath(System.String) Boolean IsUNCRoot(System.String) Boolean IsPathRoot(System.String) System.String NormalizeRelativePath(System.String, System.String) System.String NormalizeRelativePathHelper(System.String, System.String) System.String RemoveRelativeTokens(System.String) System.Collections.Generic.Stack`1[System.String] TokenizePathToStack(System.String, System.String) System.Collections.Generic.Stack`1[System.String] NormalizeThePath(System.String, System.Collections.Generic.Stack`1[System.String]) System.String GetChildName(System.String) System.String EnsureDriveIsRooted(System.String) Void MoveItem(System.String, System.String) Void MoveFileInfoItem(System.IO.FileInfo, System.String, Boolean, Boolean) Void MoveDirectoryInfoItem(System.IO.DirectoryInfo, System.String, Boolean) Void CopyAndDelete(System.IO.DirectoryInfo, System.String, Boolean) Void GetProperty(System.String, System.Collections.ObjectModel.Collection`1[System.String]) Void SetProperty(System.String, System.Management.Automation.PSObject) Void ClearProperty(System.String, System.Collections.ObjectModel.Collection`1[System.String]) System.Management.Automation.Provider.IContentReader GetContentReader(System.String) System.Object GetContentReaderDynamicParameters(System.String) System.Management.Automation.Provider.IContentWriter GetContentWriter(System.String) Void ClearContent(System.String) Void ValidateParameters(Boolean) Void GetSecurityDescriptor(System.String, System.Security.AccessControl.AccessControlSections) Void SetSecurityDescriptor(System.String, System.Security.AccessControl.ObjectSecurity) Void SetSecurityDescriptor(System.String, System.Security.AccessControl.ObjectSecurity, System.Security.AccessControl.AccessControlSections) Void \u003cRemoveDirectoryInfoItem\u003eg__WriteErrorHelper|43_0(System.Exception, \u003c\u003ec__DisplayClass43_0 ByRef)",
+                                                "DeclaredNestedTypes":  "Microsoft.PowerShell.Commands.FileSystemProvider+ItemType Microsoft.PowerShell.Commands.FileSystemProvider+NativeMethods Microsoft.PowerShell.Commands.FileSystemProvider+NetResource Microsoft.PowerShell.Commands.FileSystemProvider+InodeTracker Microsoft.PowerShell.Commands.FileSystemProvider+\u003c\u003ec__DisplayClass43_0",
+                                                "DeclaredProperties":  "",
+                                                "ImplementedInterfaces":  "System.Management.Automation.IResourceSupplier System.Management.Automation.Provider.IContentCmdletProvider System.Management.Automation.Provider.IPropertyCmdletProvider System.Management.Automation.Provider.ISecurityDescriptorCmdletProvider System.Management.Automation.Provider.ICmdletProviderSupportsHelp",
+                                                "TypeInitializer":  "Void .cctor()",
+                                                "IsNested":  false,
+                                                "Attributes":  1048833,
+                                                "IsVisible":  true,
+                                                "IsNotPublic":  false,
+                                                "IsPublic":  true,
+                                                "IsNestedPublic":  false,
+                                                "IsNestedPrivate":  false,
+                                                "IsNestedFamily":  false,
+                                                "IsNestedAssembly":  false,
+                                                "IsNestedFamANDAssem":  false,
+                                                "IsNestedFamORAssem":  false,
+                                                "IsAutoLayout":  true,
+                                                "IsLayoutSequential":  false,
+                                                "IsExplicitLayout":  false,
+                                                "IsClass":  true,
+                                                "IsInterface":  false,
+                                                "IsValueType":  false,
+                                                "IsAbstract":  false,
+                                                "IsSealed":  true,
+                                                "IsSpecialName":  false,
+                                                "IsImport":  false,
+                                                "IsSerializable":  false,
+                                                "IsAnsiClass":  true,
+                                                "IsUnicodeClass":  false,
+                                                "IsAutoClass":  false,
+                                                "IsArray":  false,
+                                                "IsByRef":  false,
+                                                "IsPointer":  false,
+                                                "IsPrimitive":  false,
+                                                "IsCOMObject":  false,
+                                                "HasElementType":  false,
+                                                "IsContextful":  false,
+                                                "IsMarshalByRef":  false,
+                                                "GenericTypeArguments":  "",
+                                                "CustomAttributes":  "[System.Management.Automation.OutputTypeAttribute(new Type[2] { typeof(System.String), typeof(System.IO.FileInfo) }, ProviderCmdlet = \"New-Item\")] [System.Management.Automation.OutputTypeAttribute(typeof(System.Security.AccessControl.FileSecurity), ProviderCmdlet = \"Set-Acl\")] [System.Management.Automation.OutputTypeAttribute(new Type[2] { typeof(System.String), typeof(System.Management.Automation.PathInfo) }, ProviderCmdlet = \"Resolve-Path\")] [System.Management.Automation.OutputTypeAttribute(typeof(System.Management.Automation.PathInfo), ProviderCmdlet = \"Push-Location\")] [System.Management.Automation.OutputTypeAttribute(new Type[2] { typeof(System.Byte), typeof(System.String) }, ProviderCmdlet = \"Get-Content\")] [System.Management.Automation.OutputTypeAttribute(typeof(System.IO.FileInfo), ProviderCmdlet = \"Get-Item\")] [System.Management.Automation.OutputTypeAttribute(new Type[2] { typeof(System.IO.FileInfo), typeof(System.IO.DirectoryInfo) }, ProviderCmdlet = \"Get-ChildItem\")] [System.Management.Automation.OutputTypeAttribute(new Type[2] { typeof(System.Security.AccessControl.FileSecurity), typeof(System.Security.AccessControl.DirectorySecurity) }, ProviderCmdlet = \"Get-Acl\")] [System.Management.Automation.OutputTypeAttribute(new Type[4] { typeof(System.Boolean), typeof(System.String), typeof(System.IO.FileInfo), typeof(System.IO.DirectoryInfo) }, ProviderCmdlet = \"Get-Item\")] [System.Management.Automation.OutputTypeAttribute(new Type[5] { typeof(System.Boolean), typeof(System.String), typeof(System.DateTime), typeof(System.IO.FileInfo), typeof(System.IO.DirectoryInfo) }, ProviderCmdlet = \"Get-ItemProperty\")] [System.Management.Automation.Provider.CmdletProviderAttribute(\"FileSystem\", (System.Management.Automation.Provider.ProviderCapabilities)52)]"
+                                            },
+                       "HelpFile":  "System.Management.Automation.dll-Help.xml",
+                       "Name":  "FileSystem",
+                       "PSSnapIn":  {
+                                        "Name":  "Microsoft.PowerShell.Core",
+                                        "IsDefault":  true,
+                                        "ApplicationBase":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0",
+                                        "AssemblyName":  "System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, ProcessorArchitecture=MSIL",
+                                        "ModuleName":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\System.Management.Automation.dll",
+                                        "PSVersion":  "5.1.26100.9711",
+                                        "Version":  "3.0.0.0",
+                                        "Types":  "types.ps1xml typesv3.ps1xml",
+                                        "Formats":  "Certificate.format.ps1xml DotNetTypes.format.ps1xml FileSystem.format.ps1xml Help.format.ps1xml HelpV3.format.ps1xml PowerShellCore.format.ps1xml PowerShellTrace.format.ps1xml Registry.format.ps1xml",
+                                        "Description":  "This Windows PowerShell snap-in contains cmdlets used to manage components of Windows PowerShell.",
+                                        "Vendor":  "Microsoft Corporation",
+                                        "LogPipelineExecutionDetails":  false
+                                    },
+                       "ModuleName":  "Microsoft.PowerShell.Core",
+                       "Module":  null,
+                       "Description":  "",
+                       "Capabilities":  52,
+                       "Home":  "C:\\Users\\mikic",
+                       "Drives":  [
+                                      "C",
+                                      "B",
+                                      "T",
+                                      "U"
+                                  ]
+                   },
+    "ReadCount":  1
 };
 
-module.exports = (req, res) => {
-  try {
-    const urlPath = (req.url || '/').split('?')[0];
-    const rel = urlPath === '/' ? 'index.html' : decodeURIComponent(urlPath.replace(/^\/+/, ''));
-    const candidates = [
-      path.normalize(path.join(__dirname, rel)),
-      path.normalize(path.join(__dirname, 'public', rel))
-    ];
-    for (const full of candidates) {
-      if (full.startsWith(__dirname) && fs.existsSync(full) && fs.statSync(full).isFile()) {
-        const ext = path.extname(full).toLowerCase();
-        res.setHeader('Content-Type', MIME[ext] || 'application/octet-stream');
-        res.statusCode = 200;
-        return res.end(fs.readFileSync(full));
-      }
-    }
-    const indexFull = path.join(__dirname, 'index.html');
-    res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.statusCode = 200;
-    return res.end(fs.readFileSync(indexFull));
-  } catch (e) {
-    res.statusCode = 500;
-    return res.end(String(e && e.message || e));
-  }
+const handler = (req, res) => {
+  res.writeHead(200, {
+    'Content-Type': 'text/html; charset=utf-8',
+    'Cache-Control': 'public, max-age=0, must-revalidate'
+  });
+  res.end(INDEX_HTML);
 };
+
+const server = http.createServer(handler);
+server.listen(process.env.PORT || 3000);
+
+module.exports = handler;

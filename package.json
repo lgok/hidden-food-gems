@@ -1,0 +1,11 @@
+{
+  "name": "hidden-food-gems",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hidden Food Gems: local/offline mobile website for small independent restaurants.",
+  "scripts": {
+    "build": "node build_offline.js",
+    "start": "node server.js",
+    "reset": "node -e \"require('fs').copyFileSync('data/seed.json','data/db.json');console.log('Reset to sample data')\""
+  }
+}

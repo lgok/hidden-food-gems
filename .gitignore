@@ -1,0 +1,6 @@
+.vercel
+node_modules
+.DS_Store
+data/db.json
+HiddenFoodGems_Offline.html
+BusinessCard_Staples_Print.html

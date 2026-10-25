@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hidden Food Gems — Staples Print-Ready Business Card (3.5" × 2")</title>
+  <title>HiddenFoodGem.com — Staples Print-Ready Business Card (3.5" × 2")</title>
   <style>
     :root {
       --ink: #1f1612;
@@ -140,12 +140,12 @@
       <p>Standard US Business Card size. Print single cards at Staples or print the 10-card 8.5"×11" sheet right now.</p>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <a class="btn btn-outline" href="/">← Back to Hidden Food Gems</a>
+      <a class="btn btn-outline" href="/">← Back to HiddenFoodGem.com</a>
       <button class="btn" onclick="window.print()">🖨️ Print / Save PDF for Staples</button>
     </div>
     <div class="controls">
       <label>Live Website Link (Encoded in QR Code)
-        <input id="inp-url" value="http://192.168.4.124:5177" placeholder="https://hiddenfoodgems.com" />
+        <input id="inp-url" value="https://HiddenFoodGem.com" placeholder="https://HiddenFoodGem.com" />
       </label>
       <label>Your Name & Phone / Text Line
         <input id="inp-contact" value="Michael · Call/Text (909) 555-0199" />
@@ -163,7 +163,7 @@
           <h3>Front of Card (3.5" × 2.0")</h3>
           <div class="bcard front" id="card-front-template">
             <div>
-              <div class="f-brand">💎 Hidden <em>Food</em> Gems</div>
+              <div class="f-brand">💎 Hidden <em>Food</em> Gem<span style="font-size:0.72em;opacity:0.85;font-weight:700">.com</span></div>
               <span class="f-tag" data-bind="area">Ontario · Upland · Chino · Montclair · Rancho</span>
               <div class="f-headline">Your Restaurant Is Live on Our Local Food Feed!</div>
               <p class="f-msg">
@@ -174,7 +174,7 @@
             <div class="qr-box">
               <div class="qr-target"></div>
               <div class="qr-cap">Scan to View ↑</div>
-              <div class="qr-url" data-bind="url">http://192.168.4.124:5177</div>
+              <div class="qr-url" data-bind="url">https://HiddenFoodGem.com</div>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@
           <h3>Back of Card (Optional 2-Sided Print)</h3>
           <div class="bcard back">
             <div class="b-top">
-              <h4>💎 Hidden Food Gems</h4>
+              <h4>💎 HiddenFoodGem.com</h4>
               <span>Verified Grade-A Local Spots</span>
             </div>
             <div class="b-quote">
@@ -197,7 +197,7 @@
             </div>
             <div class="b-foot">
               <span data-bind="contact">Michael · Call/Text (909) 555-0199</span>
-              <span data-bind="url">http://192.168.4.124:5177</span>
+              <span data-bind="url">https://HiddenFoodGem.com</span>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@
       const frontTpl = document.getElementById('card-front-template');
 
       function updateCards() {
-        const url = document.getElementById('inp-url').value.trim() || 'https://hiddenfoodgems.com';
+        const url = document.getElementById('inp-url').value.trim() || 'https://HiddenFoodGem.com';
         const contact = document.getElementById('inp-contact').value.trim();
         const area = document.getElementById('inp-area').value.trim();
         const svg = makeQrSvg(url);

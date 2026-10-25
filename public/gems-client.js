@@ -1,56 +1,56 @@
-﻿/* Hidden Food Gems: front-end (no frameworks, works fully offline or on local network) */
+/* HiddenFoodGem.com: front-end (no frameworks, works fully offline or on local network) */
 (() => {
   'use strict';
 
   // ---------- Config ----------
   const MEAL_TABS = [
-    ['', 'All Meals', '≡ƒì╜∩╕Å'],
-    ['open_now', 'Open Right Now', '≡ƒƒó'],
-    ['breakfast', 'Breakfast', 'ΓÿÇ∩╕Å'],
-    ['brunch', 'Brunch', '≡ƒÑ₧'],
-    ['lunch', 'Lunch', '≡ƒÑ¬'],
-    ['dinner', 'Dinner', '≡ƒîÖ'],
+    ['', 'All Meals', '🍽️'],
+    ['open_now', 'Open Right Now', '🟢'],
+    ['breakfast', 'Breakfast', '☀️'],
+    ['brunch', 'Brunch', '🥞'],
+    ['lunch', 'Lunch', '🥪'],
+    ['dinner', 'Dinner', '🌙'],
   ];
 
   const CHIPS = [
-    ['chicken', 'Chicken', '≡ƒìù'], ['beef', 'Beef', '≡ƒÑ⌐'], ['pork', 'Pork', '≡ƒÑô'], ['seafood', 'Seafood', '≡ƒªÉ'],
-    ['vegetarian-only', 'Vegetarian only', '≡ƒÑù'], ['vegan', 'Vegan', '≡ƒî▒'], ['kosher', 'Kosher', 'Γ£í∩╕Å'], ['halal', 'Halal', 'Γÿ¬∩╕Å'],
-    ['chinese', 'Chinese', '≡ƒÑí'], ['mexican', 'Mexican', '≡ƒî«'], ['country', 'Country', '≡ƒñá'], ['southern', 'Southern', '≡ƒì╜∩╕Å'],
-    ['bbq', 'BBQ', '≡ƒöÑ'], ['korean', 'Korean', '≡ƒì▓'], ['vietnamese', 'Vietnamese', '≡ƒì£'], ['filipino', 'Filipino', '≡ƒìó'],
-    ['ethiopian', 'Ethiopian', '≡ƒ½ô'], ['italian', 'Italian', '≡ƒì¥'], ['indian', 'Indian', '≡ƒì¢'], ['cajun', 'Cajun', '≡ƒª₧'], ['thai', 'Thai', '≡ƒî╢∩╕Å'],
+    ['chicken', 'Chicken', '🍗'], ['beef', 'Beef', '🥩'], ['pork', 'Pork', '🥓'], ['seafood', 'Seafood', '🦐'],
+    ['vegetarian-only', 'Vegetarian only', '🥗'], ['vegan', 'Vegan', '🌱'], ['kosher', 'Kosher', '✡️'], ['halal', 'Halal', '☪️'],
+    ['chinese', 'Chinese', '🥡'], ['mexican', 'Mexican', '🌮'], ['country', 'Country', '🤠'], ['southern', 'Southern', '🍽️'],
+    ['bbq', 'BBQ', '🔥'], ['korean', 'Korean', '🍲'], ['vietnamese', 'Vietnamese', '🍜'], ['filipino', 'Filipino', '🍢'],
+    ['ethiopian', 'Ethiopian', '🫓'], ['italian', 'Italian', '🍝'], ['indian', 'Indian', '🍛'], ['cajun', 'Cajun', '🦞'], ['thai', 'Thai', '🌶️'],
   ];
   const TAG_LABEL = Object.fromEntries([...MEAL_TABS.slice(1), ...CHIPS].map(([k, l]) => [k, l]));
   Object.assign(TAG_LABEL, { 'open_now': 'Open Right Now (Within 5 Miles)', 'vegetarian-options': 'Veggie options', american: 'American', 'late-night': 'Late night', mediterranean: 'Mediterranean' });
   const CUISINES = ['American', 'BBQ', 'Breakfast', 'Cajun', 'Chinese', 'Country', 'Cuban', 'Ethiopian', 'Filipino', 'French', 'Greek', 'Himalayan', 'Indian', 'Italian', 'Japanese',
     'Korean', 'Lebanese', 'Mediterranean', 'Mexican', 'Peruvian', 'Polish', 'Portuguese', 'Salvadoran', 'Seafood', 'Southern', 'Taiwanese', 'Thai', 'Vegetarian', 'Vietnamese', 'Other'];
   const FORM_TAGS = ['breakfast', 'brunch', 'lunch', 'dinner', 'chicken', 'beef', 'pork', 'seafood', 'vegetarian-only', 'vegetarian-options', 'vegan', 'kosher', 'halal', 'bbq', 'late-night'];
-  const CUISINE_EMOJI = { chinese: '≡ƒÑí', mexican: '≡ƒî«', country: '≡ƒñá', southern: '≡ƒìù', breakfast: '≡ƒì│', vegetarian: '≡ƒÑù', korean: '≡ƒì▓',
-    filipino: '≡ƒìó', ethiopian: '≡ƒ½ô', vietnamese: '≡ƒì£', italian: '≡ƒì¥', indian: '≡ƒì¢', seafood: '≡ƒÉƒ', cajun: '≡ƒª₧', bbq: '≡ƒöÑ', thai: '≡ƒî╢∩╕Å', american: '≡ƒìö', mediterranean: '≡ƒÑÖ',
-    peruvian: '≡ƒìù', japanese: '≡ƒì▒', greek: '≡ƒ½Æ', french: '≡ƒÑÉ', taiwanese: '≡ƒºï', salvadoran: '≡ƒ½ô', cuban: '≡ƒÑ¬', lebanese: '≡ƒÑÖ', himalayan: '≡ƒÑƒ', portuguese: '≡ƒÑº', polish: '≡ƒÑƒ' };
+  const CUISINE_EMOJI = { chinese: '🥡', mexican: '🌮', country: '🤠', southern: '🍗', breakfast: '🍳', vegetarian: '🥗', korean: '🍲',
+    filipino: '🍢', ethiopian: '🫓', vietnamese: '🍜', italian: '🍝', indian: '🍛', seafood: '🐟', cajun: '🦞', bbq: '🔥', thai: '🌶️', american: '🍔', mediterranean: '🥙',
+    peruvian: '🍗', japanese: '🍱', greek: '🫒', french: '🥐', taiwanese: '🧋', salvadoran: '🫓', cuban: '🥪', lebanese: '🥙', himalayan: '🥟', portuguese: '🥧', polish: '🥟' };
   const GEM_MAX_RATINGS = 25;
 
   const MENU_CAT_META = [
-    ['signatures', '≡ƒöÑ Signatures', 'The Signatures (Top 3 Must-Order Dishes)'],
-    ['regionalClassics', '≡ƒÅ║ Regional Classics', 'Regional Classics'],
-    ['combosAndTrays', '≡ƒì▒ Family Trays', 'Combos & Family Trays (High Average Order Value)'],
-    ['sidesAndDrinks', '≡ƒÑñ Sides & Drinks', 'Housemade Sides & Drinks'],
+    ['signatures', '🔥 Signatures', 'The Signatures (Top 3 Must-Order Dishes)'],
+    ['regionalClassics', '🏺 Regional Classics', 'Regional Classics'],
+    ['combosAndTrays', '🍱 Family Trays', 'Combos & Family Trays (High Average Order Value)'],
+    ['sidesAndDrinks', '🥤 Sides & Drinks', 'Housemade Sides & Drinks'],
   ];
 
   const SOCAL_REGIONS = [
-    { id: 'Inland Empire', label: '≡ƒîä Inland Empire (San Bernardino & Riverside)' },
-    { id: 'San Gabriel Valley', label: '≡ƒÑó San Gabriel Valley (SGV)' },
-    { id: 'Los Angeles Metro', label: '≡ƒîå Los Angeles Metro & East LA' },
-    { id: 'South Bay & Long Beach', label: 'ΓÜô South Bay & Long Beach' },
-    { id: 'Orange County', label: '≡ƒìè Orange County' },
-    { id: 'San Diego County', label: '≡ƒîè San Diego County' },
-    { id: 'San Fernando Valley', label: 'ΓÿÇ∩╕Å San Fernando Valley' },
-    { id: 'New York Metro', label: '≡ƒù╜ New York Metro (NY)' },
-    { id: 'Maryland Capital Region', label: '≡ƒªÇ Maryland Capital Region (MD)' },
-    { id: 'Washington Metro', label: '≡ƒÅ¢∩╕Å Washington, DC' },
-    { id: 'Northern New Jersey', label: '≡ƒÅÖ∩╕Å Northern New Jersey (NJ)' },
-    { id: 'Dallas-Fort Worth Metro', label: '≡ƒñá Dallas-Fort Worth (TX)' },
-    { id: 'Central Texas', label: '≡ƒÄ╕ Central Texas & Austin (TX)' },
-    { id: 'Chicago Metro', label: '≡ƒÅÖ∩╕Å Chicago Metro (IL)' }
+    { id: 'Inland Empire', label: '🌄 Inland Empire (San Bernardino & Riverside)' },
+    { id: 'San Gabriel Valley', label: '🥢 San Gabriel Valley (SGV)' },
+    { id: 'Los Angeles Metro', label: '🌆 Los Angeles Metro & East LA' },
+    { id: 'South Bay & Long Beach', label: '⚓ South Bay & Long Beach' },
+    { id: 'Orange County', label: '🍊 Orange County' },
+    { id: 'San Diego County', label: '🌊 San Diego County' },
+    { id: 'San Fernando Valley', label: '☀️ San Fernando Valley' },
+    { id: 'New York Metro', label: '🗽 New York Metro (NY)' },
+    { id: 'Maryland Capital Region', label: '🦀 Maryland Capital Region (MD)' },
+    { id: 'Washington Metro', label: '🏛️ Washington, DC' },
+    { id: 'Northern New Jersey', label: '🏙️ Northern New Jersey (NJ)' },
+    { id: 'Dallas-Fort Worth Metro', label: '🤠 Dallas-Fort Worth (TX)' },
+    { id: 'Central Texas', label: '🎸 Central Texas & Austin (TX)' },
+    { id: 'Chicago Metro', label: '🏙️ Chicago Metro (IL)' }
   ];
 
   const geocodedZipCache = new Map();
@@ -90,7 +90,7 @@
   // ---------- Helpers ----------
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const avg = (r) => (r.ratings.length ? r.ratings.reduce((a, x) => a + x.stars, 0) / r.ratings.length : 0);
-  const starsTxt = (n) => 'ΓÿàΓÿàΓÿàΓÿàΓÿà'.slice(0, Math.round(n)) + 'ΓÿåΓÿåΓÿåΓÿåΓÿå'.slice(0, 5 - Math.round(n));
+  const starsTxt = (n) => '★★★★★'.slice(0, Math.round(n)) + '☆☆☆☆☆'.slice(0, 5 - Math.round(n));
   const price = (p) => '$'.repeat(p || 1);
   const timeAgo = (d) => {
     const s = (Date.now() - new Date(d)) / 1000;
@@ -101,9 +101,9 @@
   };
   const badge = (r) => {
     const a = avg(r), n = r.ratings.length;
-    if (!n) return { cls: 'new', txt: '≡ƒî▒ Be the first to rate' };
-    if (a >= 4.5 && n < GEM_MAX_RATINGS) return { cls: 'gem', txt: '≡ƒÆÄ Hidden Gem' };
-    if (a >= 4.5) return { cls: 'fav', txt: 'Γ¡É Local Favorite' };
+    if (!n) return { cls: 'new', txt: '🌱 Be the first to rate' };
+    if (a >= 4.5 && n < GEM_MAX_RATINGS) return { cls: 'gem', txt: '💎 Hidden Gem' };
+    if (a >= 4.5) return { cls: 'fav', txt: '⭐ Local Favorite' };
     return null;
   };
   const gemScore = (r) => {
@@ -118,7 +118,7 @@
     const c = (r.cuisine || '').toLowerCase();
     for (const [k, v] of Object.entries(CUISINE_EMOJI)) if (c.includes(k)) return v;
     for (const t of r.tags || []) if (CUISINE_EMOJI[t]) return CUISINE_EMOJI[t];
-    return '≡ƒì╜∩╕Å';
+    return '🍽️';
   };
   const IS_FILE_PROTO = location.protocol === 'file:';
   const normImg = (u) => {
@@ -129,15 +129,15 @@
   const coverImage = (r) => normImg(r.image || (r.photos && r.photos[0] && r.photos[0].file) || ((r.media || []).find((m) => m.type === 'photo') || {}).file || '');
   const placeholderHtml = (r) => {
     const mailSubject = encodeURIComponent(r.name + ' - 3-Sec Video Submission');
-    const mailBody = encodeURIComponent('Hi Hidden Food Gems team,\n\nI am the owner of ' + r.name + ' in ' + (r.city || '') + ', CA.\nHere is our short 3-second phone video of our food / storefront for review.\n\nRestaurant: ' + r.name + '\nAddress: ' + (r.address || '') + ', ' + (r.city || '') + ', CA\nPhone: ' + (r.phone || '') + '\n\nThank you!');
+    const mailBody = encodeURIComponent('Hi HiddenFoodGem.com team,\n\nI am the owner of ' + r.name + ' in ' + (r.city || '') + ', CA.\nHere is our short 3-second phone video of our food / storefront for review.\n\nRestaurant: ' + r.name + '\nAddress: ' + (r.address || '') + ', ' + (r.city || '') + ', CA\nPhone: ' + (r.phone || '') + '\n\nThank you!');
     const mailto = 'mailto:letsgetoutkids@gmail.com?subject=' + mailSubject + '&body=' + mailBody;
     return '<div class="ph ph-' + (hashNum(r.id) % 5) + ' ph-owner-tile">' +
-      '<span class="ph-badge-coming-soon">≡ƒô╖ Owner Verified Photo Coming Soon</span>' +
+      '<span class="ph-badge-coming-soon">📷 Owner Verified Photo Coming Soon</span>' +
       '<div style="font-size:1.6rem;line-height:1;margin:3px 0 4px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))">' + emojiFor(r) + '</div>' +
       '<a class="ph-claim-btn" href="' + mailto + '" data-claim-clip="' + esc(r.id) + '" title="Are you the owner? Email us your 3-second video clip to feature free!">' +
-        '<span>≡ƒÄÑ Are you the owner? Send us your 3-sec clip</span>' +
+        '<span>🎥 Are you the owner? Send us your 3-sec clip</span>' +
       '</a>' +
-      '<div class="ph-cuisine-sub">' + esc(r.cuisine || 'Family Kitchen') + ' ┬╖ ' + esc(r.city || '') + '</div>' +
+      '<div class="ph-cuisine-sub">' + esc(r.cuisine || 'Family Kitchen') + ' · ' + esc(r.city || '') + '</div>' +
     '</div>';
   };
 
@@ -146,7 +146,7 @@
     if (videoSrc) {
       return '<div style="position:relative;width:100%;height:100%">' +
         '<video src="' + esc(videoSrc) + '" autoplay muted loop playsinline disablepictureinpicture preload="metadata"></video>' +
-        '<span class="video-reel-badge">Γû╢ 3s Clip</span>' +
+        '<span class="video-reel-badge">▶ 3s Clip</span>' +
       '</div>';
     }
     if (r.verifiedPhoto || r.ownerVerified) {
@@ -195,7 +195,7 @@
       directions: typeof override?.directions === 'number' ? override.directions : (base.directions ?? 41),
       stripeUrl: override?.stripeUrl ?? base.stripeUrl ?? 'https://buy.stripe.com/demo_renewal_10mo',
       kitchenStatus: override?.kitchenStatus ?? r.kitchenStatus ?? 'open',
-      statusLabel: override?.statusLabel ?? r.statusLabel ?? 'Open Now ΓÇó Closing at 8:30 PM'
+      statusLabel: override?.statusLabel ?? r.statusLabel ?? 'Open Now • Closing at 8:30 PM'
     };
   }
 
@@ -671,7 +671,7 @@
   // ---------- Meal Qualification & Schedule Validation Rules ----------
   function parseEarliestOpeningMinutes(hoursStr) {
     const h = String(hoursStr || '').replace(/\([^)]*\)/g, '');
-    const regex = /(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[ΓÇô-]/gi;
+    const regex = /(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[–-]/gi;
     let m;
     let earliest = 9999;
     while ((m = regex.exec(h)) !== null) {
@@ -701,7 +701,7 @@
     const dayIdx = now.getDay(); // 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
     const dayTokens = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
     const todayTok = dayTokens[dayIdx];
-    if (new RegExp(`closed\\s*[^┬╖]*\\b${todayTok}`, 'i').test(h)) return true;
+    if (new RegExp(`closed\\s*[^·]*\\b${todayTok}`, 'i').test(h)) return true;
     return false;
   }
 
@@ -761,26 +761,26 @@
         const cleanT = t.includes(':') ? t : `${t}:00`;
         return `${cleanT} ${ap.toUpperCase()}`;
       })
-      .replace(/\s*[ΓÇô-]\s*/g, ' ΓÇô ')
+      .replace(/\s*[–-]\s*/g, ' – ')
       .trim();
   }
 
   function getTodayHoursSummary(r, now = new Date()) {
-    const full = (r.hours || 'Daily 11:00amΓÇô8:30pm').trim();
+    const full = (r.hours || 'Daily 11:00am–8:30pm').trim();
     if (isClosedToday(r, now)) {
       return { todayText: 'Today: Closed', fullSchedule: full, hasWeeklyBreakdown: true };
     }
     const parenMatch = full.match(/\(([^)]+)\)/);
     const parenNote = parenMatch ? parenMatch[1].trim() : '';
     const stripped = full.replace(/\([^)]*\)/g, '').trim();
-    const parts = stripped.split(/\s*[┬╖ΓÇó]\s*/).filter((p) => p && !/^closed/i.test(p));
+    const parts = stripped.split(/\s*[·•]\s*/).filter((p) => p && !/^closed/i.test(p));
     const dayIdx = now.getDay(); // 0=Sun..6=Sat
     const dayMap = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
 
     const exprMatchesDay = (exprStr) => {
       const s = exprStr.toLowerCase();
       if (s.includes('daily')) return true;
-      const rangeRegex = /(sun|mon|tue|wed|thu|fri|sat)\s*[ΓÇô-]\s*(sun|mon|tue|wed|thu|fri|sat)/g;
+      const rangeRegex = /(sun|mon|tue|wed|thu|fri|sat)\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat)/g;
       let rm;
       let matchedAnyRange = false;
       while ((rm = rangeRegex.exec(s)) !== null) {
@@ -803,19 +803,19 @@
     const matchesDay = (seg) => {
       const s = seg.toLowerCase();
       if (s.includes('daily')) return true;
-      const tokMatch = s.match(/^([a-zΓÇô\-&\s]+?)\s+\d/);
+      const tokMatch = s.match(/^([a-z–\-&\s]+?)\s+\d/);
       if (!tokMatch) return false;
       return exprMatchesDay(tokMatch[1]);
     };
 
     const matchedSeg = parts.find(matchesDay) || parts[0] || stripped;
-    const timeMatch = matchedSeg.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm)\s*[ΓÇô-]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-    const todayRange = timeMatch ? formatTimeRangeClean(timeMatch[1]) : '11:00 AM ΓÇô 8:30 PM';
+    const timeMatch = matchedSeg.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm)\s*[–-]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+    const todayRange = timeMatch ? formatTimeRangeClean(timeMatch[1]) : '11:00 AM – 8:30 PM';
 
-    // Check if parenthetical breakfast note (e.g. "Silog Breakfast SatΓÇôSun 9ΓÇô11am") applies to today
+    // Check if parenthetical breakfast note (e.g. "Silog Breakfast Sat–Sun 9–11am") applies to today
     let specialTodayNote = '';
     if (parenNote && exprMatchesDay(parenNote)) {
-      specialTodayNote = parenNote.replace(/\b(sun|mon|tue|wed|thu|fri|sat)(\s*[ΓÇô-]\s*(sun|mon|tue|wed|thu|fri|sat))?\s*/gi, '').trim();
+      specialTodayNote = parenNote.replace(/\b(sun|mon|tue|wed|thu|fri|sat)(\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat))?\s*/gi, '').trim();
     }
 
     const hasWeeklyBreakdown = parts.length > 1 || Boolean(parenNote) || /closed/i.test(full);
@@ -831,12 +831,12 @@
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
     if (st === 'low_prep') {
-      return { cls: 'low_prep', dot: '≡ƒƒí', text: 'Low on Prep' };
+      return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };
     }
     if (st === 'sold_out' || isClosedToday(r)) {
-      return { cls: 'sold_out', dot: '≡ƒö┤', text: 'Closed Today' };
+      return { cls: 'sold_out', dot: '🔴', text: 'Closed Today' };
     }
-    return { cls: 'open', dot: '≡ƒƒó', text: 'Open Now' };
+    return { cls: 'open', dot: '🟢', text: 'Open Now' };
   }
 
   // ---------- Directions URL Helper ----------
@@ -870,8 +870,8 @@
       const r = {
         id: `${(b.name || 'gem').toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${Date.now().toString(36)}`,
         name: b.name, cuisine: b.cuisine || 'Other', tags: b.tags || [], price: +b.price || 1,
-        address: b.address, city: b.city, phone: b.phone || '', hours: b.hours || 'Daily 11:00amΓÇô8:30pm',
-        kitchenStatus: 'open', statusLabel: 'Open Now ΓÇó Closing at 8:30 PM', pricesVerified: 'October 2026',
+        address: b.address, city: b.city, phone: b.phone || '', hours: b.hours || 'Daily 11:00am–8:30pm',
+        kitchenStatus: 'open', statusLabel: 'Open Now • Closing at 8:30 PM', pricesVerified: 'October 2026',
         analytics: { ownerName: b.ownerName || 'Owner', calls: 1, directions: 1, stripeUrl: 'https://buy.stripe.com/demo_renewal_10mo' },
         description: b.description || '', story: b.story || '', image: '', photos: [], media: [], ratings: [],
         sample: false, createdAt: new Date().toISOString()
@@ -1013,7 +1013,7 @@
     return `
       <div class="card-menu-box" data-menu-box="${esc(r.id)}">
         <div class="card-cat-tabs" aria-label="Signatures">
-          <span class="card-cat-tab active" style="cursor:default">≡ƒöÑ Signatures</span>
+          <span class="card-cat-tab active" style="cursor:default">🔥 Signatures</span>
         </div>
         <div class="card-price-list">
           ${items.map((it) => `
@@ -1024,7 +1024,7 @@
             </div>`).join('')}
         </div>
         <div class="verified-price-stamp">
-          <span>Γ£ô Prices verified direct with kitchen: ${esc(r.pricesVerified || 'October 2026')}</span>
+          <span>✓ Prices verified direct with kitchen: ${esc(r.pricesVerified || 'October 2026')}</span>
         </div>
       </div>`;
   }
@@ -1070,8 +1070,8 @@
       state.city = '';
     }
     const defaultLabel = state.region
-      ? `≡ƒôì All Cities in ${state.region} (${totalSpots})`
-      : `≡ƒôì All Verified Cities (${totalSpots})`;
+      ? `📍 All Cities in ${state.region} (${totalSpots})`
+      : `📍 All Verified Cities (${totalSpots})`;
     cityEl.innerHTML =
       `<option value="">${esc(defaultLabel)}</option>` +
       cityCounts
@@ -1081,17 +1081,17 @@
   }
 
   const DIETARY_OPTIONS = [
-    ['vegetarian-only', '≡ƒÑù Vegetarian Only'],
-    ['vegan', '≡ƒî▒ Vegan'],
-    ['halal', 'Γÿ¬∩╕Å Halal'],
-    ['kosher', 'Γ£í∩╕Å Kosher'],
+    ['vegetarian-only', '🥗 Vegetarian Only'],
+    ['vegan', '🌱 Vegan'],
+    ['halal', '☪️ Halal'],
+    ['kosher', '✡️ Kosher'],
   ];
   const PROTEIN_OPTIONS = [
-    ['chicken', '≡ƒìù Chicken'],
-    ['beef', '≡ƒÑ⌐ Beef'],
-    ['pork', '≡ƒÑô Pork'],
-    ['seafood', '≡ƒªÉ Seafood'],
-    ['bbq', '≡ƒöÑ BBQ'],
+    ['chicken', '🍗 Chicken'],
+    ['beef', '🥩 Beef'],
+    ['pork', '🥓 Pork'],
+    ['seafood', '🦐 Seafood'],
+    ['bbq', '🔥 BBQ'],
   ];
 
   // ---------- Home ----------
@@ -1104,13 +1104,13 @@
     view.innerHTML = `
       <section class="hero">
         <div class="hero-inner">
-          <span class="eyebrow">≡ƒÆÄ Verified Independent Culinary Roster ┬╖ United States</span>
+          <span class="eyebrow">💎 Verified Independent Culinary Roster · United States</span>
           <h1>Great food,<br><span>hiding in plain sight.</span></h1>
-          <p>${visibleCount.toLocaleString()} independent mom-and-pop kitchens verified from official public health inspection recordsΓÇöwith live kitchen status, verified menu prices, direct calling, and turn-by-turn navigation.</p>
+          <p>${visibleCount.toLocaleString()} independent mom-and-pop kitchens verified from official public health inspection records—with live kitchen status, verified menu prices, direct calling, and turn-by-turn navigation.</p>
           <form class="search" id="search-form" role="search">
-            <input id="q" type="search" placeholder="Search dish, cuisine, city, or 5-digit ZIP (e.g. 91761, birria, pho)ΓÇª" value="${esc(state.q)}" autocomplete="off" />
+            <input id="q" type="search" placeholder="Search dish, cuisine, city, or 5-digit ZIP (e.g. 91761, birria, pho)…" value="${esc(state.q)}" autocomplete="off" />
             <button class="btn btn-near-me" id="btn-near-me" type="button" title="Use current GPS location to find nearest open gems">
-              <span class="gps-icon">≡ƒôì</span>
+              <span class="gps-icon">📍</span>
               <span>Near Me</span>
             </button>
             <button class="btn" type="submit">Find gems</button>
@@ -1130,39 +1130,39 @@
           <div class="filter-bar">
             <div class="filter-primary-row">
               <select class="select" id="cuisineSelect" aria-label="Cuisines, Dietary & Proteins">
-                <option value="">≡ƒì╜∩╕Å All Cuisines & Categories</option>
-                <optgroup label="≡ƒÑù Dietary & Faith">
+                <option value="">🍽️ All Cuisines & Categories</option>
+                <optgroup label="🥗 Dietary & Faith">
                   ${DIETARY_OPTIONS.map(([val, lbl]) => `<option value="${esc(val)}" ${val === state.cuisine ? 'selected' : ''}>${esc(lbl)}</option>`).join('')}
                 </optgroup>
-                <optgroup label="≡ƒÑ⌐ Proteins & BBQ">
+                <optgroup label="🥩 Proteins & BBQ">
                   ${PROTEIN_OPTIONS.map(([val, lbl]) => `<option value="${esc(val)}" ${val === state.cuisine ? 'selected' : ''}>${esc(lbl)}</option>`).join('')}
                 </optgroup>
-                <optgroup label="≡ƒîÄ Cuisines (AΓÇôZ)">
+                <optgroup label="🌎 Cuisines (A–Z)">
                   ${availableCuisines.map((c) => `<option value="${esc(c)}" ${c === state.cuisine ? 'selected' : ''}>${ emojiFor({ cuisine: c }) } ${esc(c)}</option>`).join('')}
                 </optgroup>
               </select>
               <button type="button" class="mobile-filter-btn ${state.mobileFiltersOpen || hasSecondaryFilters ? 'active' : ''}" id="mobileFilterToggle" aria-expanded="${Boolean(state.mobileFiltersOpen || hasSecondaryFilters)}">
-                ΓÜÖ∩╕Å <span>Filters</span>
+                ⚙️ <span>Filters</span>
               </button>
             </div>
             <div class="filter-secondary-row ${state.mobileFiltersOpen || hasSecondaryFilters ? 'open' : ''}" id="filterSecondary">
               <select class="select" id="radiusSelect" aria-label="Distance Radius">
-                <option value="0" ${!state.radiusMiles ? 'selected' : ''}>≡ƒôÅ All Distances</option>
-                <option value="5" ${state.radiusMiles === 5 ? 'selected' : ''}>≡ƒôì Within 5 Miles (Default Open Now)</option>
-                <option value="10" ${state.radiusMiles === 10 ? 'selected' : ''}>≡ƒôì Within 10 Miles</option>
-                <option value="15" ${state.radiusMiles === 15 ? 'selected' : ''}>≡ƒôì Within 15 Miles</option>
-                <option value="25" ${state.radiusMiles === 25 ? 'selected' : ''}>≡ƒôì Within 25 Miles</option>
+                <option value="0" ${!state.radiusMiles ? 'selected' : ''}>📏 All Distances</option>
+                <option value="5" ${state.radiusMiles === 5 ? 'selected' : ''}>📍 Within 5 Miles (Default Open Now)</option>
+                <option value="10" ${state.radiusMiles === 10 ? 'selected' : ''}>📍 Within 10 Miles</option>
+                <option value="15" ${state.radiusMiles === 15 ? 'selected' : ''}>📍 Within 15 Miles</option>
+                <option value="25" ${state.radiusMiles === 25 ? 'selected' : ''}>📍 Within 25 Miles</option>
               </select>
               <select class="select" id="region" aria-label="Region or Market">
-                <option value="">≡ƒîÄ All Regions / Metros</option>
+                <option value="">🌎 All Regions / Metros</option>
                 ${SOCAL_REGIONS.map((reg) => `<option value="${reg.id}" ${reg.id === state.region ? 'selected' : ''}>${reg.label}</option>`).join('')}
               </select>
               <select class="select" id="sort" aria-label="Sort">
-                <option value="gem">≡ƒôî Featured & Hidden Gems First</option>
-                <option value="health">≡ƒ¢í∩╕Å Highest Health Score (100 ΓåÆ 90)</option>
-                <option value="top">Γ¡É Top Rated</option>
-                <option value="hidden">≡ƒò╡∩╕Å Most Hidden (Fewest Ratings)</option>
-                <option value="az">AΓÇôZ</option>
+                <option value="gem">📌 Featured & Hidden Gems First</option>
+                <option value="health">🛡️ Highest Health Score (100 → 90)</option>
+                <option value="top">⭐ Top Rated</option>
+                <option value="hidden">🕵️ Most Hidden (Fewest Ratings)</option>
+                <option value="az">A–Z</option>
               </select>
               <div class="price-toggle" role="group" aria-label="Price">
                 ${[1, 2, 3].map((p) => `<button data-price="${p}" aria-pressed="${state.prices.has(p)}">${price(p)}</button>`).join('')}
@@ -1177,15 +1177,15 @@
         <div class="grid" id="grid"></div>
         <div class="load-more-wrap" id="load-more-container" hidden>
           <button type="button" class="btn-load-more" id="btn-load-more">
-            <span>Show More Gems Γ¼ç∩╕Å</span>
+            <span>Show More Gems ⬇️</span>
           </button>
         </div>
         <div class="cta-band">
-          <div class="bg-emo">≡ƒæ⌐ΓÇì≡ƒì│</div>
+          <div class="bg-emo">👩‍🍳</div>
           <h3>Own a small restaurant?</h3>
           <p>Contact us to inquire about getting your restaurant listed.</p>
           <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-gold" href="#/add">≡ƒô⌐ Contact Us</a>
+            <a class="btn btn-gold" href="#/add">📩 Contact Us</a>
           </div>
         </div>
       </div>`;
@@ -1296,11 +1296,11 @@
       }
       nearMeBtn.addEventListener('click', () => {
         if (!navigator.geolocation) {
-          toast('ΓÜá∩╕Å Geolocation is not supported by your browser.');
+          toast('⚠️ Geolocation is not supported by your browser.');
           return;
         }
         nearMeBtn.classList.add('loading');
-        nearMeBtn.querySelector('span:last-child').textContent = 'LocatingΓÇª';
+        nearMeBtn.querySelector('span:last-child').textContent = 'Locating…';
 
         navigator.geolocation.getCurrentPosition(
           (pos) => {
@@ -1331,7 +1331,7 @@
               el.setAttribute('aria-selected', on);
             });
 
-            toast('≡ƒôì Location found! Showing open gems within 5 miles.');
+            toast('📍 Location found! Showing open gems within 5 miles.');
             renderResults(true);
           },
           (err) => {
@@ -1339,7 +1339,7 @@
             console.warn('Geolocation error:', err);
             let msg = 'Could not get location. Check browser location permissions.';
             if (err.code === 1) msg = 'Location permission denied. Please allow location access.';
-            toast(`ΓÜá∩╕Å ${msg}`);
+            toast(`⚠️ ${msg}`);
           },
           { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
         );
@@ -1517,16 +1517,16 @@
 
     const active = [
       ...(state.mealTab === 'open_now'
-        ? [`≡ƒƒó Open Right Now (Within ${activeRadius} Miles)`]
+        ? [`🟢 Open Right Now (Within ${activeRadius} Miles)`]
         : state.mealTab
           ? [TAG_LABEL[state.mealTab]]
           : []),
       ...(isGpsActive
-        ? [`≡ƒôì Near Your Location (Within ${activeRadius} Miles ┬╖ Closest First)`]
+        ? [`📍 Near Your Location (Within ${activeRadius} Miles · Closest First)`]
         : activeZip
-          ? [`≡ƒôì Near ${geoLabel} (Within ${activeRadius} Miles ┬╖ Nearest First)`]
+          ? [`📍 Near ${geoLabel} (Within ${activeRadius} Miles · Nearest First)`]
           : activeRadius > 0 && state.mealTab !== 'open_now'
-            ? [`≡ƒôì Within ${activeRadius} Miles`]
+            ? [`📍 Within ${activeRadius} Miles`]
             : []),
       ...[...state.chips].map((c) => TAG_LABEL[c])
     ];
@@ -1547,23 +1547,23 @@
     }
 
     if (isGpsActive) {
-      const radiusPrefix = ` (Within ${activeRadius} Miles ┬╖ Closest First)`;
+      const radiusPrefix = ` (Within ${activeRadius} Miles · Closest First)`;
       const otherChips = [...state.chips].map((c) => TAG_LABEL[c]);
       const mealPrefix = state.mealTab && state.mealTab !== 'open_now' ? [TAG_LABEL[state.mealTab]] : [];
       const parts = [...mealPrefix, ...otherChips];
       $('#results-title').textContent = parts.length
-        ? `≡ƒôì ${scopeLabel}${radiusPrefix} ┬╖ ${parts.join(' + ')}`
-        : `≡ƒôì ${scopeLabel}${radiusPrefix}`;
+        ? `📍 ${scopeLabel}${radiusPrefix} · ${parts.join(' + ')}`
+        : `📍 ${scopeLabel}${radiusPrefix}`;
     } else if (activeZip) {
-      const radiusPrefix = activeRadius > 0 ? ` (Within ${activeRadius} Miles ┬╖ Nearest First)` : '';
+      const radiusPrefix = activeRadius > 0 ? ` (Within ${activeRadius} Miles · Nearest First)` : '';
       const otherChips = [...state.chips].map((c) => TAG_LABEL[c]);
       const mealPrefix = state.mealTab && state.mealTab !== 'open_now' ? [TAG_LABEL[state.mealTab]] : [];
       const parts = [...mealPrefix, ...otherChips];
       $('#results-title').textContent = parts.length
-        ? `≡ƒôì ${scopeLabel}${radiusPrefix} ┬╖ ${parts.join(' + ')}`
-        : `≡ƒôì ${scopeLabel}${radiusPrefix}`;
+        ? `📍 ${scopeLabel}${radiusPrefix} · ${parts.join(' + ')}`
+        : `📍 ${scopeLabel}${radiusPrefix}`;
     } else {
-      $('#results-title').textContent = active.length ? `${active.join(' + ')} ┬╖ ${scopeLabel}` : scopeLabel;
+      $('#results-title').textContent = active.length ? `${active.join(' + ')} · ${scopeLabel}` : scopeLabel;
     }
 
     const PAGE_SIZE = 24;
@@ -1577,7 +1577,7 @@
     if (loadMoreContainer) {
       if (list.length > pageItems.length) {
         loadMoreContainer.hidden = false;
-        if (loadMoreBtn) loadMoreBtn.querySelector('span').textContent = `Load More Gems (${(list.length - pageItems.length).toLocaleString()} remaining) Γ¼ç∩╕Å`;
+        if (loadMoreBtn) loadMoreBtn.querySelector('span').textContent = `Load More Gems (${(list.length - pageItems.length).toLocaleString()} remaining) ⬇️`;
       } else {
         loadMoreContainer.hidden = true;
       }
@@ -1589,24 +1589,24 @@
         const isOutState = geo.state !== 'CA';
         grid.innerHTML = `
           <div class="empty" style="grid-column:1/-1">
-            <div class="big">≡ƒôì</div>
+            <div class="big">📍</div>
             <h3>No verified gems within ${activeRadius} miles of ${esc(placeName)}</h3>
             <p>${isOutState ? "We haven't ingested this county's public health inspection records yet. We are expanding nationally soon!" : "Try expanding the distance radius or searching an adjacent city or ZIP code."}</p>
             <div style="display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap">
               <button class="btn btn-gold" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
-              ${isOutState ? `<a class="btn btn-ghost" href="#/add">≡ƒô⌐ Request Ingestion for ${esc(geo.city)}, ${esc(geo.state)}</a>` : ''}
+              ${isOutState ? `<a class="btn btn-ghost" href="#/add">📩 Request Ingestion for ${esc(geo.city)}, ${esc(geo.state)}</a>` : ''}
             </div>
           </div>`;
       } else if (activeZip) {
         grid.innerHTML = `
           <div class="empty" style="grid-column:1/-1">
-            <div class="big">≡ƒì╜∩╕Å</div>
+            <div class="big">🍽️</div>
             <h3>No verified gems within ${activeRadius} miles of ${esc(geoLabel || activeZip)}</h3>
             <p>Try expanding the distance radius or searching an adjacent city or ZIP code.</p>
             <button class="btn btn-gold" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
           </div>`;
       } else {
-        grid.innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">≡ƒì╜∩╕Å</div><h3>No gems match that filter</h3><p>Try expanding the distance radius, switching meal tabs, or clearing a filter chip above.</p><button class="btn" onclick="document.getElementById('clear').click()">Reset filters</button></div>`;
+        grid.innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">🍽️</div><h3>No gems match that filter</h3><p>Try expanding the distance radius, switching meal tabs, or clearing a filter chip above.</p><button class="btn" onclick="document.getElementById('clear').click()">Reset filters</button></div>`;
       }
       return;
     }
@@ -1632,8 +1632,8 @@
             ${b ? `<span class="badge ${b.cls}">${b.txt}</span>` : ''}
             <div class="media-flags">
               <span>${r.featured
-                ? `<span class="flag pinned">≡ƒôî Featured ┬╖ ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                : `<span class="flag">≡ƒôì ${distMi.toFixed(1)} mi ┬╖ ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
+                ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
             </div>
           </div>
           <div class="card-body">
@@ -1645,22 +1645,22 @@
                 <span class="rating-pill" title="${a.toFixed(1)} Star Rating"><span class="stars-sym">${starsTxt(a)}</span> ${a.toFixed(1)}</span>
               </div>
             </div>
-            <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} ┬╖ ${price(r.price)} ┬╖ ${esc(r.city)}</div>
+            <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} · ${price(r.price)} · ${esc(r.city)}</div>
 
             <!-- 1. Dynamic Operational Status Pill & Today's Live Hours (Single Compact Line + Weekly Tooltip/Popover) -->
             <div class="op-status-box">
               <span class="op-pill ${op.cls}">${op.dot} ${esc(op.text)}</span>
               <span class="op-hours" title="Full Weekly Hours: ${esc(hrs.fullSchedule)}">
-                <span>≡ƒòÆ ${esc(hrs.todayText)}</span>
-                ${hrs.hasWeeklyBreakdown ? `<button type="button" class="hours-info-btn" data-hours-toggle="${esc(r.id)}" title="Full Weekly Schedule: ${esc(hrs.fullSchedule)}" aria-expanded="false">Γôÿ Weekly</button>` : ''}
+                <span>🕒 ${esc(hrs.todayText)}</span>
+                ${hrs.hasWeeklyBreakdown ? `<button type="button" class="hours-info-btn" data-hours-toggle="${esc(r.id)}" title="Full Weekly Schedule: ${esc(hrs.fullSchedule)}" aria-expanded="false">ⓘ Weekly</button>` : ''}
               </span>
             </div>
-            ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" hidden>≡ƒôà <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
+            ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" hidden>📅 <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
 
             <!-- 2. Scratch-Made Line Only (Full Sentence, No Ellipsis) -->
             ${r.scratchCommitment ? `
               <div class="roots-scratch-block">
-                <div class="roots-scratch-line">ΓÅ▒∩╕Å <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
+                <div class="roots-scratch-line">⏱️ <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
               </div>
             ` : ''}
 
@@ -1671,11 +1671,11 @@
             <div class="ec-ad-box">
               <div class="ec-action-grid">
                 <a class="ec-tab-btn call-btn" href="tel:${esc(cleanTel)}" data-track-call="${esc(r.id)}" title="Tap to call">
-                  <span>≡ƒô₧ Call</span>
+                  <span>📞 Call</span>
                   <small>${esc(r.phone || '(909) 555-0199')}</small>
                 </a>
                 <a class="ec-tab-btn map-btn" href="${esc(mapsUrl)}" target="_blank" rel="noopener" data-track-map="${esc(r.id)}" title="Open turn-by-turn GPS directions in Maps">
-                  <span>≡ƒôì Route Directions</span>
+                  <span>📍 Route Directions</span>
                   <small>${esc(r.city)}, ${esc(r.state || 'CA')} ${esc(r.zip || '')}</small>
                 </a>
               </div>
@@ -1706,7 +1706,7 @@
     const totalSent = calls + directions;
     const costPerCustomer = totalSent > 0 ? (10 / totalSent).toFixed(2) : '0.00';
 
-    const smsText = `Hi ${ownerName}, for your $10 ad this month on Hidden Food Gems, your listing (${bizName}) generated:\nΓÇó ${calls} direct calls to your counter*\nΓÇó ${directions} turn-by-turn navigation routes to your storefront*\nCost per customer sent: ~$${costPerCustomer} Here is the link to renew your featured spot for next month: ${stripeUrl}`;
+    const smsText = `Hi ${ownerName}, for your $10 ad this month on HiddenFoodGem.com, your listing (${bizName}) generated:\n• ${calls} direct calls to your counter*\n• ${directions} turn-by-turn navigation routes to your storefront*\nCost per customer sent: ~$${costPerCustomer} Here is the link to renew your featured spot for next month: ${stripeUrl}`;
 
     // Aggregate totals across flagship 12
     const allCalls = top12.reduce((sum, r) => sum + getAnalytics(r).calls, 0);
@@ -1715,9 +1715,9 @@
     view.innerHTML = `
       <section class="analytics-hero">
         <div class="analytics-hero-inner">
-          <span class="eyebrow">≡ƒôè The 2 Numbers That Prove Value ┬╖ $10/mo Featured Pin</span>
+          <span class="eyebrow">📊 The 2 Numbers That Prove Value · $10/mo Featured Pin</span>
           <h1 style="font-family:var(--display);font-size:clamp(1.8rem,5vw,2.7rem);margin:10px 0 6px">Owner Click Tracker &amp; End-of-Month Renewal Proof</h1>
-          <p style="margin:0;color:rgba(255,255,255,.85);max-width:680px">Every time a diner taps <b>≡ƒô₧ Call</b> or <b>≡ƒôì Route Directions</b> on any restaurant card, their click is recorded automatically below so you can text or hand-deliver undeniable monthly proof to the owner.</p>
+          <p style="margin:0;color:rgba(255,255,255,.85);max-width:680px">Every time a diner taps <b>📞 Call</b> or <b>📍 Route Directions</b> on any restaurant card, their click is recorded automatically below so you can text or hand-deliver undeniable monthly proof to the owner.</p>
         </div>
       </section>
 
@@ -1725,9 +1725,9 @@
         <div class="proof-generator-card" id="adminLeadsModal">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:14px">
             <div>
-              <span class="heritage-pill" style="background:#1e3a8a">≡ƒôè End-of-Month Proof &amp; Renewal Generator</span>
+              <span class="heritage-pill" style="background:#1e3a8a">📊 End-of-Month Proof &amp; Renewal Generator</span>
               <h2 style="font-family:var(--display);font-size:1.55rem;margin:4px 0 2px">${esc(bizName)}</h2>
-              <div class="meta">≡ƒæñ Owner: <b>${esc(ownerName)}</b> ┬╖ ≡ƒô₧ ${esc(phone)} ┬╖ ≡ƒôì ${esc(address)}</div>
+              <div class="meta">👤 Owner: <b>${esc(ownerName)}</b> · 📞 ${esc(phone)} · 📍 ${esc(address)}</div>
             </div>
             <div style="min-width:260px">
               <label style="font-size:.78rem;font-weight:800;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px">Select Restaurant Preset:</label>
@@ -1735,11 +1735,11 @@
                 <optgroup label="Flagship 12 Verified Spots (Near 91761)">
                   ${top12.map((r) => {
                     const an = getAnalytics(r);
-                    return `<option value="${esc(r.id)}" ${r.id === state.selectedAnalyticsId ? 'selected' : ''}>${esc(r.name)} (${an.calls} calls ┬╖ ${an.directions} routes)</option>`;
+                    return `<option value="${esc(r.id)}" ${r.id === state.selectedAnalyticsId ? 'selected' : ''}>${esc(r.name)} (${an.calls} calls · ${an.directions} routes)</option>`;
                   }).join('')}
                 </optgroup>
                 <optgroup label="Custom Restaurant / Storefront">
-                  <option value="__custom__" ${isCustom ? 'selected' : ''}>Γ£¿ Custom Local Restaurant (Configure Any Owner)</option>
+                  <option value="__custom__" ${isCustom ? 'selected' : ''}>✨ Custom Local Restaurant (Configure Any Owner)</option>
                 </optgroup>
               </select>
             </div>
@@ -1747,7 +1747,7 @@
 
           ${isCustom ? `
             <div class="section" style="margin:0 0 14px;background:var(--cream)">
-              <h4 style="margin-bottom:10px">Γ£¿ Custom Restaurant Configuration</h4>
+              <h4 style="margin-bottom:10px">✨ Custom Restaurant Configuration</h4>
               <div class="two">
                 <label style="font-size:.82rem;font-weight:700">Restaurant Name<input class="input" id="cust-name" value="${esc(state.customBiz.name)}" /></label>
                 <label style="font-size:.82rem;font-weight:700">Owner First Name<input class="input" id="cust-owner" value="${esc(state.customBiz.ownerName)}" /></label>
@@ -1760,31 +1760,31 @@
           ` : `
             <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--cream);padding:10px 14px;border-radius:14px;border:1px solid var(--line);margin-bottom:14px">
               <span style="font-size:.82rem;font-weight:800">Live Card Operational Pill:</span>
-              <button type="button" class="chip ${kitchenStatus === 'open' ? 'active' : ''}" data-set-status="open" aria-pressed="${kitchenStatus === 'open'}">≡ƒƒó Open Now</button>
-              <button type="button" class="chip ${kitchenStatus === 'low_prep' ? 'active' : ''}" data-set-status="low_prep" aria-pressed="${kitchenStatus === 'low_prep'}">≡ƒƒí Kitchen Low on Prep</button>
-              <button type="button" class="chip ${kitchenStatus === 'sold_out' ? 'active' : ''}" data-set-status="sold_out" aria-pressed="${kitchenStatus === 'sold_out'}">≡ƒö┤ Sold Out for Today</button>
+              <button type="button" class="chip ${kitchenStatus === 'open' ? 'active' : ''}" data-set-status="open" aria-pressed="${kitchenStatus === 'open'}">🟢 Open Now</button>
+              <button type="button" class="chip ${kitchenStatus === 'low_prep' ? 'active' : ''}" data-set-status="low_prep" aria-pressed="${kitchenStatus === 'low_prep'}">🟡 Kitchen Low on Prep</button>
+              <button type="button" class="chip ${kitchenStatus === 'sold_out' ? 'active' : ''}" data-set-status="sold_out" aria-pressed="${kitchenStatus === 'sold_out'}">🔴 Sold Out for Today</button>
             </div>
           `}
 
           <!-- Live Scorecard KPI Cards -->
           <div class="kpi-grid">
             <div class="kpi-card">
-              <div class="kpi-lbl">≡ƒô₧ Direct Calls</div>
+              <div class="kpi-lbl">📞 Direct Calls</div>
               <div class="kpi-val" style="color:#15803d">${calls}</div>
               <div class="kpi-sub">Tapped to dial counter directly</div>
             </div>
             <div class="kpi-card">
-              <div class="kpi-lbl">≡ƒôì Navigation Routes</div>
+              <div class="kpi-lbl">📍 Navigation Routes</div>
               <div class="kpi-val" style="color:#1d4ed8">${directions}</div>
               <div class="kpi-sub">Turn-by-turn GPS to storefront</div>
             </div>
             <div class="kpi-card">
-              <div class="kpi-lbl">≡ƒæÑ High-Intent Customers Sent</div>
+              <div class="kpi-lbl">👥 High-Intent Customers Sent</div>
               <div class="kpi-val">${totalSent}</div>
               <div class="kpi-sub">Total calls + driving routes</div>
             </div>
             <div class="kpi-card" style="background:#fffdf6;border-color:var(--saffron)">
-              <div class="kpi-lbl">≡ƒÆ░ Cost Per Customer Sent</div>
+              <div class="kpi-lbl">💰 Cost Per Customer Sent</div>
               <div class="kpi-val" style="color:var(--chili)">~$${costPerCustomer}</div>
               <div class="kpi-sub">For a $10/mo ad ($10 / ${totalSent || 1} = $${costPerCustomer})</div>
             </div>
@@ -1792,7 +1792,7 @@
 
           <div style="margin-top:14px">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
-              <b style="font-size:.9rem">≡ƒÆ¼ Automated End-of-Month Renewal Text Message:</b>
+              <b style="font-size:.9rem">💬 Automated End-of-Month Renewal Text Message:</b>
               <span class="hint">Ready to text or print for ${esc(ownerName)}</span>
             </div>
             <div class="sms-preview-box" id="sms-preview-text">${esc(smsText)}</div>
@@ -1800,19 +1800,19 @@
 
           <!-- 1-Click Admin Controls -->
           <div class="admin-btn-row">
-            <button type="button" class="btn btn-gold btn-sm" id="btn-copy-sms">≡ƒôï Copy Text Message</button>
-            <a class="btn btn-sm" id="btn-open-sms" href="sms:${esc(phone.replace(/[^\d+]/g, ''))}?body=${encodeURIComponent(smsText)}" style="background:#15803d">≡ƒÆ¼ Open SMS App</a>
-            <button type="button" class="btn btn-light btn-sm" id="btn-print-proof">≡ƒû¿∩╕Å Print / Download 1-Page Report</button>
-            <button type="button" class="btn btn-light btn-sm" id="btn-test-call">ΓÜí +1 Test Call</button>
-            <button type="button" class="btn btn-light btn-sm" id="btn-test-route">ΓÜí +1 Test Route</button>
-            <button type="button" class="btn btn-light btn-sm" id="btn-reset-cycle" style="color:var(--chili)">≡ƒöä Reset Cycle</button>
+            <button type="button" class="btn btn-gold btn-sm" id="btn-copy-sms">📋 Copy Text Message</button>
+            <a class="btn btn-sm" id="btn-open-sms" href="sms:${esc(phone.replace(/[^\d+]/g, ''))}?body=${encodeURIComponent(smsText)}" style="background:#15803d">💬 Open SMS App</a>
+            <button type="button" class="btn btn-light btn-sm" id="btn-print-proof">🖨️ Print / Download 1-Page Report</button>
+            <button type="button" class="btn btn-light btn-sm" id="btn-test-call">⚡ +1 Test Call</button>
+            <button type="button" class="btn btn-light btn-sm" id="btn-test-route">⚡ +1 Test Route</button>
+            <button type="button" class="btn btn-light btn-sm" id="btn-reset-cycle" style="color:var(--chili)">🔄 Reset Cycle</button>
           </div>
         </div>
 
         <!-- All Restaurants Click Leaderboard -->
         <div class="results-head" style="margin-top:26px">
-          <h2>≡ƒôê Monthly Click Leaderboard (Flagship 12 Near 91761)</h2>
-          <span>Total Across 12 Spots: <b>${allCalls} Calls</b> ┬╖ <b>${allDirs} Map Routes</b> (<b>${allCalls + allDirs} Customers Sent</b>)</span>
+          <h2>📈 Monthly Click Leaderboard (Flagship 12 Near 91761)</h2>
+          <span>Total Across 12 Spots: <b>${allCalls} Calls</b> · <b>${allDirs} Map Routes</b> (<b>${allCalls + allDirs} Customers Sent</b>)</span>
         </div>
         <div class="analytics-table-wrap">
           <table class="analytics-table">
@@ -1821,10 +1821,10 @@
                 <th>Restaurant</th>
                 <th>Owner</th>
                 <th>Live Status Pill</th>
-                <th>≡ƒô₧ Direct Calls</th>
-                <th>≡ƒôì Map Routes</th>
-                <th>≡ƒæÑ Total Sent</th>
-                <th>≡ƒÆ░ Cost / Customer</th>
+                <th>📞 Direct Calls</th>
+                <th>📍 Map Routes</th>
+                <th>👥 Total Sent</th>
+                <th>💰 Cost / Customer</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -1838,12 +1838,12 @@
                   <tr style="${r.id === state.selectedAnalyticsId ? 'background:#fff6e3;font-weight:700' : ''}">
                     <td><b>${esc(r.name)}</b><br><small class="meta">${esc(r.address)}, ${esc(r.city)}</small></td>
                     <td>${esc(an.ownerName)}</td>
-                    <td><span class="op-pill ${op.cls}" style="font-size:.7rem">${op.dot} ${esc(op.text.split('ΓÇó')[0])}</span></td>
+                    <td><span class="op-pill ${op.cls}" style="font-size:.7rem">${op.dot} ${esc(op.text.split('•')[0])}</span></td>
                     <td style="color:#15803d;font-weight:800">${an.calls}</td>
                     <td style="color:#1d4ed8;font-weight:800">${an.directions}</td>
                     <td><b>${tot}</b></td>
                     <td style="color:var(--chili);font-weight:800">~$${cpc}</td>
-                    <td><button type="button" class="ec-proof-btn" data-select-proof="${esc(r.id)}">Load Proof ΓåÆ</button></td>
+                    <td><button type="button" class="ec-proof-btn" data-select-proof="${esc(r.id)}">Load Proof →</button></td>
                   </tr>`;
               }).join('')}
             </tbody>
@@ -1873,9 +1873,9 @@
         btn.addEventListener('click', async () => {
           const st = btn.dataset.setStatus;
           const statusMap = {
-            open: 'Open Now ΓÇó Closing at 8:30 PM',
-            low_prep: 'Kitchen Low on Prep ΓÇó Calling Ahead Recommended',
-            sold_out: 'Sold Out for Today ΓÇó Reopens Tomorrow at 11:00 AM'
+            open: 'Open Now • Closing at 8:30 PM',
+            low_prep: 'Kitchen Low on Prep • Calling Ahead Recommended',
+            sold_out: 'Sold Out for Today • Reopens Tomorrow at 11:00 AM'
           };
           await recordClickEvent(state.selectedAnalyticsId, 'status', { kitchenStatus: st, statusLabel: statusMap[st] });
           toast(`Updated live card status to: ${statusMap[st]}`);
@@ -1886,24 +1886,24 @@
 
     $('#btn-copy-sms').addEventListener('click', async () => {
       await copyText(smsText);
-      toast(`≡ƒôï Renewal SMS for ${ownerName} copied to clipboard!`);
+      toast(`📋 Renewal SMS for ${ownerName} copied to clipboard!`);
     });
 
     $('#btn-test-call').addEventListener('click', async () => {
       const updated = await recordClickEvent(state.selectedAnalyticsId, 'call');
-      toast(`≡ƒô₧ Dialing direct line ΓÇö Call recorded (#${updated.calls})`);
+      toast(`📞 Dialing direct line — Call recorded (#${updated.calls})`);
       renderAnalytics();
     });
 
     $('#btn-test-route').addEventListener('click', async () => {
       const updated = await recordClickEvent(state.selectedAnalyticsId, 'direction');
-      toast(`≡ƒôì Opening navigation in Maps ΓÇö Driving route recorded (#${updated.directions})`);
+      toast(`📍 Opening navigation in Maps — Driving route recorded (#${updated.directions})`);
       renderAnalytics();
     });
 
     $('#btn-reset-cycle').addEventListener('click', async () => {
       await recordClickEvent(state.selectedAnalyticsId, 'reset');
-      toast(`≡ƒöä Monthly click counters reset to 0 for ${bizName}`);
+      toast(`🔄 Monthly click counters reset to 0 for ${bizName}`);
       renderAnalytics();
     });
 
@@ -1920,9 +1920,9 @@
           .msg{background:#f6ebdd;padding:16px;border-radius:12px;white-space:pre-wrap;font-family:monospace;line-height:1.5}
         </style></head><body>
         <div class="box">
-          <div style="font-size:.8rem;font-weight:800;text-transform:uppercase;color:#d9381e">≡ƒÆÄ Hidden Food Gems ┬╖ Monthly Featured Pin Proof ($10/mo)</div>
+          <div style="font-size:.8rem;font-weight:800;text-transform:uppercase;color:#d9381e">💎 HiddenFoodGem.com · Monthly Featured Pin Proof ($10/mo)</div>
           <h1 style="margin:6px 0 4px">${esc(bizName)}</h1>
-          <div>Prepared for: <b>${esc(ownerName)}</b> ┬╖ ${esc(address)} ┬╖ ${esc(phone)}</div>
+          <div>Prepared for: <b>${esc(ownerName)}</b> · ${esc(address)} · ${esc(phone)}</div>
           <div class="kpis">
             <div class="kpi"><b>${calls}</b>Direct Calls</div>
             <div class="kpi"><b>${directions}</b>Map Routes</div>
@@ -1982,7 +1982,7 @@
     const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
     const mapsUrl = getMapsUrl(r);
     const submitMailSubject = `Photo / Menu Submission: ${r.name} (${r.city})`;
-    const submitMailBody = `Hello Hidden Food Gems Team,\n\nI am the owner or representative of ${r.name} in ${r.city}. Please find attached our verified dish photo and menu.\n\nRestaurant: ${r.name}\nAddress: ${r.address}, ${r.city}\nPhone: ${r.phone || ''}`;
+    const submitMailBody = `Hello HiddenFoodGem.com Team,\n\nI am the owner or representative of ${r.name} in ${r.city}. Please find attached our verified dish photo and menu.\n\nRestaurant: ${r.name}\nAddress: ${r.address}, ${r.city}\nPhone: ${r.phone || ''}`;
     const submitMailtoUrl = `mailto:letsgetoutkids@gmail.com?subject=${encodeURIComponent(submitMailSubject)}&body=${encodeURIComponent(submitMailBody)}`;
 
     openSheet(`
@@ -1999,22 +1999,22 @@
             <span class="rating-pill" title="${a ? a.toFixed(1) + ' star rating' : '5.0 star rating'}"><span class="stars-sym">${starsTxt(a || 5)}</span> ${(a || 5).toFixed(1)}</span>
           </div>
         </div>
-        <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} ┬╖ ${price(r.price)} ┬╖ ${esc(r.city)}, ${esc(r.state || 'CA')} ${esc(r.zip || '')} ${r.driveFrom91761 ? `┬╖ ≡ƒÜù ${esc(r.driveFrom91761)}` : ''}</div>
+        <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} · ${price(r.price)} · ${esc(r.city)}, ${esc(r.state || 'CA')} ${esc(r.zip || '')} ${r.driveFrom91761 ? `· 🚗 ${esc(r.driveFrom91761)}` : ''}</div>
 
         <!-- Single-Line Operational Status & Today's Live Hours + Weekly Tooltip/Popover -->
         <div class="op-status-box">
           <span class="op-pill ${op.cls}">${op.dot} ${esc(op.text)}</span>
           <div class="op-hours" title="Full Weekly Hours: ${esc(hrs.fullSchedule)}">
-            <span>≡ƒòÆ ${esc(hrs.todayText)}</span>
-            ${hrs.hasWeeklyBreakdown ? `<button type="button" class="hours-info-btn" data-detail-hours-toggle title="Full Weekly Schedule: ${esc(hrs.fullSchedule)}" aria-expanded="false">Γôÿ Weekly</button>` : ''}
+            <span>🕒 ${esc(hrs.todayText)}</span>
+            ${hrs.hasWeeklyBreakdown ? `<button type="button" class="hours-info-btn" data-detail-hours-toggle title="Full Weekly Schedule: ${esc(hrs.fullSchedule)}" aria-expanded="false">ⓘ Weekly</button>` : ''}
           </div>
         </div>
-        ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" id="detail-weekly-hours" hidden>≡ƒôà <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
+        ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" id="detail-weekly-hours" hidden>📅 <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
 
         <!-- Scratch-Made Line Only (Full Sentence, No Ellipsis) -->
         ${r.scratchCommitment ? `
           <div class="roots-scratch-block">
-            <div class="roots-scratch-line">ΓÅ▒∩╕Å <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
+            <div class="roots-scratch-line">⏱️ <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
           </div>
         ` : ''}
 
@@ -2036,9 +2036,9 @@
 
         <!-- Secure Verified Submission Row: Contact Us to Upload Menu / Photo -->
         <div class="owner-menu-upload-row">
-          <span>≡ƒô╕ Want to update your menu or dish photo?</span>
+          <span>📸 Want to update your menu or dish photo?</span>
           <a class="owner-upload-pill" href="${esc(submitMailtoUrl)}">
-            ≡ƒô⌐ Contact Us
+            📩 Contact Us
           </a>
         </div>
 
@@ -2046,11 +2046,11 @@
         <div class="ec-ad-box" style="margin-top:2px">
           <div class="ec-action-grid">
             <a class="ec-tab-btn call-btn" href="tel:${esc(cleanTel)}" data-detail-call="${esc(r.id)}">
-              <span>≡ƒô₧ Call</span>
+              <span>📞 Call</span>
               <small>${esc(r.phone || '(909) 555-0199')}</small>
             </a>
             <a class="ec-tab-btn map-btn" href="${esc(mapsUrl)}" target="_blank" rel="noopener" data-detail-map="${esc(r.id)}">
-              <span>≡ƒôì Route Directions</span>
+              <span>📍 Route Directions</span>
               <small>${esc(r.address)}, ${esc(r.city)}</small>
             </a>
           </div>
@@ -2107,14 +2107,14 @@
   async function upload(r, type, file) {
     const ext = (file.name.split('.').pop() || 'jpg').toLowerCase();
     const bar = $('#progress', sheetBody), txt = $('#progress-txt', sheetBody);
-    bar.hidden = false; txt.textContent = 'UploadingΓÇª';
+    bar.hidden = false; txt.textContent = 'Uploading…';
 
     if (IS_STANDALONE) {
       const reader = new FileReader();
       reader.onprogress = (e) => {
         if (e.lengthComputable) {
           const pct = Math.round((e.loaded / e.total) * 100);
-          bar.firstElementChild.style.width = pct + '%'; txt.textContent = `SavingΓÇª ${pct}%`;
+          bar.firstElementChild.style.width = pct + '%'; txt.textContent = `Saving… ${pct}%`;
         }
       };
       reader.onload = () => {
@@ -2122,7 +2122,7 @@
         r.media.unshift({ type, file: dataUrl, uploadedAt: new Date().toISOString() });
         if (type === 'photo' && !r.image) r.image = dataUrl;
         replaceRestaurant(r); renderDetail(r); renderResults();
-        toast(type === 'menu' ? 'Menu posted! ≡ƒôï' : 'Photo posted! ≡ƒô╕');
+        toast(type === 'menu' ? 'Menu posted! 📋' : 'Photo posted! 📸');
       };
       reader.readAsDataURL(file);
       return;
@@ -2133,13 +2133,13 @@
     xhr.upload.onprogress = (e) => {
       if (!e.lengthComputable) return;
       const pct = Math.round((e.loaded / e.total) * 100);
-      bar.firstElementChild.style.width = pct + '%'; txt.textContent = `UploadingΓÇª ${pct}%`;
+      bar.firstElementChild.style.width = pct + '%'; txt.textContent = `Uploading… ${pct}%`;
     };
     xhr.onload = () => {
       let data = {}; try { data = JSON.parse(xhr.responseText); } catch {}
       if (xhr.status >= 200 && xhr.status < 300) {
         replaceRestaurant(data); renderDetail(data); renderResults();
-        toast(type === 'menu' ? 'Menu posted! ≡ƒôï' : 'Photo posted! ≡ƒô╕');
+        toast(type === 'menu' ? 'Menu posted! 📋' : 'Photo posted! 📸');
       } else { bar.hidden = true; txt.textContent = ''; toast(data.error || 'Upload failed'); }
     };
     xhr.onerror = () => { bar.hidden = true; txt.textContent = ''; toast('Upload failed. Is the server still running?'); };
@@ -2150,13 +2150,13 @@
   function renderAdd() {
     openSheet(`
       <div class="form-head">
-        <span class="eyebrow" style="color:var(--chili);background:#fdeae4;border-color:#f6c9bd">≡ƒô⌐ Contact Us</span>
+        <span class="eyebrow" style="color:var(--chili);background:#fdeae4;border-color:#f6c9bd">📩 Contact Us</span>
         <h2>Own a small restaurant?</h2>
         <p>Contact us to inquire about getting your restaurant listed. Fill out the form below or email us directly at <a href="mailto:letsgetoutkids@gmail.com?subject=Restaurant%20Listing%20Inquiry%20-%20Hidden%20Food%20Gems" style="color:var(--chili);font-weight:800;text-decoration:underline">letsgetoutkids@gmail.com</a>.</p>
       </div>
       <form class="form detail-body" id="add-form">
         <div class="two">
-          <label>Restaurant name *<input class="input" name="name" required maxlength="80" placeholder="e.g. T├¡a Rosa's Kitchen" /></label>
+          <label>Restaurant name *<input class="input" name="name" required maxlength="80" placeholder="e.g. Tía Rosa's Kitchen" /></label>
           <label>Your name *<input class="input" name="ownerName" required maxlength="50" placeholder="e.g. Rosa Martinez" /></label>
         </div>
         <div class="two">
@@ -2169,10 +2169,10 @@
         </div>
         <div class="two">
           <label>Regional Cuisine<select name="cuisine">${CUISINES.map((c) => `<option>${c}</option>`).join('')}</select></label>
-          <label>Hours<input class="input" name="hours" maxlength="120" placeholder="TueΓÇôSun 11amΓÇô9pm" /></label>
+          <label>Hours<input class="input" name="hours" maxlength="120" placeholder="Tue–Sun 11am–9pm" /></label>
         </div>
         <label>Message / Tell us about your restaurant<textarea class="textarea" name="description" maxlength="600" placeholder="Tell us about your signature dishes or any questions about getting your restaurant listed..."></textarea></label>
-        <button class="btn btn-block" type="submit">≡ƒô⌐ Send Inquiry to LetsGetOutKids</button>
+        <button class="btn btn-block" type="submit">📩 Send Inquiry to LetsGetOutKids</button>
       </form>`);
     $('#add-form', sheetBody).addEventListener('submit', (e) => {
       e.preventDefault();
@@ -2191,20 +2191,20 @@
       const bodyLines = [
         `Hello LetsGetOutKids Team,`,
         ``,
-        `I would like to inquire about getting my restaurant listed on Hidden Food Gems:`,
+        `I would like to inquire about getting my restaurant listed on HiddenFoodGem.com:`,
         ``,
-        `ΓÇó Restaurant Name: ${name}`,
-        `ΓÇó Contact Name: ${ownerName}`,
-        `ΓÇó Email: ${email}`,
-        `ΓÇó Phone: ${phone}`,
-        `ΓÇó Address: ${address}, ${city}`,
-        `ΓÇó Cuisine: ${cuisine}`,
-        hours ? `ΓÇó Hours: ${hours}` : null,
+        `• Restaurant Name: ${name}`,
+        `• Contact Name: ${ownerName}`,
+        `• Email: ${email}`,
+        `• Phone: ${phone}`,
+        `• Address: ${address}, ${city}`,
+        `• Cuisine: ${cuisine}`,
+        hours ? `• Hours: ${hours}` : null,
         msg ? `\nMessage / Details:\n${msg}` : null
       ].filter((x) => x !== null).join('\n');
 
       window.location.href = `mailto:letsgetoutkids@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
-      toast('≡ƒô⌐ Opening email to LetsGetOutKids (letsgetoutkids@gmail.com)ΓÇª');
+      toast('📩 Opening email to LetsGetOutKids (letsgetoutkids@gmail.com)…');
       setTimeout(() => { location.hash = state.base || '#/'; }, 600);
     });
   }
@@ -2253,7 +2253,7 @@
           history.replaceState(null, '', location.pathname + location.search + hashStr.slice(0, qIdx) + (cleanHashQ ? `?${cleanHashQ}` : ''));
         }
         setTimeout(() => {
-          toast(`≡ƒôì No active listings in "${requestedCity}" ΓÇö showing All Southern California.`);
+          toast(`📍 No active listings in "${requestedCity}" — showing All Southern California.`);
         }, 120);
       }
     }
@@ -2325,7 +2325,7 @@
         updateTopAnalyticsBadge();
         route();
       } else {
-        view.innerHTML = `<div class="empty"><div class="big">≡ƒöî</div><h3>Can't reach the local server</h3><p>Start it with <code>node server.js</code> in the hidden-food-gems folder, or open <code>HiddenFoodGems_Offline.html</code>.</p></div>`;
+        view.innerHTML = `<div class="empty"><div class="big">🔌</div><h3>Can't reach the local server</h3><p>Start it with <code>node server.js</code> in the hidden-food-gems folder, or open <code>HiddenFoodGems_Offline.html</code>.</p></div>`;
       }
     });
 })();

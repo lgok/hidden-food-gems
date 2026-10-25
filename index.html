@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -13,37 +13,38 @@
 <body>
   <header class="topbar">
     <a href="#/" class="brand" aria-label="Hidden Food Gems home">
-      <span class="brand-gem">💎</span>
+      <span class="brand-gem">ðŸ’Ž</span>
       <span class="brand-text">Hidden <em>Food</em> Gems</span>
     </a>
     <div style="display:flex;gap:8px;align-items:center">
-      <a href="#/add" class="btn btn-ghost btn-sm">📩 Contact Us</a>
+      <a href="#/add" class="btn btn-ghost btn-sm">ðŸ“© Contact Us</a>
     </div>
   </header>
 
   <main id="view"></main>
 
   <nav class="bottomnav" aria-label="Main">
-    <a href="#/" data-nav="home"><span>🔎</span>Discover</a>
-    <a href="#/add" data-nav="add"><span>📩</span>Contact Us</a>
+    <a href="#/" data-nav="home"><span>ðŸ”Ž</span>Discover</a>
+    <a href="#/add" data-nav="add"><span>ðŸ“©</span>Contact Us</a>
   </nav>
 
   <div id="sheet" class="sheet" hidden>
     <div class="sheet-backdrop" data-close></div>
     <article class="sheet-panel" role="dialog" aria-modal="true">
-      <button class="sheet-close" data-close aria-label="Close">✕</button>
+      <button class="sheet-close" data-close aria-label="Close">âœ•</button>
       <div id="sheet-body"></div>
     </article>
   </div>
 
   <div id="lightbox" class="lightbox" hidden>
-    <button class="sheet-close" data-close-lightbox aria-label="Close">✕</button>
+    <button class="sheet-close" data-close-lightbox aria-label="Close">âœ•</button>
     <img id="lightbox-img" alt="Menu" />
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="/seed-data.js?v=37"></script>
-  <script src="/app.js?v=37"></script>
+  <script src="/gems-client.js?v=37"></script>
 </body>
 </html>
+

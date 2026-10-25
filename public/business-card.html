@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hidden Food Gems — Staples Print-Ready Business Card (3.5" × 2")</title>
+  <style>
+    :root {
+      --ink: #1f1612;
+      --espresso: #2a1a12;
+      --cream: #fff8ef;
+      --chili: #d9381e;
+      --saffron: #f4a62a;
+      --gold: #ffcf5c;
+      --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: var(--sans); background: #f3ece2; color: var(--ink);
+      padding: 24px 16px 60px;
+    }
+    .toolbar {
+      max-width: 900px; margin: 0 auto 24px; background: #fff; border-radius: 18px;
+      padding: 18px 22px; box-shadow: 0 10px 30px -12px rgba(0,0,0,.18);
+      display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between;
+    }
+    .toolbar h1 { font-family: var(--display); font-size: 1.35rem; margin: 0 0 4px; }
+    .toolbar p { margin: 0; font-size: .88rem; color: #6c5a4f; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; width: 100%; margin-top: 10px; padding-top: 12px; border-top: 1px solid #eee2d3; }
+    .controls label { display: flex; flex-direction: column; gap: 4px; font-size: .78rem; font-weight: 700; flex: 1; min-width: 180px; }
+    .controls input { padding: 8px 11px; border-radius: 10px; border: 1.5px solid #decbb6; font: inherit; font-weight: 500; font-size: .88rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 999px;
+      border: 0; font-weight: 700; font-size: .88rem; cursor: pointer; text-decoration: none;
+      background: var(--chili); color: #fff;
+    }
+    .btn-outline { background: #fff; color: var(--ink); border: 1.5px solid #d5c1ab; }
+
+    .stage {
+      max-width: 900px; margin: 0 auto; display: grid; gap: 28px;
+    }
+    .card-preview-row {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(336px, 1fr)); gap: 24px; justify-items: center;
+    }
+    .card-wrap { text-align: center; }
+    .card-wrap h3 { margin: 0 0 8px; font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; color: #6c5a4f; }
+
+    /* Standard US Business Card: 3.5 in x 2.0 in */
+    .bcard {
+      width: 3.5in; height: 2.0in; border-radius: 10px; overflow: hidden; position: relative;
+      box-shadow: 0 18px 40px -14px rgba(31, 22, 18, .4); text-align: left;
+      print-color-adjust: exact; -webkit-print-color-adjust: exact;
+    }
+
+    /* FRONT: Dark Espresso + Gold Luxury Food Invite */
+    .bcard.front {
+      background: linear-gradient(135deg, #1f1612 0%, #3a1d12 65%, #5a2414 100%);
+      color: #fff; padding: 0.18in 0.2in; display: grid; grid-template-columns: 1fr 1.15in; gap: 0.12in; align-items: center;
+      border: 1px solid rgba(255, 207, 92, .35);
+    }
+    .bcard.front::after {
+      content: ""; position: absolute; inset: 0.06in; border: 1px solid rgba(255, 207, 92, .22);
+      border-radius: 6px; pointer-events: none;
+    }
+    .f-brand { display: flex; align-items: center; gap: 6px; font-family: var(--display); font-size: 11.5pt; font-weight: 700; color: #fff; }
+    .f-brand em { color: var(--gold); font-style: italic; }
+    .f-tag {
+      display: inline-block; margin-top: 3px; padding: 2px 7px; border-radius: 999px;
+      background: rgba(255, 207, 92, .16); border: 1px solid rgba(255, 207, 92, .45);
+      color: var(--gold); font-size: 6pt; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+    }
+    .f-headline {
+      font-family: var(--display); font-size: 9.8pt; line-height: 1.18; margin: 6px 0 5px; color: #fff; font-weight: 700;
+    }
+    .f-msg {
+      font-size: 7.2pt; line-height: 1.32; color: #fbeadb; margin: 0;
+      background: rgba(0, 0, 0, .28); border-left: 2.5px solid var(--gold); padding: 4px 7px; border-radius: 0 5px 5px 0;
+    }
+    .f-msg b { color: var(--gold); }
+    .f-contact {
+      margin-top: 6px; font-size: 6.5pt; color: rgba(255, 255, 255, .82); font-weight: 600;
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .qr-box {
+      background: #fff; border-radius: 8px; padding: 5px; text-align: center; color: var(--ink);
+      box-shadow: 0 6px 16px rgba(0,0,0,.35); position: relative; z-index: 2;
+    }
+    .qr-box svg, .qr-box canvas { width: 0.96in; height: 0.96in; display: block; margin: 0 auto; }
+    .qr-cap { font-size: 5.8pt; font-weight: 800; color: var(--chili); text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; line-height: 1.1; }
+    .qr-url { font-size: 5.2pt; color: #5a463c; font-weight: 700; word-break: break-all; margin-top: 1px; }
+
+    /* BACK: Clean Cream Card with Polite Owner Pitch & Checklist */
+    .bcard.back {
+      background: var(--cream); color: var(--ink); padding: 0.2in 0.22in;
+      border: 1px solid #e2cdb5; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .bcard.back::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 0.07in;
+      background: linear-gradient(90deg, var(--chili), var(--saffron), var(--gold));
+    }
+    .b-top { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px dashed #decbb6; padding-bottom: 5px; }
+    .b-top h4 { font-family: var(--display); font-size: 10pt; margin: 0; color: var(--ink); }
+    .b-top span { font-size: 6.5pt; font-weight: 800; color: var(--chili); text-transform: uppercase; letter-spacing: .05em; }
+    .b-quote {
+      font-family: var(--display); font-size: 8.6pt; line-height: 1.32; color: var(--ink);
+      background: #fff; border: 1px solid #ecdccb; border-left: 3px solid var(--chili);
+      padding: 7px 9px; border-radius: 6px; margin: 6px 0;
+    }
+    .b-quote b { color: var(--chili); }
+    .b-perks {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3px 8px; font-size: 6.6pt; font-weight: 700; color: #4a3a32;
+    }
+    .b-foot {
+      display: flex; justify-content: space-between; align-items: center; font-size: 6.5pt; color: #6c5a4f;
+      border-top: 1px solid #ecdccb; padding-top: 4px; font-weight: 700;
+    }
+
+    /* 8-Up Letter Sheet for Staples / Avery 8371 */
+    .sheet-title { text-align: center; margin: 14px 0 4px; font-size: .9rem; color: #5a463c; }
+    .print-sheet {
+      width: 8.5in; min-height: 11in; margin: 0 auto; background: #fff; padding: 0.5in 0.75in;
+      box-shadow: 0 12px 36px rgba(0,0,0,.18); display: grid;
+      grid-template-columns: repeat(2, 3.5in); grid-auto-rows: 2.0in; gap: 0;
+    }
+    .print-sheet .bcard { border-radius: 0; box-shadow: none; border: 0.5px dashed #ccc; }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .toolbar, .single-showcase, .sheet-title { display: none !important; }
+      .print-sheet { box-shadow: none; margin: 0; padding: 0.5in 0.75in; }
+      @page { size: letter portrait; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div>
+      <h1>🪪 Staples Print-Ready Business Card (3.5" × 2")</h1>
+      <p>Standard US Business Card size. Print single cards at Staples or print the 10-card 8.5"×11" sheet right now.</p>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="btn btn-outline" href="/">← Back to Hidden Food Gems</a>
+      <button class="btn" onclick="window.print()">🖨️ Print / Save PDF for Staples</button>
+    </div>
+    <div class="controls">
+      <label>Live Website Link (Encoded in QR Code)
+        <input id="inp-url" value="http://192.168.4.124:5177" placeholder="https://hiddenfoodgems.com" />
+      </label>
+      <label>Your Name & Phone / Text Line
+        <input id="inp-contact" value="Michael · Call/Text (909) 555-0199" />
+      </label>
+      <label>Area Tagline
+        <input id="inp-area" value="Ontario · Upland · Chino · Montclair · Rancho" />
+      </label>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="single-showcase">
+      <div class="card-preview-row">
+        <div class="card-wrap">
+          <h3>Front of Card (3.5" × 2.0")</h3>
+          <div class="bcard front" id="card-front-template">
+            <div>
+              <div class="f-brand">💎 Hidden <em>Food</em> Gems</div>
+              <span class="f-tag" data-bind="area">Ontario · Upland · Chino · Montclair · Rancho</span>
+              <div class="f-headline">Your Restaurant Is Live on Our Local Food Feed!</div>
+              <p class="f-msg">
+                <b>Check it out above!</b> If you’d like us to pin you to the top of our local feed for <b>$10/mo</b>, let me know and I’ll activate your featured banner today.
+              </p>
+              <div class="f-contact" data-bind="contact">Michael · Call/Text (909) 555-0199</div>
+            </div>
+            <div class="qr-box">
+              <div class="qr-target"></div>
+              <div class="qr-cap">Scan to View ↑</div>
+              <div class="qr-url" data-bind="url">http://192.168.4.124:5177</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrap">
+          <h3>Back of Card (Optional 2-Sided Print)</h3>
+          <div class="bcard back">
+            <div class="b-top">
+              <h4>💎 Hidden Food Gems</h4>
+              <span>Verified Grade-A Local Spots</span>
+            </div>
+            <div class="b-quote">
+              “<b>Check it out above!</b> If you’d like us to pin you to the top of our local feed for <b>$10/mo</b>, let me know and I’ll activate your featured banner today.”
+            </div>
+            <div class="b-perks">
+              <div>✅ Pre-Filled Regional Menu</div>
+              <div>✅ 3 High-Res Dish Photos</div>
+              <div>✅ Verified Health Grade Badge</div>
+              <div>✅ Direct Call & Map Directions</div>
+            </div>
+            <div class="b-foot">
+              <span data-bind="contact">Michael · Call/Text (909) 555-0199</span>
+              <span data-bind="url">http://192.168.4.124:5177</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet-title">👇 <b>Print-Ready 10-Card Sheet (8.5" × 11" Letter / Staples & Avery 8371 Compatible)</b> — Click "Print / Save PDF" above</div>
+    <div class="print-sheet" id="sheet-grid"></div>
+  </div>
+
+  <script>
+    // Self-contained QR Code SVG generator (offline, zero external requests, scannable QR Version 3-6 byte mode)
+    // Uses a compact, standards-compliant QR matrix encoder for URLs up to 60 chars.
+    (() => {
+      // Minimal GF(256) & Reed-Solomon for QR Code Byte Mode (Error Correction Level L)
+      const EXP = new Uint8Array(512), LOG = new Uint8Array(256);
+      let x = 1;
+      for (let i = 0; i < 255; i++) { EXP[i] = x; LOG[x] = i; x = (x << 1) ^ (x & 128 ? 0x11d : 0); }
+      for (let i = 255; i < 512; i++) EXP[i] = EXP[i - 255];
+      const gfMul = (a, b) => (a && b ? EXP[LOG[a] + LOG[b]] : 0);
+      function rsEncode(data, ecLen) {
+        let poly = [1];
+        for (let i = 0; i < ecLen; i++) {
+          const next = new Array(poly.length + 1).fill(0);
+          for (let j = 0; j < poly.length; j++) {
+            next[j] ^= poly[j];
+            next[j + 1] ^= gfMul(poly[j], EXP[i]);
+          }
+          poly = next;
+        }
+        const msg = new Uint8Array(data.length + ecLen);
+        msg.set(data);
+        for (let i = 0; i < data.length; i++) {
+          const coef = msg[i];
+          if (coef) for (let j = 0; j < poly.length; j++) msg[i + j] ^= gfMul(poly[j], coef);
+        }
+        return msg.slice(data.length);
+      }
+
+      // Version table for Level L: [version, size, totalDataBytes, ecBytesPerBlock, numBlocks, alignCenters]
+      const VERSIONS = [
+        [2, 25, 34, 10, 1, [6, 18]],
+        [3, 29, 55, 15, 1, [6, 22]],
+        [4, 33, 80, 20, 1, [6, 26]],
+        [5, 37, 108, 26, 1, [6, 30]],
+      ];
+
+      function makeQrSvg(text) {
+        const bytes = new TextEncoder().encode(text.slice(0, 100));
+        const ver = VERSIONS.find((v) => bytes.length + 3 <= v[2]) || VERSIONS[VERSIONS.length - 1];
+        const [vNum, size, dataCap, ecLen, , align] = ver;
+
+        // Bitstream: mode 0100 (4), length (8 bits), bytes, terminator, pad bytes
+        const bits = [];
+        const pushBits = (val, n) => { for (let i = n - 1; i >= 0; i--) bits.push((val >> i) & 1); };
+        pushBits(4, 4);
+        pushBits(bytes.length, 8);
+        bytes.forEach((b) => pushBits(b, 8));
+        for (let i = 0; i < 4 && bits.length < dataCap * 8; i++) bits.push(0);
+        while (bits.length % 8) bits.push(0);
+        const data = new Uint8Array(dataCap);
+        for (let i = 0; i < bits.length / 8; i++) {
+          let b = 0;
+          for (let j = 0; j < 8; j++) b = (b << 1) | bits[i * 8 + j];
+          data[i] = b;
+        }
+        for (let i = bits.length / 8, p = 0; i < dataCap; i++, p ^= 1) data[i] = p ? 0x11 : 0xec;
+
+        const ec = rsEncode(data, ecLen);
+        const all = new Uint8Array(data.length + ec.length);
+        all.set(data); all.set(ec, data.length);
+
+        const mat = Array.from({ length: size }, () => new Int8Array(size).fill(-1));
+        const res = Array.from({ length: size }, () => new Uint8Array(size));
+        const setMod = (r, c, v) => { mat[r][c] = v ? 1 : 0; res[r][c] = 1; };
+
+        // Finder patterns
+        const finder = (R, C) => {
+          for (let r = -1; r <= 7; r++) for (let c = -1; c <= 7; c++) {
+            const rr = R + r, cc = C + c;
+            if (rr < 0 || cc < 0 || rr >= size || cc >= size) continue;
+            const on = (r >= 0 && r <= 6 && (c === 0 || c === 6)) || (c >= 0 && c <= 6 && (r === 0 || r === 6)) || (r >= 2 && r <= 4 && c >= 2 && c <= 4);
+            setMod(rr, cc, on);
+          }
+        };
+        finder(0, 0); finder(0, size - 7); finder(size - 7, 0);
+
+        // Alignment
+        for (const ar of align) for (const ac of align) {
+          if ((ar === 6 && ac === 6) || (ar === 6 && ac === size - 7) || (ar === size - 7 && ac === 6)) continue;
+          for (let r = -2; r <= 2; r++) for (let c = -2; c <= 2; c++) {
+            setMod(ar + r, ac + c, Math.max(Math.abs(r), Math.abs(c)) !== 1);
+          }
+        }
+        // Timing
+        for (let i = 8; i < size - 8; i++) {
+          if (!res[6][i]) setMod(6, i, i % 2 === 0);
+          if (!res[i][6]) setMod(i, 6, i % 2 === 0);
+        }
+        // Reserve format info + dark module
+        for (let i = 0; i < 9; i++) {
+          if (i !== 6) { res[8][i] = 1; res[i][8] = 1; }
+          if (i < 8) { res[8][size - 1 - i] = 1; res[size - 1 - i][8] = 1; }
+        }
+        setMod(size - 8, 8, 1);
+
+        // Place data bits with mask 0 ((r + c) % 2 === 0)
+        let bitIdx = 0;
+        for (let right = size - 1; right >= 1; right -= 2) {
+          if (right === 6) right = 5;
+          for (let vert = 0; vert < size; vert++) {
+            const r = ((right + 1) & 2) === 0 ? size - 1 - vert : vert;
+            for (let j = 0; j < 2; j++) {
+              const c = right - j;
+              if (res[r][c]) continue;
+              const bit = bitIdx < all.length * 8 ? (all[bitIdx >> 3] >> (7 - (bitIdx & 7))) & 1 : 0;
+              bitIdx++;
+              mat[r][c] = bit ^ ((r + c) % 2 === 0 ? 1 : 0);
+            }
+          }
+        }
+
+        // Format info for Level L (01) + Mask 0 (000) -> precomputed BCH 0x77c4
+        const fmt = 0x77c4;
+        const fmtCoordsA = [[8,0],[8,1],[8,2],[8,3],[8,4],[8,5],[8,7],[8,8],[7,8],[5,8],[4,8],[3,8],[2,8],[1,8],[0,8]];
+        const fmtCoordsB = [[size-1,8],[size-2,8],[size-3,8],[size-4,8],[size-5,8],[size-6,8],[size-7,8],[8,size-8],[8,size-7],[8,size-6],[8,size-5],[8,size-4],[8,size-3],[8,size-2],[8,size-1]];
+        for (let i = 0; i < 15; i++) {
+          const b = (fmt >> i) & 1;
+          mat[fmtCoordsA[i][0]][fmtCoordsA[i][1]] = b;
+          mat[fmtCoordsB[i][0]][fmtCoordsB[i][1]] = b;
+        }
+
+        let path = '';
+        for (let r = 0; r < size; r++) for (let c = 0; c < size; c++) if (mat[r][c] === 1) path += `M${c + 2},${r + 2}h1v1h-1z`;
+        return `<svg viewBox="0 0 ${size + 4} ${size + 4}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#fff"/><path d="${path}" fill="#1f1612"/></svg>`;
+      }
+
+      const sheetGrid = document.getElementById('sheet-grid');
+      const frontTpl = document.getElementById('card-front-template');
+
+      function updateCards() {
+        const url = document.getElementById('inp-url').value.trim() || 'https://hiddenfoodgems.com';
+        const contact = document.getElementById('inp-contact').value.trim();
+        const area = document.getElementById('inp-area').value.trim();
+        const svg = makeQrSvg(url);
+
+        document.querySelectorAll('[data-bind="url"]').forEach((el) => { el.textContent = url.replace(/^https?:\/\//, ''); });
+        document.querySelectorAll('[data-bind="contact"]').forEach((el) => { el.textContent = contact; });
+        document.querySelectorAll('[data-bind="area"]').forEach((el) => { el.textContent = area; });
+        document.querySelectorAll('.qr-target').forEach((el) => { el.innerHTML = svg; });
+
+        sheetGrid.innerHTML = '';
+        for (let i = 0; i < 10; i++) {
+          const clone = frontTpl.cloneNode(true);
+          clone.removeAttribute('id');
+          sheetGrid.appendChild(clone);
+        }
+      }
+
+      ['inp-url', 'inp-contact', 'inp-area'].forEach((id) => document.getElementById(id).addEventListener('input', updateCards));
+      updateCards();
+    })();
+  </script>
+</body>
+</html>

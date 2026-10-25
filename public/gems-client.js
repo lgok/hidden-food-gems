@@ -1164,6 +1164,10 @@
       </section>
       <div class="wrap">
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>
+        <div class="community-notice-banner" role="note">
+          <span class="notice-icon">💡</span>
+          <p><b>Please Note:</b> Before visiting, please double-check the restaurant, neighborhood, current hours, and recent ratings directly on the restaurant's official website, social media, or phone. Information and ratings can change quickly!</p>
+        </div>
         <div class="grid" id="grid"></div>
         <div class="load-more-wrap" id="load-more-container" hidden>
           <button type="button" class="btn-load-more" id="btn-load-more">
@@ -2000,6 +2004,12 @@
           </div>
         </div>
         ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" id="detail-weekly-hours" hidden>📅 <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
+
+        <!-- Community Verification Reminder -->
+        <div class="community-notice-banner" style="margin: 8px 0 10px; font-size: 0.78rem;">
+          <span class="notice-icon">💡</span>
+          <p><b>Helpful Tip:</b> Please double-check with the restaurant directly (by calling or checking their official website) to confirm their latest hours, current menu items, and neighborhood details before heading out!</p>
+        </div>
 
         <!-- Scratch-Made Line Only (Full Sentence, No Ellipsis) -->
         ${r.scratchCommitment ? `

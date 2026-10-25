@@ -1,0 +1,10 @@
+{
+  "name": "Hidden Food Gems",
+  "short_name": "Food Gems",
+  "description": "Discover small, family-run restaurants hiding in plain sight.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#1f1612",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

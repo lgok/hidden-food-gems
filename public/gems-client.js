@@ -128,17 +128,7 @@
   };
   const coverImage = (r) => normImg(r.image || (r.photos && r.photos[0] && r.photos[0].file) || ((r.media || []).find((m) => m.type === 'photo') || {}).file || '');
   const placeholderHtml = (r) => {
-    const mailSubject = encodeURIComponent(r.name + ' - 3-Sec Video Submission');
-    const mailBody = encodeURIComponent('Hi HiddenFoodGem.com team,\n\nI am the owner of ' + r.name + ' in ' + (r.city || '') + ', CA.\nHere is our short 3-second phone video of our food / storefront for review.\n\nRestaurant: ' + r.name + '\nAddress: ' + (r.address || '') + ', ' + (r.city || '') + ', CA\nPhone: ' + (r.phone || '') + '\n\nThank you!');
-    const mailto = 'mailto:letsgetoutkids@gmail.com?subject=' + mailSubject + '&body=' + mailBody;
-    return '<div class="ph ph-' + (hashNum(r.id) % 5) + ' ph-owner-tile">' +
-      '<span class="ph-badge-coming-soon">📷 Owner Verified Photo Coming Soon</span>' +
-      '<div style="font-size:1.6rem;line-height:1;margin:3px 0 4px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))">' + emojiFor(r) + '</div>' +
-      '<a class="ph-claim-btn" href="' + mailto + '" data-claim-clip="' + esc(r.id) + '" title="Are you the owner? Email us your 3-second video clip to feature free!">' +
-        '<span>🎥 Are you the owner? Send us your 3-sec clip</span>' +
-      '</a>' +
-      '<div class="ph-cuisine-sub">' + esc(r.cuisine || 'Family Kitchen') + ' · ' + esc(r.city || '') + '</div>' +
-    '</div>';
+    return '<div class="ph ph-' + (hashNum(r.id) % 5) + ' ph-owner-tile"></div>';
   };
 
   const mediaHtml = (r, owner = false, eager = false) => {

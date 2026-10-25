@@ -705,3 +705,5 @@ button, input, select, textarea { font: inherit; color: inherit; }
   background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(6px);
   color: #fff; font-size: 0.64rem; font-weight: 800; border: 1px solid rgba(255,255,255,0.3);
 }
+
+.ph-badge-coming-soon, .ph-claim-btn { display: none !important; }

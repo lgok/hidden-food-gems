@@ -67,7 +67,7 @@
     city: '',
     cuisine: '',
     gradeAOnly: false,
-    sort: 'gem',
+    sort: 'top',
     limit: 24,
     userGpsCoords: null, // [latitude, longitude] when "Near Me" GPS is active
     userGpsLabel: '', // e.g. "Current Location" or reverse geocoded city
@@ -1182,9 +1182,9 @@
                 ${SOCAL_REGIONS.map((reg) => `<option value="${reg.id}" ${reg.id === state.region ? 'selected' : ''}>${reg.label}</option>`).join('')}
               </select>
               <select class="select" id="sort" aria-label="Sort">
+                <option value="top">⭐ Top Rated</option>
                 <option value="gem">📌 Featured & Hidden Gems First</option>
                 <option value="health">🛡️ Highest Health Score (100 → 90)</option>
-                <option value="top">⭐ Top Rated</option>
                 <option value="hidden">🕵️ Most Hidden (Fewest Ratings)</option>
                 <option value="az">A–Z</option>
               </select>
@@ -1447,7 +1447,7 @@
       b.setAttribute('aria-pressed', state.prices.has(p)); state.limit = 24; renderResults();
     });
     $('#clear').addEventListener('click', () => {
-      Object.assign(state, { q: '', mealTab: '', radiusMiles: 0, region: '', city: '', cuisine: '', gradeAOnly: false, sort: 'gem', limit: 24, mobileFiltersOpen: false, userGpsCoords: null, userGpsLabel: '' });
+      Object.assign(state, { q: '', mealTab: '', radiusMiles: 0, region: '', city: '', cuisine: '', gradeAOnly: false, sort: 'top', limit: 24, mobileFiltersOpen: false, userGpsCoords: null, userGpsLabel: '' });
       state.chips.clear(); state.prices.clear(); renderHome();
     });
     const loadMoreBtn = $('#btn-load-more');

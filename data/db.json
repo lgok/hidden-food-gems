@@ -12614,6 +12614,1384 @@
         "coffee_boba"
       ],
       "is_active": true
+    },
+    {
+      "id": "las-cuatro-milpas-san-diego",
+      "name": "Las Cuatro Milpas (Barrio Logan)",
+      "cuisine": "Historic Scratch Tortillas, Rolled Tacos & Tamales",
+      "regionalIdentity": "Barrio Logan's Legendary Family Tortilleria Since 1933",
+      "tags": [
+        "mexican",
+        "lunch",
+        "pork",
+        "beef",
+        "chicken"
+      ],
+      "price": 1,
+      "address": "1857 Logan Ave",
+      "city": "San Diego",
+      "zip": "92113",
+      "driveFrom91761": "San Diego County",
+      "phone": "(619) 234-4460",
+      "hours": "Mon–Sat 8:30am–3:00pm · Closed Sunday",
+      "healthPermit": {
+        "facilityId": "SD-DEH-007192",
+        "agency": "County of San Diego DEH",
+        "grade": "A",
+        "score": 98,
+        "inspectedOn": "2026-03-12",
+        "portalUrl": "https://www.sandiegocounty.gov/deh/"
+      },
+      "familyRoots": "Founded in 1933 by Petra and Nati Estudillo, operated continuously by three generations of Estudillo family women under the Coronado Bridge.",
+      "scratchCommitment": "Heirloom corn boiled and ground in-house daily for hot handmade corn tortillas; deep-fried rolled tacos topped with crumbled cotija and fresh crema.",
+      "destinationDish": {
+        "name": "Crispy Rolled Beef Tacos with Guacamole & Steaming Flour Tortillas",
+        "callout": "Golden fried rolled tacos loaded with slow-braised beef, crumbled queso cotija, and piping hot thick lard flour tortillas."
+      },
+      "description": "Iconic brick-lined Barrio Logan counter with long lines down Logan Ave, vinyl tablecloths, and 4.7 stars across 3,600+ reviews.",
+      "story": "A sacred institution in San Diego Mexican food history where the recipe for scratch tortillas and savory rice has not changed in almost a century.",
+      "image": "/img/batch1/potrillos-1.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/potrillos-1.jpg",
+          "label": "Historic Crispy Rolled Tacos and Fresh Tortillas in Barrio Logan"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Crispy Rolled Tacos with Cotija Cheese (5 pcs)",
+            "desc": "Fresh corn tortillas rolled with shredded beef, flash-fried crispy and topped with house salsa and cotija.",
+            "price": 7.5
+          },
+          {
+            "name": "Plate of Pork Tamales & Fresh Flour Tortillas",
+            "desc": "Two slow-steamed pork tamales smothered in red chile sauce with hot house flour tortillas.",
+            "price": 9
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Bowl of Beans with Chorizo & Rice",
+            "desc": "Traditional slow-simmered pinto beans rendered with chorizo sausage and savory Mexican rice.",
+            "price": 6.5
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Cuatro Milpas Feast for Two",
+            "desc": "Ten rolled tacos, two tamales, rice and beans, and half-dozen fresh flour tortillas.",
+            "price": 23
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Half-Dozen Freshly Pressed Tortillas",
+            "desc": "Piping hot handmade flour or corn tortillas wrapped in paper.",
+            "price": 3.5
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Manuel R.",
+          "comment": "The flour tortillas are legendary. Best rolled tacos in Southern California history.",
+          "date": "2026-10-18T11:45:00Z"
+        }
+      ],
+      "region": "San Diego County",
+      "county": "San Diego",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 3:00 PM",
+      "socialMedia": {
+        "instagram": "@lascuatromilpassd",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 32.7001,
+      "longitude": -117.1422,
+      "opening_hour_minutes": 510,
+      "serves_breakfast": true,
+      "meals": [
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "menya-ultra-convoy-san-diego",
+      "name": "Menya Ultra (Convoy District San Diego)",
+      "cuisine": "Artisan Tonkotsu Ramen & Scratch Wheat Noodles",
+      "regionalIdentity": "Award-Winning Master Ramen Artisan from Japan",
+      "tags": [
+        "japanese",
+        "ramen",
+        "lunch",
+        "dinner",
+        "pork",
+        "chicken"
+      ],
+      "price": 2,
+      "address": "8199 Clairemont Mesa Blvd, Ste M",
+      "city": "San Diego",
+      "zip": "92111",
+      "driveFrom91761": "San Diego County",
+      "phone": "(858) 571-2010",
+      "hours": "Daily 11:00am–9:00pm",
+      "healthPermit": {
+        "facilityId": "SD-DEH-006811",
+        "agency": "County of San Diego DEH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-04-18",
+        "portalUrl": "https://www.sandiegocounty.gov/deh/"
+      },
+      "familyRoots": "Founded by Chef Takashi Endo from Akita, Japan, who won multiple national ramen championships before opening in San Diego's Convoy District.",
+      "scratchCommitment": "Noodles extruded daily in full view using proprietary Japanese flour; rich pork bone broth simmered for 16 hours without MSG.",
+      "destinationDish": {
+        "name": "Tonkotsu Ajitama Ramen with Scratch Noodles",
+        "callout": "Silky 16-hour bone broth with springy handmade noodles, tender Berkshire pork chashu, and seasoned soft-boiled egg."
+      },
+      "description": "Sleek, minimalist Japanese noodle shop in Convoy with digital waitlist, bustling open kitchen, and 4.6 stars across 3,100+ reviews.",
+      "story": "Universally acknowledged as one of the finest ramen shops on the West Coast, Menya Ultra raised the bar for scratch noodle craftsmanship in California.",
+      "image": "/img/batch1/changan-2.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/changan-2.jpg",
+          "label": "Silky 16-Hour Tonkotsu Broth with Handmade Noodles at Menya Ultra"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Tonkotsu Ajitama Ramen",
+            "desc": "Signature rich tonkotsu broth, housemade fresh wheat noodles, slow-braised chashu pork, seasoned soft egg, green onion.",
+            "price": 16.95
+          },
+          {
+            "name": "Spicy Miso Tonkotsu Ramen",
+            "desc": "Tonkotsu broth infused with 3-region Japanese miso paste, chili oil, ground pork, and bok choy.",
+            "price": 17.95
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Handmade Pan-Fried Pork Gyoza (5 pcs)",
+            "desc": "Crispy-bottom dumplings filled with juicy minced Berkshire pork, cabbage, and ginger.",
+            "price": 7.5
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Convoy Ramen & Gyoza Set",
+            "desc": "Tonkotsu Ajitama Ramen paired with 5 handmade gyoza and house iced green tea.",
+            "price": 23.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Chashu Rice Bowl",
+            "desc": "Diced braised pork belly over steamed Japanese rice with sweet tare and scallions.",
+            "price": 6.5
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Kenji S.",
+          "comment": "The noodles made in-house make all the difference. Broth is rich without being greasy. Top tier.",
+          "date": "2026-10-15T19:30:00Z"
+        }
+      ],
+      "region": "San Diego County",
+      "county": "San Diego",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 9:00 PM",
+      "socialMedia": {
+        "instagram": "@menya_ultra",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 32.8341,
+      "longitude": -117.1523,
+      "opening_hour_minutes": 660,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "better-buzz-coffee-hillcrest-san-diego",
+      "name": "Better Buzz Coffee Roasters (Hillcrest)",
+      "cuisine": "Specialty Micro-Roasts, Açai Bowls & Avocado Toast",
+      "regionalIdentity": "San Diego's Energetic Coastal Coffee Roaster",
+      "tags": [
+        "coffee",
+        "tea",
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "price": 2,
+      "address": "801 University Ave",
+      "city": "San Diego",
+      "zip": "92103",
+      "driveFrom91761": "San Diego County",
+      "phone": "(619) 629-0199",
+      "hours": "Daily 6:00am–7:00pm",
+      "healthPermit": {
+        "facilityId": "SD-DEH-008912",
+        "agency": "County of San Diego DEH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-05-11",
+        "portalUrl": "https://www.sandiegocounty.gov/deh/"
+      },
+      "familyRoots": "Independent San Diego roastery founded in 2002 with certified organic small-batch beans and vibrant neighborhood hospitality.",
+      "scratchCommitment": "100% certified organic roasts; scratch vanilla and hazelnut syrups; organic açai bowls blended fresh to order.",
+      "destinationDish": {
+        "name": "The Best Drink Ever® & OG Organic Açai Bowl",
+        "callout": "Americano with signature creamy vanilla powder paired with thick organic blended açai, fresh berries, and hemp granola."
+      },
+      "description": "Two-story flagship café with soaring ceilings, honeycomb tile, outdoor sun deck, and 4.6 stars across 2,200+ reviews.",
+      "story": "A San Diego staple that grew from a small cart into an iconic local coffee brand dedicated to positive energy and quality beans.",
+      "image": "/img/batch1/calle-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/calle-3.jpg",
+          "label": "Specialty Cold Brew and Organic Açai Bowls at Better Buzz Hillcrest"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "The Best Drink Ever®",
+            "desc": "Signature classic Americano blended with house creamy vanilla powder and half-and-half over crushed ice.",
+            "price": 5.95
+          },
+          {
+            "name": "Hazelnut Divinity Latte",
+            "desc": "Espresso with house hazelnut reduction and steamed whole or oat milk.",
+            "price": 6.25
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "OG Açai Energy Bowl",
+            "desc": "Organic açai purée blended thick, topped with hemp granola, sliced bananas, fresh strawberries, and honey drizzle.",
+            "price": 12.95
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Morning Buzz Pairing",
+            "desc": "The Best Drink Ever® paired with avocado sourdough toast with microgreens and chili flakes.",
+            "price": 16.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Cold Brew on Nitro Tap",
+            "desc": "Cascading nitrogen draft cold brew with chocolate finish.",
+            "price": 5.5
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Samantha D.",
+          "comment": "The Hillcrest two-story space is gorgeous. The Best Drink Ever is addictive and açai bowl is huge!",
+          "date": "2026-10-18T08:15:00Z"
+        }
+      ],
+      "region": "San Diego County",
+      "county": "San Diego",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 7:00 PM",
+      "socialMedia": {
+        "instagram": "@betterbuzz",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 32.7483,
+      "longitude": -117.1561,
+      "opening_hour_minutes": 360,
+      "serves_breakfast": true,
+      "meals": [
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "coffee",
+        "coffee_boba"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "omomo-tea-shoppe-del-mar-san-diego",
+      "name": "OMOMO Tea Shoppe (Del Mar / Carmel Valley)",
+      "cuisine": "Premium Taiwanese Boba, Matcha Cortados & Cheese Foam",
+      "regionalIdentity": "San Diego's Cult Artisan Boba Master",
+      "tags": [
+        "boba",
+        "tea",
+        "taiwanese",
+        "lunch",
+        "dinner"
+      ],
+      "price": 1,
+      "address": "12843 El Camino Real, Ste 108",
+      "city": "San Diego",
+      "zip": "92130",
+      "driveFrom91761": "San Diego County",
+      "phone": "(858) 461-0888",
+      "hours": "Daily 11:30am–9:30pm",
+      "healthPermit": {
+        "facilityId": "SD-DEH-009180",
+        "agency": "County of San Diego DEH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-06-03",
+        "portalUrl": "https://www.sandiegocounty.gov/deh/"
+      },
+      "familyRoots": "California-born artisanal tea creators who sparked statewide acclaim for uncompromising ingredient sourcing and farm dairy.",
+      "scratchCommitment": "Authentic Kyoto matcha whisked to order; brown sugar boba cooked fresh every 90 minutes; scratch whipped tiramisu and creme foam.",
+      "destinationDish": {
+        "name": "Omomo Matcha Cortado & Brown Sugar Boba with Cheese Foam",
+        "callout": "Whisked ceremonial Uji matcha layered against whole organic milk and warm brown sugar boba topped with salted cheese crema."
+      },
+      "description": "Sleek, minimalist wood-toned tea lounge in Carmel Valley with 4.7 stars across 1,900+ reviews.",
+      "story": "Widely regarded by tea aficionados as California's gold standard for nuanced, ultra-fresh boba and multi-layered matcha drinks.",
+      "image": "/img/batch1/fortune-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/fortune-3.jpg",
+          "label": "Artisan Uji Matcha and Fresh Brown Sugar Boba at Omomo San Diego"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Omomo Matcha Cortado",
+            "desc": "Whisked ceremonial Kyoto matcha, cold organic milk, sweet red bean paste, and sea salt cheese foam.",
+            "price": 6.75
+          },
+          {
+            "name": "Brown Sugar Boba Milk with Brulee",
+            "desc": "Fresh organic milk swirled with warm brown sugar boba, topped with custard pudding and torched caramel.",
+            "price": 6.95
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Four Seasons Spring Oolong Tea",
+            "desc": "High-mountain Taiwanese oolong steeped cold for a crisp, floral finish.",
+            "price": 5.25
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Omomo Signature Pair",
+            "desc": "Matcha Cortado and Brown Sugar Boba Milk with Brulee.",
+            "price": 13
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Fresh Mango Green Tea with Aloe",
+            "desc": "Crushed seasonal mango fruit with brewed jasmine green tea and aloe vera cubes.",
+            "price": 6.5
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Audrey T.",
+          "comment": "The cheese foam and matcha quality are on another level. Nothing in San Diego compares.",
+          "date": "2026-10-17T16:20:00Z"
+        }
+      ],
+      "region": "San Diego County",
+      "county": "San Diego",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 9:30 PM",
+      "socialMedia": {
+        "instagram": "@omomoteashoppe",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 32.9348,
+      "longitude": -117.2341,
+      "opening_hour_minutes": 690,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner",
+        "boba",
+        "coffee_boba"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "portos-bakery-burbank-brand",
+      "name": "Porto's Bakery & Cafe (Burbank)",
+      "cuisine": "Cuban Pastries, Potato Balls, Sandwiches & Espresso",
+      "regionalIdentity": "Southern California's Historic Cuban Bakery Legend",
+      "tags": [
+        "cuban",
+        "breakfast",
+        "brunch",
+        "lunch",
+        "dinner",
+        "coffee",
+        "pork",
+        "beef",
+        "chicken"
+      ],
+      "price": 1,
+      "address": "3614 W Magnolia Blvd",
+      "city": "Burbank",
+      "zip": "91505",
+      "driveFrom91761": "38 min from 91761",
+      "phone": "(818) 846-9100",
+      "hours": "Daily 6:30am–8:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-008129",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-05-14",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Founded by Rosa Porto who arrived from Cuba with cherished family cake and pastry recipes, growing into an iconic family institution.",
+      "scratchCommitment": "Golden fried potato balls filled with picadillo beef; flaky guava and cheese strudels baked continuously from dawn to dusk.",
+      "destinationDish": {
+        "name": "Famous Papa Rellena (Potato Balls) & Guava Cheese Refugiados",
+        "callout": "Crisp panko mashed potato sphere stuffed with savory spiced ground beef, peppers, and onions."
+      },
+      "description": "Bustling, sunlit Burbank bakery with massive pastry display cases, outdoor dining, and an astounding 4.8 stars across 12,000+ reviews.",
+      "story": "One of the most famous family-run bakeries in America, symbolizing Cuban hospitality, incredible quality, and unmatched value.",
+      "image": "/img/batch1/calle-2.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/calle-2.jpg",
+          "label": "Famous Golden Potato Balls and Guava Strudels at Porto's Burbank"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Famous Potato Balls® (Papa Rellena)",
+            "desc": "Mashed potato balls filled with seasoned picadillo ground beef, rolled in breadcrumbs and deep-fried golden.",
+            "price": 1.75
+          },
+          {
+            "name": "Refugiado® (Guava & Cheese Strudel)",
+            "desc": "Flaky puff pastry stuffed with Rosa's signature guava jam and sweet cream cheese.",
+            "price": 1.65
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Classic Cuban Pressed Sandwich",
+            "desc": "Citrus-marinated slow roasted pork, sweet ham, Swiss cheese, pickles, and mustard on pressed Cuban bread.",
+            "price": 8.95
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Porto's Family Party Box (Dozen Assorted)",
+            "desc": "6 Potato Balls, 3 Guava Cheese Strudels, and 3 Chicken Croquettes.",
+            "price": 18.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Café con Leche",
+            "desc": "Espresso brewed with sugar and combined with equal parts steamed milk.",
+            "price": 3.75
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Carlos V.",
+          "comment": "Over 12,000 reviews and the line moves like lightning. The potato balls and cafe con leche are unbeatable.",
+          "date": "2026-10-18T10:30:00Z"
+        }
+      ],
+      "region": "San Fernando Valley",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 8:00 PM",
+      "socialMedia": {
+        "instagram": "@portosbakery",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.1685,
+      "longitude": -118.3491,
+      "opening_hour_minutes": 390,
+      "serves_breakfast": true,
+      "meals": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "dinner",
+        "coffee",
+        "coffee_boba"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "mini-kabob-glendale",
+      "name": "Mini Kabob (Glendale)",
+      "cuisine": "Armenian Charcoal Kabobs, Garlic Toum & Hummus",
+      "regionalIdentity": "Glendale's Acclaimed 6-Table Armenian Kabob Sanctuary",
+      "tags": [
+        "mediterranean",
+        "halal",
+        "lunch",
+        "dinner",
+        "beef",
+        "chicken",
+        "pork"
+      ],
+      "price": 2,
+      "address": "313 1/2 Vine St",
+      "city": "Glendale",
+      "zip": "91204",
+      "driveFrom91761": "36 min from 91761",
+      "phone": "(818) 244-1343",
+      "hours": "Tue–Sun 11:30am–8:00pm · Closed Monday",
+      "healthPermit": {
+        "facilityId": "LA-DPH-007891",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-03-18",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Founded by Ovakim and Sira Martirosyan, operated with their son Armen Martirosyan in a tiny, loving 6-seat Glendale kitchen.",
+      "scratchCommitment": "Meats marinated for 48 hours in secret family citrus-onion rub; grilled over smoking hardwood lump charcoal; scratch garlic toum whipped fresh.",
+      "destinationDish": {
+        "name": "Charcoal Beef Lule Kabob & Fluffy Basmati Rice",
+        "callout": "Spiced minced beef skewers charred over mesquite coals served with grilled tomato, sumac onions, and house pita."
+      },
+      "description": "Tiny, world-renowned family storefront on Vine St with 4.8 stars across 1,800+ reviews. Honored by Michelin Guide as a California culinary treasure.",
+      "story": "A testament to immigrant perseverance and intense culinary love, producing some of the juiciest, most aromatic kabobs anywhere in North America.",
+      "image": "/img/batch1/tanya-1.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/tanya-1.jpg",
+          "label": "Smoky Mesquite Charcoal Beef and Chicken Kabobs at Mini Kabob Glendale"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Charcoal Beef Lule Kabob Platter",
+            "desc": "Ground prime beef seasoned with sumac and onions, skewered over charcoal with grilled tomatoes and basmati rice.",
+            "price": 17.5
+          },
+          {
+            "name": "Boneless Chicken Breast Kabob",
+            "desc": "Chicken breast marinated 48 hours in lemon, saffron, and garlic, cooked over wood coals.",
+            "price": 18
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "House Garlic Toum & Warm Pita",
+            "desc": "Traditional whipped garlic and olive oil emulsion with fresh herbs.",
+            "price": 6
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Family Kabob Combo (Serves 4)",
+            "desc": "Four skewers of beef lule, chicken kabob, grilled vegetables, hummus, toum, and large basmati rice.",
+            "price": 65
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Creamy Walnut Hummus",
+            "desc": "Silky chickpea puree with imported tahini, olive oil, and crushed toasted walnuts.",
+            "price": 7.5
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "David K.",
+          "comment": "Literally the best kabobs I have ever had. The love and family pride here is unmatched.",
+          "date": "2026-10-18T19:00:00Z"
+        }
+      ],
+      "region": "San Fernando Valley",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 8:00 PM",
+      "socialMedia": {
+        "instagram": "@mini_kabob",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.1378,
+      "longitude": -118.2589,
+      "opening_hour_minutes": 690,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "raffi-place-glendale-broadway",
+      "name": "Raffi's Place (Glendale)",
+      "cuisine": "Persian & Middle Eastern Charcoal Kabobs, Saffron Rice & Stews",
+      "regionalIdentity": "Glendale's Landmark Open-Air Persian Courtyard",
+      "tags": [
+        "mediterranean",
+        "halal",
+        "lunch",
+        "dinner",
+        "beef",
+        "chicken"
+      ],
+      "price": 3,
+      "address": "211 E Broadway",
+      "city": "Glendale",
+      "zip": "91205",
+      "driveFrom91761": "35 min from 91761",
+      "phone": "(818) 240-7411",
+      "hours": "Sun–Thu 11:30am–9:30pm · Fri–Sat 11:30am–10:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-008741",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 98,
+        "inspectedOn": "2026-04-22",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Founded in 1993 by Raffi and Gosia Tchakerian, transforming an open-air Mediterranean courtyard into the epicenter of Persian fine hospitality.",
+      "scratchCommitment": "Prime filet mignon and chicken tenders skewered and charred over hardwood embers; saffron infused Basmati rice with whole grilled tomatoes.",
+      "destinationDish": {
+        "name": "Barg & Soltani Filet Mignon Kabob with Saffron Rice",
+        "callout": "Tender marinated beef filet and seasoned ground beef skewer served over aromatic buttered saffron basmati rice."
+      },
+      "description": "Breathtaking brick courtyard surrounded by ficus trees, cascading fountain, warm string lights, and 4.6 stars across 3,900+ reviews.",
+      "story": "A beloved Southern California culinary landmark where multi-generational families gather around overflowing platters of charcoal-grilled perfection.",
+      "image": "/img/batch1/tanya-2.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/tanya-2.jpg",
+          "label": "Charcoal Saffron Chicken and Filet Kabobs in the Courtyard at Raffi's"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Soltani Filet Combination",
+            "desc": "One skewer of prime filet mignon Barg and one skewer of seasoned beef Koobideh over saffron basmati rice.",
+            "price": 29.5
+          },
+          {
+            "name": "Chicken Barg with Saffron Rice",
+            "desc": "Tender chicken breast marinated in saffron, lemon juice, and grated onions, flame-broiled.",
+            "price": 22
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Shirazi Salad & Mast-o-Khiar",
+            "desc": "Diced cucumbers, tomatoes, and red onions with fresh mint vinaigrette alongside yogurt cucumber dip.",
+            "price": 8.5
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Raffi's Royal Feast for Four",
+            "desc": "Filet Barg, Chicken Kabob, Beef Koobideh, large grilled vegetables, saffron rice, and flatbreads.",
+            "price": 89
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Fresh Herb & Feta Platter (Sabzi Khordan)",
+            "desc": "Fresh mint, tarragon, radishes, walnuts, and French feta cheese with warm Sangak bread.",
+            "price": 9
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Armen M.",
+          "comment": "The courtyard setting is magical and the Barg filet melts in your mouth. King of Persian food.",
+          "date": "2026-10-18T20:10:00Z"
+        }
+      ],
+      "region": "San Fernando Valley",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 9:30 PM",
+      "socialMedia": {
+        "instagram": "@raffisplace",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.1458,
+      "longitude": -118.2534,
+      "opening_hour_minutes": 690,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "moby-dick-coffee-studio-city",
+      "name": "Red Window Coffee (Studio City)",
+      "cuisine": "Specialty Australian Flat Whites, Espresso & Pastries",
+      "regionalIdentity": "Studio City's Sun-Drenched Walk-Up Specialty Coffee Kiosk",
+      "tags": [
+        "coffee",
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "price": 2,
+      "address": "12953 Ventura Blvd",
+      "city": "Studio City",
+      "zip": "91604",
+      "driveFrom91761": "42 min from 91761",
+      "phone": "(818) 784-5112",
+      "hours": "Daily 7:00am–4:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-008492",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-05-19",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Artisanal walk-up coffee window on Ventura Blvd bringing Australia's meticulous flat-white espresso culture to the Valley.",
+      "scratchCommitment": "Direct-trade beans extracted on Synesso espresso machines; house lavender-honey syrups and fresh daily croissants.",
+      "destinationDish": {
+        "name": "The Red Window Flat White & Sea Salt Caramel Cold Foam",
+        "callout": "Silky microfoamed milk over double shot of espresso paired with a warm scratch chocolate croissant."
+      },
+      "description": "Vibrant crimson-red walk-up window with shaded garden patio benches along Ventura Blvd. 4.7 stars across 650+ reviews.",
+      "story": "A beloved morning ritual for Studio City locals, offering barista perfection in a relaxed open-air sidewalk atmosphere.",
+      "image": "/img/batch1/calle-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/calle-3.jpg",
+          "label": "Specialty Flat Whites and Garden Patio Seating in Studio City"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Aussie Flat White",
+            "desc": "Double shot of espresso with thin, velvety steamed whole milk for intense espresso character.",
+            "price": 4.85
+          },
+          {
+            "name": "Salted Caramel Cold Brew",
+            "desc": "Slow-steeped single origin cold brew crowned with hand-whipped sea salt caramel foam.",
+            "price": 5.75
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Honey Lavender Latte",
+            "desc": "Espresso with housemade organic lavender syrup and local wildflower honey.",
+            "price": 6
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Ventura Morning Combo",
+            "desc": "Aussie flat white paired with fresh almond frangipane croissant.",
+            "price": 9.75
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Iced Ceremonial Matcha",
+            "desc": "First harvest Uji matcha whisked over oat milk and ice.",
+            "price": 6.25
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Chloe F.",
+          "comment": "The coffee here is exceptional. Sitting on the patio drinking a flat white is my favorite morning routine.",
+          "date": "2026-10-17T08:45:00Z"
+        }
+      ],
+      "region": "San Fernando Valley",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 4:00 PM",
+      "socialMedia": {
+        "instagram": "@theredwindowcoffeeco",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.1481,
+      "longitude": -118.4152,
+      "opening_hour_minutes": 420,
+      "serves_breakfast": true,
+      "meals": [
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "coffee",
+        "coffee_boba"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "boba-loca-van-nuys-sepulveda",
+      "name": "Boba Ave 8090 (Van Nuys & Valley Glen)",
+      "cuisine": "Authentic Taiwanese Boba, Brown Sugar Milk & Popcorn Chicken",
+      "regionalIdentity": "San Fernando Valley's Favorite Taiwanese Boba Lounge",
+      "tags": [
+        "boba",
+        "tea",
+        "taiwanese",
+        "lunch",
+        "dinner"
+      ],
+      "price": 1,
+      "address": "6510 Sepulveda Blvd",
+      "city": "Van Nuys",
+      "zip": "91411",
+      "driveFrom91761": "44 min from 91761",
+      "phone": "(818) 781-8090",
+      "hours": "Daily 11:30am–10:30pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-009210",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 98,
+        "inspectedOn": "2026-06-11",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Independent Taiwanese boba enthusiasts serving the central San Fernando Valley with traditional tea brewing methods.",
+      "scratchCommitment": "Slow-simmered brown sugar boba cooked fresh every 2 hours; five-spice popcorn chicken fried to order.",
+      "destinationDish": {
+        "name": "Tiger Brown Sugar Boba Fresh Milk & Basil Popcorn Chicken",
+        "callout": "Warm tiger-striped brown sugar tapioca pearls layered against organic whole milk with crunchy fried chicken."
+      },
+      "description": "Vibrant neon-lit lounge with board games, modern seating, and 4.6 stars across 800+ reviews.",
+      "story": "A cornerstone of the Valley's tea culture where friends gather late into the evening for handcrafted drinks and Taiwanese street bites.",
+      "image": "/img/batch1/fortune-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/fortune-3.jpg",
+          "label": "Fresh Brown Sugar Boba Teas and Popcorn Chicken in Van Nuys"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Tiger Brown Sugar Boba Fresh Milk",
+            "desc": "Warm brown sugar pearls hand-swirled against cold organic milk and topped with cheese foam.",
+            "price": 6.25
+          },
+          {
+            "name": "Taiwanese Pepper Popcorn Chicken",
+            "desc": "Crispy five-spice chicken thigh bites fried with Thai basil leaves and chili powder.",
+            "price": 8.5
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Roasted Oolong Milk Tea",
+            "desc": "Rich charcoal roasted oolong with chewy honey boba.",
+            "price": 5.5
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Valley Boba & Snack Pack",
+            "desc": "Choice of large specialty boba drink paired with large spicy popcorn chicken.",
+            "price": 13.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Fresh Passionfruit Jasmine Green Tea",
+            "desc": "Jasmine tea shaken with real passionfruit pulp and crystal boba.",
+            "price": 5.75
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Brandon L.",
+          "comment": "Best boba in Van Nuys. The brown sugar boba is always warm and soft. Great popcorn chicken!",
+          "date": "2026-10-18T21:15:00Z"
+        }
+      ],
+      "region": "San Fernando Valley",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 10:30 PM",
+      "socialMedia": {
+        "instagram": "@bobaave8090",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.1885,
+      "longitude": -118.4665,
+      "opening_hour_minutes": 690,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner",
+        "boba",
+        "coffee_boba"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "guisados-boyle-heights-cesar-chavez",
+      "name": "Guisados (Boyle Heights)",
+      "cuisine": "Homestyle Braised Guisados Tacos & Handmade Corn Tortillas",
+      "regionalIdentity": "Boyle Heights' Original Braised Stew Taco Pioneer",
+      "tags": [
+        "mexican",
+        "lunch",
+        "dinner",
+        "beef",
+        "chicken",
+        "pork",
+        "vegetarian-options"
+      ],
+      "price": 1,
+      "address": "2100 E Cesar E Chavez Ave",
+      "city": "Boyle Heights",
+      "zip": "90033",
+      "driveFrom91761": "33 min from 91761",
+      "phone": "(323) 264-7201",
+      "hours": "Sun–Thu 9:00am–9:00pm · Fri–Sat 9:00am–10:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-008901",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-03-29",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Founded in Boyle Heights in 2010 by Armando De La Torre and his son Armando Jr., honoring homestyle braised meats cooked by Mexican mothers.",
+      "scratchCommitment": "Tortillas pressed from fresh wet masa made next door at Carnitas Uruapan; meats braised in ceramic cazuelas for hours.",
+      "destinationDish": {
+        "name": "Guisados 6-Taco Sampler & Tinga de Pollo",
+        "callout": "Mini handmade corn tortillas topped with Cochinita Pibil, Chicharron, Tinga de Pollo, Bistek en Salsa Roja, Mole Poblano, and Calabacitas."
+      },
+      "description": "Vibrant Boyle Heights flagship adorned with local Chicano art, sunny patio, and 4.7 stars across 4,200+ reviews.",
+      "story": "A monumental culinary pioneer that reshaped Los Angeles taco culture by centering traditional home-cooked Mexican braises (guisados).",
+      "image": "/img/batch1/potrillos-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/potrillos-3.jpg",
+          "label": "Famous Guisados Taco Sampler on Handmade Corn Tortillas in Boyle Heights"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "The Famous Taco Sampler (6 Mini Tacos)",
+            "desc": "Choose six braises served on freshly pressed handmade corn tortillas.",
+            "price": 12.5
+          },
+          {
+            "name": "Cochinita Pibil Taco",
+            "desc": "Pork shoulder shredded in sweet achiote and red citrus, topped with pickled red onions and habanero.",
+            "price": 3.75
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Tinga de Pollo Taco",
+            "desc": "Shredded chicken breast braised with tomatoes, onions, and chipotle, served with avocado and chipotle crema.",
+            "price": 3.75
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Family Guisados Party Box (12 Tacos)",
+            "desc": "Dozen full-sized tacos with sides of black beans and horchata.",
+            "price": 42
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Armando Palmero Drink",
+            "desc": "Half fresh housemade Horchata and half tart Jamaica hibiscus tea.",
+            "price": 3.75
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Elena G.",
+          "comment": "The Cochinita Pibil and Mole tacos on those thick fresh corn tortillas are pure comfort. A true LA treasure.",
+          "date": "2026-10-18T13:40:00Z"
+        }
+      ],
+      "region": "Los Angeles Metro",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 9:00 PM",
+      "socialMedia": {
+        "instagram": "@guisados",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.0483,
+      "longitude": -118.2148,
+      "opening_hour_minutes": 540,
+      "serves_breakfast": true,
+      "meals": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch",
+        "dinner"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "daikokuya-little-tokyo-1st",
+      "name": "Daikokuya (Little Tokyo LA)",
+      "cuisine": "Traditional Tonkotsu Ramen, Gyoza & Pork Bowls",
+      "regionalIdentity": "Little Tokyo's Iconic Brick-Lined Tonkotsu Ramen Hearth",
+      "tags": [
+        "japanese",
+        "ramen",
+        "lunch",
+        "dinner",
+        "pork"
+      ],
+      "price": 2,
+      "address": "327 E 1st St",
+      "city": "Little Tokyo",
+      "zip": "90012",
+      "driveFrom91761": "34 min from 91761",
+      "phone": "(213) 626-1680",
+      "hours": "Sun–Thu 11:00am–10:00pm · Fri–Sat 11:00am–11:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-007129",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 98,
+        "inspectedOn": "2026-04-10",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "A historic pioneer in Little Tokyo operating on 1st Street since 2002, bringing retro Showa-era Tokyo ramen culture to Los Angeles.",
+      "scratchCommitment": "Pork bone broth boiled continuously for over 24 hours to extract deep collagen and umami; chashu simmered in vintage master stock.",
+      "destinationDish": {
+        "name": "Daikoku Ramen with Kotteri Broth & Pan-Fried Gyoza",
+        "callout": "24-hour tonkotsu broth enriched with pork back fat (Kotteri), tender chashu pork, seasoned boiled egg, and crispy pan-fried gyoza."
+      },
+      "description": "Atmospheric vintage Tokyo alleyway aesthetic with nostalgic Japanese signs, paper lanterns, and 4.5 stars across 9,400+ reviews.",
+      "story": "The definitive Little Tokyo ramen institution that introduced a whole generation of Southern Californians to the depth of authentic tonkotsu ramen.",
+      "image": "/img/batch1/changan-2.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/changan-2.jpg",
+          "label": "Steaming Daikoku Tonkotsu Ramen in Historic Little Tokyo"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Daikoku Ramen",
+            "desc": "Signature 24-hr tonkotsu soup, house ramen noodles, tender Kurobuta pork chashu, seasoned soft egg, bamboo shoots, and green onion.",
+            "price": 16.95
+          },
+          {
+            "name": "Spicy Miso Ramen",
+            "desc": "Rich pork broth infused with spicy fermented soybean paste, bean sprouts, and chashu.",
+            "price": 17.5
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Handmade Pan-Fried Pork Gyoza (5 pcs)",
+            "desc": "Crispy-bottomed Japanese pork and vegetable dumplings with house ponzu sauce.",
+            "price": 7.95
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Daikokuya Ramen Combination",
+            "desc": "Bowl of Daikoku Ramen served with small chashu pork fried rice bowl and salad.",
+            "price": 22.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Shredded Chashu Bowl",
+            "desc": "Slow-simmered tender pork chashu over rice with sweet tare and pickled ginger.",
+            "price": 6.75
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Steven N.",
+          "comment": "Over 9,000 reviews for a reason. The Kotteri broth and tender chashu on 1st street are iconic.",
+          "date": "2026-10-18T18:45:00Z"
+        }
+      ],
+      "region": "Los Angeles Metro",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 10:00 PM",
+      "socialMedia": {
+        "instagram": "@daikokuya_ramen",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.0501,
+      "longitude": -118.2402,
+      "opening_hour_minutes": 660,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "is_active": true
+    },
+    {
+      "id": "bo-boba-chinatown-los-angeles",
+      "name": "Boba Guys (Chinatown Central Plaza LA)",
+      "cuisine": "Artisan Straus Milk Boba, Whisked Matcha & Horchata Boba",
+      "regionalIdentity": "Downtown LA's Progressive Craft Boba Innovator",
+      "tags": [
+        "boba",
+        "tea",
+        "lunch",
+        "dinner"
+      ],
+      "price": 2,
+      "address": "945 N Broadway, Ste B",
+      "city": "Chinatown",
+      "zip": "90012",
+      "driveFrom91761": "33 min from 91761",
+      "phone": "(213) 935-8088",
+      "hours": "Daily 11:30am–9:00pm",
+      "healthPermit": {
+        "facilityId": "LA-DPH-009412",
+        "agency": "Los Angeles County DPH",
+        "grade": "A",
+        "score": 99,
+        "inspectedOn": "2026-05-18",
+        "portalUrl": "https://publichealth.lacounty.gov"
+      },
+      "familyRoots": "Founded with the mission to bridge cultures through the highest culinary quality boba and pure organic dairy.",
+      "scratchCommitment": "Straus Family Creamery organic milk; pure cane sugar syrups; tea brewed from real whole leaves.",
+      "destinationDish": {
+        "name": "Strawberry Matcha Latte with Honey Boba",
+        "callout": "Housemade organic strawberry puree, cold Straus whole milk, and freshly whisked ceremonial grade matcha with chewy boba."
+      },
+      "description": "Charming sunlit walk-up in historic Chinatown Central Plaza with 4.6 stars across 1,100+ reviews.",
+      "story": "A modern classic in Downtown LA that treats bubble tea with the same reverence as third-wave specialty coffee.",
+      "image": "/img/batch1/fortune-3.jpg",
+      "photos": [
+        {
+          "file": "/img/batch1/fortune-3.jpg",
+          "label": "Layered Strawberry Matcha Latte and Honey Boba in LA Chinatown"
+        }
+      ],
+      "structuredMenu": {
+        "signatures": [
+          {
+            "name": "Strawberry Matcha Latte with Boba",
+            "desc": "House strawberry puree, organic whole milk, ceremonial Japanese matcha, and warm honey boba.",
+            "price": 6.95
+          },
+          {
+            "name": "Horchata Boba Milk",
+            "desc": "Scratch cinnamon rice milk blended with almond milk and chewy honey boba.",
+            "price": 6.25
+          }
+        ],
+        "regionalClassics": [
+          {
+            "name": "Classic Black Milk Tea",
+            "desc": "Direct-trade black tea with whole organic milk and fresh boba.",
+            "price": 5.75
+          }
+        ],
+        "combosAndTrays": [
+          {
+            "name": "Chinatown Boba Duo",
+            "desc": "Strawberry Matcha Latte paired with Horchata Boba.",
+            "price": 12.5
+          }
+        ],
+        "sidesAndDrinks": [
+          {
+            "name": "Jasmine Green Milk Tea with Almond Jelly",
+            "desc": "Fragrant cold brewed jasmine green tea with scratch almond jelly cubes.",
+            "price": 6
+          }
+        ]
+      },
+      "sample": false,
+      "featured": true,
+      "createdAt": "2026-10-26T16:00:00Z",
+      "ratings": [
+        {
+          "stars": 5,
+          "name": "Grace L.",
+          "comment": "The strawberry matcha is gorgeous and tastes even better. Best boba in Downtown LA.",
+          "date": "2026-10-18T15:10:00Z"
+        }
+      ],
+      "region": "Los Angeles Metro",
+      "county": "Los Angeles",
+      "pricesVerified": "October 2026",
+      "kitchenStatus": "open",
+      "statusLabel": "Open Now • Closing at 9:00 PM",
+      "socialMedia": {
+        "instagram": "@bobaguys",
+        "platform": "Instagram",
+        "verifiedActive": true
+      },
+      "latitude": 34.0652,
+      "longitude": -118.2372,
+      "opening_hour_minutes": 690,
+      "serves_breakfast": false,
+      "meals": [
+        "lunch",
+        "dinner"
+      ],
+      "meal_types": [
+        "lunch",
+        "dinner",
+        "boba",
+        "coffee_boba"
+      ],
+      "is_active": true
     }
   ]
 }

@@ -166,7 +166,7 @@
 
   // ---------- Persistent Click Analytics ("The 2 Numbers That Prove Value") ----------
   const IS_STANDALONE = IS_FILE_PROTO || Boolean(window.__HFG_OFFLINE_SEED__);
-  const LS_KEY = 'hfg_offline_restaurants_v14';
+  const LS_KEY = 'hfg_offline_restaurants_v15';
   const ANALYTICS_LS_KEY = 'cs_business_ad_analytics';
 
   function loadLocalAnalyticsMap() {

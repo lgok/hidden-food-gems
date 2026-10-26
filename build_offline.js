@@ -5,7 +5,7 @@ const path = require('path');
 const pubDir = path.join(__dirname, 'public');
 const indexHtml = fs.readFileSync(path.join(pubDir, 'index.html'), 'utf8');
 const stylesCss = fs.readFileSync(path.join(pubDir, 'styles.css'), 'utf8');
-const appJs = fs.readFileSync(path.join(pubDir, 'app.js'), 'utf8');
+const appJs = fs.readFileSync(path.join(pubDir, 'gems-client.js'), 'utf8');
 const seedRaw = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'seed.json'), 'utf8'));
 const seedData = Array.isArray(seedRaw) ? seedRaw : (seedRaw.restaurants || []);
 

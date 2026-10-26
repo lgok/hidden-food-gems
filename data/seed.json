@@ -10316,5 +10316,2302 @@
       "coffee_boba"
     ],
     "is_active": true
+  },
+  {
+    "id": "houndstooth-coffee-austin-lamar",
+    "name": "Houndstooth Coffee (North Lamar)",
+    "cuisine": "Specialty Craft Pour-Overs, Espresso & Tea",
+    "regionalIdentity": "Pioneering Austin Specialty Coffee Laboratory",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "4200 N Lamar Blvd, Ste 120",
+    "city": "Austin",
+    "zip": "78756",
+    "driveFrom91761": "Central Texas",
+    "phone": "(512) 531-9417",
+    "hours": "Daily 6:30am–5:00pm",
+    "healthPermit": {
+      "facilityId": "TX-ATX-008291",
+      "agency": "Austin Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-03-12",
+      "portalUrl": "https://www.austintexas.gov/health"
+    },
+    "familyRoots": "Founded in Texas by Sean Henry with the philosophy that the pattern of hospitality and coffee ritual weaves human connection.",
+    "scratchCommitment": "Single-origin roast partnerships via Tweed Coffee, scratch hazelnut and vanilla bean syrups, and hand-pulled espresso shots measured to the tenth of a gram.",
+    "destinationDish": {
+      "name": "Single-Origin Chemex Pour-Over & Cortado",
+      "callout": "Seasonal micro-lot pour-over paired with an authentic scratch flaky almond croissant."
+    },
+    "description": "Sleek, sunlit architectural coffee shop on North Lamar with expansive outdoor tables, welcoming baristas, and an immaculate 4.6 rating on Google.",
+    "story": "A cornerstone of Austin's third-wave coffee movement that treats every cup as an artisanal, deliberate craft.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Specialty Pour-Overs and Cortados at Houndstooth Austin"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Single-Origin Chemex Pour-Over",
+          "desc": "Rotational micro-lot beans extracted through manual Chemex dripper.",
+          "price": 6.25
+        },
+        {
+          "name": "Texas Cortado",
+          "desc": "Equal parts velvety microfoam milk and double Tweed espresso.",
+          "price": 4.75
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Matcha Latte",
+          "desc": "Ceremonial Japanese matcha whisked with oat milk and touch of wildflower honey.",
+          "price": 6
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "The Morning Routine Combo",
+          "desc": "Single-origin pour-over paired with house-baked almond croissant.",
+          "price": 10.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Sparkling Lavender Espresso Tonic",
+          "desc": "Double espresso poured over crisp Fever Tree tonic with organic lavender.",
+          "price": 6.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Marcus T.",
+        "comment": "Best espresso extraction in Austin. Clean minimalist vibe and flawless coffee.",
+        "date": "2026-10-20T10:14:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Travis",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 5:00 PM",
+    "socialMedia": {
+      "instagram": "@houndstoothcoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 30.3093,
+    "longitude": -97.7397,
+    "opening_hour_minutes": 390,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "coco-boba-tea-austin-burnet",
+    "name": "Coco's Cafe (Burnet Road)",
+    "cuisine": "Taiwanese Boba Teas, Crispy Chicken & Noodles",
+    "regionalIdentity": "Legendary Austin Campus & Burnet Taiwanese Mainstay",
+    "tags": [
+      "boba",
+      "tea",
+      "taiwanese",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "8888 Burnet Rd, Ste 107",
+    "city": "Austin",
+    "zip": "78757",
+    "driveFrom91761": "Central Texas",
+    "phone": "(512) 533-9333",
+    "hours": "Daily 11:00am–9:00pm",
+    "healthPermit": {
+      "facilityId": "TX-ATX-006412",
+      "agency": "Austin Public Health",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-04-18",
+      "portalUrl": "https://www.austintexas.gov/health"
+    },
+    "familyRoots": "Family-run Taiwanese café operating in Austin since the early 2000s, beloved across generations of local foodies and students.",
+    "scratchCommitment": "Freshly boiled golden brown honey boba cooked every 3 hours; real Ceylon and Jasmine green tea brewed fresh daily.",
+    "destinationDish": {
+      "name": "Taro Milk Tea with Fresh Honey Boba & Taiwanese Pepper Popcorn Chicken",
+      "callout": "Velvety real taro blended milk tea loaded with chewy boba, paired with five-spice crispy chicken."
+    },
+    "description": "Vibrant Taiwanese comfort hub serving fresh brown sugar milk tea, fruit teas, and scratch street snacks with 4.5 stars and thousands of loyal reviews.",
+    "story": "Before boba chains swept Texas, Coco's set the bar in Austin for honest Taiwanese home cooking and authentic tea culture.",
+    "image": "/img/batch1/fortune-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/fortune-3.jpg",
+        "label": "Handcrafted Taiwanese Milk Teas and Fresh Boba at Coco's"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Brown Sugar Milk Tea with Boba",
+          "desc": "Rich black milk tea drizzled with caramelized Okinawa brown sugar and warm tapioca pearls.",
+          "price": 5.75
+        },
+        {
+          "name": "Taiwanese Crispy Popcorn Chicken",
+          "desc": "Bite-sized chicken thigh marinated in soy and five-spice, fried crisp with fried Thai basil.",
+          "price": 8.95
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mango Green Tea with Lychee Jelly",
+          "desc": "Fresh brewed jasmine green tea shaken with real mango purée and juicy lychee coconut cubes.",
+          "price": 5.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Afternoon Street Snack Combo",
+          "desc": "Choice of classic milk tea with boba plus large spicy popcorn chicken.",
+          "price": 13.95
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Fried Tofu with Garlic Soy Glaze",
+          "desc": "Golden fried tofu cubes tossed with sweet garlic dipping reduction.",
+          "price": 6.95
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Jessica L.",
+        "comment": "The original Austin boba spot. The popcorn chicken is unmatched and boba is always perfectly cooked.",
+        "date": "2026-10-15T18:22:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Travis",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:00 PM",
+    "socialMedia": {
+      "instagram": "@cocos_cafe_austin",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 30.3644,
+    "longitude": -97.7289,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "cuve-coffee-bar-austin-6th",
+    "name": "Cuvée Coffee Bar (East 6th)",
+    "cuisine": "Nitro Cold Brew, Espresso & Artisan Pastries",
+    "regionalIdentity": "Pioneering Nitrogen Cold Brew & Texas Roastery",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "2000 E 6th St",
+    "city": "Austin",
+    "zip": "78702",
+    "driveFrom91761": "Central Texas",
+    "phone": "(512) 593-5913",
+    "hours": "Daily 7:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "TX-ATX-007788",
+      "agency": "Austin Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-05-10",
+      "portalUrl": "https://www.austintexas.gov/health"
+    },
+    "familyRoots": "Founded by Mike McKim in Texas, Cuvée revolutionized the coffee world by developing the first nitro cold brew on tap.",
+    "scratchCommitment": "Direct-trade roasts, nitrogen draft infusion, scratch lavender and vanilla bean syrups.",
+    "destinationDish": {
+      "name": "Black Matter Nitro Cold Brew on Tap",
+      "callout": "Velvety, cascading micro-nitrogen cold brew with a creamy stout-like head."
+    },
+    "description": "Hip East Austin brick coffee bar with sunlit garage doors, great communal work tables, and high-energy baristas.",
+    "story": "A true Austin original renowned across the country for pioneering the velvety nitrogen coffee revolution.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Nitro Cold Brew on Tap at Cuvee Coffee Austin"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Black Matter Nitro Cold Brew",
+          "desc": "Original craft nitro cold brew with chocolate undertones and a dense, creamy micro-foam.",
+          "price": 5.5
+        },
+        {
+          "name": "Honey Lavender Latte",
+          "desc": "Espresso with house-simmered Texas wildflower honey and organic lavender syrup.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Traditional Flat White",
+          "desc": "Double shot of Stella espresso with velvety textured whole milk.",
+          "price": 4.85
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Coffee & Croissant Morning Pairing",
+          "desc": "Draft nitro cold brew with a flaky warm chocolate croissant.",
+          "price": 10
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Chai Spice Draft Cooler",
+          "desc": "Slow-steeped spiced black tea with oat milk on tap.",
+          "price": 5.75
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Derek H.",
+        "comment": "The nitro cold brew is silk. Cool interior and friendly staff.",
+        "date": "2026-10-12T08:45:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Travis",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 5:00 PM",
+    "socialMedia": {
+      "instagram": "@cuveecoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 30.2625,
+    "longitude": -97.7208,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "habesha-ethiopian-austin-ih35",
+    "name": "Habesha Ethiopian Restaurant (North Austin)",
+    "cuisine": "Authentic Ethiopian Stews, Tibs & Fresh Injera",
+    "regionalIdentity": "Beloved Family-Run Habesha Hearth in Austin",
+    "tags": [
+      "ethiopian",
+      "african",
+      "lunch",
+      "dinner",
+      "vegetarian-options",
+      "halal",
+      "beef",
+      "chicken"
+    ],
+    "price": 2,
+    "address": "6019 N Interstate Hwy 35",
+    "city": "Austin",
+    "zip": "78723",
+    "driveFrom91761": "Central Texas",
+    "phone": "(512) 419-7000",
+    "hours": "Sun–Thu 11:30am–9:30pm · Fri–Sat 11:30am–10:00pm",
+    "healthPermit": {
+      "facilityId": "TX-ATX-005129",
+      "agency": "Austin Public Health",
+      "grade": "A",
+      "score": 96,
+      "inspectedOn": "2026-06-04",
+      "portalUrl": "https://www.austintexas.gov/health"
+    },
+    "familyRoots": "Owned and operated by husband-and-wife Yidnekachew Fantu and Kizilbachew Fantu, celebrating genuine Ethiopian heritage in Central Texas.",
+    "scratchCommitment": "Traditional sourdough teff injera fermented 3 days; slow-simmered berbere spiced wats with imported Ethiopian spices.",
+    "destinationDish": {
+      "name": "Habesha Special Veggie & Meat Feast Platter",
+      "callout": "Family platter featuring Doro Wat, Beef Tibs, and six vibrant vegetarian stews over fresh injera."
+    },
+    "description": "Warm, culturally rich dining room with woven mesob basket tables and authentic hospitality. 4.7 stars across 1,100+ reviews.",
+    "story": "The premier destination in Austin for authentic communal Ethiopian dining, celebrated for depth of flavor and family warmth.",
+    "image": "/img/batch1/cebollines-2.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/cebollines-2.jpg",
+        "label": "Communal Habesha Injera Platter with Doro Wat and Savory Stews"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Habesha Combination Platter",
+          "desc": "Tender beef key wat, spicy doro wat chicken, and assorted lentil and split pea stews over freshly made injera.",
+          "price": 21.95
+        },
+        {
+          "name": "Awaze Beef Tibs",
+          "desc": "Tender beef cubes sautéed with onions, rosemary, jalapeños, and spiced awaze red pepper paste.",
+          "price": 18.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Vegetarian Stew Sampler",
+          "desc": "Misir wat (red lentils), kik alicha (yellow split peas), gomen (collard greens), and fossolia (green beans and carrots).",
+          "price": 16.95
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Family Grand Feast (Serves 3-4)",
+          "desc": "Generous injera spread of doro wat, lamb tibs, kitfo, and all six vegetable wats.",
+          "price": 54
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Freshly Brewed Spiced Ethiopian Tea",
+          "desc": "Black tea simmered with cardamom, cinnamon, and cloves.",
+          "price": 3.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Aaron K.",
+        "comment": "Incredible flavors. The injera is spongy and perfect, and the lamb tibs are legendary.",
+        "date": "2026-10-09T19:30:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Travis",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:30 PM",
+    "socialMedia": {
+      "instagram": "@habeshaaustin",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 30.3168,
+    "longitude": -97.7088,
+    "opening_hour_minutes": 690,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "titayas-thai-cuisine-austin",
+    "name": "Titaya's South East Asian Kitchen",
+    "cuisine": "Homestyle Thai Curries, Crispy Duck & Street Noodles",
+    "regionalIdentity": "Austin's Celebrated Scratch Thai Kitchen",
+    "tags": [
+      "thai",
+      "asian",
+      "lunch",
+      "dinner",
+      "seafood",
+      "chicken",
+      "beef",
+      "pork",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "5501 N Lamar Blvd, Ste C101",
+    "city": "Austin",
+    "zip": "78751",
+    "driveFrom91761": "Central Texas",
+    "phone": "(512) 458-1992",
+    "hours": "Sun–Thu 11:30am–9:00pm · Fri–Sat 11:30am–10:00pm",
+    "healthPermit": {
+      "facilityId": "TX-ATX-004899",
+      "agency": "Austin Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-07-15",
+      "portalUrl": "https://www.austintexas.gov/health"
+    },
+    "familyRoots": "Founded by Chef Titaya who brought cherished regional family recipes from Bangkok to Austin's historic North Lamar corridor.",
+    "scratchCommitment": "Curry pastes pounded in-house; slow-braised pork belly and tamarind reductions created from scratch daily.",
+    "destinationDish": {
+      "name": "Khao Soi Chiang Mai Curry & Basil Duck",
+      "callout": "Fragrant coconut yellow curry with tender braised chicken drumstick, egg noodles, and crispy noodle nest."
+    },
+    "description": "Modern, warmly lit dining space consistently hailed as Austin's gold standard for nuanced, aromatic Thai cooking. 4.6 stars over 2,200 reviews.",
+    "story": "A culinary staple in Austin for over 15 years, renowned for refuse-to-compromise spice balance and scratch curries.",
+    "image": "/img/batch1/thai-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/thai-1.jpg",
+        "label": "Aromatic Khao Soi Curry Noodles and Crispy Garnish at Titaya's"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Khao Soi Chiang Mai",
+          "desc": "Northern Thai yellow curry with tender braised chicken, egg noodles, pickled mustard greens, and red onion.",
+          "price": 16.95
+        },
+        {
+          "name": "Crispy Basil Duck",
+          "desc": "Crispy roasted half duck flash-sautéed with spicy Thai holy basil, onions, and bell peppers.",
+          "price": 23.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Pad See Ew",
+          "desc": "Charred wide rice noodles wok-fried with egg, Chinese broccoli, and house sweet black soy reduction.",
+          "price": 15.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Bangkok Street Sampler Platter",
+          "desc": "Crispy chicken spring rolls, chicken satay skewers, and golden money bags with peanut dip.",
+          "price": 17
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Thai Iced Tea with Sweet Condensed Milk",
+          "desc": "Brewed Ceylon tea with star anise and creamy condensed milk.",
+          "price": 4.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Brianna M.",
+        "comment": "The Khao Soi is transcendent. Unbelievable balance of rich coconut and spice.",
+        "date": "2026-10-14T20:10:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Travis",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:00 PM",
+    "socialMedia": {
+      "instagram": "@titayasatx",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 30.3235,
+    "longitude": -97.7285,
+    "opening_hour_minutes": 690,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "hidden-grounds-coffee-hoboken-1st",
+    "name": "Hidden Grounds Coffee (Hoboken)",
+    "cuisine": "Artisan Cold Brews, Masala Chai & Toast Craft",
+    "regionalIdentity": "Vibrant New Jersey Specialty Coffee & Chai Pioneer",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "700 Garden St",
+    "city": "Hoboken",
+    "zip": "07030",
+    "driveFrom91761": "Northern New Jersey",
+    "phone": "(201) 683-4900",
+    "hours": "Daily 7:00am–6:00pm",
+    "healthPermit": {
+      "facilityId": "NJ-HUD-003819",
+      "agency": "Hoboken Health Department",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-03-24",
+      "portalUrl": "https://www.hobokennj.gov/departments/health-human-services"
+    },
+    "familyRoots": "Founded by Anand Patel and Paul Argila, combining world coffee culture with warm Indian masala chai traditions.",
+    "scratchCommitment": "Authentic whole-spice infused masala chai, cold brew infused over 24 hours, and scratch artisanal avocado brioche toasts.",
+    "destinationDish": {
+      "name": "Authentic Masala Chai Latte & Rose Cardamom Cold Brew",
+      "callout": "Slow-simmered black Assam tea with freshly cracked green cardamom, ginger, cinnamon, and whole milk."
+    },
+    "description": "Charming, brick-lined corner coffee outpost in Hoboken with cozy vintage rugs, warm plants, and an exceptional 4.7-star rating.",
+    "story": "A beloved community sanctuary where Jersey coffee lovers gather for phenomenal pour-overs and authentic spice lattes.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Specialty Lattes and Authentic Masala Chai at Hidden Grounds Hoboken"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Authentic Masala Chai Latte",
+          "desc": "Black Assam tea brewed with freshly ground cardamom, cloves, cinnamon, and fresh ginger.",
+          "price": 5.75
+        },
+        {
+          "name": "Rose Cardamom Cold Brew",
+          "desc": "Signature 24-hour cold brew infused with organic rose water and crushed cardamom cream.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Cortado",
+          "desc": "Double shot of single-origin espresso with equal parts steamed whole milk.",
+          "price": 4.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Morning Toast & Brew",
+          "desc": "Avocado sourdough smash toast with chili flakes paired with house cold brew.",
+          "price": 12.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Golden Turmeric Milk",
+          "desc": "Organic turmeric root with ginger, black pepper, honey, and steamed oat milk.",
+          "price": 5.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Priya S.",
+        "comment": "The masala chai is as authentic as it gets. Cozy, beautiful vibe on Garden Street.",
+        "date": "2026-10-19T09:12:00Z"
+      }
+    ],
+    "region": "Northern New Jersey",
+    "county": "Hudson",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 6:00 PM",
+    "socialMedia": {
+      "instagram": "@thehiddengrounds",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 40.7451,
+    "longitude": -74.0329,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "boba-bar-jersey-city-newark-ave",
+    "name": "Boba Bar (Historic Downtown Jersey City)",
+    "cuisine": "Craft Taiwanese Boba, Fresh Fruit Teas & Egg Waffles",
+    "regionalIdentity": "Downtown Jersey City's Premier Craft Boba Lounge",
+    "tags": [
+      "boba",
+      "tea",
+      "taiwanese",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "245 Newark Ave",
+    "city": "Jersey City",
+    "zip": "07302",
+    "driveFrom91761": "Northern New Jersey",
+    "phone": "(201) 918-2088",
+    "hours": "Daily 11:30am–9:30pm",
+    "healthPermit": {
+      "facilityId": "NJ-HUD-002981",
+      "agency": "Jersey City Department of Health",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-04-11",
+      "portalUrl": "https://www.jerseycitynj.gov/cityhall/health"
+    },
+    "familyRoots": "Locally founded by boba connoisseurs bringing authentic brown sugar tiger stripes and real fruit purées to Jersey City.",
+    "scratchCommitment": "Slow-simmered Taiwanese brown sugar pearls cooked fresh every 2 hours; organic milk bases and pure loose-leaf teas.",
+    "destinationDish": {
+      "name": "Tiger Brown Sugar Fresh Milk & Hong Kong Egg Bubble Waffle",
+      "callout": "Warm brown sugar boba layered against cold organic milk and topped with sea salt cream cheese foam."
+    },
+    "description": "Chic, cheerful boutique shop along the pedestrian plaza on Newark Ave. 4.6 stars on Google with hundreds of rave reviews.",
+    "story": "A staple stop for Jersey City residents walking Newark Avenue, renowned for perfect boba chew and premium tea sourcing.",
+    "image": "/img/batch1/fortune-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/fortune-3.jpg",
+        "label": "Tiger Brown Sugar Boba and Fresh Fruit Teas at Boba Bar Jersey City"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Tiger Brown Sugar Fresh Milk with Boba",
+          "desc": "Warm brown sugar pearls hand-swirled against whole organic milk and topped with cheese foam.",
+          "price": 6.25
+        },
+        {
+          "name": "Fresh Mango Pomelo Sago",
+          "desc": "Real mango puree with coconut milk, sago pearls, and fresh ruby grapefruit pulp.",
+          "price": 6.75
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Classic Roasted Oolong Milk Tea",
+          "desc": "Rich charcoal roasted oolong tea shaken with creamy milk and herbal grass jelly.",
+          "price": 5.75
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Boba & Bubble Waffle Pairing",
+          "desc": "Choice of specialty milk tea paired with warm crisp egg waffle.",
+          "price": 11.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Strawberry Jasmine Green Tea",
+          "desc": "Crushed fresh strawberries with cold brewed jasmine green tea and agar crystal boba.",
+          "price": 6.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "David M.",
+        "comment": "Best boba on Newark Ave by a mile. The tapioca is warm and soft, exactly how it should be.",
+        "date": "2026-10-18T16:04:00Z"
+      }
+    ],
+    "region": "Northern New Jersey",
+    "county": "Hudson",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:30 PM",
+    "socialMedia": {
+      "instagram": "@thebobabarjc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 40.7223,
+    "longitude": -74.0478,
+    "opening_hour_minutes": 690,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "razza-jersey-city-grove",
+    "name": "Razza Pizza Artigianale (Grove St)",
+    "cuisine": "Artisan Wood-Fired Sourdough Pizza & Burrata",
+    "regionalIdentity": "World-Renowned Sourdough Pizza Masterpiece in Jersey City",
+    "tags": [
+      "italian",
+      "pizza",
+      "lunch",
+      "dinner",
+      "vegetarian-options"
+    ],
+    "price": 3,
+    "address": "275/277 Grove St",
+    "city": "Jersey City",
+    "zip": "07302",
+    "driveFrom91761": "Northern New Jersey",
+    "phone": "(201) 356-9348",
+    "hours": "Tue–Sun 12:00pm–9:30pm · Closed Monday",
+    "healthPermit": {
+      "facilityId": "NJ-HUD-001944",
+      "agency": "Jersey City Department of Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-05-18",
+      "portalUrl": "https://www.jerseycitynj.gov/cityhall/health"
+    },
+    "familyRoots": "Founded by Chef Dan Richer, a James Beard Foundation Award finalist dedicated to local agricultural ingredients.",
+    "scratchCommitment": "Naturally leavened sourdough fermented 48 hours; housemade butter churned from local grass-fed cream; scratch stretched mozzarella.",
+    "destinationDish": {
+      "name": "Mangia Cauliflower & Jersey Margherita Pizza",
+      "callout": "Wood-fired sourdough crust with local crushed Jersey tomatoes, fresh house-pulled mozzarella, and fragrant basil."
+    },
+    "description": "Vibrant, rustic-industrial corner restaurant famous for producing some of the greatest wood-fired pizzas in the United States. 4.6 stars over 3,400 reviews.",
+    "story": "Famously praised by the New York Times as having pizza that rivals and often surpasses Manhattan, born entirely of New Jersey farming pride.",
+    "image": "/img/batch1/vinces-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/vinces-1.jpg",
+        "label": "Artisan Wood-Fired Sourdough Margherita Pizza at Razza Jersey City"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Jersey Margherita",
+          "desc": "Naturally leavened crust, crushed New Jersey tomatoes, fresh mozzarella, sea salt, extra virgin olive oil, basil.",
+          "price": 21
+        },
+        {
+          "name": "Santo Pizza",
+          "desc": "Crushed tomatoes, housemade sausage, shaved onions, fresh mozzarella, and hot chili oil.",
+          "price": 23.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Housemade Bread & Freshly Churned Butter",
+          "desc": "Warm wood-fired sourdough loaf served with cultured sea-salted farm butter.",
+          "price": 9.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Artisan Pizza Tasting Pair",
+          "desc": "Jersey Margherita and Santo pizzas paired with house arugula salad.",
+          "price": 49
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Wild Shaved Fennel & Radish Salad",
+          "desc": "Crisp fennel, pecorino romano, fresh lemon vinaigrette, cracked black pepper.",
+          "price": 14
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Chris N.",
+        "comment": "The sourdough crust is on another plane of existence. Crispy, airy, and the tomatoes are perfection.",
+        "date": "2026-10-16T18:50:00Z"
+      }
+    ],
+    "region": "Northern New Jersey",
+    "county": "Hudson",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:30 PM",
+    "socialMedia": {
+      "instagram": "@razzanj",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 40.7188,
+    "longitude": -74.0435,
+    "opening_hour_minutes": 720,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "bluestone-coffee-montclair-watchung",
+    "name": "Bluestone Coffee Co. (Montclair)",
+    "cuisine": "Specialty Micro-Roasts, Benedicts & Scratch Pastries",
+    "regionalIdentity": "Montclair's Beloved Independent Third-Wave Hub",
+    "tags": [
+      "coffee",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "123 Watchung Ave",
+    "city": "Montclair",
+    "zip": "07043",
+    "driveFrom91761": "Northern New Jersey",
+    "phone": "(973) 783-3523",
+    "hours": "Daily 7:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "NJ-ESS-001209",
+      "agency": "Montclair Health Department",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-02-28",
+      "portalUrl": "https://www.montclairnjusa.org/government/departments/health"
+    },
+    "familyRoots": "Independent family-owned café anchoring the picturesque Watchung Plaza neighborhood in Montclair for decades.",
+    "scratchCommitment": "Artisanal small-batch coffee roasted locally; farm-fresh organic eggs, scratch buttermilk pancakes, and fresh muffins baked daily.",
+    "destinationDish": {
+      "name": "Watchung Breakfast Skillet & House Pour-Over",
+      "callout": "Crisp seasoned potatoes with poached farm eggs, avocado, and aged cheddar with a piping hot mug of single-origin roast."
+    },
+    "description": "Sun-drenched neighborhood gathering spot with outdoor sidewalk seating, wood finishes, and a 4.6-star rating over 850+ reviews.",
+    "story": "The morning heartbeat of Montclair where commuters, artists, and families meet for exceptional coffee and homestyle breakfast.",
+    "image": "/img/batch1/sunrise-griddle.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/sunrise-griddle.jpg",
+        "label": "Scratch Breakfast Plates and Fresh Espresso at Bluestone Montclair"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Watchung Eggs Benedict",
+          "desc": "Two farm-fresh poached eggs on toasted English muffin with Canadian bacon and scratch hollandaise.",
+          "price": 14.95
+        },
+        {
+          "name": "Bluestone House Blend Pour-Over",
+          "desc": "Medium-bodied smooth roast with notes of cocoa and roasted hazelnut.",
+          "price": 4.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Lemon Ricotta Pancakes",
+          "desc": "Fluffy buttermilk pancakes infused with fresh lemon zest and creamy ricotta, topped with warm berries.",
+          "price": 13.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "The Commuter Breakfast Box",
+          "desc": "Bacon egg and cheese on artisan brioche roll with hot 16oz roast coffee.",
+          "price": 11
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Iced Spiced Chai Latte",
+          "desc": "Organic black tea with crushed spices, honey, and oat milk over ice.",
+          "price": 5.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Emily B.",
+        "comment": "My favorite breakfast spot in NJ. Fantastic coffee, friendly staff, and the pancakes are divine.",
+        "date": "2026-10-11T08:15:00Z"
+      }
+    ],
+    "region": "Northern New Jersey",
+    "county": "Essex",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 4:00 PM",
+    "socialMedia": {
+      "instagram": "@bluestonecoffeeco",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 40.8312,
+    "longitude": -74.2045,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "ebenezers-coffeehouse-dc-capitol-hill",
+    "name": "Ebenezers Coffeehouse (Capitol Hill)",
+    "cuisine": "Fair-Trade Espresso, Cold Brew & Scratch Pastries",
+    "regionalIdentity": "Historic Capitol Hill Community Coffeehouse",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 1,
+    "address": "201 F St NE",
+    "city": "Washington",
+    "zip": "20002",
+    "driveFrom91761": "Washington Metro",
+    "phone": "(202) 558-6900",
+    "hours": "Daily 7:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "DC-DOH-008192",
+      "agency": "DC Department of Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-03-15",
+      "portalUrl": "https://doh.dc.gov"
+    },
+    "familyRoots": "A historic former gas station transformed into an independent community coffeehouse steps from Union Station and the US Capitol.",
+    "scratchCommitment": "100% fair-trade direct sourcing, organic syrups, and scratch pastries baked fresh every dawn.",
+    "destinationDish": {
+      "name": "Salted Caramel Cold Brew & Fresh Blueberry Scone",
+      "callout": "Slow-steeped cold brew capped with house-whipped salted caramel cold foam."
+    },
+    "description": "Sunlit two-story Capitol Hill staple with warm brick arches, comfortable meeting alcoves, and 4.6 stars across 1,300+ reviews.",
+    "story": "A beloved community meeting ground on Capitol Hill dedicated to social good and serving exceptional artisan coffee.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Specialty Cold Brew and Artisan Scones at Ebenezers DC"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Salted Caramel Cold Foam Cold Brew",
+          "desc": "Slow-extracted dark roast cold brew crowned with velvety salted caramel foam.",
+          "price": 5.75
+        },
+        {
+          "name": "Capitol Hill Espresso Tonic",
+          "desc": "Double shot of espresso poured over bubbly tonic and fresh orange peel.",
+          "price": 5.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Traditional Cappuccino",
+          "desc": "Rich espresso with silky, dense textured whole milk microfoam.",
+          "price": 4.75
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Capitol Morning Pair",
+          "desc": "Large house drip or pour-over with warm scratch-baked blueberry scone.",
+          "price": 8.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "London Fog Latte",
+          "desc": "Organic Earl Grey tea with vanilla syrup and steamed velvety milk.",
+          "price": 5.25
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Brian C.",
+        "comment": "Gorgeous space, great coffee, and peaceful vibe just a few blocks from Capitol Hill.",
+        "date": "2026-10-17T09:00:00Z"
+      }
+    ],
+    "region": "Washington Metro",
+    "county": "District of Columbia",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 5:00 PM",
+    "socialMedia": {
+      "instagram": "@ebenezerscoffeehouse",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 38.8973,
+    "longitude": -77.0039,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "teado-tea-cafe-dc-chinatown",
+    "name": "Tea Do Tea Cafe (DC Chinatown)",
+    "cuisine": "Handcrafted Boba, Milk Teas & Onigiri Snacks",
+    "regionalIdentity": "Chinatown DC's Favorite Contemporary Boba Destination",
+    "tags": [
+      "boba",
+      "tea",
+      "asian",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "800 7th St NW",
+    "city": "Washington",
+    "zip": "20001",
+    "driveFrom91761": "Washington Metro",
+    "phone": "(202) 629-2810",
+    "hours": "Daily 11:00am–10:00pm",
+    "healthPermit": {
+      "facilityId": "DC-DOH-007421",
+      "agency": "DC Department of Health",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-04-20",
+      "portalUrl": "https://doh.dc.gov"
+    },
+    "familyRoots": "Independent modern tea lounge dedicated to authentic boba culture and Japanese street snacks in the heart of Downtown DC.",
+    "scratchCommitment": "Real loose-leaf tea brewed fresh hourly; brown sugar and honey boba simmered constantly for optimal chew.",
+    "destinationDish": {
+      "name": "Taro Milk Tea with Brown Sugar Boba & Crispy Takoyaki",
+      "callout": "Authentic creamy taro root milk tea paired with fresh golden octopus dumplings."
+    },
+    "description": "Bright, energetic modern café with anime-inspired murals, board games, and 4.5 stars over 800+ reviews.",
+    "story": "The definitive Chinatown gathering spot for youth, students, and downtown workers craving high-grade boba and hot street food.",
+    "image": "/img/batch1/fortune-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/fortune-3.jpg",
+        "label": "Handcrafted Boba Milk Teas and Japanese Onigiri at Tea Do DC"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Thai Milk Tea with Boba",
+          "desc": "Spiced Ceylon tea with creamy sweetened condensed milk and warm honey boba.",
+          "price": 5.75
+        },
+        {
+          "name": "Brown Sugar Milk Swirl",
+          "desc": "Fresh organic milk swirled with slow-caramelized brown sugar and chewy boba pearls.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Japanese Takoyaki (6 pcs)",
+          "desc": "Crispy fried octopus balls topped with Japanese mayo, savory takoyaki sauce, and bonito flakes.",
+          "price": 7.95
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Chinatown Boba & Snack Set",
+          "desc": "Large specialty fruit or milk tea paired with freshly griddled onigiri rice ball.",
+          "price": 11.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Passion Fruit Jasmine Green Tea",
+          "desc": "Freshly brewed green tea shaken with real passion fruit purée and aloe vera jelly.",
+          "price": 5.75
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Victoria S.",
+        "comment": "My go-to boba spot in DC. The boba is always super fresh and the takoyaki is piping hot!",
+        "date": "2026-10-15T17:30:00Z"
+      }
+    ],
+    "region": "Washington Metro",
+    "county": "District of Columbia",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 10:00 PM",
+    "socialMedia": {
+      "instagram": "@teadodc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 38.8997,
+    "longitude": -77.0219,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "swings-coffee-roasters-dc-del-ray",
+    "name": "Swing's Coffee Roasters (Del Ray & DC)",
+    "cuisine": "Historic Small-Batch Coffee Roasts & Pour-Overs",
+    "regionalIdentity": "DC Metro's Oldest Independent Coffee Roaster Since 1916",
+    "tags": [
+      "coffee",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "501 E Monroe Ave",
+    "city": "Alexandria",
+    "zip": "22301",
+    "driveFrom91761": "Washington Metro",
+    "phone": "(703) 647-7135",
+    "hours": "Daily 7:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "VA-ALX-004128",
+      "agency": "Alexandria Health Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-05-02",
+      "portalUrl": "https://www.alexandriava.gov/health"
+    },
+    "familyRoots": "Founded in downtown DC in 1916 by Michael E. Swing, delivering over 110 years of continuous small-batch roasting in the Capital region.",
+    "scratchCommitment": "Direct-trade beans roasted in small batches on vintage roasters; scratch seasonal syrups and precise cupping standards.",
+    "destinationDish": {
+      "name": "Historic Diplomat Blend Pour-Over & Draft Cold Brew",
+      "callout": "Rich, chocolatey signature roast that has powered Washington leaders and locals for a century."
+    },
+    "description": "Expansive roastery and sun-filled coffee bar with viewing windows into the roasting facility, patio tables, and 4.7 stars across 900+ reviews.",
+    "story": "An undeniable cultural institution in the Capital region, preserving the highest standards of artisan coffee craft.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Artisan Pour-Overs and Historic Roasts at Swing's Coffee"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Diplomat Blend Manual Pour-Over",
+          "desc": "Heritage blend of Central and South American beans with notes of cocoa, caramel, and mild citrus.",
+          "price": 4.75
+        },
+        {
+          "name": "Nitro Draft Cold Brew",
+          "desc": "Single-origin beans cold-steeped 20 hours and served creamy on tap.",
+          "price": 5.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Classic Vanilla Bean Latte",
+          "desc": "Double espresso with house-simmered Madagascar vanilla bean syrup and velvety steamed milk.",
+          "price": 5.95
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Morning Roastery Set",
+          "desc": "Choice of pour-over coffee paired with scratch almond croissant.",
+          "price": 9.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Matcha Tonic",
+          "desc": "Japanese ceremonial grade matcha poured over craft sparkling tonic water.",
+          "price": 6
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Katherine W.",
+        "comment": "Over a hundred years of roasting and it shows in every sip. Best coffee in the DC area.",
+        "date": "2026-10-13T09:40:00Z"
+      }
+    ],
+    "region": "Washington Metro",
+    "county": "Alexandria",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 4:00 PM",
+    "socialMedia": {
+      "instagram": "@swingscoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 38.8315,
+    "longitude": -77.0506,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dukes-grocery-dc-dupont",
+    "name": "Duke's Grocery (Dupont Circle)",
+    "cuisine": "East London Pub Sandwiches, Scratch Burgers & Curries",
+    "regionalIdentity": "Dupont Circle's Celebrated Independent Neighborhood Kitchen",
+    "tags": [
+      "american",
+      "british",
+      "lunch",
+      "dinner",
+      "beef",
+      "chicken",
+      "seafood"
+    ],
+    "price": 2,
+    "address": "1513 17th St NW",
+    "city": "Washington",
+    "zip": "20036",
+    "driveFrom91761": "Washington Metro",
+    "phone": "(202) 733-5623",
+    "hours": "Sun–Thu 11:00am–10:00pm · Fri–Sat 11:00am–11:00pm",
+    "healthPermit": {
+      "facilityId": "DC-DOH-005619",
+      "agency": "DC Department of Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-06-21",
+      "portalUrl": "https://doh.dc.gov"
+    },
+    "familyRoots": "Inspired by the neighborhood corner cafés and independent bodegas of East London, anchoring 17th Street with warm neighborhood pride.",
+    "scratchCommitment": "Creekstone Farms beef ground fresh daily; scratch sweet chili sauces, pickled vegetables, and hand-cut fries.",
+    "destinationDish": {
+      "name": "The Proper Burger® with Hand-Cut Fries",
+      "callout": "Two Creekstone beef patties, gouda cheese, charred red onions, sweet chili sauce, and garlic aioli on a toasted brioche bun."
+    },
+    "description": "Cozy, brick-lined townhouse with copper bar, chalkboard menus, and bustling streetfront patio. 4.6 stars across 2,600+ reviews.",
+    "story": "Voted repeatedly as having the best burger in Washington DC, Duke's Grocery is a beloved independent cornerstone of neighborhood life.",
+    "image": "/img/batch1/nymk-2.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/nymk-2.jpg",
+        "label": "The Famous Proper Burger with Hand-Cut Twice-Fried Fries at Duke's"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Proper Burger®",
+          "desc": "Two Creekstone beef patties, melted gouda, charred red onion, sweet chili sauce, rocket, garlic aioli, toasted brioche.",
+          "price": 17.5
+        },
+        {
+          "name": "East London Fish & Chips",
+          "desc": "Crisp golden battered fresh cod with twice-cooked chips, scratch minted mushy peas, and house tartar sauce.",
+          "price": 19
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Chicken Katsu Sandwich",
+          "desc": "Crispy panko chicken cutlet, Asian slaw, pickled cucumbers, and spicy tonkatsu sauce on ciabatta.",
+          "price": 16.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Neighborhood Proper Feast",
+          "desc": "Two Proper Burgers with large twice-cooked fries and housemade slaw.",
+          "price": 42
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Twice-Cooked Hand-Cut Chips",
+          "desc": "Russet potatoes cooked twice for extreme crispness with scratch garlic mayo.",
+          "price": 7
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Zachary P.",
+        "comment": "The Proper Burger lives up to every bit of the hype. Juiciest burger in the district.",
+        "date": "2026-10-18T19:15:00Z"
+      }
+    ],
+    "region": "Washington Metro",
+    "county": "District of Columbia",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 10:00 PM",
+    "socialMedia": {
+      "instagram": "@dukesgrocery",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 38.9105,
+    "longitude": -77.0384,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "ceremony-coffee-roasters-bethesda",
+    "name": "Ceremony Coffee Roasters (Bethesda)",
+    "cuisine": "Single-Origin Pour-Overs, Craft Lattes & Modern Fare",
+    "regionalIdentity": "Maryland's Iconic Specialty Coffee Roasting Pioneer",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "7475 Wisconsin Ave",
+    "city": "Bethesda",
+    "zip": "20814",
+    "driveFrom91761": "Maryland Capital Region",
+    "phone": "(301) 760-7053",
+    "hours": "Daily 7:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "MD-MCO-003891",
+      "agency": "Montgomery County Department of Health and Human Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-04-05",
+      "portalUrl": "https://www.montgomerycountymd.gov/hhs"
+    },
+    "familyRoots": "Founded in Annapolis, Maryland by Vincent Iatesta, Ceremony has set the benchmark for specialty coffee craft across the state.",
+    "scratchCommitment": "Sustainably sourced direct-trade green coffee beans, roasted in small batches; house syrups simmered with pure cane sugar and whole spices.",
+    "destinationDish": {
+      "name": "Thesis Seasonal Pour-Over & Cardamom Honey Latte",
+      "callout": "Micro-lot single origin extracted with precision, paired with a house-baked cardamom morning bun."
+    },
+    "description": "Bright, minimalist Scandinavian-inspired café with floor-to-ceiling glass on Wisconsin Ave in downtown Bethesda. 4.6 stars over 600+ reviews.",
+    "story": "A jewel of Maryland's coffee scene, making every morning extraordinary through meticulous brewing science and hospitality.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Specialty Pour-Over Bar and House Pastries at Ceremony Bethesda"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Thesis Single-Origin Pour-Over",
+          "desc": "Rotational micro-lot roasted in Maryland and brewed manually to highlight delicate fruit and floral notes.",
+          "price": 6
+        },
+        {
+          "name": "Sweet Cardamom Latte",
+          "desc": "Espresso with housemade crushed green cardamom syrup and velvety microfoam.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Cortado",
+          "desc": "Equal parts double espresso and steamed milk in an artisanal glass.",
+          "price": 4.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Morning Ritual Pairing",
+          "desc": "Ceremony pour-over with a scratch-baked seasonal almond fruit croissant.",
+          "price": 10.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kyoto Cold Brew",
+          "desc": "Slow drip cold extraction over 12 hours for an ultra-smooth, chocolate finish.",
+          "price": 5.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Daniel R.",
+        "comment": "Best coffee shop in Bethesda. Gorgeous light, incredible espresso, and very kind staff.",
+        "date": "2026-10-17T08:30:00Z"
+      }
+    ],
+    "region": "Maryland Capital Region",
+    "county": "Montgomery",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 5:00 PM",
+    "socialMedia": {
+      "instagram": "@ceremonycoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 38.9834,
+    "longitude": -77.0945,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "kung-fu-tea-rockville-town-square",
+    "name": "Kung Fu Tea (Rockville Town Square)",
+    "cuisine": "Taiwanese Bubble Teas, Milk Caps & Slushes",
+    "regionalIdentity": "Montgomery County's Premier Boba Hub in Rockville",
+    "tags": [
+      "boba",
+      "tea",
+      "taiwanese",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "275 N Washington St",
+    "city": "Rockville",
+    "zip": "20850",
+    "driveFrom91761": "Maryland Capital Region",
+    "phone": "(301) 251-8327",
+    "hours": "Daily 11:00am–9:30pm",
+    "healthPermit": {
+      "facilityId": "MD-MCO-002711",
+      "agency": "Montgomery County Department of Health and Human Services",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-03-30",
+      "portalUrl": "https://www.montgomerycountymd.gov/hhs"
+    },
+    "familyRoots": "Locally owned and operated in the heart of Rockville Town Square, bringing authentic Taiwanese tea craftsmanship to Montgomery County.",
+    "scratchCommitment": "Slow-cooked golden honey pearls cooked fresh every 2 hours; tea brewed from loose leaves imported from Taiwan.",
+    "destinationDish": {
+      "name": "Kung Fu Milk Tea with Herbal Jelly & Brown Sugar Wow",
+      "callout": "Velvety black milk tea loaded with signature chewy boba and cool soothing grass jelly."
+    },
+    "description": "Lively storefront on North Washington St with comfortable seating, friendly counter service, and an immaculate 4.5-star rating.",
+    "story": "A neighborhood favorite for families and students strolling Rockville Town Square looking for refreshing boba drinks.",
+    "image": "/img/batch1/fortune-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/fortune-3.jpg",
+        "label": "Handcrafted Taiwanese Bubble Teas at Rockville Town Square"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Kung Fu Milk Tea with Boba",
+          "desc": "Signature robust Earl Grey black milk tea with slow-simmered honey boba.",
+          "price": 5.5
+        },
+        {
+          "name": "Cocoa Cream Wow",
+          "desc": "Rich chocolate milk swirled with caramelized brown sugar boba and topped with sea salt milk cap.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mango Green Tea with Popping Boba",
+          "desc": "Real mango purée shaken with jasmine green tea and mango popping pearls.",
+          "price": 5.75
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Family Boba Party Pack (4 Drinks)",
+          "desc": "Choice of four signature milk teas or fruit refreshers with premium toppings.",
+          "price": 21
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Winter Melon Lemon Tea",
+          "desc": "Traditional slow-brewed winter melon with freshly squeezed lemon juice.",
+          "price": 5.25
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Stephanie W.",
+        "comment": "The boba is consistently chewy and sweet. Great location right by the square.",
+        "date": "2026-10-12T15:45:00Z"
+      }
+    ],
+    "region": "Maryland Capital Region",
+    "county": "Montgomery",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:30 PM",
+    "socialMedia": {
+      "instagram": "@kungfuteausa",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 39.0856,
+    "longitude": -77.1534,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "kuan-dim-sum-rockville",
+    "name": "Kuan Dim Sum (Rockville)",
+    "cuisine": "Handcrafted Cantonese Dim Sum, Dumplings & Roast Meats",
+    "regionalIdentity": "Rockville's Acclaimed Traditional Dim Sum Master",
+    "tags": [
+      "chinese",
+      "dim sum",
+      "lunch",
+      "dinner",
+      "pork",
+      "seafood",
+      "beef",
+      "chicken",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "801 Hungerford Dr",
+    "city": "Rockville",
+    "zip": "20850",
+    "driveFrom91761": "Maryland Capital Region",
+    "phone": "(301) 838-8989",
+    "hours": "Daily 10:30am–9:00pm",
+    "healthPermit": {
+      "facilityId": "MD-MCO-001844",
+      "agency": "Montgomery County Department of Health and Human Services",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-05-14",
+      "portalUrl": "https://www.montgomerycountymd.gov/hhs"
+    },
+    "familyRoots": "Family kitchen operated by veteran Cantonese dim sum masters dedicating decades to traditional rolling, pleating, and steaming.",
+    "scratchCommitment": "Dumpling skins rolled thin to order; whole shrimp and Berkshire pork chopped daily for fresh har gow and siu mai.",
+    "destinationDish": {
+      "name": "Steamed Crystal Shrimp Har Gow & Crispy Baked BBQ Pork Buns",
+      "callout": "Translucent pleated dumplings stuffed with juicy whole shrimp and sweet savory roast char siu buns."
+    },
+    "description": "Vibrant dining hall filled with the aroma of bamboo steam baskets and sizzling woks. 4.5 stars with over 1,000 reviews.",
+    "story": "A cornerstone of Montgomery County's rich Asian culinary district, drawing families every weekend for true scratch dim sum.",
+    "image": "/img/batch1/changan-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-3.jpg",
+        "label": "Steaming Handmade Har Gow Dumplings and Char Siu Buns in Rockville"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Steamed Shrimp Dumplings (Har Gow)",
+          "desc": "Translucent wheat starch dumplings filled with fresh whole shrimp, bamboo shoots, and sesame oil.",
+          "price": 7.95
+        },
+        {
+          "name": "Pork & Shrimp Siu Mai",
+          "desc": "Open-topped steamed dumplings filled with ground pork, minced shrimp, and topped with crab roe.",
+          "price": 7.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Baked BBQ Char Siu Buns",
+          "desc": "Fluffy sweet golden buns stuffed with honey-glazed slow-roasted barbecued pork.",
+          "price": 7.25
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Dim Sum Imperial Platter",
+          "desc": "Har Gow, Siu Mai, Crispy Spring Rolls, and Steamed Pork Ribs with black bean sauce.",
+          "price": 27.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Chinese Broccoli with Oyster Sauce",
+          "desc": "Blanched crisp gai lan drizzled with premium soy reduction and oyster sauce.",
+          "price": 8.95
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Henry T.",
+        "comment": "The Har Gow here is the real deal. Giant chunks of fresh shrimp and super thin skins.",
+        "date": "2026-10-16T12:30:00Z"
+      }
+    ],
+    "region": "Maryland Capital Region",
+    "county": "Montgomery",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 9:00 PM",
+    "socialMedia": {
+      "instagram": "@kuandimsummd",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 39.0967,
+    "longitude": -77.1601,
+    "opening_hour_minutes": 630,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "silver-diner-rockville-pike",
+    "name": "Silver Diner (Rockville Pike)",
+    "cuisine": "Farm-to-Table American Diner Classics & All-Day Breakfast",
+    "regionalIdentity": "Maryland's Iconic Local Farm-Sourced Modern Diner",
+    "tags": [
+      "american",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "12276 Rockville Pike",
+    "city": "Rockville",
+    "zip": "20852",
+    "driveFrom91761": "Maryland Capital Region",
+    "phone": "(301) 770-2828",
+    "hours": "Sun–Thu 7:00am–11:00pm · Fri–Sat 7:00am–12:00am",
+    "healthPermit": {
+      "facilityId": "MD-MCO-004502",
+      "agency": "Montgomery County Department of Health and Human Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-06-18",
+      "portalUrl": "https://www.montgomerycountymd.gov/hhs"
+    },
+    "familyRoots": "Founded by Bob Giaimo and Chef Ype Von Hengst with a mission to partner directly with local mid-Atlantic family farms.",
+    "scratchCommitment": "Cage-free eggs from regional farms; unbleached flour, fresh fruit compotes, and grass-fed antibiotic-free meats.",
+    "destinationDish": {
+      "name": "Caramel French Toast & Chesapeake Crab Cake Benedict",
+      "callout": "Brioche soaked in scratch vanilla custard, topped with fresh strawberries and farm maple syrup."
+    },
+    "description": "Gleaming classic stainless-steel Art Deco diner with retro jukeboxes, comfortable booths, and 4.6 stars over 3,200 reviews.",
+    "story": "A Maryland institution demonstrating that classic American comfort food can be executed with farm-to-table integrity and heart.",
+    "image": "/img/batch1/joanne-2.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/joanne-2.jpg",
+        "label": "Farm-Fresh French Toast and Scratch Breakfast Plates at Silver Diner"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Caramel French Toast",
+          "desc": "Thick-cut challah bread soaked in egg custard, griddled golden and topped with warm caramel and fresh strawberries.",
+          "price": 13.95
+        },
+        {
+          "name": "Maryland Crab Hash",
+          "desc": "Jumbo lump Maryland crab meat with crispy potato hash, poached cage-free eggs, and hollandaise.",
+          "price": 18.95
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Lumberjack Breakfast",
+          "desc": "Two cage-free eggs any style, buttermilk pancakes, crispy bacon, sausage, and home fries.",
+          "price": 15.5
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Family Pancake & Eggs Breakfast Box",
+          "desc": "Generous stack of buttermilk pancakes, scrambled eggs, bacon, and breakfast potatoes for 4.",
+          "price": 44
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Local Apple Cider Shake",
+          "desc": "Local orchard apple cider blended with all-natural vanilla ice cream.",
+          "price": 6.95
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Marcus E.",
+        "comment": "Best breakfast in Rockville. The ingredients are always fresh and the crab hash is phenomenal.",
+        "date": "2026-10-18T10:00:00Z"
+      }
+    ],
+    "region": "Maryland Capital Region",
+    "county": "Montgomery",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 11:00 PM",
+    "socialMedia": {
+      "instagram": "@silver_diner",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 39.0573,
+    "longitude": -77.1219,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "copa-vida-pasadena-raymond",
+    "name": "Copa Vida (Old Town Pasadena)",
+    "cuisine": "Specialty Pour-Over Coffee, Espresso & Brunch",
+    "regionalIdentity": "Pasadena's Flagship Artisan Coffee & Community Hearth",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "70 S Raymond Ave",
+    "city": "Pasadena",
+    "zip": "91105",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "(626) 213-3952",
+    "hours": "Daily 7:00am–6:00pm",
+    "healthPermit": {
+      "facilityId": "LA-PAS-009182",
+      "agency": "Pasadena Public Health Department",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-03-10",
+      "portalUrl": "https://www.cityofpasadena.net/public-health"
+    },
+    "familyRoots": "Founded by Steve Chang with a mission to bring world-class coffee craftsmanship and inclusive community fellowship together under one roof.",
+    "scratchCommitment": "Direct-trade rotational single origins brewed on automated Seraphim pour-over heads; scratch brioche French toast and hazelnut syrups.",
+    "destinationDish": {
+      "name": "Seraphim Single-Origin Pour-Over & Croque Madame",
+      "callout": "Precision-extracted pour-over paired with artisan toasted brioche, gruyère, and farm-fresh sunny egg."
+    },
+    "description": "Expansive sunlit space with exposed brick, soaring ceilings, and abundant outdoor patio tables across from Central Park in Pasadena. 4.6 stars over 1,500 reviews.",
+    "story": "A cornerstone of Southern California's specialty coffee movement, celebrated for warmth, innovation, and culinary excellence.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Specialty Seraphim Pour-Overs and Scratch Brunch at Copa Vida Pasadena"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Seraphim Single-Origin Pour-Over",
+          "desc": "Automated precision water dispersion over freshly ground micro-lot beans for exquisite flavor clarity.",
+          "price": 6.5
+        },
+        {
+          "name": "House Vanilla Bean Latte",
+          "desc": "Double espresso with housemade Madagascar vanilla syrup and silky textured organic milk.",
+          "price": 6.25
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Avocado & Poached Egg Toast",
+          "desc": "Thick-cut country sourdough, smashed avocado, cherry tomatoes, radish, microgreens, and poached egg.",
+          "price": 13.95
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Pasadena Morning Set",
+          "desc": "Single-origin pour-over paired with scratch baked ham and cheese croissant.",
+          "price": 11.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Sparkling Citrus Cold Brew",
+          "desc": "Slow-steeped cold brew with craft tonic, yuzu reduction, and fresh rosemary sprig.",
+          "price": 6.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Jessica R.",
+        "comment": "Gorgeous atmosphere, fast WiFi, and the best pour-over coffee in Old Pasadena.",
+        "date": "2026-10-18T09:30:00Z"
+      }
+    ],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 6:00 PM",
+    "socialMedia": {
+      "instagram": "@copa_vida",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 34.1444,
+    "longitude": -118.1492,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "sunright-tea-studio-rowland-heights",
+    "name": "Sunright Tea Studio (Rowland Heights)",
+    "cuisine": "Artisan Taiwanese Boba, Fresh Fruit Teas & Frosties",
+    "regionalIdentity": "San Gabriel Valley's High-Precision Boba Sensation",
+    "tags": [
+      "boba",
+      "tea",
+      "taiwanese",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "18188 Colima Rd, Ste B",
+    "city": "Rowland Heights",
+    "zip": "91748",
+    "driveFrom91761": "19 min from 91761",
+    "phone": "(626) 810-0988",
+    "hours": "Daily 11:00am–10:00pm",
+    "healthPermit": {
+      "facilityId": "LA-DPH-008412",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-05-19",
+      "portalUrl": "https://publichealth.lacounty.gov"
+    },
+    "familyRoots": "Founded in California by passionate Taiwanese tea enthusiasts dedicated to elevating bubble tea through whole organic milk and pure Ceylon, Oolong, and Jasmine leaves.",
+    "scratchCommitment": "Hand-shaken 17 times to ensure complete temperature and emulsion balance; fresh brown sugar boba cooked in small batches all day.",
+    "destinationDish": {
+      "name": "Sunright Boba Milk Tea & Fresh Grapefruit Frostie",
+      "callout": "Whole organic milk, slow-cooked honey brown sugar pearls, and roasted oolong tea shaken to velvety perfection."
+    },
+    "description": "Sleek, vibrant boutique boba destination in Diamond Plaza with upbeat staff and a 4.7-star rating with over 1,200 reviews.",
+    "story": "One of the most praised modern boba shops in the SGV, known for uncompromising ingredient freshness and signature shake technique.",
+    "image": "/img/batch1/fortune-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/fortune-3.jpg",
+        "label": "Signature Sunright Boba Milk Tea and Fresh Fruit Frosties in Rowland Heights"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Sunright Boba Milk Tea",
+          "desc": "Signature black Ceylon tea shaken with whole organic milk and slow-simmered warm brown sugar boba.",
+          "price": 5.75
+        },
+        {
+          "name": "Creme Brulee Boba Milk",
+          "desc": "Rich custard pudding swirled into fresh organic milk with warm caramelized brown sugar pearls.",
+          "price": 6.5
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Fresh Grapefruit Jasmine Green Tea",
+          "desc": "Real ruby grapefruit pulp hand-muddled with fragrant cold brewed jasmine tea.",
+          "price": 6.25
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "SGV Tea Lovers Trio",
+          "desc": "Sunright Boba Milk Tea, Grapefruit Jasmine Tea, and Taro Frostie.",
+          "price": 17.5
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "White Peach Oolong Frostie",
+          "desc": "Blended oolong tea with sweet white peach purée and silky sea salt cheese mousse.",
+          "price": 6.75
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Amy Y.",
+        "comment": "Hands down the best boba in Rowland Heights. The boba texture is consistently 10/10.",
+        "date": "2026-10-17T19:00:00Z"
+      }
+    ],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 10:00 PM",
+    "socialMedia": {
+      "instagram": "@sunrightteastudio",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 33.9922,
+    "longitude": -117.9023,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "bird-rock-coffee-roasters-la-jolla",
+    "name": "Bird Rock Coffee Roasters (La Jolla)",
+    "cuisine": "Direct-Trade Micro-Roasts, Cold Brew & Scratch Pastries",
+    "regionalIdentity": "San Diego's Nationally Acclaimed Roaster of the Year",
+    "tags": [
+      "coffee",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "5627 La Jolla Blvd",
+    "city": "La Jolla",
+    "zip": "92037",
+    "driveFrom91761": "San Diego County",
+    "phone": "(858) 551-1707",
+    "hours": "Daily 6:30am–5:00pm",
+    "healthPermit": {
+      "facilityId": "SD-DEH-008129",
+      "agency": "County of San Diego Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-04-12",
+      "portalUrl": "https://www.sandiegocounty.gov/deh"
+    },
+    "familyRoots": "Founded in the coastal Bird Rock neighborhood of La Jolla by Chuck Patton, pioneering direct-trade relationships with coffee farmers worldwide.",
+    "scratchCommitment": "Direct-farm sourced green coffee; named national Roaster of the Year; house-whipped honey cinnamon syrups and scratch pastries.",
+    "destinationDish": {
+      "name": "Direct-Trade Pour-Over & Monkey Bite Espresso",
+      "callout": "Complex, sweet espresso extraction paired with an organic seaside almond pastry."
+    },
+    "description": "Vibrant coastal neighborhood gathering place just two blocks from the Pacific Ocean, with salty ocean breezes, dog-friendly patio, and 4.7 stars over 1,400 reviews.",
+    "story": "A legend in California coffee culture that elevated San Diego into a globally recognized specialty coffee capital.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Artisan Coastal Pour-Overs at Bird Rock Coffee Roasters La Jolla"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Direct-Trade Single Origin Pour-Over",
+          "desc": "Seasonal micro-lot sourced directly from premier farmers in Colombia and Ethiopia.",
+          "price": 6.25
+        },
+        {
+          "name": "Monkey Bite Espresso Cortado",
+          "desc": "Award-winning espresso blend with notes of dark chocolate, berry, and sweet citrus with equal steamed milk.",
+          "price": 4.75
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Seaside Honey Cinnamon Latte",
+          "desc": "Espresso with organic wildflower honey, freshly grated cinnamon, and oat milk.",
+          "price": 6.25
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Bird Rock Morning Fuel",
+          "desc": "Single-origin pour-over paired with warm scratch blueberry muffin.",
+          "price": 9.75
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Cold Brew on Nitro Tap",
+          "desc": "Slow-steeped 24-hour brew charged with pure nitrogen for a velvety head.",
+          "price": 5.5
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-10-26T15:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Trevor G.",
+        "comment": "The coffee here is extraordinary. Sitting on the patio near the ocean drinking a pour-over is pure bliss.",
+        "date": "2026-10-16T08:20:00Z"
+      }
+    ],
+    "region": "San Diego County",
+    "county": "San Diego",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now • Closing at 5:00 PM",
+    "socialMedia": {
+      "instagram": "@birdrockcoffeeroasters",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 32.8122,
+    "longitude": -117.2681,
+    "opening_hour_minutes": 390,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true
   }
 ]

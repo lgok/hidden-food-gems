@@ -15,9 +15,9 @@ Every restaurant, kitchen, or food-hall maker must pass all 6 internal quality s
 - **Environment Standard:** Must offer clean, well-lit, comfortable seating (spacious dining room, lively outdoor patio, or vibrant food hall).
 - **Family & Friend Safety:** Located in a safe, accessible, well-kept commercial center, walkable downtown corridor, or culinary district where parents feel completely comfortable bringing their children.
 
-### 3. Active Social & Review Proof
-- **Active Digital Presence:** Must have an active, updated presence on Instagram, TikTok, or a well-maintained Google/Yelp business profile.
-- **High Customer Sentiment:** Minimum 4.2+ to 4.8+ rating threshold with consistent praise from real local diners regarding food quality, warm service, and kitchen cleanliness.
+### 3. Active Social & Review Proof (Mandatory for Featured Spot)
+- **Active Social Media is Required to be Featured:** The restaurant **must** have an active, verified presence on Instagram, TikTok, Facebook, or active online community reels/tags with up-to-date food photos and customer engagement. **If a restaurant does not have any active social media presence, it CANNOT be featured.**
+- **High Customer Sentiment:** Minimum 4.3+ to 4.8+ rating threshold with consistent praise from real local diners regarding food quality, warm service, and kitchen cleanliness across Yelp and Google.
 
 ### 4. Visual Proof of Product
 - **Real, Authentic Food Presentation:** Verified, appetizing real customer and house photography of actual dishes (zero stock images, zero generic illustrations).

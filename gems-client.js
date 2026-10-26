@@ -1,10 +1,11 @@
-/* HiddenFoodGem.com: front-end (no frameworks, works fully offline or on local network) */
+/* Hidden Food Gems: front-end (no frameworks, works fully offline or on local network) */
 (() => {
   'use strict';
 
   // ---------- Config ----------
   const MEAL_TABS = [
     ['', 'All Meals', '🍽️'],
+    ['coffee_boba', 'Top Coffee & Boba', '☕'],
     ['open_now', 'Open Right Now', '🟢'],
     ['breakfast', 'Breakfast', '☀️'],
     ['brunch', 'Brunch', '🥞'],
@@ -165,7 +166,7 @@
 
   // ---------- Persistent Click Analytics ("The 2 Numbers That Prove Value") ----------
   const IS_STANDALONE = IS_FILE_PROTO || Boolean(window.__HFG_OFFLINE_SEED__);
-  const LS_KEY = 'hfg_offline_restaurants_v13';
+  const LS_KEY = 'hfg_offline_restaurants_v14';
   const ANALYTICS_LS_KEY = 'cs_business_ad_analytics';
 
   function loadLocalAnalyticsMap() {
@@ -190,11 +191,6 @@
   }
 
   async function recordClickEvent(restaurantId, type, extra = {}) {
-    try {
-      if (typeof window !== 'undefined' && typeof window.va === 'function') {
-        window.va('event', { name: type === 'call' ? 'restaurant_call_click' : 'restaurant_directions_click', data: { restaurantId: String(restaurantId) } });
-      }
-    } catch {}
     if (restaurantId === '__custom__') {
       if (type === 'call') state.customBiz.calls++;
       else if (type === 'direction') state.customBiz.directions++;
@@ -718,6 +714,12 @@
   //   c) Must be open today.
   function qualifiesForMealTab(r, mealTab, now = new Date()) {
     if (!mealTab) return true;
+    if (mealTab === 'coffee_boba') {
+      const isCoffeeBoba = (r.tags || []).some((t) => ['coffee_boba', 'coffee', 'boba', 'tea'].includes(String(t).toLowerCase())) ||
+        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.cuisine || '') ||
+        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.name || '');
+      return isCoffeeBoba && !isClosedToday(r, now);
+    }
     if (mealTab === 'open_now') return isOpenRightNow(r, now);
 
     const mealTypesArr = Array.isArray(r.meal_types)
@@ -841,12 +843,22 @@
   }
 
   async function api(path, opts = {}) {
+    // If the browser loaded the bundled seed data, use it directly to guarantee immediate data synchronization
+    if (window.__HFG_OFFLINE_SEED__ && Array.isArray(window.__HFG_OFFLINE_SEED__) && window.__HFG_OFFLINE_SEED__.length > 0) {
+      if (path === '/api/restaurants' && (!opts.method || opts.method === 'GET')) {
+        return window.__HFG_OFFLINE_SEED__;
+      }
+    }
+
     if (!IS_STANDALONE) {
       try {
         const res = await fetch(path, { headers: { 'Content-Type': 'application/json' }, ...opts });
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(data.error || 'Something went wrong');
-        return data;
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok) throw new Error(data.error || 'Something went wrong');
+          return data;
+        }
       } catch (e) {
         if (!window.__HFG_OFFLINE_SEED__) throw e;
       }
@@ -854,7 +866,7 @@
     let list = [];
     try { list = JSON.parse(localStorage.getItem(LS_KEY) || 'null'); } catch {}
     const offlineSeed = window.__HFG_OFFLINE_SEED__;
-    // Auto-migrate or sync if localStorage has older/fewer restaurants than the bundled offline seed
+    // Auto-migrate or sync if localStorage has older/different restaurants than the bundled offline seed
     if (!Array.isArray(list) || !list.length || (Array.isArray(offlineSeed) && offlineSeed.length !== list.length)) {
       list = JSON.parse(JSON.stringify(offlineSeed || []));
       try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch {}
@@ -984,7 +996,24 @@
       newest: (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
       az: (a, b) => a.name.localeCompare(b.name),
     };
-    return list.sort(sorters[state.sort] || sorters.gem);
+    list.sort(sorters[state.sort] || sorters.gem);
+
+    // If Coffee & Boba tab is selected, strictly enforce top 5 per city
+    if (state.mealTab === 'coffee_boba') {
+      const cityGroups = new Map();
+      const cappedList = [];
+      for (const item of list) {
+        const c = item.city || 'Unknown';
+        const currentCount = cityGroups.get(c) || 0;
+        if (currentCount < 5) {
+          cityGroups.set(c, currentCount + 1);
+          cappedList.push(item);
+        }
+      }
+      return cappedList;
+    }
+
+    return list;
   }
 
   // ---------- Card Front Menu Builder (Signatures Only + Dotted Leader Price Alignment) ----------
@@ -1169,10 +1198,6 @@
       </section>
       <div class="wrap">
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>
-        <div class="community-notice-banner" role="note">
-          <span class="notice-icon">💡</span>
-          <p><b>Please Note:</b> Before visiting, please double-check the restaurant, neighborhood, current hours, and recent ratings directly on the restaurant's official website, social media, or phone.</p>
-        </div>
         <div class="grid" id="grid"></div>
         <div class="load-more-wrap" id="load-more-container" hidden>
           <button type="button" class="btn-load-more" id="btn-load-more">
@@ -1705,7 +1730,7 @@
     const totalSent = calls + directions;
     const costPerCustomer = totalSent > 0 ? (10 / totalSent).toFixed(2) : '0.00';
 
-    const smsText = `Hi ${ownerName}, for your $10 ad this month on HiddenFoodGem.com, your listing (${bizName}) generated:\n• ${calls} direct calls to your counter*\n• ${directions} turn-by-turn navigation routes to your storefront*\nCost per customer sent: ~$${costPerCustomer} Here is the link to renew your featured spot for next month: ${stripeUrl}`;
+    const smsText = `Hi ${ownerName}, for your $10 ad this month on Hidden Food Gems, your listing (${bizName}) generated:\n• ${calls} direct calls to your counter*\n• ${directions} turn-by-turn navigation routes to your storefront*\nCost per customer sent: ~$${costPerCustomer} Here is the link to renew your featured spot for next month: ${stripeUrl}`;
 
     // Aggregate totals across flagship 12
     const allCalls = top12.reduce((sum, r) => sum + getAnalytics(r).calls, 0);
@@ -1919,7 +1944,7 @@
           .msg{background:#f6ebdd;padding:16px;border-radius:12px;white-space:pre-wrap;font-family:monospace;line-height:1.5}
         </style></head><body>
         <div class="box">
-          <div style="font-size:.8rem;font-weight:800;text-transform:uppercase;color:#d9381e">💎 HiddenFoodGem.com · Monthly Featured Pin Proof ($10/mo)</div>
+          <div style="font-size:.8rem;font-weight:800;text-transform:uppercase;color:#d9381e">💎 Hidden Food Gems · Monthly Featured Pin Proof ($10/mo)</div>
           <h1 style="margin:6px 0 4px">${esc(bizName)}</h1>
           <div>Prepared for: <b>${esc(ownerName)}</b> · ${esc(address)} · ${esc(phone)}</div>
           <div class="kpis">
@@ -1981,7 +2006,7 @@
     const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
     const mapsUrl = getMapsUrl(r);
     const submitMailSubject = `Photo / Menu Submission: ${r.name} (${r.city})`;
-    const submitMailBody = `Hello HiddenFoodGem.com Team,\n\nI am the owner or representative of ${r.name} in ${r.city}. Please find attached our verified dish photo and menu.\n\nRestaurant: ${r.name}\nAddress: ${r.address}, ${r.city}\nPhone: ${r.phone || ''}`;
+    const submitMailBody = `Hello Hidden Food Gems Team,\n\nI am the owner or representative of ${r.name} in ${r.city}. Please find attached our verified dish photo and menu.\n\nRestaurant: ${r.name}\nAddress: ${r.address}, ${r.city}\nPhone: ${r.phone || ''}`;
     const submitMailtoUrl = `mailto:letsgetoutkids@gmail.com?subject=${encodeURIComponent(submitMailSubject)}&body=${encodeURIComponent(submitMailBody)}`;
 
     openSheet(`
@@ -2010,12 +2035,6 @@
         </div>
         ${hrs.hasWeeklyBreakdown ? `<div class="weekly-hours-popover" id="detail-weekly-hours" hidden>📅 <b>Weekly Hours:</b> ${esc(hrs.fullSchedule)}</div>` : ''}
 
-        <!-- Community Verification Reminder -->
-        <div class="community-notice-banner" style="margin: 8px 0 10px; font-size: 0.78rem;">
-          <span class="notice-icon">💡</span>
-          <p><b>Helpful Tip:</b> Please double-check with the restaurant directly (by calling or checking their official website) to confirm their latest hours, current menu items, and neighborhood details before heading out!</p>
-        </div>
-
         <!-- Scratch-Made Line Only (Full Sentence, No Ellipsis) -->
         ${r.scratchCommitment ? `
           <div class="roots-scratch-block">
@@ -2023,7 +2042,7 @@
           </div>
         ` : ''}
 
-        ${(r.verifiedPhoto || r.ownerVerified) && curatedPhotos.length ? `
+        ${curatedPhotos.length ? `
           <div class="photo-trio" aria-label="3 Signature Dish Photos">
             ${curatedPhotos.map((p) => {
               const pUrl = normImg(p.file);
@@ -2196,7 +2215,7 @@
       const bodyLines = [
         `Hello LetsGetOutKids Team,`,
         ``,
-        `I would like to inquire about getting my restaurant listed on HiddenFoodGem.com:`,
+        `I would like to inquire about getting my restaurant listed on Hidden Food Gems:`,
         ``,
         `• Restaurant Name: ${name}`,
         `• Contact Name: ${ownerName}`,
@@ -2314,8 +2333,8 @@
   // ---------- Boot ----------
   api('/api/restaurants')
     .then((list) => {
-      // In offline/standalone mode, prioritize the bundled offline seed if list from old storage is stale
-      if (window.__HFG_OFFLINE_SEED__ && Array.isArray(list) && list.length < window.__HFG_OFFLINE_SEED__.length) {
+      // In offline/standalone mode or when seed is bundled, synchronize with bundled seed
+      if (window.__HFG_OFFLINE_SEED__ && Array.isArray(window.__HFG_OFFLINE_SEED__)) {
         list = window.__HFG_OFFLINE_SEED__;
         try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch {}
       }

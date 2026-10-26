@@ -166,7 +166,7 @@
 
   // ---------- Persistent Click Analytics ("The 2 Numbers That Prove Value") ----------
   const IS_STANDALONE = IS_FILE_PROTO || Boolean(window.__HFG_OFFLINE_SEED__);
-  const LS_KEY = 'hfg_offline_restaurants_v13';
+  const LS_KEY = 'hfg_offline_restaurants_v14';
   const ANALYTICS_LS_KEY = 'cs_business_ad_analytics';
 
   function loadLocalAnalyticsMap() {
@@ -843,12 +843,22 @@
   }
 
   async function api(path, opts = {}) {
+    // If the browser loaded the bundled seed data, use it directly to guarantee immediate data synchronization
+    if (window.__HFG_OFFLINE_SEED__ && Array.isArray(window.__HFG_OFFLINE_SEED__) && window.__HFG_OFFLINE_SEED__.length > 0) {
+      if (path === '/api/restaurants' && (!opts.method || opts.method === 'GET')) {
+        return window.__HFG_OFFLINE_SEED__;
+      }
+    }
+
     if (!IS_STANDALONE) {
       try {
         const res = await fetch(path, { headers: { 'Content-Type': 'application/json' }, ...opts });
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok) throw new Error(data.error || 'Something went wrong');
-        return data;
+        const contentType = res.headers.get('content-type') || '';
+        if (contentType.includes('application/json')) {
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok) throw new Error(data.error || 'Something went wrong');
+          return data;
+        }
       } catch (e) {
         if (!window.__HFG_OFFLINE_SEED__) throw e;
       }
@@ -856,7 +866,7 @@
     let list = [];
     try { list = JSON.parse(localStorage.getItem(LS_KEY) || 'null'); } catch {}
     const offlineSeed = window.__HFG_OFFLINE_SEED__;
-    // Auto-migrate or sync if localStorage has older/fewer restaurants than the bundled offline seed
+    // Auto-migrate or sync if localStorage has older/different restaurants than the bundled offline seed
     if (!Array.isArray(list) || !list.length || (Array.isArray(offlineSeed) && offlineSeed.length !== list.length)) {
       list = JSON.parse(JSON.stringify(offlineSeed || []));
       try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch {}
@@ -2323,8 +2333,8 @@
   // ---------- Boot ----------
   api('/api/restaurants')
     .then((list) => {
-      // In offline/standalone mode, prioritize the bundled offline seed if list from old storage is stale
-      if (window.__HFG_OFFLINE_SEED__ && Array.isArray(list) && list.length < window.__HFG_OFFLINE_SEED__.length) {
+      // In offline/standalone mode or when seed is bundled, synchronize with bundled seed
+      if (window.__HFG_OFFLINE_SEED__ && Array.isArray(window.__HFG_OFFLINE_SEED__)) {
         list = window.__HFG_OFFLINE_SEED__;
         try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch {}
       }

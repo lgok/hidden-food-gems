@@ -126,7 +126,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@206bce",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "adya-indian-anaheim-packing-district",
@@ -255,7 +260,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@adyaoc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "georgias-anaheim-packing-district",
@@ -394,7 +404,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@georgias_soul",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "some-crust-bakery-claremont-village",
@@ -657,7 +672,12 @@
     "meal_types": [
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@unotreotto",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "the-quarter-creole-claremont-village",
@@ -788,7 +808,12 @@
     "meal_types": [
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thequartercreole",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "aruffos-italian-claremont-village",
@@ -929,7 +954,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@aruffos_italian_cuisine",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "cauldron-ice-cream-haven-city",
@@ -1051,7 +1081,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@cauldronicecream",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "baba-k-haven-city-rancho",
@@ -1191,7 +1226,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@babakstreetfood",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "shokunin-haven-city-rancho",
@@ -1329,7 +1369,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@shokunin_temaki",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "birria-los-socios-haven-city-rancho",
@@ -1467,7 +1512,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@birrialossocios",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "the-kroft-haven-city-rancho",
@@ -1607,7 +1657,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thekroft",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "changan-kitchen-ontario",
@@ -1768,7 +1823,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@changan_noodles_ontario",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "not-your-mamas-kitchen-ontario",
@@ -1926,7 +1986,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@nymksoulfood",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "pho-k-plus-ontario",
@@ -2076,7 +2141,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@phokplus",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "taqueria-2-potrillos-montclair",
@@ -2237,7 +2307,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@taqueria2potrillos",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "los-cebollines-grill-ontario",
@@ -2398,7 +2473,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@loscebollinesgrill",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "greenhills-market-ontario",
@@ -2559,7 +2639,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@greenhills_ontario",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "thai-family-sisters-upland",
@@ -2715,7 +2800,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thaifamilysisters",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "calle-ocho-cuban-cafecito-rancho",
@@ -3020,7 +3110,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tanyaslebanesekabab",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "house-of-fortune-vegan-chino",
@@ -3167,7 +3262,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@houseoffortunevegan",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "joannes-cafe-ontario",
@@ -3316,7 +3416,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@joannescafeontario",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "vinces-spaghetti-ontario",
@@ -3460,7 +3565,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@vincesspaghetti",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-10001-itasteexpress",
@@ -3602,7 +3712,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@itasteexpressnyc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-10003-olioepiu",
@@ -3743,7 +3858,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@olioepiu",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20001-oohhsaahhssoulfood",
@@ -3885,7 +4005,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@oohhsaahhs",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20001-chercherethiopianres",
@@ -4026,7 +4151,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@chercherrestaurant",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20001-benschilibowl",
@@ -4169,7 +4299,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@benschilibowl",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20002-ethiopicrestaurant",
@@ -4310,7 +4445,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ethiopicrestaurant",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20002-makettocambodiantaiw",
@@ -4453,7 +4593,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@maketto1351",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "dc-20005-bubandpopssandwichsh",
@@ -4595,7 +4740,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@bubandpops",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "nj-07302-pratobakery",
@@ -4737,7 +4887,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@pratobakery",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-11354-whitedear",
@@ -4869,7 +5024,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@whitebearflushing",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-11220-tacoselbronco",
@@ -5001,7 +5161,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tacoselbronco",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "tx-75208-taquerialaventana",
@@ -5133,7 +5298,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@elsihaytaqueria",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "tx-75006-bbqchicken-carrollton",
@@ -5264,7 +5434,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@dansungsadallas",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "tx-78702-micklethwait-austin",
@@ -5392,7 +5567,12 @@
     "meal_types": [
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@craftmeats",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "md-20814-bethesdabagel",
@@ -5524,7 +5704,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@bethesdabagels",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "nj-07105-teixeiras-newark",
@@ -5656,7 +5841,12 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@teixeirasbakery",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "nj-07503-fattoush-paterson",
@@ -5788,7 +5978,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@albashagrill",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "il-60608-carnitasurapan",
@@ -5919,7 +6114,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@carnitas_uruapan",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "il-60608-carnitasdonpedro",
@@ -6040,7 +6240,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@carnitasdonpedro",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "il-60616-ricobenes",
@@ -6159,7 +6364,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ricobenes",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "il-60625-noodlerice-albanypark",
@@ -6281,7 +6491,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@noonokabab",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "tx-75075-jengchiflano",
@@ -6401,7 +6616,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@jengchirestaurant",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-11105-baharigreek",
@@ -6528,7 +6748,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@bahariestiatorio",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "ny-11222-karczmapolish",
@@ -6654,7 +6879,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@karczmanyc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "va-22003-kogiyavn-annandale",
@@ -6775,7 +7005,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ajrestaurantdc",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "md-20850-bobsshanghai",
@@ -6895,7 +7130,12 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@bobsshanghai66",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   },
   {
     "id": "klatch-coffee-rancho-cucamonga",

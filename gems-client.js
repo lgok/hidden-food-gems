@@ -935,8 +935,11 @@
   function getOperationalPill(r, now = new Date()) {
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
-    if (st === 'sold_out' || isClosedToday(r, now)) {
+    if (isClosedToday(r, now)) {
       return { cls: 'sold_out', dot: '🔴', text: 'Closed Today' };
+    }
+    if (st === 'sold_out') {
+      return { cls: 'sold_out', dot: '🔴', text: 'Sold Out' };
     }
     if (st === 'low_prep') {
       return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };

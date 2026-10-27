@@ -753,18 +753,57 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 
 /* ---------- Mobile Responsive Enhancements (Screen Space Optimization) ---------- */
+/* ---------- Mobile Responsive Enhancements (Screen widths up to 800px) ---------- */
 @media (max-width: 800px) {
-  /* Un-stick filters on mobile so they scroll naturally with the page and do not block cards */
+  /* 1. Compact Hero on Phones so cards appear right above the fold */
+  .hero {
+    min-height: 220px !important;
+    max-height: 280px !important;
+  }
+  .hero-inner {
+    padding: 16px 14px 18px !important;
+  }
+  .hero h1 {
+    font-size: 1.85rem !important;
+    line-height: 1.1 !important;
+    margin: 4px 0 10px !important;
+  }
+  .search {
+    padding: 4px 4px 4px 12px !important;
+    gap: 4px !important;
+  }
+  .search input {
+    font-size: .88rem !important;
+  }
+  .btn-near-me {
+    padding: 7px 9px !important;
+    font-size: .78rem !important;
+  }
+  .search .btn {
+    padding: 8px 14px !important;
+    font-size: .85rem !important;
+  }
+
+  /* 2. Topbar & Header Mobile Tuning */
+  .topbar {
+    padding: 8px 14px !important;
+  }
+  .brand {
+    font-size: 1.1rem !important;
+  }
+
+  /* 3. Non-sticky Filter Bar with Native Touch Scroll */
   .filters {
     position: static !important;
     top: auto !important;
     border-bottom: 1px solid var(--line);
+    box-shadow: none !important;
   }
   .filters-inner {
-    padding: 8px 0 6px !important;
+    padding: 6px 0 4px !important;
   }
   .meal-tabs-wrap {
-    padding: 2px 12px 6px !important;
+    padding: 2px 10px 4px !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -775,8 +814,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .meal-tabs {
     display: inline-flex !important;
     flex-wrap: nowrap !important;
-    gap: 5px !important;
-    padding: 4px !important;
+    gap: 6px !important;
+    padding: 3px !important;
     white-space: nowrap !important;
   }
   .meal-tab {
@@ -785,7 +824,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     flex: 0 0 auto !important;
   }
   .filter-bar {
-    padding: 2px 12px 4px !important;
+    padding: 2px 10px 4px !important;
     gap: 6px !important;
   }
   .filter-primary-row {
@@ -796,15 +835,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .filter-primary-row .select {
     flex: 1 1 auto !important;
     min-width: 0 !important;
-    font-size: .84rem !important;
-    padding: 7px 26px 7px 10px !important;
+    font-size: .82rem !important;
+    padding: 7px 24px 7px 10px !important;
   }
   .mobile-filter-btn {
     display: inline-flex !important;
     padding: 7px 12px !important;
     font-size: .82rem !important;
   }
-  /* Secondary filter row: collapsible on mobile so it doesn't take up half the screen */
   .filter-secondary-row {
     display: none !important;
     flex-wrap: wrap !important;
@@ -822,7 +860,55 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .filter-secondary-row .price-toggle {
     flex: 0 0 auto !important;
   }
+
+  /* 4. Streamlined Card Proportions for Mobile Screens */
   .wrap {
-    padding: 12px !important;
+    padding: 10px 12px 24px !important;
+  }
+  .results-head {
+    margin-bottom: 8px !important;
+  }
+  .results-head h2 {
+    font-size: 1.05rem !important;
+  }
+  .results-count {
+    font-size: .75rem !important;
+  }
+  .grid {
+    gap: 14px !important;
+  }
+  .card {
+    border-radius: 14px !important;
+  }
+  .card-media {
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+  }
+  .card-body {
+    padding: 10px 12px 12px !important;
+    gap: 6px !important;
+  }
+  .card-title h3 {
+    font-size: 1.08rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* 5. Mobile Tap Action Buttons */
+  .ec-action-grid {
+    gap: 8px !important;
+    margin-top: 4px !important;
+  }
+  .ec-tab-btn {
+    padding: 9px 8px !important;
+    font-size: .82rem !important;
+  }
+  .ec-tab-btn small {
+    font-size: .70rem !important;
+  }
+
+  /* 6. Clean Native Bottom Navigation Clearance */
+  body {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) !important;
   }
 }

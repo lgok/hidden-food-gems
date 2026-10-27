@@ -14231,5 +14231,182 @@
       "coffee_boba"
     ],
     "is_active": true
+  },
+  {
+    "id": "pista-house-joint-eastvale",
+    "name": "Pista House Joint (Dosa Dips · Deccan Chai · Saffron Spot)",
+    "cuisine": "Hyderabadi Dum Biryani & South Indian Street Food",
+    "regionalIdentity": "Authentic Hyderabadi Dum Biryani, Stone-Griddled Dosas & Irani Chai",
+    "tags": [
+      "indian",
+      "halal",
+      "vegetarian-options",
+      "chicken",
+      "beef",
+      "rice",
+      "curry"
+    ],
+    "price": "$$",
+    "address": "13394 Limonite Ave, Ste 170",
+    "city": "Eastvale",
+    "zip": "92880",
+    "driveFrom91761": "12 mins",
+    "phone": "(951) 877-5767",
+    "hours": "Daily 11:30am–9:30pm",
+    "healthPermit": {
+      "grade": "A",
+      "score": 98,
+      "inspectionDate": "2024-03",
+      "verified": true
+    },
+    "familyRoots": "Founded by seasoned culinary artisans bringing Hyderabad's world-renowned slow-dum cooking traditions, South Indian tiffin specialties, and aromatic Irani chai under one authentic culinary roof.",
+    "scratchCommitment": "Slow-dum cooked aromatic biryani in sealed handis, scratch-fermented stone-ground dosa batters, fresh house-ground spice masalas, and caramelized Irani chai brewed fresh throughout the day.",
+    "destinationDish": "Hyderabadi Goat Dum Biryani & Ghee Roast Masala Dosa with Trio of Chutneys",
+    "description": "An authentic multi-brand culinary destination featuring Hyderabad's legendary dum biryanis, South Indian street dosas (Dosa Dips), scratch-churned artisanal kulfi & desserts (Saffron Spot), and authentic Irani milk chai (Deccan Chai).",
+    "story": "Pista House Joint brings together centuries of culinary heritage into a vibrant, family-friendly food hall experience in Eastvale. From golden paper-thin ghee dosas to rich saffron-infused dum biryanis and warm cups of spiced Irani chai with Osmania biscuits, every item is crafted with traditional recipes and zero shortcuts.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "caption": "Authentic Hyderabadi Dum Biryani & South Indian Dosa Spread"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Special Hyderabadi Goat Dum Biryani",
+          "price": "$18.99",
+          "desc": "Long-grain aged basmati rice cooked on slow dum with tender bone-in goat marinated in saffron, caramelized onions, and house spice blend. Served with mirchi ka salan & raita."
+        },
+        {
+          "name": "Pista House Chicken Dum Biryani",
+          "price": "$15.99",
+          "desc": "Classic fragrant Hyderabadi spiced chicken dum biryani garnished with fried onions, hard-boiled egg, and cilantro."
+        },
+        {
+          "name": "Ghee Roast Masala Dosa (Dosa Dips)",
+          "price": "$12.99",
+          "desc": "Golden crispy fermented crepe roasted with pure desi ghee, filled with spiced potato masala. Served with coconut chutney, tomato-ginger chutney & piping hot sambar."
+        },
+        {
+          "name": "Deccan Irani Chai with Osmania Biscuits",
+          "price": "$4.99",
+          "desc": "Authentic slow-simmered, rich caramelized Irani milk tea served steaming hot with traditional buttery Osmania biscuits."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mysore Masala Dosa",
+          "price": "$13.99",
+          "desc": "Crispy dosa layered with spicy fiery red garlic-chili chutney and filled with spiced potato mash."
+        },
+        {
+          "name": "Chicken 65 (Hyderabadi Style)",
+          "price": "$14.49",
+          "desc": "Boneless chicken marinated with curry leaves, crushed red chilies, ginger-garlic, and yogurt, fried to a crisp golden crunch."
+        },
+        {
+          "name": "Paneer Butter Masala",
+          "price": "$14.99",
+          "desc": "Fresh cottage cheese cubes simmered in a rich tomato, butter, and cashew gravy with fenugreek leaves."
+        },
+        {
+          "name": "Butter Garlic Naan (2 pcs)",
+          "price": "$4.99",
+          "desc": "Fresh tandoor-baked flatbread brushed with crushed roasted garlic and pure butter."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "South Indian Tiffin Feast Platter",
+          "price": "$17.99",
+          "desc": "1 Mini Masala Dosa, 2 Steamed Idlis, 1 Crispy Medu Vada, served with fresh coconut chutney, tomato chutney, and lentil sambar."
+        },
+        {
+          "name": "Family Dum Biryani Jumbo Pack",
+          "price": "$44.99",
+          "desc": "Generous biryani feast for 3–4 guests with choice of chicken or goat biryani, 2 appetizers, salan, raita, and dessert."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Saffron Spot Royal Falooda",
+          "price": "$7.99",
+          "desc": "Layered rose syrup, sweet basil seeds, falooda vermicelli, chilled milk, and a generous scoop of artisanal saffron-pistachio kulfi."
+        },
+        {
+          "name": "Fresh Mango Lassi",
+          "price": "$5.49",
+          "desc": "Thick, creamy chilled yogurt smoothie blended with sweet Alphonso mango pulp."
+        },
+        {
+          "name": "Madras Filter Coffee",
+          "price": "$4.49",
+          "desc": "Traditional South Indian dark roast chicory coffee brewed in a brass filter and frothed with hot whole milk."
+        }
+      ]
+    },
+    "media": {
+      "hasHero": true,
+      "hasMenu": true,
+      "photosCount": 3,
+      "dishPhotosCount": 3
+    },
+    "sample": {
+      "dish": "Hyderabadi Dum Biryani & Ghee Roast Dosa",
+      "price": "$12–18",
+      "detail": "Slow-dum cooked biryani with house salan & raita, plus stone-griddled dosas and Irani chai."
+    },
+    "featured": true,
+    "createdAt": "2026-10-26T18:36:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "text": "The most authentic Hyderabadi biryani and Irani chai in the entire Inland Empire! Dosas from Dosa Dips are golden and crispy.",
+        "user": "Amina R.",
+        "date": "2026-10-18"
+      },
+      {
+        "stars": 5,
+        "text": "Loved having biryani, dosas, and Saffron Spot ice cream all in one place. Zero alcohol, completely family-friendly and welcoming.",
+        "user": "Karthik V.",
+        "date": "2026-10-09"
+      },
+      {
+        "stars": 5,
+        "text": "The goat biryani is incredibly flavorful and the Deccan Chai was just what we needed on a cool evening. 10/10 hidden gem.",
+        "user": "Sameer K.",
+        "date": "2026-09-28"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside County",
+    "pricesVerified": "October 2026",
+    "kitchenStatus": "open",
+    "statusLabel": "Open Now",
+    "analytics": {
+      "calls": 19,
+      "directions": 34,
+      "views": 412,
+      "kitchenStatus": "open"
+    },
+    "latitude": 33.97616,
+    "longitude": -117.57536,
+    "opening_hour_minutes": 690,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@pistahousejoint",
+      "platform": "Instagram",
+      "verifiedActive": true
+    }
   }
 ]

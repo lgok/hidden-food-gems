@@ -763,6 +763,18 @@
   }
 
   function getTodayHoursSummary(r, now = new Date()) {
+    const sched = getTodayScheduleDetails(r, now);
+    const full = (r.hours || '').trim();
+    const hasWeeklyBreakdown = full.includes('·') || full.includes('•') || /closed/i.test(full);
+    const text = sched.isClosedToday ? 'Today: Closed' : `Today: ${sched.rangeStr}`;
+    return {
+      todayText: text,
+      fullSchedule: full || 'Daily 11:00 AM – 9:00 PM',
+      hasWeeklyBreakdown
+    };
+  }
+
+  function _legacy_getTodayHoursSummary_deprecated(r, now = new Date()) {
     const full = (r.hours || 'Daily 11:00am–8:30pm').trim();
     if (isClosedToday(r, now)) {
       return { todayText: 'Today: Closed', fullSchedule: full, hasWeeklyBreakdown: true };
@@ -824,14 +836,114 @@
     };
   }
 
-  function getOperationalPill(r) {
+  function parseTimeMinutes(timeStr) {
+    if (!timeStr) return null;
+    const m = timeStr.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);
+    if (!m) return null;
+    let hr = parseInt(m[1], 10);
+    const mn = parseInt(m[2] || '0', 10);
+    const ap = m[3].toLowerCase();
+    if (ap === 'pm' && hr !== 12) hr += 12;
+    if (ap === 'am' && hr === 12) hr = 0;
+    return hr * 60 + mn;
+  }
+
+  function getTodayScheduleDetails(r, now = new Date()) {
+    const full = (r.hours || 'Daily 11:00am–9:00pm').trim();
+    if (isClosedToday(r, now)) {
+      return { isOpen: false, isClosedToday: true, label: 'Closed Today', rangeStr: 'Closed Today', fullSchedule: full };
+    }
+
+    const dayIdx = now.getDay(); // 0=Sun..6=Sat
+    const dayMap = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+    const stripped = full.replace(/\([^)]*\)/g, '').trim();
+    const parts = stripped.split(/\s*[·•]\s*/);
+
+    let matchedRange = null;
+
+    for (const part of parts) {
+      const s = part.toLowerCase();
+      let matched = false;
+      if (s.includes('daily')) {
+        matched = true;
+      } else {
+        const rangeMatch = /(sun|mon|tue|wed|thu|fri|sat)\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat)/.exec(s);
+        if (rangeMatch) {
+          const start = dayMap[rangeMatch[1]];
+          const end = dayMap[rangeMatch[2]];
+          if (start <= end ? (dayIdx >= start && dayIdx <= end) : (dayIdx >= start || dayIdx <= end)) {
+            matched = true;
+          }
+        } else {
+          const singleMatch = /\b(sun|mon|tue|wed|thu|fri|sat)\b/.exec(s);
+          if (singleMatch && dayMap[singleMatch[1]] === dayIdx) matched = true;
+        }
+      }
+
+      if (matched) {
+        if (/closed/i.test(part)) {
+          return { isOpen: false, isClosedToday: true, label: 'Closed Today', rangeStr: 'Closed Today', fullSchedule: full };
+        }
+        const timeMatch = part.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+        if (timeMatch) {
+          const openMin = parseTimeMinutes(timeMatch[1]);
+          let closeMin = parseTimeMinutes(timeMatch[2]);
+          // If close is past midnight (e.g. 11am-1am)
+          if (closeMin !== null && openMin !== null && closeMin < openMin) closeMin += 24 * 60;
+          const cleanOpen = formatTimeClean(timeMatch[1]);
+          const cleanClose = formatTimeClean(timeMatch[2]);
+          matchedRange = { openMin, closeMin, rangeStr: `${cleanOpen} – ${cleanClose}` };
+          break;
+        }
+      }
+    }
+
+    if (!matchedRange) {
+      // Fallback: look for general time range
+      const genericMatch = stripped.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+      if (genericMatch) {
+        const openMin = parseTimeMinutes(genericMatch[1]);
+        const closeMin = parseTimeMinutes(genericMatch[2]);
+        matchedRange = { openMin, closeMin, rangeStr: `${formatTimeClean(genericMatch[1])} – ${formatTimeClean(genericMatch[2])}` };
+      }
+    }
+
+    if (!matchedRange || matchedRange.openMin === null || matchedRange.closeMin === null) {
+      return { isOpen: true, isClosedToday: false, label: 'Hours Unspecified', rangeStr: full, fullSchedule: full };
+    }
+
+    const curMin = now.getHours() * 60 + now.getMinutes();
+    const isOpen = curMin >= matchedRange.openMin && curMin < matchedRange.closeMin;
+
+    return {
+      isOpen,
+      isClosedToday: false,
+      openMin: matchedRange.openMin,
+      closeMin: matchedRange.closeMin,
+      rangeStr: matchedRange.rangeStr,
+      fullSchedule: full
+    };
+  }
+
+  function formatTimeClean(t) {
+    return t.replace(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i, (_, h, m, ap) => {
+      const mn = m ? `:${m}` : ':00';
+      return `${h}${mn} ${ap.toUpperCase()}`;
+    });
+  }
+
+  function getOperationalPill(r, now = new Date()) {
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
+    if (st === 'sold_out' || isClosedToday(r, now)) {
+      return { cls: 'sold_out', dot: '🔴', text: 'Closed Today' };
+    }
     if (st === 'low_prep') {
       return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };
     }
-    if (st === 'sold_out' || isClosedToday(r)) {
-      return { cls: 'sold_out', dot: '🔴', text: 'Closed Today' };
+    const sched = getTodayScheduleDetails(r, now);
+    if (!sched.isOpen) {
+      return { cls: 'sold_out', dot: '🔴', text: 'Closed Now' };
     }
     return { cls: 'open', dot: '🟢', text: 'Open Now' };
   }
@@ -1641,8 +1753,8 @@
     grid.innerHTML = pageItems.map((r, i) => {
       const b = badge(r), a = avg(r) || 5.0;
       const hp = r.healthPermit;
-      const op = getOperationalPill(r);
-      const hrs = getTodayHoursSummary(r);
+      const op = getOperationalPill(r, now);
+      const hrs = getTodayHoursSummary(r, now);
       const distMi = getDistanceMiles(r);
       const driveMins = getDriveMinutes(distMi);
       const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
@@ -1856,7 +1968,7 @@
                 const an = getAnalytics(r);
                 const tot = an.calls + an.directions;
                 const cpc = tot > 0 ? (10 / tot).toFixed(2) : '0.00';
-                const op = getOperationalPill(r);
+                const op = getOperationalPill(r, now);
                 return `
                   <tr style="${r.id === state.selectedAnalyticsId ? 'background:#fff6e3;font-weight:700' : ''}">
                     <td><b>${esc(r.name)}</b><br><small class="meta">${esc(r.address)}, ${esc(r.city)}</small></td>
@@ -2000,8 +2112,8 @@
     const a = avg(r), n = r.ratings.length, b = badge(r);
     const hp = r.healthPermit;
     const curatedPhotos = (r.photos || []).filter((p) => p && p.file && !p.file.includes('hero.')).slice(0, 3);
-    const op = getOperationalPill(r);
-    const hrs = getTodayHoursSummary(r);
+    const op = getOperationalPill(r, now);
+    const hrs = getTodayHoursSummary(r, now);
     const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
     const mapsUrl = getMapsUrl(r);
     const submitMailSubject = `Photo / Menu Submission: ${r.name} (${r.city})`;

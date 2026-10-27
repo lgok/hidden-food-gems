@@ -6,7 +6,6 @@
   const MEAL_TABS = [
     ['', 'All Meals', '🍽️'],
     ['coffee_boba', 'Top Coffee & Boba', '☕'],
-    ['open_now', 'Open Right Now', '🟢'],
     ['breakfast', 'Breakfast', '☀️'],
     ['brunch', 'Brunch', '🥞'],
     ['lunch', 'Lunch', '🥪'],
@@ -1266,7 +1265,7 @@
             <div class="meal-tabs" id="meal-tabs" role="tablist" aria-label="Filter by Meal Time">
               ${MEAL_TABS.map(([k, l, emo]) => `
                 <button type="button" role="tab" class="meal-tab ${state.mealTab === k ? 'active' : ''}" data-meal="${k}" aria-selected="${state.mealTab === k}">
-                  <span>${emo}</span><span>${l}${k === 'open_now' ? ' (5 mi)' : ''}</span>
+                  <span>${emo}</span><span>${l}</span>
                 </button>`).join('')}
             </div>
           </div>
@@ -1456,7 +1455,7 @@
             state.userGpsCoords = [lat, lng];
             state.userGpsLabel = 'Current Location';
             state.radiusMiles = 5; // Default 5 miles for immediate driving vicinity
-            state.mealTab = 'open_now'; // Auto-filter to Open Right Now for drivers!
+            // Keep user mealTab selection or All Meals
             state.limit = 24;
 
             // Clear text query & region so nearest GPS results take top priority

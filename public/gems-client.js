@@ -1247,7 +1247,6 @@
     view.innerHTML = `
       <section class="hero">
         <div class="hero-inner">
-          <span class="eyebrow">💎 Verified Independent Culinary Roster · United States</span>
           <h1>Great food,<br><span>hiding in plain sight.</span></h1>
                     <form class="search" id="search-form" role="search">
             <input id="q" type="search" placeholder="Search dish, cuisine, city, or 5-digit ZIP (e.g. 91761, birria, pho)…" value="${esc(state.q)}" autocomplete="off" />

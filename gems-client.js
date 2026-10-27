@@ -133,7 +133,7 @@
   };
 
   const mediaHtml = (r, owner = false, eager = false) => {
-    const videoSrc = normImg(r.video || (r.media && (r.media.find((m) => m.type === 'video') || {}).file) || '');
+    const videoSrc = normImg(r.video || (Array.isArray(r.media) && (r.media.find((m) => m.type === 'video') || {}).file) || '');
     if (videoSrc) {
       return '<div style="position:relative;width:100%;height:100%">' +
         '<video src="' + esc(videoSrc) + '" autoplay muted loop playsinline disablepictureinpicture preload="metadata"></video>' +
@@ -166,7 +166,7 @@
 
   // ---------- Persistent Click Analytics ("The 2 Numbers That Prove Value") ----------
   const IS_STANDALONE = IS_FILE_PROTO || Boolean(window.__HFG_OFFLINE_SEED__);
-  const LS_KEY = 'hfg_offline_restaurants_v15';
+  const LS_KEY = 'hfg_offline_restaurants_v16';
   const ANALYTICS_LS_KEY = 'cs_business_ad_analytics';
 
   function loadLocalAnalyticsMap() {
@@ -1100,6 +1100,11 @@
 
     const sorters = {
       gem: (a, b) => {
+        if (q && !activeZip) {
+          const aNameMatch = a.name.toLowerCase().includes(q) ? 1 : 0;
+          const bNameMatch = b.name.toLowerCase().includes(q) ? 1 : 0;
+          if (bNameMatch !== aNameMatch) return bNameMatch - aNameMatch;
+        }
         if (sortByProximityFirst) {
           return getDistanceMiles(a) - getDistanceMiles(b) || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
         }

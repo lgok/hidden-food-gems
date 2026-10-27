@@ -14261,7 +14261,10 @@
     },
     "familyRoots": "Founded by seasoned culinary artisans bringing Hyderabad's world-renowned slow-dum cooking traditions, South Indian tiffin specialties, and aromatic Irani chai under one authentic culinary roof.",
     "scratchCommitment": "Slow-dum cooked aromatic biryani in sealed handis, scratch-fermented stone-ground dosa batters, fresh house-ground spice masalas, and caramelized Irani chai brewed fresh throughout the day.",
-    "destinationDish": "Hyderabadi Goat Dum Biryani & Ghee Roast Masala Dosa with Trio of Chutneys",
+    "destinationDish": {
+      "name": "Hyderabadi Goat Dum Biryani & Ghee Roast Masala Dosa",
+      "callout": "Aged basmati rice cooked on slow dum with marinated tender goat, paired with crispy stone-griddled ghee roast dosa."
+    },
     "description": "An authentic multi-brand culinary destination featuring Hyderabad's legendary dum biryanis, South Indian street dosas (Dosa Dips), scratch-churned artisanal kulfi & desserts (Saffron Spot), and authentic Irani milk chai (Deccan Chai).",
     "story": "Pista House Joint brings together centuries of culinary heritage into a vibrant, family-friendly food hall experience in Eastvale. From golden paper-thin ghee dosas to rich saffron-infused dum biryanis and warm cups of spiced Irani chai with Osmania biscuits, every item is crafted with traditional recipes and zero shortcuts.",
     "image": "img/hero.png",
@@ -14346,12 +14349,7 @@
         }
       ]
     },
-    "media": {
-      "hasHero": true,
-      "hasMenu": true,
-      "photosCount": 3,
-      "dishPhotosCount": 3
-    },
+    "media": [],
     "sample": {
       "dish": "Hyderabadi Dum Biryani & Ghee Roast Dosa",
       "price": "$12–18",

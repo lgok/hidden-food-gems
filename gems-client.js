@@ -1660,7 +1660,7 @@
             </div>
           </div>
           <div class="card-body">
-            ${r.regionalIdentity ? `<div class="regional-sub">${esc(r.regionalIdentity)}</div>` : ''}
+            
             <div class="card-title">
               <h3>${esc(r.name)}</h3>
               <div class="rating-grade-row">

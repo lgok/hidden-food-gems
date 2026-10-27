@@ -1130,8 +1130,7 @@
         <div class="hero-inner">
           <span class="eyebrow">💎 Verified Independent Culinary Roster · United States</span>
           <h1>Great food,<br><span>hiding in plain sight.</span></h1>
-          <p>${visibleCount.toLocaleString()} independent mom-and-pop kitchens verified from official public health inspection records—with live kitchen status, verified menu prices, direct calling, and turn-by-turn navigation.</p>
-          <form class="search" id="search-form" role="search">
+                    <form class="search" id="search-form" role="search">
             <input id="q" type="search" placeholder="Search dish, cuisine, city, or 5-digit ZIP (e.g. 91761, birria, pho)…" value="${esc(state.q)}" autocomplete="off" />
             <button class="btn btn-near-me" id="btn-near-me" type="button" title="Use current GPS location to find nearest open gems">
               <span class="gps-icon">📍</span>

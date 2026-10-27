@@ -1756,8 +1756,8 @@
     grid.innerHTML = pageItems.map((r, i) => {
       const b = badge(r), a = avg(r) || 5.0;
       const hp = r.healthPermit;
-      const op = getOperationalPill(r, now);
-      const hrs = getTodayHoursSummary(r, now);
+      const op = getOperationalPill(r);
+      const hrs = getTodayHoursSummary(r);
       const distMi = getDistanceMiles(r);
       const driveMins = getDriveMinutes(distMi);
       const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
@@ -1971,7 +1971,7 @@
                 const an = getAnalytics(r);
                 const tot = an.calls + an.directions;
                 const cpc = tot > 0 ? (10 / tot).toFixed(2) : '0.00';
-                const op = getOperationalPill(r, now);
+                const op = getOperationalPill(r);
                 return `
                   <tr style="${r.id === state.selectedAnalyticsId ? 'background:#fff6e3;font-weight:700' : ''}">
                     <td><b>${esc(r.name)}</b><br><small class="meta">${esc(r.address)}, ${esc(r.city)}</small></td>
@@ -2115,8 +2115,8 @@
     const a = avg(r), n = r.ratings.length, b = badge(r);
     const hp = r.healthPermit;
     const curatedPhotos = (r.photos || []).filter((p) => p && p.file && !p.file.includes('hero.')).slice(0, 3);
-    const op = getOperationalPill(r, now);
-    const hrs = getTodayHoursSummary(r, now);
+    const op = getOperationalPill(r);
+    const hrs = getTodayHoursSummary(r);
     const cleanTel = (r.phone || '').replace(/[^\d+]/g, '');
     const mapsUrl = getMapsUrl(r);
     const submitMailSubject = `Photo / Menu Submission: ${r.name} (${r.city})`;

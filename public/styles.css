@@ -749,3 +749,79 @@ button, input, select, textarea { font: inherit; color: inherit; }
   line-height: 1.25;
 }
 
+
+
+/* ---------- Mobile Responsive Enhancements (Screen Space Optimization) ---------- */
+@media (max-width: 800px) {
+  /* Un-stick filters on mobile so they scroll naturally with the page and do not block cards */
+  .filters {
+    position: static !important;
+    top: auto !important;
+    border-bottom: 1px solid var(--line);
+  }
+  .filters-inner {
+    padding: 8px 0 6px !important;
+  }
+  .meal-tabs-wrap {
+    padding: 2px 12px 6px !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .meal-tabs-wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .meal-tabs {
+    display: inline-flex !important;
+    flex-wrap: nowrap !important;
+    gap: 5px !important;
+    padding: 4px !important;
+    white-space: nowrap !important;
+  }
+  .meal-tab {
+    padding: 6px 12px !important;
+    font-size: .82rem !important;
+    flex: 0 0 auto !important;
+  }
+  .filter-bar {
+    padding: 2px 12px 4px !important;
+    gap: 6px !important;
+  }
+  .filter-primary-row {
+    display: flex !important;
+    width: 100% !important;
+    gap: 6px !important;
+  }
+  .filter-primary-row .select {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    font-size: .84rem !important;
+    padding: 7px 26px 7px 10px !important;
+  }
+  .mobile-filter-btn {
+    display: inline-flex !important;
+    padding: 7px 12px !important;
+    font-size: .82rem !important;
+  }
+  /* Secondary filter row: collapsible on mobile so it doesn't take up half the screen */
+  .filter-secondary-row {
+    display: none !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    padding-top: 4px !important;
+  }
+  .filter-secondary-row.open {
+    display: flex !important;
+  }
+  .filter-secondary-row .select {
+    font-size: .82rem !important;
+    padding: 7px 24px 7px 9px !important;
+    flex: 1 1 45% !important;
+  }
+  .filter-secondary-row .price-toggle {
+    flex: 0 0 auto !important;
+  }
+  .wrap {
+    padding: 12px !important;
+  }
+}

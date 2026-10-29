@@ -76,16 +76,15 @@ const cityZipEntries = Array.from(zipMap.values()).sort((a, b) =>
   a.city.localeCompare(b.city) || a.zip.localeCompare(b.zip)
 );
 
-// Create output directories
 const gemDir = path.join(publicDir, "gem");
 const citiesDir = path.join(publicDir, "cities");
 fs.mkdirSync(gemDir, { recursive: true });
 fs.mkdirSync(citiesDir, { recursive: true });
 
-const baseUrl = "https://hiddenfoodgem.com";
+// Canonical origin unified to www.hiddenfoodgem.com (matches Vercel 308 redirect from apex -> www)
+const baseUrl = "https://www.hiddenfoodgem.com";
 const todayISO = new Date().toISOString().split("T")[0];
 
-// Shared SEO CSS
 const seoStyles = `
   :root {
     --bg: #140f0d;
@@ -184,6 +183,7 @@ for (const r of restaurants) {
   const interactiveUrl = `/?zip=${encodeURIComponent(r.zip)}&gem=${encodeURIComponent(r.id)}`;
   const cityEntry = zipMap.get(String(r.zip).trim());
   const cityPageUrl = cityEntry ? `/cities/${cityEntry.slug}` : `/?zip=${r.zip}`;
+  const lgokUrl = `https://www.letsgetoutkids.com/?zip=${encodeURIComponent(r.zip)}`;
 
   const signatures = (r.structuredMenu && r.structuredMenu.signatures) || [];
   const classics = (r.structuredMenu && r.structuredMenu.regionalClassics) || [];
@@ -301,7 +301,7 @@ for (const r of restaurants) {
       </div>
 
       <div class="cta-bar">
-        <a href="${esc(interactiveUrl)}" class="btn">💎 Launch Interactive Menu & Live Clock</a>
+        <a href="${esc(interactiveUrl)}" class="btn">💎 Launch Interactive Menu &amp; Live Clock</a>
         ${r.phone ? `<a href="tel:${esc(r.phone.replace(/[^0-9+]/g, ""))}" class="btn btn-outline">📞 Call ${esc(r.phone)}</a>` : ""}
         <a href="${esc(mapsUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🗺️ Turn-by-Turn Directions</a>
         ${r.healthPermit && r.healthPermit.InspectorUrl ? `<a href="${esc(r.healthPermit.InspectorUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🛡️ Verify ${esc(r.healthPermit.agency || "County")} Health Permit</a>` : ""}
@@ -327,9 +327,15 @@ for (const r of restaurants) {
     ${r.familyRoots || r.scratchCommitment ? `
     <section class="section-card">
       <h2>👨‍🍳 Why Locals Love ${esc(r.name)}</h2>
-      ${r.familyRoots ? `<p><strong>Family & Culinary Roots:</strong> ${esc(r.familyRoots)}</p>` : ""}
+      ${r.familyRoots ? `<p><strong>Family &amp; Culinary Roots:</strong> ${esc(r.familyRoots)}</p>` : ""}
       ${r.scratchCommitment ? `<p><strong>Scratch Kitchen Commitment:</strong> ${esc(r.scratchCommitment)}</p>` : ""}
     </section>` : ""}
+
+    <section class="section-card" style="background:linear-gradient(135deg,rgba(245,194,107,0.09),rgba(52,211,153,0.06))">
+      <h2>🎡 What to Do Before or After Eating in ${esc(r.city)} (${esc(r.zip)})</h2>
+      <p style="margin:0 0 12px">Looking for free or low-cost family events, parks, museums, or seasonal festivals near <strong>${esc(r.name)}</strong> in <strong>${esc(r.city)} (${esc(r.zip)})</strong>?</p>
+      <a href="${esc(lgokUrl)}" target="_blank" rel="noopener" class="btn">🎡 Explore Family Events Near ${esc(r.city)} (${esc(r.zip)}) on LetsGetOutKids.com ↗</a>
+    </section>
 
     <section class="section-card">
       <h2>🧭 More Verified Hidden Food Gems Near ${esc(r.city)}, ${esc(r.state || "CA")}</h2>
@@ -352,8 +358,8 @@ for (const r of restaurants) {
     </section>
 
     <footer>
-      <p><strong>HiddenFoodGem.com</strong> — 100% Independent, Vetted Family-Owned Restaurants, Bakeries, Coffee Roasters & Boba Shops. Zero Chains. Zero Paid Ads.</p>
-      <p>Planning a family outing nearby? Discover verified kid-friendly events & seasonal festivals at <a href="https://letsgetoutkids.com" target="_blank" rel="noopener">LetsGetOutKids.com</a>.</p>
+      <p><strong>HiddenFoodGem.com</strong> — 110+ Independent, Vetted Family-Owned Restaurants, Bakeries, Coffee Roasters &amp; Boba Shops across 65 ZIP Codes. Zero Chains. Zero Paid Ads.</p>
+      <p>Planning a family outing nearby? Discover verified kid-friendly events &amp; seasonal festivals at <a href="${esc(lgokUrl)}" target="_blank" rel="noopener">LetsGetOutKids.com</a>.</p>
     </footer>
   </main>
 </body>
@@ -365,7 +371,7 @@ for (const r of restaurants) {
 // 2. Generate City/ZIP Landing Pages (/cities/[slug].html)
 for (const entry of cityZipEntries) {
   const { zip, city, state, region, slug, latitude, longitude, directGems } = entry;
-  // Also include nearby gems within 15 miles in the same state
+  const lgokUrl = `https://www.letsgetoutkids.com/?zip=${encodeURIComponent(zip)}`;
   const nearbyInState = restaurants
     .filter((r) => String(r.zip).trim() !== zip && (r.state || "CA") === state)
     .map((r) => ({
@@ -441,7 +447,7 @@ for (const entry of cityZipEntries) {
       <p>Skip the national chains and 30% delivery app markups. Every independent restaurant, bakery, coffee roaster, and boba shop below in <strong>${esc(city)}, ${esc(state)} (${esc(zip)})</strong> is hand-vetted with verified operating hours, signature dishes, and official County Health Inspection links.</p>
       <div class="cta-bar">
         <a href="/?zip=${esc(zip)}" class="btn">💎 Open Interactive ${esc(city)} (${esc(zip)}) Finder</a>
-        <a href="https://letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-outline">🎡 Family Events Near ${esc(city)}</a>
+        <a href="${esc(lgokUrl)}" target="_blank" rel="noopener" class="btn btn-outline">🎡 Family Events in ${esc(city)} (${esc(zip)}) ↗</a>
       </div>
     </section>
 
@@ -458,12 +464,18 @@ for (const entry of cityZipEntries) {
               <p style="font-size:0.86rem;margin:6px 0 12px">🔥 <strong>Must-Try:</strong> ${esc(getDishName(r))}</p>
             </div>
             <div style="display:flex;gap:8px;flex-wrap:wrap">
-              <a href="/gem/${esc(r.id)}" class="btn">Full Menu & Details</a>
+              <a href="/gem/${esc(r.id)}" class="btn">Full Menu &amp; Details</a>
               <a href="/?zip=${esc(zip)}&gem=${esc(r.id)}" class="btn btn-outline">Live Status</a>
             </div>
           </article>
         `).join("")}
       </div>
+    </section>
+
+    <section class="section-card" style="background:linear-gradient(135deg,rgba(245,194,107,0.09),rgba(52,211,153,0.06))">
+      <h2>🎡 What to Do After Eating in ${esc(city)}, ${esc(state)} (${esc(zip)})</h2>
+      <p style="margin:0 0 12px">Planning a family day out in <strong>${esc(city)}</strong>? Browse verified kid-friendly events, seasonal festivals, and upcoming family attractions near <strong>${esc(zip)}</strong> on our sister directory.</p>
+      <a href="${esc(lgokUrl)}" target="_blank" rel="noopener" class="btn">🎡 See ${esc(city)} (${esc(zip)}) Family Events on LetsGetOutKids.com ↗</a>
     </section>
 
     ${nearbyInState.length ? `
@@ -497,7 +509,7 @@ for (const entry of cityZipEntries) {
   fs.writeFileSync(path.join(citiesDir, `${slug}.html`), html, "utf8");
 }
 
-// 3. Generate public/sitemap.xml & public/robots.txt
+// 3. Generate public/sitemap.xml & public/robots.txt (Unified on https://www.hiddenfoodgem.com)
 const sitemapUrls = [
   `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
   ...cityZipEntries.map(
@@ -520,17 +532,76 @@ fs.writeFileSync(path.join(publicDir, "sitemap.xml"), sitemapXml, "utf8");
 const robotsTxt = `User-agent: *
 Allow: /
 
-Sitemap: https://hiddenfoodgem.com/sitemap.xml
+Sitemap: ${baseUrl}/sitemap.xml
 `;
 fs.writeFileSync(path.join(publicDir, "robots.txt"), robotsTxt, "utf8");
 
-// 4. Update public/index.html with OpenGraph, WebSite JSON-LD, and crawlable 65-city footer
+// 4. Create public/llms.txt for AI Search Engines (ChatGPT, Perplexity, Claude, Gemini)
+const llmsTxt = `# HiddenFoodGem.com — Verified Independent Restaurants Directory
+> Discover 110+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+
+## Key Features
+- Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.
+- Sister Family Events Platform: https://www.letsgetoutkids.com (Verified kid-friendly events, seasonal festivals, and upcoming family attractions).
+
+## Primary Entry Points
+- Homepage & Interactive ZIP Finder: ${baseUrl}/
+- Full XML Sitemap (176 URLs): ${baseUrl}/sitemap.xml
+- Featured Neighborhood Guides:
+${cityZipEntries.slice(0, 25).map((c) => `  - ${c.city}, ${c.state} (${c.zip}): ${baseUrl}/cities/${c.slug}`).join("\n")}
+`;
+fs.writeFileSync(path.join(publicDir, "llms.txt"), llmsTxt, "utf8");
+
+// 5. Pre-render featured listings directly inside <main id="view"> of index.html & app.js
+const featuredPrerender = restaurants.slice(0, 24);
+const prerenderCardsHtml = featuredPrerender
+  .map(
+    (r) => `
+      <article style="background:#1f1713;border:1px solid rgba(245,194,107,0.18);border-radius:16px;padding:16px">
+        <div style="font-size:0.76rem;color:#f5c26b;font-weight:700">${esc(r.cuisine)} · ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</div>
+        <h2 style="margin:6px 0;font-size:1.1rem"><a href="/gem/${esc(r.id)}" style="color:#f9f3eb;text-decoration:none">${esc(r.name)}</a></h2>
+        <p style="font-size:0.85rem;color:#c2b2a3;margin:4px 0">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)} · 📞 ${esc(r.phone || "")}</p>
+        <p style="font-size:0.84rem;color:#c2b2a3;margin:4px 0">🕒 ${esc(r.hours)}</p>
+        <p style="font-size:0.85rem;color:#f9f3eb;margin:6px 0">🔥 <strong>Must-Try:</strong> ${esc(getDishName(r))}</p>
+      </article>`
+  )
+  .join("");
+
 const cityLinksHtml = cityZipEntries
   .map(
     (c) =>
       `<a href="/cities/${c.slug}" style="color:#c2b2a3;font-size:0.78rem;text-decoration:none;padding:3px 8px;border:1px solid rgba(245,194,107,0.14);border-radius:999px">${esc(c.city)}, ${esc(c.state)} (${esc(c.zip)})</a>`
   )
   .join(" ");
+
+const homeSchemaJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+      name: "HiddenFoodGem.com",
+      url: `${baseUrl}/`,
+      description: "Verified independent family-run restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes with live operating hours, signature dishes, and official county health inspection badges.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${baseUrl}/?zip={search_term_string}`,
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@type": "ItemList",
+      name: "Featured Verified Independent Restaurants on HiddenFoodGem.com",
+      numberOfItems: featuredPrerender.length,
+      itemListElement: featuredPrerender.map((r, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${baseUrl}/gem/${r.id}`,
+        name: `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip})`,
+      })),
+    },
+  ],
+};
 
 const indexHtml = `<!doctype html>
 <html lang="en">
@@ -540,33 +611,19 @@ const indexHtml = `<!doctype html>
   <meta name="theme-color" content="#1f1612" />
   <meta name="description" content="HiddenFoodGem.com: discover 110+ verified independent family-run restaurants, bakeries, coffee roasters &amp; boba shops across 65 ZIP codes. Live operating hours, verified county health grades, signature dishes &amp; direct counter calling." />
   <title>HiddenFoodGem.com: Verified Independent Restaurants, Bakeries, Coffee &amp; Boba</title>
-  <link rel="canonical" href="https://hiddenfoodgem.com/" />
+  <link rel="canonical" href="${baseUrl}/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="HiddenFoodGem.com — Verified Independent Restaurants, Coffee &amp; Boba" />
   <meta property="og:description" content="Skip national chains and 30% delivery app fees. Explore 110+ hand-vetted family-owned restaurants with live hours, signature dishes, and official County Health grades." />
-  <meta property="og:url" content="https://hiddenfoodgem.com/" />
+  <meta property="og:url" content="${baseUrl}/" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="HiddenFoodGem.com — Verified Independent Restaurants" />
   <meta name="twitter:description" content="Discover 110+ verified independent family-run restaurants across 65 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=70" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "HiddenFoodGem.com",
-    "url": "https://hiddenfoodgem.com/",
-    "description": "Verified independent family-run restaurants, bakeries, coffee roasters, and boba shops with live operating hours, signature dishes, and official county health inspection badges.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://hiddenfoodgem.com/?zip={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <!-- Vercel Web Analytics & Custom Events Tracking -->
+  <link rel="stylesheet" href="/styles.css?v=71" />
+  <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
@@ -576,19 +633,25 @@ const indexHtml = `<!doctype html>
       <span class="brand-text">Hidden <em>Food</em> Gem<span style="font-size:0.72em;opacity:0.85;font-weight:700">.com</span></span>
     </a>
     <div style="display:flex;gap:8px;align-items:center">
-      <a href="https://letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Verified Family Events &amp; Activities">🎡 Family Events</a>
+      <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Verified Family Events &amp; Activities">🎡 Family Events</a>
       <a href="#/add" class="btn btn-ghost btn-sm">📩 Contact Us</a>
     </div>
   </header>
 
-  <main id="view"></main>
+  <main id="view">
+    <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
+      <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Bakeries, Coffee &amp; Boba</h1>
+      <p style="color:#c2b2a3;margin:0 0 18px">Explore 110+ hand-vetted independent neighborhood gems across 65 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">${prerenderCardsHtml}</div>
+    </section>
+  </main>
 
   <footer class="seo-directory" style="max-width:1200px;margin:32px auto 80px;padding:24px 16px;border-top:1px solid rgba(245,194,107,0.15);color:#c2b2a3;font-size:0.82rem">
     <div style="font-weight:700;color:#f5c26b;margin-bottom:10px">📍 Explore Verified Hidden Food Gems by City &amp; ZIP Code (65 Neighborhood Guides)</div>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">${cityLinksHtml}</div>
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06)">
-      <span>© 2026 <strong>HiddenFoodGem.com</strong> — 100% Independent Restaurants, Zero Chains, Zero Paid Rankings.</span>
-      <span>Sister Site: <a href="https://letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b">Let&apos;s Get Out, Kids! (LetsGetOutKids.com) ↗</a> · <a href="/sitemap.xml" style="color:#c2b2a3">Sitemap</a></span>
+      <span>© 2026 <strong>HiddenFoodGem.com</strong> — 110+ Independent Restaurants across 65 ZIP Codes. Zero Chains. Zero Paid Rankings.</span>
+      <span>Sister Site: <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b">Let&apos;s Get Out, Kids! (LetsGetOutKids.com) ↗</a> · <a href="/sitemap.xml" style="color:#c2b2a3">Sitemap</a> · <a href="/llms.txt" style="color:#c2b2a3">LLMs.txt</a></span>
     </div>
   </footer>
 
@@ -612,11 +675,82 @@ const indexHtml = `<!doctype html>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="/seed-data.js?v=70"></script>
-  <script src="/gems-client.js?v=70"></script>
+  <script src="/seed-data.js?v=71"></script>
+  <script src="/gems-client.js?v=71"></script>
 </body>
 </html>
 `;
-fs.writeFileSync(path.join(publicDir, "index.html"), indexHtml, "utf8");
 
-console.log(`Generated ${restaurants.length} /gem/[id].html pages, ${cityZipEntries.length} /cities/[slug].html pages, sitemap.xml (${sitemapUrls.length} URLs), robots.txt, and updated index.html!`);
+fs.writeFileSync(path.join(publicDir, "index.html"), indexHtml, "utf8");
+fs.writeFileSync(path.join(__dirname, "index.html"), indexHtml, "utf8");
+
+// 6. Generate public/404.html and update app.js to serve real HTTP 404 on unknown routes
+const notFoundHtml = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>404 — Page Not Found | HiddenFoodGem.com</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <style>${seoStyles}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="brand"><span>💎</span><span>Hidden <em>Food</em> Gem.com</span></a>
+    <a href="/" class="btn">🔎 Back to All Gems</a>
+  </header>
+  <main class="wrap" style="text-align:center;padding-top:64px">
+    <section class="hero-card">
+      <div style="font-size:3rem;margin-bottom:8px">🍽️</div>
+      <h1>404 — Hidden Gem Not Found</h1>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px">We couldn&apos;t find a restaurant or city guide at that address. Explore all 110+ verified independent restaurants across 65 ZIP codes below.</p>
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
+        <a href="/" class="btn">💎 Explore All 110 Verified Gems</a>
+        <a href="https://www.letsgetoutkids.com" class="btn btn-outline">🎡 Browse Family Events</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+`;
+fs.writeFileSync(path.join(publicDir, "404.html"), notFoundHtml, "utf8");
+
+// Update app.js so "/" serves indexHtml (200) and any unmatched path returns HTTP 404 (not 200!)
+const appJsCode = `const http = require("http");
+
+const INDEX_HTML = ${JSON.stringify(indexHtml)};
+const NOT_FOUND_HTML = ${JSON.stringify(notFoundHtml)};
+
+const handler = (req, res) => {
+  const rawUrl = req.url || "/";
+  const pathname = rawUrl.split("?")[0];
+  if (pathname === "/" || pathname === "/index.html") {
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    });
+    res.end(INDEX_HTML);
+    return;
+  }
+  res.writeHead(404, {
+    "Content-Type": "text/html; charset=utf-8",
+    "X-Robots-Tag": "noindex, nofollow",
+    "Cache-Control": "public, max-age=0, must-revalidate"
+  });
+  res.end(NOT_FOUND_HTML);
+};
+
+if (!process.env.VERCEL) {
+  const server = http.createServer(handler);
+  server.listen(process.env.PORT || 3000);
+}
+
+module.exports = handler;
+`;
+fs.writeFileSync(path.join(__dirname, "app.js"), appJsCode, "utf8");
+
+// Sync public/gems-client.js -> root gems-client.js
+fs.copyFileSync(path.join(publicDir, "gems-client.js"), path.join(__dirname, "gems-client.js"));
+
+console.log("Successfully generated all SEO pages, unified www origin, pre-rendered homepage HTML, and added real HTTP 404 handling!");

@@ -1,0 +1,36 @@
+# HiddenFoodGem.com — Verified Independent Restaurants Directory
+> Discover 110+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+
+## Key Features
+- Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.
+- Sister Family Events Platform: https://www.letsgetoutkids.com (Verified kid-friendly events, seasonal festivals, and upcoming family attractions).
+
+## Primary Entry Points
+- Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
+- Full XML Sitemap (176 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Featured Neighborhood Guides:
+  - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
+  - Anaheim, CA (92805): https://www.hiddenfoodgem.com/cities/anaheim-ca-92805
+  - Annandale, VA (22003): https://www.hiddenfoodgem.com/cities/annandale-va-22003
+  - Astoria, NY (11105): https://www.hiddenfoodgem.com/cities/astoria-ny-11105
+  - Austin, TX (78702): https://www.hiddenfoodgem.com/cities/austin-tx-78702
+  - Austin, TX (78723): https://www.hiddenfoodgem.com/cities/austin-tx-78723
+  - Austin, TX (78751): https://www.hiddenfoodgem.com/cities/austin-tx-78751
+  - Austin, TX (78756): https://www.hiddenfoodgem.com/cities/austin-tx-78756
+  - Austin, TX (78757): https://www.hiddenfoodgem.com/cities/austin-tx-78757
+  - Bethesda, MD (20814): https://www.hiddenfoodgem.com/cities/bethesda-md-20814
+  - Boyle Heights, CA (90033): https://www.hiddenfoodgem.com/cities/boyle-heights-ca-90033
+  - Brooklyn, NY (11220): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11220
+  - Brooklyn, NY (11222): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11222
+  - Burbank, CA (91505): https://www.hiddenfoodgem.com/cities/burbank-ca-91505
+  - Carrollton, TX (75006): https://www.hiddenfoodgem.com/cities/carrollton-tx-75006
+  - Chicago, IL (60607): https://www.hiddenfoodgem.com/cities/chicago-il-60607
+  - Chicago, IL (60608): https://www.hiddenfoodgem.com/cities/chicago-il-60608
+  - Chicago, IL (60616): https://www.hiddenfoodgem.com/cities/chicago-il-60616
+  - Chicago, IL (60625): https://www.hiddenfoodgem.com/cities/chicago-il-60625
+  - Chino, CA (91710): https://www.hiddenfoodgem.com/cities/chino-ca-91710
+  - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
+  - Dallas, TX (75208): https://www.hiddenfoodgem.com/cities/dallas-tx-75208
+  - Downtown Los Angeles, CA (90021): https://www.hiddenfoodgem.com/cities/downtown-los-angeles-ca-90021
+  - Flushing, NY (11354): https://www.hiddenfoodgem.com/cities/flushing-ny-11354
+  - Glendale, CA (91204): https://www.hiddenfoodgem.com/cities/glendale-ca-91204

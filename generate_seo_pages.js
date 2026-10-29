@@ -44,6 +44,13 @@ const avgStars = (r) => {
   return Number((sum / r.ratings.length).toFixed(1));
 };
 
+const getDishName = (r) => {
+  if (r.destinationDish && typeof r.destinationDish === "object") {
+    return r.destinationDish.name || "House Specialties";
+  }
+  return r.destinationDish || r.structuredMenu?.signatures?.[0]?.name || "House Specialties";
+};
+
 // Build unique City + ZIP entries
 const zipMap = new Map();
 for (const r of restaurants) {
@@ -196,7 +203,7 @@ for (const r of restaurants) {
     "@type": "Restaurant",
     "@id": `${baseUrl}/gem/${r.id}#restaurant`,
     name: r.name,
-    description: r.description || `${r.name} is a verified independent ${r.cuisine} restaurant in ${r.city}, ${r.state}. Signature dish: ${r.destinationDish || "house specialties"}.`,
+    description: r.description || `${r.name} is a verified independent ${r.cuisine} restaurant in ${r.city}, ${r.state}. Signature dish: ${getDishName(r)}.`,
     url: `${baseUrl}/gem/${r.id}`,
     telephone: r.phone || "",
     servesCuisine: r.cuisine,
@@ -225,7 +232,7 @@ for (const r of restaurants) {
   };
 
   const title = `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) — Menu, Hours & Health Grade | HiddenFoodGem.com`;
-  const metaDesc = `Verified Hidden Food Gem in ${r.city}, ${r.state || "CA"} (${r.zip}): ${r.name} (${r.cuisine}). Must-try: ${r.destinationDish || "House Signatures"}. Hours: ${r.hours}. Address: ${fullAddr}. Call counter directly: ${r.phone}.`;
+  const metaDesc = `Verified Hidden Food Gem in ${r.city}, ${r.state || "CA"} (${r.zip}): ${r.name} (${r.cuisine}). Must-try: ${getDishName(r)}. Hours: ${r.hours}. Address: ${fullAddr}. Call counter directly: ${r.phone}.`;
 
   const html = `<!doctype html>
 <html lang="en">
@@ -289,7 +296,7 @@ for (const r of restaurants) {
         </div>
         <div class="meta-box">
           <div class="meta-label">🔥 Destination Signature Dish</div>
-          <div class="meta-val">${esc(r.destinationDish || "House Specialties")}</div>
+          <div class="meta-val">${esc(getDishName(r))}</div>
         </div>
       </div>
 
@@ -333,7 +340,7 @@ for (const r of restaurants) {
               <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${esc(other.cuisine)} · ${dist.toFixed(1)} mi away</div>
               <h3 style="margin:6px 0;font-size:1.05rem"><a href="/gem/${esc(other.id)}">${esc(other.name)}</a></h3>
               <p style="font-size:0.86rem;color:var(--muted);margin:4px 0 10px">${esc(other.address)}, ${esc(other.city)}, ${esc(other.state || "CA")} ${esc(other.zip)}</p>
-              ${other.destinationDish ? `<div style="font-size:0.82rem;margin-bottom:10px">🔥 <strong>Must-Try:</strong> ${esc(other.destinationDish)}</div>` : ""}
+              <div style="font-size:0.82rem;margin-bottom:10px">🔥 <strong>Must-Try:</strong> ${esc(getDishName(other))}</div>
             </div>
             <div style="display:flex;gap:8px;flex-wrap:wrap">
               <a href="/gem/${esc(other.id)}" class="btn btn-outline" style="padding:6px 12px;font-size:0.8rem">View Gem →</a>
@@ -448,7 +455,7 @@ for (const entry of cityZipEntries) {
               <h3 style="margin:6px 0;font-size:1.15rem"><a href="/gem/${esc(r.id)}">${esc(r.name)}</a></h3>
               <p style="font-size:0.86rem;color:var(--muted);margin:4px 0 8px">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
               <p style="font-size:0.84rem;color:var(--muted);margin:4px 0 8px">🕒 ${esc(r.hours)}</p>
-              ${r.destinationDish ? `<p style="font-size:0.86rem;margin:6px 0 12px">🔥 <strong>Must-Try:</strong> ${esc(r.destinationDish)}</p>` : ""}
+              <p style="font-size:0.86rem;margin:6px 0 12px">🔥 <strong>Must-Try:</strong> ${esc(getDishName(r))}</p>
             </div>
             <div style="display:flex;gap:8px;flex-wrap:wrap">
               <a href="/gem/${esc(r.id)}" class="btn">Full Menu & Details</a>
@@ -469,7 +476,7 @@ for (const entry of cityZipEntries) {
               <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${esc(r.cuisine)} · ${dist.toFixed(1)} mi from ${esc(zip)}</div>
               <h3 style="margin:6px 0;font-size:1.05rem"><a href="/gem/${esc(r.id)}">${esc(r.name)}</a></h3>
               <p style="font-size:0.85rem;color:var(--muted);margin:4px 0 8px">${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
-              ${r.destinationDish ? `<p style="font-size:0.83rem;margin:4px 0 10px">🔥 <strong>Must-Try:</strong> ${esc(r.destinationDish)}</p>` : ""}
+              <p style="font-size:0.83rem;margin:4px 0 10px">🔥 <strong>Must-Try:</strong> ${esc(getDishName(r))}</p>
             </div>
             <div style="display:flex;gap:8px;flex-wrap:wrap">
               <a href="/gem/${esc(r.id)}" class="btn btn-outline" style="padding:6px 12px;font-size:0.8rem">View Gem →</a>

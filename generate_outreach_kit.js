@@ -33,7 +33,12 @@ for (const [region, list] of byRegion.entries()) {
   for (const r of list) {
     const liveUrl = `https://hiddenfoodgem.com/?zip=${r.zip}&gem=${r.id}`;
     const seoUrl = `https://hiddenfoodgem.com/gem/${r.id}`;
-    const dish = r.destinationDish || (r.structuredMenu?.signatures?.[0]?.name) || "house specialties";
+    const dish =
+      (r.destinationDish && typeof r.destinationDish === "object"
+        ? r.destinationDish.name
+        : r.destinationDish) ||
+      r.structuredMenu?.signatures?.[0]?.name ||
+      "house specialties";
     const agency = r.healthPermit?.agency || "County Health";
     const grade = r.healthPermit?.grade || "A";
 

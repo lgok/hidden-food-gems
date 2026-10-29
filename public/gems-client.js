@@ -2446,18 +2446,32 @@
       });
     }
 
+    const searchGemId = new URLSearchParams(location.search || '').get('gem');
     if (page === 'r') {
       const r = state.restaurants.find((x) => x.id === decodeURIComponent(id || ''));
       if (r) renderDetail(r); else { closeSheet(); toast('Restaurant not found'); }
     } else if (page === 'add') renderAdd();
-    else closeSheet();
+    else if (searchGemId && (!location.hash || location.hash === '#/')) {
+      const r = state.restaurants.find((x) => x.id === decodeURIComponent(searchGemId));
+      if (r) renderDetail(r); else closeSheet();
+    } else closeSheet();
   }
 
-  sheet.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) location.hash = state.base; });
+  const dismissSheetCleanly = () => {
+    if (location.search.includes('gem=')) {
+      const sp = new URLSearchParams(location.search);
+      sp.delete('gem');
+      const qs = sp.toString();
+      history.replaceState(null, '', location.pathname + (qs ? `?${qs}` : '') + (location.hash || '#/'));
+    }
+    closeSheet();
+    if (location.hash && location.hash !== state.base) location.hash = state.base;
+  };
+  sheet.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) dismissSheetCleanly(); });
   $('#lightbox').addEventListener('click', () => { $('#lightbox').hidden = true; });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    if (!$('#lightbox').hidden) $('#lightbox').hidden = true; else if (!sheet.hidden) location.hash = state.base;
+    if (!$('#lightbox').hidden) $('#lightbox').hidden = true; else if (!sheet.hidden) dismissSheetCleanly();
   });
   window.addEventListener('hashchange', route);
 

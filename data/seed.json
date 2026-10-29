@@ -107,7 +107,6 @@
     "county": "Orange",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "206 BCE Team",
       "calls": 33,
@@ -131,7 +130,54 @@
       "instagram": "@206bce",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "adya-indian-anaheim-packing-district",
@@ -241,7 +287,6 @@
     "county": "Orange",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Shachi Mehra",
       "calls": 34,
@@ -265,7 +310,54 @@
       "instagram": "@adyaoc",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1230,
+        "rangeStr": "12:00 PM – 8:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1230
   },
   {
     "id": "georgias-anaheim-packing-district",
@@ -385,7 +477,6 @@
     "county": "Orange",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "The Shoemaker Family",
       "calls": 48,
@@ -409,7 +500,54 @@
       "instagram": "@georgias_soul",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "some-crust-bakery-claremont-village",
@@ -519,7 +657,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 6:00 PM",
     "analytics": {
       "ownerName": "The Bakery Family",
       "calls": 30,
@@ -533,7 +670,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -547,7 +686,54 @@
       "instagram": "@somecrustbakery",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 840,
+        "rangeStr": "8:00 AM – 2:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 780,
+        "rangeStr": "6:30 AM – 1:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "uno-tre-otto-claremont-village",
@@ -655,7 +841,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Chef Hugo",
       "calls": 40,
@@ -677,7 +862,54 @@
       "instagram": "@unotreotto",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "the-quarter-creole-claremont-village",
@@ -697,7 +929,7 @@
     "zip": "91711",
     "driveFrom91761": "15 min from 91761",
     "phone": "(909) 482-6200",
-    "hours": "Wed–Thu 5:00pm–8:30pm · Fri–Sat 4:00pm–9:30pm · Sun 4:00pm–8:30pm · Mon 5:00pm–9:00pm",
+    "hours": "Wed–Thu 5:00pm–8:30pm · Fri–Sat 4:00pm–9:30pm · Sun 4:00pm–8:30pm · Mon 5:00pm–9:00pm · Closed Tuesday",
     "healthPermit": {
       "facilityId": "LACO-DEHS-009452",
       "agency": "Los Angeles County Department of Public Health",
@@ -791,7 +1023,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "The Quarter Team",
       "calls": 36,
@@ -800,7 +1031,7 @@
     },
     "latitude": 34.0975,
     "longitude": -117.7178,
-    "opening_hour_minutes": 1020,
+    "opening_hour_minutes": 960,
     "serves_breakfast": false,
     "meals": [
       "dinner"
@@ -813,7 +1044,54 @@
       "instagram": "@thequartercreole",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 960,
+        "closeMin": 1230,
+        "rangeStr": "4:00 PM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1260,
+        "rangeStr": "5:00 PM – 9:00 PM"
+      },
+      "2": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1230,
+        "rangeStr": "5:00 PM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 1020,
+        "closeMin": 1230,
+        "rangeStr": "5:00 PM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 960,
+        "closeMin": 1290,
+        "rangeStr": "4:00 PM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 960,
+        "closeMin": 1290,
+        "rangeStr": "4:00 PM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "aruffos-italian-claremont-village",
@@ -935,7 +1213,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Chef Valentino Aruffo",
       "calls": 44,
@@ -959,7 +1236,54 @@
       "instagram": "@aruffos_italian_cuisine",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "cauldron-ice-cream-haven-city",
@@ -1062,7 +1386,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "analytics": {
       "ownerName": "Cauldron Team",
       "calls": 18,
@@ -1086,7 +1409,54 @@
       "instagram": "@cauldronicecream",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "baba-k-haven-city-rancho",
@@ -1207,7 +1577,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Bassam",
       "calls": 35,
@@ -1231,7 +1600,54 @@
       "instagram": "@babakstreetfood",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1230
   },
   {
     "id": "shokunin-haven-city-rancho",
@@ -1350,7 +1766,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "analytics": {
       "ownerName": "Chef Kenji",
       "calls": 38,
@@ -1374,7 +1789,54 @@
       "instagram": "@shokunin_temaki",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "birria-los-socios-haven-city-rancho",
@@ -1493,7 +1955,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Los Socios Kitchen",
       "calls": 41,
@@ -1517,7 +1978,54 @@
       "instagram": "@birrialossocios",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "the-kroft-haven-city-rancho",
@@ -1638,7 +2146,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "The Kroft Team",
       "calls": 32,
@@ -1647,7 +2154,7 @@
     },
     "latitude": 34.0991,
     "longitude": -117.5752,
-    "opening_hour_minutes": 690,
+    "opening_hour_minutes": 660,
     "serves_breakfast": false,
     "meals": [
       "lunch",
@@ -1662,7 +2169,54 @@
       "instagram": "@thekroft",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "changan-kitchen-ontario",
@@ -1804,7 +2358,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Chen",
       "calls": 28,
@@ -1828,7 +2381,54 @@
       "instagram": "@changan_noodles_ontario",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "not-your-mamas-kitchen-ontario",
@@ -1964,8 +2564,7 @@
     "region": "Inland Empire",
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
-    "kitchenStatus": "low_prep",
-    "statusLabel": "Kitchen Low on Prep • Calling Ahead Recommended",
+    "kitchenStatus": "open",
     "analytics": {
       "ownerName": "Mama Tasha",
       "calls": 34,
@@ -1977,12 +2576,10 @@
     "opening_hour_minutes": 720,
     "serves_breakfast": false,
     "meals": [
-      "brunch",
       "lunch",
       "dinner"
     ],
     "meal_types": [
-      "brunch",
       "lunch",
       "dinner"
     ],
@@ -1991,7 +2588,54 @@
       "instagram": "@nymksoulfood",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1140,
+        "rangeStr": "12:00 PM – 7:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1140,
+        "rangeStr": "12:00 PM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1140,
+        "rangeStr": "12:00 PM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1140,
+        "rangeStr": "12:00 PM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1140,
+        "rangeStr": "12:00 PM – 7:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1140
   },
   {
     "id": "pho-k-plus-ontario",
@@ -2122,7 +2766,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Minh",
       "calls": 24,
@@ -2146,7 +2789,54 @@
       "instagram": "@phokplus",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1260,
+        "rangeStr": "10:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "taqueria-2-potrillos-montclair",
@@ -2284,7 +2974,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "analytics": {
       "ownerName": "Don Carlos",
       "calls": 39,
@@ -2312,7 +3001,54 @@
       "instagram": "@taqueria2potrillos",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1380,
+        "rangeStr": "9:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1380,
+        "rangeStr": "9:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "los-cebollines-grill-ontario",
@@ -2450,7 +3186,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Doña Elena",
       "calls": 22,
@@ -2478,7 +3213,54 @@
       "instagram": "@loscebollinesgrill",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "greenhills-market-ontario",
@@ -2615,8 +3397,7 @@
     "region": "Inland Empire",
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
-    "kitchenStatus": "low_prep",
-    "statusLabel": "Kitchen Low on Prep • Calling Ahead Recommended",
+    "kitchenStatus": "open",
     "analytics": {
       "ownerName": "Tito Jun",
       "calls": 31,
@@ -2644,7 +3425,54 @@
       "instagram": "@greenhills_ontario",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1110,
+        "rangeStr": "9:00 AM – 6:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1110,
+        "rangeStr": "9:00 AM – 6:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1110,
+        "rangeStr": "9:00 AM – 6:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1110,
+        "rangeStr": "9:00 AM – 6:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1110,
+        "rangeStr": "9:00 AM – 6:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1110
   },
   {
     "id": "thai-family-sisters-upland",
@@ -2670,7 +3498,7 @@
     "zip": "91786",
     "driveFrom91761": "12 min from 91761",
     "phone": "(909) 920-3640",
-    "hours": "Daily 8:00am–3:00pm",
+    "hours": "Tue–Sun 11:00am–9:00pm · Closed Monday",
     "healthPermit": {
       "facilityId": "FA0006012",
       "agency": "San Bernardino County DEHS",
@@ -2779,7 +3607,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Nong & Noi",
       "calls": 26,
@@ -2788,24 +3615,69 @@
     },
     "latitude": 34.101,
     "longitude": -117.6484,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
     "meals": [
-      "breakfast",
-      "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "is_active": true,
     "socialMedia": {
       "instagram": "@thaifamilysisters",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "calle-ocho-cuban-cafecito-rancho",
@@ -2828,7 +3700,7 @@
     "zip": "91730",
     "driveFrom91761": "12 min from 91761",
     "phone": "(909) 560-2925",
-    "hours": "Daily 8:00am–3:00pm",
+    "hours": "Mon–Sat 10:00am–3:00pm · Closed Sunday",
     "healthPermit": {
       "facilityId": "FA0004075",
       "agency": "San Bernardino County DEHS",
@@ -2931,8 +3803,7 @@
     "region": "Inland Empire",
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
-    "kitchenStatus": "sold_out",
-    "statusLabel": "Sold Out for Today • Reopens Tomorrow at 10:00 AM",
+    "kitchenStatus": "open",
     "analytics": {
       "ownerName": "Jorge",
       "calls": 29,
@@ -2941,15 +3812,15 @@
     },
     "latitude": 34.1064,
     "longitude": -117.5931,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
+    "opening_hour_minutes": 600,
+    "serves_breakfast": false,
     "meals": [
-      "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
-      "breakfast",
       "brunch",
       "lunch",
       "coffee",
@@ -2960,7 +3831,54 @@
       "instagram": "@calleochocubancafecito",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 900,
+        "rangeStr": "10:00 AM – 3:00 PM"
+      }
+    },
+    "closing_hour_minutes": 900
   },
   {
     "id": "tanyas-lebanese-kabab-upland",
@@ -2985,7 +3903,7 @@
     "zip": "91786",
     "driveFrom91761": "14 min from 91761",
     "phone": "(909) 949-2200",
-    "hours": "Daily 8:00am–3:00pm",
+    "hours": "Mon–Sat 10:00am–10:00pm · Sun 10:00am–8:00pm",
     "healthPermit": {
       "facilityId": "FA0004420",
       "agency": "San Bernardino County DEHS",
@@ -3089,7 +4007,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "analytics": {
       "ownerName": "Tanya",
       "calls": 27,
@@ -3098,24 +4015,71 @@
     },
     "latitude": 34.0975,
     "longitude": -117.651,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
+    "opening_hour_minutes": 600,
+    "serves_breakfast": false,
     "meals": [
-      "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "meal_types": [
-      "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "is_active": true,
     "socialMedia": {
       "instagram": "@tanyaslebanesekabab",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1320,
+        "rangeStr": "10:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "house-of-fortune-vegan-chino",
@@ -3137,7 +4101,7 @@
     "zip": "91710",
     "driveFrom91761": "10 min from 91761",
     "phone": "(909) 517-2988",
-    "hours": "Daily 8:00am–3:00pm",
+    "hours": "Daily 11:00am–8:00pm",
     "healthPermit": {
       "facilityId": "FA0015920",
       "agency": "San Bernardino County DEHS",
@@ -3241,7 +4205,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:00 PM",
     "analytics": {
       "ownerName": "Mei",
       "calls": 19,
@@ -3250,24 +4213,69 @@
     },
     "latitude": 34.0122,
     "longitude": -117.6889,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
+    "opening_hour_minutes": 660,
+    "serves_breakfast": false,
     "meals": [
-      "breakfast",
-      "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch"
+      "lunch",
+      "dinner"
     ],
     "is_active": true,
     "socialMedia": {
       "instagram": "@houseoffortunevegan",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1200,
+        "rangeStr": "11:00 AM – 8:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1200
   },
   {
     "id": "joannes-cafe-ontario",
@@ -3395,7 +4403,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 3:00 PM",
     "analytics": {
       "ownerName": "JoAnne",
       "calls": 33,
@@ -3421,7 +4428,54 @@
       "instagram": "@joannescafeontario",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 900,
+        "rangeStr": "7:00 AM – 3:00 PM"
+      }
+    },
+    "closing_hour_minutes": 900
   },
   {
     "id": "vinces-spaghetti-ontario",
@@ -3546,7 +4600,6 @@
     "county": "San Bernardino",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:45 PM",
     "analytics": {
       "ownerName": "Tony",
       "calls": 42,
@@ -3570,7 +4623,54 @@
       "instagram": "@vincesspaghetti",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1245,
+        "rangeStr": "11:30 AM – 8:45 PM"
+      }
+    },
+    "closing_hour_minutes": 1245
   },
   {
     "id": "ny-10001-itasteexpress",
@@ -3693,7 +4793,6 @@
     "county": "New York",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Owner",
       "calls": 31,
@@ -3717,7 +4816,53 @@
       "instagram": "@itasteexpressnyc",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "ny-10003-olioepiu",
@@ -3839,7 +4984,6 @@
     "county": "New York",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Owner",
       "calls": 18,
@@ -3863,7 +5007,53 @@
       "instagram": "@olioepiu",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "dc-20001-oohhsaahhssoulfood",
@@ -3886,7 +5076,7 @@
     "zip": "20001",
     "driveFrom91761": "Washington, DC (20001)",
     "phone": "(202) 667-7142",
-    "hours": "Sun–Thu 11:00am–8:30pm · Fri–Sat 11:00am–9:00pm",
+    "hours": "Tue–Thu 12:00pm–9:00pm · Fri–Sat 12:00pm–10:00pm · Sun 12:00pm–8:00pm · Closed Monday",
     "healthPermit": {
       "facilityId": "DC-HFD-1317",
       "agency": "District of Columbia Department of Health (DC Health)",
@@ -3986,7 +5176,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 39,
@@ -3995,7 +5184,7 @@
     },
     "latitude": 38.9169,
     "longitude": -77.0261,
-    "opening_hour_minutes": 660,
+    "opening_hour_minutes": 720,
     "serves_breakfast": false,
     "meals": [
       "lunch",
@@ -4010,7 +5199,53 @@
       "instagram": "@oohhsaahhs",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1200,
+        "rangeStr": "12:00 PM – 8:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1260,
+        "rangeStr": "12:00 PM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1260,
+        "rangeStr": "12:00 PM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1260,
+        "rangeStr": "12:00 PM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1320,
+        "rangeStr": "12:00 PM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1320,
+        "rangeStr": "12:00 PM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "dc-20001-chercherethiopianres",
@@ -4132,7 +5367,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 20,
@@ -4156,7 +5390,53 @@
       "instagram": "@chercherrestaurant",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "dc-20001-benschilibowl",
@@ -4280,7 +5560,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 23,
@@ -4304,7 +5583,53 @@
       "instagram": "@benschilibowl",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "dc-20002-ethiopicrestaurant",
@@ -4426,7 +5751,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 37,
@@ -4450,7 +5774,53 @@
       "instagram": "@ethiopicrestaurant",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "dc-20002-makettocambodiantaiw",
@@ -4574,7 +5944,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 24,
@@ -4598,7 +5967,53 @@
       "instagram": "@maketto1351",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "dc-20005-bubandpopssandwichsh",
@@ -4621,7 +6036,7 @@
     "zip": "20005",
     "driveFrom91761": "Washington, DC (20005)",
     "phone": "(202) 457-1111",
-    "hours": "Sun–Thu 11:00am–8:30pm · Fri–Sat 11:00am–9:00pm",
+    "hours": "Mon–Sat 11:00am–3:00pm · Closed Sunday",
     "healthPermit": {
       "facilityId": "DC-HFD-8098",
       "agency": "District of Columbia Department of Health (DC Health)",
@@ -4721,7 +6136,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Storefront Owner",
       "calls": 27,
@@ -4733,19 +6147,63 @@
     "opening_hour_minutes": 660,
     "serves_breakfast": false,
     "meals": [
-      "lunch",
-      "dinner"
+      "lunch"
     ],
     "meal_types": [
-      "lunch",
-      "dinner"
+      "lunch"
     ],
     "is_active": true,
     "socialMedia": {
       "instagram": "@bubandpops",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 900,
+        "rangeStr": "11:00 AM – 3:00 PM"
+      }
+    },
+    "closing_hour_minutes": 900
   },
   {
     "id": "nj-07302-pratobakery",
@@ -4753,13 +6211,13 @@
     "cuisine": "Italian",
     "regionalIdentity": "Scratch-Crafted Neighborhood Bistro",
     "tags": [
-      "lunch",
-      "dinner",
-      "chicken",
-      "beef",
-      "vegetarian-options",
       "italian",
-      "breakfast"
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba",
+      "vegetarian-options"
     ],
     "price": 2,
     "address": "371 4th St",
@@ -4768,7 +6226,7 @@
     "zip": "07302",
     "driveFrom91761": "Jersey City, NJ (07302)",
     "phone": "(201) 798-8900",
-    "hours": "Sun–Thu 11:00am–8:30pm · Fri–Sat 11:00am–9:00pm",
+    "hours": "Mon–Sat 8:00am–7:00pm · Sun 8:30am–5:00pm",
     "healthPermit": {
       "facilityId": "NJ-JC-9319",
       "agency": "Jersey City Department of Health & Human Services",
@@ -4868,7 +6326,6 @@
     "county": "Hudson",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:30 PM",
     "analytics": {
       "ownerName": "Chef Owner",
       "calls": 28,
@@ -4877,22 +6334,74 @@
     },
     "latitude": 40.72447716,
     "longitude": -74.05107288,
-    "opening_hour_minutes": 660,
-    "serves_breakfast": false,
+    "opening_hour_minutes": 480,
+    "serves_breakfast": true,
     "meals": [
+      "breakfast",
+      "brunch",
       "lunch",
-      "dinner"
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
+      "breakfast",
+      "brunch",
       "lunch",
-      "dinner"
+      "coffee",
+      "coffee_boba"
     ],
     "is_active": true,
     "socialMedia": {
       "instagram": "@pratobakery",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1020,
+        "rangeStr": "8:30 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1140
   },
   {
     "id": "ny-11354-whitedear",
@@ -5003,7 +6512,6 @@
     "county": "Queens",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 6:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 42,
@@ -5029,7 +6537,53 @@
       "instagram": "@whitebearflushing",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "ny-11220-tacoselbronco",
@@ -5140,7 +6694,6 @@
     "county": "Kings",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 11:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 51,
@@ -5166,7 +6719,53 @@
       "instagram": "@tacoselbronco",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "tx-75208-taquerialaventana",
@@ -5277,7 +6876,6 @@
     "county": "Dallas",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 38,
@@ -5303,7 +6901,53 @@
       "instagram": "@elsihaytaqueria",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "tx-75006-bbqchicken-carrollton",
@@ -5415,7 +7059,6 @@
     "county": "Dallas",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:30 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 29,
@@ -5439,7 +7082,53 @@
       "instagram": "@dansungsadallas",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1350
   },
   {
     "id": "tx-78702-micklethwait-austin",
@@ -5460,7 +7149,7 @@
     "zip": "78702",
     "driveFrom91761": "East Austin (78702)",
     "phone": "(512) 791-5961",
-    "hours": "Thu–Sun 11:00am–4:00pm (or until sold out)",
+    "hours": "Thu–Sun 11:00am–4:00pm · Closed Mon–Wed",
     "healthPermit": {
       "facilityId": "ATX-APH-2024-9912",
       "agency": "Austin Public Health (APH) Environmental Health Services",
@@ -5550,7 +7239,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 4:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 62,
@@ -5572,7 +7260,53 @@
       "instagram": "@craftmeats",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 960,
+        "rangeStr": "11:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "3": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 960,
+        "rangeStr": "11:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 960,
+        "rangeStr": "11:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 960,
+        "rangeStr": "11:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "md-20814-bethesdabagel",
@@ -5683,7 +7417,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 3:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 48,
@@ -5709,7 +7442,53 @@
       "instagram": "@bethesdabagels",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 900,
+        "rangeStr": "6:30 AM – 3:00 PM"
+      }
+    },
+    "closing_hour_minutes": 900
   },
   {
     "id": "nj-07105-teixeiras-newark",
@@ -5820,7 +7599,6 @@
     "county": "Essex",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 44,
@@ -5846,7 +7624,53 @@
       "instagram": "@teixeirasbakery",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1200
   },
   {
     "id": "nj-07503-fattoush-paterson",
@@ -5959,7 +7783,6 @@
     "county": "Passaic",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 11:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 39,
@@ -5983,7 +7806,53 @@
       "instagram": "@albashagrill",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1380,
+        "rangeStr": "10:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "il-60608-carnitasurapan",
@@ -6093,7 +7962,6 @@
     "county": "Cook",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 58,
@@ -6102,7 +7970,7 @@
     },
     "latitude": 41.8578,
     "longitude": -87.6698,
-    "opening_hour_minutes": 540,
+    "opening_hour_minutes": 420,
     "serves_breakfast": true,
     "meals": [
       "breakfast",
@@ -6119,7 +7987,53 @@
       "instagram": "@carnitas_uruapan",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "il-60608-carnitasdonpedro",
@@ -6219,7 +8133,6 @@
     "county": "Cook",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 6:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 34,
@@ -6245,7 +8158,53 @@
       "instagram": "@carnitasdonpedro",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "il-60616-ricobenes",
@@ -6345,7 +8304,6 @@
     "county": "Cook",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:30 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 52,
@@ -6369,7 +8327,53 @@
       "instagram": "@ricobenes",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1350,
+        "rangeStr": "10:00 AM – 10:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1350
   },
   {
     "id": "il-60625-noodlerice-albanypark",
@@ -6472,7 +8476,6 @@
     "county": "Cook",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 38,
@@ -6496,7 +8499,53 @@
       "instagram": "@noonokabab",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "tx-75075-jengchiflano",
@@ -6597,7 +8646,6 @@
     "county": "Dallas",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 41,
@@ -6621,7 +8669,53 @@
       "instagram": "@jengchirestaurant",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "ny-11105-baharigreek",
@@ -6729,7 +8823,6 @@
     "county": "Queens",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:30 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 37,
@@ -6753,7 +8846,53 @@
       "instagram": "@bahariestiatorio",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1350
   },
   {
     "id": "ny-11222-karczmapolish",
@@ -6860,7 +8999,6 @@
     "county": "Kings",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 40,
@@ -6884,7 +9022,53 @@
       "instagram": "@karczmanyc",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "va-22003-kogiyavn-annandale",
@@ -6986,7 +9170,6 @@
     "county": "Fairfax",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 43,
@@ -7010,7 +9193,53 @@
       "instagram": "@ajrestaurantdc",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "md-20850-bobsshanghai",
@@ -7111,7 +9340,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "analytics": {
       "ownerName": "Owner",
       "calls": 39,
@@ -7135,7 +9363,53 @@
       "instagram": "@bobsshanghai66",
       "platform": "Instagram",
       "verifiedActive": true
-    }
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "klatch-coffee-rancho-cucamonga",
@@ -7250,7 +9524,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7259,7 +9535,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "qamaria-yemeni-coffee-rancho",
@@ -7376,7 +9700,9 @@
       "breakfast",
       "brunch",
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7386,7 +9712,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "bubblicity-tea-boba-rancho",
@@ -7500,7 +9874,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -7508,7 +9884,55 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1350
   },
   {
     "id": "statera-cafe-rancho-cucamonga",
@@ -7623,7 +10047,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7632,7 +10058,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "mestiza-coffeehouse-ontario",
@@ -7747,7 +10221,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7756,7 +10232,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "greenhouse-matcha-cafe-ontario",
@@ -7872,7 +10396,10 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7882,7 +10409,55 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "special-needz-coffee-ontario",
@@ -7986,7 +10561,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -7995,7 +10572,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "iron-and-kin-coffee-claremont",
@@ -8110,7 +10735,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8119,7 +10746,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "sanctuary-coffee-claremont",
@@ -8235,7 +10910,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8244,7 +10921,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "okayama-kobo-bakery-anaheim",
@@ -8360,7 +11085,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8369,7 +11096,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "thank-you-coffee-anaheim",
@@ -8485,7 +11260,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8494,7 +11271,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1020,
+        "rangeStr": "8:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "mini-monster-anaheim-packing-house",
@@ -8608,7 +11433,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -8616,7 +11443,55 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "copa-vida-pasadena",
@@ -8721,7 +11596,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8730,7 +11607,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "prologue-coffee-tea-pasadena",
@@ -8835,7 +11760,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8844,7 +11771,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1020,
+        "rangeStr": "7:30 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "torrance-bakery-coffee-cafe",
@@ -8948,7 +11923,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -8957,7 +11934,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "wall-writers-coffee-irvine",
@@ -9062,7 +12087,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9071,7 +12098,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "omomo-tea-shoppe-irvine",
@@ -9174,7 +12249,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -9182,7 +12259,55 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "abracadabra-magic-food-nyc",
@@ -9287,7 +12412,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9296,7 +12423,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NY",
+    "timezone": "America/New_York",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1140
   },
   {
     "id": "houndstooth-coffee-dallas",
@@ -9401,7 +12576,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9410,7 +12587,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1080,
+        "rangeStr": "6:30 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "sawada-coffee-chicago",
@@ -9515,7 +12740,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9524,7 +12751,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "IL",
+    "timezone": "America/Chicago",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "maru-coffee-arts-district-la",
@@ -9633,7 +12908,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9642,7 +12919,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "document-coffee-bar-koreatown",
@@ -9747,7 +13072,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9756,7 +13083,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "dark-horse-coffee-san-diego",
@@ -9860,7 +13235,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -9869,7 +13246,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "camellia-tea-boba-san-diego",
@@ -9972,7 +13397,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -9980,7 +13407,55 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "republic-of-pie-north-hollywood",
@@ -10091,7 +13566,9 @@
       "breakfast",
       "brunch",
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10101,7 +13578,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1320,
+        "rangeStr": "8:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "kaldi-social-house-silver-spring",
@@ -10206,7 +13731,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10215,7 +13742,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "MD",
+    "timezone": "America/New_York",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "compass-coffee-shaw-dc",
@@ -10320,7 +13895,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10329,7 +13906,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "DC",
+    "timezone": "America/New_York",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "modcup-coffee-jersey-city",
@@ -10433,7 +14058,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10442,7 +14069,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NJ",
+    "timezone": "America/New_York",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "fleet-coffee-austin",
@@ -10546,7 +14221,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10555,7 +14232,55 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "houndstooth-coffee-austin-lamar",
@@ -10649,7 +14374,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "socialMedia": {
       "instagram": "@houndstoothcoffee",
       "platform": "Instagram",
@@ -10662,7 +14386,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10671,7 +14397,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "coco-boba-tea-austin-burnet",
@@ -10765,7 +14538,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@cocos_cafe_austin",
       "platform": "Instagram",
@@ -10777,14 +14549,62 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
       "dinner",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "cuve-coffee-bar-austin-6th",
@@ -10878,7 +14698,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "socialMedia": {
       "instagram": "@cuveecoffee",
       "platform": "Instagram",
@@ -10891,7 +14710,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -10900,7 +14721,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "habesha-ethiopian-austin-ih35",
@@ -10997,7 +14865,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@habeshaaustin",
       "platform": "Instagram",
@@ -11015,7 +14882,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "titayas-thai-cuisine-austin",
@@ -11113,7 +15027,6 @@
     "county": "Travis",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@titayasatx",
       "platform": "Instagram",
@@ -11131,7 +15044,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "TX",
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "hidden-grounds-coffee-hoboken-1st",
@@ -11225,7 +15185,6 @@
     "county": "Hudson",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 6:00 PM",
     "socialMedia": {
       "instagram": "@thehiddengrounds",
       "platform": "Instagram",
@@ -11238,7 +15197,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -11247,7 +15208,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NJ",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1080,
+        "rangeStr": "7:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080
   },
   {
     "id": "boba-bar-jersey-city-newark-ave",
@@ -11341,7 +15349,6 @@
     "county": "Hudson",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@thebobabarjc",
       "platform": "Instagram",
@@ -11353,14 +15360,62 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
       "dinner",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NJ",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "razza-jersey-city-grove",
@@ -11454,7 +15509,6 @@
     "county": "Hudson",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@razzanj",
       "platform": "Instagram",
@@ -11472,7 +15526,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NJ",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1290,
+        "rangeStr": "12:00 PM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "bluestone-coffee-montclair-watchung",
@@ -11565,7 +15666,6 @@
     "county": "Essex",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 4:00 PM",
     "socialMedia": {
       "instagram": "@bluestonecoffeeco",
       "platform": "Instagram",
@@ -11578,7 +15678,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -11587,7 +15689,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "NJ",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "ebenezers-coffeehouse-dc-capitol-hill",
@@ -11681,7 +15830,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "socialMedia": {
       "instagram": "@ebenezerscoffeehouse",
       "platform": "Instagram",
@@ -11694,7 +15842,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -11703,7 +15853,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "DC",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "teado-tea-cafe-dc-chinatown",
@@ -11797,7 +15994,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "socialMedia": {
       "instagram": "@teadodc",
       "platform": "Instagram",
@@ -11809,14 +16005,62 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
       "dinner",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "DC",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "swings-coffee-roasters-dc-del-ray",
@@ -11909,7 +16153,6 @@
     "county": "Alexandria",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 4:00 PM",
     "socialMedia": {
       "instagram": "@swingscoffee",
       "platform": "Instagram",
@@ -11922,7 +16165,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -11931,7 +16176,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "VA",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "dukes-grocery-dc-dupont",
@@ -12027,7 +16319,6 @@
     "county": "District of Columbia",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "socialMedia": {
       "instagram": "@dukesgrocery",
       "platform": "Instagram",
@@ -12045,7 +16336,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "DC",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1380,
+        "rangeStr": "11:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1380,
+        "rangeStr": "11:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "ceremony-coffee-roasters-bethesda",
@@ -12139,7 +16477,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "socialMedia": {
       "instagram": "@ceremonycoffee",
       "platform": "Instagram",
@@ -12152,7 +16489,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -12161,7 +16500,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "MD",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "kung-fu-tea-rockville-town-square",
@@ -12255,7 +16641,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@kungfuteausa",
       "platform": "Instagram",
@@ -12267,14 +16652,62 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
       "dinner",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "MD",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "kuan-dim-sum-rockville",
@@ -12372,7 +16805,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@kuandimsummd",
       "platform": "Instagram",
@@ -12390,7 +16822,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "MD",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "silver-diner-rockville-pike",
@@ -12485,7 +16964,6 @@
     "county": "Montgomery",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 11:00 PM",
     "socialMedia": {
       "instagram": "@silver_diner",
       "platform": "Instagram",
@@ -12507,123 +16985,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
-  },
-  {
-    "id": "copa-vida-pasadena-raymond",
-    "name": "Copa Vida (Old Town Pasadena)",
-    "cuisine": "Specialty Pour-Over Coffee, Espresso & Brunch",
-    "regionalIdentity": "Pasadena's Flagship Artisan Coffee & Community Hearth",
-    "tags": [
-      "coffee",
-      "tea",
-      "breakfast",
-      "brunch",
-      "lunch"
-    ],
-    "price": 2,
-    "address": "70 S Raymond Ave",
-    "city": "Pasadena",
-    "zip": "91105",
-    "driveFrom91761": "32 min from 91761",
-    "phone": "(626) 213-3952",
-    "hours": "Daily 7:00am–6:00pm",
-    "healthPermit": {
-      "facilityId": "LA-PAS-009182",
-      "agency": "Pasadena Public Health Department",
-      "grade": "A",
-      "score": 98,
-      "inspectedOn": "2026-03-10",
-      "portalUrl": "https://www.cityofpasadena.net/public-health"
-    },
-    "familyRoots": "Founded by Steve Chang with a mission to bring world-class coffee craftsmanship and inclusive community fellowship together under one roof.",
-    "scratchCommitment": "Direct-trade rotational single origins brewed on automated Seraphim pour-over heads; scratch brioche French toast and hazelnut syrups.",
-    "destinationDish": {
-      "name": "Seraphim Single-Origin Pour-Over & Croque Madame",
-      "callout": "Precision-extracted pour-over paired with artisan toasted brioche, gruyère, and farm-fresh sunny egg."
-    },
-    "description": "Expansive sunlit space with exposed brick, soaring ceilings, and abundant outdoor patio tables across from Central Park in Pasadena. 4.6 stars over 1,500 reviews.",
-    "story": "A cornerstone of Southern California's specialty coffee movement, celebrated for warmth, innovation, and culinary excellence.",
-    "image": "/img/batch1/calle-3.jpg",
-    "photos": [
-      {
-        "file": "/img/batch1/calle-3.jpg",
-        "label": "Specialty Seraphim Pour-Overs and Scratch Brunch at Copa Vida Pasadena"
+    "is_active": true,
+    "state": "MD",
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1380,
+        "rangeStr": "7:00 AM – 11:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1380,
+        "rangeStr": "7:00 AM – 11:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1380,
+        "rangeStr": "7:00 AM – 11:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1380,
+        "rangeStr": "7:00 AM – 11:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1380,
+        "rangeStr": "7:00 AM – 11:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1440,
+        "rangeStr": "7:00 AM – 12:00 AM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1440,
+        "rangeStr": "7:00 AM – 12:00 AM"
       }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Seraphim Single-Origin Pour-Over",
-          "desc": "Automated precision water dispersion over freshly ground micro-lot beans for exquisite flavor clarity.",
-          "price": 6.5
-        },
-        {
-          "name": "House Vanilla Bean Latte",
-          "desc": "Double espresso with housemade Madagascar vanilla syrup and silky textured organic milk.",
-          "price": 6.25
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Avocado & Poached Egg Toast",
-          "desc": "Thick-cut country sourdough, smashed avocado, cherry tomatoes, radish, microgreens, and poached egg.",
-          "price": 13.95
-        }
-      ],
-      "combosAndTrays": [
-        {
-          "name": "Pasadena Morning Set",
-          "desc": "Single-origin pour-over paired with scratch baked ham and cheese croissant.",
-          "price": 11.5
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Sparkling Citrus Cold Brew",
-          "desc": "Slow-steeped cold brew with craft tonic, yuzu reduction, and fresh rosemary sprig.",
-          "price": 6.5
-        }
-      ]
     },
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-10-26T15:00:00Z",
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Jessica R.",
-        "comment": "Gorgeous atmosphere, fast WiFi, and the best pour-over coffee in Old Pasadena.",
-        "date": "2026-10-18T09:30:00Z"
-      }
-    ],
-    "region": "San Gabriel Valley",
-    "county": "Los Angeles",
-    "pricesVerified": "October 2026",
-    "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 6:00 PM",
-    "socialMedia": {
-      "instagram": "@copa_vida",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "latitude": 34.1444,
-    "longitude": -118.1492,
-    "opening_hour_minutes": 420,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "brunch",
-      "lunch"
-    ],
-    "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "coffee",
-      "coffee_boba"
-    ],
-    "is_active": true
+    "closing_hour_minutes": 1440
   },
   {
     "id": "sunright-tea-studio-rowland-heights",
@@ -12717,7 +17126,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "socialMedia": {
       "instagram": "@sunrightteastudio",
       "platform": "Instagram",
@@ -12729,14 +17137,62 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
       "dinner",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "bird-rock-coffee-roasters-la-jolla",
@@ -12830,7 +17286,6 @@
     "county": "San Diego",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 5:00 PM",
     "socialMedia": {
       "instagram": "@birdrockcoffeeroasters",
       "platform": "Instagram",
@@ -12843,7 +17298,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -12852,7 +17309,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1020,
+        "rangeStr": "6:30 AM – 5:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1020
   },
   {
     "id": "las-cuatro-milpas-san-diego",
@@ -12946,7 +17450,6 @@
     "county": "San Diego",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 3:00 PM",
     "socialMedia": {
       "instagram": "@lascuatromilpassd",
       "platform": "Instagram",
@@ -12966,7 +17469,54 @@
       "brunch",
       "lunch"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 900,
+        "rangeStr": "8:30 AM – 3:00 PM"
+      }
+    },
+    "closing_hour_minutes": 900
   },
   {
     "id": "menya-ultra-convoy-san-diego",
@@ -13061,7 +17611,6 @@
     "county": "San Diego",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@menya_ultra",
       "platform": "Instagram",
@@ -13079,7 +17628,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   },
   {
     "id": "better-buzz-coffee-hillcrest-san-diego",
@@ -13173,7 +17769,6 @@
     "county": "San Diego",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 7:00 PM",
     "socialMedia": {
       "instagram": "@betterbuzz",
       "platform": "Instagram",
@@ -13186,7 +17781,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -13195,7 +17792,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1140,
+        "rangeStr": "6:00 AM – 7:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1140
   },
   {
     "id": "omomo-tea-shoppe-del-mar-san-diego",
@@ -13289,7 +17933,6 @@
     "county": "San Diego",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@omomoteashoppe",
       "platform": "Instagram",
@@ -13301,7 +17944,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -13309,7 +17954,54 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1290
   },
   {
     "id": "portos-bakery-burbank-brand",
@@ -13407,7 +18099,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:00 PM",
     "socialMedia": {
       "instagram": "@portosbakery",
       "platform": "Instagram",
@@ -13421,7 +18112,9 @@
       "breakfast",
       "brunch",
       "lunch",
-      "dinner"
+      "dinner",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -13431,7 +18124,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1200,
+        "rangeStr": "6:30 AM – 8:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1200
   },
   {
     "id": "mini-kabob-glendale",
@@ -13527,7 +18267,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 8:00 PM",
     "socialMedia": {
       "instagram": "@mini_kabob",
       "platform": "Instagram",
@@ -13545,7 +18284,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1200,
+        "rangeStr": "11:30 AM – 8:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1200
   },
   {
     "id": "raffi-place-glendale-broadway",
@@ -13640,7 +18426,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:30 PM",
     "socialMedia": {
       "instagram": "@raffisplace",
       "platform": "Instagram",
@@ -13658,7 +18443,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1290,
+        "rangeStr": "11:30 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1320,
+        "rangeStr": "11:30 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "moby-dick-coffee-studio-city",
@@ -13751,7 +18583,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 4:00 PM",
     "socialMedia": {
       "instagram": "@theredwindowcoffeeco",
       "platform": "Instagram",
@@ -13764,7 +18595,9 @@
     "meals": [
       "breakfast",
       "brunch",
-      "lunch"
+      "lunch",
+      "coffee",
+      "coffee_boba"
     ],
     "meal_types": [
       "breakfast",
@@ -13773,7 +18606,54 @@
       "coffee",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "closing_hour_minutes": 960
   },
   {
     "id": "boba-loca-van-nuys-sepulveda",
@@ -13867,7 +18747,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:30 PM",
     "socialMedia": {
       "instagram": "@bobaave8090",
       "platform": "Instagram",
@@ -13879,7 +18758,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -13887,7 +18768,54 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1350,
+        "rangeStr": "11:30 AM – 10:30 PM"
+      }
+    },
+    "closing_hour_minutes": 1350
   },
   {
     "id": "guisados-boyle-heights-cesar-chavez",
@@ -13983,7 +18911,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@guisados",
       "platform": "Instagram",
@@ -14005,7 +18932,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1260,
+        "rangeStr": "9:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1320,
+        "rangeStr": "9:00 AM – 10:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1320
   },
   {
     "id": "daikokuya-little-tokyo-1st",
@@ -14099,7 +19073,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 10:00 PM",
     "socialMedia": {
       "instagram": "@daikokuya_ramen",
       "platform": "Instagram",
@@ -14117,7 +19090,54 @@
       "lunch",
       "dinner"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1320,
+        "rangeStr": "11:00 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1380,
+        "rangeStr": "11:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1380,
+        "rangeStr": "11:00 AM – 11:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1380
   },
   {
     "id": "bo-boba-chinatown-los-angeles",
@@ -14210,7 +19230,6 @@
     "county": "Los Angeles",
     "pricesVerified": "October 2026",
     "kitchenStatus": "open",
-    "statusLabel": "Open Now • Closing at 9:00 PM",
     "socialMedia": {
       "instagram": "@bobaguys",
       "platform": "Instagram",
@@ -14222,7 +19241,9 @@
     "serves_breakfast": false,
     "meals": [
       "lunch",
-      "dinner"
+      "dinner",
+      "boba",
+      "coffee_boba"
     ],
     "meal_types": [
       "lunch",
@@ -14230,6 +19251,53 @@
       "boba",
       "coffee_boba"
     ],
-    "is_active": true
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1260
   }
 ]

@@ -165,8 +165,8 @@
 
   // ---------- Persistent Click Analytics ("The 2 Numbers That Prove Value") ----------
   const IS_STANDALONE = IS_FILE_PROTO || Boolean(window.__HFG_OFFLINE_SEED__);
-  const LS_KEY = 'hfg_offline_restaurants_v17';
-  const ANALYTICS_LS_KEY = 'cs_business_ad_analytics';
+  const LS_KEY = 'hfg_offline_restaurants_v69';
+  const ANALYTICS_LS_KEY = 'cs_business_ad_analytics_v69';
 
   function loadLocalAnalyticsMap() {
     try { return JSON.parse(localStorage.getItem(ANALYTICS_LS_KEY) || '{}') || {}; } catch { return {}; }
@@ -658,7 +658,81 @@
     return Math.max(3, Math.round(distMiles * 2.1 + 2));
   }
 
-  // ---------- Meal Qualification & Schedule Validation Rules ----------
+  // ---------- Meal Qualification, Timezone & Real-Time Schedule Validation Engine ----------
+  const STATE_TIMEZONES = {
+    CA: 'America/Los_Angeles', WA: 'America/Los_Angeles', OR: 'America/Los_Angeles', NV: 'America/Los_Angeles',
+    AZ: 'America/Phoenix', CO: 'America/Denver', UT: 'America/Denver', NM: 'America/Denver',
+    TX: 'America/Chicago', IL: 'America/Chicago', WI: 'America/Chicago', MN: 'America/Chicago', MO: 'America/Chicago', LA: 'America/Chicago', TN: 'America/Chicago',
+    NY: 'America/New_York', NJ: 'America/New_York', MD: 'America/New_York', DC: 'America/New_York', VA: 'America/New_York',
+    PA: 'America/New_York', MA: 'America/New_York', FL: 'America/New_York', GA: 'America/New_York', NC: 'America/New_York', OH: 'America/New_York', MI: 'America/New_York'
+  };
+
+  function resolveRestaurantState(r) {
+    if (r && r.state && STATE_TIMEZONES[r.state]) return r.state;
+    const z = String(r?.zip || '').trim();
+    if (/^9[0-6]/.test(z)) return 'CA';
+    if (/^1[0-4]/.test(z)) return 'NY';
+    if (/^0[78]/.test(z)) return 'NJ';
+    if (/^200|^20[2-5]/.test(z)) return 'DC';
+    if (/^20[6-9]|^21/.test(z)) return 'MD';
+    if (/^22|^23|^24/.test(z)) return 'VA';
+    if (/^60|^61|^62/.test(z)) return 'IL';
+    if (/^7[5-9]/.test(z)) return 'TX';
+    return 'CA';
+  }
+
+  function resolveRestaurantTimezone(r) {
+    if (r && r.timezone) return r.timezone;
+    const st = resolveRestaurantState(r);
+    return STATE_TIMEZONES[st] || 'America/Los_Angeles';
+  }
+
+  const DAY_MAP = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+
+  function getRestaurantLocalClock(r, now = new Date()) {
+    const tz = resolveRestaurantTimezone(r);
+    try {
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: tz,
+        weekday: 'short',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: false
+      }).formatToParts(now);
+      let wk = '';
+      let hr = 0;
+      let mn = 0;
+      for (const p of parts) {
+        if (p.type === 'weekday') wk = p.value.toLowerCase().slice(0, 3);
+        else if (p.type === 'hour') hr = parseInt(p.value, 10) % 24;
+        else if (p.type === 'minute') mn = parseInt(p.value, 10);
+      }
+      const dayIdx = DAY_MAP[wk] !== undefined ? DAY_MAP[wk] : now.getDay();
+      return { dayIdx, curMin: hr * 60 + mn, tz };
+    } catch {
+      return { dayIdx: now.getDay(), curMin: now.getHours() * 60 + now.getMinutes(), tz };
+    }
+  }
+
+  function parseTimeMinutes(timeStr) {
+    if (!timeStr) return null;
+    const m = timeStr.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);
+    if (!m) return null;
+    let hr = parseInt(m[1], 10);
+    const mn = parseInt(m[2] || '0', 10);
+    const ap = m[3].toLowerCase();
+    if (ap === 'pm' && hr !== 12) hr += 12;
+    if (ap === 'am' && hr === 12) hr = 0;
+    return hr * 60 + mn;
+  }
+
+  function formatTimeClean(t) {
+    return t.replace(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i, (_, h, m, ap) => {
+      const mn = m ? `:${m}` : ':00';
+      return `${h}${mn} ${ap.toUpperCase()}`;
+    });
+  }
+
   function parseEarliestOpeningMinutes(hoursStr) {
     const h = String(hoursStr || '').replace(/\([^)]*\)/g, '');
     const regex = /(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[–-]/gi;
@@ -676,91 +750,189 @@
     return earliest === 9999 ? 660 : earliest;
   }
 
-  // Hide any restaurant that is closed on Monday or Tuesday so they do not feature
-  function isClosedMonOrTue(r) {
-    const h = (r.hours || '').toLowerCase();
-    return /closed\s*(on\s*)?(mon|tue)/i.test(h);
+  function segmentMatchesDay(partStr, dayIdx) {
+    const s = String(partStr || '').toLowerCase();
+    if (/\bdaily\b/.test(s)) return true;
+
+    const dayPortion = s.replace(/\d{1,2}(?::\d{2})?\s*(?:am|pm)/gi, ' ');
+    let remaining = dayPortion;
+    const rangeRe = /\b(sun|mon|tue|wed|thu|fri|sat)(?:day|urday|nesday|rsday|sday)?\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat)(?:day|urday|nesday|rsday|sday)?\b/gi;
+    let rm;
+    while ((rm = rangeRe.exec(dayPortion)) !== null) {
+      const start = DAY_MAP[rm[1].toLowerCase().slice(0, 3)];
+      const end = DAY_MAP[rm[2].toLowerCase().slice(0, 3)];
+      if (start <= end ? (dayIdx >= start && dayIdx <= end) : (dayIdx >= start || dayIdx <= end)) {
+        return true;
+      }
+      remaining = remaining.replace(rm[0], ' ');
+    }
+
+    const singleRe = /\b(sun|mon|tue|wed|thu|fri|sat)(?:day|urday|nesday|rsday|sday)?\b/gi;
+    let sm;
+    while ((sm = singleRe.exec(remaining)) !== null) {
+      const d = DAY_MAP[sm[1].toLowerCase().slice(0, 3)];
+      if (d === dayIdx) return true;
+    }
+
+    return false;
+  }
+
+  function parseScheduleForDay(r, dayIdx) {
+    if (r && r.weeklySchedule && r.weeklySchedule[dayIdx]) {
+      return r.weeklySchedule[dayIdx];
+    }
+    const full = (r?.hours || 'Daily 11:00am–9:00pm').trim();
+    const stripped = full.replace(/\([^)]*\)/g, '').trim();
+    const parts = stripped.split(/\s*[·•]\s*/).filter(Boolean);
+    const hasDayTokens = parts.some((p) => /\b(daily|sun|mon|tue|wed|thu|fri|sat)/i.test(p));
+
+    for (const part of parts) {
+      if (segmentMatchesDay(part, dayIdx)) {
+        if (/\bclosed\b/i.test(part)) {
+          return { closed: true, openMin: null, closeMin: null, rangeStr: 'Closed Today' };
+        }
+        const timeMatch = part.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+        if (timeMatch) {
+          const openMin = parseTimeMinutes(timeMatch[1]);
+          let closeMin = parseTimeMinutes(timeMatch[2]);
+          if (closeMin !== null && openMin !== null && closeMin <= openMin) {
+            closeMin += 24 * 60;
+          }
+          return {
+            closed: false,
+            openMin,
+            closeMin,
+            rangeStr: `${formatTimeClean(timeMatch[1])} – ${formatTimeClean(timeMatch[2])}`
+          };
+        }
+      }
+    }
+
+    if (hasDayTokens) {
+      return { closed: true, openMin: null, closeMin: null, rangeStr: 'Closed Today' };
+    }
+
+    const genericMatch = stripped.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
+    if (genericMatch) {
+      const openMin = parseTimeMinutes(genericMatch[1]);
+      let closeMin = parseTimeMinutes(genericMatch[2]);
+      if (closeMin !== null && openMin !== null && closeMin <= openMin) {
+        closeMin += 24 * 60;
+      }
+      return {
+        closed: false,
+        openMin,
+        closeMin,
+        rangeStr: `${formatTimeClean(genericMatch[1])} – ${formatTimeClean(genericMatch[2])}`
+      };
+    }
+
+    return { closed: false, openMin: 660, closeMin: 1260, rangeStr: '11:00 AM – 9:00 PM' };
+  }
+
+  function isClosedMonOrTue() {
+    return false;
+  }
+
+  function getTodayScheduleDetails(r, now = new Date()) {
+    const full = (r?.hours || 'Daily 11:00am–9:00pm').trim();
+    const { dayIdx, curMin, tz } = getRestaurantLocalClock(r, now);
+    const todaySched = parseScheduleForDay(r, dayIdx);
+
+    if (todaySched.closed || todaySched.openMin === null || todaySched.closeMin === null) {
+      return {
+        isOpen: false,
+        isClosedToday: true,
+        openMin: null,
+        closeMin: null,
+        curMin,
+        dayIdx,
+        timezone: tz,
+        label: 'Closed Today',
+        rangeStr: 'Closed Today',
+        fullSchedule: full
+      };
+    }
+
+    const isOpen = curMin >= todaySched.openMin && curMin < todaySched.closeMin;
+
+    return {
+      isOpen,
+      isClosedToday: false,
+      openMin: todaySched.openMin,
+      closeMin: todaySched.closeMin,
+      curMin,
+      dayIdx,
+      timezone: tz,
+      rangeStr: todaySched.rangeStr,
+      fullSchedule: full
+    };
   }
 
   function isClosedToday(r, now = new Date()) {
-    if (isClosedMonOrTue(r)) return true;
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
     if (st === 'sold_out') return true;
-    const h = (r.hours || '').toLowerCase();
-    const dayIdx = now.getDay(); // 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
-    const dayTokens = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-    const todayTok = dayTokens[dayIdx];
-    if (new RegExp(`closed\\s*[^·]*\\b${todayTok}`, 'i').test(h)) return true;
-    return false;
+    return getTodayScheduleDetails(r, now).isClosedToday;
   }
 
   function isOpenRightNow(r, now = new Date()) {
     if (isClosedToday(r, now)) return false;
-    const h = (r.hours || '').toLowerCase();
-    const curMin = now.getHours() * 60 + now.getMinutes();
-    if (curMin >= 15 * 60 + 15 && /3:00\s*pm/.test(h) && !/8:|9:|10:|11:/.test(h)) {
-      return false;
-    }
-    return true;
+    return getTodayScheduleDetails(r, now).isOpen;
   }
 
   // Two-Part Meal Validation Rule:
   // Every restaurant record carries an explicit `meal_types` array (e.g., ['breakfast', 'lunch', 'dinner'] or ['brunch', 'lunch']).
-  // For 'breakfast':
-  //   a) Must have 'breakfast' in r.meal_types AND r.serves_breakfast === true, AND
-  //   b) Primary opening must be strictly before 10:00 AM (< 600 minutes; 10:00 AM openers like Calle Ocho Cuban Cafecito are ['brunch', 'lunch']), AND
-  //   c) Must be open today.
   function qualifiesForMealTab(r, mealTab, now = new Date()) {
     if (!mealTab) return true;
+    if (mealTab === 'open_now') return isOpenRightNow(r, now);
+
+    const sched = getTodayScheduleDetails(r, now);
+    if (sched.isClosedToday) return false;
+
     if (mealTab === 'coffee_boba') {
       const isCoffeeBoba = (r.tags || []).some((t) => ['coffee_boba', 'coffee', 'boba', 'tea'].includes(String(t).toLowerCase())) ||
         /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.cuisine || '') ||
         /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.name || '');
-      return isCoffeeBoba && !isClosedToday(r, now);
+      return isCoffeeBoba;
     }
-    if (mealTab === 'open_now') return isOpenRightNow(r, now);
 
     const mealTypesArr = Array.isArray(r.meal_types)
       ? r.meal_types
       : Array.isArray(r.meals)
         ? r.meals
         : (r.tags || []);
-    const openMin = typeof r.opening_hour_minutes === 'number'
-      ? r.opening_hour_minutes
-      : parseEarliestOpeningMinutes(r.hours);
+    const openMin = typeof sched.openMin === 'number'
+      ? sched.openMin
+      : typeof r.opening_hour_minutes === 'number'
+        ? r.opening_hour_minutes
+        : parseEarliestOpeningMinutes(r.hours);
+    const closeMin = typeof sched.closeMin === 'number'
+      ? sched.closeMin
+      : typeof r.closing_hour_minutes === 'number'
+        ? r.closing_hour_minutes
+        : 1260;
 
     if (mealTab === 'breakfast') {
       const hasBreakfastTag = mealTypesArr.includes('breakfast') && r.serves_breakfast !== false;
-      const opensBefore10AM = openMin < 600; // Must open before 10:00 AM (7am, 8am, or 9am); 10:00 AM openers go to Brunch/Lunch
-      return hasBreakfastTag && opensBefore10AM && !isClosedToday(r, now);
+      const opensBefore10AM = openMin < 600; // Opens before 10:00 AM
+      return hasBreakfastTag && opensBefore10AM;
     }
 
     if (mealTab === 'brunch') {
       const hasBrunchTag = mealTypesArr.includes('brunch') || (r.tags || []).includes('brunch');
-      return hasBrunchTag && openMin <= 690 && !isClosedToday(r, now);
+      return hasBrunchTag && openMin <= 690;
     }
 
     if (mealTab === 'dinner') {
       const hasDinnerTag = mealTypesArr.includes('dinner') || (r.tags || []).includes('dinner');
-      const closesEarlyAt3PM = /3:00\s*pm/i.test(r.hours || '') && !/8:|9:|10:|11:/i.test(r.hours || '');
-      return hasDinnerTag && !closesEarlyAt3PM && !isClosedToday(r, now);
+      return hasDinnerTag && closeMin >= 1080; // Open until at least 6:00 PM for dinner
     }
 
-    return mealTypesArr.includes(mealTab) && !isClosedToday(r, now);
+    return mealTypesArr.includes(mealTab);
   }
 
   // ---------- Operational Status Pill & Today's Live Hours Helper ----------
-  function formatTimeRangeClean(rawRange) {
-    return rawRange
-      .replace(/(\d{1,2}(?::\d{2})?)\s*(am|pm)/gi, (_, t, ap) => {
-        const cleanT = t.includes(':') ? t : `${t}:00`;
-        return `${cleanT} ${ap.toUpperCase()}`;
-      })
-      .replace(/\s*[–-]\s*/g, ' – ')
-      .trim();
-  }
-
   function getTodayHoursSummary(r, now = new Date()) {
     const sched = getTodayScheduleDetails(r, now);
     const full = (r.hours || '').trim();
@@ -773,179 +945,21 @@
     };
   }
 
-  function _legacy_getTodayHoursSummary_deprecated(r, now = new Date()) {
-    const full = (r.hours || 'Daily 11:00am–8:30pm').trim();
-    if (isClosedToday(r, now)) {
-      return { todayText: 'Today: Closed', fullSchedule: full, hasWeeklyBreakdown: true };
-    }
-    const parenMatch = full.match(/\(([^)]+)\)/);
-    const parenNote = parenMatch ? parenMatch[1].trim() : '';
-    const stripped = full.replace(/\([^)]*\)/g, '').trim();
-    const parts = stripped.split(/\s*[·•]\s*/).filter((p) => p && !/^closed/i.test(p));
-    const dayIdx = now.getDay(); // 0=Sun..6=Sat
-    const dayMap = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
-
-    const exprMatchesDay = (exprStr) => {
-      const s = exprStr.toLowerCase();
-      if (s.includes('daily')) return true;
-      const rangeRegex = /(sun|mon|tue|wed|thu|fri|sat)\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat)/g;
-      let rm;
-      let matchedAnyRange = false;
-      while ((rm = rangeRegex.exec(s)) !== null) {
-        matchedAnyRange = true;
-        const start = dayMap[rm[1]];
-        const end = dayMap[rm[2]];
-        if (start <= end ? (dayIdx >= start && dayIdx <= end) : (dayIdx >= start || dayIdx <= end)) {
-          return true;
-        }
-      }
-      const singleRegex = /\b(sun|mon|tue|wed|thu|fri|sat)\b/g;
-      let sm;
-      while ((sm = singleRegex.exec(s)) !== null) {
-        if (!matchedAnyRange && dayMap[sm[1]] === dayIdx) return true;
-        if (s.includes('&') && dayMap[sm[1]] === dayIdx) return true;
-      }
-      return false;
-    };
-
-    const matchesDay = (seg) => {
-      const s = seg.toLowerCase();
-      if (s.includes('daily')) return true;
-      const tokMatch = s.match(/^([a-z–\-&\s]+?)\s+\d/);
-      if (!tokMatch) return false;
-      return exprMatchesDay(tokMatch[1]);
-    };
-
-    const matchedSeg = parts.find(matchesDay) || parts[0] || stripped;
-    const timeMatch = matchedSeg.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm)\s*[–-]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-    const todayRange = timeMatch ? formatTimeRangeClean(timeMatch[1]) : '11:00 AM – 8:30 PM';
-
-    // Check if parenthetical breakfast note (e.g. "Silog Breakfast Sat–Sun 9–11am") applies to today
-    let specialTodayNote = '';
-    if (parenNote && exprMatchesDay(parenNote)) {
-      specialTodayNote = parenNote.replace(/\b(sun|mon|tue|wed|thu|fri|sat)(\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat))?\s*/gi, '').trim();
-    }
-
-    const hasWeeklyBreakdown = parts.length > 1 || Boolean(parenNote) || /closed/i.test(full);
-
-    return {
-      todayText: specialTodayNote ? `Today: ${todayRange} (${specialTodayNote})` : `Today: ${todayRange}`,
-      fullSchedule: full,
-      hasWeeklyBreakdown
-    };
-  }
-
-  function parseTimeMinutes(timeStr) {
-    if (!timeStr) return null;
-    const m = timeStr.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i);
-    if (!m) return null;
-    let hr = parseInt(m[1], 10);
-    const mn = parseInt(m[2] || '0', 10);
-    const ap = m[3].toLowerCase();
-    if (ap === 'pm' && hr !== 12) hr += 12;
-    if (ap === 'am' && hr === 12) hr = 0;
-    return hr * 60 + mn;
-  }
-
-  function getTodayScheduleDetails(r, now = new Date()) {
-    const full = (r.hours || 'Daily 11:00am–9:00pm').trim();
-    if (isClosedToday(r, now)) {
-      return { isOpen: false, isClosedToday: true, label: 'Closed Today', rangeStr: 'Closed Today', fullSchedule: full };
-    }
-
-    const dayIdx = now.getDay(); // 0=Sun..6=Sat
-    const dayMap = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
-    const stripped = full.replace(/\([^)]*\)/g, '').trim();
-    const parts = stripped.split(/\s*[·•]\s*/);
-
-    let matchedRange = null;
-
-    for (const part of parts) {
-      const s = part.toLowerCase();
-      let matched = false;
-      if (s.includes('daily')) {
-        matched = true;
-      } else {
-        const rangeMatch = /(sun|mon|tue|wed|thu|fri|sat)\s*[–-]\s*(sun|mon|tue|wed|thu|fri|sat)/.exec(s);
-        if (rangeMatch) {
-          const start = dayMap[rangeMatch[1]];
-          const end = dayMap[rangeMatch[2]];
-          if (start <= end ? (dayIdx >= start && dayIdx <= end) : (dayIdx >= start || dayIdx <= end)) {
-            matched = true;
-          }
-        } else {
-          const singleMatch = /\b(sun|mon|tue|wed|thu|fri|sat)\b/.exec(s);
-          if (singleMatch && dayMap[singleMatch[1]] === dayIdx) matched = true;
-        }
-      }
-
-      if (matched) {
-        if (/closed/i.test(part)) {
-          return { isOpen: false, isClosedToday: true, label: 'Closed Today', rangeStr: 'Closed Today', fullSchedule: full };
-        }
-        const timeMatch = part.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-        if (timeMatch) {
-          const openMin = parseTimeMinutes(timeMatch[1]);
-          let closeMin = parseTimeMinutes(timeMatch[2]);
-          // If close is past midnight (e.g. 11am-1am)
-          if (closeMin !== null && openMin !== null && closeMin < openMin) closeMin += 24 * 60;
-          const cleanOpen = formatTimeClean(timeMatch[1]);
-          const cleanClose = formatTimeClean(timeMatch[2]);
-          matchedRange = { openMin, closeMin, rangeStr: `${cleanOpen} – ${cleanClose}` };
-          break;
-        }
-      }
-    }
-
-    if (!matchedRange) {
-      // Fallback: look for general time range
-      const genericMatch = stripped.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm))\s*[–-]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm))/i);
-      if (genericMatch) {
-        const openMin = parseTimeMinutes(genericMatch[1]);
-        const closeMin = parseTimeMinutes(genericMatch[2]);
-        matchedRange = { openMin, closeMin, rangeStr: `${formatTimeClean(genericMatch[1])} – ${formatTimeClean(genericMatch[2])}` };
-      }
-    }
-
-    if (!matchedRange || matchedRange.openMin === null || matchedRange.closeMin === null) {
-      return { isOpen: true, isClosedToday: false, label: 'Hours Unspecified', rangeStr: full, fullSchedule: full };
-    }
-
-    const curMin = now.getHours() * 60 + now.getMinutes();
-    const isOpen = curMin >= matchedRange.openMin && curMin < matchedRange.closeMin;
-
-    return {
-      isOpen,
-      isClosedToday: false,
-      openMin: matchedRange.openMin,
-      closeMin: matchedRange.closeMin,
-      rangeStr: matchedRange.rangeStr,
-      fullSchedule: full
-    };
-  }
-
-  function formatTimeClean(t) {
-    return t.replace(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)/i, (_, h, m, ap) => {
-      const mn = m ? `:${m}` : ':00';
-      return `${h}${mn} ${ap.toUpperCase()}`;
-    });
-  }
-
   function getOperationalPill(r, now = new Date()) {
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
-    if (isClosedToday(r, now)) {
+    const sched = getTodayScheduleDetails(r, now);
+    if (sched.isClosedToday) {
       return { cls: 'sold_out', dot: '🔴', text: 'Closed Today' };
     }
     if (st === 'sold_out') {
       return { cls: 'sold_out', dot: '🔴', text: 'Sold Out' };
     }
-    if (st === 'low_prep') {
-      return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };
-    }
-    const sched = getTodayScheduleDetails(r, now);
     if (!sched.isOpen) {
       return { cls: 'sold_out', dot: '🔴', text: 'Closed Now' };
+    }
+    if (st === 'low_prep') {
+      return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };
     }
     return { cls: 'open', dot: '🟢', text: 'Open Now' };
   }
@@ -1046,10 +1060,10 @@
             : 0;
 
     let list = state.restaurants.filter((r) => {
-      // 0. Hide any inactive listing or restaurant closed on Monday/Tuesday or closed today
-      if (r.is_active === false || isClosedMonOrTue(r) || isClosedToday(r, now)) return false;
+      // 0. Hide any inactive listing
+      if (r.is_active === false) return false;
 
-      // 1. Active Meal Tab (strict 2-part Breakfast validation: serves_breakfast && opens <= 10:00 AM)
+      // 1. Active Meal Tab (strict 2-part Breakfast validation: serves_breakfast && opens < 10:00 AM)
       if (!qualifiesForMealTab(r, state.mealTab, now)) return false;
 
       // 2. Active Region / County

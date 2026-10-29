@@ -34,7 +34,7 @@ let outHtml = indexHtml
   .replace(/<link rel="stylesheet" href="\/styles\.css(?:\?[^"]*)?"\s*\/?>/, `<style>\n${stylesCss}\n</style>`)
   .replace(/<script src="\/seed-data\.js(?:\?[^"]*)?"><\/script>\s*/, '')
   .replace(
-    /<script src="\/app\.js(?:\?[^"]*)?"><\/script>/,
+    /<script src="\/(?:app|gems-client)\.js(?:\?[^"]*)?"><\/script>/,
     `<script>\nwindow.__HFG_OFFLINE_SEED__ = ${JSON.stringify(offlineSeed)};\n${appJs}\n</script>`
   );
 

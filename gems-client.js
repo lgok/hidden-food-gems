@@ -219,7 +219,7 @@
     localMap[r.id] = cur;
     saveLocalAnalyticsMap(localMap);
 
-    if (type === 'call' || type === 'direction') {
+    if ((type === 'call' || type === 'direction') && !window.__hfgOutboundBound) {
       const linkType = type === 'call' ? 'phone_call' : 'directions';
       const destDomain = type === 'call' ? 'tel' : 'google.com/maps';
       if (typeof window.gtag === 'function') {

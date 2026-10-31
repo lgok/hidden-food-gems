@@ -219,6 +219,28 @@
     localMap[r.id] = cur;
     saveLocalAnalyticsMap(localMap);
 
+    if (type === 'call' || type === 'direction') {
+      const linkType = type === 'call' ? 'phone_call' : 'directions';
+      const destDomain = type === 'call' ? 'tel' : 'google.com/maps';
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'outbound_click', {
+          event_category: 'outbound',
+          event_label: `${r.name} (${r.city || ''}) — ${linkType}`,
+          restaurant_id: r.id,
+          restaurant_name: r.name,
+          destination_domain: destDomain,
+          link_type: linkType,
+          transport_type: 'beacon'
+        });
+      }
+      if (typeof window.va === 'function') {
+        window.va('event', {
+          name: 'outbound_click',
+          data: { restaurant: r.name, city: r.city || '', type: linkType, domain: destDomain }
+        });
+      }
+    }
+
     if (!IS_STANDALONE) {
       fetch(`/api/restaurants/${encodeURIComponent(r.id)}/track`, {
         method: 'POST',

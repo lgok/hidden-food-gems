@@ -12,6 +12,56 @@
   <meta property="og:url" content="https://www.hiddenfoodgem.com/cities/jersey-city-nj-07302" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFG202601"></script>
+  <script id="ga4-outbound-tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-HFG202601', { page_path: window.location.pathname, send_page_view: true });
+    (function initHfgOutboundClickTracking() {
+      if (window.__hfgOutboundBound) return;
+      window.__hfgOutboundBound = true;
+      document.addEventListener('click', function(e) {
+        var anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!anchor) return;
+        var href = anchor.getAttribute('href') || anchor.href || '';
+        if (!href) return;
+        var isTel = href.indexOf('tel:') === 0;
+        var isExternal = /^https?:\/\//i.test(href) &&
+          href.indexOf('hiddenfoodgem.com') === -1 &&
+          href.indexOf('localhost') === -1;
+        if (!isTel && !isExternal) return;
+        var domain = isTel ? 'tel' : '';
+        if (!isTel) {
+          try { domain = new URL(href).hostname.replace(/^www\./i, ''); } catch (_) { domain = href; }
+        }
+        var card = anchor.closest('article, .gem-card, .hero-card, .sheet-panel, section');
+        var heading = card ? card.querySelector('h1, h2, h3') : null;
+        var restaurantName = (heading && heading.textContent ? heading.textContent.trim() : '') || (anchor.textContent || '').trim() || domain;
+        var isMaps = href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.apple.com') !== -1;
+        var linkType = isTel ? 'phone_call' : (isMaps ? 'directions' : 'external_website');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'outbound_click', {
+            event_category: 'outbound',
+            event_label: restaurantName + ' (' + domain + ')',
+            destination_url: href,
+            destination_domain: domain,
+            restaurant_name: restaurantName,
+            link_type: linkType,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', {
+            name: 'outbound_click',
+            data: { domain: domain, restaurant: restaurantName, type: linkType, url: href }
+          });
+        }
+      }, true);
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Best Hidden Food Gems & Independent Restaurants in Jersey City, NJ (07302)","description":"Verified independent family-owned restaurants, coffee roasters, bakeries, and boba shops in Jersey City, NJ 07302 (Northern New Jersey).","url":"https://www.hiddenfoodgem.com/cities/jersey-city-nj-07302","numberOfItems":8,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Restaurant","name":"Prato Bakery","url":"https://www.hiddenfoodgem.com/gem/nj-07302-pratobakery","servesCuisine":"Italian","telephone":"(201) 798-8900","address":"371 4th St, Jersey City, NJ 07302"}},{"@type":"ListItem","position":2,"item":{"@type":"Restaurant","name":"Boba Bar (Historic Downtown Jersey City)","url":"https://www.hiddenfoodgem.com/gem/boba-bar-jersey-city-newark-ave","servesCuisine":"Craft Taiwanese Boba, Fresh Fruit Teas & Egg Waffles","telephone":"(201) 918-2088","address":"245 Newark Ave, Jersey City, NJ 07302"}},{"@type":"ListItem","position":3,"item":{"@type":"Restaurant","name":"Razza Pizza Artigianale (Grove St)","url":"https://www.hiddenfoodgem.com/gem/razza-jersey-city-grove","servesCuisine":"Artisan Wood-Fired Sourdough Pizza & Burrata","telephone":"(201) 356-9348","address":"275/277 Grove St, Jersey City, NJ 07302"}}]}</script>
   <style>

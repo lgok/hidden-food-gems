@@ -15,6 +15,56 @@
   <meta name="twitter:title" content="Vince&#39;s Spaghetti (Original 1945 Landmark) (Ontario, CA 91762) — Menu, Hours &amp; Health Grade | HiddenFoodGem.com" />
   <meta name="twitter:description" content="Verified Hidden Food Gem in Ontario, CA (91762): Vince&#39;s Spaghetti (Original 1945 Landmark) (Historic Route 66 Italian). Must-try: 1945 Original Full-Dinner Spaghetti with Grandma Rose&#39;s Meat &amp; Mushroom Ragu. Hours: Daily 11:30am–8:45pm. Address: 1206 W Holt Blvd, Ontario, CA 91762. Call counter directly: (909) 986-7074." />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFG202601"></script>
+  <script id="ga4-outbound-tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-HFG202601', { page_path: window.location.pathname, send_page_view: true });
+    (function initHfgOutboundClickTracking() {
+      if (window.__hfgOutboundBound) return;
+      window.__hfgOutboundBound = true;
+      document.addEventListener('click', function(e) {
+        var anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!anchor) return;
+        var href = anchor.getAttribute('href') || anchor.href || '';
+        if (!href) return;
+        var isTel = href.indexOf('tel:') === 0;
+        var isExternal = /^https?:\/\//i.test(href) &&
+          href.indexOf('hiddenfoodgem.com') === -1 &&
+          href.indexOf('localhost') === -1;
+        if (!isTel && !isExternal) return;
+        var domain = isTel ? 'tel' : '';
+        if (!isTel) {
+          try { domain = new URL(href).hostname.replace(/^www\./i, ''); } catch (_) { domain = href; }
+        }
+        var card = anchor.closest('article, .gem-card, .hero-card, .sheet-panel, section');
+        var heading = card ? card.querySelector('h1, h2, h3') : null;
+        var restaurantName = (heading && heading.textContent ? heading.textContent.trim() : '') || (anchor.textContent || '').trim() || domain;
+        var isMaps = href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.apple.com') !== -1;
+        var linkType = isTel ? 'phone_call' : (isMaps ? 'directions' : 'external_website');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'outbound_click', {
+            event_category: 'outbound',
+            event_label: restaurantName + ' (' + domain + ')',
+            destination_url: href,
+            destination_domain: domain,
+            restaurant_name: restaurantName,
+            link_type: linkType,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', {
+            name: 'outbound_click',
+            data: { domain: domain, restaurant: restaurantName, type: linkType, url: href }
+          });
+        }
+      }, true);
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.hiddenfoodgem.com/gem/vinces-spaghetti-ontario#restaurant","name":"Vince's Spaghetti (Original 1945 Landmark)","description":"Operating on the exact same Ontario block since September 1945, Vince's is a multi-generational family institution famous for its rich meat sauce and 1940s French Dip.","url":"https://www.hiddenfoodgem.com/gem/vinces-spaghetti-ontario","telephone":"(909) 986-7074","servesCuisine":"Historic Route 66 Italian","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"1206 W Holt Blvd","addressLocality":"Ontario","addressRegion":"CA","postalCode":"91762","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.063,"longitude":-117.669},"openingHours":"Daily 11:30am–8:45pm","aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":2,"bestRating":5,"worstRating":1}}</script>
   <style>

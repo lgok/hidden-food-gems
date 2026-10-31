@@ -15,6 +15,56 @@
   <meta name="twitter:title" content="Micklethwait Craft Meats (Austin, TX 78702) — Menu, Hours &amp; Health Grade | HiddenFoodGem.com" />
   <meta name="twitter:description" content="Verified Hidden Food Gem in Austin, TX (78702): Micklethwait Craft Meats (BBQ). Must-try: 16-Hour Post Oak Smoked Prime Beef Brisket. Hours: Thu–Sun 11:00am–4:00pm · Closed Mon–Wed. Address: 1309 Rosewood Ave, Austin, TX 78702. Call counter directly: (512) 791-5961." />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFG202601"></script>
+  <script id="ga4-outbound-tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-HFG202601', { page_path: window.location.pathname, send_page_view: true });
+    (function initHfgOutboundClickTracking() {
+      if (window.__hfgOutboundBound) return;
+      window.__hfgOutboundBound = true;
+      document.addEventListener('click', function(e) {
+        var anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!anchor) return;
+        var href = anchor.getAttribute('href') || anchor.href || '';
+        if (!href) return;
+        var isTel = href.indexOf('tel:') === 0;
+        var isExternal = /^https?:\/\//i.test(href) &&
+          href.indexOf('hiddenfoodgem.com') === -1 &&
+          href.indexOf('localhost') === -1;
+        if (!isTel && !isExternal) return;
+        var domain = isTel ? 'tel' : '';
+        if (!isTel) {
+          try { domain = new URL(href).hostname.replace(/^www\./i, ''); } catch (_) { domain = href; }
+        }
+        var card = anchor.closest('article, .gem-card, .hero-card, .sheet-panel, section');
+        var heading = card ? card.querySelector('h1, h2, h3') : null;
+        var restaurantName = (heading && heading.textContent ? heading.textContent.trim() : '') || (anchor.textContent || '').trim() || domain;
+        var isMaps = href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.apple.com') !== -1;
+        var linkType = isTel ? 'phone_call' : (isMaps ? 'directions' : 'external_website');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'outbound_click', {
+            event_category: 'outbound',
+            event_label: restaurantName + ' (' + domain + ')',
+            destination_url: href,
+            destination_domain: domain,
+            restaurant_name: restaurantName,
+            link_type: linkType,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', {
+            name: 'outbound_click',
+            data: { domain: domain, restaurant: restaurantName, type: linkType, url: href }
+          });
+        }
+      }, true);
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.hiddenfoodgem.com/gem/tx-78702-micklethwait-austin#restaurant","name":"Micklethwait Craft Meats","description":"Renowned East Austin independent pitmaster smokehouse where everything from brisket to sausages and baking is made by hand.","url":"https://www.hiddenfoodgem.com/gem/tx-78702-micklethwait-austin","telephone":"(512) 791-5961","servesCuisine":"BBQ","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"1309 Rosewood Ave","addressLocality":"Austin","addressRegion":"TX","postalCode":"78702","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":30.2701,"longitude":-97.7212},"openingHours":"Thu–Sun 11:00am–4:00pm · Closed Mon–Wed","aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":1,"bestRating":5,"worstRating":1}}</script>
   <style>

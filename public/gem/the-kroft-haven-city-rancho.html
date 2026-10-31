@@ -15,6 +15,56 @@
   <meta name="twitter:title" content="The Kroft (Haven City Market) (Rancho Cucamonga, CA 91730) — Menu, Hours &amp; Health Grade | HiddenFoodGem.com" />
   <meta name="twitter:description" content="Verified Hidden Food Gem in Rancho Cucamonga, CA (91730): The Kroft (Haven City Market) (Gourmet Smash Burgers &amp; Scratch Poutines). Must-try: Short Rib Poutine &amp; Spicy Jack Wagyu Smash Burger. Hours: Sun–Thu 11:30am–9:00pm · Fri–Sat 11:00am–9:00pm. Address: 8443 Haven Ave, Stall 129, Rancho Cucamonga, CA 91730. Call counter directly: (909) 483-5349." />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFG202601"></script>
+  <script id="ga4-outbound-tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-HFG202601', { page_path: window.location.pathname, send_page_view: true });
+    (function initHfgOutboundClickTracking() {
+      if (window.__hfgOutboundBound) return;
+      window.__hfgOutboundBound = true;
+      document.addEventListener('click', function(e) {
+        var anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!anchor) return;
+        var href = anchor.getAttribute('href') || anchor.href || '';
+        if (!href) return;
+        var isTel = href.indexOf('tel:') === 0;
+        var isExternal = /^https?:\/\//i.test(href) &&
+          href.indexOf('hiddenfoodgem.com') === -1 &&
+          href.indexOf('localhost') === -1;
+        if (!isTel && !isExternal) return;
+        var domain = isTel ? 'tel' : '';
+        if (!isTel) {
+          try { domain = new URL(href).hostname.replace(/^www\./i, ''); } catch (_) { domain = href; }
+        }
+        var card = anchor.closest('article, .gem-card, .hero-card, .sheet-panel, section');
+        var heading = card ? card.querySelector('h1, h2, h3') : null;
+        var restaurantName = (heading && heading.textContent ? heading.textContent.trim() : '') || (anchor.textContent || '').trim() || domain;
+        var isMaps = href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.apple.com') !== -1;
+        var linkType = isTel ? 'phone_call' : (isMaps ? 'directions' : 'external_website');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'outbound_click', {
+            event_category: 'outbound',
+            event_label: restaurantName + ' (' + domain + ')',
+            destination_url: href,
+            destination_domain: domain,
+            restaurant_name: restaurantName,
+            link_type: linkType,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', {
+            name: 'outbound_click',
+            data: { domain: domain, restaurant: restaurantName, type: linkType, url: href }
+          });
+        }
+      }, true);
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","@id":"https://www.hiddenfoodgem.com/gem/the-kroft-haven-city-rancho#restaurant","name":"The Kroft (Haven City Market)","description":"Haven City Market's premier comfort food maker. Searing lacy-edged Wagyu smash patties and layering piping-hot poutines with slow-simmered scratch gravies.","url":"https://www.hiddenfoodgem.com/gem/the-kroft-haven-city-rancho","telephone":"(909) 483-5349","servesCuisine":"Gourmet Smash Burgers & Scratch Poutines","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"8443 Haven Ave, Stall 129","addressLocality":"Rancho Cucamonga","addressRegion":"CA","postalCode":"91730","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.0991,"longitude":-117.5752},"openingHours":"Sun–Thu 11:30am–9:00pm · Fri–Sat 11:00am–9:00pm","aggregateRating":{"@type":"AggregateRating","ratingValue":5,"reviewCount":2,"bestRating":5,"worstRating":1}}</script>
   <style>

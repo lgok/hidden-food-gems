@@ -12,6 +12,56 @@
   <meta property="og:url" content="https://www.hiddenfoodgem.com/cities/rockville-md-20850" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFG202601"></script>
+  <script id="ga4-outbound-tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-HFG202601', { page_path: window.location.pathname, send_page_view: true });
+    (function initHfgOutboundClickTracking() {
+      if (window.__hfgOutboundBound) return;
+      window.__hfgOutboundBound = true;
+      document.addEventListener('click', function(e) {
+        var anchor = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!anchor) return;
+        var href = anchor.getAttribute('href') || anchor.href || '';
+        if (!href) return;
+        var isTel = href.indexOf('tel:') === 0;
+        var isExternal = /^https?:\/\//i.test(href) &&
+          href.indexOf('hiddenfoodgem.com') === -1 &&
+          href.indexOf('localhost') === -1;
+        if (!isTel && !isExternal) return;
+        var domain = isTel ? 'tel' : '';
+        if (!isTel) {
+          try { domain = new URL(href).hostname.replace(/^www\./i, ''); } catch (_) { domain = href; }
+        }
+        var card = anchor.closest('article, .gem-card, .hero-card, .sheet-panel, section');
+        var heading = card ? card.querySelector('h1, h2, h3') : null;
+        var restaurantName = (heading && heading.textContent ? heading.textContent.trim() : '') || (anchor.textContent || '').trim() || domain;
+        var isMaps = href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.apple.com') !== -1;
+        var linkType = isTel ? 'phone_call' : (isMaps ? 'directions' : 'external_website');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'outbound_click', {
+            event_category: 'outbound',
+            event_label: restaurantName + ' (' + domain + ')',
+            destination_url: href,
+            destination_domain: domain,
+            restaurant_name: restaurantName,
+            link_type: linkType,
+            page_path: window.location.pathname,
+            transport_type: 'beacon'
+          });
+        }
+        if (typeof window.va === 'function') {
+          window.va('event', {
+            name: 'outbound_click',
+            data: { domain: domain, restaurant: restaurantName, type: linkType, url: href }
+          });
+        }
+      }, true);
+    })();
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Best Hidden Food Gems & Independent Restaurants in Rockville, MD (20850)","description":"Verified independent family-owned restaurants, coffee roasters, bakeries, and boba shops in Rockville, MD 20850 (Maryland Capital Region).","url":"https://www.hiddenfoodgem.com/cities/rockville-md-20850","numberOfItems":7,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Restaurant","name":"Bob’s Shanghai 66","url":"https://www.hiddenfoodgem.com/gem/md-20850-bobsshanghai","servesCuisine":"Chinese","telephone":"(301) 251-6652","address":"305 N Washington St, Rockville, MD 20850"}},{"@type":"ListItem","position":2,"item":{"@type":"Restaurant","name":"Kung Fu Tea (Rockville Town Square)","url":"https://www.hiddenfoodgem.com/gem/kung-fu-tea-rockville-town-square","servesCuisine":"Taiwanese Bubble Teas, Milk Caps & Slushes","telephone":"(301) 251-8327","address":"275 N Washington St, Rockville, MD 20850"}},{"@type":"ListItem","position":3,"item":{"@type":"Restaurant","name":"Kuan Dim Sum (Rockville)","url":"https://www.hiddenfoodgem.com/gem/kuan-dim-sum-rockville","servesCuisine":"Handcrafted Cantonese Dim Sum, Dumplings & Roast Meats","telephone":"(301) 838-8989","address":"801 Hungerford Dr, Rockville, MD 20850"}}]}</script>
   <style>

@@ -1303,7 +1303,7 @@
       <section class="vote-showdown-section" id="vote-showdown" style="background:linear-gradient(180deg,#1c130d 0%,#140d09 100%);border:1px solid rgba(245,194,107,0.22);border-radius:20px;padding:24px 20px;margin:24px auto 32px;max-width:1200px;box-shadow:0 12px 36px rgba(0,0,0,0.5)">
         <div style="text-align:center;max-width:760px;margin:0 auto 20px">
           <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,194,107,0.12);border:1px solid rgba(245,194,107,0.3);padding:4px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;color:#f5c26b;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">
-            <span>☕ November Showdown: Craft Coffee &amp; Cafe Battle</span>
+            <span>☕ November Community Spotlight: Craft Coffee &amp; Cafe Vote</span>
           </div>
           <h2 style="font-size:1.75rem;font-weight:800;color:#fff;margin:0 0 8px;line-height:1.25">
             Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Best Craft Coffee Roaster &amp; Cafe</span>
@@ -1431,7 +1431,45 @@
             </div>
           </div>
 
-        </div>
+        
+          <!-- Card 5: Nominate a Gem for December -->
+          <div class="vote-dish-card" style="background:#1d1510;border:2px dashed rgba(245,194,107,0.4);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <span style="background:rgba(245,194,107,0.15);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.3)">🗳️ Next Month</span>
+                <span style="font-size:0.78rem;color:#f5c26b;font-weight:700">December 2026</span>
+              </div>
+              <h3 style="font-size:1.2rem;color:#fff;margin:0 0 6px;font-weight:800">Nominate for December</h3>
+              <div style="font-size:0.9rem;font-weight:700;color:#ffae42;margin-bottom:8px">Know a Hidden Gem?</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Know a hidden family-owned spot in the Inland Empire? Nominate them for next month's community vote!</p>
+            </div>
+            
+            <div>
+              <button type="button" class="vote-btn-pill" id="btn-nominate-gem" onclick="window.openNominationSheet()" style="width:100%;background:linear-gradient(135deg,#f5c26b,#ff8a00);border:none;color:#1a100a;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;box-shadow:0 4px 12px rgba(245,194,107,0.25)">
+                <span>🗳️ Nominate a Spot</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Share the Vote (Viral Growth) -->
+          <div class="vote-dish-card" style="background:#1d1510;border:2px dashed rgba(245,194,107,0.4);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <span style="background:rgba(52,211,153,0.15);color:#34d399;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(52,211,153,0.3)">📲 Spread the Word</span>
+                <span style="font-size:0.78rem;color:#34d399;font-weight:700">#SupportLocal</span>
+              </div>
+              <h3 style="font-size:1.2rem;color:#fff;margin:0 0 6px;font-weight:800">Share This Vote</h3>
+              <div style="font-size:0.9rem;font-weight:700;color:#34d399;margin-bottom:8px">Help Your Favorite Win #1</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Help your favorite local spot win #1! Share this with friends, family &amp; neighbors across the community.</p>
+            </div>
+            
+            <div>
+              <button type="button" class="vote-btn-pill" id="btn-share-vote" onclick="window.shareCommunityVote()" style="width:100%;background:rgba(52,211,153,0.14);border:1px solid #34d399;color:#34d399;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span id="share-btn-text">📲 Share with Friends</span>
+              </button>
+            </div>
+          </div>
+</div>
 
         <div id="vote-status-banner" style="background:#1b120c;border:1px dashed rgba(245,194,107,0.3);border-radius:12px;padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
           <div style="font-size:0.88rem;color:#f9f3eb" id="vote-info-msg">
@@ -2913,6 +2951,115 @@
         });
       }
     }
+
+    
+  // ---------- Community Nomination & Share Handlers ----------
+  window.openNominationSheet = function() {
+    if (typeof openSheet === 'function') {
+      openSheet(`
+        <div class="form-head" style="text-align:center;padding:16px 0 10px">
+          <span class="eyebrow" style="color:#f5c26b;background:rgba(245,194,107,0.15);border:1px solid rgba(245,194,107,0.3);padding:4px 12px;border-radius:999px;font-size:0.8rem;font-weight:700">🗳️ Community Nomination</span>
+          <h2 style="margin:12px 0 6px;color:#fff;font-size:1.6rem">Nominate a Gem for December</h2>
+          <p style="color:#c2b2a3;font-size:0.9rem;max-width:540px;margin:0 auto">Know an authentic, family-owned restaurant, cafe, or bakery in the Inland Empire? Tell us who should be in next month's community vote!</p>
+        </div>
+        <form class="form detail-body" id="nomination-form" style="max-width:520px;margin:0 auto" onsubmit="window.handleNominationSubmit(event)">
+          <div class="field" style="margin-bottom:14px">
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Restaurant or Cafe Name *</label>
+            <input type="text" id="nom-name" required placeholder="e.g. Grandma's Kitchen" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+          </div>
+          <div class="field" style="margin-bottom:14px">
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">City & ZIP Code *</label>
+            <input type="text" id="nom-city" required placeholder="e.g. Ontario, CA 91762" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+          </div>
+          <div class="field" style="margin-bottom:14px">
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Signature Dish or Drink</label>
+            <input type="text" id="nom-dish" placeholder="e.g. Housemade Cinnamon Rolls or Horchata Cold Brew" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+          </div>
+          <div class="field" style="margin-bottom:14px">
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Why do you love them?</label>
+            <textarea id="nom-why" rows="3" placeholder="Tell us what makes them a special hidden gem..." style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem"></textarea>
+          </div>
+          <div class="field" style="margin-bottom:18px">
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Your Email or Contact (Optional)</label>
+            <input type="email" id="nom-email" placeholder="yourname@gmail.com" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+          </div>
+          <button type="submit" class="btn" style="width:100%;padding:14px;background:linear-gradient(135deg,#f5c26b,#ff8a00);border:none;border-radius:10px;font-weight:800;font-size:1rem;color:#1a100a;cursor:pointer">
+            ✨ Submit Nomination
+          </button>
+          <p style="text-align:center;font-size:0.78rem;color:#c2b2a3;margin-top:12px">Nominations are sent directly to the curation team at letsgetoutkids@gmail.com</p>
+        </form>
+      `);
+    } else {
+      window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + encodeURIComponent('December Food Gem Nomination') + '&body=' + encodeURIComponent('Hi! I would like to nominate a hidden gem for next month.');
+    }
+  };
+
+  window.handleNominationSubmit = function(e) {
+    e.preventDefault();
+    const name = document.getElementById('nom-name')?.value || '';
+    const city = document.getElementById('nom-city')?.value || '';
+    const dish = document.getElementById('nom-dish')?.value || '';
+    const why = document.getElementById('nom-why')?.value || '';
+    const email = document.getElementById('nom-email')?.value || '';
+
+    const subject = encodeURIComponent('December Gem Nomination: ' + name + ' (' + city + ')');
+    const body = encodeURIComponent(
+      'Hi Hidden Food Gems Team,\n\n' +
+      'I would like to nominate the following local spot for next month\'s community vote:\n\n' +
+      '• Name: ' + name + '\n' +
+      '• City / Location: ' + city + '\n' +
+      '• Signature Dish / Drink: ' + dish + '\n' +
+      '• Why they\'re special: ' + why + '\n' +
+      '• Nominated by: ' + (email || 'A local foodie') + '\n\n' +
+      'Sent from HiddenFoodGem.com'
+    );
+
+    // Open user's email client to deliver to letsgetoutkids@gmail.com
+    window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + subject + '&body=' + body;
+
+    if (typeof toast === 'function') {
+      toast('🎉 Thank you! Nomination created for letsgetoutkids@gmail.com');
+    }
+    if (typeof closeSheet === 'function') {
+      setTimeout(closeSheet, 800);
+    }
+  };
+
+  window.shareCommunityVote = async function() {
+    const shareData = {
+      title: 'Vote for the Inland Empire\'s Best Craft Coffee & Cafe Gem!',
+      text: 'Vote for your favorite local craft coffee roaster & cafe on Hidden Food Gems! Support local independent kitchens.',
+      url: window.location.origin || 'https://www.hiddenfoodgem.com'
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        if (typeof toast === 'function') toast('🎉 Thank you for sharing!');
+        return;
+      } catch (err) {
+        if (err.name !== 'AbortError') console.warn('Share error:', err);
+      }
+    }
+
+    // Fallback: Copy link to clipboard
+    try {
+      await navigator.clipboard.writeText(shareData.url);
+      const btnText = document.getElementById('share-btn-text');
+      if (btnText) {
+        const original = btnText.textContent;
+        btnText.textContent = '✓ Link Copied to Clipboard!';
+        setTimeout(() => { btnText.textContent = original; }, 2500);
+      }
+      if (typeof toast === 'function') {
+        toast('📋 Link copied to clipboard! Share it with your friends & neighbors.');
+      } else {
+        alert('Link copied to clipboard! Share with friends to help your favorite spot win.');
+      }
+    } catch (e) {
+      alert('Share this link: ' + shareData.url);
+    }
+  };
 
     window.selectVoteCandidate = async function(candidateId) {
       const existing = getStoredVote();

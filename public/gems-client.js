@@ -1906,7 +1906,6 @@
     if (showdownSection) {
       showdownSection.style.display = 'block';
     }
-    }
     const list = filtered();
     const activeZip = getActiveZipQuery();
     const isGpsActive = Boolean(state.userGpsCoords);

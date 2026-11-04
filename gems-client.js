@@ -1452,7 +1452,7 @@
           </div>
 
           <!-- Card 6: Share the Vote (Viral Growth) -->
-          <div class="vote-dish-card" style="background:#1d1510;border:2px dashed rgba(245,194,107,0.4);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
+          <div class="vote-dish-card" style="background:#131c17;border:2px dashed rgba(52,211,153,0.5);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
                 <span style="background:rgba(52,211,153,0.15);color:#34d399;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(52,211,153,0.3)">📲 Spread the Word</span>

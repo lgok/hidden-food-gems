@@ -705,7 +705,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 110+ verified independent family-run restaurants across 65 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=99" />
+  <link rel="stylesheet" href="/styles.css?v=101" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -761,8 +761,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="/seed-data.js?v=99"></script>
-  <script src="/gems-client.js?v=99"></script>
+  <script src="/seed-data.js?v=101"></script>
+  <script src="/gems-client.js?v=101"></script>
 </body>
 </html>
 `;

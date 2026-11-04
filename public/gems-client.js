@@ -1402,6 +1402,35 @@
             </div>
           </div>
 
+          <!-- Candidate 4: Cannataro's Italian Restaurant -->
+          <div class="vote-dish-card" data-candidate-id="cannataros-chino" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:22px 20px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('cannataros-chino')">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🍝 Chino, CA</span>
+                <span style="font-size:0.8rem;color:#c2b2a3;font-weight:600">Chino Landmark</span>
+              </div>
+              <h3 style="font-size:1.35rem;color:#fff;margin:0 0 6px;font-weight:800">Cannataro's Italian</h3>
+              <div style="font-size:0.95rem;font-weight:700;color:#ffae42;margin-bottom:8px">Golden Baked Lasagna &amp; Garlic Knots</div>
+              <p style="font-size:0.84rem;color:#c2b2a3;margin:0 0 18px;line-height:1.45">Fresh pasta layers, slow-simmered bolognese, whole milk ricotta &amp; melted mozzarella.</p>
+            </div>
+            
+            <div>
+              <div class="vote-result-bar" id="result-wrap-cannataros-chino" style="display:none;margin-bottom:12px">
+                <div style="display:flex;justify-content:space-between;font-size:0.82rem;font-weight:700;margin-bottom:4px">
+                  <span id="vote-count-cannataros-chino" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-cannataros-chino" style="color:#f5c26b">0%</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.1);height:8px;border-radius:999px;overflow:hidden">
+                  <div id="bar-fill-cannataros-chino" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                </div>
+              </div>
+
+              <button class="vote-btn-pill" id="btn-vote-cannataros-chino" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:12px;border-radius:10px;font-size:0.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Cannataro's Italian</span>
+              </button>
+            </div>
+          </div>
+
         </div>
 
         <div id="vote-status-banner" style="background:#1b120c;border:1px dashed rgba(245,194,107,0.3);border-radius:12px;padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
@@ -2711,4 +2740,144 @@
         view.innerHTML = `<div class="empty"><div class="big">🔌</div><h3>Can't reach the local server</h3><p>Start it with <code>node server.js</code> in the hidden-food-gems folder, or open <code>HiddenFoodGems_Offline.html</code>.</p></div>`;
       }
     });
+
+
+  // ---------- Integrated November Community Showdown Voting Module ----------
+  (function initCommunityShowdown() {
+    const CANDIDATES = ['momoka-ontario', 'fire-tiger-chino', 'spirit-of-texas-norco', 'cannataros-chino'];
+    const STORAGE_KEY = 'hfg_voted_candidate_nov26';
+    const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
+
+    function getDeviceId() {
+      let id = localStorage.getItem(DEVICE_ID_KEY);
+      if (!id) {
+        id = 'dev_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
+        localStorage.setItem(DEVICE_ID_KEY, id);
+      }
+      return id;
+    }
+
+    function getStoredVote() {
+      try {
+        return localStorage.getItem(STORAGE_KEY);
+      } catch(e) {
+        return null;
+      }
+    }
+
+    function setStoredVote(candidateId) {
+      try {
+        localStorage.setItem(STORAGE_KEY, candidateId);
+      } catch(e) {}
+    }
+
+    function applyVoteTallies(tallies, total) {
+      const totalCount = total || Object.values(tallies).reduce((a, b) => a + b, 0) || 0;
+      const totalEl = document.getElementById('vote-total-num');
+      if (totalEl) totalEl.textContent = totalCount.toLocaleString();
+
+      CANDIDATES.forEach(id => {
+        const count = tallies[id] || 0;
+        const pct = totalCount > 0 ? Math.round((count / totalCount) * 100) : 0;
+
+        const countEl = document.getElementById('vote-count-' + id);
+        const pctEl = document.getElementById('vote-percent-' + id);
+        const barFill = document.getElementById('bar-fill-' + id);
+        const wrap = document.getElementById('result-wrap-' + id);
+
+        if (countEl) countEl.textContent = count.toLocaleString() + ' votes';
+        if (pctEl) pctEl.textContent = pct + '%';
+        if (barFill) barFill.style.width = pct + '%';
+        if (wrap) wrap.style.display = 'block';
+      });
+    }
+
+    function markCardAsVoted(candidateId) {
+      const card = document.querySelector('.vote-dish-card[data-candidate-id="' + candidateId + '"]');
+      if (card) {
+        card.style.borderColor = '#22c55e';
+        card.style.boxShadow = '0 0 20px rgba(34,197,94,0.35)';
+        const btn = document.getElementById('btn-vote-' + candidateId);
+        if (btn) {
+          btn.style.background = '#22c55e';
+          btn.style.color = '#fff';
+          btn.style.borderColor = '#22c55e';
+          btn.innerHTML = '<span>✓ Your Device Vote</span>';
+        }
+      }
+
+      CANDIDATES.forEach(id => {
+        if (id !== candidateId) {
+          const btn = document.getElementById('btn-vote-' + id);
+          if (btn) {
+            btn.disabled = true;
+            btn.style.opacity = '0.5';
+            btn.style.cursor = 'default';
+            btn.innerHTML = '<span>Vote Recorded</span>';
+          }
+        }
+      });
+
+      const infoMsg = document.getElementById('vote-info-msg');
+      if (infoMsg) {
+        infoMsg.innerHTML = '🎉 <strong>Thank you! Your device vote has been recorded.</strong> Live results are updating below!';
+      }
+    }
+
+    async function loadVoteStatus() {
+      try {
+        const res = await fetch('/api/vote');
+        if (res.ok) {
+          const data = await res.json();
+          if (data.votes) {
+            applyVoteTallies(data.votes, data.totalVotes);
+          }
+        }
+      } catch(err) {
+        applyVoteTallies({
+          'momoka-ontario': 0,
+          'fire-tiger-chino': 0,
+          'spirit-of-texas-norco': 0,
+          'cannataros-chino': 0
+        }, 0);
+      }
+
+      const previousVote = getStoredVote();
+      if (previousVote) {
+        markCardAsVoted(previousVote);
+      }
+    }
+
+    window.selectVoteCandidate = async function(candidateId) {
+      const existing = getStoredVote();
+      if (existing) {
+        alert('You have already cast your vote from this device for this month!');
+        return;
+      }
+
+      if (navigator.vibrate) navigator.vibrate(50);
+
+      const deviceId = getDeviceId();
+      setStoredVote(candidateId);
+      markCardAsVoted(candidateId);
+
+      try {
+        const res = await fetch('/api/vote', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ candidateId, deviceId })
+        });
+        const data = await res.json();
+        if (data.votes) {
+          applyVoteTallies(data.votes, data.totalVotes);
+        }
+      } catch(e) {
+        console.warn('Offline tally update:', e);
+      }
+    };
+
+    // Auto-load vote status on page render
+    setTimeout(loadVoteStatus, 150);
+  })();
+
 })();

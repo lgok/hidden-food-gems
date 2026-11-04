@@ -19723,7 +19723,7 @@ window.SEED_RESTAURANTS = [
     "rating": 4.8,
     "reviewCount": 215,
     "priceRange": "$$",
-    "hours": "Mon-Sun 8:30 AM - 9:00 PM",
+    "hours": "Mon–Sun 8:30am–9:00pm",
     "lat": 33.99665,
     "lng": -117.71569,
     "tags": [
@@ -19747,7 +19747,136 @@ window.SEED_RESTAURANTS = [
         "comment": "Authentic local flavor and top-tier hospitality.",
         "date": "2026-11-04T04:47:31.383Z"
       }
-    ]
+    ],
+    "price": 2,
+    "driveFrom91761": "14 min from 91761",
+    "regionalIdentity": "Thai Breakfast Fusion, Soufflé Pancakes & Spicy Basil Omelettes",
+    "healthPermit": {
+      "facilityId": "FA0021480",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 96,
+      "inspectedOn": "2026-08-15",
+      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
+    },
+    "familyRoots": "Chino family kitchen blending traditional Bangkok street breakfast dishes with delicate modern French toast and soufflé pancakes.",
+    "scratchCommitment": "Batter whipped fresh to order for jiggly cloud-soft soufflé pancakes, real brioche soaked in cinnamon-vanilla custard, and high-heat wok Thai basil minced chicken omelettes.",
+    "destinationDish": {
+      "name": "Thai Holy Chili Basil Chicken Omelette & Soufflé Pancakes",
+      "callout": "Savory wok-crisped omelette loaded with holy basil, minced chicken, and garlic, served alongside fluffy brioche French toast and crispy potatoes."
+    },
+    "story": "Located in Chino Spectrum Marketplace, Fire Tiger Eatery is a vibrant family destination known for creative brunch mashups. From sweet Japanese-style soufflé pancakes to piping-hot Khao Soi noodle bowls, everything is prepared fresh from scratch with zero alcohol.",
+    "pricesVerified": "November 2026",
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "opening_hour_minutes": 510,
+    "closing_hour_minutes": 1260,
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      }
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Thai Holy Chili Basil Minced Chicken Omelette",
+          "price": "$22.00",
+          "desc": "Crisp-edged Thai wok omelette stuffed with minced chicken, holy basil, garlic, and sweet bell peppers. Served with French toast and crispy potatoes."
+        },
+        {
+          "name": "Crème Brûlée Brioche French Toast Tower",
+          "price": "$18.00",
+          "desc": "Thick egg-custard brioche griddled golden, finished with creamy vanilla custard, caramelized sugar crust, fresh berries, and whipped cream."
+        },
+        {
+          "name": "Northern Thai Khao Soi Chicken",
+          "price": "$17.50",
+          "desc": "Slow-simmered rich yellow coconut curry broth, tender braised chicken drumsticks, egg noodles, pickled mustard greens, and crispy noodle crown."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Fire Tiger Pad Thai Wok Bowl",
+          "price": "$16.95",
+          "desc": "Thin rice noodles wok-charred with tamarind reduction, farm eggs, pressed tofu, bean sprouts, and crushed roasted peanuts."
+        },
+        {
+          "name": "Kinaree Crispy Garlic Pepper Chicken",
+          "price": "$16.50",
+          "desc": "Golden-fried marinated chicken bites tossed with fried whole garlic cloves and aromatic cilantro."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Chino Family Brunch Spread",
+          "price": "$48.00",
+          "desc": "1 Holy Chili Basil Omelette, 1 Crème Brûlée French Toast, 1 Khao Soi Chicken Bowl, and 2 Handcrafted Thai Iced Teas."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Crispy Country Breakfast Herb Potatoes",
+          "price": "$5.50",
+          "desc": "Hand-diced golden skillet potatoes tossed with rosemary, garlic butter, and sea salt."
+        },
+        {
+          "name": "Slow-Brewed Thai Iced Tea with Sweet Cream",
+          "price": "$5.00",
+          "desc": "Traditional spiced Ceylon black tea brewed strong and finished with evaporated milk over crushed ice."
+        }
+      ]
+    }
   },
   {
     "id": "cafe-momoka-ontario",
@@ -19763,8 +19892,8 @@ window.SEED_RESTAURANTS = [
     "instagram": "@momoka._.us",
     "rating": 4.9,
     "reviewCount": 184,
-    "priceRange": "",
-    "hours": "Tue-Sun 8:00 AM - 6:00 PM",
+    "priceRange": "$",
+    "hours": "Tue–Sun 8:00am–6:00pm · Closed Mon",
     "lat": 34.0205,
     "lng": -117.5925,
     "tags": [
@@ -19788,6 +19917,317 @@ window.SEED_RESTAURANTS = [
         "comment": "Authentic local flavor and top-tier hospitality.",
         "date": "2026-11-04T04:47:31.387Z"
       }
-    ]
+    ],
+    "price": 1,
+    "driveFrom91761": "4 min from 91761",
+    "regionalIdentity": "Artisanal Japanese Sandos & Ceremonial Matcha (Ontario Ranch)",
+    "healthPermit": {
+      "facilityId": "FA0038912",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
+    },
+    "familyRoots": "Independent boutique Japanese cafe in Ontario Ranch crafting delicate handmade milk bread sandwiches and authentic ceremonial-grade Uji matcha.",
+    "scratchCommitment": "House-whipped creamy egg salad with marinated soft-boiled ramen eggs, fresh strawberries with sweet Hokkaido cream, and thick pillowy shokupan bread sliced daily.",
+    "destinationDish": {
+      "name": "Japanese Egg Sando on Fluffy Shokupan Milk Bread",
+      "callout": "Silky egg salad packed inside thick-cut Japanese shokupan with a whole jammy soft-boiled egg center."
+    },
+    "story": "Cafe Momoka brings Tokyo kissaten cafe culture to the Inland Empire. Every sandwich is assembled fresh on delicate shokupan milk bread, paired with hand-whisked matcha and sparkling fruit refreshes in a serene, family-friendly setting.",
+    "pricesVerified": "November 2026",
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "cafe"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "cafe"
+    ],
+    "is_active": true,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1080,
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      }
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Japanese Egg Sando (Tamago Sando)",
+          "price": "$12.00",
+          "desc": "Creamy Kewpie Japanese egg salad with a jammy soft-boiled marinated egg on thick pillowy shokupan bread."
+        },
+        {
+          "name": "Fresh Strawberries & Hokkaido Cream Sando",
+          "price": "$12.00",
+          "desc": "Ripe sweet California strawberries enveloped in rich, fluffy whipped cream on pillowy Japanese milk bread."
+        },
+        {
+          "name": "Ceremonial Brûlée Matcha Latte",
+          "price": "$7.50",
+          "desc": "Single-origin ceremonial Uji matcha layered over whole oat or whole milk, topped with a crisp torched caramel sugar crust."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Matcha Peach Sparkler",
+          "price": "$7.50",
+          "desc": "Sparkling mineral water infused with white peach puree and layered with chilled ceremonial green tea."
+        },
+        {
+          "name": "Double Chocolate Shokupan Toast",
+          "price": "$8.50",
+          "desc": "Thick toasted shokupan slice spread with warm Belgian chocolate hazelnut ganache and sea salt flakes."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Momoka Morning Duo",
+          "price": "$18.50",
+          "desc": "Choice of Egg Sando or Fruit Sando paired with any Signature Hot or Iced Ceremonial Matcha Latte."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kyoto Cold Brew Coffee",
+          "price": "$5.50",
+          "desc": "Slow-drip 12-hour cold brew coffee with chocolate and hazelnut notes."
+        },
+        {
+          "name": "Hojicha Roasted Green Tea Latte",
+          "price": "$7.00",
+          "desc": "Nutty, deeply roasted Japanese green tea whisked smooth with steamed oat milk."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cannataros-italian-chino",
+    "name": "Cannataro's Italian Restaurant",
+    "cuisine": "Homestyle Italian & Baked Pastas",
+    "category": "italian",
+    "regionalIdentity": "Calabrian Family Recipes & Wood-Fired Baked Pastas (Chino Landmark)",
+    "tags": [
+      "italian",
+      "pasta",
+      "pizza",
+      "lasagna",
+      "lunch",
+      "dinner",
+      "family-friendly"
+    ],
+    "price": 2,
+    "priceRange": "$$",
+    "address": "12345 Mountain Ave, Ste K",
+    "city": "Chino",
+    "state": "CA",
+    "zip": "91710",
+    "driveFrom91761": "11 min from 91761",
+    "phone": "(909) 590-7960",
+    "website": "https://www.cannataros.com",
+    "rating": 4.8,
+    "reviewCount": 340,
+    "hours": "Sun–Thu 11:00am–8:30pm · Fri–Sat 11:00am–9:00pm",
+    "lat": 34.0041,
+    "lng": -117.7018,
+    "latitude": 34.0041,
+    "longitude": -117.7018,
+    "healthPermit": {
+      "facilityId": "FA0018420",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-07-22",
+      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
+    },
+    "familyRoots": "Beloved Chino family-owned Italian staple founded by the Cannataro family, serving generation-old Calabria family recipes and generous homestyle platters.",
+    "scratchCommitment": "Slow-simmered Sunday meat bolognese simmered 6+ hours, hand-rolled pasta sheets layered with whole milk ricotta and mozzarella, and house-baked garlic butter knots.",
+    "destinationDish": {
+      "name": "Golden Baked Calabria Meat Lasagna",
+      "callout": "Towering layers of tender fresh pasta sheets, slow-simmered bolognese, whole milk ricotta, and bubbly golden mozzarella baked in personal ovens."
+    },
+    "description": "A cherished Chino culinary landmark since 2005. Renowned across the Chino Valley for bubbling baked lasagna, sizzling chicken parmigiana, crispy garlic rolls, and hearty Italian family favorites in an inviting, family-focused dining room.",
+    "story": "Cannataro's Italian Restaurant brings genuine southern Italian comfort to Mountain Avenue in Chino. Every batch of marinara and bolognese is simmered low and slow from Italian plum tomatoes and fresh sweet basil.",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Golden Baked Calabria Meat Lasagna",
+          "price": "$18.95",
+          "desc": "Tender pasta sheets layered with seasoned ground beef bolognese, rich whole milk ricotta, marinara, and melted bubbly mozzarella."
+        },
+        {
+          "name": "Classic Chicken Parmigiana with Spaghetti",
+          "price": "$21.50",
+          "desc": "Hand-breaded crispy chicken breast cutlet topped with marinara and melted mozzarella over a generous plate of spaghetti marinara."
+        },
+        {
+          "name": "Fettuccine Alfredo with Grilled Chicken",
+          "price": "$19.95",
+          "desc": "Fresh egg fettuccine tossed in a rich, velvety parmesan cream and sweet butter sauce with sliced herb-marinated chicken breast."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Cannataro's Specialty Wood-Fired Pizza (Medium)",
+          "price": "$20.95",
+          "desc": "House red sauce, Italian sausage, pepperoni, sliced mushrooms, green bell peppers, red onions, and whole milk mozzarella."
+        },
+        {
+          "name": "Baked Ziti Al Forno",
+          "price": "$17.50",
+          "desc": "Penne pasta baked with savory meat sauce, seasoned ricotta, and melted provolone and mozzarella."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Cannataro's Family Pasta Feast",
+          "price": "$49.95",
+          "desc": "Family-size Baked Meat Lasagna tray, large Antipasto chopped salad, a basket of hot garlic knots, and Italian sodas."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "House-Baked Garlic Bread Knots (Half Dozen)",
+          "price": "$5.95",
+          "desc": "Warm pizza dough knots drenched in garlic butter, fresh parsley, and grated pecorino romano with warm marinara dipping sauce."
+        },
+        {
+          "name": "Handcrafted Italian Soda with Sweet Cream",
+          "price": "$4.50",
+          "desc": "Sparkling mineral water flavored with blackberry, raspberry, or vanilla syrup, finished with a float of sweet cream."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-04T06:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Marco S.",
+        "comment": "The lasagna is the best in the Inland Empire! Massive portions, incredible garlic rolls, and true family warmth.",
+        "date": "2026-10-28T18:00:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Elena R.",
+        "comment": "Authentic Calabria family recipes. You can taste the hours of care in the bolognese sauce. A total Chino gem!",
+        "date": "2026-11-02T19:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1230,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "platform": "Website",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1230,
+        "rangeStr": "11:00 AM – 8:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1260,
+        "rangeStr": "11:00 AM – 9:00 PM"
+      }
+    }
   }
 ];

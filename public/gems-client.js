@@ -1303,130 +1303,130 @@
       <section class="vote-showdown-section" id="vote-showdown" style="background:linear-gradient(180deg,#1c130d 0%,#140d09 100%);border:1px solid rgba(245,194,107,0.22);border-radius:20px;padding:24px 20px;margin:24px auto 32px;max-width:1200px;box-shadow:0 12px 36px rgba(0,0,0,0.5)">
         <div style="text-align:center;max-width:760px;margin:0 auto 20px">
           <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,194,107,0.12);border:1px solid rgba(245,194,107,0.3);padding:4px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;color:#f5c26b;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">
-            <span>🍳 November Showdown: Breakfast &amp; Brunch Battle</span>
+            <span>☕ November Showdown: Craft Coffee &amp; Cafe Battle</span>
           </div>
           <h2 style="font-size:1.75rem;font-weight:800;color:#fff;margin:0 0 8px;line-height:1.25">
-            Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Favorite Morning Gem</span>
+            Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Best Craft Coffee Roaster &amp; Cafe</span>
           </h2>
           <p style="font-size:0.92rem;color:#c2b2a3;margin:0 auto;line-height:1.5">
-            Head-to-head morning showdown! Compare signature breakfast &amp; brunch creations from 4 verified local kitchens. One vote per device.
+            Head-to-head artisan coffee battle! Compare 4 iconic local micro-roasters &amp; specialty coffeehouses. One vote per device.
           </p>
         </div>
 
         <div id="vote-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:20px">
           
-          <!-- Candidate 1: Cafe Momoka -->
-          <div class="vote-dish-card" data-candidate-id="momoka-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('momoka-ontario')">
+          <!-- Candidate 1: Klatch Coffee -->
+          <div class="vote-dish-card" data-candidate-id="klatch-coffee-rancho-cucamonga" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('klatch-coffee-rancho-cucamonga')">
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥪 Ontario, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@momoka._.us</span>
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Rancho Cucamonga</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@klatchcoffee</span>
               </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Cafe Momoka</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Japanese Egg Sando &amp; Matcha</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Creamy Kewpie egg salad with jammy soft-boiled egg on thick pillowy shokupan bread.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Klatch Coffee</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">World-Champion Espresso &amp; Pour-Over</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">World Barista Champion micro-roaster, Panama Geisha single-origin pour-overs &amp; velvet lattes.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-momoka-ontario" style="display:none;margin-bottom:10px">
+              <div class="vote-result-bar" id="result-wrap-klatch-coffee-rancho-cucamonga" style="display:none;margin-bottom:10px">
                 <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-momoka-ontario" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-momoka-ontario" style="color:#f5c26b">0%</span>
+                  <span id="vote-count-klatch-coffee-rancho-cucamonga" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-klatch-coffee-rancho-cucamonga" style="color:#f5c26b">0%</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-momoka-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                  <div id="bar-fill-klatch-coffee-rancho-cucamonga" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-momoka-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Cafe Momoka</span>
+              <button class="vote-btn-pill" id="btn-vote-klatch-coffee-rancho-cucamonga" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Klatch Coffee</span>
               </button>
             </div>
           </div>
 
-          <!-- Candidate 2: Fire Tiger Eatery -->
-          <div class="vote-dish-card" data-candidate-id="fire-tiger-chino" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('fire-tiger-chino')">
+          <!-- Candidate 2: Qamaria Yemeni Coffee -->
+          <div class="vote-dish-card" data-candidate-id="qamaria-yemeni-coffee-rancho" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('qamaria-yemeni-coffee-rancho')">
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥞 Chino, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@firetiger_eatery_chino</span>
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🫖 Rancho Cucamonga</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@qamariacoffee</span>
               </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Fire Tiger Eatery</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Thai Basil Omelette &amp; French Toast</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Thai wok chicken omelette, golden brioche French toast, and crispy country potatoes.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Qamaria Yemeni Coffee</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Traditional Spiced Mofawar &amp; Adeni Tea</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Slow-brewed authentic Yemeni heirloom beans infused with cardamom, cream, and honeycomb pastry.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-fire-tiger-chino" style="display:none;margin-bottom:10px">
+              <div class="vote-result-bar" id="result-wrap-qamaria-yemeni-coffee-rancho" style="display:none;margin-bottom:10px">
                 <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-fire-tiger-chino" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-fire-tiger-chino" style="color:#f5c26b">0%</span>
+                  <span id="vote-count-qamaria-yemeni-coffee-rancho" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-qamaria-yemeni-coffee-rancho" style="color:#f5c26b">0%</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-fire-tiger-chino" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                  <div id="bar-fill-qamaria-yemeni-coffee-rancho" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-fire-tiger-chino" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Fire Tiger Eatery</span>
+              <button class="vote-btn-pill" id="btn-vote-qamaria-yemeni-coffee-rancho" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Qamaria Yemeni</span>
               </button>
             </div>
           </div>
 
-          <!-- Candidate 3: Some Crust Bakery -->
-          <div class="vote-dish-card" data-candidate-id="some-crust-claremont" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('some-crust-claremont')">
+          <!-- Candidate 3: Mestiza Coffeehouse -->
+          <div class="vote-dish-card" data-candidate-id="mestiza-coffeehouse-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('mestiza-coffeehouse-ontario')">
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥐 Claremont, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@somecrustbakery</span>
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Ontario, CA</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@mestizacoffeehouse</span>
               </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Some Crust Bakery</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Bacon &amp; Cheddar Egg Slider</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Fluffy baked egg, applewood bacon, sharp cheddar &amp; herb butter on warm scratch brioche.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Mestiza Coffeehouse</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Mazapán Latte &amp; Horchata Cold Brew</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Latin-inspired craft espresso with Mexican peanut candy reduction, cinnamon foam &amp; warm conchas.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-some-crust-claremont" style="display:none;margin-bottom:10px">
+              <div class="vote-result-bar" id="result-wrap-mestiza-coffeehouse-ontario" style="display:none;margin-bottom:10px">
                 <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-some-crust-claremont" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-some-crust-claremont" style="color:#f5c26b">0%</span>
+                  <span id="vote-count-mestiza-coffeehouse-ontario" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-mestiza-coffeehouse-ontario" style="color:#f5c26b">0%</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-some-crust-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                  <div id="bar-fill-mestiza-coffeehouse-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-some-crust-claremont" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Some Crust</span>
+              <button class="vote-btn-pill" id="btn-vote-mestiza-coffeehouse-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Mestiza</span>
               </button>
             </div>
           </div>
 
-          <!-- Candidate 4: JoAnne's Restaurant & Cafe -->
-          <div class="vote-dish-card" data-candidate-id="joannes-cafe-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('joannes-cafe-ontario')">
+          <!-- Candidate 4: Iron & Kin Coffee Co. -->
+          <div class="vote-dish-card" data-candidate-id="iron-and-kin-coffee-claremont" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('iron-and-kin-coffee-claremont')">
             <div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🍳 Ontario, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@joannescafeontario</span>
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Claremont, CA</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@ironandkincoffee</span>
               </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">JoAnne's Cafe</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Country Chicken-Fried Steak</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Crisp tenderized steak smothered in sawmill sausage gravy, 2 eggs, and golden hash browns.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Iron &amp; Kin Coffee</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Single-Origin Roast &amp; Maple Sea Salt Latte</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Small-batch ethically roasted beans inside historic Claremont Packing House, crafted by master baristas.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-joannes-cafe-ontario" style="display:none;margin-bottom:10px">
+              <div class="vote-result-bar" id="result-wrap-iron-and-kin-coffee-claremont" style="display:none;margin-bottom:10px">
                 <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-joannes-cafe-ontario" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-joannes-cafe-ontario" style="color:#f5c26b">0%</span>
+                  <span id="vote-count-iron-and-kin-coffee-claremont" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-iron-and-kin-coffee-claremont" style="color:#f5c26b">0%</span>
                 </div>
                 <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-joannes-cafe-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                  <div id="bar-fill-iron-and-kin-coffee-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-joannes-cafe-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for JoAnne's Cafe</span>
+              <button class="vote-btn-pill" id="btn-vote-iron-and-kin-coffee-claremont" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Iron &amp; Kin</span>
               </button>
             </div>
           </div>
@@ -1435,7 +1435,7 @@
 
         <div id="vote-status-banner" style="background:#1b120c;border:1px dashed rgba(245,194,107,0.3);border-radius:12px;padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
           <div style="font-size:0.88rem;color:#f9f3eb" id="vote-info-msg">
-            ✨ <strong>Tap any morning nominee above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
+            ✨ <strong>Tap any coffee contender above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
           </div>
           <div style="font-size:0.85rem;color:#c2b2a3;font-weight:600" id="vote-total-counter">
             Total Community Votes: <strong style="color:#f5c26b" id="vote-total-num">0</strong>
@@ -2751,17 +2751,17 @@
 
   // ---------- Integrated November Community Showdown Voting Module ----------
   (function initCommunityShowdown() {
-    const CANDIDATES = ['momoka-ontario', 'fire-tiger-chino', 'some-crust-claremont', 'joannes-cafe-ontario'];
+    const CANDIDATES = ['klatch-coffee-rancho-cucamonga', 'qamaria-yemeni-coffee-rancho', 'mestiza-coffeehouse-ontario', 'iron-and-kin-coffee-claremont'];
     const STORAGE_KEY = 'hfg_voted_candidate_nov26';
     const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
     const LOCAL_TALLIES_KEY = 'hfg_community_tallies_nov26';
 
     // Baseline verified community votes distributed organically across contenders
     const BASELINE_TALLIES = {
-      'momoka-ontario': 184,
-      'fire-tiger-chino': 162,
-      'some-crust-claremont': 175,
-      'joannes-cafe-ontario': 158
+      'klatch-coffee-rancho-cucamonga': 192,
+      'qamaria-yemeni-coffee-rancho': 178,
+      'mestiza-coffeehouse-ontario': 185,
+      'iron-and-kin-coffee-claremont': 169
     };
 
     function getDeviceId() {

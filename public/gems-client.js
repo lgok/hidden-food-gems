@@ -2854,8 +2854,8 @@
         applyVoteTallies({
           'momoka-ontario': 0,
           'fire-tiger-chino': 0,
-          'spirit-of-texas-norco': 0,
-          'cannataros-chino': 0
+          'some-crust-claremont': 0,
+          'joannes-cafe-ontario': 0
         }, 0);
       }
 

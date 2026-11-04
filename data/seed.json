@@ -19739,6 +19739,14 @@
     "region": "Inland Empire",
     "images": [
       "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80"
+    ],
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Verified Patron",
+        "comment": "Authentic local flavor and top-tier hospitality.",
+        "date": "2026-11-04T04:47:31.383Z"
+      }
     ]
   },
   {
@@ -19772,6 +19780,14 @@
     "region": "Inland Empire",
     "images": [
       "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Verified Patron",
+        "comment": "Authentic local flavor and top-tier hospitality.",
+        "date": "2026-11-04T04:47:31.387Z"
+      }
     ]
   }
 ]

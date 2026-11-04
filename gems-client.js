@@ -90,7 +90,7 @@
 
   // ---------- Helpers ----------
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const avg = (r) => (r.ratings.length ? r.ratings.reduce((a, x) => a + x.stars, 0) / r.ratings.length : 0);
+  const avg = (r) => (r && Array.isArray(r.ratings) && (r.ratings && r.ratings.length) ? r.ratings.reduce((a, x) => a + (x.stars || 5), 0) / (r.ratings && r.ratings.length) : (r?.rating || 5.0));
   const starsTxt = (n) => '★★★★★'.slice(0, Math.round(n)) + '☆☆☆☆☆'.slice(0, 5 - Math.round(n));
   const price = (p) => '$'.repeat(p || 1);
   const timeAgo = (d) => {
@@ -101,7 +101,7 @@
     return '';
   };
   const badge = (r) => {
-    const a = avg(r), n = r.ratings.length;
+    const a = avg(r), n = (r.ratings && r.ratings.length);
     if (!n) return { cls: 'new', txt: '🌱 Be the first to rate' };
     if (a >= 4.5 && n < GEM_MAX_RATINGS) return { cls: 'gem', txt: '💎 Hidden Gem' };
     if (a >= 4.5) return { cls: 'fav', txt: '⭐ Local Favorite' };
@@ -112,7 +112,7 @@
     const feat = r.featured ? 5000 : 0;
     const hasMedia = coverImage(r) ? 30 : 0;
     const hScore = r.healthPermit?.score ? r.healthPermit.score * 0.2 : 0;
-    return feat + (b?.cls === 'gem' ? 1000 : b?.cls === 'new' ? 500 : 0) + hasMedia + hScore + avg(r) * 10 - r.ratings.length * 0.1;
+    return feat + (b?.cls === 'gem' ? 1000 : b?.cls === 'new' ? 500 : 0) + hasMedia + hScore + avg(r) * 10 - (r.ratings && r.ratings.length) * 0.1;
   };
   const hashNum = (s) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
   const emojiFor = (r) => {
@@ -2338,7 +2338,7 @@
         }
       }
     } catch (_) {}
-    const a = avg(r), n = r.ratings.length, b = badge(r);
+    const a = avg(r), n = (r.ratings && r.ratings.length), b = badge(r);
     const hp = r.healthPermit;
     const curatedPhotos = (r.photos || []).filter((p) => p && p.file && !p.file.includes('hero.')).slice(0, 3);
     const op = getOperationalPill(r);

@@ -1299,134 +1299,134 @@
           </form>
         </div>
       </section>
-      <!-- NOVEMBER 2026 COMMUNITY SHOWDOWN (CLEAN TEXT-ONLY VOTING CARDS) -->
+            <!-- NOVEMBER 2026 COMMUNITY SHOWDOWN: BREAKFAST & BRUNCH BATTLE -->
       <section class="vote-showdown-section" id="vote-showdown" style="background:linear-gradient(180deg,#1c130d 0%,#140d09 100%);border:1px solid rgba(245,194,107,0.22);border-radius:20px;padding:24px 20px;margin:24px auto 32px;max-width:1200px;box-shadow:0 12px 36px rgba(0,0,0,0.5)">
         <div style="text-align:center;max-width:760px;margin:0 auto 20px">
           <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,194,107,0.12);border:1px solid rgba(245,194,107,0.3);padding:4px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;color:#f5c26b;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">
-            <span>🏆 November 2026 Community Showdown</span>
+            <span>🍳 November Showdown: Breakfast &amp; Brunch Battle</span>
           </div>
           <h2 style="font-size:1.75rem;font-weight:800;color:#fff;margin:0 0 8px;line-height:1.25">
-            Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Favorite Food Gem</span>
+            Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Favorite Morning Gem</span>
           </h2>
           <p style="font-size:0.92rem;color:#c2b2a3;margin:0 auto;line-height:1.5">
-            Tap a nominee below to cast your device vote! One vote per device. Help crown this month's #1 community food icon.
+            Head-to-head morning showdown! Compare signature breakfast &amp; brunch creations from 4 verified local kitchens. One vote per device.
           </p>
         </div>
 
-        <div id="vote-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:20px">
+        <div id="vote-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:20px">
           
           <!-- Candidate 1: Cafe Momoka -->
-          <div class="vote-dish-card" data-candidate-id="momoka-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:22px 20px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('momoka-ontario')">
+          <div class="vote-dish-card" data-candidate-id="momoka-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('momoka-ontario')">
             <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
                 <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥪 Ontario, CA</span>
-                <span style="font-size:0.8rem;color:#c2b2a3;font-weight:600">@momoka._.us</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@momoka._.us</span>
               </div>
-              <h3 style="font-size:1.35rem;color:#fff;margin:0 0 6px;font-weight:800">Cafe Momoka</h3>
-              <div style="font-size:0.95rem;font-weight:700;color:#ffae42;margin-bottom:8px">Japanese Egg Sando &amp; Specialty Matcha</div>
-              <p style="font-size:0.84rem;color:#c2b2a3;margin:0 0 18px;line-height:1.45">Creamy Japanese egg salad with soft-boiled egg on pillowy shokupan milk bread.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Cafe Momoka</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Japanese Egg Sando &amp; Matcha</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Creamy Kewpie egg salad with jammy soft-boiled egg on thick pillowy shokupan bread.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-momoka-ontario" style="display:none;margin-bottom:12px">
-                <div style="display:flex;justify-content:space-between;font-size:0.82rem;font-weight:700;margin-bottom:4px">
+              <div class="vote-result-bar" id="result-wrap-momoka-ontario" style="display:none;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
                   <span id="vote-count-momoka-ontario" style="color:#c2b2a3">0 votes</span>
                   <span id="vote-percent-momoka-ontario" style="color:#f5c26b">0%</span>
                 </div>
-                <div style="background:rgba(255,255,255,0.1);height:8px;border-radius:999px;overflow:hidden">
+                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
                   <div id="bar-fill-momoka-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-momoka-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:12px;border-radius:10px;font-size:0.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+              <button class="vote-btn-pill" id="btn-vote-momoka-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
                 <span>Vote for Cafe Momoka</span>
               </button>
             </div>
           </div>
 
           <!-- Candidate 2: Fire Tiger Eatery -->
-          <div class="vote-dish-card" data-candidate-id="fire-tiger-chino" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:22px 20px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('fire-tiger-chino')">
+          <div class="vote-dish-card" data-candidate-id="fire-tiger-chino" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('fire-tiger-chino')">
             <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
                 <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥞 Chino, CA</span>
-                <span style="font-size:0.8rem;color:#c2b2a3;font-weight:600">@firetiger_eatery_chino</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@firetiger_eatery_chino</span>
               </div>
-              <h3 style="font-size:1.35rem;color:#fff;margin:0 0 6px;font-weight:800">Fire Tiger Eatery</h3>
-              <div style="font-size:0.95rem;font-weight:700;color:#ffae42;margin-bottom:8px">Thai Fusion Breakfast &amp; French Toast</div>
-              <p style="font-size:0.84rem;color:#c2b2a3;margin:0 0 18px;line-height:1.45">Brioche French toast, crispy country potatoes, and savory Thai basil minced chicken omelette.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Fire Tiger Eatery</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Thai Basil Omelette &amp; French Toast</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Thai wok chicken omelette, golden brioche French toast, and crispy country potatoes.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-fire-tiger-chino" style="display:none;margin-bottom:12px">
-                <div style="display:flex;justify-content:space-between;font-size:0.82rem;font-weight:700;margin-bottom:4px">
+              <div class="vote-result-bar" id="result-wrap-fire-tiger-chino" style="display:none;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
                   <span id="vote-count-fire-tiger-chino" style="color:#c2b2a3">0 votes</span>
                   <span id="vote-percent-fire-tiger-chino" style="color:#f5c26b">0%</span>
                 </div>
-                <div style="background:rgba(255,255,255,0.1);height:8px;border-radius:999px;overflow:hidden">
+                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
                   <div id="bar-fill-fire-tiger-chino" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-fire-tiger-chino" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:12px;border-radius:10px;font-size:0.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+              <button class="vote-btn-pill" id="btn-vote-fire-tiger-chino" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
                 <span>Vote for Fire Tiger Eatery</span>
               </button>
             </div>
           </div>
 
-          <!-- Candidate 3: Spirit of Texas BBQ -->
-          <div class="vote-dish-card" data-candidate-id="spirit-of-texas-norco" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:22px 20px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('spirit-of-texas-norco')">
+          <!-- Candidate 3: Some Crust Bakery -->
+          <div class="vote-dish-card" data-candidate-id="some-crust-claremont" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('some-crust-claremont')">
             <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🍖 Norco, CA</span>
-                <span style="font-size:0.8rem;color:#c2b2a3;font-weight:600">@spiritoftexasbbq</span>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🥐 Claremont, CA</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@somecrustbakery</span>
               </div>
-              <h3 style="font-size:1.35rem;color:#fff;margin:0 0 6px;font-weight:800">Spirit of Texas BBQ</h3>
-              <div style="font-size:0.95rem;font-weight:700;color:#ffae42;margin-bottom:8px">14-Hour Smoked Prime Brisket</div>
-              <p style="font-size:0.84rem;color:#c2b2a3;margin:0 0 18px;line-height:1.45">Pit-smoked Texas ribs, tender sliced brisket, and slow-simmered Texas pit beans.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Some Crust Bakery</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Bacon &amp; Cheddar Egg Slider</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Fluffy baked egg, applewood bacon, sharp cheddar &amp; herb butter on warm scratch brioche.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-spirit-of-texas-norco" style="display:none;margin-bottom:12px">
-                <div style="display:flex;justify-content:space-between;font-size:0.82rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-spirit-of-texas-norco" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-spirit-of-texas-norco" style="color:#f5c26b">0%</span>
+              <div class="vote-result-bar" id="result-wrap-some-crust-claremont" style="display:none;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
+                  <span id="vote-count-some-crust-claremont" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-some-crust-claremont" style="color:#f5c26b">0%</span>
                 </div>
-                <div style="background:rgba(255,255,255,0.1);height:8px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-spirit-of-texas-norco" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
+                  <div id="bar-fill-some-crust-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-spirit-of-texas-norco" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:12px;border-radius:10px;font-size:0.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Spirit of Texas BBQ</span>
+              <button class="vote-btn-pill" id="btn-vote-some-crust-claremont" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Some Crust</span>
               </button>
             </div>
           </div>
 
-          <!-- Candidate 4: Cannataro's Italian Restaurant -->
-          <div class="vote-dish-card" data-candidate-id="cannataros-chino" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:22px 20px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('cannataros-chino')">
+          <!-- Candidate 4: JoAnne's Restaurant & Cafe -->
+          <div class="vote-dish-card" data-candidate-id="joannes-cafe-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('joannes-cafe-ontario')">
             <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🍝 Chino, CA</span>
-                <span style="font-size:0.8rem;color:#c2b2a3;font-weight:600">Chino Landmark</span>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🍳 Ontario, CA</span>
+                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@joannescafeontario</span>
               </div>
-              <h3 style="font-size:1.35rem;color:#fff;margin:0 0 6px;font-weight:800">Cannataro's Italian</h3>
-              <div style="font-size:0.95rem;font-weight:700;color:#ffae42;margin-bottom:8px">Golden Baked Lasagna &amp; Garlic Knots</div>
-              <p style="font-size:0.84rem;color:#c2b2a3;margin:0 0 18px;line-height:1.45">Fresh pasta layers, slow-simmered bolognese, whole milk ricotta &amp; melted mozzarella.</p>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">JoAnne's Cafe</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Country Chicken-Fried Steak</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Crisp tenderized steak smothered in sawmill sausage gravy, 2 eggs, and golden hash browns.</p>
             </div>
             
             <div>
-              <div class="vote-result-bar" id="result-wrap-cannataros-chino" style="display:none;margin-bottom:12px">
-                <div style="display:flex;justify-content:space-between;font-size:0.82rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-cannataros-chino" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-cannataros-chino" style="color:#f5c26b">0%</span>
+              <div class="vote-result-bar" id="result-wrap-joannes-cafe-ontario" style="display:none;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
+                  <span id="vote-count-joannes-cafe-ontario" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-joannes-cafe-ontario" style="color:#f5c26b">0%</span>
                 </div>
-                <div style="background:rgba(255,255,255,0.1);height:8px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-cannataros-chino" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
+                  <div id="bar-fill-joannes-cafe-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
                 </div>
               </div>
 
-              <button class="vote-btn-pill" id="btn-vote-cannataros-chino" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:12px;border-radius:10px;font-size:0.92rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Cannataro's Italian</span>
+              <button class="vote-btn-pill" id="btn-vote-joannes-cafe-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for JoAnne's Cafe</span>
               </button>
             </div>
           </div>
@@ -1435,7 +1435,7 @@
 
         <div id="vote-status-banner" style="background:#1b120c;border:1px dashed rgba(245,194,107,0.3);border-radius:12px;padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
           <div style="font-size:0.88rem;color:#f9f3eb" id="vote-info-msg">
-            ✨ <strong>Tap any nominee card above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
+            ✨ <strong>Tap any morning nominee above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
           </div>
           <div style="font-size:0.85rem;color:#c2b2a3;font-weight:600" id="vote-total-counter">
             Total Community Votes: <strong style="color:#f5c26b" id="vote-total-num">0</strong>
@@ -2761,7 +2761,7 @@
 
   // ---------- Integrated November Community Showdown Voting Module ----------
   (function initCommunityShowdown() {
-    const CANDIDATES = ['momoka-ontario', 'fire-tiger-chino', 'spirit-of-texas-norco', 'cannataros-chino'];
+    const CANDIDATES = ['momoka-ontario', 'fire-tiger-chino', 'some-crust-claremont', 'joannes-cafe-ontario'];
     const STORAGE_KEY = 'hfg_voted_candidate_nov26';
     const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
 

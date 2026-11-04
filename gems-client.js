@@ -2789,16 +2789,16 @@
   // ---------- Integrated November Community Showdown Voting Module ----------
   (function initCommunityShowdown() {
     const CANDIDATES = ['klatch-coffee-rancho-cucamonga', 'qamaria-yemeni-coffee-rancho', 'mestiza-coffeehouse-ontario', 'iron-and-kin-coffee-claremont'];
-    const STORAGE_KEY = 'hfg_voted_candidate_nov26';
+    const STORAGE_KEY = 'hfg_voted_candidate_clean_v1';
     const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
-    const LOCAL_TALLIES_KEY = 'hfg_community_tallies_nov26';
+    const LOCAL_TALLIES_KEY = 'hfg_community_tallies_clean_v1';
 
     // Baseline verified community votes distributed organically across contenders
     const BASELINE_TALLIES = {
-      'klatch-coffee-rancho-cucamonga': 192,
-      'qamaria-yemeni-coffee-rancho': 178,
-      'mestiza-coffeehouse-ontario': 185,
-      'iron-and-kin-coffee-claremont': 169
+      'klatch-coffee-rancho-cucamonga': 0,
+      'qamaria-yemeni-coffee-rancho': 0,
+      'mestiza-coffeehouse-ontario': 0,
+      'iron-and-kin-coffee-claremont': 0
     };
 
     function getDeviceId() {

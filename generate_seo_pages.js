@@ -808,14 +808,10 @@ const appJsCode = `const http = require("http");
 const INDEX_HTML = ${JSON.stringify(indexHtml)};
 const NOT_FOUND_HTML = ${JSON.stringify(notFoundHtml)};
 
-const voteHandler = require("./api/vote");
 
 const handler = (req, res) => {
   const rawUrl = req.url || "/";
   const pathname = rawUrl.split("?")[0];
-  if (pathname === "/api/vote") {
-    return voteHandler(req, res);
-  }
   if (pathname === "/" || pathname === "/index.html") {
     res.writeHead(200, {
       "Content-Type": "text/html; charset=utf-8",

@@ -1862,6 +1862,23 @@
   function renderResults(scroll = false) {
     const grid = $('#grid'); if (!grid) return;
     syncCityDropdown();
+
+    // Context-Aware Showdown Visibility:
+    // Only display the Inland Empire Community Showdown when viewing the Inland Empire / SoCal region,
+    // or when searching without an out-of-market ZIP code / out-of-market state.
+    const showdownSection = document.getElementById('vote-showdown');
+    if (showdownSection) {
+      const activeZip = getActiveZipQuery();
+      const geo = state.geocodedInfo;
+      const isOutOfStateZip = Boolean(activeZip && geo && geo.state && geo.state !== 'CA');
+      const isOutOfRegionFilter = Boolean(state.region && state.region !== 'Inland Empire' && state.region !== 'San Bernardino' && state.region !== 'Riverside');
+      
+      if (isOutOfStateZip || isOutOfRegionFilter) {
+        showdownSection.style.display = 'none';
+      } else {
+        showdownSection.style.display = 'block';
+      }
+    }
     const list = filtered();
     const activeZip = getActiveZipQuery();
     const isGpsActive = Boolean(state.userGpsCoords);

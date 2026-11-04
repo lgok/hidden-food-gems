@@ -6,7 +6,7 @@ const publicDir = path.join(__dirname, "public");
 const seedCode = fs.readFileSync(path.join(publicDir, "seed-data.js"), "utf8");
 const ctx = { window: {} };
 vm.runInNewContext(seedCode, ctx);
-const restaurants = ctx.window.__HFG_OFFLINE_SEED__ || [];
+const restaurants = ctx.window.SEED_RESTAURANTS || ctx.window.__HFG_OFFLINE_SEED__ || [];
 
 if (!restaurants.length) {
   throw new Error("No restaurants loaded from seed-data.js");
@@ -730,16 +730,14 @@ ${ga4AndOutboundScriptHtml}
     </section>
   </main>
 
-  <footer class="seo-directory" style="max-width:1200px;margin:32px auto 80px;padding:24px 16px;border-top:1px solid rgba(245,194,107,0.15);color:#c2b2a3;font-size:0.82rem">
-    <div style="font-weight:700;color:#f5c26b;margin-bottom:10px">📍 Explore Verified Hidden Food Gems by City &amp; ZIP Code (65 Neighborhood Guides)</div>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">${cityLinksHtml}</div>
-    <details open style="margin-bottom:16px">
-      <summary style="cursor:pointer;font-weight:700;color:#f5c26b;margin-bottom:8px">🍽️ All ${restaurants.length} Dedicated Restaurant, Bakery, Coffee &amp; Boba Pages (A–Z Directory)</summary>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${allGemLinksHtml}</div>
-    </details>
-    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06)">
-      <span>© 2026 <strong>HiddenFoodGem.com</strong> — 110+ Independent Restaurants across 65 ZIP Codes. Zero Chains. Zero Paid Rankings.</span>
-      <span>Sister Site: <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b">Let&apos;s Get Out, Kids! (LetsGetOutKids.com) ↗</a> · <a href="/sitemap.xml" style="color:#c2b2a3">Sitemap</a> · <a href="/llms.txt" style="color:#c2b2a3">LLMs.txt</a></span>
+  <footer style="max-width:1200px;margin:40px auto 30px;padding:24px 16px;border-top:1px solid rgba(245,194,107,0.18);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;color:#c2b2a3;font-size:0.86rem">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:1.1rem">💎</span>
+      <span><strong>Hidden Food Gem</strong> · 100% Verified Independent Culinary Guide</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b;text-decoration:none;font-weight:600">🎡 Let's Get Out, Kids!</a>
+      <a href="#/add" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Advertise With Us</a>
     </div>
   </footer>
 

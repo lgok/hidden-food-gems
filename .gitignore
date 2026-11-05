@@ -6,7 +6,6 @@ HiddenFoodGems_Offline.html
 BusinessCard_Staples_Print.html
 package.json
 server.js
-api/
 adapters/
 scripts/
 *.bat

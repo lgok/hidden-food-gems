@@ -332,7 +332,11 @@ for (const r of restaurants) {
   <meta property="og:description" content="${esc(metaDesc)}" />
   <meta property="og:url" content="${baseUrl}/gem/${esc(r.id)}" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
+  <meta property="og:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1350" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
   <meta name="twitter:title" content="${esc(title)}" />
   <meta name="twitter:description" content="${esc(metaDesc)}" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -501,6 +505,11 @@ for (const entry of cityZipEntries) {
   <meta property="og:description" content="${esc(metaDesc)}" />
   <meta property="og:url" content="${baseUrl}/cities/${esc(slug)}" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
+  <meta property="og:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1350" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -575,7 +584,7 @@ ${ga4AndOutboundScriptHtml}
     </section>` : ""}
 
     <footer>
-      <p><a href="/">← Back to All 110 Verified Gems on HiddenFoodGem.com</a> · <a href="${esc(lgokUrl)}" target="_blank" rel="noopener">🎡 Family Events in ${esc(city)}, ${esc(state)} on LetsGetOutKids.com ↗</a></p>
+      <p><a href="/">← Back to All 120 Verified Gems on HiddenFoodGem.com</a> · <a href="${esc(lgokUrl)}" target="_blank" rel="noopener">🎡 Family Events in ${esc(city)}, ${esc(state)} on LetsGetOutKids.com ↗</a></p>
     </footer>
   </main>
 </body>
@@ -613,7 +622,7 @@ fs.writeFileSync(path.join(publicDir, "robots.txt"), robotsTxt, "utf8");
 
 // 4. Create public/llms.txt for AI Search Engines (ChatGPT, Perplexity, Claude, Gemini)
 const llmsTxt = `# HiddenFoodGem.com — Verified Independent Restaurants Directory
-> Discover 110+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+> Discover 120+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 70 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
 
 ## Key Features
 - Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.
@@ -665,7 +674,7 @@ const homeSchemaJsonLd = {
       "@id": `${baseUrl}/#website`,
       name: "HiddenFoodGem.com",
       url: `${baseUrl}/`,
-      description: "Verified independent family-run restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes with live operating hours, signature dishes, and official county health inspection badges.",
+      description: "Verified independent family-run restaurants, bakeries, coffee roasters, and boba shops across 70 ZIP codes with live operating hours, signature dishes, and official county health inspection badges.",
       potentialAction: {
         "@type": "SearchAction",
         target: `${baseUrl}/?zip={search_term_string}`,
@@ -697,12 +706,16 @@ const indexHtml = `<!doctype html>
   <link rel="canonical" href="${baseUrl}/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="HiddenFoodGem.com — Verified Independent Restaurants, Coffee &amp; Boba" />
-  <meta property="og:description" content="Skip national chains and 30% delivery app fees. Explore 110+ hand-vetted family-owned restaurants with live hours, signature dishes, and official County Health grades." />
+  <meta property="og:description" content="Skip national chains and 30% delivery app fees. Explore 120+ hand-vetted family-owned restaurants with live hours, signature dishes, and official County Health grades." />
   <meta property="og:url" content="${baseUrl}/" />
   <meta property="og:site_name" content="HiddenFoodGem.com" />
+  <meta property="og:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1350" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
   <meta name="twitter:title" content="HiddenFoodGem.com — Verified Independent Restaurants" />
-  <meta name="twitter:description" content="Discover 110+ verified independent family-run restaurants across 65 ZIP codes with live operating hours &amp; official health inspection grades." />
+  <meta name="twitter:description" content="Discover 120+ verified independent family-run restaurants across 70 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/styles.css?v=103" />
@@ -725,7 +738,7 @@ ${ga4AndOutboundScriptHtml}
   <main id="view">
     <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Bakeries, Coffee &amp; Boba</h1>
-      <p style="color:#c2b2a3;margin:0 0 18px">Explore 110+ hand-vetted independent neighborhood gems across 65 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
+      <p style="color:#c2b2a3;margin:0 0 18px">Explore 120+ hand-vetted independent neighborhood gems across 70 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">${prerenderCardsHtml}</div>
     </section>
   </main>
@@ -790,9 +803,9 @@ const notFoundHtml = `<!doctype html>
     <section class="hero-card">
       <div style="font-size:3rem;margin-bottom:8px">🍽️</div>
       <h1>404 — Hidden Gem Not Found</h1>
-      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px">We couldn&apos;t find a restaurant or city guide at that address. Explore all 110+ verified independent restaurants across 65 ZIP codes below.</p>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px">We couldn&apos;t find a restaurant or city guide at that address. Explore all 120+ verified independent restaurants across 70 ZIP codes below.</p>
       <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
-        <a href="/" class="btn">💎 Explore All 110 Verified Gems</a>
+        <a href="/" class="btn">💎 Explore All 120 Verified Gems</a>
         <a href="https://www.letsgetoutkids.com" class="btn btn-outline">🎡 Browse Family Events</a>
       </div>
     </section>

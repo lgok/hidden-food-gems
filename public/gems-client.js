@@ -2880,9 +2880,9 @@
             barFill.style.width = pct + '%';
           }, 50);
         }
-        // Once the user votes, the self-counting bars become visible!
+        // Live vote tally bars are always visible to everyone
         if (wrap) {
-          wrap.style.display = userVotedCandidateId ? 'block' : 'none';
+          wrap.style.display = 'block';
         }
       });
     }
@@ -2919,37 +2919,62 @@
       }
     }
 
+    async function fetchCloudTallies() {
+      const tallies = {};
+      try {
+        const promises = CANDIDATES.map(async function(cid) {
+          try {
+            const r = await fetch('https://abacus.jasoncameron.dev/get/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(cid), { cache: 'no-store' });
+            if (r.ok) {
+              const d = await r.json();
+              if (d && typeof d.value === 'number') {
+                tallies[cid] = d.value;
+              }
+            }
+          } catch(e) {}
+        });
+        await Promise.all(promises);
+      } catch(e) {}
+      return tallies;
+    }
+
     async function loadVoteStatus() {
       let currentTallies = getLocalTallies();
       
-      // Attempt remote sync if available
+      // Fetch live persistent cloud tallies across all voters
       try {
-        const res = await fetch('/api/vote');
-        if (res.ok) {
-          const data = await res.json();
-          if (data && data.votes) {
-            currentTallies = Object.assign({}, currentTallies, data.votes);
-            saveLocalTallies(currentTallies);
-          }
+        const cloudVotes = await fetchCloudTallies();
+        if (Object.keys(cloudVotes).length > 0) {
+          CANDIDATES.forEach(function(cid) {
+            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
+          });
+          saveLocalTallies(currentTallies);
         }
       } catch(e) {}
 
       const previousVote = getStoredVote();
       if (previousVote) {
         markCardAsVoted(previousVote);
-        renderResultsUI(currentTallies, previousVote, false);
-      } else {
-        // Before voting, keep results pristine and prompt user to cast their vote
-        const totalCount = Object.values(currentTallies).reduce((a, b) => a + b, 0);
-        const totalEl = document.getElementById('vote-total-num');
-        if (totalEl) totalEl.textContent = totalCount.toLocaleString();
-        
-        CANDIDATES.forEach(id => {
-          const wrap = document.getElementById('result-wrap-' + id);
-          if (wrap) wrap.style.display = 'none';
-        });
       }
+      
+      // Always show live tally bars so everyone sees real community counts!
+      renderResultsUI(currentTallies, previousVote, false);
     }
+
+    // Auto-poll live votes every 8 seconds so new votes appear in real time without refreshing
+    setInterval(async function() {
+      try {
+        const cloudVotes = await fetchCloudTallies();
+        if (Object.keys(cloudVotes).length > 0) {
+          const currentTallies = getLocalTallies();
+          CANDIDATES.forEach(function(cid) {
+            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
+          });
+          saveLocalTallies(currentTallies);
+          renderResultsUI(currentTallies, getStoredVote(), false);
+        }
+      } catch(e) {}
+    }, 8000);
 
     
   // ---------- Community Nomination & Share Handlers ----------
@@ -3088,16 +3113,15 @@
         window.toast('🎉 Vote counted! You moved the community counter up +1!');
       }
 
-      // Try server sync asynchronously
+      // Sync to global persistent cloud counter
       try {
+        await fetch('https://abacus.jasoncameron.dev/hit/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(candidateId), { cache: 'no-store' });
         await fetch('/api/vote', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ candidateId, deviceId })
-        });
-      } catch(e) {
-        // Self-counting works offline and on static host seamlessly
-      }
+        }).catch(function(){});
+      } catch(e) {}
     };
 
     // Auto-load on view render

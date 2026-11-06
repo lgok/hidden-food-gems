@@ -701,7 +701,7 @@ const indexHtml = `<!doctype html>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#1f1612" />
-  <meta name="description" content="HiddenFoodGem.com: discover 110+ verified independent family-run restaurants, bakeries, coffee roasters &amp; boba shops across 65 ZIP codes. Live operating hours, verified county health grades, signature dishes &amp; direct counter calling." />
+  <meta name="description" content="HiddenFoodGem.com: discover 120+ verified independent family-run restaurants, bakeries, coffee roasters &amp; boba shops across 70 ZIP codes. Live operating hours, verified county health grades, signature dishes &amp; direct counter calling." />
   <title>HiddenFoodGem.com: Verified Independent Restaurants, Bakeries, Coffee &amp; Boba</title>
   <link rel="canonical" href="${baseUrl}/" />
   <meta property="og:type" content="website" />
@@ -718,7 +718,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 120+ verified independent family-run restaurants across 70 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=103" />
+  <link rel="stylesheet" href="/styles.css?v=106" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -775,7 +775,7 @@ ${ga4AndOutboundScriptHtml}
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="/seed-data.js?v=103"></script>
-  <script src="/gems-client.js?v=103"></script>
+  <script src="/gems-client.js?v=106"></script>
 </body>
 </html>
 `;

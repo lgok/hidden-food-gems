@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants Directory
-> Discover 110+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 65 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+> Discover 120+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 70 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
 
 ## Key Features
 - Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.
@@ -30,7 +30,7 @@
   - Chicago, IL (60625): https://www.hiddenfoodgem.com/cities/chicago-il-60625
   - Chino, CA (91710): https://www.hiddenfoodgem.com/cities/chino-ca-91710
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
+  - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878
   - Dallas, TX (75208): https://www.hiddenfoodgem.com/cities/dallas-tx-75208
   - Downtown Los Angeles, CA (90021): https://www.hiddenfoodgem.com/cities/downtown-los-angeles-ca-90021
-  - Flushing, NY (11354): https://www.hiddenfoodgem.com/cities/flushing-ny-11354
-  - Glendale, CA (91204): https://www.hiddenfoodgem.com/cities/glendale-ca-91204
+  - Eastvale, CA (92880): https://www.hiddenfoodgem.com/cities/eastvale-ca-92880

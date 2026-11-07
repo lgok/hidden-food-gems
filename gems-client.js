@@ -1475,7 +1475,67 @@
           <div style="font-size:0.88rem;color:#f9f3eb" id="vote-info-msg">
             ✨ <strong>Tap any coffee contender above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
           </div>
-          <div style="font-size:0.85rem;color:#c2b2a3;font-weight:600" id="vote-total-counter">
+          <!-- Live Community Vote Standings & Accumulation Leaderboard -->
+        <div id="vote-live-leaderboard" style="background:#19110c;border:1px solid rgba(245,194,107,0.28);border-radius:16px;padding:18px 20px;margin-bottom:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px;border-bottom:1px solid rgba(245,194,107,0.15);padding-bottom:10px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:1.2rem">📊</span>
+              <h4 style="font-size:1.05rem;font-weight:800;color:#fff;margin:0">Live Community Vote Standings &amp; Real-Time Accumulation</h4>
+            </div>
+            <div style="background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.35);color:#4ade80;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;display:flex;align-items:center;gap:5px">
+              <span style="width:7px;height:7px;background:#4ade80;border-radius:50%;display:inline-block;animation:pulse 2s infinite"></span>
+              <span>LIVE CLOUD SYNC ACTIVE</span>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px" id="vote-leaderboard-grid">
+            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-weight:700;color:#fff;font-size:0.88rem">Klatch Coffee</span>
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-klatch-coffee-rancho-cucamonga">0 votes</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
+                <div id="lead-bar-klatch-coffee-rancho-cucamonga" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
+              </div>
+              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-klatch-coffee-rancho-cucamonga">0% of total</div>
+            </div>
+
+            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-weight:700;color:#fff;font-size:0.88rem">Qamaria Yemeni Coffee</span>
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-qamaria-yemeni-coffee-rancho">0 votes</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
+                <div id="lead-bar-qamaria-yemeni-coffee-rancho" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
+              </div>
+              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-qamaria-yemeni-coffee-rancho">0% of total</div>
+            </div>
+
+            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-weight:700;color:#fff;font-size:0.88rem">Mestiza Coffeehouse</span>
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-mestiza-coffeehouse-ontario">0 votes</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
+                <div id="lead-bar-mestiza-coffeehouse-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
+              </div>
+              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-mestiza-coffeehouse-ontario">0% of total</div>
+            </div>
+
+            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-weight:700;color:#fff;font-size:0.88rem">Iron &amp; Kin Coffee</span>
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-iron-and-kin-coffee-claremont">0 votes</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
+                <div id="lead-bar-iron-and-kin-coffee-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
+              </div>
+              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-iron-and-kin-coffee-claremont">0% of total</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="font-size:0.85rem;color:#c2b2a3;font-weight:600" id="vote-total-counter">
             Total Community Votes: <strong style="color:#f5c26b" id="vote-total-num">0</strong>
           </div>
         </div>
@@ -2872,18 +2932,23 @@
         const barFill = document.getElementById('bar-fill-' + id);
         const wrap = document.getElementById('result-wrap-' + id);
 
-        if (countEl) countEl.textContent = count.toLocaleString() + ' votes';
+        const countText = count.toLocaleString() + ' ' + (count === 1 ? 'vote' : 'votes');
+        if (countEl) countEl.textContent = countText;
         if (pctEl) pctEl.textContent = pct + '%';
         if (barFill) {
-          barFill.style.width = '0%';
-          setTimeout(() => {
-            barFill.style.width = pct + '%';
-          }, 50);
+          barFill.style.width = pct + '%';
         }
-        // Once the user votes, the self-counting bars become visible!
         if (wrap) {
-          wrap.style.display = userVotedCandidateId ? 'block' : 'none';
+          wrap.style.display = 'block';
         }
+
+        // Also update the accumulation standings leaderboard
+        const leadCount = document.getElementById('lead-count-' + id);
+        const leadBar = document.getElementById('lead-bar-' + id);
+        const leadPct = document.getElementById('lead-pct-' + id);
+        if (leadCount) leadCount.textContent = countText;
+        if (leadBar) leadBar.style.width = pct + '%';
+        if (leadPct) leadPct.textContent = pct + '% of community total';
       });
     }
 
@@ -2919,37 +2984,62 @@
       }
     }
 
+    async function fetchCloudTallies() {
+      const tallies = {};
+      try {
+        const promises = CANDIDATES.map(async function(cid) {
+          try {
+            const r = await fetch('https://abacus.jasoncameron.dev/get/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(cid), { cache: 'no-store' });
+            if (r.ok) {
+              const d = await r.json();
+              if (d && typeof d.value === 'number') {
+                tallies[cid] = d.value;
+              }
+            }
+          } catch(e) {}
+        });
+        await Promise.all(promises);
+      } catch(e) {}
+      return tallies;
+    }
+
     async function loadVoteStatus() {
       let currentTallies = getLocalTallies();
       
-      // Attempt remote sync if available
+      // Fetch live persistent cloud tallies across all voters
       try {
-        const res = await fetch('/api/vote');
-        if (res.ok) {
-          const data = await res.json();
-          if (data && data.votes) {
-            currentTallies = Object.assign({}, currentTallies, data.votes);
-            saveLocalTallies(currentTallies);
-          }
+        const cloudVotes = await fetchCloudTallies();
+        if (Object.keys(cloudVotes).length > 0) {
+          CANDIDATES.forEach(function(cid) {
+            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
+          });
+          saveLocalTallies(currentTallies);
         }
       } catch(e) {}
 
       const previousVote = getStoredVote();
       if (previousVote) {
         markCardAsVoted(previousVote);
-        renderResultsUI(currentTallies, previousVote, false);
-      } else {
-        // Before voting, keep results pristine and prompt user to cast their vote
-        const totalCount = Object.values(currentTallies).reduce((a, b) => a + b, 0);
-        const totalEl = document.getElementById('vote-total-num');
-        if (totalEl) totalEl.textContent = totalCount.toLocaleString();
-        
-        CANDIDATES.forEach(id => {
-          const wrap = document.getElementById('result-wrap-' + id);
-          if (wrap) wrap.style.display = 'none';
-        });
       }
+      
+      // Always show live tally bars so everyone sees real community counts!
+      renderResultsUI(currentTallies, previousVote, false);
     }
+
+    // Auto-poll live votes every 8 seconds so new votes appear in real time without refreshing
+    setInterval(async function() {
+      try {
+        const cloudVotes = await fetchCloudTallies();
+        if (Object.keys(cloudVotes).length > 0) {
+          const currentTallies = getLocalTallies();
+          CANDIDATES.forEach(function(cid) {
+            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
+          });
+          saveLocalTallies(currentTallies);
+          renderResultsUI(currentTallies, getStoredVote(), false);
+        }
+      } catch(e) {}
+    }, 8000);
 
     
   // ---------- Community Nomination & Share Handlers ----------
@@ -3088,16 +3178,15 @@
         window.toast('🎉 Vote counted! You moved the community counter up +1!');
       }
 
-      // Try server sync asynchronously
+      // Sync to global persistent cloud counter
       try {
+        await fetch('https://abacus.jasoncameron.dev/hit/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(candidateId), { cache: 'no-store' });
         await fetch('/api/vote', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ candidateId, deviceId })
-        });
-      } catch(e) {
-        // Self-counting works offline and on static host seamlessly
-      }
+        }).catch(function(){});
+      } catch(e) {}
     };
 
     // Auto-load on view render

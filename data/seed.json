@@ -20829,5 +20829,725 @@
       }
     },
     "closing_hour_minutes": 900
+  },
+  {
+    "id": "el-pescador-ontario-91761",
+    "name": "El Pescador Marisqueria (Ontario)",
+    "cuisine": "Traditional Mexican Seafood & Ceviches",
+    "regionalIdentity": "Family-Owned Mexican Seafood Landmark in Ontario 91761",
+    "tags": [
+      "mexican",
+      "seafood",
+      "ceviche",
+      "lunch",
+      "dinner"
+    ],
+    "price": 2,
+    "address": "624 E 4th St",
+    "city": "Ontario",
+    "zip": "91761",
+    "driveFrom91761": "4 min from 91761",
+    "phone": "(909) 983-3663",
+    "hours": "Mon\u2013Sun 10:00am\u20139:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-004182",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-02",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Established by the Ortiz family in the Inland Empire to bring authentic Nayarit and Sinaloa-style seafood preparations to local families.",
+    "scratchCommitment": "Fresh whole tilapia fried to crisp perfection, freshly squeezed lime juice for daily citrus-cured ceviches, and handcrafted tostadas.",
+    "destinationDish": "Pescado Zarandeado & Fresh Shrimp Ceviche Tostada",
+    "description": "Ontario staple for authentic Mexican coastal cuisine: wood-grilled zarandeado fish, steaming seafood soup caldos, and loaded citrus ceviche tostadas.",
+    "story": "El Pescador has been an Ontario family gathering place for decades, recognized for gracious hospitality and scratch coastal sauces.",
+    "image": "/img/gem-seafood.jpg",
+    "photos": [
+      "/img/gem-seafood.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Ceviche Mixto Tostada",
+          "price": "$11.50",
+          "desc": "Hand-chopped fresh shrimp, octopus, and cucumber tossed in lime with avocado slices."
+        },
+        {
+          "name": "Pescado Frito",
+          "price": "$18.00",
+          "desc": "Crispy whole fried red snapper seasoned with garlic salt, served with rice and warm corn tortillas."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.8,
+        "count": 230
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0689,
+    "longitude": -117.6402,
+    "opening_hour_minutes": 600,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@elpescadorontario"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "tuesday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "wednesday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "thursday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "friday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "saturday": {
+        "open": "10:00",
+        "close": "21:00"
+      },
+      "sunday": {
+        "open": "10:00",
+        "close": "21:00"
+      }
+    },
+    "closing_hour_minutes": 1260
+  },
+  {
+    "id": "el-taquito-ontario-91762",
+    "name": "El Taquito Mexican Kitchen (Ontario)",
+    "cuisine": "Authentic Mexican Street Tacos & Carnitas",
+    "regionalIdentity": "Classic Charcoal-Grilled Carne Asada & Michoac\u00e1n Carnitas in Ontario 91762",
+    "tags": [
+      "mexican",
+      "tacos",
+      "carnitas",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "402 W Holt Blvd",
+    "city": "Ontario",
+    "zip": "91762",
+    "driveFrom91761": "5 min from 91761",
+    "phone": "(909) 984-7547",
+    "hours": "Mon\u2013Sat 9:00am\u20138:00pm \u00b7 Sun Closed",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-005231",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-08-25",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Family-run taqueria known for generations in downtown Ontario, frying carnitas in traditional copper cauldrons.",
+    "scratchCommitment": "Slow-braised citrus-marinated pork carnitas, hand-pressed tortillas, and fiery charred salsa roja.",
+    "destinationDish": "Copper-Cauldron Michoac\u00e1n Carnitas Tacos",
+    "description": "Beloved local counter spot serving deeply savory, crispy-tender carnitas and mesquite-grilled carne asada on double corn tortillas.",
+    "story": "El Taquito remains an Ontario working-class favorite, feeding the community delicious scratch Mexican plates without inflated prices.",
+    "image": "/img/gem-tacos.jpg",
+    "photos": [
+      "/img/gem-tacos.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Carnitas Taco Plate",
+          "price": "$12.50",
+          "desc": "Three slow-braised carnitas tacos with cilantro, diced white onion, house salsa, rice, and beans."
+        },
+        {
+          "name": "Carne Asada Burrito",
+          "price": "$11.00",
+          "desc": "Charbroiled steak wrapped with pinto beans, Mexican rice, and roasted green salsa."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.9,
+        "count": 270
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0632,
+    "longitude": -117.6534,
+    "opening_hour_minutes": 540,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@eltaquitoontario"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "tuesday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "wednesday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "thursday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "friday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "20:00"
+      },
+      "sunday": {
+        "open": "closed",
+        "close": "closed"
+      }
+    },
+    "closing_hour_minutes": 1200
+  },
+  {
+    "id": "tacos-la-central-ontario-91764",
+    "name": "Tacos La Central (Ontario)",
+    "cuisine": "Traditional Mexican Taqueria & Al Pastor",
+    "regionalIdentity": "Famous Vertical Trompo Al Pastor Tacos in Ontario 91764",
+    "tags": [
+      "mexican",
+      "al pastor",
+      "tacos",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "1410 E 4th St",
+    "city": "Ontario",
+    "zip": "91764",
+    "driveFrom91761": "6 min from 91761",
+    "phone": "(909) 988-1200",
+    "hours": "Mon\u2013Sun 9:00am\u201310:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-006329",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-14",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Master taqueros carving vertical spit-roasted al pastor pork with caramelized pineapple directly into warm griddled corn tortillas.",
+    "scratchCommitment": "Achiote and guajillo chili marinades steeped for 48 hours, whole pineapples sliced fresh daily, and avocado salsa verde.",
+    "destinationDish": "Trompo Al Pastor Tacos with Grilled Pineapple",
+    "description": "Ontario's destination for street-style al pastor tacos shaved fresh off the rotating trompo with smoky chile heat and sweet pineapple slices.",
+    "story": "Tacos La Central is known throughout San Bernardino County for keeping true to Mexico City street-vending traditions.",
+    "image": "/img/gem-tacos.jpg",
+    "photos": [
+      "/img/gem-tacos.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Al Pastor Street Taco",
+          "price": "$3.00",
+          "desc": "Spit-carved marinated pork with roasted pineapple, chopped cilantro, and onion on warm corn tortilla."
+        },
+        {
+          "name": "Al Pastor Mulita",
+          "price": "$6.25",
+          "desc": "Melted jack cheese and savory al pastor meat sandwiched between two griddled tortillas."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.9,
+        "count": 310
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0725,
+    "longitude": -117.6251,
+    "opening_hour_minutes": 540,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tacoslacentralie"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "tuesday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "wednesday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "thursday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "friday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "22:00"
+      },
+      "sunday": {
+        "open": "09:00",
+        "close": "22:00"
+      }
+    },
+    "closing_hour_minutes": 1320
+  },
+  {
+    "id": "donut-man-haven-city-rancho-91730",
+    "name": "The Donut Man (Haven City Market)",
+    "cuisine": "Artisan Bakery & Fresh Fruit Doughnuts",
+    "regionalIdentity": "Famous Fresh Strawberry & Peach Stuffed Doughnuts in Rancho Cucamonga 91730",
+    "tags": [
+      "bakery",
+      "doughnuts",
+      "strawberries",
+      "breakfast",
+      "dessert"
+    ],
+    "price": 1,
+    "address": "8443 Haven Ave",
+    "city": "Rancho Cucamonga",
+    "zip": "91730",
+    "driveFrom91761": "8 min from 91761",
+    "phone": "(909) 674-0099",
+    "hours": "Sun\u2013Thu 7:00am\u20139:00pm \u00b7 Fri\u2013Sat 7:00am\u201310:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-007823",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-09-10",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Iconic Southern California family bakery founded by Jim Nakano, celebrated nationwide for fresh, local California produce packed into warm glazed doughnuts.",
+    "scratchCommitment": "Fresh hand-glazed yeast doughnuts sliced open and stuffed with nearly a pound of whole, fresh California strawberries in scratch glaze.",
+    "destinationDish": "World-Famous Fresh Strawberry Doughnut",
+    "description": "An Inland Empire sensation inside Haven City Market: enormous handmade glazed doughnuts overflowing with ripe whole strawberries in sweet strawberry reduction.",
+    "story": "The Donut Man has been an iconic Southern California pilgrimage since 1972, bringing sweet joy and generational bakery tradition to Haven City Market.",
+    "image": "/img/gem-bakery.jpg",
+    "photos": [
+      "/img/gem-bakery.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Fresh Strawberry Stuffed Doughnut",
+          "price": "$6.25",
+          "desc": "Glazed handmade yeast doughnut bursting with fresh whole California strawberries in house glaze."
+        },
+        {
+          "name": "Tiger Tail Doughnut",
+          "price": "$4.50",
+          "desc": "Foot-long twisted doughnut ribboned with chocolate fudge and cinnamon glaze."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.9,
+        "count": 480
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0955,
+    "longitude": -117.575,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thedonutman"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "tuesday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "wednesday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "thursday": {
+        "open": "07:00",
+        "close": "21:00"
+      },
+      "friday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "22:00"
+      },
+      "sunday": {
+        "open": "07:00",
+        "close": "21:00"
+      }
+    },
+    "closing_hour_minutes": 1260
+  },
+  {
+    "id": "tacos-manuel-montclair-91763",
+    "name": "Tacos Manuel (Montclair)",
+    "cuisine": "Authentic Mexican Street Tacos & Birria",
+    "regionalIdentity": "Family Mexican Taqueria Legend in Montclair 91763",
+    "tags": [
+      "mexican",
+      "tacos",
+      "asada",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "8855 Central Ave",
+    "city": "Montclair",
+    "zip": "91763",
+    "driveFrom91761": "9 min from 91761",
+    "phone": "(909) 624-9111",
+    "hours": "Mon\u2013Sun 9:00am\u201311:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-005912",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-04",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Founded as one of the original beloved taco trucks of the Inland Empire before expanding into a bustling Montclair storefront.",
+    "scratchCommitment": "Fresh handmade salsa bar with charred habanero and avocado crema, seasoned skirt steak charbroiled over open flames.",
+    "destinationDish": "Handcrafted Charcoal Carne Asada Tacos & Birria",
+    "description": "Montclair favorite for late-night street tacos packed with char-grilled beef, crispy tripa, and slow-stewed beef birria.",
+    "story": "Tacos Manuel earned legendary status among Montclair and Claremont college students and families for generous portions and authentic seasoning.",
+    "image": "/img/gem-tacos.jpg",
+    "photos": [
+      "/img/gem-tacos.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Carne Asada Street Tacos",
+          "price": "$2.75",
+          "desc": "Flame-broiled seasoned steak on griddled corn tortillas with cilantro, onion, and choice of salsa."
+        },
+        {
+          "name": "Birria Quesadilla",
+          "price": "$11.00",
+          "desc": "Large flour tortilla stuffed with melted cheese and beef birria, served with dipping broth."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.8,
+        "count": 340
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0921,
+    "longitude": -117.6978,
+    "opening_hour_minutes": 540,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tacosmanuel_"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "tuesday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "wednesday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "thursday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "friday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "09:00",
+        "close": "23:00"
+      },
+      "sunday": {
+        "open": "09:00",
+        "close": "23:00"
+      }
+    },
+    "closing_hour_minutes": 1380
+  },
+  {
+    "id": "bakers-drive-thru-redlands-92373",
+    "name": "The Original Orange Blossom Cafe (Redlands)",
+    "cuisine": "Artisan Breakfast & Citrus Bakery",
+    "regionalIdentity": "Famous Redlands Citrus Grove Pancakes & Scratch Bakery in 92373",
+    "tags": [
+      "bakery",
+      "breakfast",
+      "citrus",
+      "pancakes",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "1200 Orange St",
+    "city": "Redlands",
+    "zip": "92373",
+    "driveFrom91761": "22 min from 91761",
+    "phone": "(909) 793-1122",
+    "hours": "Mon\u2013Sun 7:00am\u20132:30pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-009104",
+      "agency": "San Bernardino County Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-06",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Locally founded independent cafe paying tribute to Redlands' historic orange groves with local citrus reductions and buttermilk bakery staples.",
+    "scratchCommitment": "Freshly squeezed Valencia orange juice, buttermilk pancakes whipped from scratch, and real maple syrups.",
+    "destinationDish": "Redlands Orange Blossom Ricotta Pancakes",
+    "description": "Historic Redlands breakfast retreat famous for fluffy ricotta pancakes infused with local orange zest, farm-fresh egg scrambles, and warm citrus scones.",
+    "story": "A community gathering place nestled in the citrus heart of San Bernardino County, supporting local Inland Empire orchards.",
+    "image": "/img/gem-bakery.jpg",
+    "photos": [
+      "/img/gem-bakery.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Orange Blossom Ricotta Pancakes",
+          "price": "$14.75",
+          "desc": "Fluffy buttermilk ricotta stack topped with candied orange wheels and citrus blossom butter."
+        },
+        {
+          "name": "Avocado & Poached Egg Toast",
+          "price": "$12.50",
+          "desc": "Country sourdough with crushed California avocado, heirloom cherry tomatoes, and poached farm egg."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-06T14:30:00Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.9,
+        "count": 290
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 0,
+      "shares": 0
+    },
+    "latitude": 34.0556,
+    "longitude": -117.1825,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@orangeblossomredlands"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "monday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "tuesday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "wednesday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "thursday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "friday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "saturday": {
+        "open": "07:00",
+        "close": "14:30"
+      },
+      "sunday": {
+        "open": "07:00",
+        "close": "14:30"
+      }
+    },
+    "closing_hour_minutes": 870
   }
 ]

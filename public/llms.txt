@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants Directory
-> Discover 120+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 70 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+> Discover 150+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 71 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
 
 ## Key Features
 - Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.

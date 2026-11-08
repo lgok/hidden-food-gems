@@ -101,6 +101,9 @@
     return '';
   };
   const badge = (r) => {
+    // If added recently (November 2026 expansion batch), badge as Freshly Added
+    const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08')));
+    if (isRecentlyAdded) return { cls: 'new', txt: '✨ Freshly Added' };
     const a = avg(r), n = (r.ratings && r.ratings.length);
     if (!n) return { cls: 'new', txt: '🌱 Be the first to rate' };
     if (a >= 4.5 && n < GEM_MAX_RATINGS) return { cls: 'gem', txt: '💎 Hidden Gem' };
@@ -1146,9 +1149,14 @@
           if (bNameMatch !== aNameMatch) return bNameMatch - aNameMatch;
         }
         if (sortByProximityFirst) {
-          return getDistanceMiles(a) - getDistanceMiles(b) || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
+          const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
+          const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
+          return getDistanceMiles(a) - getDistanceMiles(b) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
         }
-        return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
+        // Default home view: Feature newly added restaurants across all ZIP codes right at the top
+        const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
+        const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
+        return bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
       },
       health: (a, b) => (b.healthPermit?.score || 0) - (a.healthPermit?.score || 0) || getDistanceMiles(a) - getDistanceMiles(b),
       top: (a, b) => avg(b) - avg(a) || getDistanceMiles(a) - getDistanceMiles(b),
@@ -2103,9 +2111,11 @@
             ${mediaHtml(r, false, i < 6)}
             ${b ? `<span class="badge ${b.cls}">${b.txt}</span>` : ''}
             <div class="media-flags">
-              <span>${r.featured
-                ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
+              <span>${(r.createdAt && r.createdAt >= '2026-11-05')
+                ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                : r.featured
+                  ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                  : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
             </div>
           </div>
           <div class="card-body">

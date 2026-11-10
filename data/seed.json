@@ -25647,5 +25647,661 @@
         "rangeStr": "11:00 AM – 9:00 PM"
       }
     }
+  },
+  {
+    "id": "tacos-los-cholos-chino-hills-91709",
+    "name": "Tacos Los Cholos (Chino Hills)",
+    "cuisine": "Prime Mesquite-Fired Craft Mexican Taqueria",
+    "regionalIdentity": "Artisan Mesquite-Grilled Steaks & Handmade Tacos (Chino Hills Pkwy)",
+    "tags": [
+      "mexican",
+      "tacos",
+      "carne-asada",
+      "ribeye",
+      "lunch",
+      "dinner"
+    ],
+    "price": 2,
+    "address": "4200 Chino Hills Pkwy",
+    "city": "Chino Hills",
+    "zip": "91709",
+    "driveFrom91761": "14 min from 91761",
+    "phone": "(909) 393-8226",
+    "hours": "Daily 10:30am–10:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEH-91709-TLC",
+      "agency": "San Bernardino County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-12",
+      "portalUrl": "https://dph.sbcounty.gov"
+    },
+    "familyRoots": "Independent craft taqueria founded with a mission to bring authentic Mexican live-mesquite charcoal grilling and butcher-shop grade Prime meats to the Inland Empire.",
+    "scratchCommitment": "100% real mesquite lump charcoal firing, Certified Prime ribeye and skirt steak carved to order, fresh guacamole mashed every hour, and comal-pressed corn tortillas.",
+    "destinationDish": {
+      "name": "Prime Ribeye & Arrachera Mesquite Charcoal Tacos",
+      "callout": "Flame-kissed Prime ribeye steak chopped over hot mesquite embers onto handmade comal corn tortillas with melted Chihuahua cheese and scratch salsa roja."
+    },
+    "description": "Chino Hills' destination for world-class mesquite-fired tacos, Prime cuts of beef, crispy costras, and vibrant fresh salsas in an alcohol-free, family-first taqueria.",
+    "story": "Tacos Los Cholos elevated traditional street taco craftsmanship by cooking exclusively with wood coals, delivering deep smokiness and unparalleled beef quality.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Prime Ribeye & Arrachera Mesquite Charcoal Tacos"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Prime Ribeye Mesquite Taco",
+          "price": "$5.95",
+          "desc": "Certified Prime grade ribeye steak seared over red-hot mesquite lump charcoal, served on handmade corn tortilla with guacamole and cilantro."
+        },
+        {
+          "name": "Prime Costra de Asada",
+          "price": "$6.75",
+          "desc": "Griddled crispy Chihuahua cheese crust wrapped around tender mesquite carne asada with avocado salsa."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Arrachera (Skirt Steak) Burrito Especial",
+          "price": "$13.95",
+          "desc": "Flame-broiled skirt steak, pinto beans, Mexican rice, melted cheese, and guacamole in a warm flour tortilla."
+        },
+        {
+          "name": "Smoked Pork Adobada Mulita",
+          "price": "$5.25",
+          "desc": "Two handmade corn tortillas filled with citrus-marinated pork, melted jack cheese, and roasted salsa."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Fresh Horchata de Arroz (Large 32oz)",
+          "price": "$3.75",
+          "desc": "Scratch-steeped sweet rice, cinnamon bark, and vanilla milk poured over pebble ice."
+        },
+        {
+          "name": "Grilled Cebollitas & Chiles Toreados",
+          "price": "$3.50",
+          "desc": "Mesquite-charred Mexican green knob onions and seasoned blistered jalapenos."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-10T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Rodrigo M.",
+        "comment": "Best carne asada in Southern California. The Prime ribeye over real wood coals is unbeatable!",
+        "date": "2026-10-24T18:30:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Jessica L.",
+        "comment": "Super clean, amazing quality beef, zero alcohol, totally welcoming to families.",
+        "date": "2026-11-04T12:15:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9842,
+    "longitude": -117.7285,
+    "opening_hour_minutes": 630,
+    "closing_hour_minutes": 1320,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1320,
+        "rangeStr": "10:30 AM – 10:00 PM"
+      }
+    }
+  },
+  {
+    "id": "punjab-curry-house-chino-hills-91709",
+    "name": "Punjab Palace & Curry Grill",
+    "cuisine": "Northern Indian & Clay Oven Tandoor",
+    "regionalIdentity": "Traditional Clay Tandoor & Scratch Curry Kitchen (Crossroads Chino Hills)",
+    "tags": [
+      "indian",
+      "curry",
+      "tandoori",
+      "lunch",
+      "dinner",
+      "vegetarian"
+    ],
+    "price": 2,
+    "address": "14680 Pipeline Ave",
+    "city": "Chino Hills",
+    "zip": "91709",
+    "driveFrom91761": "15 min from 91761",
+    "phone": "(909) 597-8889",
+    "hours": "Tue–Sun 11:30am–9:00pm (Closed Mon)",
+    "healthPermit": {
+      "facilityId": "SB-DEH-91709-PPC",
+      "agency": "San Bernardino County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-28",
+      "portalUrl": "https://dph.sbcounty.gov"
+    },
+    "familyRoots": "A family-run Northern Indian kitchen dedicated to scratch-roasted garam masala, traditional clay-oven baking, and Punjabi home hospitality.",
+    "scratchCommitment": "24-hour slow-cooked Dal Makhani, hand-skewered tandoori chicken marinated in yogurt and fresh ginger, and pillowy naan baked to order.",
+    "destinationDish": {
+      "name": "Tandoori Garlic Butter Naan & Royal Butter Chicken",
+      "callout": "Clay-oven charred boneless chicken simmered in rich creamy tomato fenugreek gravy, served with piping-hot garlic cilantro naan."
+    },
+    "description": "Chino Hills' beloved independent Indian kitchen celebrated for aromatic curries, clay-oven tandoori grills, and delicious plant-based entrees.",
+    "story": "Punjab Palace brings the authentic warmth of Punjab home cooking to Chino Hills families, emphasizing pure ingredients and balanced spices.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Tandoori Garlic Butter Naan & Royal Butter Chicken"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Traditional Punjabi Butter Chicken",
+          "price": "$15.95",
+          "desc": "Tandoori roasted chicken morsels simmered in a velvety sauce of pureed tomatoes, butter, cream, and gentle Indian spices."
+        },
+        {
+          "name": "Lamb Rogan Josh (Kashmiri Style)",
+          "price": "$17.50",
+          "desc": "Tender lamb cubes braised in aromatic gravy with cardamom, cloves, and ginger."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Paneer Tikka Tandoori Platter",
+          "price": "$14.95",
+          "desc": "House-pressed farmer's cheese cubes skewered with bell peppers and onions, roasted in the clay tandoor."
+        },
+        {
+          "name": "Slow-Simmered Dal Makhani",
+          "price": "$12.95",
+          "desc": "Whole black lentils and red kidney beans simmered overnight with butter and cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Fresh Garlic Butter Naan",
+          "price": "$3.95",
+          "desc": "Leavened bread baked on the clay oven wall, brushed with garlic and clarified butter."
+        },
+        {
+          "name": "Chilled Sweet Mango Lassi",
+          "price": "$4.50",
+          "desc": "Real Alphonso mango pulp whisked with homemade yogurt."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-10T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Amit K.",
+        "comment": "Best butter chicken and garlic naan in the Chino Valley! 100% authentic family flavor.",
+        "date": "2026-10-18T19:00:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Sarah P.",
+        "comment": "So welcoming, immaculate kitchen, zero alcohol, and huge portions.",
+        "date": "2026-10-30T18:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9912,
+    "longitude": -117.7215,
+    "opening_hour_minutes": 690,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      }
+    }
+  },
+  {
+    "id": "tios-tacos-riverside-92501",
+    "name": "Tio's Tacos (Historic Riverside)",
+    "cuisine": "Traditional Mexican Taqueria & Folk Art Oasis",
+    "regionalIdentity": "Historic Mexican Folk Art Landmark & Taqueria (Downtown Riverside)",
+    "tags": [
+      "mexican",
+      "tacos",
+      "carnitas",
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "price": 1,
+    "address": "3948 Mission Inn Ave",
+    "city": "Riverside",
+    "zip": "92501",
+    "driveFrom91761": "22 min from 91761",
+    "phone": "(951) 788-0230",
+    "hours": "Daily 7:00am–9:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-TTD",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-10-04",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded in 1990 by Martin Sanchez and his family, turning authentic Michoacán recipes and recycled visionary sculptures into one of California's most famous culinary landmarks.",
+    "scratchCommitment": "Slow-simmered Michoacán pork carnitas in copper kettles, scratch-pressed sopes, freshly made fruit aguas frescas, and tender carne asada.",
+    "destinationDish": {
+      "name": "Copper-Kettle Michoacán Carnitas Platter & Fresh Aguas Frescas",
+      "callout": "Crispy yet succulent slow-braised pork served with frijoles de la olla, Mexican rice, avocado, and warm comal corn tortillas."
+    },
+    "description": "Riverside's legendary family folk art institution serving authentic Michoacán street tacos, handmade sopes, fresh fruit aguas frescas, and hearty breakfast burritos.",
+    "story": "Tio's Tacos is pure Southern California magic on Mission Inn Avenue, combining authentic homestyle cooking with an awe-inspiring outdoor sculpture garden.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Copper-Kettle Michoacán Carnitas Platter & Fresh Aguas Frescas"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Traditional Michoacán Carnitas Plate",
+          "price": "$13.95",
+          "desc": "Crispy golden slow-cooked pork carnitas served with rice, refried beans, pico de gallo, and warm corn tortillas."
+        },
+        {
+          "name": "Handcrafted Carne Asada Tacos (Plate of 3)",
+          "price": "$10.50",
+          "desc": "Charbroiled skirt steak on double corn tortillas with chopped onions, cilantro, and roasted green salsa."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Handmade Sopes con Asada (2 pcs)",
+          "price": "$9.50",
+          "desc": "Thick fried corn masa cakes topped with refried beans, carne asada, shredded lettuce, cotija cheese, and crema."
+        },
+        {
+          "name": "Chorizo con Huevos Breakfast Plate",
+          "price": "$11.25",
+          "desc": "Scrambled eggs with spiced Mexican pork chorizo, served with warm tortillas and country potatoes."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Fresh Sandia (Watermelon) Agua Fresca (Large)",
+          "price": "$3.75",
+          "desc": "100% real watermelon blended with pure cane sugar and served ice cold."
+        },
+        {
+          "name": "Side of Scratch Guacamole & Chips",
+          "price": "$5.00",
+          "desc": "Crushed Hass avocados with lime juice, tomato, onion, and sea salt."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-10T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Carlos G.",
+        "comment": "A true California treasure. The carnitas are incredible, and the folk art garden is unforgettable for the family.",
+        "date": "2026-10-19T13:00:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Lydia R.",
+        "comment": "Best Mexican food near the Mission Inn. Super clean, zero alcohol, pure family warmth.",
+        "date": "2026-10-31T12:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9805,
+    "longitude": -117.3752,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1260,
+        "rangeStr": "7:00 AM – 9:00 PM"
+      }
+    }
+  },
+  {
+    "id": "molinos-coffee-riverside-92501",
+    "name": "Molinos Coffee (Downtown Riverside)",
+    "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
+    "regionalIdentity": "Family-Owned Single-Origin Latin Coffeehouse (Main St Riverside)",
+    "tags": [
+      "coffee",
+      "bakery",
+      "breakfast",
+      "latte"
+    ],
+    "price": 1,
+    "address": "3660 Main St",
+    "city": "Riverside",
+    "zip": "92501",
+    "driveFrom91761": "21 min from 91761",
+    "phone": "(951) 276-7711",
+    "hours": "Daily 6:30am–7:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-MLC",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Independent Downtown Riverside family roastery celebrating Latin American single-origin coffees, handcrafted Mazapán and Dulce de Leche lattes, and fresh pastries.",
+    "scratchCommitment": "In-house roasted Arabica beans sourced directly from Latin American farms, scratch Mexican piloncillo-cinnamon syrups, and baked Mexican sweet breads.",
+    "destinationDish": {
+      "name": "Signature Iced Mazapán Latte & Guava Cheese Pastelito",
+      "callout": "Double shot of rich espresso blended with sweet crushed peanut mazapán and creamy oat milk, paired with flaky guava pastry."
+    },
+    "description": "Downtown Riverside's premier independent specialty coffeehouse on the historic Main Street pedestrian mall, celebrated for creative Latin lattes, cold brew, and pastries.",
+    "story": "Molinos Coffee is the living room of downtown Riverside, where community members, students, and families gather over expertly roasted coffees made with pride.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Signature Iced Mazapán Latte & Guava Cheese Pastelito"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Famous Iced Mazapán Latte",
+          "price": "$5.50",
+          "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
+        },
+        {
+          "name": "Café de Olla Latte",
+          "price": "$5.25",
+          "desc": "Espresso infused with raw piloncillo cane sugar, Mexican cinnamon, and cloves with steamed milk."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Slow-Steeped Latin Cold Brew",
+          "price": "$4.50",
+          "desc": "24-hour steeped single-origin Colombian beans, low acidity and notes of dark chocolate."
+        },
+        {
+          "name": "Flaky Guava & Cream Cheese Pastelito",
+          "price": "$4.25",
+          "desc": "Buttery puff pastry filled with tropical guava reduction and sweet cream cheese."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Mexican Hot Chocolate (Abuelita style)",
+          "price": "$4.50",
+          "desc": "Steamed whole milk with spiced Mexican cinnamon chocolate."
+        },
+        {
+          "name": "Artisan Sourdough Toast with Avocado",
+          "price": "$7.50",
+          "desc": "Toasted local sourdough with crushed avocado, olive oil, and everything seasoning."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-10T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Elena V.",
+        "comment": "Best coffee in Riverside! The Mazapán latte is out of this world and the staff is so kind.",
+        "date": "2026-10-22T08:15:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Daniel M.",
+        "comment": "A Downtown Riverside gem. Love sitting outside on Main Street with a fresh pastry.",
+        "date": "2026-11-03T09:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9818,
+    "longitude": -117.3735,
+    "opening_hour_minutes": 390,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      }
+    }
   }
 ]

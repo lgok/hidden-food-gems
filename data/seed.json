@@ -81,7 +81,7 @@
     "media": [],
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T18:35:01.694Z",
+    "createdAt": "2026-11-11T19:13:20.064Z",
     "ratings": [
       {
         "stars": 5,
@@ -160,11 +160,526 @@
         "rangeStr": "6:30 AM – 7:00 PM"
       }
     },
-    "spotlightRank": 1,
     "isDailyFreshGem": true,
     "socialMedia": {
       "instagram": "@molinoscoffee"
-    }
+    },
+    "spotlightRank": 1
+  },
+  {
+    "id": "monday-to-sunday-dessert-cafe-rancho",
+    "name": "Monday to Sunday Dessert Cafe (Haven City Market)",
+    "cuisine": "Artisan Matcha Einspänner, Croissants & Specialty Cakes",
+    "regionalIdentity": "Haven City Market Entrance Bakery, Matcha & Dessert Bar",
+    "tags": [
+      "coffee",
+      "matcha",
+      "bakery",
+      "dessert",
+      "latte"
+    ],
+    "price": 1,
+    "address": "8443 Haven Ave, Unit 121-A",
+    "city": "Rancho Cucamonga",
+    "zip": "91730",
+    "driveFrom91761": "12 min from 91761",
+    "phone": "(909) 483-5349",
+    "hours": "Daily 10:30am–9:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91730-MTS",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-20",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "Located right at the entrance of Haven City Market, crafting Korean-European inspired cream-top Einspänner lattes, flaky pistachio croissants, and layered cake slices.",
+    "scratchCommitment": "Freshly whipped sweet cream foams, ceremonial matcha, flaky laminated croissants, scones, and house-layered tiramisu and Biscoff cakes.",
+    "destinationDish": {
+      "name": "Matcha Einspänner, Strawberry Matcha Latte & Pistachio Croissant",
+      "callout": "Chilled ceremonial matcha crowned with a thick cloud of house-whipped Vienna cream, paired with a flaky pistachio cream-filled croissant."
+    },
+    "description": "Haven City Market’s premier dessert and coffee bar in Rancho Cucamonga, famous for its Matcha Einspänner, Strawberry Matcha Latte, pistachio croissants, and Biscoff/Oreo Strawberry cake slices.",
+    "story": "Whether starting your morning with a warm scone or finishing dinner at Haven City Market with Tiramisu and a Matcha Einspänner, Monday to Sunday makes every day feel like a weekend treat.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Matcha Einspänner & Pistachio Croissant"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Matcha Einspänner",
+          "price": "$6.50",
+          "desc": "Vibrant ceremonial matcha layered over milk and topped with rich, house-whipped sweet Vienna cream."
+        },
+        {
+          "name": "Strawberry Matcha Latte",
+          "price": "$6.50",
+          "desc": "Real strawberry purée, chilled milk, and hand-whisked ceremonial matcha."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Pistachio Cream Croissant",
+          "price": "$6.25",
+          "desc": "Golden flaky laminated pastry filled and topped with roasted pistachio cream and crushed pistachios."
+        },
+        {
+          "name": "Oreo Strawberry & Biscoff Cake Slices",
+          "price": "$7.50",
+          "desc": "Tall, airy sponge cake layered with fresh strawberries, cookie crumble, and light whipped cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Classic Espresso Einspänner",
+          "price": "$6.25",
+          "desc": "Bold iced Americano or latte topped with velvety sweet cream foam."
+        },
+        {
+          "name": "House Tiramisu Slice",
+          "price": "$7.50",
+          "desc": "Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Hannah K.",
+        "comment": "The Matcha Einspänner and pistachio croissant right at the front of Haven City Market are incredible!",
+        "date": "2026-10-29T14:20:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Jason L.",
+        "comment": "Best dessert and matcha stop in Rancho Cucamonga. The Oreo Strawberry and Tiramisu slices are a must.",
+        "date": "2026-11-05T19:10:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1018,
+    "longitude": -117.5932,
+    "opening_hour_minutes": 630,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@mondaytosundaycafe"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T19:13:10.067Z",
+    "isDailyFreshGem": true,
+    "spotlightRank": 2
+  },
+  {
+    "id": "stray-dogs-coffee-riverside",
+    "name": "Stray Dogs Coffee (Downtown Riverside)",
+    "cuisine": "Specialty Craft Coffee, Ceremonial Matcha & Cold Foams",
+    "regionalIdentity": "Husband-and-Wife Specialty Coffee & Matcha Bar Supporting Animal Rescue",
+    "tags": [
+      "coffee",
+      "matcha",
+      "latte",
+      "bakery",
+      "breakfast",
+      "dog-friendly"
+    ],
+    "price": 1,
+    "address": "3225 Market St, Ste 101",
+    "city": "Riverside",
+    "zip": "92501",
+    "driveFrom91761": "20 min from 91761",
+    "phone": "(951) 556-0600",
+    "hours": "Mon 7:00am–5:00pm · Tue–Fri 7:00am–8:00pm · Sat 9:00am–6:00pm (Closed Sun)",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-SDC",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-12",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded by husband-and-wife duo Tyler and Jess in Downtown Riverside, pairing inventive specialty lattes and ceremonial matcha with a mission that donates a portion of profits to local animal rescue and foster organizations.",
+    "scratchCommitment": "100% house-made syrups (Earl Grey honey, Madagascar vanilla, brown sugar cinnamon, Korean sweet potato), scratch banana pudding, and culinary cold foams.",
+    "destinationDish": {
+      "name": "Banana Pudding Matcha & The Greyhound Earl Grey Honey Latte",
+      "callout": "Ceremonial single-origin matcha topped with a real scoop of scratch banana pudding and Nilla wafers, alongside espresso with Earl Grey honey syrup and Madagascar vanilla cold foam."
+    },
+    "description": "A beloved dog-friendly Downtown Riverside coffee and matcha bar by Tyler and Jess, famous for scratch syrups, inventive cold foams, Banana Pudding Matcha, and free pup cups.",
+    "story": "Tyler and Jess left the corporate marketing world to build a warm neighborhood coffee shop on Market Street where every cup supports local dog rescue and foster groups.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Banana Pudding Matcha & The Greyhound Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Banana Pudding Matcha",
+          "price": "$6.75",
+          "desc": "Lightly sweetened ceremonial single-origin matcha topped with a scoop of scratch banana pudding and Nilla wafer crumble."
+        },
+        {
+          "name": "The Greyhound Latte",
+          "price": "$6.25",
+          "desc": "Double espresso with house-made Earl Grey honey syrup and Madagascar vanilla cold foam."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Brown Sugar Dango Latte",
+          "price": "$6.50",
+          "desc": "Dark brown sugar espresso latte topped with toasted kinako cold foam."
+        },
+        {
+          "name": "Melona Matcha",
+          "price": "$6.50",
+          "desc": "Single-origin ceremonial matcha with Korean melon syrup and salted caramel cold foam."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kyoto Slow-Drip Cold Brew",
+          "price": "$5.25",
+          "desc": "Small-batch slow-steeped cold brew coffee."
+        },
+        {
+          "name": "Double Matcha Latte",
+          "price": "$6.50",
+          "desc": "Ceremonial matcha latte crowned with rich matcha cold foam."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Chloe R.",
+        "comment": "The Banana Pudding Matcha and The Greyhound latte are unreal! Plus they gave my pup so much love.",
+        "date": "2026-10-28T10:15:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Marcus T.",
+        "comment": "Best specialty coffee and cold foam in Riverside. You can taste that all the syrups are made in-house.",
+        "date": "2026-11-04T09:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9849,
+    "longitude": -117.3712,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@straydogscoffee"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T19:13:00.067Z",
+    "isDailyFreshGem": true,
+    "spotlightRank": 3
+  },
+  {
+    "id": "klatch-coffee-rancho-cucamonga",
+    "name": "Klatch Coffee (Rancho Cucamonga)",
+    "cuisine": "Specialty Craft Coffee & Espresso",
+    "regionalIdentity": "World Barista Champion In-House Micro-Roaster",
+    "tags": [
+      "coffee",
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "price": 2,
+    "address": "951 N Haven Ave",
+    "city": "Rancho Cucamonga",
+    "zip": "91730",
+    "driveFrom91761": "10 min from 91761",
+    "phone": "(909) 944-5282",
+    "hours": "Daily 6:00am–6:00pm",
+    "healthPermit": {
+      "facilityId": "FA0006812",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-02-10",
+      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
+    },
+    "familyRoots": "Family-founded Southern California roastery renowned globally for direct-trade bean sourcing and World Barista Championship titles.",
+    "scratchCommitment": "Direct-trade beans roasted in small batches on vintage Diedrich roasters; house-made vanilla bean syrup and scratch pastries baked daily.",
+    "destinationDish": {
+      "name": "Award-Winning WBC Espresso & Brulee Vanilla Latte",
+      "callout": "Golden Bean champion espresso pulls paired with caramelized raw-sugar vanilla bean foam."
+    },
+    "description": "Bright, airy Haven corridor flagship featuring spacious sunny patio seating, indoor lounge tables, and world-class pour-overs with over 1,200 5-star reviews.",
+    "story": "Klatch has elevated Inland Empire specialty coffee for three decades, bringing farm-direct relationship coffees into a warm, neighborhood setting.",
+    "image": "/img/batch1/calle-3.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/calle-3.jpg",
+        "label": "Artisan WBC Espresso & Pour-Over Bar"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Brulee Vanilla Bean Latte",
+          "price": "$6.25",
+          "desc": "Double shot of espresso, steamed whole milk, house vanilla bean syrup with torched raw sugar crust."
+        },
+        {
+          "name": "WBC Championship Pour-Over",
+          "price": "$6.75",
+          "desc": "Single-origin micro-lot pour-over brewed by precision V60 barista method."
+        },
+        {
+          "name": "Cold Brew Float",
+          "price": "$6.50",
+          "desc": "18-hour cold brew over artisanal vanilla bean gelato."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Avocado Sourdough Toast",
+          "price": "$9.50",
+          "desc": "Crushed Hass avocado, microgreens, Aleppo pepper flake, and lemon on rustic artisan sourdough."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Coffee Travelers Box (Serves 10-12)",
+          "price": "$32.00",
+          "desc": "Freshly brewed WBC blend with cups, lids, cream, and organic raw sugars."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Almond Croissant",
+          "price": "$4.95",
+          "desc": "Double-baked flaky butter pastry filled with rich almond frangipane."
+        }
+      ]
+    },
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:12:50.067Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Derek T.",
+        "comment": "Best espresso in the entire Inland Empire. The patio is gorgeous and peaceful.",
+        "date": "2026-10-15T09:30:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Sabrina L.",
+        "comment": "Over 1,000 reviews and every cup is consistently perfection.",
+        "date": "2026-10-08T10:15:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "October 2026",
+    "socialMedia": {
+      "instagram": "@klatchcoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "latitude": 34.0954,
+    "longitude": -117.5752,
+    "opening_hour_minutes": 360,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "kitchenStatus": "open",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1080,
+        "rangeStr": "6:00 AM – 6:00 PM"
+      }
+    },
+    "closing_hour_minutes": 1080,
+    "spotlightRank": 4,
+    "isDailyFreshGem": true
   },
   {
     "id": "maison-la-jolie-redlands-92374",
@@ -1079,343 +1594,6 @@
       }
     },
     "createdAt": "2026-11-11T17:52:42.691Z",
-    "isDailyFreshGem": true
-  },
-  {
-    "id": "monday-to-sunday-dessert-cafe-rancho",
-    "name": "Monday to Sunday Dessert Cafe (Haven City Market)",
-    "cuisine": "Artisan Matcha Einspänner, Croissants & Specialty Cakes",
-    "regionalIdentity": "Haven City Market Entrance Bakery, Matcha & Dessert Bar",
-    "tags": [
-      "coffee",
-      "matcha",
-      "bakery",
-      "dessert",
-      "latte"
-    ],
-    "price": 1,
-    "address": "8443 Haven Ave, Unit 121-A",
-    "city": "Rancho Cucamonga",
-    "zip": "91730",
-    "driveFrom91761": "12 min from 91761",
-    "phone": "(909) 483-5349",
-    "hours": "Daily 10:30am–9:00pm",
-    "healthPermit": {
-      "facilityId": "SBC-DEHS-91730-MTS",
-      "agency": "San Bernardino County DEHS",
-      "grade": "A",
-      "score": 98,
-      "inspectedOn": "2026-09-20",
-      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
-    },
-    "familyRoots": "Located right at the entrance of Haven City Market, crafting Korean-European inspired cream-top Einspänner lattes, flaky pistachio croissants, and layered cake slices.",
-    "scratchCommitment": "Freshly whipped sweet cream foams, ceremonial matcha, flaky laminated croissants, scones, and house-layered tiramisu and Biscoff cakes.",
-    "destinationDish": {
-      "name": "Matcha Einspänner, Strawberry Matcha Latte & Pistachio Croissant",
-      "callout": "Chilled ceremonial matcha crowned with a thick cloud of house-whipped Vienna cream, paired with a flaky pistachio cream-filled croissant."
-    },
-    "description": "Haven City Market’s premier dessert and coffee bar in Rancho Cucamonga, famous for its Matcha Einspänner, Strawberry Matcha Latte, pistachio croissants, and Biscoff/Oreo Strawberry cake slices.",
-    "story": "Whether starting your morning with a warm scone or finishing dinner at Haven City Market with Tiramisu and a Matcha Einspänner, Monday to Sunday makes every day feel like a weekend treat.",
-    "image": "img/hero.png",
-    "photos": [
-      {
-        "file": "img/hero.png",
-        "label": "Matcha Einspänner & Pistachio Croissant"
-      }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Matcha Einspänner",
-          "price": "$6.50",
-          "desc": "Vibrant ceremonial matcha layered over milk and topped with rich, house-whipped sweet Vienna cream."
-        },
-        {
-          "name": "Strawberry Matcha Latte",
-          "price": "$6.50",
-          "desc": "Real strawberry purée, chilled milk, and hand-whisked ceremonial matcha."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Pistachio Cream Croissant",
-          "price": "$6.25",
-          "desc": "Golden flaky laminated pastry filled and topped with roasted pistachio cream and crushed pistachios."
-        },
-        {
-          "name": "Oreo Strawberry & Biscoff Cake Slices",
-          "price": "$7.50",
-          "desc": "Tall, airy sponge cake layered with fresh strawberries, cookie crumble, and light whipped cream."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Classic Espresso Einspänner",
-          "price": "$6.25",
-          "desc": "Bold iced Americano or latte topped with velvety sweet cream foam."
-        },
-        {
-          "name": "House Tiramisu Slice",
-          "price": "$7.50",
-          "desc": "Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Hannah K.",
-        "comment": "The Matcha Einspänner and pistachio croissant right at the front of Haven City Market are incredible!",
-        "date": "2026-10-29T14:20:00Z"
-      },
-      {
-        "stars": 5,
-        "name": "Jason L.",
-        "comment": "Best dessert and matcha stop in Rancho Cucamonga. The Oreo Strawberry and Tiramisu slices are a must.",
-        "date": "2026-11-05T19:10:00Z"
-      }
-    ],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 34.1018,
-    "longitude": -117.5932,
-    "opening_hour_minutes": 630,
-    "closing_hour_minutes": 1260,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "meal_types": [
-      "breakfast",
-      "lunch",
-      "dinner"
-    ],
-    "is_active": true,
-    "socialMedia": {
-      "instagram": "@mondaytosundaycafe"
-    },
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 630,
-        "closeMin": 1260,
-        "rangeStr": "10:30 AM – 9:00 PM"
-      }
-    },
-    "createdAt": "2026-11-11T17:52:42.329Z",
-    "isDailyFreshGem": true
-  },
-  {
-    "id": "stray-dogs-coffee-riverside",
-    "name": "Stray Dogs Coffee (Downtown Riverside)",
-    "cuisine": "Specialty Craft Coffee, Ceremonial Matcha & Cold Foams",
-    "regionalIdentity": "Husband-and-Wife Specialty Coffee & Matcha Bar Supporting Animal Rescue",
-    "tags": [
-      "coffee",
-      "matcha",
-      "latte",
-      "bakery",
-      "breakfast",
-      "dog-friendly"
-    ],
-    "price": 1,
-    "address": "3225 Market St, Ste 101",
-    "city": "Riverside",
-    "zip": "92501",
-    "driveFrom91761": "20 min from 91761",
-    "phone": "(951) 556-0600",
-    "hours": "Mon 7:00am–5:00pm · Tue–Fri 7:00am–8:00pm · Sat 9:00am–6:00pm (Closed Sun)",
-    "healthPermit": {
-      "facilityId": "RIVCO-DEH-92501-SDC",
-      "agency": "Riverside County Department of Environmental Health",
-      "grade": "A",
-      "score": 99,
-      "inspectedOn": "2026-09-12",
-      "portalUrl": "https://rivcoeh.org"
-    },
-    "familyRoots": "Founded by husband-and-wife duo Tyler and Jess in Downtown Riverside, pairing inventive specialty lattes and ceremonial matcha with a mission that donates a portion of profits to local animal rescue and foster organizations.",
-    "scratchCommitment": "100% house-made syrups (Earl Grey honey, Madagascar vanilla, brown sugar cinnamon, Korean sweet potato), scratch banana pudding, and culinary cold foams.",
-    "destinationDish": {
-      "name": "Banana Pudding Matcha & The Greyhound Earl Grey Honey Latte",
-      "callout": "Ceremonial single-origin matcha topped with a real scoop of scratch banana pudding and Nilla wafers, alongside espresso with Earl Grey honey syrup and Madagascar vanilla cold foam."
-    },
-    "description": "A beloved dog-friendly Downtown Riverside coffee and matcha bar by Tyler and Jess, famous for scratch syrups, inventive cold foams, Banana Pudding Matcha, and free pup cups.",
-    "story": "Tyler and Jess left the corporate marketing world to build a warm neighborhood coffee shop on Market Street where every cup supports local dog rescue and foster groups.",
-    "image": "img/hero.png",
-    "photos": [
-      {
-        "file": "img/hero.png",
-        "label": "Banana Pudding Matcha & The Greyhound Latte"
-      }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Banana Pudding Matcha",
-          "price": "$6.75",
-          "desc": "Lightly sweetened ceremonial single-origin matcha topped with a scoop of scratch banana pudding and Nilla wafer crumble."
-        },
-        {
-          "name": "The Greyhound Latte",
-          "price": "$6.25",
-          "desc": "Double espresso with house-made Earl Grey honey syrup and Madagascar vanilla cold foam."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Brown Sugar Dango Latte",
-          "price": "$6.50",
-          "desc": "Dark brown sugar espresso latte topped with toasted kinako cold foam."
-        },
-        {
-          "name": "Melona Matcha",
-          "price": "$6.50",
-          "desc": "Single-origin ceremonial matcha with Korean melon syrup and salted caramel cold foam."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Kyoto Slow-Drip Cold Brew",
-          "price": "$5.25",
-          "desc": "Small-batch slow-steeped cold brew coffee."
-        },
-        {
-          "name": "Double Matcha Latte",
-          "price": "$6.50",
-          "desc": "Ceremonial matcha latte crowned with rich matcha cold foam."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Chloe R.",
-        "comment": "The Banana Pudding Matcha and The Greyhound latte are unreal! Plus they gave my pup so much love.",
-        "date": "2026-10-28T10:15:00Z"
-      },
-      {
-        "stars": 5,
-        "name": "Marcus T.",
-        "comment": "Best specialty coffee and cold foam in Riverside. You can taste that all the syrups are made in-house.",
-        "date": "2026-11-04T09:20:00Z"
-      }
-    ],
-    "region": "Inland Empire",
-    "county": "Riverside",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 33.9849,
-    "longitude": -117.3712,
-    "opening_hour_minutes": 420,
-    "closing_hour_minutes": 1200,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "lunch"
-    ],
-    "meal_types": [
-      "breakfast",
-      "lunch"
-    ],
-    "is_active": true,
-    "socialMedia": {
-      "instagram": "@straydogscoffee"
-    },
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": true,
-        "openMin": 0,
-        "closeMin": 0,
-        "rangeStr": "Closed"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 420,
-        "closeMin": 1020,
-        "rangeStr": "7:00 AM – 5:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 420,
-        "closeMin": 1200,
-        "rangeStr": "7:00 AM – 8:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 420,
-        "closeMin": 1200,
-        "rangeStr": "7:00 AM – 8:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 420,
-        "closeMin": 1200,
-        "rangeStr": "7:00 AM – 8:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 420,
-        "closeMin": 1200,
-        "rangeStr": "7:00 AM – 8:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 1080,
-        "rangeStr": "9:00 AM – 6:00 PM"
-      }
-    },
-    "createdAt": "2026-11-11T17:41:57.530Z",
     "isDailyFreshGem": true
   },
   {
@@ -11468,180 +11646,6 @@
       }
     },
     "closing_hour_minutes": 1260
-  },
-  {
-    "id": "klatch-coffee-rancho-cucamonga",
-    "name": "Klatch Coffee (Rancho Cucamonga)",
-    "cuisine": "Specialty Craft Coffee & Espresso",
-    "regionalIdentity": "World Barista Champion In-House Micro-Roaster",
-    "tags": [
-      "coffee",
-      "breakfast",
-      "brunch",
-      "lunch"
-    ],
-    "price": 2,
-    "address": "951 N Haven Ave",
-    "city": "Rancho Cucamonga",
-    "zip": "91730",
-    "driveFrom91761": "10 min from 91761",
-    "phone": "(909) 944-5282",
-    "hours": "Daily 6:00am–6:00pm",
-    "healthPermit": {
-      "facilityId": "FA0006812",
-      "agency": "San Bernardino County DEHS",
-      "grade": "A",
-      "score": 98,
-      "inspectedOn": "2026-02-10",
-      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
-    },
-    "familyRoots": "Family-founded Southern California roastery renowned globally for direct-trade bean sourcing and World Barista Championship titles.",
-    "scratchCommitment": "Direct-trade beans roasted in small batches on vintage Diedrich roasters; house-made vanilla bean syrup and scratch pastries baked daily.",
-    "destinationDish": {
-      "name": "Award-Winning WBC Espresso & Brulee Vanilla Latte",
-      "callout": "Golden Bean champion espresso pulls paired with caramelized raw-sugar vanilla bean foam."
-    },
-    "description": "Bright, airy Haven corridor flagship featuring spacious sunny patio seating, indoor lounge tables, and world-class pour-overs with over 1,200 5-star reviews.",
-    "story": "Klatch has elevated Inland Empire specialty coffee for three decades, bringing farm-direct relationship coffees into a warm, neighborhood setting.",
-    "image": "/img/batch1/calle-3.jpg",
-    "photos": [
-      {
-        "file": "/img/batch1/calle-3.jpg",
-        "label": "Artisan WBC Espresso & Pour-Over Bar"
-      }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Brulee Vanilla Bean Latte",
-          "price": "$6.25",
-          "desc": "Double shot of espresso, steamed whole milk, house vanilla bean syrup with torched raw sugar crust."
-        },
-        {
-          "name": "WBC Championship Pour-Over",
-          "price": "$6.75",
-          "desc": "Single-origin micro-lot pour-over brewed by precision V60 barista method."
-        },
-        {
-          "name": "Cold Brew Float",
-          "price": "$6.50",
-          "desc": "18-hour cold brew over artisanal vanilla bean gelato."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Avocado Sourdough Toast",
-          "price": "$9.50",
-          "desc": "Crushed Hass avocado, microgreens, Aleppo pepper flake, and lemon on rustic artisan sourdough."
-        }
-      ],
-      "combosAndTrays": [
-        {
-          "name": "Coffee Travelers Box (Serves 10-12)",
-          "price": "$32.00",
-          "desc": "Freshly brewed WBC blend with cups, lids, cream, and organic raw sugars."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Almond Croissant",
-          "price": "$4.95",
-          "desc": "Double-baked flaky butter pastry filled with rich almond frangipane."
-        }
-      ]
-    },
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-10-26T08:00:00Z",
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Derek T.",
-        "comment": "Best espresso in the entire Inland Empire. The patio is gorgeous and peaceful.",
-        "date": "2026-10-15T09:30:00Z"
-      },
-      {
-        "stars": 5,
-        "name": "Sabrina L.",
-        "comment": "Over 1,000 reviews and every cup is consistently perfection.",
-        "date": "2026-10-08T10:15:00Z"
-      }
-    ],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "October 2026",
-    "socialMedia": {
-      "instagram": "@klatchcoffee",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "latitude": 34.0954,
-    "longitude": -117.5752,
-    "opening_hour_minutes": 360,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "coffee",
-      "coffee_boba"
-    ],
-    "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "coffee",
-      "coffee_boba"
-    ],
-    "is_active": true,
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "kitchenStatus": "open",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 360,
-        "closeMin": 1080,
-        "rangeStr": "6:00 AM – 6:00 PM"
-      }
-    },
-    "closing_hour_minutes": 1080
   },
   {
     "id": "qamaria-yemeni-coffee-rancho",

@@ -2159,11 +2159,13 @@
             <div class="media-flags">
               <span>${r.spotlightRank === 1
                 ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;font-weight:800">🌟 #1 Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                : (r.createdAt && r.createdAt >= '2026-11-05')
-                  ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                  : r.featured
-                    ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                    : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
+                : (r.spotlightRank && r.spotlightRank <= 10)
+                  ? `<span class="flag pinned" style="background:rgba(245,194,107,0.92);color:#1a100a;font-weight:800">✨ Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                  : (r.createdAt && r.createdAt >= '2026-11-05')
+                    ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                    : r.featured
+                      ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                      : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
             </div>
           </div>
           <div class="card-body">

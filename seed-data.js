@@ -1,4 +1,172 @@
-window.SEED_RESTAURANTS = [
+window.__HFG_OFFLINE_SEED__ = [
+  {
+    "id": "stray-dogs-coffee-riverside",
+    "name": "Stray Dogs Coffee (Downtown Riverside)",
+    "cuisine": "Specialty Craft Coffee, Ceremonial Matcha & Cold Foams",
+    "regionalIdentity": "Husband-and-Wife Specialty Coffee & Matcha Bar Supporting Animal Rescue",
+    "tags": [
+      "coffee",
+      "matcha",
+      "latte",
+      "bakery",
+      "breakfast",
+      "dog-friendly"
+    ],
+    "price": 1,
+    "address": "3225 Market St, Ste 101",
+    "city": "Riverside",
+    "zip": "92501",
+    "driveFrom91761": "20 min from 91761",
+    "phone": "(951) 556-0600",
+    "hours": "Mon 7:00am–5:00pm · Tue–Fri 7:00am–8:00pm · Sat 9:00am–6:00pm (Closed Sun)",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-SDC",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-12",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded by husband-and-wife duo Tyler and Jess in Downtown Riverside, pairing inventive specialty lattes and ceremonial matcha with a mission that donates a portion of profits to local animal rescue and foster organizations.",
+    "scratchCommitment": "100% house-made syrups (Earl Grey honey, Madagascar vanilla, brown sugar cinnamon, Korean sweet potato), scratch banana pudding, and culinary cold foams.",
+    "destinationDish": {
+      "name": "Banana Pudding Matcha & The Greyhound Earl Grey Honey Latte",
+      "callout": "Ceremonial single-origin matcha topped with a real scoop of scratch banana pudding and Nilla wafers, alongside espresso with Earl Grey honey syrup and Madagascar vanilla cold foam."
+    },
+    "description": "A beloved dog-friendly Downtown Riverside coffee and matcha bar by Tyler and Jess, famous for scratch syrups, inventive cold foams, Banana Pudding Matcha, and free pup cups.",
+    "story": "Tyler and Jess left the corporate marketing world to build a warm neighborhood coffee shop on Market Street where every cup supports local dog rescue and foster groups.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Banana Pudding Matcha & The Greyhound Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Banana Pudding Matcha",
+          "price": "$6.75",
+          "desc": "Lightly sweetened ceremonial single-origin matcha topped with a scoop of scratch banana pudding and Nilla wafer crumble."
+        },
+        {
+          "name": "The Greyhound Latte",
+          "price": "$6.25",
+          "desc": "Double espresso with house-made Earl Grey honey syrup and Madagascar vanilla cold foam."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Brown Sugar Dango Latte",
+          "price": "$6.50",
+          "desc": "Dark brown sugar espresso latte topped with toasted kinako cold foam."
+        },
+        {
+          "name": "Melona Matcha",
+          "price": "$6.50",
+          "desc": "Single-origin ceremonial matcha with Korean melon syrup and salted caramel cold foam."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kyoto Slow-Drip Cold Brew",
+          "price": "$5.25",
+          "desc": "Small-batch slow-steeped cold brew coffee."
+        },
+        {
+          "name": "Double Matcha Latte",
+          "price": "$6.50",
+          "desc": "Ceremonial matcha latte crowned with rich matcha cold foam."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Chloe R.",
+        "comment": "The Banana Pudding Matcha and The Greyhound latte are unreal! Plus they gave my pup so much love.",
+        "date": "2026-10-28T10:15:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Marcus T.",
+        "comment": "Best specialty coffee and cold foam in Riverside. You can taste that all the syrups are made in-house.",
+        "date": "2026-11-04T09:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9849,
+    "longitude": -117.3712,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@straydogscoffee"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1020,
+        "rangeStr": "7:00 AM – 5:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1200,
+        "rangeStr": "7:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:41:57.530Z",
+    "isDailyFreshGem": true
+  },
   {
     "id": "caffe-central-burlingame-sf-94010",
     "name": "Caffé Central (Burlingame & Bay Area)",
@@ -26944,5 +27112,3 @@ window.SEED_RESTAURANTS = [
     }
   }
 ];
-window.__HFG_OFFLINE_SEED__ = window.SEED_RESTAURANTS;
-window.SEED_GEMS = window.SEED_RESTAURANTS;

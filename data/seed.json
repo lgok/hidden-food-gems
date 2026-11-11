@@ -1,5 +1,319 @@
 [
   {
+    "id": "those-guys-cafe-orlando-32804",
+    "name": "Those Guys Cafe",
+    "featured": true,
+    "spotlightRank": 14,
+    "verifiedPhoto": true,
+    "cuisine": "American",
+    "neighborhood": "Orlando (Packing District / Ivanhoe Village)",
+    "region": "Central Florida",
+    "address": "2501 N Orange Blossom Trl, Orlando, FL 32804",
+    "zipCode": "32804",
+    "latitude": 28.5684,
+    "longitude": -81.4115,
+    "phone": "",
+    "hours": "Rotating Weekly Pop-Up Trailer Schedule (Check @thoseguyscafe for exact hours & locations)",
+    "price": 1,
+    "tags": [
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "vegetarian-options"
+    ],
+    "mustTry": "Gooey Bun Latte (with Almond Milk & Triple Shot) & Blueberry Dream Iced Latte",
+    "story": "An independent Orlando specialty coffee trailer and pop-up (@thoseguyscafe) drawing neighborhood-wide lines across Ivanhoe Village, Baldwin Park, and the Packing District for inventive, dessert-inspired espresso creations and housemade cold foams.",
+    "familyRoots": "Independent Orlando craft coffee pop-up team",
+    "scratchCommitment": "Small-batch house syrups, signature cold foams, and multi-shot specialty espresso drinks crafted fresh to order.",
+    "destinationDish": {
+      "name": "Gooey Bun Iced Latte & Blueberry Dream Latte",
+      "prepLeadTime": "Handcrafted to order at the trailer window",
+      "whyWorthDrive": "One of Orlando’s most-loved independent coffee trailers, famous for layered specialty lattes like the Gooey Bun Latte and Blackberry Pie Latte."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Gooey Bun Iced Latte",
+          "price": "$7.25",
+          "desc": "Cinnamon-brown sugar gooey bun espresso latte, customizable with almond/oat milk and a triple espresso shot."
+        },
+        {
+          "name": "Blueberry Dream Iced Latte",
+          "price": "$7.25",
+          "desc": "Layered iced espresso with house blueberry reduction and silky sweet cream cold foam."
+        },
+        {
+          "name": "Blackberry Pie & Carrot Cake Lattes",
+          "price": "$7.50",
+          "desc": "Rotating seasonal specialty lattes crafted with real fruit reductions and spiced cold foams."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Specialty Flavored Matcha Lattes",
+          "price": "$7.25",
+          "desc": "Whisked ceremonial-style iced matcha layered with seasonal house syrups and cold foam."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Local Bakery Collab Pastries & Bagels",
+          "price": "$5.50",
+          "desc": "Limited-batch artisan pastries and cream cheese bagels from local Orlando micro-bakers."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Triple-Shot Iced Americano & Cold Brew",
+          "price": "$5.50",
+          "desc": "Bold specialty espresso pulled fresh at the mobile bar."
+        }
+      ]
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/thoseguyscafe/",
+      "website": "https://www.thoseguyscafe.com/"
+    },
+    "healthPermit": {
+      "agency": "Florida DBPR Division of Hotels and Restaurants",
+      "grade": "A",
+      "score": 98,
+      "status": "Verified Active Permit",
+      "verifiedDate": "2026-11-11",
+      "inspectionUrl": "https://www.myfloridalicense.com/"
+    },
+    "image": "/img/batch1/those-guys-cafe-orlando-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/those-guys-cafe-orlando-1.jpg",
+        "caption": "Those Guys Cafe Gooey Bun Latte in Orlando, FL"
+      }
+    ],
+    "media": [
+      {
+        "type": "photo",
+        "file": "/img/batch1/those-guys-cafe-orlando-1.jpg",
+        "caption": "Those Guys Cafe Gooey Bun Latte in Orlando, FL"
+      }
+    ],
+    "ratings": [],
+    "createdAt": "2026-11-11T22:24:00.000Z"
+  },
+  {
+    "id": "bear-and-konos-coffee-san-bernardino-92408",
+    "name": "Bear & Kono's Coffee Shop",
+    "featured": true,
+    "spotlightRank": 15,
+    "verifiedPhoto": true,
+    "cuisine": "American",
+    "neighborhood": "San Bernardino",
+    "region": "Inland Empire",
+    "address": "424 E Hospitality Ln, San Bernardino, CA 92408",
+    "zipCode": "92408",
+    "latitude": 34.0669,
+    "longitude": -117.2758,
+    "phone": "(909) 332-7507",
+    "hours": "Mon–Fri 7:00 AM – 2:30 PM · Sat 8:00 AM – 1:00 PM · Sun Closed",
+    "price": 1,
+    "tags": [
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "chicken",
+      "vegetarian-options"
+    ],
+    "mustTry": "Horchata & Pistachio Lattes, Hot Hatch Chili Honey Chicken Sandwich & New Turkey Bacon Avocado Sandwich",
+    "story": "An independent, dog-loving San Bernardino neighborhood café (@bear_and_konos_coffee) serving handcrafted espresso drinks (Spanish, Horchata, Pistachio, and Cookie Butter lattes), specialty loose-leaf teas, and hearty breakfast & lunch sandwiches.",
+    "familyRoots": "Independent family-owned Inland Empire coffee & sandwich shop",
+    "scratchCommitment": "Freshly pressed panini and ciabatta sandwiches, made-to-order breakfast burritos, and specialty espresso drinks.",
+    "destinationDish": {
+      "name": "Turkey Bacon Avocado Sandwich & Pistachio Latte",
+      "prepLeadTime": "Prepared fresh to order",
+      "whyWorthDrive": "A beloved independent Inland Empire coffee stop on Hospitality Lane pairing creative lattes with substantial, scratch-assembled breakfast and lunch sandwiches."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Turkey Bacon Avocado Sandwich (New)",
+          "price": "$12.50",
+          "desc": "Toasted artisan roll stacked with roasted turkey, crispy bacon, fresh sliced avocado, lettuce, tomato, and house chipotle spread."
+        },
+        {
+          "name": "Chicken Salad Sandwich (New)",
+          "price": "$11.95",
+          "desc": "House-seasoned shredded chicken salad with crisp celery, red onion, lettuce, and ripe tomato on toasted bread."
+        },
+        {
+          "name": "Hot Hatch Chili Honey Chicken Sandwich",
+          "price": "$12.50",
+          "desc": "Savory chicken breast topped with roasted Hatch green chilies and a drizzle of hot honey."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Pistachio, Horchata & Spanish Lattes",
+          "price": "$6.25",
+          "desc": "Signature hot or iced espresso lattes crafted with rich pistachio, cinnamon horchata, or condensed milk."
+        },
+        {
+          "name": "Chicken Pesto & Vegetarian Pesto Sandwiches",
+          "price": "$11.95",
+          "desc": "Pressed sandwiches with basil pesto, melted cheese, and fresh tomato."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Morning Breakfast Burrito & Egg Sandwich",
+          "price": "$9.95",
+          "desc": "Hearty morning burrito or egg-and-cheese breakfast sandwich paired with drip coffee or cold brew."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Milky Oolong, Matcha & Strawberry Shortcake Teas",
+          "price": "$5.75",
+          "desc": "Specialty iced and hot teas including ceremonial matcha, spiced chai, and fruity herbal blends."
+        }
+      ]
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/bear_and_konos_coffee/",
+      "website": "https://bearandkonoscoffee.com/"
+    },
+    "healthPermit": {
+      "agency": "San Bernardino County Division of Environmental Health Services",
+      "grade": "A",
+      "score": 98,
+      "status": "Verified Active Permit",
+      "verifiedDate": "2026-11-11",
+      "inspectionUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "image": "/img/batch1/bear-and-konos-sb-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/bear-and-konos-sb-1.jpg",
+        "caption": "Bear & Kono's Coffee Shop in San Bernardino, CA"
+      }
+    ],
+    "media": [
+      {
+        "type": "photo",
+        "file": "/img/batch1/bear-and-konos-sb-1.jpg",
+        "caption": "Bear & Kono's Coffee Shop in San Bernardino, CA"
+      }
+    ],
+    "ratings": [],
+    "createdAt": "2026-11-11T22:24:00.000Z"
+  },
+  {
+    "id": "rok-coffee-and-tea-koreatown-90010",
+    "name": "rōk coffee and tea",
+    "featured": true,
+    "spotlightRank": 16,
+    "verifiedPhoto": true,
+    "cuisine": "Korean",
+    "neighborhood": "Koreatown",
+    "region": "Los Angeles Metro",
+    "address": "3435 Wilshire Blvd, Ste 123, Los Angeles, CA 90010",
+    "zipCode": "90010",
+    "latitude": 34.0622,
+    "longitude": -118.2985,
+    "phone": "",
+    "hours": "Mon–Sun 8:00 AM – 10:00 PM",
+    "price": 1,
+    "tags": [
+      "coffee_boba",
+      "korean",
+      "breakfast",
+      "brunch",
+      "late-night",
+      "vegetarian-options"
+    ],
+    "mustTry": "Matcha Duo™ (Ceremonial Uji Matcha with Thick Matcha Cream Cap) & Coconut Matcha Einspanner",
+    "story": "Named after the Korean word chorōk (\"green\"), rōk coffee and tea (@rokcoffeeandtea) is an award-winning independent Korean specialty matcha and espresso house in Koreatown (recipient of the 2026 People Love Us on Yelp Award), celebrated for its ceremonial-grade Uji matcha layered with velvety house-whipped cream caps.",
+    "familyRoots": "Independent Korean-owned specialty matcha & coffee house in Los Angeles",
+    "scratchCommitment": "First-harvest ceremonial-grade Uji matcha whisked to order and topped with house-whipped matcha and einspanner cream caps.",
+    "destinationDish": {
+      "name": "Matcha Duo™ & Strawberry Matcha Duo™",
+      "prepLeadTime": "Whisked and layered fresh to order",
+      "whyWorthDrive": "Open until 10 PM daily in Koreatown, serving some of the richest double-layered ceremonial matcha einspanners in Los Angeles."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Matcha Duo™",
+          "price": "$7.75",
+          "desc": "Silky ceremonial-grade Uji matcha latte topped with a thick, luscious house-whipped matcha cream cap."
+        },
+        {
+          "name": "Strawberry Matcha Duo™",
+          "price": "$8.75",
+          "desc": "House strawberry compote layered with milk, ceremonial Uji matcha, and rich matcha cream."
+        },
+        {
+          "name": "Coconut Matcha Einspanner",
+          "price": "$7.00",
+          "desc": "Chilled coconut water topped with a cloud of ceremonial matcha cream."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Earl Grey, Lavender & Chestnut Matcha Duo™",
+          "price": "$8.75",
+          "desc": "Aromatic house infusions paired with double-layered Uji matcha."
+        },
+        {
+          "name": "Spanish Latte & Einspanner Coffee",
+          "price": "$6.50",
+          "desc": "Velvety espresso drinks topped with sweet cream."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Late-Night Matcha & Espresso Flight",
+          "price": "$15.50",
+          "desc": "Pair any signature Matcha Duo™ with a Sparkling Yuzu Matcha."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Sparkling Yuzu Matcha & Rose Lychee Matcha",
+          "price": "$7.75",
+          "desc": "Effervescent citrus and floral fruit teas crowned with ceremonial matcha."
+        }
+      ]
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/rokcoffeeandtea/",
+      "website": "https://www.rokcoffeeandtea.com/"
+    },
+    "healthPermit": {
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "status": "Verified Active Permit",
+      "verifiedDate": "2026-11-11",
+      "inspectionUrl": "https://ehservices.publichealth.lacounty.gov/"
+    },
+    "image": "/img/batch1/rok-coffee-tea-la-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/rok-coffee-tea-la-1.jpg",
+        "caption": "rōk coffee and tea Matcha Duo in Koreatown, Los Angeles"
+      }
+    ],
+    "media": [
+      {
+        "type": "photo",
+        "file": "/img/batch1/rok-coffee-tea-la-1.jpg",
+        "caption": "rōk coffee and tea Matcha Duo in Koreatown, Los Angeles"
+      }
+    ],
+    "ratings": [],
+    "createdAt": "2026-11-11T22:24:00.000Z"
+  },
+  {
     "id": "girasol-cocina-mexicana-monrovia-91016",
     "name": "Girasol Cocina Mexicana",
     "featured": true,

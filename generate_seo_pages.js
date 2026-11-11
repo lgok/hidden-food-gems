@@ -772,6 +772,7 @@ ${ga4AndOutboundScriptHtml}
 </body>
 </html>`;
 fs.writeFileSync(path.join(publicDir, "contact.html"), contactHtml, "utf8");
+fs.writeFileSync(path.join(__dirname, "contact.html"), contactHtml, "utf8");
 
 // 3b. Generate public/sitemap.xml & public/robots.txt (Unified on https://www.hiddenfoodgem.com)
 const sitemapUrls = [
@@ -1005,6 +1006,7 @@ const notFoundHtml = `<!doctype html>
 </html>
 `;
 fs.writeFileSync(path.join(publicDir, "404.html"), notFoundHtml, "utf8");
+fs.writeFileSync(path.join(__dirname, "404.html"), notFoundHtml, "utf8");
 
 // Update app.js so "/" serves indexHtml (200), "/contact" serves contactHtml (200) with edge caching + CSP, and any unmatched path returns HTTP 404
 const appJsCode = `const http = require("http");

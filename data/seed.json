@@ -1,5 +1,644 @@
 [
   {
+    "id": "caffe-central-burlingame-sf-94010",
+    "name": "Caffé Central (Burlingame & Bay Area)",
+    "cuisine": "European-Style Specialty Coffee, Belgian Waffles & Acai Bowls",
+    "regionalIdentity": "Bay Area Artisan Espresso Bar, Liege Waffles & Organic Toasts",
+    "tags": [
+      "coffee",
+      "cafe",
+      "breakfast",
+      "brunch",
+      "pastries",
+      "specialty-coffee"
+    ],
+    "price": 2,
+    "address": "1380 Burlingame Ave",
+    "city": "Burlingame",
+    "zip": "94010",
+    "driveFrom91761": "Bay Area Metro",
+    "phone": "(650) 685-6880",
+    "hours": "Mon–Sun 7:00am–6:00pm",
+    "healthPermit": {
+      "facilityId": "SMC-EHS-041290",
+      "agency": "San Mateo County Environmental Health Services",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-05",
+      "portalUrl": "https://www.smchealth.org/eh"
+    },
+    "familyRoots": "Independent Bay Area specialty coffee collective with cozy neighborhood cafes in Burlingame (1380 Burlingame Ave), San Francisco, and San Jose.",
+    "scratchCommitment": "Small-batch roasted espresso beans, pearl-sugar Belgian Liege waffles griddled to order, organic acai bowls, and artisanal sourdough avocado toasts.",
+    "destinationDish": {
+      "name": "Warm Berry Belgian Liege Waffle & Lavender Honey Latte",
+      "callout": "Caramelized pearl-sugar waffle topped with fresh organic berries, whipped mascarpone, and a floral lavender espresso latte."
+    },
+    "description": "Vibrant Bay Area specialty cafe serving precision espresso drinks, caramelized Belgian waffles, organic acai bowls, and gourmet open-faced sourdough toasts.",
+    "story": "Founded as a warm, community-centered Bay Area coffeehouse where families and remote creatives gather over craft espresso and scratch brunch plates.",
+    "image": "/img/batch1/changan-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-1.jpg",
+        "label": "Belgian Liege Waffle & Specialty Latte Art"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Berry Mascarpone Belgian Waffle",
+          "price": "$13.50",
+          "desc": "Crisp pearl-sugar Belgian waffle topped with strawberries, blueberries, house mascarpone cream, and pure maple."
+        },
+        {
+          "name": "Lavender Honey Oat Latte",
+          "price": "$6.25",
+          "desc": "Double shot of artisan espresso infused with culinary lavender and organic wildflower honey."
+        },
+        {
+          "name": "Burrata & Heirloom Tomato Sourdough Toast",
+          "price": "$13.95",
+          "desc": "Thick-cut San Francisco sourdough toasted with creamy burrata, basil pesto, and balsamic glaze."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Organic Brazilian Acai Bowl",
+          "price": "$13.95",
+          "desc": "Blended organic acai topped with hemp granola, sliced banana, berries, and chia seeds."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Burlingame Ave Brunch Pair",
+          "price": "$29.50",
+          "desc": "1 Belgian Waffle Plate, 1 Sourdough Toast, and 2 Specialty Lattes."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Iced Matcha Green Tea Latte",
+          "price": "$6.00",
+          "desc": "Whisked Japanese matcha over chilled milk."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "freshlyAdded": true,
+    "addedDate": "2026-11-11",
+    "createdAt": "2026-11-11T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Claire T.",
+        "comment": "Gorgeous cafe on Burlingame Ave! The Belgian waffles and lavender latte are perfection.",
+        "date": "2026-11-08T11:45:00Z"
+      }
+    ],
+    "region": "Bay Area",
+    "county": "San Mateo",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "analytics": {
+      "ownerName": "Caffé Central Team",
+      "calls": 39,
+      "directions": 94,
+      "stripeUrl": "https://buy.stripe.com/demo_renewal_10mo"
+    },
+    "latitude": 37.5779,
+    "longitude": -122.3481,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@caffecentral",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "homegirl-cafe-los-angeles-90012",
+    "name": "Homegirl Cafe & Bakery (Chinatown / DTLA)",
+    "cuisine": "California-Latin Farm-to-Table Breakfast, Chilaquiles & Artisan Bakery",
+    "regionalIdentity": "Mission-Driven Scratch Latin-California Cafe & Fresh Sourdough Bakery",
+    "tags": [
+      "mexican",
+      "california",
+      "breakfast",
+      "lunch",
+      "bakery",
+      "cafe"
+    ],
+    "price": 2,
+    "address": "130 W Bruno St",
+    "city": "Los Angeles",
+    "zip": "90012",
+    "driveFrom91761": "42 min from 91761",
+    "phone": "(323) 526-1254",
+    "hours": "Mon–Fri 8:00am–3:00pm · Sat 9:00am–2:30pm · Sun Closed",
+    "healthPermit": {
+      "facilityId": "LA-DPH-084921",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-12",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/"
+    },
+    "familyRoots": "Iconic community social-enterprise cafe and bakery empowering women and youth in Los Angeles through scratch culinary training and farm-to-table Latin hospitality.",
+    "scratchCommitment": "Fire-roasted tomatillo and guajillo salsas, handmade organic corn tortillas, stone-ground masa chilaquiles, and naturally leavened artisan breads baked in-house before dawn.",
+    "destinationDish": {
+      "name": "Divorciados Chilaquiles & Scratch Horchata Latte",
+      "callout": "Crisp house tortilla chips simmered half in tangy salsa verde and half in smoky salsa roja, topped with crema, queso fresco, and two farm eggs."
+    },
+    "description": "Critically acclaimed Los Angeles culinary landmark near Chinatown serving vibrant farm-to-table Mexican-California breakfasts, gourmet sandwiches, and freshly baked pastries in a 100% alcohol-free setting.",
+    "story": "Every plate served at Homegirl Cafe supports culinary apprenticeships and community rebuilding while delivering some of the brightest scratch flavors in Southern California.",
+    "image": "/img/batch1/changan-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-1.jpg",
+        "label": "Signature Chilaquiles Divorciados & Artisan Pastries"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Chilaquiles Divorciados",
+          "price": "$15.50",
+          "desc": "House tortilla chips tossed in both green tomatillo and red guajillo salsas with queso fresco, pickled onions, and two eggs."
+        },
+        {
+          "name": "plantain & Black Bean Tostada Bowl",
+          "price": "$14.75",
+          "desc": "Caramelized sweet plantains, slow-simmered black beans, avocado, and chipotle crema."
+        },
+        {
+          "name": "Chipotle ChickenTorta on House Telera",
+          "price": "$15.25",
+          "desc": "Grilled marinated chicken breast, mashed black beans, avocado, and pickled jalapeños on fresh-baked bread."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Guava & Cheese Artisan Danish",
+          "price": "$4.95",
+          "desc": "Flaky laminated pastry filled with tropical guava compote and sweet cream cheese."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Homegirl Bakery Box & Coffee",
+          "price": "$28.00",
+          "desc": "Assortment of 6 scratch morning pastries and 2 specialty coffees."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Prickly Pear Cactus Limonada",
+          "price": "$4.75",
+          "desc": "Fresh squeezed lemonade infused with vibrant pink prickly pear fruit."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "freshlyAdded": true,
+    "addedDate": "2026-11-11",
+    "createdAt": "2026-11-11T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Sophia M.",
+        "comment": "Incredible chilaquiles, fresh-baked pastries, and an inspiring mission. One of LA's best daytime gems!",
+        "date": "2026-11-06T18:20:00Z"
+      }
+    ],
+    "region": "Los Angeles",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "analytics": {
+      "ownerName": "Homegirl Cafe Culinary Team",
+      "calls": 68,
+      "directions": 145,
+      "stripeUrl": "https://buy.stripe.com/demo_renewal_10mo"
+    },
+    "latitude": 34.0668,
+    "longitude": -118.2319,
+    "opening_hour_minutes": 480,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@homegirlcafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "scramblers-cafe-norco-ontario-92860",
+    "name": "Scramblers Cafe (Norco & Ontario Mills)",
+    "cuisine": "Family Breakfast Skillets, Brioche French Toast & Country Brunch",
+    "regionalIdentity": "Inland Empire Scratch Morning Skillets & Cinnamon Roll Pancakes",
+    "tags": [
+      "american",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "pancakes"
+    ],
+    "price": 2,
+    "address": "3699 Hamner Ave",
+    "city": "Norco",
+    "zip": "92860",
+    "driveFrom91761": "12 min from 91761",
+    "phone": "(951) 479-0332",
+    "hours": "Mon–Sun 7:00am–2:30pm",
+    "healthPermit": {
+      "facilityId": "RIV-DEH-028841",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-08-29",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Local Inland Empire family breakfast kitchen operating on Hamner Ave in Norco (and 980 Ontario Mills Dr in Ontario) known for generous country portions and zero-alcohol family dining.",
+    "scratchCommitment": "Farm-fresh 3-egg country scrambles, hand-dipped thick brioche French toast, scratch country gravy, and golden hash browns seared on the flat-top.",
+    "destinationDish": {
+      "name": "Country Hamner Skillet & Cinnamon Swirl Pancakes",
+      "callout": "Sizzling skillet of crispy home fries, hickory bacon, sausage, melted cheddar, and farm eggs with buttermilk cinnamon pancakes."
+    },
+    "description": "Hearty Inland Empire family breakfast and lunch cafe serving sizzling country skillets, fluffy omelettes, and thick-cut brioche French toast in Norco and Ontario.",
+    "story": "A staple for Norco and Ontario families seeking a welcoming, strictly alcohol-free morning diner where everything from the buttermilk batter to the country gravy is made fresh.",
+    "image": "/img/batch1/changan-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-1.jpg",
+        "label": "Country Skillet & Fluffy Buttermilk Pancakes"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Scrambler Country Skillet",
+          "price": "$15.95",
+          "desc": "Seasoned country potatoes topped with bacon, sausage, bell peppers, onions, melted jack/cheddar, and two eggs any style."
+        },
+        {
+          "name": "Cinnamon Roll Swirl Pancakes",
+          "price": "$14.50",
+          "desc": "Fluffy buttermilk pancakes swirled with brown sugar cinnamon filling and cream cheese glaze."
+        },
+        {
+          "name": "California Avocado Bacon Omelette",
+          "price": "$16.25",
+          "desc": "Three-egg omelette folded with crispy bacon, fresh sliced avocado, tomato, and Monterey Jack cheese."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Country Chicken Fried Steak & Eggs",
+          "price": "$16.95",
+          "desc": "Golden breaded steak smothered in house country sausage gravy with two eggs and hash browns."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Family Morning Feast for 4",
+          "price": "$52.00",
+          "desc": "Scrambled eggs, 8 buttermilk pancakes, bacon, link sausage, and crispy hash browns for four."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Freshly Squeezed Orange Juice",
+          "price": "$4.95",
+          "desc": "Chilled 100% pure squeezed California valencia oranges."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "freshlyAdded": true,
+    "addedDate": "2026-11-11",
+    "createdAt": "2026-11-11T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "David K.",
+        "comment": "Huge portions, super friendly service, and great family atmosphere at both the Norco and Ontario locations.",
+        "date": "2026-11-07T17:00:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "analytics": {
+      "ownerName": "Scramblers Cafe Team",
+      "calls": 42,
+      "directions": 89,
+      "stripeUrl": "https://buy.stripe.com/demo_renewal_10mo"
+    },
+    "latitude": 33.9248,
+    "longitude": -117.5491,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@scramblerscafenorco",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "amorcito-cafe-fontana-92335",
+    "name": "Amorcito Cafe",
+    "cuisine": "Mexican-Inspired Specialty Coffee, Horchata Lattes & Pan Dulce",
+    "regionalIdentity": "Artisanal Cafe de Olla, Mazapan Lattes & Chilaquiles",
+    "tags": [
+      "coffee",
+      "cafe",
+      "mexican",
+      "breakfast",
+      "lunch",
+      "specialty-coffee"
+    ],
+    "price": 1,
+    "address": "8550 Nuevo Ave",
+    "city": "Fontana",
+    "zip": "92335",
+    "driveFrom91761": "16 min from 91761",
+    "phone": "(909) 428-1930",
+    "hours": "Mon–Sun 7:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-019614",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 97,
+      "inspectedOn": "2026-09-25",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "Family-owned neighborhood cafe in central Fontana blending traditional Mexican café culture with third-wave espresso craft.",
+    "scratchCommitment": "Spiced Café de Olla brewed daily with piloncillo and Mexican canela, house-blended peanut mazapán lattes, and fresh morning pan dulce.",
+    "destinationDish": {
+      "name": "Iced Café de Olla Cold Foam Latte & Concha",
+      "callout": "Piloncillo-cinnamon espresso topped with velvety sweet cream cold foam and dusted with Mexican canela."
+    },
+    "description": "Beloved Fontana neighborhood coffeehouse celebrating Mexican flavors through scratch-brewed Café de Olla, Horchata Espresso, Mazapán Lattes, and warm breakfast favorites.",
+    "story": "Created with love ('Amorcito') to honor family recipes from Mexico while giving Fontana residents a vibrant, alcohol-free daytime cafe experience.",
+    "image": "/img/batch1/changan-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-1.jpg",
+        "label": "Signature Iced Cafe de Olla & Mazapan Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Café de Olla Sweet Cream Latte",
+          "price": "$6.25",
+          "desc": "Espresso steeped with piloncillo, orange peel, and Mexican cinnamon topped with sweet cream."
+        },
+        {
+          "name": "House Mazapán Iced Latte",
+          "price": "$6.50",
+          "desc": "Double espresso blended with real crushed peanut mazapán and creamy milk over ice."
+        },
+        {
+          "name": "Dirty Horchata Cold Brew",
+          "price": "$6.50",
+          "desc": "House rice-and-cinnamon horchata crowned with smooth cold brew espresso."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Warm Vanilla Concha",
+          "price": "$3.95",
+          "desc": "Soft artisan Mexican sweet bread with sugar-shell crust."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Amorcito Morning Duo",
+          "price": "$15.95",
+          "desc": "2 Specialty Mexican Lattes and 2 Warm Conchas."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Hibiscus Jamaica Agua Fresca",
+          "price": "$4.75",
+          "desc": "Steeped dried hibiscus flowers lightly sweetened over ice."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "freshlyAdded": true,
+    "addedDate": "2026-11-11",
+    "createdAt": "2026-11-11T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Elena R.",
+        "comment": "The Mazapan latte and Cafe de Olla are unmatched! Such a cute family-run spot in Fontana.",
+        "date": "2026-11-09T16:10:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "analytics": {
+      "ownerName": "Amorcito Cafe Family",
+      "calls": 31,
+      "directions": 74,
+      "stripeUrl": "https://buy.stripe.com/demo_renewal_10mo"
+    },
+    "latitude": 34.0984,
+    "longitude": -117.4361,
+    "opening_hour_minutes": 420,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@amorcitocafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "psalms-coffee-fontana-92335",
+    "name": "Psalms Coffee",
+    "cuisine": "Specialty Craft Coffee & Artisanal Pastries",
+    "regionalIdentity": "Foothill Blvd Small-Batch Espresso & House-Made Syrups",
+    "tags": [
+      "coffee",
+      "cafe",
+      "pastries",
+      "breakfast",
+      "lunch",
+      "specialty-coffee"
+    ],
+    "price": 1,
+    "address": "14189 W Foothill Blvd, Ste 107",
+    "city": "Fontana",
+    "zip": "92335",
+    "driveFrom91761": "14 min from 91761",
+    "phone": "(909) 356-4810",
+    "hours": "Mon–Fri 6:30am–5:00pm · Sat–Sun 7:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "SB-DEHS-019482",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "Independent family-run Route 66 Fontana coffee bar dedicated to uplifting community connection, warm hospitality, and small-batch specialty coffee.",
+    "scratchCommitment": "House-cooked brown sugar cinnamon and vanilla bean syrups, single-origin espresso pulls, ceremonial-grade matcha whisked to order, and fresh local pastries.",
+    "destinationDish": {
+      "name": "Signature Honey Cinnamon Oat Latte & Warm Croissant",
+      "callout": "Velvety double-shot espresso infused with raw local honey, Ceylon cinnamon, and creamy oat milk."
+    },
+    "description": "A welcoming independent craft coffee sanctuary along historic Foothill Blvd in Fontana pouring velvety specialty lattes, ceremonial matcha, and scratch-infused cold brews.",
+    "story": "Built by a local Fontana family to give the Inland Empire a peaceful neighborhood gathering space with genuine craft espresso and zero shortcuts.",
+    "image": "/img/batch1/changan-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/changan-1.jpg",
+        "label": "Signature Honey Cinnamon Latte & Craft Cold Brew"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Honey Cinnamon Oat Latte",
+          "price": "$6.25",
+          "desc": "Double espresso, raw wildflower honey, house cinnamon reduction, and steamed oat milk."
+        },
+        {
+          "name": "Brown Sugar Shaken Espresso",
+          "price": "$6.00",
+          "desc": "Espresso shaken hard over ice with dark muscovado sugar syrup and a cold cream float."
+        },
+        {
+          "name": "Strawberries & Cream Ceremonial Matcha",
+          "price": "$6.50",
+          "desc": "Uji ceremonial matcha layered over house strawberry puree and milk."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Warm Butter Croissant & Jam",
+          "price": "$4.75",
+          "desc": "Flaky laminated French-style butter croissant toasted warm."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Morning Route 66 Coffee Pair",
+          "price": "$16.50",
+          "desc": "Any 2 Signature Lattes plus 2 freshly baked pastries."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Small-Batch Cold Brew",
+          "price": "$5.25",
+          "desc": "18-hour slow-steeped specialty cold brew coffee."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "freshlyAdded": true,
+    "addedDate": "2026-11-11",
+    "createdAt": "2026-11-11T03:00:00Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Marissa G.",
+        "comment": "Best independent coffee shop in Fontana! The honey cinnamon latte is smooth and never overly sweet.",
+        "date": "2026-11-08T15:00:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "analytics": {
+      "ownerName": "Psalms Coffee Family",
+      "calls": 24,
+      "directions": 61,
+      "stripeUrl": "https://buy.stripe.com/demo_renewal_10mo"
+    },
+    "latitude": 34.1068,
+    "longitude": -117.4952,
+    "opening_hour_minutes": 390,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@psalmscoffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
     "id": "bce-noodles-anaheim-packing-district",
     "name": "206 BCE Seafood & Garlic Noodles (Anaheim Packing House)",
     "cuisine": "Vietnamese-Cajun Fusion & Garlic Noodles",

@@ -23,6 +23,7 @@
   - Brooklyn, NY (11220): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11220
   - Brooklyn, NY (11222): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11222
   - Burbank, CA (91505): https://www.hiddenfoodgem.com/cities/burbank-ca-91505
+  - Burlingame, CA (94010): https://www.hiddenfoodgem.com/cities/burlingame-ca-94010
   - Carrollton, TX (75006): https://www.hiddenfoodgem.com/cities/carrollton-tx-75006
   - Chicago, IL (60607): https://www.hiddenfoodgem.com/cities/chicago-il-60607
   - Chicago, IL (60608): https://www.hiddenfoodgem.com/cities/chicago-il-60608
@@ -33,4 +34,3 @@
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
   - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878
   - Dallas, TX (75208): https://www.hiddenfoodgem.com/cities/dallas-tx-75208
-  - Downtown Los Angeles, CA (90021): https://www.hiddenfoodgem.com/cities/downtown-los-angeles-ca-90021

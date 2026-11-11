@@ -1,5 +1,330 @@
 window.__HFG_OFFLINE_SEED__ = [
   {
+    "id": "molinos-coffee-riverside-92501",
+    "name": "Molinos Coffee (Downtown Riverside)",
+    "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
+    "regionalIdentity": "Family-Owned Single-Origin Latin Coffeehouse (Main St Riverside)",
+    "tags": [
+      "coffee",
+      "bakery",
+      "breakfast",
+      "latte"
+    ],
+    "price": 1,
+    "address": "3660 Main St",
+    "city": "Riverside",
+    "zip": "92501",
+    "driveFrom91761": "21 min from 91761",
+    "phone": "(951) 276-7711",
+    "hours": "Daily 6:30am–7:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-MLC",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Independent Downtown Riverside family roastery celebrating Latin American single-origin coffees, handcrafted Mazapán and Dulce de Leche lattes, and fresh pastries.",
+    "scratchCommitment": "In-house roasted Arabica beans sourced directly from Latin American farms, scratch Mexican piloncillo-cinnamon syrups, and baked Mexican sweet breads.",
+    "destinationDish": {
+      "name": "Signature Iced Mazapán Latte & Guava Cheese Pastelito",
+      "callout": "Double shot of rich espresso blended with sweet crushed peanut mazapán and creamy oat milk, paired with flaky guava pastry."
+    },
+    "description": "Downtown Riverside's premier independent specialty coffeehouse on the historic Main Street pedestrian mall, celebrated for creative Latin lattes, cold brew, and pastries.",
+    "story": "Molinos Coffee is the living room of downtown Riverside, where community members, students, and families gather over expertly roasted coffees made with pride.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Signature Iced Mazapán Latte & Guava Cheese Pastelito"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Famous Iced Mazapán Latte",
+          "price": "$5.50",
+          "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
+        },
+        {
+          "name": "Café de Olla Latte",
+          "price": "$5.25",
+          "desc": "Espresso infused with raw piloncillo cane sugar, Mexican cinnamon, and cloves with steamed milk."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Slow-Steeped Latin Cold Brew",
+          "price": "$4.50",
+          "desc": "24-hour steeped single-origin Colombian beans, low acidity and notes of dark chocolate."
+        },
+        {
+          "name": "Flaky Guava & Cream Cheese Pastelito",
+          "price": "$4.25",
+          "desc": "Buttery puff pastry filled with tropical guava reduction and sweet cream cheese."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Mexican Hot Chocolate (Abuelita style)",
+          "price": "$4.50",
+          "desc": "Steamed whole milk with spiced Mexican cinnamon chocolate."
+        },
+        {
+          "name": "Artisan Sourdough Toast with Avocado",
+          "price": "$7.50",
+          "desc": "Toasted local sourdough with crushed avocado, olive oil, and everything seasoning."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T18:35:01.694Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Elena V.",
+        "comment": "Best coffee in Riverside! The Mazapán latte is out of this world and the staff is so kind.",
+        "date": "2026-10-22T08:15:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Daniel M.",
+        "comment": "A Downtown Riverside gem. Love sitting outside on Main Street with a fresh pastry.",
+        "date": "2026-11-03T09:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9818,
+    "longitude": -117.3735,
+    "opening_hour_minutes": 390,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 1140,
+        "rangeStr": "6:30 AM – 7:00 PM"
+      }
+    },
+    "spotlightRank": 1,
+    "isDailyFreshGem": true,
+    "socialMedia": {
+      "instagram": "@molinoscoffee"
+    }
+  },
+  {
+    "id": "maison-la-jolie-redlands-92374",
+    "name": "Maison La Jolie Boulangerie & Bistrot (Redlands Public Market)",
+    "cuisine": "Authentic French Boulangerie, Croissants & Chocolat Chaud",
+    "regionalIdentity": "Parisian-Chef French Patisserie Inside Redlands Public Market",
+    "tags": [
+      "bakery",
+      "coffee",
+      "dessert",
+      "breakfast",
+      "french"
+    ],
+    "price": 2,
+    "address": "330 N 3rd St, Ste 1 (Redlands Public Market)",
+    "city": "Redlands",
+    "zip": "92374",
+    "driveFrom91761": "28 min from 91761",
+    "phone": "(909) 792-0330",
+    "hours": "Daily 8:30am–9:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-92374-MLJ",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-22",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "Owned and operated by a native chef from France inside the historic Redlands Public Market, bringing traditional Parisian boulangerie craftsmanship to the Inland Empire.",
+    "scratchCommitment": "Imported French chocolate, European butter-laminated croissants, scratch mille-feuille, and traditional French onion soup.",
+    "destinationDish": {
+      "name": "Chocolat Chaud à la Française (Served in a Butter Croissant Cup) & Pain au Chocolat",
+      "callout": "Rich, velvety hot chocolate crafted from imported French chocolate, poured into your choice of a hollowed flaky French butter croissant or classic cup with whipped cream."
+    },
+    "description": "An authentic Parisian boulangerie and bistrot inside Redlands Public Market, famous for its Chocolat Chaud à la Française served inside a butter croissant, flaky pastries, and French baguette sandwiches.",
+    "story": "Maison La Jolie brings \"le vrai goût de Paris\" to Downtown Redlands with imported French chocolate, shattered-crust croissants, and warm French comfort dishes.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Chocolat Chaud à la Française in a Butter Croissant"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Chocolat Chaud à la Française (Croissant Cup or Classic Cup)",
+          "price": "$8.50",
+          "desc": "Rich, creamy hot chocolate made with imported French chocolate, served inside a butter croissant or cup with whipped cream, spoon, and straw."
+        },
+        {
+          "name": "Traditional French Butter Croissant & Pain au Chocolat",
+          "price": "$5.25",
+          "desc": "Authentic Parisian laminated pastry with imported French butter and dark chocolate batons."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mille-Feuille & Croissant aux Amandes",
+          "price": "$6.95",
+          "desc": "Caramelized puff pastry layered with vanilla bean pastry cream, or twice-baked almond frangipane croissant."
+        },
+        {
+          "name": "Classic Bistrot French Onion Soup",
+          "price": "$9.50",
+          "desc": "Slow-caramelized onion broth topped with toasted baguette and melted Gruyère cheese."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Le Français Baguette Sandwich",
+          "price": "$12.50",
+          "desc": "Freshly baked crusty French baguette layered with Parisian bistrot fillings."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Camille D.",
+        "comment": "The French hot chocolate served inside a flaky butter croissant is pure Paris magic right in Redlands!",
+        "date": "2026-11-04T11:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0578,
+    "longitude": -117.1842,
+    "opening_hour_minutes": 510,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@maisonlajoliefrenchbakery"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 510,
+        "closeMin": 1260,
+        "rangeStr": "8:30 AM – 9:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T18:34:01.114Z",
+    "isDailyFreshGem": true
+  },
+  {
     "id": "lift-coffee-roasters-riverside-92507",
     "name": "Lift Coffee Roasters (Riverside Roastery)",
     "cuisine": "Small-Batch Micro-Roaster & Seasonal Craft Espresso",
@@ -27872,168 +28197,6 @@ window.__HFG_OFFLINE_SEED__ = [
         "openMin": 420,
         "closeMin": 1260,
         "rangeStr": "7:00 AM – 9:00 PM"
-      }
-    }
-  },
-  {
-    "id": "molinos-coffee-riverside-92501",
-    "name": "Molinos Coffee (Downtown Riverside)",
-    "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
-    "regionalIdentity": "Family-Owned Single-Origin Latin Coffeehouse (Main St Riverside)",
-    "tags": [
-      "coffee",
-      "bakery",
-      "breakfast",
-      "latte"
-    ],
-    "price": 1,
-    "address": "3660 Main St",
-    "city": "Riverside",
-    "zip": "92501",
-    "driveFrom91761": "21 min from 91761",
-    "phone": "(951) 276-7711",
-    "hours": "Daily 6:30am–7:00pm",
-    "healthPermit": {
-      "facilityId": "RIVCO-DEH-92501-MLC",
-      "agency": "Riverside County Department of Environmental Health",
-      "grade": "A",
-      "score": 99,
-      "inspectedOn": "2026-09-18",
-      "portalUrl": "https://rivcoeh.org"
-    },
-    "familyRoots": "Independent Downtown Riverside family roastery celebrating Latin American single-origin coffees, handcrafted Mazapán and Dulce de Leche lattes, and fresh pastries.",
-    "scratchCommitment": "In-house roasted Arabica beans sourced directly from Latin American farms, scratch Mexican piloncillo-cinnamon syrups, and baked Mexican sweet breads.",
-    "destinationDish": {
-      "name": "Signature Iced Mazapán Latte & Guava Cheese Pastelito",
-      "callout": "Double shot of rich espresso blended with sweet crushed peanut mazapán and creamy oat milk, paired with flaky guava pastry."
-    },
-    "description": "Downtown Riverside's premier independent specialty coffeehouse on the historic Main Street pedestrian mall, celebrated for creative Latin lattes, cold brew, and pastries.",
-    "story": "Molinos Coffee is the living room of downtown Riverside, where community members, students, and families gather over expertly roasted coffees made with pride.",
-    "image": "img/hero.png",
-    "photos": [
-      {
-        "file": "img/hero.png",
-        "label": "Signature Iced Mazapán Latte & Guava Cheese Pastelito"
-      }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Famous Iced Mazapán Latte",
-          "price": "$5.50",
-          "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
-        },
-        {
-          "name": "Café de Olla Latte",
-          "price": "$5.25",
-          "desc": "Espresso infused with raw piloncillo cane sugar, Mexican cinnamon, and cloves with steamed milk."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Slow-Steeped Latin Cold Brew",
-          "price": "$4.50",
-          "desc": "24-hour steeped single-origin Colombian beans, low acidity and notes of dark chocolate."
-        },
-        {
-          "name": "Flaky Guava & Cream Cheese Pastelito",
-          "price": "$4.25",
-          "desc": "Buttery puff pastry filled with tropical guava reduction and sweet cream cheese."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Mexican Hot Chocolate (Abuelita style)",
-          "price": "$4.50",
-          "desc": "Steamed whole milk with spiced Mexican cinnamon chocolate."
-        },
-        {
-          "name": "Artisan Sourdough Toast with Avocado",
-          "price": "$7.50",
-          "desc": "Toasted local sourdough with crushed avocado, olive oil, and everything seasoning."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-11-10T03:00:00Z",
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Elena V.",
-        "comment": "Best coffee in Riverside! The Mazapán latte is out of this world and the staff is so kind.",
-        "date": "2026-10-22T08:15:00Z"
-      },
-      {
-        "stars": 5,
-        "name": "Daniel M.",
-        "comment": "A Downtown Riverside gem. Love sitting outside on Main Street with a fresh pastry.",
-        "date": "2026-11-03T09:30:00Z"
-      }
-    ],
-    "region": "Inland Empire",
-    "county": "Riverside",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 33.9818,
-    "longitude": -117.3735,
-    "opening_hour_minutes": 390,
-    "closing_hour_minutes": 1140,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "lunch"
-    ],
-    "meal_types": [
-      "breakfast",
-      "lunch"
-    ],
-    "is_active": true,
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 390,
-        "closeMin": 1140,
-        "rangeStr": "6:30 AM – 7:00 PM"
       }
     }
   }

@@ -331,6 +331,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hiddenfoodgem.com/cities/redlands-ca-92374</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.hiddenfoodgem.com/cities/richardson-tx-75075</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -467,6 +473,18 @@
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/molinos-coffee-riverside-92501</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/maison-la-jolie-redlands-92374</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/gem/lift-coffee-roasters-riverside-92507</loc>
@@ -1460,12 +1478,6 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/gem/tios-tacos-riverside-92501</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.hiddenfoodgem.com/gem/molinos-coffee-riverside-92501</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

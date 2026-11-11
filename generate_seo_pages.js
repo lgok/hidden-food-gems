@@ -639,6 +639,9 @@ fs.writeFileSync(path.join(publicDir, "llms.txt"), llmsTxt, "utf8");
 // 5. Pre-render featured listings directly inside <main id="view"> of index.html & app.js
 // Feature the newest independent food gems across all ZIP codes right on the front page
 const sortedForPrerender = [...restaurants].sort((a, b) => {
+  const aSpot = a.spotlightRank || 999;
+  const bSpot = b.spotlightRank || 999;
+  if (aSpot !== bSpot) return aSpot - bSpot;
   const aDate = String(a.createdAt || '');
   const bDate = String(b.createdAt || '');
   return bDate.localeCompare(aDate);

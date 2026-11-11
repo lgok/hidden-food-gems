@@ -1149,15 +1149,20 @@
           const bNameMatch = b.name.toLowerCase().includes(q) ? 1 : 0;
           if (bNameMatch !== aNameMatch) return bNameMatch - aNameMatch;
         }
+        const aSpot = a.spotlightRank || 999;
+        const bSpot = b.spotlightRank || 999;
+        if (!activeZip && !isGpsActive && aSpot !== bSpot) {
+          return aSpot - bSpot;
+        }
         if (sortByProximityFirst) {
           const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
           const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
-          return getDistanceMiles(a) - getDistanceMiles(b) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
+          return getDistanceMiles(a) - getDistanceMiles(b) || (aSpot - bSpot) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
         }
         // Default home view: Feature newly added restaurants across all ZIP codes right at the top
         const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
         const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
-        return bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
+        return (aSpot - bSpot) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
       },
       health: (a, b) => (b.healthPermit?.score || 0) - (a.healthPermit?.score || 0) || getDistanceMiles(a) - getDistanceMiles(b),
       top: (a, b) => avg(b) - avg(a) || getDistanceMiles(a) - getDistanceMiles(b),
@@ -1324,6 +1329,35 @@
 
         <div id="vote-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:20px">
           
+          <!-- Candidate 0: Molinos Coffee (Featured #1 Partner Spotlight) -->
+          <div class="vote-dish-card" data-candidate-id="molinos-coffee-riverside-92501" style="background:linear-gradient(160deg,#2c1d13 0%,#21150e 100%);border:2px solid #f5c26b;border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease;box-shadow:0 6px 24px rgba(245,194,107,0.22)" onclick="window.selectVoteCandidate('molinos-coffee-riverside-92501')">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+                <span style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;padding:3px 10px;border-radius:999px;font-size:0.74rem;font-weight:800">🌟 #1 Spotlight · Riverside</span>
+                <span style="font-size:0.78rem;color:#f5c26b;font-weight:700">@molinoscoffee</span>
+              </div>
+              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Molinos Coffee</h3>
+              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Iced Mazapán Latte &amp; Café de Olla</div>
+              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Downtown Riverside's premier family-owned Latin micro-roaster on Main St with scratch Mazapán lattes &amp; guava pastelitos.</p>
+            </div>
+            
+            <div>
+              <div class="vote-result-bar" id="result-wrap-molinos-coffee-riverside-92501" style="display:none;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
+                  <span id="vote-count-molinos-coffee-riverside-92501" style="color:#c2b2a3">0 votes</span>
+                  <span id="vote-percent-molinos-coffee-riverside-92501" style="color:#f5c26b">0%</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
+                  <div id="bar-fill-molinos-coffee-riverside-92501" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
+                </div>
+              </div>
+
+              <button class="vote-btn-pill" id="btn-vote-molinos-coffee-riverside-92501" style="width:100%;background:rgba(245,194,107,0.18);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
+                <span>Vote for Molinos Coffee</span>
+              </button>
+            </div>
+          </div>
+
           <!-- Candidate 1: Klatch Coffee -->
           <div class="vote-dish-card" data-candidate-id="klatch-coffee-rancho-cucamonga" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('klatch-coffee-rancho-cucamonga')">
             <div>
@@ -1498,6 +1532,17 @@
           </div>
 
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px" id="vote-leaderboard-grid">
+            <div style="background:#261a12;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.45)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem">🌟 Molinos Coffee</span>
+                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-molinos-coffee-riverside-92501">0 votes</span>
+              </div>
+              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
+                <div id="lead-bar-molinos-coffee-riverside-92501" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
+              </div>
+              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-molinos-coffee-riverside-92501">0% of total</div>
+            </div>
+
             <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
                 <span style="font-weight:700;color:#fff;font-size:0.88rem">Klatch Coffee</span>
@@ -2112,11 +2157,13 @@
             ${mediaHtml(r, false, i < 6)}
             ${b ? `<span class="badge ${b.cls}">${b.txt}</span>` : ''}
             <div class="media-flags">
-              <span>${(r.createdAt && r.createdAt >= '2026-11-05')
-                ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                : r.featured
-                  ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                  : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
+              <span>${r.spotlightRank === 1
+                ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;font-weight:800">🌟 #1 Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                : (r.createdAt && r.createdAt >= '2026-11-05')
+                  ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                  : r.featured
+                    ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                    : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
             </div>
           </div>
           <div class="card-body">
@@ -2859,13 +2906,14 @@
 
   // ---------- Integrated November Community Showdown Voting Module ----------
   (function initCommunityShowdown() {
-    const CANDIDATES = ['klatch-coffee-rancho-cucamonga', 'qamaria-yemeni-coffee-rancho', 'mestiza-coffeehouse-ontario', 'iron-and-kin-coffee-claremont'];
+    const CANDIDATES = ['molinos-coffee-riverside-92501', 'klatch-coffee-rancho-cucamonga', 'qamaria-yemeni-coffee-rancho', 'mestiza-coffeehouse-ontario', 'iron-and-kin-coffee-claremont'];
     const STORAGE_KEY = 'hfg_voted_candidate_clean_v1';
     const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
     const LOCAL_TALLIES_KEY = 'hfg_community_tallies_clean_v1';
 
     // Baseline verified community votes distributed organically across contenders
     const BASELINE_TALLIES = {
+      'molinos-coffee-riverside-92501': 0,
       'klatch-coffee-rancho-cucamonga': 0,
       'qamaria-yemeni-coffee-rancho': 0,
       'mestiza-coffeehouse-ontario': 0,

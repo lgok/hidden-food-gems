@@ -1,5 +1,118 @@
 [
   {
+    "id": "roadrunner-coffee-redlands-92373",
+    "name": "RoadRunner Coffee (@roadrunner.coffee — Downtown Redlands)",
+    "cuisine": "Specialty Espresso, Coconut Cloud Matcha/Hojicha & Artisan Cafe Sandwiches",
+    "regionalIdentity": "Independent Downtown Redlands Specialty Coffeehouse & Family Cafe (E. State St)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "tea",
+      "breakfast",
+      "lunch",
+      "bakery"
+    ],
+    "price": 1,
+    "address": "204 E State St",
+    "city": "Redlands",
+    "state": "CA",
+    "zip": "92373",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "@roadrunner.coffee",
+    "hours": "Daily 8:00am–10:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-92373-RRC",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-18",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent Downtown Redlands neighborhood coffeehouse on East State Street with a warm, welcoming barista team and a dedicated kids' lunch menu.",
+    "scratchCommitment": "House-made vanilla and seasonal syrups, MatchaBot ceremonial matcha and roasted hojicha, coconut water cloud drinks with coconut creme tops, and toasted sourdough/ciabatta sandwiches.",
+    "destinationDish": {
+      "name": "Matcha Cloud / Hojicha Cloud, Banana Bread Matcha & Tuscan Ridge Ciabatta Sammy",
+      "callout": "MatchaBot matcha or roasted hojicha over coconut water and house vanilla crowned with coconut creme top, paired with a toasted ciabatta pesto mozzarella sandwich."
+    },
+    "description": "Located in the heart of Downtown Redlands at 204 E. State St, RoadRunner Coffee (@roadrunner.coffee) serves creative Coconut Cloud Matcha & Hojicha drinks, Banana Bread Lattes, and artisan sandwiches.",
+    "story": "A vibrant, community-first cafe on Redlands’ historic State Street where families, students, and coffee lovers gather from morning until 10:00 PM.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Matcha Cloud, Banana Bread Latte & Tuscan Ridge Sammy"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Matcha Cloud / Hojicha Cloud (Iced)",
+          "price": "$6.50",
+          "desc": "MatchaBot matcha or hojicha, house-made vanilla, coconut water, and a rich coconut creme top."
+        },
+        {
+          "name": "Banana Bread Latte / Banana Bread Matcha",
+          "price": "$6.50",
+          "desc": "Specialty espresso or ceremonial matcha infused with warm scratch banana bread notes."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Tuscan Ridge Sammy",
+          "price": "$9.50",
+          "desc": "Toasted ciabatta, sun-dried tomato pesto, fresh mozzarella, arugula, and balsamic glaze with fresh fruit."
+        },
+        {
+          "name": "Sourdough Grilled Cheese & Seasonal Soup",
+          "price": "$14.50",
+          "desc": "Golden sourdough grilled cheese served with warm tomato or seasonal soup."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kids Sourdough Grilled Cheese or Strawberry PB&J (with Fruit)",
+          "price": "$6.20",
+          "desc": "Kid-friendly cheddar/mozzarella grilled cheese or whole-wheat strawberry preserves PB&J served with fresh fruit."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T21:50:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Hannah B.",
+        "comment": "Love RoadRunner on State Street! The Hojicha Cloud and Banana Bread Matcha are amazing, and my kids love the grilled cheese with fruit.",
+        "date": "2026-11-10T14:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0563,
+    "longitude": -117.1812,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1320,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
+  },
+  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",

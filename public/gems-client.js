@@ -115,7 +115,7 @@
     const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08') || r.createdAt.startsWith('2026-11-11')));
     if (isRecentlyAdded) return { cls: 'new', txt: '✨ Freshly Added' };
     const a = avg(r), n = (r.ratings && r.ratings.length);
-    if (!n) return { cls: 'new', txt: '🌱 Be the first to rate' };
+    if (!n) return { cls: 'gem', txt: '💎 Verified Gem' };
     if (a >= 4.5 && n < GEM_MAX_RATINGS) return { cls: 'gem', txt: '💎 Hidden Gem' };
     if (a >= 4.5) return { cls: 'fav', txt: '⭐ Local Favorite' };
     return null;
@@ -2143,19 +2143,22 @@
           <div class="empty" style="grid-column:1/-1">
             <div class="big">📍</div>
             <h3>No verified gems within ${activeRadius} miles of ${esc(placeName)}</h3>
-            <p>${isOutState ? "We haven't ingested this county's public health inspection records yet. We are expanding nationally soon!" : "Try expanding the distance radius or searching an adjacent city or ZIP code."}</p>
+            <p>${isOutState ? "We haven't ingested this county's public health inspection records yet. Tell us which local spot to verify first!" : "We're expanding into this ZIP code next! Nominate your favorite family-owned spot or request this ZIP code below."}</p>
             <div style="display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap">
-              <button class="btn btn-gold" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
-              ${isOutState ? `<a class="btn btn-ghost" href="#/add">📩 Request Ingestion for ${esc(geo.city)}, ${esc(geo.state)}</a>` : ''}
+              <button class="btn btn-gold" type="button" onclick="window.openNominationSheet('${esc(placeName)}')">📩 Request ${esc(placeName)} &amp; Nominate a Spot</button>
+              <button class="btn btn-light" type="button" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
             </div>
           </div>`;
       } else if (activeZip) {
         grid.innerHTML = `
           <div class="empty" style="grid-column:1/-1">
-            <div class="big">🍽️</div>
+            <div class="big">📍</div>
             <h3>No verified gems within ${activeRadius} miles of ${esc(geoLabel || activeZip)}</h3>
-            <p>Try expanding the distance radius or searching an adjacent city or ZIP code.</p>
-            <button class="btn btn-gold" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
+            <p>We don't cover ZIP ${esc(activeZip)} yet — request it below and tell us your favorite independent restaurant or cafe!</p>
+            <div style="display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap">
+              <button class="btn btn-gold" type="button" onclick="window.openNominationSheet('ZIP ${esc(activeZip)}')">📩 Request ZIP ${esc(activeZip)}</button>
+              <button class="btn btn-light" type="button" onclick="document.getElementById('clear').click()">Reset to All Gems</button>
+            </div>
           </div>`;
       } else {
         grid.innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">🍽️</div><h3>No gems match that filter</h3><p>Try expanding the distance radius, switching meal tabs, or clearing a filter chip above.</p><button class="btn" onclick="document.getElementById('clear').click()">Reset filters</button></div>`;
@@ -2201,8 +2204,8 @@
             <div class="card-title">
               <h3><a href="${IS_FILE_PROTO ? `#/r/${esc(r.id)}` : `/gem/${esc(r.id)}`}" style="color:inherit;text-decoration:none">${esc(r.name)}</a></h3>
               <div class="rating-grade-row">
-                ${hp ? `<span class="grade-inline-pill" title="Health Grade ${esc(hp.grade)}">Grade ${esc(hp.grade)}</span>` : ''}
-                <span class="rating-pill" title="${a.toFixed(1)} Star Rating"><span class="stars-sym">${starsTxt(a)}</span> ${a.toFixed(1)}</span>
+                ${hp ? `<span class="grade-inline-pill" title="Health Grade ${esc(hp.grade)}${hp.score ? ` (${hp.score}/100)` : ''}">Grade ${esc(hp.grade)}${hp.score ? ` · ${hp.score}` : ''}</span>` : ''}
+                ${(r.ratings && r.ratings.length) ? `<span class="rating-pill" title="${a.toFixed(1)} Star Rating"><span class="stars-sym">${starsTxt(a)}</span> ${a.toFixed(1)}</span>` : `<span class="rating-pill" title="100% Independent Family-Run Spot">✓ Independent</span>`}
               </div>
             </div>
             <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} · ${price(r.price)} · ${esc(r.city)}</div>
@@ -2580,8 +2583,8 @@
         <div class="detail-rating">
           <h2>${esc(r.name)}</h2>
           <div class="rating-grade-row">
-            ${hp ? `<span class="grade-inline-pill" title="Health Grade ${esc(hp.grade)}">Grade ${esc(hp.grade)}</span>` : ''}
-            <span class="rating-pill" title="${a ? a.toFixed(1) + ' star rating' : '5.0 star rating'}"><span class="stars-sym">${starsTxt(a || 5)}</span> ${(a || 5).toFixed(1)}</span>
+            ${hp ? `<span class="grade-inline-pill" title="Health Grade ${esc(hp.grade)}${hp.score ? ` (${hp.score}/100)` : ''}">Grade ${esc(hp.grade)}${hp.score ? ` · ${hp.score}` : ''}</span>` : ''}
+            ${n ? `<span class="rating-pill" title="${a.toFixed(1)} star rating"><span class="stars-sym">${starsTxt(a)}</span> ${a.toFixed(1)}</span>` : `<span class="rating-pill" title="100% Independent Family-Run Spot">✓ Independent</span>`}
           </div>
         </div>
         <div class="meta">${emojiFor(r)} ${esc(r.cuisine)} · ${price(r.price)} · ${esc(r.city)}, ${esc(r.state || 'CA')} ${esc(r.zip || '')} ${r.driveFrom91761 ? `· 🚗 ${esc(r.driveFrom91761)}` : ''}</div>
@@ -2885,7 +2888,7 @@
       }
       const r = state.restaurants.find((x) => x.id === cleanId);
       if (r) renderDetail(r); else { closeSheet(); toast('Restaurant not found'); }
-    } else if (page === 'add') renderAdd();
+    } else if (page === 'add' || page === 'contact' || location.pathname === '/contact') renderAdd();
     else if (searchGemId && (!location.hash || location.hash === '#/')) {
       const r = state.restaurants.find((x) => x.id === decodeURIComponent(searchGemId));
       if (r) renderDetail(r); else closeSheet();
@@ -3132,22 +3135,22 @@
 
     
   // ---------- Community Nomination & Share Handlers ----------
-  window.openNominationSheet = function() {
+  window.openNominationSheet = function(prefillCityZip = '') {
     if (typeof openSheet === 'function') {
       openSheet(`
         <div class="form-head" style="text-align:center;padding:16px 0 10px">
-          <span class="eyebrow" style="color:#f5c26b;background:rgba(245,194,107,0.15);border:1px solid rgba(245,194,107,0.3);padding:4px 12px;border-radius:999px;font-size:0.8rem;font-weight:700">🗳️ Community Nomination</span>
-          <h2 style="margin:12px 0 6px;color:#fff;font-size:1.6rem">Nominate a Gem for December</h2>
-          <p style="color:#c2b2a3;font-size:0.9rem;max-width:540px;margin:0 auto">Know an authentic, family-owned restaurant, cafe, or bakery in the Inland Empire? Tell us who should be in next month's community vote!</p>
+          <span class="eyebrow" style="color:#f5c26b;background:rgba(245,194,107,0.15);border:1px solid rgba(245,194,107,0.3);padding:4px 12px;border-radius:999px;font-size:0.8rem;font-weight:700">🗳️ Community Nomination &amp; ZIP Request</span>
+          <h2 style="margin:12px 0 6px;color:#1f1612;font-size:1.6rem">${prefillCityZip ? `Request ${esc(prefillCityZip)} &amp; Nominate a Gem` : 'Nominate a Gem for December'}</h2>
+          <p style="color:#4a3a32;font-size:0.9rem;max-width:540px;margin:0 auto">Know an authentic, family-owned restaurant, cafe, or bakery? Tell us which ZIP code and local spot we should verify next!</p>
         </div>
         <form class="form detail-body" id="nomination-form" style="max-width:520px;margin:0 auto" onsubmit="window.handleNominationSubmit(event)">
           <div class="field" style="margin-bottom:14px">
-            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Restaurant or Cafe Name *</label>
-            <input type="text" id="nom-name" required placeholder="e.g. Grandma's Kitchen" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+            <label style="display:block;color:#1f1612;font-weight:700;font-size:0.88rem;margin-bottom:6px">Restaurant or Cafe Name *</label>
+            <input type="text" id="nom-name" required placeholder="e.g. Grandma's Kitchen (or 'Unlock My ZIP')" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
           </div>
           <div class="field" style="margin-bottom:14px">
-            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">City & ZIP Code *</label>
-            <input type="text" id="nom-city" required placeholder="e.g. Ontario, CA 91762" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
+            <label style="display:block;color:#1f1612;font-weight:700;font-size:0.88rem;margin-bottom:6px">City &amp; ZIP Code *</label>
+            <input type="text" id="nom-city" required value="${esc(prefillCityZip)}" placeholder="e.g. Ontario, CA 91762" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
           </div>
           <div class="field" style="margin-bottom:14px">
             <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Signature Dish or Drink</label>

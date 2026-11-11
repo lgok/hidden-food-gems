@@ -3,14 +3,63 @@ const path = require("path");
 const vm = require("vm");
 
 const publicDir = path.join(__dirname, "public");
-const seedCode = fs.readFileSync(path.join(publicDir, "seed-data.js"), "utf8");
-const ctx = { window: {} };
-vm.runInNewContext(seedCode, ctx);
-const restaurants = ctx.window.SEED_RESTAURANTS || ctx.window.__HFG_OFFLINE_SEED__ || [];
+const seedJsonPath = path.join(__dirname, "data", "seed.json");
+const rawSeed = JSON.parse(fs.readFileSync(seedJsonPath, "utf8"));
+const restaurants = Array.isArray(rawSeed) ? rawSeed : (rawSeed.restaurants || []);
 
 if (!restaurants.length) {
-  throw new Error("No restaurants loaded from seed-data.js");
+  throw new Error("No restaurants loaded from data/seed.json");
 }
+
+// Build slimmed, minified client seed-data.js (~220 KB raw / ~55 KB Brotli instead of 936 KB)
+const slimClientRestaurants = restaurants.map((r) => {
+  const c = { ...r };
+  delete c.weeklySchedule;
+  delete c.meals;
+  delete c.familyRoots;
+  delete c.story;
+  delete c.description;
+  delete c.sample;
+  delete c.isDailyFreshGem;
+  delete c.addedDate;
+  delete c.freshlyAdded;
+  delete c.lat;
+  delete c.lng;
+  delete c.category;
+  delete c.priceRange;
+  delete c.rating;
+  delete c.reviewCount;
+  delete c.mustTry;
+  delete c.images;
+  delete c.analytics;
+  delete c.destinationDish;
+  delete c.socialMedia;
+  delete c.driveFrom91761;
+  delete c.opening_hour_minutes;
+  delete c.closing_hour_minutes;
+  delete c.timezone;
+  if (c.healthPermit) {
+    c.healthPermit = { grade: c.healthPermit.grade || "A", score: c.healthPermit.score || 98 };
+  }
+  if (!c.verifiedPhoto && !c.ownerVerified) {
+    delete c.image;
+    delete c.photos;
+  }
+  if (!c.media || !c.media.length) delete c.media;
+  if (!c.ratings || !c.ratings.length) delete c.ratings;
+  if (c.structuredMenu) {
+    const items = [
+      ...(c.structuredMenu.signatures || []),
+      ...(c.structuredMenu.regionalClassics || []),
+      ...(c.structuredMenu.sidesAndDrinks || [])
+    ].slice(0, 3).map((i) => ({ name: i.name, price: i.price }));
+    c.structuredMenu = { signatures: items };
+  }
+  return c;
+});
+const slimJsPayload = `window.SEED_RESTAURANTS=${JSON.stringify(slimClientRestaurants)};window.__HFG_OFFLINE_SEED__=window.SEED_RESTAURANTS;\n`;
+fs.writeFileSync(path.join(publicDir, "seed-data.js"), slimJsPayload, "utf8");
+fs.writeFileSync(path.join(__dirname, "seed-data.js"), slimJsPayload, "utf8");
 
 const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({
@@ -260,8 +309,9 @@ const seoStyles = `
 
 // 1. Generate Individual Restaurant Pages (/gem/[id].html)
 for (const r of restaurants) {
-  const stars = avgStars(r);
-  const ratingCount = (r.ratings && r.ratings.length) || 12;
+  const hasRealRatings = Array.isArray(r.ratings) && r.ratings.length > 0;
+  const stars = hasRealRatings ? avgStars(r) : null;
+  const ratingCount = hasRealRatings ? r.ratings.length : 0;
   const priceStr = "$".repeat(r.price || 2);
   const fullAddr = `${r.address}, ${r.city}, ${r.state || "CA"} ${r.zip}`;
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${r.name} ${fullAddr}`)}`;
@@ -307,13 +357,17 @@ for (const r of restaurants) {
       longitude: r.longitude,
     },
     openingHours: r.hours,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: stars,
-      reviewCount: ratingCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
+    ...(hasRealRatings
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: stars,
+            reviewCount: ratingCount,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }
+      : {}),
   };
 
   const title = `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) — Menu, Hours & Health Grade | HiddenFoodGem.com`;
@@ -364,7 +418,7 @@ ${ga4AndOutboundScriptHtml}
         ${r.comingSoon ? `<span class="pill" style="background:rgba(245,158,11,0.2);color:#fbbf24;border-color:#f59e0b">🚀 ${esc(r.comingSoonLabel || "Coming Soon")}</span>` : ""}
         <span class="pill">${esc(r.cuisine)} · ${esc(priceStr)}</span>
         ${r.healthPermit ? `<span class="pill pill-green">✓ Official Grade ${esc(r.healthPermit.grade || "A")} (${esc(r.healthPermit.score || 98)}/100)</span>` : ""}
-        <span class="pill">★ ${stars} (${ratingCount} local ratings)</span>
+        ${hasRealRatings ? `<span class="pill">★ ${stars} (${ratingCount} local ratings)</span>` : `<span class="pill">✓ 100% Independent Family-Run</span>`}
       </div>
 
       <h1>${esc(r.name)}</h1>
@@ -594,9 +648,135 @@ ${ga4AndOutboundScriptHtml}
   fs.writeFileSync(path.join(citiesDir, `${slug}.html`), html, "utf8");
 }
 
-// 3. Generate public/sitemap.xml & public/robots.txt (Unified on https://www.hiddenfoodgem.com)
+// 3. Generate public/contact.html (so /contact returns HTTP 200 and renders a full Contact / Nominate / Partner page)
+const contactTitle = "Contact Us & Nominate a Local Restaurant | HiddenFoodGem.com";
+const contactDesc = "Contact HiddenFoodGem.com to feature your independent family-owned restaurant, bakery, coffeehouse, or boba shop, or nominate a neighborhood gem in your ZIP code.";
+const contactHtml = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(contactTitle)}</title>
+  <meta name="description" content="${esc(contactDesc)}" />
+  <link rel="canonical" href="${baseUrl}/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="${esc(contactTitle)}" />
+  <meta property="og:description" content="${esc(contactDesc)}" />
+  <meta property="og:url" content="${baseUrl}/contact" />
+  <meta property="og:site_name" content="HiddenFoodGem.com" />
+  <meta property="og:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+${ga4AndOutboundScriptHtml}
+  <script defer src="/_vercel/insights/script.js"></script>
+  <style>${seoStyles}
+    .form-grid { display: grid; gap: 14px; max-width: 620px; margin-top: 16px; }
+    .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .form-grid label { display: block; font-size: 0.86rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .form-grid input, .form-grid select, .form-grid textarea {
+      width: 100%; padding: 12px 14px; border-radius: 10px; background: #140f0d;
+      border: 1px solid rgba(245, 194, 107, 0.35); color: var(--text); font: inherit; font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="brand"><span>💎</span><span>Hidden <em>Food</em> Gem.com</span></a>
+    <div style="display:flex;gap:8px;align-items:center">
+      <a href="/" class="btn btn-outline">🔎 Browse All Gems</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> › <span>Contact Us &amp; Restaurant Inquiries</span>
+    </nav>
+
+    <section class="hero-card">
+      <div class="pill-row">
+        <span class="pill">📩 Direct Curation Team</span>
+        <span class="pill pill-green">✓ 100% Independent &amp; Family-Owned Only</span>
+      </div>
+      <h1>Contact HiddenFoodGem.com</h1>
+      <p>Own an independent restaurant, specialty coffeehouse, bakery, or boba shop? Or want us to unlock your ZIP code next? Send us a note below or email our curation team directly at <a href="mailto:letsgetoutkids@gmail.com?subject=Restaurant%20Listing%20Inquiry%20-%20HiddenFoodGem.com"><strong>letsgetoutkids@gmail.com</strong></a>.</p>
+
+      <form class="form-grid" onsubmit="handleContactSubmit(event)">
+        <div class="form-row">
+          <div>
+            <label for="c-name">Restaurant or Cafe Name *</label>
+            <input id="c-name" name="name" required placeholder="e.g. Molinos Coffee or 'Unlock My ZIP'" />
+          </div>
+          <div>
+            <label for="c-owner">Your Name *</label>
+            <input id="c-owner" name="ownerName" required placeholder="e.g. Diana" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="c-email">Email Address *</label>
+            <input id="c-email" name="email" type="email" required placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="c-phone">Phone or Instagram Handle</label>
+            <input id="c-phone" name="phone" placeholder="(909) 555-0199 or @yourcafe" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="c-city">City, State &amp; ZIP Code *</label>
+            <input id="c-city" name="city" required placeholder="e.g. Chino, CA 91710" />
+          </div>
+          <div>
+            <label for="c-dish">Signature Dish or Seasonal Drink</label>
+            <input id="c-dish" name="dish" placeholder="e.g. Iced Mazapán Latte or Birria Tacos" />
+          </div>
+        </div>
+        <div>
+          <label for="c-msg">How can we help? (Listing update, seasonal menu spotlight, video clip, or new ZIP request)</label>
+          <textarea id="c-msg" name="message" rows="4" placeholder="Tell us about your signature dishes, seasonal coffee drinks, or which ZIP code you want us to add next..."></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn" style="padding:13px 24px;font-size:1rem">📩 Send Message to Curation Team</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p><a href="/">← Back to All Verified Gems on HiddenFoodGem.com</a> · <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener">🎡 Family Events on LetsGetOutKids.com ↗</a></p>
+    </footer>
+  </main>
+
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      var name = document.getElementById('c-name').value || '';
+      var owner = document.getElementById('c-owner').value || '';
+      var email = document.getElementById('c-email').value || '';
+      var phone = document.getElementById('c-phone').value || '';
+      var city = document.getElementById('c-city').value || '';
+      var dish = document.getElementById('c-dish').value || '';
+      var msg = document.getElementById('c-msg').value || '';
+      var subject = encodeURIComponent('HiddenFoodGem.com Inquiry: ' + name + ' (' + city + ')');
+      var body = encodeURIComponent(
+        'Hello HiddenFoodGem.com Team,\\n\\n' +
+        '• Restaurant / Topic: ' + name + '\\n' +
+        '• Contact Name: ' + owner + '\\n' +
+        '• Email: ' + email + '\\n' +
+        '• Phone / IG: ' + phone + '\\n' +
+        '• City & ZIP: ' + city + '\\n' +
+        (dish ? '• Signature Dish / Drink: ' + dish + '\\n' : '') +
+        (msg ? '\\nDetails:\\n' + msg + '\\n' : '')
+      );
+      window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + subject + '&body=' + body;
+    }
+  </script>
+</body>
+</html>`;
+fs.writeFileSync(path.join(publicDir, "contact.html"), contactHtml, "utf8");
+
+// 3b. Generate public/sitemap.xml & public/robots.txt (Unified on https://www.hiddenfoodgem.com)
 const sitemapUrls = [
   `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+  `  <url>\n    <loc>${baseUrl}/contact</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
   ...cityZipEntries.map(
     (c) =>
       `  <url>\n    <loc>${baseUrl}/cities/${c.slug}</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>`
@@ -741,14 +921,14 @@ ${ga4AndOutboundScriptHtml}
     </a>
     <div style="display:flex;gap:8px;align-items:center">
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Verified Family Events &amp; Activities">🎡 Family Events</a>
-      <a href="#/add" class="btn btn-ghost btn-sm">📩 Contact Us</a>
+      <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" class="btn btn-ghost btn-sm">📩 Contact Us</a>
     </div>
   </header>
 
   <main id="view">
     <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Bakeries, Coffee &amp; Boba</h1>
-      <p style="color:#c2b2a3;margin:0 0 18px">Explore 155+ hand-vetted independent neighborhood gems across 73 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
+      <p style="color:#c2b2a3;margin:0 0 18px">Explore 180+ hand-vetted independent neighborhood gems across 79 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">${prerenderCardsHtml}</div>
     </section>
   </main>
@@ -760,13 +940,13 @@ ${ga4AndOutboundScriptHtml}
     </div>
     <div style="display:flex;align-items:center;gap:16px">
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b;text-decoration:none;font-weight:600">🎡 Let's Get Out, Kids!</a>
-      <a href="#/add" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Advertise With Us</a>
+      <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Contact Us</a>
     </div>
   </footer>
 
   <nav class="bottomnav" aria-label="Main">
     <a href="#/" data-nav="home"><span>🔎</span>Discover</a>
-    <a href="#/add" data-nav="add"><span>📩</span>Contact Us</a>
+    <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" data-nav="add"><span>📩</span>Contact Us</a>
   </nav>
 
   <div id="sheet" class="sheet" hidden>
@@ -784,8 +964,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="/seed-data.js?v=103"></script>
-  <script src="/gems-client.js?v=106"></script>
+  <script defer src="/seed-data.js?v=107"></script>
+  <script defer src="/gems-client.js?v=107"></script>
 </body>
 </html>
 `;
@@ -813,9 +993,10 @@ const notFoundHtml = `<!doctype html>
     <section class="hero-card">
       <div style="font-size:3rem;margin-bottom:8px">🍽️</div>
       <h1>404 — Hidden Gem Not Found</h1>
-      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px">We couldn&apos;t find a restaurant or city guide at that address. Explore all 155+ verified independent restaurants across 73 ZIP codes below.</p>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px">We couldn&apos;t find a restaurant or city guide at that address. Explore all 180+ verified independent restaurants across 79 ZIP codes below.</p>
       <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap">
-        <a href="/" class="btn">💎 Explore All 120 Verified Gems</a>
+        <a href="/" class="btn">💎 Explore All Verified Gems</a>
+        <a href="/contact" class="btn btn-outline">📩 Contact Us / Request a ZIP</a>
         <a href="https://www.letsgetoutkids.com" class="btn btn-outline">🎡 Browse Family Events</a>
       </div>
     </section>
@@ -825,26 +1006,38 @@ const notFoundHtml = `<!doctype html>
 `;
 fs.writeFileSync(path.join(publicDir, "404.html"), notFoundHtml, "utf8");
 
-// Update app.js so "/" serves indexHtml (200) and any unmatched path returns HTTP 404 (not 200!)
+// Update app.js so "/" serves indexHtml (200), "/contact" serves contactHtml (200) with edge caching + CSP, and any unmatched path returns HTTP 404
 const appJsCode = `const http = require("http");
 
 const INDEX_HTML = ${JSON.stringify(indexHtml)};
+const CONTACT_HTML = ${JSON.stringify(contactHtml)};
 const NOT_FOUND_HTML = ${JSON.stringify(notFoundHtml)};
-
+const CSP_VALUE = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' data: blob:; connect-src 'self' https://api.zippopotam.us https://nominatim.openstreetmap.org https://abacus.jasoncameron.dev https://www.google-analytics.com https://analytics.google.com https://vitals.vercel-insights.com; font-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:;";
 
 const handler = (req, res) => {
   const rawUrl = req.url || "/";
-  const pathname = rawUrl.split("?")[0];
+  const pathname = rawUrl.split("?")[0].replace(/\\/+$/, "") || "/";
   if (pathname === "/" || pathname === "/index.html") {
     res.writeHead(200, {
       "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, max-age=0, must-revalidate"
+      "Content-Security-Policy": CSP_VALUE,
+      "Cache-Control": "public, max-age=60, s-maxage=600, stale-while-revalidate=86400"
     });
     res.end(INDEX_HTML);
     return;
   }
+  if (pathname === "/contact" || pathname === "/contact.html") {
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Security-Policy": CSP_VALUE,
+      "Cache-Control": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+    });
+    res.end(CONTACT_HTML);
+    return;
+  }
   res.writeHead(404, {
     "Content-Type": "text/html; charset=utf-8",
+    "Content-Security-Policy": CSP_VALUE,
     "X-Robots-Tag": "noindex, nofollow",
     "Cache-Control": "public, max-age=0, must-revalidate"
   });

@@ -6,6 +6,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' data: blob:; connect-src 'self' https://api.zippopotam.us https://nominatim.openstreetmap.org https://abacus.jasoncameron.dev https://www.google-analytics.com https://analytics.google.com https://vitals.vercel-insights.com; font-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:;"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
@@ -16,15 +20,46 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(self), camera=(), microphone=()"
         }
       ]
     },
     {
-      "source": "/(seed-data\\.js|app\\.js|styles\\.css)",
+      "source": "/(seed-data\\.js|gems-client\\.js|app\\.js|styles\\.css|icon\\.svg|manifest\\.webmanifest)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=3600, stale-while-revalidate=86400"
+          "value": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(cities|gem)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(contact|sitemap\\.xml|robots\\.txt|llms\\.txt)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60, s-maxage=600, stale-while-revalidate=86400"
         }
       ]
     }

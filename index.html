@@ -83,14 +83,14 @@
     </a>
     <div style="display:flex;gap:8px;align-items:center">
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Verified Family Events &amp; Activities">🎡 Family Events</a>
-      <a href="#/add" class="btn btn-ghost btn-sm">📩 Contact Us</a>
+      <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" class="btn btn-ghost btn-sm">📩 Contact Us</a>
     </div>
   </header>
 
   <main id="view">
     <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Bakeries, Coffee &amp; Boba</h1>
-      <p style="color:#c2b2a3;margin:0 0 18px">Explore 155+ hand-vetted independent neighborhood gems across 73 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
+      <p style="color:#c2b2a3;margin:0 0 18px">Explore 180+ hand-vetted independent neighborhood gems across 79 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
       <article style="background:#1f1713;border:1px solid rgba(245,194,107,0.18);border-radius:16px;padding:16px">
         <div style="font-size:0.76rem;color:#f5c26b;font-weight:700">Artisan Latin-Inspired Micro-Roaster &amp; Cafe · Riverside, CA 92501</div>
@@ -270,13 +270,13 @@
     </div>
     <div style="display:flex;align-items:center;gap:16px">
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b;text-decoration:none;font-weight:600">🎡 Let's Get Out, Kids!</a>
-      <a href="#/add" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Advertise With Us</a>
+      <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Contact Us</a>
     </div>
   </footer>
 
   <nav class="bottomnav" aria-label="Main">
     <a href="#/" data-nav="home"><span>🔎</span>Discover</a>
-    <a href="#/add" data-nav="add"><span>📩</span>Contact Us</a>
+    <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" data-nav="add"><span>📩</span>Contact Us</a>
   </nav>
 
   <div id="sheet" class="sheet" hidden>
@@ -294,7 +294,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="/seed-data.js?v=103"></script>
-  <script src="/gems-client.js?v=106"></script>
+  <script defer src="/seed-data.js?v=107"></script>
+  <script defer src="/gems-client.js?v=107"></script>
 </body>
 </html>

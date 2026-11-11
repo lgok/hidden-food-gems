@@ -7,7 +7,7 @@ function getRestaurants() {
   if (cachedRestaurants) return cachedRestaurants;
   const seedPath = path.join(process.cwd(), 'data', 'seed.json');
   const raw = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
-  const list = Array.isArray(raw.restaurants) ? raw.restaurants : [];
+  const list = Array.isArray(raw) ? raw : (Array.isArray(raw.restaurants) ? raw.restaurants : []);
   cachedRestaurants = list
     .filter((r) => r && r.is_active !== false)
     .map((r) => {

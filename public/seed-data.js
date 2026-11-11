@@ -1,5 +1,931 @@
 window.__HFG_OFFLINE_SEED__ = [
   {
+    "id": "lift-coffee-roasters-riverside-92507",
+    "name": "Lift Coffee Roasters (Riverside Roastery)",
+    "cuisine": "Small-Batch Micro-Roaster & Seasonal Craft Espresso",
+    "regionalIdentity": "Artisan Riverside Coffee Roastery & Tasting Bar",
+    "tags": [
+      "coffee",
+      "latte",
+      "breakfast"
+    ],
+    "price": 1,
+    "address": "2060 Chicago Ave, Ste A10",
+    "city": "Riverside",
+    "zip": "92507",
+    "driveFrom91761": "21 min from 91761",
+    "phone": "(951) 742-7413",
+    "hours": "Daily 7:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92507-LFT",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-16",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Independent Riverside micro-roastery dedicated to direct-trade coffee farming relationships and small-batch roasting right on Chicago Ave.",
+    "scratchCommitment": "Freshly roasted single-origin beans, house-made seasonal syrups, and precision espresso pulls.",
+    "destinationDish": {
+      "name": "House-Roasted Single-Origin Flat White & Seasonal Spiced Latte",
+      "callout": "Micro-lot espresso roasted a few feet from the counter, poured with silky micro-foam and seasonal house-crafted syrups."
+    },
+    "description": "An authentic Riverside micro-roastery where coffee lovers watch beans roasted on-site while sipping velvety flat whites, cold brew, and seasonal lattes.",
+    "story": "Lift Coffee Roasters was founded to elevate everyday coffee drinking in the Inland Empire through ethical sourcing and small-batch craftsmanship.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "House-Roasted Flat White & Seasonal Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Roaster’s Seasonal Signature Latte",
+          "price": "$5.95",
+          "desc": "Double shot of Lift house-roasted espresso paired with seasonal scratch-made spice and vanilla syrups."
+        },
+        {
+          "name": "Single-Origin Pour-Over",
+          "price": "$5.75",
+          "desc": "Hand-poured single-origin coffee roasted on-site in small batches."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Velvet Micro-Foam Flat White",
+          "price": "$5.25",
+          "desc": "Ristretto double shot topped with glossy steamed whole or oat milk."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Roastery Steeped Cold Brew",
+          "price": "$5.00",
+          "desc": "Crisp, chocolatey 18-hour cold brew."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "nathan B.",
+        "comment": "If you love true craft roasted beans and seasonal lattes, Lift Coffee Roasters is a gem.",
+        "date": "2026-11-03T08:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9942,
+    "longitude": -117.3485,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@liftcoffeeroasters"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:44.000Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "condron-coffee-riverside-92506",
+    "name": "Condron Coffee (Magnolia Center Riverside)",
+    "cuisine": "Craft Espresso Bar, Yuzu Matcha & Scratch Pastries",
+    "regionalIdentity": "Beloved Sunnyside Drive Community Coffeehouse",
+    "tags": [
+      "coffee",
+      "matcha",
+      "latte",
+      "bakery",
+      "breakfast"
+    ],
+    "price": 1,
+    "address": "3696 Sunnyside Dr",
+    "city": "Riverside",
+    "zip": "92506",
+    "driveFrom91761": "23 min from 91761",
+    "phone": "(951) 777-1366",
+    "hours": "Daily 6:00am–8:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92506-CND",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-10",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Family-built neighborhood gathering spot in Riverside’s Magnolia Center, open early at 6:00 AM until 8:00 PM daily.",
+    "scratchCommitment": "House-infused spiced syrups (Orange Clove, Brown Sugar Cinnamon, Honey Cinnamon), citrus matcha infusions, and fresh scones and cinnamon rolls.",
+    "destinationDish": {
+      "name": "Orange Clove Latte, Yuzu Coconut Matcha & Warm Cinnamon Roll",
+      "callout": "Aromatic espresso infused with orange peel and whole clove spice, or bright yuzu citrus layered with coconut and ceremonial matcha."
+    },
+    "description": "Magnolia Center’s favorite morning-to-evening coffeehouse, celebrated for its Orange Clove Latte, Yuzu Coconut Matcha, Oolong Peach Tea, and scratch pastries.",
+    "story": "Condron Coffee turned a cozy corner on Sunnyside Drive into one of Riverside’s most welcoming community hubs for students, families, and remote workers.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Orange Clove Latte & Yuzu Coconut Matcha"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Orange Clove Spiced Latte",
+          "price": "$5.95",
+          "desc": "Double espresso steamed with house-simmered orange zest and aromatic clove syrup."
+        },
+        {
+          "name": "Yuzu Coconut Matcha",
+          "price": "$6.25",
+          "desc": "Bright Japanese yuzu citrus and creamy coconut layered with ceremonial grade matcha."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Brown Sugar Cinnamon Latte",
+          "price": "$5.95",
+          "desc": "Rich espresso sweetened with dark brown sugar and Ceylon cinnamon."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Oolong Peach Iced Tea",
+          "price": "$4.95",
+          "desc": "Fragrant roasted oolong tea infused with sweet summer peach."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Lauren P.",
+        "comment": "The Orange Clove Latte and Yuzu Coconut Matcha are incredible, and I love that they are open from 6am to 8pm!",
+        "date": "2026-10-27T11:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9534,
+    "longitude": -117.3921,
+    "opening_hour_minutes": 360,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@condroncoffee"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 1200,
+        "rangeStr": "6:00 AM – 8:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:43.600Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "mundial-coffee-riverside-92507",
+    "name": "Mundial Coffee (Riverside)",
+    "cuisine": "Latin-Inspired Specialty Coffee, Horchata Lattes & Breakfast",
+    "regionalIdentity": "Culture-Driven Specialty Coffeehouse Near UC Riverside",
+    "tags": [
+      "coffee",
+      "latte",
+      "breakfast",
+      "bakery"
+    ],
+    "price": 1,
+    "address": "1725 Spruce St, Ste 104",
+    "city": "Riverside",
+    "zip": "92507",
+    "driveFrom91761": "21 min from 91761",
+    "phone": "(951) 530-8224",
+    "hours": "Daily 7:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92507-MND",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-19",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Independent Riverside specialty coffee shop blending third-wave ethically sourced espresso with authentic Latin heritage flavors.",
+    "scratchCommitment": "House-crafted rice-and-cinnamon horchata, piloncillo Café de Olla, 48-hour cold-brewed organic iced teas, and fresh breakfast sandwiches.",
+    "destinationDish": {
+      "name": "Dirty Horchata Latte, Café de Olla & Mexican Chocolate Cold Brew",
+      "callout": "House-made cinnamon rice horchata crowned with rich double espresso, alongside spiced Café de Olla and warm breakfast sandwiches."
+    },
+    "description": "Vibrant Riverside coffeehouse celebrating Latin coffee culture with scratch Dirty Horchata Lattes, Café de Olla, Mexican Chocolate Lattes, and 48-hour organic iced teas.",
+    "story": "Mundial Coffee brings people together over globally inspired, locally crafted espresso drinks and warm hospitality on Spruce Street.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Dirty Horchata Latte & Café de Olla"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Dirty Horchata Iced Latte",
+          "price": "$6.25",
+          "desc": "Scratch cinnamon-vanilla rice horchata poured over ice and topped with a double shot of espresso."
+        },
+        {
+          "name": "Spiced Café de Olla Latte",
+          "price": "$5.95",
+          "desc": "Espresso brewed with dark piloncillo cane sugar, Mexican canela cinnamon, and orange peel."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mexican Chocolate Mocha",
+          "price": "$6.00",
+          "desc": "Spiced stone-ground Mexican chocolate melted into double espresso and steamed milk."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "48-Hour Cold-Brewed Organic Iced Tea",
+          "price": "$4.75",
+          "desc": "Slow-steeped botanical iced tea with crisp floral finish."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Carlos M.",
+        "comment": "The Dirty Horchata Latte and Cafe de Olla at Mundial are unmatched in Riverside!",
+        "date": "2026-11-02T10:05:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9891,
+    "longitude": -117.3456,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@mundialcoffee"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:43.260Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "twee-coffee-riverside-92503",
+    "name": "Twee Coffee (Magnolia Ave Riverside)",
+    "cuisine": "Botanical Espresso Bar & House-Crafted Syrup Lattes",
+    "regionalIdentity": "Independent Riverside Neighborhood Specialty Coffee Shop",
+    "tags": [
+      "coffee",
+      "latte",
+      "matcha",
+      "breakfast",
+      "bakery"
+    ],
+    "price": 1,
+    "address": "9344 Magnolia Ave",
+    "city": "Riverside",
+    "zip": "92503",
+    "driveFrom91761": "24 min from 91761",
+    "phone": "(951) 352-2202",
+    "hours": "Daily 6:30am–4:00pm",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92503-TWE",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-14",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Independent neighborhood coffee bar on Magnolia Ave known for warm hospitality, cozy seating, and botanical house-made syrups.",
+    "scratchCommitment": "Small-batch botanical syrups (Orange Blossom, Honey Cinnamon, Salted Caramel) simmered in-house with zero artificial flavors.",
+    "destinationDish": {
+      "name": "Orange Blossom Latte & Honey Cinnamon Oat Cortado",
+      "callout": "Velvety double espresso infused with fragrant house-made orange blossom syrup or warm local honey and Ceylon cinnamon."
+    },
+    "description": "A charming independent coffeehouse in Riverside’s Magnolia corridor serving botanical lattes, ceremonial matcha, and freshly baked pastries.",
+    "story": "Twee Coffee brings neighborhood warmth to Magnolia Ave with thoughtfully dialed espresso and seasonal drinks crafted from scratch.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Orange Blossom Latte & Honey Cinnamon Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Orange Blossom Latte",
+          "price": "$5.95",
+          "desc": "Double shot of espresso with house-made floral orange blossom syrup and velvety steamed milk."
+        },
+        {
+          "name": "Honey Cinnamon Latte",
+          "price": "$5.95",
+          "desc": "Espresso swirled with raw wildflower honey, warm cinnamon, and choice of milk."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Salted Caramel Cold Brew",
+          "price": "$5.75",
+          "desc": "Slow-steeped cold brew topped with house salted caramel cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Ceremonial Iced Matcha Latte",
+          "price": "$6.00",
+          "desc": "Hand-whisked Japanese green tea poured over chilled oat or whole milk."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Ariana G.",
+        "comment": "The Orange Blossom Latte at Twee Coffee is one of the best coffee drinks in the entire Inland Empire!",
+        "date": "2026-11-01T08:45:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9182,
+    "longitude": -117.4418,
+    "opening_hour_minutes": 390,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tweecoffee"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 390,
+        "closeMin": 960,
+        "rangeStr": "6:30 AM – 4:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:42.989Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "arcade-coffee-roasters-riverside",
+    "name": "Arcade Coffee Roasters (The Tasting Room & Bakehouse)",
+    "cuisine": "Small-Batch Specialty Roastery, Scratch Bakehouse & Brunch",
+    "regionalIdentity": "Riverside-Born Specialty Roaster & Scratch Culinary Cafe",
+    "tags": [
+      "coffee",
+      "bakery",
+      "breakfast",
+      "brunch",
+      "latte"
+    ],
+    "price": 2,
+    "address": "3672 Chicago Ave, Ste A",
+    "city": "Riverside",
+    "zip": "92507",
+    "driveFrom91761": "22 min from 91761",
+    "phone": "(951) 266-6839",
+    "hours": "Daily 7:00am–4:00pm (Kitchen 7:00am–2:00pm)",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92507-ACR",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-25",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded by Riverside locals to elevate the Inland Empire coffee and culinary scene across their Chicago Ave Tasting Room, Canyon Crest Bakehouse, and Downtown Main St cafe.",
+    "scratchCommitment": "In-house roasted single-origin beans, scratch-laminated sourdough pastries, house syrups, and chef-driven seasonal breakfast plates.",
+    "destinationDish": {
+      "name": "Nitro Draft Latte, Seasonal Single-Origin Pour Over & Loaded Breakfast Burrito",
+      "callout": "Silky nitrogen-infused draft latte and house-roasted espresso paired with crispy hashbrown breakfast burritos and scratch bakehouse pastries."
+    },
+    "description": "Riverside’s flagship independent coffee roaster and culinary bakehouse, pairing small-batch roasted beans and signature draft lattes with scratch pastries and brunch.",
+    "story": "Arcade Coffee Roasters grew from a neighborhood dream into a Riverside culinary institution where baristas, roasters, and bakers craft everything in-house.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Arcade Draft Latte & Scratch Bakehouse Pastries"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Draft Latte on Tap",
+          "price": "$6.00",
+          "desc": "Velvety cold-steeped Arcade espresso textured with oat or whole milk on nitro tap."
+        },
+        {
+          "name": "Loaded Arcade Breakfast Burrito",
+          "price": "$14.50",
+          "desc": "Soft scrambled eggs, crispy tater tots, cheddar, house salsa, and choice of bacon or avocado in a griddled flour tortilla."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Single-Origin Hand Pour-Over",
+          "price": "$6.50",
+          "desc": "Rotating micro-lot beans roasted in-house at the Chicago Ave Tasting Room."
+        },
+        {
+          "name": "Bakehouse Sourdough Croissant",
+          "price": "$5.25",
+          "desc": "Naturally leavened, butter-laminated pastry baked fresh every morning."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "House Cardamom Vanilla Latte",
+          "price": "$6.25",
+          "desc": "Double espresso infused with scratch-simmered cardamom and Madagascar vanilla bean syrup."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Devon S.",
+        "comment": "Hands down the gold standard for coffee roasting and breakfast in Riverside.",
+        "date": "2026-10-30T09:15:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9756,
+    "longitude": -117.3482,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@arcadecoffeeroasters"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:42.691Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "monday-to-sunday-dessert-cafe-rancho",
+    "name": "Monday to Sunday Dessert Cafe (Haven City Market)",
+    "cuisine": "Artisan Matcha Einspänner, Croissants & Specialty Cakes",
+    "regionalIdentity": "Haven City Market Entrance Bakery, Matcha & Dessert Bar",
+    "tags": [
+      "coffee",
+      "matcha",
+      "bakery",
+      "dessert",
+      "latte"
+    ],
+    "price": 1,
+    "address": "8443 Haven Ave, Unit 121-A",
+    "city": "Rancho Cucamonga",
+    "zip": "91730",
+    "driveFrom91761": "12 min from 91761",
+    "phone": "(909) 483-5349",
+    "hours": "Daily 10:30am–9:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91730-MTS",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-20",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "Located right at the entrance of Haven City Market, crafting Korean-European inspired cream-top Einspänner lattes, flaky pistachio croissants, and layered cake slices.",
+    "scratchCommitment": "Freshly whipped sweet cream foams, ceremonial matcha, flaky laminated croissants, scones, and house-layered tiramisu and Biscoff cakes.",
+    "destinationDish": {
+      "name": "Matcha Einspänner, Strawberry Matcha Latte & Pistachio Croissant",
+      "callout": "Chilled ceremonial matcha crowned with a thick cloud of house-whipped Vienna cream, paired with a flaky pistachio cream-filled croissant."
+    },
+    "description": "Haven City Market’s premier dessert and coffee bar in Rancho Cucamonga, famous for its Matcha Einspänner, Strawberry Matcha Latte, pistachio croissants, and Biscoff/Oreo Strawberry cake slices.",
+    "story": "Whether starting your morning with a warm scone or finishing dinner at Haven City Market with Tiramisu and a Matcha Einspänner, Monday to Sunday makes every day feel like a weekend treat.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Matcha Einspänner & Pistachio Croissant"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Matcha Einspänner",
+          "price": "$6.50",
+          "desc": "Vibrant ceremonial matcha layered over milk and topped with rich, house-whipped sweet Vienna cream."
+        },
+        {
+          "name": "Strawberry Matcha Latte",
+          "price": "$6.50",
+          "desc": "Real strawberry purée, chilled milk, and hand-whisked ceremonial matcha."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Pistachio Cream Croissant",
+          "price": "$6.25",
+          "desc": "Golden flaky laminated pastry filled and topped with roasted pistachio cream and crushed pistachios."
+        },
+        {
+          "name": "Oreo Strawberry & Biscoff Cake Slices",
+          "price": "$7.50",
+          "desc": "Tall, airy sponge cake layered with fresh strawberries, cookie crumble, and light whipped cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Classic Espresso Einspänner",
+          "price": "$6.25",
+          "desc": "Bold iced Americano or latte topped with velvety sweet cream foam."
+        },
+        {
+          "name": "House Tiramisu Slice",
+          "price": "$7.50",
+          "desc": "Espresso-soaked ladyfingers layered with mascarpone cream and dusted with cocoa."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Hannah K.",
+        "comment": "The Matcha Einspänner and pistachio croissant right at the front of Haven City Market are incredible!",
+        "date": "2026-10-29T14:20:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Jason L.",
+        "comment": "Best dessert and matcha stop in Rancho Cucamonga. The Oreo Strawberry and Tiramisu slices are a must.",
+        "date": "2026-11-05T19:10:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1018,
+    "longitude": -117.5932,
+    "opening_hour_minutes": 630,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@mondaytosundaycafe"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 630,
+        "closeMin": 1260,
+        "rangeStr": "10:30 AM – 9:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T17:52:42.329Z",
+    "isDailyFreshGem": true
+  },
+  {
     "id": "stray-dogs-coffee-riverside",
     "name": "Stray Dogs Coffee (Downtown Riverside)",
     "cuisine": "Specialty Craft Coffee, Ceremonial Matcha & Cold Foams",

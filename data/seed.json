@@ -81,7 +81,7 @@
     "media": [],
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:40:54.956Z",
+    "createdAt": "2026-11-11T21:44:37.524Z",
     "ratings": [
       {
         "stars": 5,
@@ -332,7 +332,7 @@
         "rangeStr": "10:30 AM – 9:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:40:44.956Z",
+    "createdAt": "2026-11-11T21:44:27.526Z",
     "isDailyFreshGem": true,
     "spotlightRank": 2
   },
@@ -501,7 +501,7 @@
         "rangeStr": "9:00 AM – 6:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:40:34.956Z",
+    "createdAt": "2026-11-11T21:44:17.526Z",
     "isDailyFreshGem": true,
     "spotlightRank": 3
   },
@@ -588,7 +588,7 @@
     },
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:40:24.956Z",
+    "createdAt": "2026-11-11T21:44:07.526Z",
     "ratings": [
       {
         "stars": 5,
@@ -680,6 +680,228 @@
     "closing_hour_minutes": 1080,
     "spotlightRank": 4,
     "isDailyFreshGem": true
+  },
+  {
+    "id": "goose-coffee-ontario-ranch-91761",
+    "name": "Goose Coffee (@_goosecoffee — Ontario Ranch Coming Soon)",
+    "cuisine": "Specialty Coffee & Ceremonial-Grade Matcha Bar",
+    "regionalIdentity": "Artisan Ceremonial Matcha & Specialty Espresso Bar (Ontario Gateway Plaza)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "tea",
+      "bakery",
+      "coming_soon_cafe"
+    ],
+    "comingSoon": true,
+    "comingSoonLabel": "🚀 Coming Soon · Ontario Gateway Plaza",
+    "price": 1,
+    "address": "Ontario Gateway Plaza (Ontario Ranch Rd & Hamner Ave)",
+    "city": "Ontario",
+    "state": "CA",
+    "zip": "91761",
+    "driveFrom91761": "3 min from 91761",
+    "phone": "@_goosecoffee",
+    "hours": "Daily 7:00am–6:00pm (Coming Soon to Ontario Gateway Plaza)",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91761-GSC",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-11-01",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Expanding from its beloved Rancho Cucamonga flagship (9090 Milliken Ave) into Ontario Ranch’s Ontario Gateway Plaza (same shopping center as Grocery Outlet).",
+    "scratchCommitment": "First-harvest ceremonial-grade Japanese matcha whisked to order, house-whipped matcha and roasted kinako soybean cream tops, organic strawberry puree, and single-origin espresso.",
+    "destinationDish": {
+      "name": "Double Goose Matcha, Kinako Hojicha & Coconut Cloud Matcha",
+      "callout": "Ceremonial-grade matcha over oat milk and agave crowned with thick house-whipped matcha cream top."
+    },
+    "description": "Goose Coffee (@_goosecoffee) is bringing its cult-favorite ceremonial matcha, kinako cream lattes, and specialty coffee to Ontario Gateway Plaza in Ontario Ranch.",
+    "story": "After drawing daily lines at its Rancho Cucamonga storefront on Milliken Ave, Goose Coffee officially hung its 'Coming Soon' banner at Ontario Gateway Plaza in Ontario Ranch.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Double Goose Matcha & Kinako Cream Hojicha"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Double Goose Matcha",
+          "price": "$6.50",
+          "desc": "Ceremonial-grade matcha, oat milk, and agave topped with house-whipped matcha cream."
+        },
+        {
+          "name": "Kinako Matcha / Kinako Hojicha",
+          "price": "$6.50",
+          "desc": "Layered with nutty roasted Japanese soybean (kinako) sweet cream top."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Coconut Cloud Matcha",
+          "price": "$6.25",
+          "desc": "100% organic coconut water crowned with velvety ceremonial matcha cream top."
+        },
+        {
+          "name": "Organic Strawberry Matcha",
+          "price": "$6.50",
+          "desc": "House organic strawberry puree layered with oat milk and ceremonial matcha."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Signature Brown Sugar Espresso Latte",
+          "price": "$5.95",
+          "desc": "Double-shot specialty espresso with house brown sugar syrup and silky milk."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:41:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Ty H.",
+        "comment": "Goose Coffee is coming to Ontario Gateway Plaza! Their Double Goose Matcha is unbeatable.",
+        "date": "2026-11-11T10:30:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9985,
+    "longitude": -117.5582,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "goose-coffee-rancho-cucamonga-91730",
+    "name": "Goose Coffee (Rancho Cucamonga Flagship)",
+    "cuisine": "Specialty Coffee & Ceremonial-Grade Matcha Bar",
+    "regionalIdentity": "Original Rancho Cucamonga Ceremonial Matcha & Espresso Bar (Milliken Ave)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "tea",
+      "bakery",
+      "breakfast"
+    ],
+    "price": 1,
+    "address": "9090 Milliken Ave, Ste 150",
+    "city": "Rancho Cucamonga",
+    "state": "CA",
+    "zip": "91730",
+    "driveFrom91761": "11 min from 91761",
+    "phone": "@_goosecoffee",
+    "hours": "Daily 7:30am–5:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91730-GSC",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-25",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent Rancho Cucamonga specialty coffee and ceremonial matcha house at 9090 Milliken Ave, Ste 150.",
+    "scratchCommitment": "Ceremonial-grade Japanese matcha, roasted kinako cream tops, organic strawberry puree, and craft espresso drinks made to order.",
+    "destinationDish": {
+      "name": "Double Goose Matcha & Kinako Cream Hojicha",
+      "callout": "Ceremonial-grade matcha over oat milk and agave topped with thick house matcha sweet cream."
+    },
+    "description": "The original Rancho Cucamonga flagship of Goose Coffee (@_goosecoffee) at 9090 Milliken Ave, famous across the Inland Empire for its Double Goose Matcha and Kinako Hojicha.",
+    "story": "Known for its charming bow-tie goose logo and meticulous ceremonial matcha preparation, Goose Coffee has become one of the Inland Empire’s most-loved independent cafes.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Double Goose Matcha & Kinako Hojicha"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Double Goose Matcha",
+          "price": "$6.50",
+          "desc": "Ceremonial-grade matcha + oat milk + agave + thick matcha cream top."
+        },
+        {
+          "name": "Kinako Matcha / Hojicha",
+          "price": "$6.50",
+          "desc": "Topped with roasted Japanese soybean cream and kinako dusting."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Coconut Cloud Matcha",
+          "price": "$6.25",
+          "desc": "Matcha cream top floated over 100% organic coconut water."
+        },
+        {
+          "name": "Organic Strawberry Matcha",
+          "price": "$6.50",
+          "desc": "Real organic strawberry puree with oat milk and ceremonial matcha."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Artisan Pastries & Croissants",
+          "price": "$4.75",
+          "desc": "Fresh daily bakery selection paired with specialty espresso."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:41:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Chloe M.",
+        "comment": "Best matcha in the IE! The Double Goose Matcha and Kinako Hojicha are 10/10.",
+        "date": "2026-11-08T11:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0886,
+    "longitude": -117.558,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 1020,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
   },
   {
     "id": "badash-bakes-pasadena-91101",
@@ -23574,11 +23796,13 @@
   },
   {
     "id": "casa-frida-mexican-kitchen-corona",
-    "name": "Casa Frida",
-    "cuisine": "Artisanal Mexican & Heritage Antojitos",
-    "regionalIdentity": "Authentic Mexican Craft Tacos, Enchiladas & Hand-Pressed Tortillas in Corona",
+    "name": "Casa Frida Mexican Kitchen (Corona)",
+    "cuisine": "Artisanal Mexican, Cafecito de Olla & Comida Estilo Rancho",
+    "regionalIdentity": "Authentic Ranch-Style Mexican Breakfast, Tamales Dorados & Café de Olla in Corona",
     "tags": [
       "mexican",
+      "breakfast",
+      "coffee",
       "tacos",
       "handmade tortillas",
       "lunch",
@@ -23589,8 +23813,8 @@
     "city": "Corona",
     "zip": "92878",
     "driveFrom91761": "16 min from 91761",
-    "phone": "(951) 479-5099",
-    "hours": "Mon–Sun 10:00am–9:00pm",
+    "phone": "(951) 256-1844",
+    "hours": "Mon–Fri 8:00am–3:00pm · Sat 8:00am–9:00pm · Sun 8:00am–8:00pm",
     "healthPermit": {
       "facilityId": "RC-DEH-006541",
       "agency": "Riverside County Environmental Health",
@@ -23599,26 +23823,51 @@
       "inspectedOn": "2026-08-30",
       "portalUrl": "https://rivcoeh.org"
     },
-    "familyRoots": "Family-run Mexican kitchen celebrating Frida Kahlo's artistic spirit with vibrant, colorful decor and authentic heritage recipes.",
-    "scratchCommitment": "Nixtamal masa pressed into tortillas to-order, slow-simmered mole negro, and fresh fire-roasted salsas made every morning.",
-    "destinationDish": "Handmade Quesabirria Tacos & Enchiladas Suizas",
-    "description": "Corona's neighborhood gem for genuine Mexican comfort food, famous for hand-pressed corn tortillas, tender birria, and velvety enchiladas suizas.",
-    "story": "Casa Frida was established by a Corona family passionate about preserving traditional Mexican culinary arts with scratch-cooked hospitality.",
+    "familyRoots": "Family-run Mexican kitchen in Corona celebrating Frida Kahlo’s artistic spirit with authentic \"comida como en el rancho\" and warm hospitality.",
+    "scratchCommitment": "Spiced cinnamon-piloncillo Cafecito de Olla brewed fresh every morning, hand-pressed nixtamal corn tortillas, crispy griddled tamales, and ranch-style machaca.",
+    "destinationDish": {
+      "name": "Cafecito de Olla, Desayuno Estilo Rancho (Crispy Tamal & Machaca) & Enchiladas Suizas",
+      "callout": "Traditional spiced Mexican Café de Olla paired with a ranch-style breakfast platter of crispy griddled sweet corn tamal with crema, shredded machaca beef, farm eggs, and frijoles con queso fresco."
+    },
+    "description": "Corona’s beloved family Mexican kitchen for authentic Comida Estilo Rancho, spiced Cafecito de Olla, crispy griddled tamales, enchiladas, and hand-pressed tortillas.",
+    "story": "Casa Frida brings the flavors of a traditional Mexican rancho breakfast and lunch table to Main Street in Corona.",
     "image": "/img/gem-tacos.jpg",
     "photos": [
-      "/img/gem-tacos.jpg"
+      {
+        "file": "/img/gem-tacos.jpg",
+        "label": "Cafecito de Olla & Comida Estilo Rancho"
+      }
     ],
     "structuredMenu": {
       "signatures": [
         {
-          "name": "Quesabirria Taco Trio",
-          "price": "$15.50",
-          "desc": "Crispy griddled corn tortillas filled with beef birria and melted Oaxaca cheese, served with rich consommé dip."
+          "name": "Desayuno Estilo Rancho & Tamal Dorado Plate",
+          "price": "$15.95",
+          "desc": "Crispy griddled sweet corn tamal drizzled with crema and queso fresco alongside shredded machaca beef, farm eggs, refried beans, and pickled red onions."
         },
         {
-          "name": "Enchiladas Suizas",
+          "name": "Cafecito de Olla Tradicional",
+          "price": "$4.50",
+          "desc": "Simmered Mexican coffee infused with raw piloncillo cane sugar, whole canela cinnamon sticks, and aromatic spices."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Enchiladas Suizas & Mole Poblano",
           "price": "$16.25",
-          "desc": "Shredded chicken wrapped in corn tortillas with tomatillo cream sauce and melted Swiss-style cheese."
+          "desc": "Hand-rolled corn tortillas bathed in velvety tomatillo-crema or rich house mole negro, finished with crema drizzle and queso."
+        },
+        {
+          "name": "Quesabirria Taco Trio",
+          "price": "$15.50",
+          "desc": "Crispy griddled corn tortillas filled with beef birria and melted Oaxaca cheese with rich consommé."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Hotcakes con Fruta Fresca",
+          "price": "$11.50",
+          "desc": "Fluffy golden pancakes topped with fresh strawberries, blueberries, and powdered sugar."
         }
       ]
     },
@@ -23628,22 +23877,23 @@
     "createdAt": "2026-11-05T15:00:00Z",
     "ratings": [
       {
-        "source": "Local Community",
-        "stars": 4.8,
-        "count": 178
+        "stars": 5,
+        "name": "Marisol R.",
+        "comment": "The Cafecito de Olla and ranch-style breakfast with the crispy tamal at Casa Frida are just like grandma’s!",
+        "date": "2026-11-06T09:15:00Z"
       }
     ],
     "region": "Inland Empire",
-    "county": "Riverside County",
-    "pricesVerified": true,
-    "kitchenStatus": "Active",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
     "analytics": {
       "views": 0,
       "shares": 0
     },
     "latitude": 33.8891,
     "longitude": -117.5645,
-    "opening_hour_minutes": 600,
+    "opening_hour_minutes": 480,
     "serves_breakfast": true,
     "meals": [
       "breakfast",
@@ -23657,38 +23907,52 @@
     ],
     "is_active": true,
     "socialMedia": {
-      "instagram": "@casafridacorona"
+      "instagram": "@casafrida_oficial"
     },
     "state": "CA",
     "timezone": "America/Los_Angeles",
     "weeklySchedule": {
-      "monday": {
-        "open": "10:00",
-        "close": "21:00"
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
       },
-      "tuesday": {
-        "open": "10:00",
-        "close": "21:00"
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
       },
-      "wednesday": {
-        "open": "10:00",
-        "close": "21:00"
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
       },
-      "thursday": {
-        "open": "10:00",
-        "close": "21:00"
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
       },
-      "friday": {
-        "open": "10:00",
-        "close": "21:00"
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
       },
-      "saturday": {
-        "open": "10:00",
-        "close": "21:00"
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
       },
-      "sunday": {
-        "open": "10:00",
-        "close": "21:00"
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1260,
+        "rangeStr": "8:00 AM – 9:00 PM"
       }
     },
     "closing_hour_minutes": 1260

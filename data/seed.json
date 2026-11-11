@@ -81,7 +81,7 @@
     "media": [],
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:13:20.064Z",
+    "createdAt": "2026-11-11T19:18:24.936Z",
     "ratings": [
       {
         "stars": 5,
@@ -332,7 +332,7 @@
         "rangeStr": "10:30 AM – 9:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:13:10.067Z",
+    "createdAt": "2026-11-11T19:18:14.936Z",
     "isDailyFreshGem": true,
     "spotlightRank": 2
   },
@@ -501,7 +501,7 @@
         "rangeStr": "9:00 AM – 6:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:13:00.067Z",
+    "createdAt": "2026-11-11T19:18:04.936Z",
     "isDailyFreshGem": true,
     "spotlightRank": 3
   },
@@ -588,7 +588,7 @@
     },
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:12:50.067Z",
+    "createdAt": "2026-11-11T19:17:54.936Z",
     "ratings": [
       {
         "stars": 5,
@@ -679,6 +679,327 @@
     },
     "closing_hour_minutes": 1080,
     "spotlightRank": 4,
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "wild-carvery-burbank-91502",
+    "name": "Wild Carvery (Downtown Burbank)",
+    "cuisine": "Artisan Hand-Carved Sandwiches, Wagyu Burgers & Brunch",
+    "regionalIdentity": "Family-Owned Scratch Carvery & Burger Kitchen",
+    "tags": [
+      "burgers",
+      "sandwiches",
+      "lunch",
+      "dinner",
+      "brunch"
+    ],
+    "price": 2,
+    "address": "130 N San Fernando Blvd",
+    "city": "Burbank",
+    "zip": "91502",
+    "driveFrom91761": "46 min from 91761",
+    "phone": "(818) 748-3404",
+    "hours": "Daily 11:00am–9:30pm",
+    "healthPermit": {
+      "facilityId": "LACDPH-91502-WCV",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-15",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/"
+    },
+    "familyRoots": "Founded by Vahe Aiwazian in Downtown Burbank with a commitment to 100% natural, scratch-prepared meats, grass-fed Wagyu burgers, and hand-cut fries.",
+    "scratchCommitment": "In-house slow-roasted meats carved to order, 100% grass-fed Wagyu beef patties, scratch sauces, and crispy hand-cut fries.",
+    "destinationDish": {
+      "name": "King Pastrami Wagyu Burger, Carved Ribeye Steak Sandwich & Hot Pastrami Melt",
+      "callout": "100% grass-fed Wagyu patty stacked with hot pastrami, melted Swiss, bacon, and a steak knife in a toasted brioche bun, alongside hand-carved ribeye ciabatta sandwiches."
+    },
+    "description": "Downtown Burbank’s standout independent scratch carvery and burger kitchen, famous for towering Wagyu burgers, carved ribeye sandwiches, pastrami melts, and brunch burritos.",
+    "story": "Wild Carvery brings butcher-shop quality and scratch cooking to San Fernando Blvd with generous portions and family hospitality.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "King Pastrami Wagyu Burger & Carved Ribeye Sandwich"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The King Pastrami Wagyu Burger",
+          "price": "$17.95",
+          "desc": "100% grass-fed Wagyu beef patty topped with hot carved pastrami, melted cheese, crispy bacon, pickles, and house sauce on brioche."
+        },
+        {
+          "name": "Hand-Carved Ribeye Steak Sandwich",
+          "price": "$18.50",
+          "desc": "Tender seared ribeye steak carved to order on toasted artisan ciabatta with caramelized onions, greens, and garlic aioli."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Griddled Pastrami Reuben Melt",
+          "price": "$16.50",
+          "desc": "Piled-high hot pastrami, melted Swiss, pickles, and mustard on buttery griddled sourdough with kettle chips."
+        },
+        {
+          "name": "Loaded Carvery Brunch Burrito",
+          "price": "$14.95",
+          "desc": "Eggs, carved meat, melted cheddar, crispy potatoes, and house fire-roasted salsa wrapped in a warm flour tortilla."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Crispy Hand-Cut Kennebec Fries",
+          "price": "$5.50",
+          "desc": "Freshly cut golden fries seasoned with sea salt."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Armen K.",
+        "comment": "The Ribeye Sandwich and Wagyu burgers at Wild Carvery are unbeatable in Burbank!",
+        "date": "2026-11-05T13:10:00Z"
+      }
+    ],
+    "region": "Los Angeles",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1818,
+    "longitude": -118.3089,
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1290,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@wildcarvery"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 660,
+        "closeMin": 1290,
+        "rangeStr": "11:00 AM – 9:30 PM"
+      }
+    },
+    "createdAt": "2026-11-11T19:16:44.403Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "salted-butter-company-pasadena-91105",
+    "name": "Salted Butter Company (Pasadena)",
+    "cuisine": "Chef-Driven French Patisserie, Cream-Top Lattes & Croissants",
+    "regionalIdentity": "Husband-and-Wife Artisan Bakery & Specialty Coffee Bar",
+    "tags": [
+      "coffee",
+      "bakery",
+      "matcha",
+      "latte",
+      "breakfast",
+      "dessert"
+    ],
+    "price": 2,
+    "address": "1 W California Blvd, Ste 412",
+    "city": "Pasadena",
+    "zip": "91105",
+    "driveFrom91761": "36 min from 91761",
+    "phone": "(626) 817-9115",
+    "hours": "Daily 7:00am–2:30pm",
+    "healthPermit": {
+      "facilityId": "PPHD-91105-SBC",
+      "agency": "Pasadena Public Health Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-24",
+      "portalUrl": "https://www.cityofpasadena.net/public-health/"
+    },
+    "familyRoots": "Founded by husband-and-wife pastry chefs Haruna and Johnny Romo in Pasadena, blending fine-dining patisserie technique with warm neighborhood coffee culture.",
+    "scratchCommitment": "Hand-laminated European salted butter croissants, Earl Grey morning buns, house-whipped cream-top iced lattes, and scratch Olive Oil Tres Leches cakes.",
+    "destinationDish": {
+      "name": "Whipped Cream-Top Iced Cocoa & Spiced Espresso Latte + Earl Grey Morning Bun",
+      "callout": "Velvety iced espresso and mocha crowned with a cloud of cocoa-dusted house whipped cream, paired with hand-rolled salted butter croissants and Earl Grey morning buns."
+    },
+    "description": "Pasadena’s viral husband-and-wife patisserie and specialty coffee bar by Haruna and Johnny Romo, famous for cloud-topped iced lattes, strawberry matcha, and flaky croissants.",
+    "story": "Haruna and Johnny Romo built Salted Butter Company into one of Pasadena’s most beloved morning destinations, where neighbors line up for small-batch pastries and decadent iced lattes.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Cream-Top Iced Latte & Hand-Rolled Pastries"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Whipped Cream-Top Iced Mocha & Spiced Latte",
+          "price": "$6.75",
+          "desc": "Rich double espresso and chocolate or seasonal spice over ice, finished with a tall swirl of cocoa-dusted house whipped cream."
+        },
+        {
+          "name": "Earl Grey Morning Bun & Hand-Rolled Butter Croissant",
+          "price": "$5.75",
+          "desc": "Flaky laminated pastry tossed in fragrant Earl Grey tea sugar, or classic French salted butter croissant."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Olive Oil Tres Leches Cake Slice",
+          "price": "$8.50",
+          "desc": "Airy Mediterranean olive oil sponge soaked in three sweet milks and topped with Chantilly cream."
+        },
+        {
+          "name": "Blueberry Cheesecake & Heirloom Tomato Danishes",
+          "price": "$6.25",
+          "desc": "Shatter-crisp laminated danishes baked fresh every morning with seasonal market fruit."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Strawberry Ceremonial Matcha Latte",
+          "price": "$6.50",
+          "desc": "House strawberry compote layered with organic milk and hand-whisked Japanese matcha."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Fatimah A.",
+        "comment": "Best coffee and cream-top latte I have ever tried in LA/Pasadena! Worth the wait and drive.",
+        "date": "2026-11-02T09:30:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "claire W.",
+        "comment": "Haruna and Johnny are culinary geniuses. The Earl Grey morning bun and croissants are perfection.",
+        "date": "2026-10-28T08:15:00Z"
+      }
+    ],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1391,
+    "longitude": -118.1518,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 870,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@saltedbuttercompany"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 870,
+        "rangeStr": "7:00 AM – 2:30 PM"
+      }
+    },
+    "createdAt": "2026-11-11T19:16:43.926Z",
     "isDailyFreshGem": true
   },
   {

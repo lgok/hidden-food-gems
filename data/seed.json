@@ -1,118 +1,5 @@
 [
   {
-    "id": "roadrunner-coffee-redlands-92373",
-    "name": "RoadRunner Coffee (@roadrunner.coffee — Downtown Redlands)",
-    "cuisine": "Specialty Espresso, Coconut Cloud Matcha/Hojicha & Artisan Cafe Sandwiches",
-    "regionalIdentity": "Independent Downtown Redlands Specialty Coffeehouse & Family Cafe (E. State St)",
-    "tags": [
-      "coffee_boba",
-      "coffee",
-      "tea",
-      "breakfast",
-      "lunch",
-      "bakery"
-    ],
-    "price": 1,
-    "address": "204 E State St",
-    "city": "Redlands",
-    "state": "CA",
-    "zip": "92373",
-    "driveFrom91761": "32 min from 91761",
-    "phone": "@roadrunner.coffee",
-    "hours": "Daily 8:00am–10:00pm",
-    "healthPermit": {
-      "facilityId": "SBC-DEHS-92373-RRC",
-      "agency": "San Bernardino County Environmental Health Services",
-      "grade": "A",
-      "score": 99,
-      "inspectedOn": "2026-10-18",
-      "portalUrl": "https://ehs.sbcounty.gov"
-    },
-    "familyRoots": "Independent Downtown Redlands neighborhood coffeehouse on East State Street with a warm, welcoming barista team and a dedicated kids' lunch menu.",
-    "scratchCommitment": "House-made vanilla and seasonal syrups, MatchaBot ceremonial matcha and roasted hojicha, coconut water cloud drinks with coconut creme tops, and toasted sourdough/ciabatta sandwiches.",
-    "destinationDish": {
-      "name": "Matcha Cloud / Hojicha Cloud, Banana Bread Matcha & Tuscan Ridge Ciabatta Sammy",
-      "callout": "MatchaBot matcha or roasted hojicha over coconut water and house vanilla crowned with coconut creme top, paired with a toasted ciabatta pesto mozzarella sandwich."
-    },
-    "description": "Located in the heart of Downtown Redlands at 204 E. State St, RoadRunner Coffee (@roadrunner.coffee) serves creative Coconut Cloud Matcha & Hojicha drinks, Banana Bread Lattes, and artisan sandwiches.",
-    "story": "A vibrant, community-first cafe on Redlands’ historic State Street where families, students, and coffee lovers gather from morning until 10:00 PM.",
-    "image": "img/hero.png",
-    "photos": [
-      {
-        "file": "img/hero.png",
-        "label": "Matcha Cloud, Banana Bread Latte & Tuscan Ridge Sammy"
-      }
-    ],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Matcha Cloud / Hojicha Cloud (Iced)",
-          "price": "$6.50",
-          "desc": "MatchaBot matcha or hojicha, house-made vanilla, coconut water, and a rich coconut creme top."
-        },
-        {
-          "name": "Banana Bread Latte / Banana Bread Matcha",
-          "price": "$6.50",
-          "desc": "Specialty espresso or ceremonial matcha infused with warm scratch banana bread notes."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Tuscan Ridge Sammy",
-          "price": "$9.50",
-          "desc": "Toasted ciabatta, sun-dried tomato pesto, fresh mozzarella, arugula, and balsamic glaze with fresh fruit."
-        },
-        {
-          "name": "Sourdough Grilled Cheese & Seasonal Soup",
-          "price": "$14.50",
-          "desc": "Golden sourdough grilled cheese served with warm tomato or seasonal soup."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Kids Sourdough Grilled Cheese or Strawberry PB&J (with Fruit)",
-          "price": "$6.20",
-          "desc": "Kid-friendly cheddar/mozzarella grilled cheese or whole-wheat strawberry preserves PB&J served with fresh fruit."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-11-11T21:50:00.000Z",
-    "ratings": [
-      {
-        "stars": 5,
-        "name": "Hannah B.",
-        "comment": "Love RoadRunner on State Street! The Hojicha Cloud and Banana Bread Matcha are amazing, and my kids love the grilled cheese with fruit.",
-        "date": "2026-11-10T14:20:00Z"
-      }
-    ],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 34.0563,
-    "longitude": -117.1812,
-    "opening_hour_minutes": 480,
-    "closing_hour_minutes": 1320,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "lunch",
-      "dinner",
-      "coffee_boba"
-    ],
-    "meal_types": [
-      "breakfast",
-      "lunch",
-      "dinner",
-      "coffee_boba"
-    ],
-    "is_active": true,
-    "timezone": "America/Los_Angeles"
-  },
-  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
@@ -793,6 +680,513 @@
     "closing_hour_minutes": 1080,
     "spotlightRank": 4,
     "isDailyFreshGem": true
+  },
+  {
+    "id": "coft-coffee-tea-chino-91710",
+    "name": "coft coffee and tea (Chino)",
+    "cuisine": "Specialty Phin Vietnamese Coffee, Flan Cream Lattes & Matcha Bar",
+    "regionalIdentity": "Independent Chino Specialty Coffee, Matcha & Tea Lounge (Riverside Dr)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "tea",
+      "matcha",
+      "latte",
+      "breakfast",
+      "bakery"
+    ],
+    "price": 1,
+    "address": "5602 Riverside Dr",
+    "city": "Chino",
+    "state": "CA",
+    "zip": "91710",
+    "driveFrom91761": "10 min from 91761",
+    "phone": "(909) 902-0122",
+    "hours": "Daily 7:00am–7:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91710-CFT",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-12",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent Chino neighborhood specialty coffee and tea bar at 5602 Riverside Dr, known for its signature flower-cup logo, welcoming community vibe, and handcrafted cream-top lattes.",
+    "scratchCommitment": "House-whipped flan cream and sea salt cream tops, traditional slow-drip Phin Vietnamese coffee, ceremonial-grade matcha and roasted hojicha, paired with local artisan sourdough pastries and puddings.",
+    "destinationDish": {
+      "name": "Signature Flan Latte, Sea Salt Vietnamese Coffee & Coconut Matcha",
+      "callout": "Rich espresso or slow-drip Phin coffee crowned with velvety house-made flan cream and sea salt foam."
+    },
+    "description": "Located at 5602 Riverside Dr in Chino, coft coffee and tea (@coftcoffeetea) is an independent specialty cafe celebrated for its Flan Latte, Sea Salt Vietnamese Coffee, Sea Salt Hojicha, and Double Matcha.",
+    "story": "coft coffee and tea brings inventive cream-top specialty coffee, traditional Vietnamese Phin drip, and ceremonial matcha to the heart of Chino in a bright, modern neighborhood space.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Signature Flan Latte & Sea Salt Vietnamese Coffee"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Flan Latte",
+          "price": "$6.50",
+          "desc": "Double espresso and choice of milk topped with rich house-whipped flan cream and fresh raspberry."
+        },
+        {
+          "name": "Sea Salt Vietnamese Coffee",
+          "price": "$6.25",
+          "desc": "Traditional slow-drip Phin Vietnamese dark roast coffee with condensed milk and velvety sea salt cream top."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Double Matcha / Sea Salt Matcha Latte",
+          "price": "$6.50",
+          "desc": "Hand-whisked ceremonial matcha layered over milk and crowned with matcha or sea salt cream."
+        },
+        {
+          "name": "Sea Salt Hojicha & Cinnamon Spanish Latte",
+          "price": "$6.25",
+          "desc": "Roasted Japanese hojicha green tea with sea salt foam, or sweet Spanish-style condensed milk cinnamon latte."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Coconut Matcha Cloud",
+          "price": "$6.25",
+          "desc": "Refreshing coconut water topped with a lush cloud of ceremonial matcha cream."
+        },
+        {
+          "name": "Local Artisan Pastries & House Pudding",
+          "price": "$5.25",
+          "desc": "Daily rotating local sourdough baked goods, cookies, and creamy puddings."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T21:55:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Lauren A.",
+        "comment": "Obsessed with coft in Chino! The Flan Latte and Sea Salt Vietnamese Coffee cream top are 10/10.",
+        "date": "2026-11-10T11:30:00Z"
+      },
+      {
+        "stars": 5,
+        "name": "Brandon K.",
+        "comment": "Best specialty coffee and matcha spot in Chino. Love the Sea Salt Hojicha and friendly baristas.",
+        "date": "2026-11-08T15:15:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0188,
+    "longitude": -117.6845,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      }
+    },
+    "isDailyFreshGem": true,
+    "socialMedia": {
+      "instagram": "@coftcoffeetea"
+    }
+  },
+  {
+    "id": "contis-pastry-shoppe-bronx-10462",
+    "name": "Conti's Pastry Shoppe (@contis_pastry_shoppe — Morris Park Bronx)",
+    "cuisine": "Historic 1921 Italian Pastry Shoppe, Cannoli & Specialty Espresso Bar",
+    "regionalIdentity": "Century-Old Bronx Italian Pasticceria & Neighborhood Coffee Counter (Morris Park Ave)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "bakery",
+      "italian",
+      "breakfast"
+    ],
+    "price": 1,
+    "address": "786 Morris Park Ave",
+    "city": "Bronx",
+    "state": "NY",
+    "zip": "10462",
+    "driveFrom91761": "Bronx, NY (Morris Park)",
+    "phone": "(718) 239-9339",
+    "hours": "Mon 8:00am–7:00pm · Tue–Fri 6:30am–7:00pm · Sat 7:00am–8:00pm · Sun 7:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "NYC-DOHMH-10462-CPS",
+      "agency": "NYC Department of Health and Mental Hygiene",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-12",
+      "portalUrl": "https://a816-health.nyc.gov"
+    },
+    "familyRoots": "Founded in 1921 on Morris Park Avenue in the Bronx, Conti's Pastry Shoppe has been a beloved neighborhood institution for over a century, now stewarded by lifelong Bronx bakers and friends.",
+    "scratchCommitment": "Hand-piped sweet sheep's milk and impastata ricotta cannoli, scratch Italian rainbow cookies, flaky lobster tails (sfogliatelle), custom celebration cakes, and whipped seasonal iced lattes.",
+    "destinationDish": {
+      "name": "Hand-Filled Ricotta Cannoli, Italian Rainbow Cookies & Iced Pumpkin Spice Cappuccino",
+      "callout": "Crisp pastry shells filled to order with velvety sweet ricotta cream and chocolate chips, paired with whipped iced pumpkin spice espresso."
+    },
+    "description": "A legendary Morris Park Bronx Italian bakery since 1921 (@contis_pastry_shoppe), celebrated for hand-filled cannoli, Italian cookies by the pound, strawberry shortcake, and seasonal iced espresso drinks.",
+    "story": "For more than 100 years at 786 Morris Park Avenue, Conti's Pastry Shoppe has anchored the Bronx Italian bakery tradition with old-school warmth, viral neighborhood humor, and scratch-baked pastries.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Fresh Ricotta Cannoli, Italian Pastries & Iced Pumpkin Spice Latte"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Fresh Hand-Filled Ricotta Cannoli",
+          "price": "$4.75",
+          "desc": "Crisp handmade cannoli shell filled to order with sweet ricotta cream and mini chocolate chips."
+        },
+        {
+          "name": "Seasonal Iced Pumpkin Spice Cappuccino",
+          "price": "$5.75",
+          "desc": "Chilled Italian espresso blended with spiced pumpkin cream and topped with whipped cream and cinnamon."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Assorted Italian Rainbow Cookies & Pastries (1 lb)",
+          "price": "$18.00",
+          "desc": "Almond-scented tri-color Italian rainbow cookies, pignoli cookies, and butter cookies baked daily."
+        },
+        {
+          "name": "Classic Strawberry Shortcake Slice",
+          "price": "$6.50",
+          "desc": "Light sponge cake layered with fresh strawberries and house-whipped cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Flaky Italian Sfogliatelle / Lobster Tail",
+          "price": "$5.25",
+          "desc": "Multi-layered crisp seashell pastry filled with sweet citrus-scented ricotta or pastry cream."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T21:55:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Vinny R.",
+        "comment": "Best Italian bakery in the Bronx since 1921! Their cannoli, rainbow cookies, and iced coffees are unmatched.",
+        "date": "2026-11-09T11:00:00Z"
+      }
+    ],
+    "region": "New York Metro",
+    "county": "Bronx",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 40.8468,
+    "longitude": -73.8628,
+    "opening_hour_minutes": 390,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/New_York"
+  },
+  {
+    "id": "chef-marcelas-kitchen-houston-77005",
+    "name": "Chef Marcela's Kitchen (@chefmarcelaskitchen — West U / Houston)",
+    "cuisine": "Scratch-Made Healthy Mexican, Gluten-Free Cactus Tortillas & Latin Comfort Bowls",
+    "regionalIdentity": "100% Avocado-Oil Scratch Latin Kitchen & Cactus Tortilla Taqueria (Buffalo Speedway Houston)",
+    "tags": [
+      "mexican",
+      "breakfast",
+      "lunch",
+      "dinner",
+      "chicken",
+      "beef",
+      "seafood",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "5220 Buffalo Speedway",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77005",
+    "driveFrom91761": "Houston, TX (Across from H-E-B on Buffalo Speedway)",
+    "phone": "@chefmarcelaskitchen",
+    "hours": "Mon–Sat 9:00am–9:00pm (Closed Sun)",
+    "healthPermit": {
+      "facilityId": "HOU-HD-77005-CMK",
+      "agency": "Houston Health Department — Bureau of Consumer Health Services",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-10-25",
+      "portalUrl": "https://www.houstontx.gov/health"
+    },
+    "familyRoots": "Founded by Chef Marcela in Houston’s West University / Bellaire corridor (5220 Buffalo Speedway), transforming her beloved scratch Latin meal-prep kitchen into a full-service fast-casual neighborhood restaurant.",
+    "scratchCommitment": "100% cooked in pure avocado oil (zero seed oils), house-pressed gluten-free green cactus (nopal) tortillas and cactus chips, cage-free eggs, Certified Angus Beef fajitas, and scratch Salsa Verde and Don Habanero.",
+    "destinationDish": {
+      "name": "Green Chicken Enchiladas (with Cactus Tortillas), Cactus Migas & Certified Angus Beef Fajita Bowl",
+      "callout": "All-natural chicken rolled in house-made gluten-free cactus tortillas with tangy tomatillo salsa verde, plus cage-free Cactus Migas cooked in avocado oil."
+    },
+    "description": "Newly opened at 5220 Buffalo Speedway across from H-E-B in Houston, Chef Marcela's Kitchen (@chefmarcelaskitchen) serves 100% avocado-oil Mexican comfort food and signature gluten-free cactus tortillas.",
+    "story": "After building a passionate Houston following for her clean, nutrient-packed Latin home cooking, Chef Marcela opened her brick-and-mortar kitchen on Buffalo Speedway so families can enjoy healthy Mexican food every day.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Green Chicken Cactus Enchiladas, Cactus Migas & Beef Fajita Bowl"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Green Chicken Enchiladas (with Cactus Tortillas)",
+          "price": "$14.95",
+          "desc": "All-natural shredded chicken rolled in house gluten-free green cactus tortillas with scratch Salsa Verde and Monterey Jack."
+        },
+        {
+          "name": "Cactus Migas Breakfast Bowl / Tacos",
+          "price": "$11.50",
+          "desc": "Cage-free eggs cooked in avocado oil with crispy cactus tortilla strips, vegan black beans, and Monterey Jack."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Certified Angus Beef Fajita Bowl",
+          "price": "$15.95",
+          "desc": "Grilled Certified Angus Beef fajitas over jasmine rice or cauliflower rice with black beans, veggies, and Salsa Verde."
+        },
+        {
+          "name": "Crispy Brisket Flautas & Chicken Empanadas",
+          "price": "$12.95",
+          "desc": "Hand-rolled brisket flautas and golden chicken empanadas served with house guacamole and Don Habanero salsa."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "House Cactus Chips & Fresh Guacamole",
+          "price": "$7.95",
+          "desc": "Crispy gluten-free nopal cactus tortilla chips with freshly mashed avocado guacamole."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T21:55:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Lauren M.",
+        "comment": "So thrilled Chef Marcela's brick-and-mortar is open on Buffalo Speedway! Everything is cooked in avocado oil and the cactus tortillas are incredible.",
+        "date": "2026-11-10T12:30:00Z"
+      }
+    ],
+    "region": "Central Texas",
+    "county": "Harris",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 29.7248,
+    "longitude": -95.4282,
+    "opening_hour_minutes": 540,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "timezone": "America/Chicago"
+  },
+  {
+    "id": "roadrunner-coffee-redlands-92373",
+    "name": "RoadRunner Coffee (@roadrunner.coffee — Downtown Redlands)",
+    "cuisine": "Specialty Espresso, Coconut Cloud Matcha/Hojicha & Artisan Cafe Sandwiches",
+    "regionalIdentity": "Independent Downtown Redlands Specialty Coffeehouse & Family Cafe (E. State St)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "tea",
+      "breakfast",
+      "lunch",
+      "bakery"
+    ],
+    "price": 1,
+    "address": "204 E State St",
+    "city": "Redlands",
+    "state": "CA",
+    "zip": "92373",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "@roadrunner.coffee",
+    "hours": "Daily 8:00am–10:00pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-92373-RRC",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-18",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent Downtown Redlands neighborhood coffeehouse on East State Street with a warm, welcoming barista team and a dedicated kids' lunch menu.",
+    "scratchCommitment": "House-made vanilla and seasonal syrups, MatchaBot ceremonial matcha and roasted hojicha, coconut water cloud drinks with coconut creme tops, and toasted sourdough/ciabatta sandwiches.",
+    "destinationDish": {
+      "name": "Matcha Cloud / Hojicha Cloud, Banana Bread Matcha & Tuscan Ridge Ciabatta Sammy",
+      "callout": "MatchaBot matcha or roasted hojicha over coconut water and house vanilla crowned with coconut creme top, paired with a toasted ciabatta pesto mozzarella sandwich."
+    },
+    "description": "Located in the heart of Downtown Redlands at 204 E. State St, RoadRunner Coffee (@roadrunner.coffee) serves creative Coconut Cloud Matcha & Hojicha drinks, Banana Bread Lattes, and artisan sandwiches.",
+    "story": "A vibrant, community-first cafe on Redlands’ historic State Street where families, students, and coffee lovers gather from morning until 10:00 PM.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Matcha Cloud, Banana Bread Latte & Tuscan Ridge Sammy"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Matcha Cloud / Hojicha Cloud (Iced)",
+          "price": "$6.50",
+          "desc": "MatchaBot matcha or hojicha, house-made vanilla, coconut water, and a rich coconut creme top."
+        },
+        {
+          "name": "Banana Bread Latte / Banana Bread Matcha",
+          "price": "$6.50",
+          "desc": "Specialty espresso or ceremonial matcha infused with warm scratch banana bread notes."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Tuscan Ridge Sammy",
+          "price": "$9.50",
+          "desc": "Toasted ciabatta, sun-dried tomato pesto, fresh mozzarella, arugula, and balsamic glaze with fresh fruit."
+        },
+        {
+          "name": "Sourdough Grilled Cheese & Seasonal Soup",
+          "price": "$14.50",
+          "desc": "Golden sourdough grilled cheese served with warm tomato or seasonal soup."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kids Sourdough Grilled Cheese or Strawberry PB&J (with Fruit)",
+          "price": "$6.20",
+          "desc": "Kid-friendly cheddar/mozzarella grilled cheese or whole-wheat strawberry preserves PB&J served with fresh fruit."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T21:50:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Hannah B.",
+        "comment": "Love RoadRunner on State Street! The Hojicha Cloud and Banana Bread Matcha are amazing, and my kids love the grilled cheese with fruit.",
+        "date": "2026-11-10T14:20:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0563,
+    "longitude": -117.1812,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1320,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
   },
   {
     "id": "goose-coffee-ontario-ranch-91761",

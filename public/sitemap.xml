@@ -73,6 +73,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hiddenfoodgem.com/cities/bronx-ny-10462</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.hiddenfoodgem.com/cities/brooklyn-ny-11220</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -200,6 +206,12 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/cities/hoboken-nj-07030</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/cities/houston-tx-77005</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -506,6 +518,30 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/gem/klatch-coffee-rancho-cucamonga</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/coft-coffee-tea-chino-91710</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/contis-pastry-shoppe-bronx-10462</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/chef-marcelas-kitchen-houston-77005</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/roadrunner-coffee-redlands-92373</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

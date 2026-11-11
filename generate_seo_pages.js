@@ -361,6 +361,7 @@ ${ga4AndOutboundScriptHtml}
     <article class="hero-card">
       <div class="pill-row">
         <span class="pill">💎 Verified Independent Gem</span>
+        ${r.comingSoon ? `<span class="pill" style="background:rgba(245,158,11,0.2);color:#fbbf24;border-color:#f59e0b">🚀 ${esc(r.comingSoonLabel || "Coming Soon")}</span>` : ""}
         <span class="pill">${esc(r.cuisine)} · ${esc(priceStr)}</span>
         ${r.healthPermit ? `<span class="pill pill-green">✓ Official Grade ${esc(r.healthPermit.grade || "A")} (${esc(r.healthPermit.score || 98)}/100)</span>` : ""}
         <span class="pill">★ ${stars} (${ratingCount} local ratings)</span>
@@ -547,7 +548,7 @@ ${ga4AndOutboundScriptHtml}
         ${directGems.map((r) => `
           <article class="gem-card">
             <div>
-              <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${esc(r.cuisine)} · ${"$".repeat(r.price || 2)}</div>
+              <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${r.comingSoon ? `<span style="background:#f59e0b;color:#1a100a;padding:2px 8px;border-radius:999px;font-weight:800;margin-right:6px">🚀 Coming Soon</span>` : ""}${esc(r.cuisine)} · ${"$".repeat(r.price || 2)}</div>
               <h3 style="margin:6px 0;font-size:1.15rem"><a href="/gem/${esc(r.id)}">${esc(r.name)}</a></h3>
               <p style="font-size:0.86rem;color:var(--muted);margin:4px 0 8px">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
               <p style="font-size:0.84rem;color:var(--muted);margin:4px 0 8px">🕒 ${esc(r.hours)}</p>

@@ -20,6 +20,7 @@
   - Austin, TX (78757): https://www.hiddenfoodgem.com/cities/austin-tx-78757
   - Bethesda, MD (20814): https://www.hiddenfoodgem.com/cities/bethesda-md-20814
   - Boyle Heights, CA (90033): https://www.hiddenfoodgem.com/cities/boyle-heights-ca-90033
+  - Bronx, NY (10462): https://www.hiddenfoodgem.com/cities/bronx-ny-10462
   - Brooklyn, NY (11220): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11220
   - Brooklyn, NY (11222): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11222
   - Burbank, CA (91502): https://www.hiddenfoodgem.com/cities/burbank-ca-91502
@@ -33,4 +34,3 @@
   - Chino, CA (91710): https://www.hiddenfoodgem.com/cities/chino-ca-91710
   - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
-  - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878

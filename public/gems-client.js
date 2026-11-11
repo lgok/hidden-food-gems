@@ -100,9 +100,19 @@
     for (const [sec, u] of units) if (s >= sec) return `${Math.floor(s / sec)}${u} ago`;
     return '';
   };
+  const isComingSoon = (r) => Boolean(
+    r && (
+      r.comingSoon ||
+      r.kitchenStatus === 'coming_soon' ||
+      (Array.isArray(r.tags) && r.tags.includes('coming_soon_cafe')) ||
+      /\b(coming soon|reopening soon|grand opening)\b/i.test(r.hours || '') ||
+      /\bcoming soon\b/i.test(r.name || '')
+    )
+  );
   const badge = (r) => {
+    if (isComingSoon(r)) return { cls: 'coming', txt: '🚀 Coming Soon' };
     // If added recently (November 2026 expansion batch), badge as Freshly Added
-    const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08')));
+    const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08') || r.createdAt.startsWith('2026-11-11')));
     if (isRecentlyAdded) return { cls: 'new', txt: '✨ Freshly Added' };
     const a = avg(r), n = (r.ratings && r.ratings.length);
     if (!n) return { cls: 'new', txt: '🌱 Be the first to rate' };
@@ -901,6 +911,7 @@
   }
 
   function isClosedToday(r, now = new Date()) {
+    if (isComingSoon(r)) return false;
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
     if (st === 'sold_out') return true;
@@ -908,6 +919,7 @@
   }
 
   function isOpenRightNow(r, now = new Date()) {
+    if (isComingSoon(r)) return false;
     if (isClosedToday(r, now)) return false;
     return getTodayScheduleDetails(r, now).isOpen;
   }
@@ -918,15 +930,16 @@
     if (!mealTab) return true;
     if (mealTab === 'open_now') return isOpenRightNow(r, now);
 
-    const sched = getTodayScheduleDetails(r, now);
-    if (sched.isClosedToday) return false;
-
     if (mealTab === 'coffee_boba') {
-      const isCoffeeBoba = (r.tags || []).some((t) => ['coffee_boba', 'coffee', 'boba', 'tea'].includes(String(t).toLowerCase())) ||
-        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.cuisine || '') ||
-        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar)\b/i.test(r.name || '');
+      const isCoffeeBoba = isComingSoon(r) ||
+        (r.tags || []).some((t) => ['coffee_boba', 'coffee', 'boba', 'tea', 'coming_soon_cafe'].includes(String(t).toLowerCase())) ||
+        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar|cafe)\b/i.test(r.cuisine || '') ||
+        /\b(coffee|boba|cafecito|espresso|matcha|tea lounge|tea house|tea bar|cafe)\b/i.test(r.name || '');
       return isCoffeeBoba;
     }
+
+    const sched = getTodayScheduleDetails(r, now);
+    if (sched.isClosedToday && !isComingSoon(r)) return false;
 
     const mealTypesArr = Array.isArray(r.meal_types)
       ? r.meal_types
@@ -965,6 +978,14 @@
 
   // ---------- Operational Status Pill & Today's Live Hours Helper ----------
   function getTodayHoursSummary(r, now = new Date()) {
+    if (isComingSoon(r)) {
+      const full = (r.hours || '').trim();
+      return {
+        todayText: r.comingSoonLabel || 'Status: Coming Soon',
+        fullSchedule: full || 'Coming Soon — Expected Daily Hours',
+        hasWeeklyBreakdown: false
+      };
+    }
     const sched = getTodayScheduleDetails(r, now);
     const full = (r.hours || '').trim();
     const hasWeeklyBreakdown = full.includes('·') || full.includes('•') || /closed/i.test(full);
@@ -977,6 +998,9 @@
   }
 
   function getOperationalPill(r, now = new Date()) {
+    if (isComingSoon(r)) {
+      return { cls: 'coming_soon', dot: '🚀', text: 'Coming Soon' };
+    }
     const an = getAnalytics(r);
     const st = an.kitchenStatus || r.kitchenStatus || 'open';
     const sched = getTodayScheduleDetails(r, now);
@@ -1172,15 +1196,17 @@
     };
     list.sort(sorters[state.sort] || sorters.gem);
 
-    // If Coffee & Boba tab is selected, strictly enforce top 5 per city
+    // If Coffee & Boba tab is selected, strictly enforce top 5 per city (while always surfacing Coming Soon cafes)
     if (state.mealTab === 'coffee_boba') {
       const cityGroups = new Map();
       const cappedList = [];
       for (const item of list) {
         const c = item.city || 'Unknown';
         const currentCount = cityGroups.get(c) || 0;
-        if (currentCount < 5) {
-          cityGroups.set(c, currentCount + 1);
+        if (isComingSoon(item) || currentCount < 5) {
+          if (!isComingSoon(item)) {
+            cityGroups.set(c, currentCount + 1);
+          }
           cappedList.push(item);
         }
       }
@@ -2157,15 +2183,17 @@
             ${mediaHtml(r, false, i < 6)}
             ${b ? `<span class="badge ${b.cls}">${b.txt}</span>` : ''}
             <div class="media-flags">
-              <span>${r.spotlightRank === 1
-                ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;font-weight:800">🌟 #1 Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                : (r.spotlightRank && r.spotlightRank <= 10)
-                  ? `<span class="flag pinned" style="background:rgba(245,194,107,0.92);color:#1a100a;font-weight:800">✨ Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                  : (r.createdAt && r.createdAt >= '2026-11-05')
-                    ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                    : r.featured
-                      ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
-                      : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
+              <span>${isComingSoon(r)
+                ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;font-weight:800">${esc(r.comingSoonLabel || '🚀 Coming Soon')} · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                : r.spotlightRank === 1
+                  ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;font-weight:800">🌟 #1 Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                  : (r.spotlightRank && r.spotlightRank <= 10)
+                    ? `<span class="flag pinned" style="background:rgba(245,194,107,0.92);color:#1a100a;font-weight:800">✨ Community Spotlight · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                    : (r.createdAt && r.createdAt >= '2026-11-05')
+                      ? `<span class="flag pinned" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff">✨ Featured New Spot · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                      : r.featured
+                        ? `<span class="flag pinned">📌 Featured · ${distMi.toFixed(1)} mi (${driveMins} min from ${esc(refZipLabel)})</span>`
+                        : `<span class="flag">📍 ${distMi.toFixed(1)} mi · ${driveMins} min from ${esc(refZipLabel)}</span>`}</span>
             </div>
           </div>
           <div class="card-body">

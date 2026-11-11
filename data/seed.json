@@ -1,5 +1,136 @@
 [
   {
+    "id": "girasol-cocina-mexicana-monrovia-91016",
+    "name": "Girasol Cocina Mexicana",
+    "featured": true,
+    "spotlightRank": 13,
+    "verifiedPhoto": true,
+    "cuisine": "Mexican",
+    "neighborhood": "Monrovia",
+    "region": "San Gabriel Valley",
+    "address": "312 W Huntington Dr, Monrovia, CA 91016",
+    "zipCode": "91016",
+    "latitude": 34.1394,
+    "longitude": -118.0059,
+    "phone": "(626) 239-6169",
+    "hours": "Mon–Fri & Sun 8:00 AM – 3:00 PM · Sat 8:00 AM – 3:00 PM & 4:30 PM – 9:00 PM",
+    "price": 2,
+    "tags": [
+      "mexican",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "beef",
+      "chicken",
+      "pork",
+      "seafood",
+      "vegetarian-options"
+    ],
+    "mustTry": "Clay-Pot Mexican Guisados Buffet (Cazuelas de Barro) & Chilaquiles Trio with Café de Olla",
+    "story": "An independent, family-owned Monrovia kitchen famous across the San Gabriel Valley for its bubbling cazuelas de barro (clay-pot Mexican guisados buffet), scratch-made Chilaquiles Trio & Divorciados, Tres Leches Pancakes, and cinnamon-spiced Café de Olla.",
+    "familyRoots": "Independent family-owned kitchen in Monrovia",
+    "scratchCommitment": "Traditional Mexican guisados simmered daily in clay cazuelas, house-charred salsas (roja, verde, creamy chipotle, and mole), and freshly brewed Café de Olla.",
+    "destinationDish": {
+      "name": "Cazuelas de Barro Mexican Buffet & Chilaquiles Trio",
+      "prepLeadTime": "Cooked fresh daily in traditional clay pots",
+      "whyWorthDrive": "People drive from across the San Gabriel Valley and LA to line up for their authentic clay-pot guisados buffet and three-sauce Chilaquiles Trio paired with hot or iced Café de Olla."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Mexican Clay-Pot Buffet (Cazuelas de Barro)",
+          "price": "$22.99",
+          "desc": "All-you-can-eat rotating homestyle Mexican guisados served straight from traditional clay cazuelas with rice, beans, and fresh tortillas (featured select afternoons/evenings)."
+        },
+        {
+          "name": "Chilaquiles Trio",
+          "price": "$17.99",
+          "desc": "Crisp house tortilla chips bathed in three signature scratch salsas—salsa roja, tomatillo verde, and creamy chipotle or mole—topped with queso fresco, crema, and eggs."
+        },
+        {
+          "name": "Tres Leches Pancakes",
+          "price": "$16.50",
+          "desc": "Fluffy griddled pancakes soaked in house tres leches cream and topped with fresh berries and whipped cream."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Chilaquiles Divorciados",
+          "price": "$16.99",
+          "desc": "Half red guajillo salsa, half green tomatillo salsa with eggs any style and refried beans."
+        },
+        {
+          "name": "Aguachile Tatemado",
+          "price": "$19.99",
+          "desc": "Fresh shrimp cured in lime juice and fire-charred chiltepin-jalapeño salsa."
+        },
+        {
+          "name": "Camarón Zarandeado",
+          "price": "$21.99",
+          "desc": "Nayarit-style butterflied grilled shrimp basted in smoky chili-garlic adobo."
+        }
+      ],
+      "combosAndTrays": [
+        {
+          "name": "Pork Belly Guacamole & Chips",
+          "price": "$14.99",
+          "desc": "Freshly smashed avocado topped with crispy Duroc pork belly chicharrón and pico de gallo."
+        },
+        {
+          "name": "Loaded Chilaquiles Burrito",
+          "price": "$15.99",
+          "desc": "Flour tortilla packed with saucy chilaquiles, scrambled eggs, cheese, beans, and meat of choice."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Café de Olla (Hot or Iced)",
+          "price": "$5.50",
+          "desc": "Traditional Mexican coffee brewed in clay with piloncillo raw cane sugar and Ceylon cinnamon."
+        },
+        {
+          "name": "Micheagua (100% Alcohol-Free Agua Preparada)",
+          "price": "$8.99",
+          "desc": "Zero-alcohol mineral water preparada rimmed with chamoy, Tajín, fresh lime juice, and savory house spices."
+        },
+        {
+          "name": "Fresh Aguas Frescas & Squeezed Orange Juice",
+          "price": "$5.50",
+          "desc": "Housemade daily seasonal aguas frescas and fresh-squeezed Valencia orange juice."
+        }
+      ]
+    },
+    "socialMedia": {
+      "instagram": "https://www.instagram.com/girasolcocinamexicana/",
+      "website": "https://www.girasolcocinamexicana.com/"
+    },
+    "healthPermit": {
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 96,
+      "status": "Verified Active Permit",
+      "verifiedDate": "2026-11-11",
+      "inspectionUrl": "https://ehservices.publichealth.lacounty.gov/"
+    },
+    "image": "/img/batch1/girasol-monrovia-1.jpg",
+    "photos": [
+      {
+        "file": "/img/batch1/girasol-monrovia-1.jpg",
+        "caption": "Girasol Cocina Mexicana clay-pot cazuelas buffet in Monrovia, CA"
+      }
+    ],
+    "media": [
+      {
+        "type": "photo",
+        "file": "/img/batch1/girasol-monrovia-1.jpg",
+        "caption": "Girasol Cocina Mexicana clay-pot cazuelas buffet in Monrovia, CA"
+      }
+    ],
+    "ratings": [],
+    "createdAt": "2026-11-11T22:18:00.000Z"
+  },
+  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",

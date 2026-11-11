@@ -81,7 +81,7 @@ window.__HFG_OFFLINE_SEED__ = [
     "media": [],
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:18:24.936Z",
+    "createdAt": "2026-11-11T19:40:54.956Z",
     "ratings": [
       {
         "stars": 5,
@@ -332,7 +332,7 @@ window.__HFG_OFFLINE_SEED__ = [
         "rangeStr": "10:30 AM – 9:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:18:14.936Z",
+    "createdAt": "2026-11-11T19:40:44.956Z",
     "isDailyFreshGem": true,
     "spotlightRank": 2
   },
@@ -501,7 +501,7 @@ window.__HFG_OFFLINE_SEED__ = [
         "rangeStr": "9:00 AM – 6:00 PM"
       }
     },
-    "createdAt": "2026-11-11T19:18:04.936Z",
+    "createdAt": "2026-11-11T19:40:34.956Z",
     "isDailyFreshGem": true,
     "spotlightRank": 3
   },
@@ -588,7 +588,7 @@ window.__HFG_OFFLINE_SEED__ = [
     },
     "sample": false,
     "featured": true,
-    "createdAt": "2026-11-11T19:17:54.936Z",
+    "createdAt": "2026-11-11T19:40:24.956Z",
     "ratings": [
       {
         "stars": 5,
@@ -680,6 +680,605 @@ window.__HFG_OFFLINE_SEED__ = [
     "closing_hour_minutes": 1080,
     "spotlightRank": 4,
     "isDailyFreshGem": true
+  },
+  {
+    "id": "badash-bakes-pasadena-91101",
+    "name": "BadAsh Bakes Bakery & Cafe (Pasadena)",
+    "cuisine": "Artisan Cinnamon Rolls, Stuffed Cookies & Specialty Matcha",
+    "regionalIdentity": "Chef-Owned Viral Bakery & Espresso Bar on Colorado Blvd",
+    "tags": [
+      "bakery",
+      "coffee",
+      "matcha",
+      "dessert",
+      "breakfast",
+      "latte"
+    ],
+    "price": 2,
+    "address": "247 E Colorado Blvd",
+    "city": "Pasadena",
+    "zip": "91101",
+    "driveFrom91761": "34 min from 91761",
+    "phone": "(626) 765-9101",
+    "hours": "Wed–Sat 8:00am–4:00pm · Sun 9:00am–3:00pm (Closed Mon–Tue)",
+    "healthPermit": {
+      "facilityId": "PPHD-91101-BAB",
+      "agency": "Pasadena Public Health Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-26",
+      "portalUrl": "https://www.cityofpasadena.net/public-health/"
+    },
+    "familyRoots": "Founded by classically trained chef and baker Ashley Cunningham in Downtown Pasadena, turning her small-batch home baking passion into a beloved Colorado Blvd destination.",
+    "scratchCommitment": "Small-batch brioche cinnamon rolls (Biscoff Cookie Butter, Matcha, Classic), scratch banana pudding, stuffed cookies, and specialty espresso & matcha.",
+    "destinationDish": {
+      "name": "Warm Biscoff Cookie Butter Cinnamon Roll, Matcha Cinnamon Roll & Spanish Latte",
+      "callout": "Pillow-soft brioche cinnamon roll swirled with Biscoff filling, classic cream cheese icing, and warm cookie butter drizzle, paired with a Spanish Latte or Strawberry Matcha."
+    },
+    "description": "Downtown Pasadena’s viral independent bakery and coffee bar by Chef Ashley Cunningham, famous for warm Biscoff and Matcha cinnamon rolls, banana pudding, and specialty lattes.",
+    "story": "Chef Ashley Cunningham built BadAsh Bakes from the ground up into one of Southern California’s most talked-about scratch bakeries right on Colorado Boulevard.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Warm Biscoff Cinnamon Roll & Specialty Lattes"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Warm Biscoff Cookie Butter Cinnamon Roll",
+          "price": "$7.50",
+          "desc": "Fluffy scratch brioche roll baked with Biscoff cookie butter filling, house icing, and rich cookie butter drizzle."
+        },
+        {
+          "name": "Ceremonial Matcha Cinnamon Roll",
+          "price": "$7.50",
+          "desc": "Warm brioche cinnamon roll glazed with vibrant Japanese matcha cream icing."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Scratch Banana Pudding & S’mores Brownie",
+          "price": "$6.95",
+          "desc": "Velvety house banana pudding layered with wafers, or fudgy brownie topped with toasted marshmallow."
+        },
+        {
+          "name": "Signature Stuffed Gourmet Cookies",
+          "price": "$5.50",
+          "desc": "Thick, golden-baked cookies with molten centers."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Spanish Latte & Strawberry Matcha Latte",
+          "price": "$6.25",
+          "desc": "Sweet condensed milk espresso latte or layered strawberry ceremonial matcha."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Maya L.",
+        "comment": "The Biscoff Cinnamon Roll and Spanish Latte at BadAsh Bakes are out of this world!",
+        "date": "2026-11-05T10:25:00Z"
+      }
+    ],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1459,
+    "longitude": -118.1454,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@badashbakes_"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 900,
+        "rangeStr": "9:00 AM – 3:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – 4:00 PM"
+      }
+    },
+    "createdAt": "2026-11-11T19:39:14.167Z",
+    "isDailyFreshGem": true
+  },
+  {
+    "id": "the-christmas-cafe-peoria-az-85383",
+    "name": "The Christmas Cafe (@thechristmascafeaz)",
+    "cuisine": "Year-Round Christmas-Themed Specialty Coffeehouse, Cocoa Bar & Bakery",
+    "regionalIdentity": "365-Day Festive Holiday Coffeehouse & Scratch Bakery (North Peoria / Phoenix Metro)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "bakery",
+      "breakfast",
+      "coming_soon_cafe"
+    ],
+    "comingSoon": true,
+    "comingSoonLabel": "🚀 Coming Soon · Nov 2026 Grand Opening",
+    "price": 1,
+    "address": "24980 N 83rd Ave, Ste 104",
+    "city": "Peoria",
+    "state": "AZ",
+    "zip": "85383",
+    "driveFrom91761": "Phoenix Metro, AZ (83rd Ave & Happy Valley Rd)",
+    "phone": "@thechristmascafeaz",
+    "hours": "Daily 7:00am–6:00pm (Grand Opening Nov 2026)",
+    "healthPermit": {
+      "facilityId": "MC-ESD-85383-XMAS",
+      "agency": "Maricopa County Environmental Services Department",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-11-05",
+      "portalUrl": "https://envapp.maricopa.gov"
+    },
+    "familyRoots": "Co-founded by local Arizona owners Victoria Andrej and Marie Pantelic under the motto \"Joy to the World, 365 Days a Year\" — a 100% family-friendly, alcohol-free year-round Christmas coffeehouse.",
+    "scratchCommitment": "House-whipped chocolate cream, scratch peppermint bark syrups, gourmet hot cocoa flights, specialty espresso drinks, and fresh-baked holiday pastries every morning.",
+    "destinationDish": {
+      "name": "Peppermint Bark Latte (with Homemade Chocolate Whipped Cream) & Hot Cocoa Flight",
+      "callout": "Rich double espresso swirled with house white-and-dark chocolate peppermint bark, topped with homemade chocolate whipped cream and crushed peppermint."
+    },
+    "description": "Arizona’s first permanent, 365-days-a-year Christmas-themed coffee shop and bakery across from The Trailhead in North Peoria (83rd Ave & Happy Valley Rd).",
+    "story": "Created by Victoria Andrej and Marie Pantelic (@thechristmascafeaz), The Christmas Cafe brings cozy holiday magic, twinkling lights, artisan espresso, hot cocoa flights, and fresh pastries to families every single day of the year.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Peppermint Bark Latte & Holiday Hot Cocoa Flight"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Peppermint Bark Latte",
+          "price": "$6.25",
+          "desc": "Espresso with house peppermint bark sauce, topped with homemade chocolate whipped cream."
+        },
+        {
+          "name": "North Pole Hot Cocoa Flight",
+          "price": "$9.50",
+          "desc": "Tasting flight of gourmet house hot chocolates (Peppermint Bark, Toasted Marshmallow, Gingerbread, and Classic Belgian)."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Gingerbread Oat Milk Cortado",
+          "price": "$5.75",
+          "desc": "Spiced molasses gingerbread syrup with double-shot espresso and velvety oat milk."
+        },
+        {
+          "name": "Mrs. Claus Warm Cinnamon Roll",
+          "price": "$5.50",
+          "desc": "Fresh-baked brioche cinnamon roll topped with vanilla bean cream cheese frosting."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Sugar Cookie Cold Foam Cold Brew",
+          "price": "$5.95",
+          "desc": "Slow-steeped cold brew topped with house frosted sugar cookie sweet cream."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:35:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Sarah K.",
+        "comment": "Peoria needed this! A 365-day Christmas coffee shop with homemade chocolate whipped cream!",
+        "date": "2026-11-11T10:00:00Z"
+      }
+    ],
+    "region": "Phoenix Metro",
+    "county": "Maricopa",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.7115,
+    "longitude": -112.2378,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Phoenix"
+  },
+  {
+    "id": "plus-bake-cafe-rancho-cucamonga-91730",
+    "name": "+Bake Cafe (by Take Ur Seat)",
+    "cuisine": "Asian-Fusion Artisan Bakery, Japanese Salt Bread & Specialty Matcha/Coffee Bar",
+    "regionalIdentity": "Independent Asian-Fusion Bakehouse & Craft Espresso Bar (Sunrize Center Rancho Cucamonga)",
+    "tags": [
+      "coffee_boba",
+      "coffee",
+      "bakery",
+      "breakfast",
+      "brunch"
+    ],
+    "price": 1,
+    "address": "8685 Base Line Rd, Ste B",
+    "city": "Rancho Cucamonga",
+    "state": "CA",
+    "zip": "91730",
+    "driveFrom91761": "14 min from 91761",
+    "phone": "(909) 980-8812",
+    "hours": "Daily 7:30am–3:30pm",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91730-PBK",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-14",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent Asian-fusion bakery and specialty coffeehouse created by the culinary team behind Take Ur Seat, bringing small-batch weekly roasts and artisan Asian pastries to Base Line Rd.",
+    "scratchCommitment": "Baked from scratch daily in-house: golden crispy-bottomed Japanese Salt Bread (Shio Pan), house pandan cream, ceremonial-grade Uji matcha, and rotating micro-lot espresso.",
+    "destinationDish": {
+      "name": "Pandan Cream Cold Brew, Strawberry Matcha & Warm Japanese Salt Bread (Shio Pan)",
+      "callout": "Fragrant house-extracted pandan sweet cream over single-origin cold brew, paired with warm, butter-crisped Japanese salt bread."
+    },
+    "description": "Rancho Cucamonga’s buzzworthy new Asian-fusion bakery and specialty coffee bar at 8685 Base Line Rd, celebrated for Japanese salt bread, pandan lattes, and ceremonial strawberry matcha.",
+    "story": "Tucked into the Sunrize Center on Base Line Road, +Bake Cafe pairs artisan baking techniques with creative Asian-inspired coffee and matcha drinks in a bright, welcoming space.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Pandan Cream Latte, Strawberry Matcha & Warm Salt Bread"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Iced Pandan Cream Latte",
+          "price": "$6.25",
+          "desc": "Double espresso over milk topped with house-made fragrant pandan leaf sweet cream."
+        },
+        {
+          "name": "Warm Japanese Salt Bread (Shio Pan)",
+          "price": "$4.25",
+          "desc": "Buttery, flaky-bottomed Japanese roll with a light sea salt crust and soft interior."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Ceremonial Strawberry Matcha Latte",
+          "price": "$6.50",
+          "desc": "Whisked ceremonial Uji matcha layered over house strawberry puree and milk."
+        },
+        {
+          "name": "Black Sesame Einspänner",
+          "price": "$6.25",
+          "desc": "Bold espresso crowned with nutty roasted black sesame cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Ube Basque Cheesecake Slice",
+          "price": "$6.75",
+          "desc": "Creamy caramelized Basque cheesecake infused with purple yam."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:35:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Michelle L.",
+        "comment": "The salt bread and pandan latte are incredible! Best new cafe in Rancho Cucamonga.",
+        "date": "2026-11-09T09:15:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1214,
+    "longitude": -117.6145,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 930,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "bobo-cha-bar-vineyard-ontario-91761",
+    "name": "Bobo Cha Bar (New Vineyard Ave Flagship — Coming Soon)",
+    "cuisine": "Artisan Taiwanese Boba Milk Tea, Fresh Fruit Teas & Street Snacks",
+    "regionalIdentity": "Independent Ontario Ranch Boba & Taiwanese Tea House (Relocating to S. Vineyard Ave)",
+    "tags": [
+      "coffee_boba",
+      "boba",
+      "tea",
+      "taiwanese",
+      "coming_soon_cafe"
+    ],
+    "comingSoon": true,
+    "comingSoonLabel": "🚀 Coming Soon · New Vineyard Ave Location",
+    "price": 1,
+    "address": "2570 S Vineyard Ave, Ste B",
+    "city": "Ontario",
+    "state": "CA",
+    "zip": "91761",
+    "driveFrom91761": "4 min from 91761",
+    "phone": "(909) 930-5588",
+    "hours": "Daily 11:30am–9:30pm (Reopening Soon at 2570 S. Vineyard Ave)",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91761-BCB",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-10-20",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Beloved local Ontario Ranch boba and Taiwanese snack kitchen transitioning from Ontario Ranch Rd into its expanded new flagship at 2570 S. Vineyard Ave, Ste B.",
+    "scratchCommitment": "Loose-leaf Taiwanese high-mountain oolong and jasmine green teas brewed fresh in small batches, warm brown sugar honey boba pearls cooked every 3 hours, and crispy basil popcorn chicken.",
+    "destinationDish": {
+      "name": "Tiger Brown Sugar Boba Milk & Crispy Taiwanese Basil Popcorn Chicken",
+      "callout": "Warm caramelized brown sugar tapioca pearls swirled with organic milk and crema, paired with crispy five-spice basil popcorn chicken."
+    },
+    "description": "Ontario’s favorite independent Taiwanese boba and snack bar is opening its brand-new flagship storefront at 2570 S. Vineyard Ave, Ste B in Ontario.",
+    "story": "After building a loyal local following on Ontario Ranch Road, Bobo Cha Bar is unveiling its upgraded Vineyard Avenue tea bar with expanded seating for families and students.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Tiger Brown Sugar Boba & Taiwanese Popcorn Chicken"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Tiger Brown Sugar Boba Milk",
+          "price": "$6.25",
+          "desc": "Slow-simmered Okinawa brown sugar boba pearls with fresh milk and house cheese crema."
+        },
+        {
+          "name": "Crispy Taiwanese Basil Popcorn Chicken",
+          "price": "$7.95",
+          "desc": "Golden bite-sized chicken thigh nuggets fried with fresh Thai basil and five-spice."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Mango Pomelo Sago Refresher",
+          "price": "$6.50",
+          "desc": "Fresh mango puree, ruby grapefruit pulp, coconut milk, and crystal sago pearls."
+        },
+        {
+          "name": "Roasted Oolong Milk Tea with Honey Boba",
+          "price": "$5.75",
+          "desc": "Slow-roasted Taiwanese oolong tea with creamy milk and chewy honey boba."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Sweet Potato Plum Fries",
+          "price": "$5.95",
+          "desc": "Crispy sweet potato fries dusted with tangy Taiwanese plum powder."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:35:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Kevin T.",
+        "comment": "So excited for their new Vineyard Ave spot to open! Best boba and popcorn chicken in Ontario.",
+        "date": "2026-11-10T18:00:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0258,
+    "longitude": -117.6122,
+    "opening_hour_minutes": 690,
+    "closing_hour_minutes": 1290,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "the-sipz-bar-ontario-ranch-91761",
+    "name": "The Sipz Bar (Ontario Ranch — Coming Soon)",
+    "cuisine": "Handcrafted Boba Tea, Fruit Refreshers & Dessert Cafe",
+    "regionalIdentity": "New Ontario Ranch Specialty Drink & Sweet Treats Bar (Ontario Ranch Rd)",
+    "tags": [
+      "coffee_boba",
+      "boba",
+      "tea",
+      "coming_soon_cafe"
+    ],
+    "comingSoon": true,
+    "comingSoonLabel": "🚀 Coming Soon · Ontario Ranch",
+    "price": 1,
+    "address": "3410 Ontario Ranch Rd",
+    "city": "Ontario",
+    "state": "CA",
+    "zip": "91761",
+    "driveFrom91761": "2 min from 91761",
+    "phone": "(909) 930-5500",
+    "hours": "Daily 11:00am–9:00pm (Coming Soon to Ontario Ranch Rd)",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-91761-SPZ",
+      "agency": "San Bernardino County Environmental Health Services",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-01",
+      "portalUrl": "https://ehs.sbcounty.gov"
+    },
+    "familyRoots": "Independent, 100% alcohol-free neighborhood drink and dessert bar moving into the 3410 Ontario Ranch Rd plaza to serve Ontario Ranch and Eastvale families.",
+    "scratchCommitment": "Fresh-mudded fruit teas, house sweet cream cold foams, chewy boba pearls, and family-friendly dessert treats.",
+    "destinationDish": {
+      "name": "Strawberry Matcha Cloud & Passionfruit Lychee Boba Refresher",
+      "callout": "Fresh-mudded strawberries and tropical passionfruit layered with jasmine green tea, lychee jelly, and honey boba."
+    },
+    "description": "Coming soon to 3410 Ontario Ranch Rd (taking over the former Bobo Cha Bar suite), The Sipz Bar brings handcrafted boba teas, fruit refreshers, and desserts to Ontario Ranch.",
+    "story": "Designed as a bright, family-friendly neighborhood hangout in the heart of Ontario Ranch, The Sipz Bar serves alcohol-free craft boba, refreshers, and sweet bites.",
+    "image": "img/hero.png",
+    "photos": [
+      {
+        "file": "img/hero.png",
+        "label": "Strawberry Matcha Cloud & Passionfruit Boba Refresher"
+      }
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Strawberry Matcha Cloud",
+          "price": "$6.25",
+          "desc": "Real strawberry puree, milk, and whisked matcha topped with vanilla sweet cream cloud."
+        },
+        {
+          "name": "Passionfruit Lychee Green Tea",
+          "price": "$5.95",
+          "desc": "Jasmine green tea shaken with tart passionfruit, sweet lychee jelly, and honey boba."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Creme Brulee Brown Sugar Milk Tea",
+          "price": "$6.25",
+          "desc": "House milk tea with warm brown sugar boba and torched creme brulee foam."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Mochi Waffle Bites",
+          "price": "$6.50",
+          "desc": "Warm, chewy pandan and vanilla mochi waffle bites with condensed milk drizzle."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-11T19:35:00.000Z",
+    "ratings": [
+      {
+        "stars": 5,
+        "name": "Amanda R.",
+        "comment": "Right around the corner in Ontario Ranch! Can’t wait for The Sipz Bar to open.",
+        "date": "2026-11-11T09:00:00Z"
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0046,
+    "longitude": -117.5968,
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles"
   },
   {
     "id": "wild-carvery-burbank-91502",

@@ -22,6 +22,7 @@
   - Boyle Heights, CA (90033): https://www.hiddenfoodgem.com/cities/boyle-heights-ca-90033
   - Brooklyn, NY (11220): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11220
   - Brooklyn, NY (11222): https://www.hiddenfoodgem.com/cities/brooklyn-ny-11222
+  - Burbank, CA (91502): https://www.hiddenfoodgem.com/cities/burbank-ca-91502
   - Burbank, CA (91505): https://www.hiddenfoodgem.com/cities/burbank-ca-91505
   - Burlingame, CA (94010): https://www.hiddenfoodgem.com/cities/burlingame-ca-94010
   - Carrollton, TX (75006): https://www.hiddenfoodgem.com/cities/carrollton-tx-75006
@@ -33,4 +34,3 @@
   - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
   - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878
-  - Dallas, TX (75208): https://www.hiddenfoodgem.com/cities/dallas-tx-75208

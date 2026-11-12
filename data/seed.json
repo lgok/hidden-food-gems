@@ -27800,5 +27800,322 @@
         "rangeStr": "7:00 AM – 9:00 PM"
       }
     }
+  },
+  {
+    "id": "banh-mi-my-tho-alhambra-91801",
+    "name": "Bánh Mì Mỹ Tho",
+    "cuisine": "Traditional Vietnamese Baguettes & Broken Rice",
+    "regionalIdentity": "Legendary Cash-Only Saigon-Style Bánh Mì & Cơm Tấm Counter (Alhambra / SGV)",
+    "tags": [
+      "vietnamese",
+      "sandwiches",
+      "pork",
+      "chicken",
+      "beef",
+      "breakfast",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "price": 1,
+    "address": "304 W Valley Blvd",
+    "city": "Alhambra",
+    "zip": "91801",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "(626) 289-4160",
+    "hours": "Tue–Sun 7:00am–4:00pm (Closed Mon)",
+    "healthPermit": {
+      "facilityId": "LACO-DPH-91801-BMMT",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 96,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/"
+    },
+    "familyRoots": "An iconic, family-run San Gabriel Valley institution on Valley Boulevard where generations of locals line up starting at 7:00 AM for shatteringly crisp baguettes and scratch-whipped egg-yolk butter mayonnaise.",
+    "scratchCommitment": "House-whipped rich golden egg-yolk mayonnaise (bơ), slow-simmered pork meatballs (xíu mại), charbroiled lemongrass pork (thịt nướng), flaky pâté chaud pastries, and strong phin-dripped cà phê sữa đá.",
+    "destinationDish": {
+      "name": "Grilled Lemongrass Pork (Thịt Nướng) & #2 Special Cold-Cut Bánh Mì + Cà Phê Sữa Đá",
+      "callout": "Hollowed, blistered French baguette slathered with house golden egg-butter mayo and savory liver pâté, loaded with charbroiled lemongrass pork or house cold cuts, pickled daikon-carrot, cilantro, and jalapeño."
+    },
+    "description": "Widely revered as one of Southern California's greatest Vietnamese sandwich counters—cash-only, zero frills, and famous for its feather-light crispy baguettes and rich homemade egg-yolk butter spread.",
+    "story": "Long before artisanal sandwich shops became trendy, Bánh Mì Mỹ Tho perfected the art of the Saigon street baguette on Valley Blvd in Alhambra.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Bánh Mì Thịt Nướng (Charbroiled Lemongrass Pork Baguette)",
+          "price": "$7.75",
+          "desc": "Caramelized smoky grilled pork shoulder, house golden egg-yolk butter mayo, pickled daikon & carrot, cucumber, cilantro, and fresh jalapeño on a toasted French baguette."
+        },
+        {
+          "name": "Bánh Mì Đặc Biệt (#2 Special Combination Cold-Cut & Pâté)",
+          "price": "$7.50",
+          "desc": "Traditional Saigon cold cuts, Vietnamese pork roll (chả lụa), headcheese, house pâté, and golden egg-butter spread on a crisp baguette."
+        },
+        {
+          "name": "Bánh Mì Xíu Mại (Savory Steamed Pork Meatball Baguette)",
+          "price": "$7.50",
+          "desc": "Tender seasoned pork meatballs crushed warm inside a crusty baguette with pickled vegetables, cilantro, and savory broth drizzle."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Cơm Tấm Sườn Nướng (Broken Rice with Charbroiled Pork Chop)",
+          "price": "$11.95",
+          "desc": "Fragrant broken jasmine rice topped with a caramelized lemongrass grilled pork chop, pickled vegetables, scallion oil, and house fish sauce (nước chấm)."
+        },
+        {
+          "name": "Warm Flaky Pâté Chaud (Vietnamese Puff Pastry Meat Pie)",
+          "price": "$3.25",
+          "desc": "Buttery multi-layered French-Vietnamese puff pastry filled with seasoned minced pork and onions."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Cà Phê Sữa Đá (Traditional Vietnamese Iced Coffee)",
+          "price": "$4.75",
+          "desc": "Dark-roast chicory coffee slow-brewed and stirred over sweetened condensed milk and crushed ice."
+        },
+        {
+          "name": "Crispy Vietnamese Egg Rolls (Chả Giò - 3 pcs)",
+          "price": "$4.95",
+          "desc": "Golden fried pork, taro, and glass-noodle spring rolls."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-12T03:00:00Z",
+    "ratings": [],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0782,
+    "longitude": -118.1264,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": 0,
+        "closeMin": 0,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 960,
+        "rangeStr": "7:00 AM – 4:00 PM"
+      }
+    }
+  },
+  {
+    "id": "pepo-melo-claremont-village-91711",
+    "name": "Pepo Melo Craft Fruit & Sorbet Bar",
+    "cuisine": "Artisanal Acai, Matcha & Superfruit Sorbet Bowls",
+    "regionalIdentity": "Independent Zero-Added-Sugar Superfruit Sorbet & Matcha Bar (Claremont Village)",
+    "tags": [
+      "vegan",
+      "vegetarian-only",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba"
+    ],
+    "price": 1,
+    "address": "301 Harvard Ave N",
+    "city": "Claremont",
+    "zip": "91711",
+    "driveFrom91761": "16 min from 91761",
+    "phone": "(909) 480-1320",
+    "hours": "Mon–Thu 9:00am–7:00pm · Fri 8:00am–7:00pm · Sat 9:00am–6:00pm · Sun 9:00am–5:00pm",
+    "healthPermit": {
+      "facilityId": "LACO-DPH-91711-PMCL",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-10-08",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/"
+    },
+    "familyRoots": "Founded in the heart of Claremont Village across from Shelton Park as a 100% independent, plant-forward craft fruit, matcha, and sorbet bar.",
+    "scratchCommitment": "Five house-churned organic sorbet bases (Acai, Ceremonial Matcha, Blue Majik Spirulina, Dragon Fruit Pitaya, and Cacao Banana Mash), hand-cut peak-season fruit, house date caramel, and zero-added-sugar pressed Fruitades.",
+    "destinationDish": {
+      "name": "The Rainbowl (Ceremonial Matcha Sorbet) & Tropical Blue Majik Bowl",
+      "callout": "Velvety ceremonial-grade matcha or Blue Majik coconut-pineapple sorbet layered with almond granola, fresh papaya, mango, kiwi, blackberries, taro dust, and house date caramel."
+    },
+    "description": "Claremont Village's beloved independent craft superfruit and matcha bar across from Shelton Park, serving vibrant organic sorbet bowls, espresso-cacao smoothies, and zero-sugar house Fruitades.",
+    "story": "Instead of icy commercial mixes, Pepo Melo crafts vibrant, scoopable sorbet bases from real organic acai, ceremonial matcha, blue spirulina, and dragon fruit topped to order.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Rainbowl (Ceremonial Matcha Sorbet Bowl)",
+          "price": "$11.50",
+          "desc": "Organic matcha green tea sorbet topped with crunchy almond granola, fresh papaya, kiwi, mango, blackberries, pineapple, strawberry, taro dust, and bee pollen."
+        },
+        {
+          "name": "Tropical Majik Bowl (Blue Spirulina Coconut-Mango Sorbet)",
+          "price": "$11.50",
+          "desc": "Electric-blue spirulina, coconut, pineapple, and mango sorbet layered with coconut oats, fresh mango, banana, house date caramel, and taro."
+        },
+        {
+          "name": "Mango Tango Bowl (Mango Sorbet, Chamoy & Tajín)",
+          "price": "$10.95",
+          "desc": "Sweet-tangy mango sorbet loaded with fresh pineapple, tangerine, watermelon, house chamoy drizzle, and chili-lime Tajín."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Dragon Bowl (Pitaya & Coconut Sorbet Swirl)",
+          "price": "$11.25",
+          "desc": "Magenta dragon fruit and creamy coconut sorbet topped with granola, white chia seeds, fresh strawberries, pineapple, agave, and toasted coconut flakes."
+        },
+        {
+          "name": "The Chocolate Banana Espresso Smoothie",
+          "price": "$8.99",
+          "desc": "Blended banana, raw cacao, blueberries, espresso powder, almond butter, and organic agave."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Fresh-Pressed Zero-Sugar House Fruitade (Cucumber Mint or Lemon Papaya Basil)",
+          "price": "$4.95",
+          "desc": "Cold-pressed daily from whole seasonal fruit and fresh herbs with zero refined sugar."
+        },
+        {
+          "name": "Matchacha Iced Green Tea Smoothie",
+          "price": "$8.99",
+          "desc": "Ceremonial matcha blended with coconut sorbet, banana, and organic agave."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-12T03:00:00Z",
+    "ratings": [],
+    "region": "Inland Empire & Foothills",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0964,
+    "longitude": -117.7186,
+    "opening_hour_minutes": 540,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1020,
+        "rangeStr": "9:00 AM – 5:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1140,
+        "rangeStr": "9:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1140,
+        "rangeStr": "9:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1140,
+        "rangeStr": "9:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1140,
+        "rangeStr": "9:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1140,
+        "rangeStr": "8:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 1080,
+        "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    }
   }
 ]

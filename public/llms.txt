@@ -10,6 +10,7 @@
 - Full XML Sitemap (176 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
+  - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801
   - Anaheim, CA (92805): https://www.hiddenfoodgem.com/cities/anaheim-ca-92805
   - Annandale, VA (22003): https://www.hiddenfoodgem.com/cities/annandale-va-22003
   - Astoria, NY (11105): https://www.hiddenfoodgem.com/cities/astoria-ny-11105
@@ -33,4 +34,3 @@
   - Chicago, IL (60625): https://www.hiddenfoodgem.com/cities/chicago-il-60625
   - Chino, CA (91710): https://www.hiddenfoodgem.com/cities/chino-ca-91710
   - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709
-  - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711

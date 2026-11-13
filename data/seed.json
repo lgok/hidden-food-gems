@@ -38,6 +38,12 @@
     "structuredMenu": {
       "signatures": [
         {
+          "name": "Festival of Lights Reserved Holiday Experience & Specialty Latte",
+          "price": "$25.00",
+          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights.",
+          "description": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
+        },
+        {
           "name": "Famous Iced Mazapán Latte",
           "price": "$5.50",
           "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
@@ -146,7 +152,11 @@
     "socialMedia": {
       "instagram": "@molinoscoffee"
     },
-    "spotlightRank": 1
+    "spotlightRank": 1,
+    "holidaySpecial": {
+      "title": "✨ Riverside Festival of Lights Experience (Starts Nov 21)",
+      "details": "Reserved indoor & outdoor patio seating available right on the Main St pedestrian mall with panoramic views of the Mission Inn light displays (/person). Skip the massive holiday crowds and savor handcrafted seasonal lattes in cozy comfort."
+    }
   },
   {
     "id": "monday-to-sunday-dessert-cafe-rancho",
@@ -28115,6 +28125,169 @@
         "openMin": 540,
         "closeMin": 1080,
         "rangeStr": "9:00 AM – 6:00 PM"
+      }
+    }
+  },
+  {
+    "id": "cafe-cultivate-redlands-92373",
+    "name": "Café Cultivate",
+    "cuisine": "Specialty Coffeehouse, Artisan Toast Flights & Family Café",
+    "regionalIdentity": "Independent Redlands Specialty Espresso Bar, Brunch Café & Family Play Nook (La Farge Plaza)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "bakery",
+      "vegetarian-options"
+    ],
+    "price": 1,
+    "address": "308 W State St, Suite 1A",
+    "city": "Redlands",
+    "zip": "92373",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "(909) 748-4821",
+    "hours": "Mon–Fri 7:30am–4:30pm · Sat Closed · Sun 8:00am–3:00pm",
+    "healthPermit": {
+      "facilityId": "SBCO-DEHS-92373-CCUL",
+      "agency": "San Bernardino County DEHS",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-24",
+      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
+    },
+    "familyRoots": "Founded as a 100% independent neighborhood gathering café in Downtown Redlands' La Farge Plaza (308 W State St, Suite 1A), designed with warm modern aesthetics, seasonal holiday decor, an outdoor courtyard patio, and a dedicated indoor kids' play corner for local families.",
+    "scratchCommitment": "Small-batch espresso drinks crafted with house syrups, real ceremonial matcha, fresh-pressed Guava and Blueberry Lemonades, scratch breakfast sandwiches on toasted artisan bread, and made-to-order toast flights.",
+    "destinationDish": {
+      "name": "Spanish Latte, The Daybreaker Breakfast Sandwich & Artisan Toast Flight",
+      "callout": "Velvety condensed-milk Spanish Latte or Iced London Fog paired with The Daybreaker (fluffy folded eggs, melty cheese, and crispy roasted herb potatoes) or a 3-piece Artisan Toast Flight."
+    },
+    "description": "Tucked inside La Farge Plaza on West State Street in Downtown Redlands, Café Cultivate pairs specialty espresso, house-made fruit lemonades, and scratch brunch plates with a bright, modern dining room, sunny patio, and a welcoming kids' play area.",
+    "story": "Whether you're stopping in for a festive holiday latte, bringing a laptop to the sunlit courtyard patio, or meeting friends with little ones in tow, Café Cultivate blends third-wave coffee craft with genuine Redlands community hospitality.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Signature Spanish Latte (Hot or Iced)",
+          "price": "$6.25",
+          "desc": "Double-shot specialty espresso shaken or steamed with velvety sweetened condensed milk, whole or oat milk, and a whisper of cinnamon."
+        },
+        {
+          "name": "The Daybreaker Breakfast Sandwich (Served with Roasted Herb Potatoes)",
+          "price": "$12.50",
+          "desc": "Fluffy seasoned eggs, aged cheddar, house garlic-herb aioli, and choice of bacon or avocado on griddled artisan brioche, plated with crispy rosemary breakfast potatoes."
+        },
+        {
+          "name": "Cultivate Artisan Toast Flight (Pick 3 Half-Toasts)",
+          "price": "$13.50",
+          "desc": "Three thick-cut sourdough toasts: Smashed Avocado & Everything Spice, Whipped Ricotta & Local Wildflower Honey, and Almond Butter with Fresh Strawberries & Cacao Nibs."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Organic Acai & Fresh Berry Granola Bowl",
+          "price": "$11.95",
+          "desc": "Thick organic acai base layered with crunchy hemp-seed granola, sliced banana, fresh strawberries, blueberries, toasted coconut, and honey drizzle."
+        },
+        {
+          "name": "Warm House Cinnamon Roll with Cream Cheese Frosting",
+          "price": "$5.75",
+          "desc": "Soft-baked brioche cinnamon swirl topped warm with tangy vanilla-bean cream cheese icing."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Iced London Fog Latte (Earl Grey, Lavender & Vanilla Milk)",
+          "price": "$5.95",
+          "desc": "Steeped organic bergamot Earl Grey tea chilled over ice with house vanilla-lavender syrup and creamy milk."
+        },
+        {
+          "name": "House-Made Guava Lemonade or Blueberry Lemonade",
+          "price": "$5.50",
+          "desc": "Fresh-squeezed lemon juice shaken to order with real pink guava puree or crushed wild blueberry compote."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-12T18:45:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0563,
+    "longitude": -117.1858,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 990,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@cafecultivate",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 900,
+        "rangeStr": "8:00 AM – 3:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "6": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
       }
     }
   }

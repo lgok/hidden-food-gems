@@ -38,34 +38,29 @@
     "structuredMenu": {
       "signatures": [
         {
-          "name": "Gingerbread Holiday Latte",
-          "price": ".25",
-          "desc": "House-roasted espresso steamed or iced with warm spiced gingerbread reduction, cinnamon, and velvety foam."
+          "name": "🎄 Festival of Lights Reserved Seat & Specialty Drink Experience (Starts Nov 21)",
+          "price": "$25.00",
+          "desc": "Reserved indoor or outdoor Main St patio seating overlooking the Mission Inn Festival of Lights ($25/person) — call (951) 276-7711 to book your seat."
         },
         {
-          "name": "Banana Cream Pie Latte",
-          "price": ".50",
-          "desc": "Double espresso layered with house banana cream pie sweetness, vanilla wafer notes, and creamy cold foam."
+          "name": "Gingerbread Holiday Latte (Hot or Iced)",
+          "price": "$6.50",
+          "desc": "Small-batch espresso steamed with spiced gingerbread syrup, warming winter spices, and velvety microfoam."
         },
         {
-          "name": "Cookie Butter Lover Latte",
-          "price": ".50",
-          "desc": "Rich single-origin espresso blended with caramelized speculoos cookie butter and topped with cookie crumble."
+          "name": "Banana Cream Pie Latte (Hot or Iced)",
+          "price": "$6.75",
+          "desc": "Rich espresso blended with sweet banana custard notes, vanilla cream, and a dusting of graham cracker crumble."
+        },
+        {
+          "name": "Cookie Butter Lover Latte (Hot or Iced)",
+          "price": "$6.75",
+          "desc": "Creamy caramelized Biscoff speculoos cookie butter melted into double-shot espresso with a cookie butter drizzle."
         },
         {
           "name": "Layered Strawberry Matcha",
-          "price": ".50",
-          "desc": "Ceremonial-grade whisked green tea matcha poured over real strawberry purée and milk over ice."
-        },
-        {
-          "name": "Festival of Lights Reserved Holiday Experience & Specialty Latte",
-          "price": ".00",
-          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
-        },
-        {
-          "name": "Famous Iced Mazapán Latte & Café de Olla",
-          "price": ".75",
-          "desc": "Double espresso with house-ground Mexican peanut mazapán candy or spiced piloncillo-cinnamon Café de Olla."
+          "price": "$6.75",
+          "desc": "Ceremonial-grade whisked green tea layered over house strawberry puree and cold milk."
         }
       ],
       "regionalClassics": [
@@ -168,8 +163,10 @@
     },
     "spotlightRank": 1,
     "holidaySpecial": {
-      "title": "✨ Riverside Festival of Lights Experience (Starts Nov 21)",
-      "details": "Reserved indoor & outdoor patio seating available right on the Main St pedestrian mall with panoramic views of the Mission Inn light displays (/person). Skip the massive holiday crowds and savor handcrafted seasonal lattes in cozy comfort."
+      "title": "🎄 Riverside Festival of Lights — Book a Reserved Seat ($25/Person · Starts Nov 21)",
+      "details": "Book reserved indoor or outdoor patio seating at Molinos Coffee (3660 Main St) right on the Main Street pedestrian mall overlooking the Mission Inn Festival of Lights ($25/person). Skip the massive holiday crowds and savor handcrafted Gingerbread, Banana Cream Pie, Cookie Butter Lover lattes & Strawberry Matcha in cozy comfort!",
+      "ctaText": "🪑 Call (951) 276-7711 to Book a Seat ($25/person)",
+      "ctaHref": "tel:9512767711"
     }
   },
   {

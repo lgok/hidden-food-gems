@@ -52,7 +52,7 @@ const slimClientRestaurants = restaurants.map((r) => {
       ...(c.structuredMenu.signatures || []),
       ...(c.structuredMenu.regionalClassics || []),
       ...(c.structuredMenu.sidesAndDrinks || [])
-    ].slice(0, 3).map((i) => ({ name: i.name, price: i.price }));
+    ].slice(0, 6).map((i) => ({ name: i.name, price: i.price, desc: i.desc }));
     c.structuredMenu = { signatures: items };
   }
   return c;
@@ -586,6 +586,14 @@ ${ga4AndOutboundScriptHtml}
       <p style="font-size:1.05rem;color:var(--muted);margin:0 0 14px">${esc(r.regionalIdentity || r.cuisine)} — ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
       <p>${esc(r.description || "")}</p>
       ${r.story ? `<p style="color:var(--muted);font-size:0.95rem">${esc(r.story)}</p>` : ""}
+
+      ${r.holidaySpecial ? `
+      <div class="holiday-special-banner" style="margin:18px 0;padding:18px 20px;border-radius:14px;background:linear-gradient(135deg,rgba(245,194,107,0.18),rgba(234,88,12,0.14));border:1.5px solid rgba(245,194,107,0.65);box-shadow:0 8px 28px rgba(245,194,107,0.15)">
+        <div style="font-weight:800;font-size:1.08rem;color:#fde047;margin-bottom:6px">${esc(r.holidaySpecial.title)}</div>
+        <div style="font-size:0.96rem;color:#f8fafc;line-height:1.55;margin-bottom:${r.holidaySpecial.ctaText ? '12px' : '0'}">${esc(r.holidaySpecial.details)}</div>
+        ${r.holidaySpecial.ctaText ? `<a href="${esc(r.holidaySpecial.ctaHref || `tel:${(r.phone || '').replace(/[^0-9+]/g, '')}`)}" class="btn" style="background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-weight:800;border:none">${esc(r.holidaySpecial.ctaText)}</a>` : ""}
+      </div>
+      ` : ""}
 
       <div class="meta-grid">
         <div class="meta-box">

@@ -1490,15 +1490,15 @@
     if (!availableCats.length) return '';
 
     let items = [...(sm.signatures || [])];
-    if (items.length < 3) {
+    if (items.length < 5) {
       for (const [k] of availableCats) {
         if (k === 'signatures') continue;
         for (const it of (sm[k] || [])) {
-          if (items.length < 3) items.push(it);
+          if (items.length < 5) items.push(it);
         }
       }
     }
-    items = items.slice(0, 3);
+    items = items.slice(0, 5);
 
     return `
       <div class="card-menu-box" data-menu-box="${esc(r.id)}">
@@ -2245,6 +2245,13 @@
               </div>
             ` : ''}
 
+            ${r.holidaySpecial ? `
+              <div class="holiday-special-card-box" style="margin:8px 0;padding:10px 12px;border-radius:10px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.65);color:#fef3c7;font-size:0.84rem;line-height:1.45">
+                <div style="font-weight:800;color:#fde047;margin-bottom:3px">${esc(r.holidaySpecial.title)}</div>
+                <div>${esc(r.holidaySpecial.details)}</div>
+              </div>
+            ` : ''}
+
             <!-- 3. Legible Front-of-Card Non-PDF Price List + Dotted Leader Price Alignment -->
             ${renderCardMenuSection(r)}
 
@@ -2621,6 +2628,14 @@
         ${r.scratchCommitment ? `
           <div class="roots-scratch-block">
             <div class="roots-scratch-line">⏱️ <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
+          </div>
+        ` : ''}
+
+        ${r.holidaySpecial ? `
+          <div class="holiday-special-modal-box" style="margin:10px 0 14px;padding:14px 16px;border-radius:12px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.7);color:#fef3c7;font-size:0.92rem;line-height:1.5">
+            <div style="font-weight:800;font-size:1rem;color:#fde047;margin-bottom:4px">${esc(r.holidaySpecial.title)}</div>
+            <div style="margin-bottom:${r.holidaySpecial.ctaText ? '10px' : '0'}">${esc(r.holidaySpecial.details)}</div>
+            ${r.holidaySpecial.ctaText ? `<a href="${esc(r.holidaySpecial.ctaHref || `tel:${cleanTel}`)}" class="btn btn-gold" style="display:inline-flex;align-items:center;gap:6px;font-weight:800;padding:8px 14px;border-radius:8px;text-decoration:none">${esc(r.holidaySpecial.ctaText)}</a>` : ''}
           </div>
         ` : ''}
 

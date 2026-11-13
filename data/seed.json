@@ -28290,5 +28290,330 @@
         "rangeStr": "Closed Today"
       }
     }
+  },
+  {
+    "id": "arizmendi-bakery-emeryville-94608",
+    "name": "Arizmendi Bakery & Pizzeria (Emeryville Worker-Owned Cooperative)",
+    "cuisine": "Worker-Owned Cooperative Sourdough Bakery, Pastries & Daily Vegetarian Pizza",
+    "regionalIdentity": "Independent East Bay Worker-Owned Cooperative Sourdough Bakery & Pizzeria (San Pablo Ave)",
+    "tags": [
+      "bakery",
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "lunch",
+      "pizza",
+      "vegetarian-options"
+    ],
+    "price": 1,
+    "address": "4301 San Pablo Ave",
+    "city": "Emeryville",
+    "zip": "94608",
+    "driveFrom91761": "Bay Area Gem (Emeryville 94608)",
+    "phone": "(510) 547-0550",
+    "hours": "Tue–Sun 7:30am–6:00pm · Mon Closed",
+    "healthPermit": {
+      "facilityId": "ALCO-DEH-94608-ARZ",
+      "agency": "Alameda County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-12",
+      "portalUrl": "https://deh.acgov.org"
+    },
+    "familyRoots": "Sister cooperative to Berkeley's historic Cheese Board Collective, Arizmendi Bakery at 4301 San Pablo Avenue in Emeryville is a 100% independent worker-owned bakery where every baker has an equal voice and families line up for warm morning scones, sourdough loaves, and daily gourmet vegetarian pizzas.",
+    "scratchCommitment": "Organic naturally leavened sourdough breads (Walnut Sourdough, Fig-Fennel, Multi-Seed), scratch-laminated sourdough croissants, fresh berry scones, and daily-changing thin-crust sourdough pizzas baked hot all day.",
+    "destinationDish": {
+      "name": "Daily Gourmet Sourdough Pizza, Corn Cherry Scone & Sourdough Chocolate Croissant",
+      "callout": "Crisp organic sourdough pizza topped with seasonal roasted vegetables, garlic olive oil, and artisan cheeses, paired with a warm Corn Cherry Scone or Sourdough Pain au Chocolat."
+    },
+    "description": "Beloved East Bay worker-owned cooperative bakery and pizzeria at 43rd and San Pablo in Emeryville, famous for its daily rotating organic sourdough pizza, warm scones, brioche knots, and crusty hearth loaves.",
+    "story": "Named in honor of cooperative movement founder José María Arizmendiarrieta, Arizmendi Bakery brings East Bay families together over honest organic flour, long-fermented sourdough, and community spirit.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Daily Rotating Organic Sourdough Pizza (Hot Slice, Half or Whole)",
+          "price": "$4.50",
+          "desc": "Thin, crispy organic sourdough crust topped with a daily-changing vegetarian combination of roasted seasonal vegetables, fresh herbs, and artisan cheeses."
+        },
+        {
+          "name": "Warm Corn Cherry Scone & Seasonal Berry Scone",
+          "price": "$4.25",
+          "desc": "Golden-baked, tender butter scones studded with tart dried cherries or fresh seasonal berries."
+        },
+        {
+          "name": "Naturally Leavened Sourdough Croissant & Pain au Chocolat",
+          "price": "$4.75",
+          "desc": "Flaky, tang-kissed sourdough pastry laminated with organic butter and dark chocolate batons."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Organic Walnut Sourdough & Fig-Fennel Hearth Loaves",
+          "price": "$8.50",
+          "desc": "Crusty, slow-fermented artisan loaves baked fresh every morning."
+        },
+        {
+          "name": "Famous Chocolate Fudge Cake & Pecan Rolls",
+          "price": "$5.25",
+          "desc": "Rich scratch-baked cakes and caramelized pecan sticky rolls."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Organic Drip Coffee & Espresso Drinks",
+          "price": "$3.95",
+          "desc": "Fair-trade organic coffee brewed fresh to pair with morning pastries."
+        },
+        {
+          "name": "Take-and-Bake Sourdough Pizza (2-Pack Light-Bake)",
+          "price": "$24.00",
+          "desc": "Par-baked daily sourdough pizzas ready to crisp in your home oven in 7 minutes."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-13T03:00:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "Alameda",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 37.8336,
+    "longitude": -122.2819,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba",
+      "bakery"
+    ],
+    "meal_types": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba",
+      "bakery"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@arizmendibakeryemeryville",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed Today"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 1080,
+        "rangeStr": "7:30 AM – 6:00 PM"
+      }
+    }
+  },
+  {
+    "id": "third-culture-bakery-berkeley-94710",
+    "name": "Third Culture Bakery (West Berkeley Flagship)",
+    "cuisine": "Artisan Mochi Bakery & Ceremonial Matcha Bar",
+    "regionalIdentity": "Independent Cultural-Fusion Bakery & Creators of the Original Mochi Muffin® (Eighth St Berkeley)",
+    "tags": [
+      "bakery",
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "desserts",
+      "gluten-free-options"
+    ],
+    "price": 1,
+    "address": "2701 Eighth St",
+    "city": "Berkeley",
+    "zip": "94710",
+    "driveFrom91761": "Bay Area Gem (Berkeley 94710)",
+    "phone": "(510) 529-4059",
+    "hours": "Daily 9:00am–4:00pm",
+    "healthPermit": {
+      "facilityId": "COB-DEH-94710-TCB",
+      "agency": "City of Berkeley Environmental Health Division",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-29",
+      "portalUrl": "https://berkeleyca.gov/safety-health/environmental-health"
+    },
+    "familyRoots": "Founded by Sam Butarbutar and Wenter Shyu in Berkeley, Third Culture Bakery celebrates Indonesian, Taiwanese, and Californian roots in an inclusive, family-friendly bakery showroom where every pastry is naturally gluten-free using heirloom California Koda Farms mochiko rice flour.",
+    "scratchCommitment": "100% scratch-baked Original Mochi Muffins®, baked (never fried) Butter Mochi Donuts with vibrant ube, black sesame, and pandan glazes, and hand-whisked ceremonial Uji matcha lattes.",
+    "destinationDish": {
+      "name": "Original Mochi Muffin®, Ube Butter Mochi Donut & Hand-Whisked Caramel Matcha Latte",
+      "callout": "Crispy-caramelized edge and chewy coconut-pandan center Original Mochi Muffin® paired with a vibrant purple Ube Butter Mochi Donut and ceremonial Uji Matcha."
+    },
+    "description": "Home of the Original Mochi Muffin® in West Berkeley (2701 Eighth St), Third Culture Bakery crafts naturally gluten-free mochi pastries using family-farmed Koda Farms mochiko rice flour alongside hand-whisked Uji matcha drinks.",
+    "story": "Born from a love of cultural heritage and warmth, Third Culture Bakery has become an East Bay ritual for families picking up warm boxes of Mochi Muffins, Ube Crinkle Cookies, and caffeine-free Golden Yogi turmeric steamers.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Original Mochi Muffin® (Koda Farms Mochiko Rice Flour)",
+          "price": "$4.95",
+          "desc": "Signature chewy-centered, crispy-edged mochi pastry baked with brown butter, coconut milk, and aromatic pandan."
+        },
+        {
+          "name": "Baked Butter Mochi Donuts (Ube, Uji Matcha, Black Sesame & Churro)",
+          "price": "$4.75",
+          "desc": "Soft baked mochi ring donuts dipped in real purple yam ube glaze, earthy toasted black sesame, or ceremonial green tea."
+        },
+        {
+          "name": "Hand-Whisked Ceremonial Caramel Matcha Latte",
+          "price": "$6.50",
+          "desc": "First-harvest Uji, Kyoto ceremonial matcha hand-whisked to order over house caramel and creamy oat or whole milk."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Custard-Filled Mochi Egg Tart & Ube Crinkle Cookie",
+          "price": "$4.95",
+          "desc": "Silky egg custard baked inside a chewy mochi tart shell."
+        },
+        {
+          "name": "Mochi Waffle (Made to Order Warm)",
+          "price": "$7.50",
+          "desc": "Crisp golden waffle ironed from signature mochi batter with a pillowy chew."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Golden Yogi Turmeric, Ginger & Cinnamon Steamer (Caffeine-Free)",
+          "price": "$5.75",
+          "desc": "Soothing spiced turmeric and honeyed milk drink loved by kids and parents alike."
+        },
+        {
+          "name": "Lychee Rose Green Tea Agua Fresca",
+          "price": "$5.50",
+          "desc": "Refreshing floral jasmine green tea shaken with sweet lychee."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "createdAt": "2026-11-13T03:00:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "Alameda",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 37.8569,
+    "longitude": -122.2923,
+    "opening_hour_minutes": 540,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "coffee",
+      "coffee_boba",
+      "bakery"
+    ],
+    "meal_types": [
+      "breakfast",
+      "coffee",
+      "coffee_boba",
+      "bakery"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thirdculturebakery",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 540,
+        "closeMin": 960,
+        "rangeStr": "9:00 AM – 4:00 PM"
+      }
+    }
   }
 ]

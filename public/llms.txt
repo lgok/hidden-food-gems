@@ -19,6 +19,7 @@
   - Austin, TX (78751): https://www.hiddenfoodgem.com/cities/austin-tx-78751
   - Austin, TX (78756): https://www.hiddenfoodgem.com/cities/austin-tx-78756
   - Austin, TX (78757): https://www.hiddenfoodgem.com/cities/austin-tx-78757
+  - Berkeley, CA (94710): https://www.hiddenfoodgem.com/cities/berkeley-ca-94710
   - Bethesda, MD (20814): https://www.hiddenfoodgem.com/cities/bethesda-md-20814
   - Boyle Heights, CA (90033): https://www.hiddenfoodgem.com/cities/boyle-heights-ca-90033
   - Bronx, NY (10462): https://www.hiddenfoodgem.com/cities/bronx-ny-10462
@@ -33,4 +34,3 @@
   - Chicago, IL (60616): https://www.hiddenfoodgem.com/cities/chicago-il-60616
   - Chicago, IL (60625): https://www.hiddenfoodgem.com/cities/chicago-il-60625
   - Chino, CA (91710): https://www.hiddenfoodgem.com/cities/chino-ca-91710
-  - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709

@@ -589,6 +589,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hiddenfoodgem.com/cities/westlake-oh-44145</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.hiddenfoodgem.com/gem/molinos-coffee-riverside-92501</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1772,6 +1778,18 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/gem/coffee-boss-downtown-el-paso-79901</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/sugar-plum-kelsey-elizabeth-westlake-44145</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/whata-peach-studio-city-91604</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

@@ -29780,5 +29780,264 @@
         "rangeStr": "7:00 AM – 7:00 PM"
       }
     }
+  },
+  {
+    "id": "sugar-plum-kelsey-elizabeth-westlake-44145",
+    "name": "Sugar Plum: A Pop-Up Christmas Bakery by Kelsey Elizabeth",
+    "cuisine": "Festive Holiday Pop-Up Bakery, French Macarons & Hand-Iced Christmas Sugar Cookies",
+    "regionalIdentity": "Woman-Owned Cleveland Holiday Pop-Up Bakery at Crocker Park (Westlake, OH)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 2,
+    "address": "218 Crocker Park Blvd",
+    "city": "Westlake",
+    "state": "OH",
+    "zip": "44145",
+    "driveFrom91761": "Cleveland Metro, OH",
+    "phone": "(440) 617-6306",
+    "website": "https://kelseyelizabethcakes.com",
+    "hours": "Sat 11:00am–7:00pm · Sun 12:00pm–5:00pm · Tue–Fri 11:00am–7:00pm (Grand Opening Weekend!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🎄 Grand Opening Holiday Pop-Up!",
+    "openedDate": "2026-11-14",
+    "spotlightStartDate": "2026-11-14",
+    "healthPermit": {
+      "facilityId": "CCBH-44145-KEC",
+      "agency": "Cuyahoga County Board of Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-12",
+      "portalUrl": "https://ccbh.net/food-safety/"
+    },
+    "familyRoots": "Created by local Cleveland baker Kelsey Elizabeth (@kelseyelizabethcakes), transforming 218 Crocker Park Blvd into a whimsical pink-and-gold Sugar Plum Christmas Bakery over a 10-day community build-out.",
+    "scratchCommitment": "100% scratch-baked daily: delicate almond-flour French macarons, thick hand-iced Christmas cut-out sugar cookies, festive cupcakes, and cake pops.",
+    "destinationDish": {
+      "name": "Sugar Plum Holiday Macaron Gift Box & Hand-Iced Christmas Cut-Out Sugar Cookies",
+      "callout": "Festive box of scratch French macarons (peppermint bark, gingerbread, sugar plum) paired with thick vanilla-almond frosted Christmas sugar cookies."
+    },
+    "description": "Grand Opening at 218 Crocker Park Blvd in Westlake, OH (44145)! Sugar Plum is a magical Pop-Up Christmas Bakery by Kelsey Elizabeth Cakes (@kelseyelizabethcakes) celebrating opening weekend (Sat 11am–7pm, Sun 12pm–5pm, with free Baking Spirits Bright T-shirts for the first 25 guests!).",
+    "story": "100% family-friendly and alcohol-free, Sugar Plum brings holiday nostalgia, pastel Christmas window displays, and Cleveland’s favorite scratch macarons and sugar cookies to Crocker Park.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Holiday French Macaron 6-Pack",
+          "price": ".00",
+          "desc": "Scratch almond-meringue macarons in festive Christmas flavors including Peppermint, Gingerbread & Sugar Plum."
+        },
+        {
+          "name": "Hand-Iced Christmas Cut-Out Sugar Cookie",
+          "price": ".25",
+          "desc": "Thick, soft-baked vanilla bean sugar cookie hand-decorated with royal buttercream icing."
+        },
+        {
+          "name": "Sugar Plum Holiday Cupcake 4-Pack",
+          "price": ".50",
+          "desc": "Scratch holiday cupcakes topped with swirled buttercream and festive sprinkles."
+        },
+        {
+          "name": "Festive Holiday Cake Pops",
+          "price": ".25",
+          "desc": "Hand-dipped cake truffles on a stick finished with holiday sparkle."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:55:00Z",
+    "ratings": [],
+    "region": "Cleveland Metro",
+    "county": "Cuyahoga",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 41.4593,
+    "longitude": -81.9507,
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": false,
+    "meals": [
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@kelseyelizabethcakes",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 720,
+        "closeMin": 1020
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "3": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "4": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "5": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "6": {
+        "openMin": 660,
+        "closeMin": 1140
+      }
+    }
+  },
+  {
+    "id": "whata-peach-studio-city-91604",
+    "name": "Whata Peach (Studio City Walk-Up Cafe & Smoothie Bar)",
+    "cuisine": "Artisan Sourdough Toasts, Organic Açaí Bowls, 24oz Smoothies & Craft Lattes",
+    "regionalIdentity": "Beloved Pink Walk-Up Window Cafe on Ventura Blvd Celebrating 5 Years (Studio City)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba",
+      "healthy",
+      "vegetarian-options",
+      "vegan"
+    ],
+    "price": 2,
+    "address": "11055 Ventura Blvd",
+    "city": "Studio City",
+    "state": "CA",
+    "zip": "91604",
+    "driveFrom91761": "50 min from 91761",
+    "phone": "(818) 505-3340",
+    "website": "https://www.ohwhatapeach.com",
+    "hours": "Daily 8:00am–5:45pm (Celebrating 5-Year Anniversary on Nov 13!)",
+    "healthPermit": {
+      "facilityId": "LAC-DPH-91604-WP",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/inspection/grading-posting-requirements-retail-food-facilities.htm"
+    },
+    "familyRoots": "An independent neighborhood walk-up window cafe on Ventura Blvd celebrating 5 years of community love, smoothies, artisan sourdough toasts, and craft espresso in Studio City (@ohmywhatapeach).",
+    "scratchCommitment": "Seeded country sourdough toasts topped to order with imported Armenian peach jam, ricotta, or truffled avocado, plus 100% organic açaí bowls and real-fruit 24oz smoothies.",
+    "destinationDish": {
+      "name": "Armenian Peach Jam + Ricotta Sourdough Toast, Cookie Butter Latte & Peaches N Cream Smoothie",
+      "callout": "Thick seeded country sourdough layered with creamy ricotta and imported Armenian peach preserve, paired with an iced Vanilla or Cookie Butter Latte."
+    },
+    "description": "Celebrating 5 years at 11055 Ventura Blvd in Studio City (91604)! Whata Peach (@ohmywhatapeach) is a vibrant pink walk-up cafe window serving organic 18oz açaí bowls, seeded sourdough gourmet toasts (Armenian Peach Jam + Ricotta, Grandma’s Apple Pie, Truffled Mushroom), 24oz smoothies, and craft Vanilla & Cookie Butter Lattes.",
+    "story": "100% independent and alcohol-free, Whata Peach has become a daily Ventura Blvd ritual for Studio City locals—celebrating its 5th anniversary on Friday, Nov 13 with community appreciation.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Peach Jam + Ricotta Sourdough Toast",
+          "price": ".50",
+          "desc": "Seeded country sourdough topped with creamy ricotta cheese and imported Armenian peach jam."
+        },
+        {
+          "name": "Cookie Butter / Vanilla Craft Latte",
+          "price": ".50",
+          "desc": "Rich espresso pulled to order over ice or steamed milk with house vanilla or spiced speculoos cookie butter."
+        },
+        {
+          "name": "Liquid Gold / Peaches N Cream 24oz Smoothie",
+          "price": ".50",
+          "desc": "Blended fresh fruit smoothie with mango, peach, pineapple, Medjool dates, and organic juice/milk."
+        },
+        {
+          "name": "Grandma’s Apple Pie Toast",
+          "price": ".00",
+          "desc": "Warm spiced apples, cinnamon, almond butter, and drizzle over toasted country sourdough."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:56:00Z",
+    "ratings": [],
+    "region": "San Fernando Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1408,
+    "longitude": -118.3712,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1065,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ohmywhatapeach",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "1": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "2": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "3": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "4": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "5": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "6": {
+        "openMin": 480,
+        "closeMin": 1065
+      }
+    }
   }
 ]

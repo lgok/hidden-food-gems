@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 198+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 95 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 200+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 96 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -14,6 +14,7 @@
 - Rashfa Yemeni Coffee & Cafe (Falls Church) (Falls Church, VA 22046) [🎉 Grand Opening Sat (First 100 Free Drink)]: https://www.hiddenfoodgem.com/gem/rashfa-cafe-falls-church-va-22046
 - The Cupcake Route Bakery (Hanford) (Hanford, CA 93230) [🎉 Grand Opening Week!]: https://www.hiddenfoodgem.com/gem/the-cupcake-route-hanford-93230
 - TashTea Cafe: Kurdish & Turkish Breakfast House (Nashville) (Antioch, TN 37013) [🔥 New Dining Expansion & Menu]: https://www.hiddenfoodgem.com/gem/tashtea-cafe-nashville-37013
+- Sugar Plum: A Pop-Up Christmas Bakery by Kelsey Elizabeth (Westlake, OH 44145) [🎄 Grand Opening Holiday Pop-Up!]: https://www.hiddenfoodgem.com/gem/sugar-plum-kelsey-elizabeth-westlake-44145
 - Luna's Sunday Cafe (Moreno Valley) (Moreno Valley, CA 92553) [✨ Newly Opened Storefront]: https://www.hiddenfoodgem.com/gem/lunas-sunday-cafe-moreno-valley-92553
 - nudes Mediterranean Frozen Yogurt (Beverly Grove) (Los Angeles, CA 90048) [✨ Newly Opened in LA]: https://www.hiddenfoodgem.com/gem/nudes-yogurt-beverly-grove-90048
 - Eternal Flavors Bakery (South Broadway Denver) (Denver, CO 80210) [✨ New S. Broadway Location]: https://www.hiddenfoodgem.com/gem/eternal-flavors-bakery-denver-80210
@@ -26,7 +27,7 @@
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (296 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (299 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801

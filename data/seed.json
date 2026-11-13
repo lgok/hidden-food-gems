@@ -38,6 +38,12 @@
     "structuredMenu": {
       "signatures": [
         {
+          "name": "Festival of Lights Reserved Holiday Experience & Specialty Latte",
+          "price": "$25.00",
+          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights.",
+          "description": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
+        },
+        {
           "name": "Famous Iced Mazapán Latte",
           "price": "$5.50",
           "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
@@ -146,7 +152,11 @@
     "socialMedia": {
       "instagram": "@molinoscoffee"
     },
-    "spotlightRank": 1
+    "spotlightRank": 1,
+    "holidaySpecial": {
+      "title": "✨ Riverside Festival of Lights Experience (Starts Nov 21)",
+      "details": "Reserved indoor & outdoor patio seating available right on the Main St pedestrian mall with panoramic views of the Mission Inn light displays (/person). Skip the massive holiday crowds and savor handcrafted seasonal lattes in cozy comfort."
+    }
   },
   {
     "id": "monday-to-sunday-dessert-cafe-rancho",

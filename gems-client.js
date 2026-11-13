@@ -1512,11 +1512,11 @@
             </button>
             <button class="btn" type="submit">Find gems</button>
           </form>
-          <div id="soft-open-spotlight-banner" style="margin:14px auto 0;max-width:860px;background:linear-gradient(135deg,rgba(249,115,22,0.16),rgba(245,194,107,0.12));border:1px solid rgba(245,194,107,0.38);border-radius:14px;padding:10px 16px;font-size:0.88rem;line-height:1.5;color:#f9f3eb;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.28)">
-            <span style="font-weight:800;color:#f5c26b">💛 Support your local mom &amp; pop restaurants and cafes!</span>
-            <span style="margin:0 6px;opacity:0.5">|</span>
-            <span><strong>🔥 Soft Opening Highlights:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#fdba74;font-weight:800;text-decoration:underline">Chaiwale &amp; Co. (Redlands)</a> · <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#fdba74;font-weight:800;text-decoration:underline">Cloud Nine Espresso (Beaumont)</a> · <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#fdba74;font-weight:800;text-decoration:underline">One More Bite Dumpling House (Palm Desert)</a></span>
-            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" style="display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;background:rgba(249,115,22,0.25);border:1px solid rgba(249,115,22,0.55);color:#fff;font-weight:700;font-size:0.78rem;text-decoration:none">See All Soft Opens →</a>
+          <div id="soft-open-spotlight-banner" style="margin:14px auto 0;max-width:880px;background:rgba(14,10,8,0.88);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.32);border-radius:14px;padding:11px 18px;font-size:0.92rem;line-height:1.55;color:#ffffff;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.45)">
+            <span style="font-weight:800;color:#ffffff">💛 Support your local mom &amp; pop restaurants and cafes!</span>
+            <span style="margin:0 7px;color:rgba(255,255,255,0.45)">|</span>
+            <span style="color:#ffffff"><strong style="color:#ffffff">🔥 Soft Opening Highlights:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">Chaiwale &amp; Co. (Redlands)</a> · <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">Cloud Nine Espresso (Beaumont)</a> · <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">One More Bite Dumpling House (Palm Desert)</a></span>
+            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" style="display:inline-block;margin-left:8px;padding:3px 11px;border-radius:999px;background:#f97316;border:1px solid #ffffff;color:#ffffff;font-weight:800;font-size:0.78rem;text-decoration:none">See All Soft Opens →</a>
           </div>
         </div>
       </section>

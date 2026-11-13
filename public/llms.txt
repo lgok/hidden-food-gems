@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 208+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 104 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 207+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 104 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -34,7 +34,7 @@
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (315 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (314 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801

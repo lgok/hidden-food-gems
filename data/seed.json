@@ -2189,7 +2189,7 @@
     "state": "CA",
     "zip": "91730",
     "driveFrom91761": "14 min from 91761",
-    "phone": "(909) 980-8812",
+    "phone": "(909) 256-4016",
     "hours": "Daily 7:30am–3:30pm",
     "healthPermit": {
       "facilityId": "SBC-DEHS-91730-PBK",
@@ -2291,7 +2291,7 @@
     "state": "CA",
     "zip": "91761",
     "driveFrom91761": "4 min from 91761",
-    "phone": "(909) 930-5588",
+    "phone": "(909) 295-9200",
     "hours": "Daily 11:30am–9:30pm (Reopening Soon at 2570 S. Vineyard Ave)",
     "healthPermit": {
       "facilityId": "SBC-DEHS-91761-BCB",
@@ -12843,165 +12843,6 @@
     "closing_hour_minutes": 1260
   },
   {
-    "id": "qamaria-yemeni-coffee-rancho",
-    "name": "Qamaria Yemeni Coffee Co. (Rancho Cucamonga)",
-    "cuisine": "Traditional Yemeni Spiced Coffee & Tea",
-    "regionalIdentity": "Authentic Cardamom, Ginger & Qishr Coffee Lounge",
-    "tags": [
-      "coffee",
-      "tea",
-      "breakfast",
-      "brunch",
-      "lunch"
-    ],
-    "price": 2,
-    "address": "12729 W Foothill Blvd",
-    "city": "Rancho Cucamonga",
-    "zip": "91730",
-    "driveFrom91761": "14 min from 91761",
-    "phone": "(909) 987-9999",
-    "hours": "Daily 8:00am–11:00pm",
-    "healthPermit": {
-      "facilityId": "FA0007204",
-      "agency": "San Bernardino County DEHS",
-      "grade": "A",
-      "score": 97,
-      "inspectedOn": "2026-03-02",
-      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
-    },
-    "familyRoots": "Celebrating ancient Yemeni coffee traditions sourced directly from highland terraced mountain farms in Yemen.",
-    "scratchCommitment": "Traditional Dallah pots brewed with fresh cracked green cardamom, cinnamon, and ginger; scratch Sabaya honeycomb bread with black seed and honey.",
-    "destinationDish": {
-      "name": "Signature Adeni Chai & Mofawar Cardamom Coffee",
-      "callout": "Simmered spiced Yemeni tea with sweet evaporated milk and warm Sabaya honeycomb pastry."
-    },
-    "description": "Opulent modern Yemeni coffee lounge with plush seating, warm hanging brass lamps, vibrant community conversations, and 4.8 stars across hundreds of reviews.",
-    "story": "Bringing the world's original coffee culture to Foothill Blvd with warm hospitality, spice-infused brews, and late-night community vibes.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Adeni Spiced Chai",
-          "price": "$5.75",
-          "desc": "Rich black tea slow-simmered with cardamom, cinnamon, cloves, and sweetened condensed milk."
-        },
-        {
-          "name": "Mofawar Traditional Yemeni Coffee",
-          "price": "$6.50",
-          "desc": "Medium-roasted Yemeni coffee brewed with whole cardamom and a splash of cream."
-        },
-        {
-          "name": "Warm Sabaya Honeycomb Bread",
-          "price": "$8.95",
-          "desc": "Layers of flaky butter dough drizzled with Yemeni clover honey and nigella seeds."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Qishr (Spiced Coffee Husk Tea)",
-          "price": "$5.25",
-          "desc": "Delicate cascara brew infused with crushed ginger root and cinnamon bark."
-        }
-      ],
-      "combosAndTrays": [
-        {
-          "name": "Sana'a Family Dallah Pot (Serves 4-6)",
-          "price": "$18.50",
-          "desc": "Full ornate brass Dallah of spiced coffee served with fresh demitasse cups."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Pistachio Milk Cake",
-          "price": "$7.25",
-          "desc": "Decadent sponge soaked in saffron-pistachio three-milk reduction."
-        }
-      ]
-    },
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-10-26T08:00:00Z",
-    "ratings": [],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "October 2026",
-    "socialMedia": {
-      "instagram": "@qamariacoffee",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "latitude": 34.1082,
-    "longitude": -117.5312,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba"
-    ],
-    "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba"
-    ],
-    "is_active": true,
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "kitchenStatus": "open",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      }
-    },
-    "closing_hour_minutes": 1380
-  },
-  {
     "id": "bubblicity-tea-boba-rancho",
     "name": "Bubblicity Tea Lounge & Boba",
     "cuisine": "Artisanal Milk Tea & Fresh Fruit Boba",
@@ -13017,7 +12858,7 @@
     "city": "Rancho Cucamonga",
     "zip": "91730",
     "driveFrom91761": "11 min from 91761",
-    "phone": "(909) 484-8889",
+    "phone": "(909) 803-0050",
     "hours": "Daily 11:30am–10:30pm",
     "healthPermit": {
       "facilityId": "FA0006935",
@@ -13167,11 +13008,11 @@
       "lunch"
     ],
     "price": 2,
-    "address": "10700 4th St",
+    "address": "7945 Vineyard Ave, Unit D1, Rancho Cucamonga, CA 91730",
     "city": "Rancho Cucamonga",
     "zip": "91730",
     "driveFrom91761": "9 min from 91761",
-    "phone": "(909) 689-5100",
+    "phone": "(760) 799-3436",
     "hours": "Daily 7:00am–4:00pm",
     "healthPermit": {
       "facilityId": "FA0007341",
@@ -13327,7 +13168,7 @@
     "city": "Ontario",
     "zip": "91762",
     "driveFrom91761": "7 min from 91761",
-    "phone": "(909) 395-5000",
+    "phone": "(909) 395-0077",
     "hours": "Daily 7:00am–5:00pm",
     "healthPermit": {
       "facilityId": "FA0008129",
@@ -13642,7 +13483,7 @@
     "city": "Ontario",
     "zip": "91764",
     "driveFrom91761": "5 min from 91761",
-    "phone": "(909) 390-8800",
+    "phone": "(909) 912-5204",
     "hours": "Daily 7:00am–4:00pm",
     "healthPermit": {
       "facilityId": "FA0008599",

@@ -1512,12 +1512,6 @@
             </button>
             <button class="btn" type="submit">Find gems</button>
           </form>
-          <div id="soft-open-spotlight-banner" style="margin:14px auto 0;max-width:880px;background:rgba(14,10,8,0.88);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.32);border-radius:14px;padding:11px 18px;font-size:0.92rem;line-height:1.55;color:#ffffff;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.45)">
-            <span style="font-weight:800;color:#ffffff">💛 Support your local mom &amp; pop restaurants and cafes!</span>
-            <span style="margin:0 7px;color:rgba(255,255,255,0.45)">|</span>
-            <span style="color:#ffffff"><strong style="color:#ffffff">🔥 Soft Opening Highlights:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">Chaiwale &amp; Co. (Redlands)</a> · <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">Cloud Nine Espresso (Beaumont)</a> · <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#ffffff;font-weight:800;text-decoration:underline;text-underline-offset:3px">One More Bite Dumpling House (Palm Desert)</a></span>
-            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" style="display:inline-block;margin-left:8px;padding:3px 11px;border-radius:999px;background:#f97316;border:1px solid #ffffff;color:#ffffff;font-weight:800;font-size:0.78rem;text-decoration:none">See All Soft Opens →</a>
-          </div>
         </div>
       </section>
 
@@ -1586,6 +1580,21 @@
         </div>
       </section>
       <div class="wrap">
+        <div class="breaking-gem-alert" id="soft-open-spotlight-banner" role="region" aria-label="Breaking Soft Opening Alert">
+          <div class="breaking-gem-top">
+            <div class="breaking-gem-headline-group">
+              <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · LOCAL GEM ALERT</span>
+              <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+            </div>
+            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" class="breaking-all-btn">🔥 See All Soft Opens →</a>
+          </div>
+          <div class="breaking-gem-bottom">
+            <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes:</span>
+            <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-pill">☕ Chaiwale &amp; Co. <small>(Redlands)</small> ↗</a>
+            <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-pill">☁️ Cloud Nine Espresso <small>(Beaumont)</small> ↗</a>
+            <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-pill">🥟 One More Bite Dumpling House <small>(Palm Desert)</small> ↗</a>
+          </div>
+        </div>
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>
         <div class="grid" id="grid"></div>
         <div class="load-more-wrap" id="load-more-container" hidden>

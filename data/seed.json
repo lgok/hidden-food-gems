@@ -30685,5 +30685,138 @@
         "closeMin": 1080
       }
     }
+  },
+  {
+    "id": "the-brew-box-coffee-peoria-az-85381",
+    "name": "The Brew Box Coffee Company (Peoria, AZ)",
+    "cuisine": "Artisan Cold-Foam Espresso, Biscoff & Tiramisu Lattes, Creative Matcha & Breakfast Bagels",
+    "regionalIdentity": "Independent West Valley Specialty Coffee, Matcha & Breakfast Cafe (Peoria, AZ)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "7518 W Thunderbird Rd, Ste 4",
+    "city": "Peoria",
+    "state": "AZ",
+    "zip": "85381",
+    "driveFrom91761": "Phoenix West Valley, AZ",
+    "phone": "(480) 534-7569",
+    "website": "https://www.brewboxcoffeecompany.com",
+    "hours": "Daily 6:00am–6:00pm",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ Holiday Cold-Foam Flight Out Now",
+    "openedDate": "2026-10-28",
+    "healthPermit": {
+      "facilityId": "MCESD-85381-BBCC",
+      "agency": "Maricopa County Environmental Services Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-16",
+      "portalUrl": "https://www.maricopa.gov/5328/Food-Restaurants"
+    },
+    "familyRoots": "An independent West Valley neighborhood coffeehouse at 7518 W. Thunderbird Rd in Peoria (@thebrewboxcoffeecompany) built around organic beans, culinary cold-foam toppings, and scratch morning bites.",
+    "scratchCommitment": "Organically sourced espresso and ceremonial matcha crowned with thick house-whipped cold foams, dehydrated citrus wheels, crushed Biscoff cookies, graham cracker crumble, and cocoa dusting.",
+    "destinationDish": {
+      "name": "4-Cup Signature Flight: Brew Box OG Pecan Shaken Espresso, Tiramisu Cold Foam, Biscoff Crumble & Key Lime Matcha",
+      "callout": "Four-pack flight of iced specialty lattes and matcha topped with cocoa-dusted tiramisu foam, crushed Biscoff, and graham-lime cold foam."
+    },
+    "description": "Open daily 6:00 AM – 6:00 PM at 7518 W. Thunderbird Rd, Ste 4 in Peoria, AZ (85381)! The Brew Box Coffee Company (@thebrewboxcoffeecompany) crafts viral 4-cup cold-foam flights, the signature Brew Box OG (pecan & white mocha shaken espresso), Mango Sticky Rice Matcha, Caramelized Banana Chai, breakfast burritos, and organic açaí bowls.",
+    "story": "100% independent and family-friendly, The Brew Box brings dessert-level artistry to every iced latte and matcha cup in Peoria.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Brew Box OG Shaken Espresso",
+          "price": ".25",
+          "desc": "Organically sourced espresso shaken with roasted pecan and white mocha, finished with creamy oat milk."
+        },
+        {
+          "name": "Tiramisu & Biscoff Cookie Crumble Cold Foam Lattes",
+          "price": ".75",
+          "desc": "Iced espresso layered under thick mascarpone-style sweet cream dusted with cocoa or crushed Biscoff cookies."
+        },
+        {
+          "name": "Key Lime Graham-Crumble Matcha & Mango Sticky Rice Matcha",
+          "price": ".75",
+          "desc": "Ceremonial matcha crowned with graham cracker crumble, sweet cream foam, and a dehydrated lime wheel."
+        },
+        {
+          "name": "Build-Your-Own Breakfast Burrito / Jalapeño Pizza Bagel",
+          "price": ".95",
+          "desc": "Hot made-to-order morning breakfast burritos, sandwiches, avocado toast, and açaí bowls."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:15:00Z",
+    "ratings": [],
+    "region": "Phoenix Metro",
+    "county": "Maricopa",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.6105,
+    "longitude": -112.2206,
+    "opening_hour_minutes": 360,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thebrewboxcoffeecompany",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Phoenix",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "1": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "2": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "3": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "4": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "5": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "6": {
+        "openMin": 360,
+        "closeMin": 1080
+      }
+    }
   }
 ]

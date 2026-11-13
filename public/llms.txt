@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 205+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 101 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 206+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 102 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -21,6 +21,7 @@
 - Eternal Flavors Bakery (South Broadway Denver) (Denver, CO 80210) [✨ New S. Broadway Location]: https://www.hiddenfoodgem.com/gem/eternal-flavors-bakery-denver-80210
 - LADD Coffee (West Covina Korean Cream-Top Coffee & Brioche Donuts) (West Covina, CA 91790) [✨ SGV Cream-Coffee Gem]: https://www.hiddenfoodgem.com/gem/ladd-coffee-west-covina-91790
 - Farmer’s Daughter Coffee & Bakery at Schnepf Farms (Queen Creek, AZ) (Queen Creek, AZ 85142) [🌻 New Farm Patio Coffee Shop]: https://www.hiddenfoodgem.com/gem/farmers-daughter-coffee-queen-creek-85142
+- The Brew Box Coffee Company (Peoria, AZ) (Peoria, AZ 85381) [✨ Holiday Cold-Foam Flight Out Now]: https://www.hiddenfoodgem.com/gem/the-brew-box-coffee-peoria-az-85381
 - Goose Coffee (@_goosecoffee — Ontario Ranch Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · Ontario Gateway Plaza]: https://www.hiddenfoodgem.com/gem/goose-coffee-ontario-ranch-91761
 - The Christmas Cafe (@thechristmascafeaz) (Peoria, AZ 85383) [🚀 Coming Soon · Nov 2026 Grand Opening]: https://www.hiddenfoodgem.com/gem/the-christmas-cafe-peoria-az-85383
 - Bobo Cha Bar (New Vineyard Ave Flagship — Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · New Vineyard Ave Location]: https://www.hiddenfoodgem.com/gem/bobo-cha-bar-vineyard-ontario-91761
@@ -31,7 +32,7 @@
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (309 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (311 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801

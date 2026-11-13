@@ -461,29 +461,339 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .toast.show { opacity: 1; transform: translateX(-50%); }
 
-/* ---------- Top Meal-Time Tabs (Breakfast · Brunch · Lunch · Dinner) ---------- */
+/* ---------- Top Meal-Time Tabs (Tactile 3D Clickable Pill Buttons) ---------- */
 .meal-tabs-wrap {
-  padding: 2px 18px 8px;
+  padding: 6px 18px 10px;
 }
 .meal-tabs {
-  display: inline-flex; flex-wrap: wrap; gap: 6px; padding: 5px;
-  background: var(--sand); border: 1.5px solid var(--line); border-radius: 16px;
+  display: flex; flex-wrap: wrap; gap: 10px; padding: 8px 10px;
+  background: linear-gradient(180deg, #f5e8d7 0%, #efe0cc 100%);
+  border: 1.5px solid #e2cdb2; border-radius: 20px;
+  box-shadow: inset 0 2px 5px rgba(60, 30, 10, 0.06);
 }
 .meal-tab {
-  display: inline-flex; align-items: center; gap: 6px; padding: 8px 15px;
-  border-radius: 12px; border: 0; background: transparent; color: var(--ink-2);
-  font-weight: 800; font-size: .88rem; cursor: pointer; transition: all .15s;
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px;
+  border-radius: 999px;
+  border: 1.5px solid #d8c0a4;
+  background: linear-gradient(180deg, #ffffff 0%, #fcf6ee 100%);
+  color: var(--ink);
+  font-weight: 800; font-size: .9rem; cursor: pointer;
+  box-shadow: 0 3px 0 #cdb08e, 0 5px 12px rgba(60, 30, 10, 0.1);
+  transition: transform .16s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow .16s ease, background .16s ease, border-color .16s ease;
+  position: relative;
+  user-select: none;
 }
-.meal-tab:hover { background: rgba(255, 255, 255, .65); color: var(--ink); }
-.meal-tab.active {
-  background: var(--ink); color: #fff;
-  box-shadow: 0 4px 12px rgba(31, 22, 18, .28);
+.meal-tab:hover {
+  background: #ffffff;
+  color: var(--chili);
+  border-color: var(--saffron);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 #d99b26, 0 8px 18px rgba(244, 166, 42, 0.25);
 }
+.meal-tab:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #cdb08e, 0 2px 5px rgba(60, 30, 10, 0.12);
+}
+
+/* Feature Tab 1: Soft Openings (Fiery Coral-Orange Tactile Button) */
+.meal-tab[data-meal="soft_open"] {
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+  border-color: #fb923c;
+  color: #9a3412;
+  box-shadow: 0 3px 0 #ea580c, 0 5px 14px rgba(234, 88, 12, 0.2);
+}
+.meal-tab[data-meal="soft_open"]:hover {
+  background: linear-gradient(180deg, #ffedd5 0%, #fed7aa 100%);
+  border-color: #ea580c;
+  color: #7c2d12;
+  box-shadow: 0 5px 0 #c2410c, 0 8px 20px rgba(234, 88, 12, 0.3);
+}
+
+/* Feature Tab 2: New Food & Cafes Opening Soon (Warm Gold-Amber Tactile Button) */
+.meal-tab[data-meal="opening_soon"] {
+  background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+  border-color: #f59e0b;
+  color: #92400e;
+  box-shadow: 0 3px 0 #d97706, 0 5px 14px rgba(217, 119, 6, 0.2);
+}
+.meal-tab[data-meal="opening_soon"]:hover {
+  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #d97706;
+  color: #78350f;
+  box-shadow: 0 5px 0 #b45309, 0 8px 20px rgba(217, 119, 6, 0.3);
+}
+
+/* Feature Tab 3: Top Coffee & Boba */
+.meal-tab[data-meal="coffee_boba"] {
+  background: linear-gradient(180deg, #fdf8f5 0%, #f5ebe1 100%);
+  border-color: #c69c72;
+  color: #4a2c11;
+  box-shadow: 0 3px 0 #9c6f44, 0 5px 12px rgba(120, 70, 30, 0.14);
+}
+
+/* Active Selected Tab State */
+.meal-tab.active,
+.meal-tab[data-meal="soft_open"].active,
+.meal-tab[data-meal="opening_soon"].active,
+.meal-tab[data-meal="coffee_boba"].active {
+  background: linear-gradient(135deg, #2b1810 0%, #140b07 100%);
+  color: #ffffff;
+  border-color: #f5c26b;
+  box-shadow: 0 3px 0 #d97706, 0 6px 16px rgba(31, 22, 18, 0.38);
+}
+
+.tab-cta-pill {
+  display: inline-flex; align-items: center;
+  font-size: .68rem; font-weight: 900; letter-spacing: .03em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 999px;
+  background: rgba(31, 22, 18, 0.08); color: inherit;
+  margin-left: 2px;
+}
+.meal-tab[data-meal="soft_open"] .tab-cta-pill {
+  background: #ea580c; color: #ffffff;
+  box-shadow: 0 2px 6px rgba(234, 88, 12, 0.35);
+}
+.meal-tab[data-meal="opening_soon"] .tab-cta-pill {
+  background: #d97706; color: #ffffff;
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.35);
+}
+.meal-tab[data-meal="coffee_boba"] .tab-cta-pill {
+  background: #7c4a21; color: #ffffff;
+}
+.meal-tab.active .tab-cta-pill {
+  background: linear-gradient(135deg, #ffcf5c, #f4a62a);
+  color: #1f1612;
+  box-shadow: none;
+}
+
 .meal-tab small {
   font-size: .74rem; padding: 1px 7px; border-radius: 999px;
   background: rgba(0, 0, 0, .08); color: inherit; font-weight: 700;
 }
 .meal-tab.active small { background: rgba(255, 207, 92, .25); color: var(--gold); }
+
+/* ---------- Breaking News Local Mom & Pop Soft Opening Spotlight ---------- */
+@keyframes pulse-breaking-dot {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.9); }
+  50% { transform: scale(1.2); opacity: 0.9; box-shadow: 0 0 0 6px rgba(255, 255, 255, 0); }
+}
+@keyframes soft-open-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.breaking-gem-alert {
+  position: relative;
+  margin: 6px 0 24px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(249, 115, 22, 0.24) 0%, transparent 45%),
+    radial-gradient(circle at 88% 85%, rgba(239, 68, 68, 0.22) 0%, transparent 45%),
+    linear-gradient(135deg, #1b0d0a 0%, #2f140d 50%, #1e0e0a 100%);
+  border: 2px solid #f97316;
+  box-shadow: 0 16px 36px -10px rgba(220, 38, 38, 0.35), 0 6px 16px rgba(31, 22, 18, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  padding: 18px 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+.breaking-gem-alert::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, #ef4444 0%, #f97316 35%, #fde047 65%, #ef4444 100%);
+  background-size: 200% 100%;
+  animation: soft-open-shimmer 5s ease infinite;
+}
+.breaking-gem-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.breaking-gem-headline-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+}
+.breaking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+}
+.breaking-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: inline-block;
+  animation: pulse-breaking-dot 1.6s infinite ease-in-out;
+}
+.breaking-title-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.breaking-headline {
+  font-size: 1.12rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+.breaking-headline em {
+  color: #fde047;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: rgba(253, 224, 71, 0.5);
+  text-underline-offset: 3px;
+}
+.breaking-sub-label {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #fed7aa;
+  letter-spacing: 0.01em;
+}
+.breaking-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff8a2b 0%, #ea580c 100%);
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 0.86rem;
+  border: 1.5px solid #fde047;
+  box-shadow: 0 3px 0 #9a3412, 0 6px 16px rgba(249, 115, 22, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+.breaking-all-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 #9a3412, 0 10px 22px rgba(249, 115, 22, 0.65);
+}
+.breaking-spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+@media (max-width: 860px) {
+  .breaking-spotlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.breaking-spot-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fffdf9 0%, #fef5e7 100%);
+  border: 2px solid #f59e0b;
+  box-shadow: 0 4px 0 #b45309, 0 8px 20px rgba(0, 0, 0, 0.35);
+  color: #1f1612 !important;
+  text-decoration: none;
+  transition: transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.16s ease, border-color 0.16s ease;
+  min-width: 0;
+}
+.breaking-spot-card:hover {
+  transform: translateY(-3px);
+  border-color: #fde047;
+  box-shadow: 0 6px 0 #d97706, 0 14px 26px rgba(249, 115, 22, 0.45);
+  background: #ffffff;
+}
+.breaking-spot-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff0db 0%, #fed7aa 100%);
+  border: 1.5px solid #fb923c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.55rem;
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 0 #ffffff, 0 3px 8px rgba(234, 88, 12, 0.18);
+}
+.breaking-spot-body {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.breaking-spot-kicker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #c2410c;
+}
+.breaking-spot-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: #ea580c;
+  color: #ffffff;
+  font-size: 0.64rem;
+  font-weight: 900;
+}
+.breaking-spot-name {
+  font-size: 0.96rem;
+  font-weight: 900;
+  color: #1f1612;
+  line-height: 1.22;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breaking-spot-desc {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6b4c35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breaking-spot-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffedd5;
+  border: 1.5px solid #fdba74;
+  color: #c2410c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+.breaking-spot-card:hover .breaking-spot-arrow {
+  background: #ea580c;
+  border-color: #ea580c;
+  color: #ffffff;
+  transform: translateX(2px);
+}
 
 /* ---------- Dynamic Operational Status Pill & Today's Live Hours on Card Front ---------- */
 .op-status-box {

@@ -112,21 +112,14 @@
       /\b(coming soon|opening soon)\b/i.test(r.name || '')
     )
   );
-  // Automatic Time-Decay Launch Stage Helper:
-  // - Days 0–14 from openedDate (or explicit soft_open within 14d): 'soft_open' (🔥 Soft Open / Grand Opening)
-  // - Days 15–45 from openedDate (or explicit just_opened within 45d): 'just_opened' (✨ Newly Opened)
-  // - Day 45+: automatically graduates to standard Verified Gem (null)
-  // - Pre-opening: 'opening_soon' (⏳ Opening Soon)
+  // Automatic 3-Stage Time-Decay Launch Lifecycle Helper:
+  // - Stage 1 (Days 0–5 from spotlightStartDate/openedDate): Featured in Top 3 Homepage Breaking Spotlight Banner (5-Day Rotation)
+  // - Stage 2 (Days 0–14 from openedDate): 'soft_open' (🔥 Soft Open Now badge, pinned #1 in ZIP, featured in Soft Openings tab)
+  // - Stage 3 (Days 15–45 from openedDate): Automatically graduates from 'soft_open' to 'just_opened' (✨ Newly Opened)
+  // - Day 46+: Automatically graduates to permanent Verified Neighborhood Gem (null launch stage)
+  // - Pre-opening: 'opening_soon' (⏳ Opening Soon — auto-promotes to 'soft_open' once openedDate arrives if verified open)
   const getLaunchStage = (r, now = new Date()) => {
     if (!r) return null;
-    if (r.launchStatus === 'opening_soon' || isComingSoon(r)) {
-      return {
-        stage: 'opening_soon',
-        priority: 2,
-        cls: 'coming',
-        txt: r.launchLabel || r.comingSoonLabel || '⏳ Opening Soon'
-      };
-    }
     const refDateStr = r.openedDate || (r.launchStatus ? r.createdAt : null);
     let daysSinceOpen = null;
     if (refDateStr) {
@@ -135,13 +128,24 @@
         daysSinceOpen = (now.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24);
       }
     }
+    if (r.launchStatus === 'opening_soon' || isComingSoon(r)) {
+      return {
+        stage: 'opening_soon',
+        priority: 2,
+        cls: 'coming',
+        txt: r.launchLabel || r.comingSoonLabel || '⏳ Opening Soon',
+        daysSinceOpen
+      };
+    }
     if (r.launchStatus === 'soft_open') {
       if (daysSinceOpen === null || daysSinceOpen <= 14) {
         return {
           stage: 'soft_open',
           priority: 4,
           cls: 'coming',
-          txt: r.launchLabel || '🔥 Soft Open Now'
+          txt: r.launchLabel || '🔥 Soft Open Now',
+          daysSinceOpen,
+          inFiveDayWindow: daysSinceOpen === null || (daysSinceOpen >= -2 && daysSinceOpen <= 5)
         };
       }
       if (daysSinceOpen <= 45) {
@@ -149,7 +153,8 @@
           stage: 'just_opened',
           priority: 3,
           cls: 'new',
-          txt: '✨ Newly Opened'
+          txt: '✨ Newly Opened',
+          daysSinceOpen
         };
       }
       return null;
@@ -160,7 +165,8 @@
           stage: 'just_opened',
           priority: 3,
           cls: 'new',
-          txt: r.launchLabel || '✨ Newly Opened'
+          txt: r.launchLabel || '✨ Newly Opened',
+          daysSinceOpen
         };
       }
       return null;
@@ -170,7 +176,9 @@
         stage: 'soft_open',
         priority: 4,
         cls: 'coming',
-        txt: r.launchLabel || '🔥 Soft Open Now'
+        txt: r.launchLabel || '🔥 Soft Open Now',
+        daysSinceOpen,
+        inFiveDayWindow: daysSinceOpen <= 5
       };
     }
     if (daysSinceOpen !== null && daysSinceOpen > 14 && daysSinceOpen <= 45) {
@@ -178,11 +186,99 @@
         stage: 'just_opened',
         priority: 3,
         cls: 'new',
-        txt: r.launchLabel || '✨ Newly Opened'
+        txt: r.launchLabel || '✨ Newly Opened',
+        daysSinceOpen
       };
     }
     return null;
   };
+
+  // 5-Day Homepage Top Banner Spotlight Rotation Helper:
+  // Keeps each Soft Opening in the Top 3 Breaking Spotlight Banner for 5 days, then automatically rotates in the next newest Soft Openings.
+  const SPOTLIGHT_CURATED_META = {
+    'chaiwale-and-co-redlands-92373': {
+      icon: '🍵',
+      shortName: 'Chaiwale & Co.',
+      teaser: 'Pink Kashmiri Chai & Parle-G Cream Foam',
+      initialOrder: 1
+    },
+    'cloud-nine-espresso-beaumont-92223': {
+      icon: '☕',
+      shortName: 'Cloud Nine Espresso',
+      teaser: 'Specialty Craft Lattes & Signature Cold Foam',
+      initialOrder: 2
+    },
+    'one-more-bite-dumpling-palm-desert-92260': {
+      icon: '🥟',
+      shortName: 'One More Bite Dumpling House',
+      teaser: 'Hand-Pinched Soup Dumplings & Wontons',
+      initialOrder: 3
+    }
+  };
+
+  function getTopBannerSoftOpens(restaurants, now = new Date()) {
+    const activeSoftOpens = (restaurants || []).filter((r) => {
+      if (!r || r.is_active === false) return false;
+      const st = getLaunchStage(r, now);
+      return st && st.stage === 'soft_open';
+    });
+
+    const scored = activeSoftOpens.map((r) => {
+      const bannerRefStr = r.spotlightStartDate || r.createdAt || r.openedDate;
+      let daysInBanner = 0;
+      if (bannerRefStr) {
+        const p = new Date(bannerRefStr);
+        if (!isNaN(p.getTime())) {
+          daysInBanner = (now.getTime() - p.getTime()) / (1000 * 60 * 60 * 24);
+        }
+      }
+      const isFreshFiveDays = daysInBanner >= -2 && daysInBanner <= 5;
+      const curated = SPOTLIGHT_CURATED_META[r.id];
+      return {
+        r,
+        daysInBanner,
+        isFreshFiveDays,
+        curatedOrder: curated ? curated.initialOrder : 99,
+        openedTs: new Date(r.openedDate || r.createdAt || 0).getTime() || 0
+      };
+    });
+
+    const freshPool = scored
+      .filter((x) => x.isFreshFiveDays)
+      .sort((a, b) => (a.curatedOrder - b.curatedOrder) || (b.openedTs - a.openedTs));
+
+    const olderPool = scored
+      .filter((x) => !x.isFreshFiveDays)
+      .sort((a, b) => (b.openedTs - a.openedTs) || (a.curatedOrder - b.curatedOrder));
+
+    let selected = freshPool.slice(0, 3).map((x) => x.r);
+    if (selected.length < 3 && olderPool.length > 0) {
+      const fiveDayCycleIndex = Math.floor(now.getTime() / (5 * 24 * 60 * 60 * 1000));
+      const needed = 3 - selected.length;
+      for (let i = 0; i < needed && i < olderPool.length; i++) {
+        const idx = (fiveDayCycleIndex * needed + i) % olderPool.length;
+        const candidate = olderPool[idx].r;
+        if (!selected.some((s) => s.id === candidate.id)) {
+          selected.push(candidate);
+        }
+      }
+    }
+
+    return selected.map((r) => {
+      const curated = SPOTLIGHT_CURATED_META[r.id];
+      const shortName = curated?.shortName || String(r.name || '').replace(/\s*\([^)]*\)\s*$/, '').trim();
+      const icon = curated?.icon || emojiFor(r);
+      const teaser = curated?.teaser || r.destinationDish?.name || r.cuisine || 'Verified Local Soft Opening';
+      return {
+        id: r.id,
+        icon,
+        shortName,
+        city: r.city || '',
+        zip: r.zip || '',
+        teaser
+      };
+    });
+  }
   const badge = (r) => {
     const launch = getLaunchStage(r);
     if (launch) return { cls: launch.cls, txt: launch.txt };
@@ -1023,17 +1119,12 @@
 
     if (mealTab === 'soft_open' || mealTab === 'new_openings') {
       const launch = getLaunchStage(r, now);
-      if (launch && (launch.stage === 'soft_open' || launch.stage === 'just_opened')) return true;
-      const tags = (r.tags || []).map((t) => String(t).toLowerCase());
-      return tags.includes('soft_open') || tags.includes('just_opened');
+      return Boolean(launch && (launch.stage === 'soft_open' || launch.stage === 'just_opened'));
     }
 
     if (mealTab === 'opening_soon') {
       const launch = getLaunchStage(r, now);
-      if (launch) return true;
-      const tags = (r.tags || []).map((t) => String(t).toLowerCase());
-      if (tags.includes('opening_soon') || tags.includes('coming_soon_cafe') || tags.includes('soft_open') || tags.includes('just_opened')) return true;
-      return Boolean(r.createdAt && r.createdAt >= '2026-11-05');
+      return Boolean(launch);
     }
 
     if (mealTab === 'coffee_boba') {
@@ -1512,12 +1603,6 @@
             </button>
             <button class="btn" type="submit">Find gems</button>
           </form>
-          <div id="soft-open-spotlight-banner" style="margin:14px auto 0;max-width:860px;background:linear-gradient(135deg,rgba(249,115,22,0.16),rgba(245,194,107,0.12));border:1px solid rgba(245,194,107,0.38);border-radius:14px;padding:10px 16px;font-size:0.88rem;line-height:1.5;color:#f9f3eb;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,0.28)">
-            <span style="font-weight:800;color:#f5c26b">💛 Support your local mom &amp; pop restaurants and cafes!</span>
-            <span style="margin:0 6px;opacity:0.5">|</span>
-            <span><strong>🔥 Soft Opening Highlights:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#fdba74;font-weight:800;text-decoration:underline">Chaiwale &amp; Co. (Redlands)</a> · <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#fdba74;font-weight:800;text-decoration:underline">Cloud Nine Espresso (Beaumont)</a> · <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#fdba74;font-weight:800;text-decoration:underline">One More Bite Dumpling House (Palm Desert)</a></span>
-            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" style="display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;background:rgba(249,115,22,0.25);border:1px solid rgba(249,115,22,0.55);color:#fff;font-weight:700;font-size:0.78rem;text-decoration:none">See All Soft Opens →</a>
-          </div>
         </div>
       </section>
 
@@ -1525,10 +1610,19 @@
         <div class="filters-inner">
           <div class="meal-tabs-wrap">
             <div class="meal-tabs" id="meal-tabs" role="tablist" aria-label="Filter by Meal Time">
-              ${MEAL_TABS.map(([k, l, emo]) => `
+              ${MEAL_TABS.map(([k, l, emo]) => {
+                const pillTag = k === 'soft_open'
+                  ? '<span class="tab-cta-pill">HOT</span>'
+                  : k === 'opening_soon'
+                    ? '<span class="tab-cta-pill">SOON</span>'
+                    : k === 'coffee_boba'
+                      ? '<span class="tab-cta-pill">TOP 5</span>'
+                      : '';
+                return `
                 <button type="button" role="tab" class="meal-tab ${state.mealTab === k ? 'active' : ''}" data-meal="${k}" aria-selected="${state.mealTab === k}">
-                  <span class="cute-tab-icon">${emo}</span><span class="meal-label">${l}</span>
-                </button>`).join('')}
+                  <span class="cute-tab-icon">${emo}</span><span class="meal-label">${l}</span>${pillTag}
+                </button>`;
+              }).join('')}
             </div>
           </div>
           <div class="filter-bar">
@@ -1577,6 +1671,35 @@
         </div>
       </section>
       <div class="wrap">
+        ${(() => {
+          const topBannerSpots = getTopBannerSoftOpens(state.restaurants);
+          if (!topBannerSpots.length) return '';
+          return `
+        <div class="breaking-gem-alert" id="soft-open-spotlight-banner" role="region" aria-label="Breaking Soft Opening Alert">
+          <div class="breaking-gem-top">
+            <div class="breaking-gem-headline-group">
+              <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · SOFT OPENING SPOTLIGHT</span>
+              <div class="breaking-title-stack">
+                <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+                <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes these verified neighborhood debuts (5-day fresh rotation):</span>
+              </div>
+            </div>
+            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" class="breaking-all-btn">🔥 Explore All Soft Opens →</a>
+          </div>
+          <div class="breaking-spotlight-grid">
+            ${topBannerSpots.map((s) => `
+            <a href="/gem/${esc(s.id)}" class="breaking-spot-card">
+              <div class="breaking-spot-icon">${s.icon}</div>
+              <div class="breaking-spot-body">
+                <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 ${esc(s.city)} · ${esc(s.zip)}</div>
+                <div class="breaking-spot-name">${esc(s.shortName)}</div>
+                <div class="breaking-spot-desc">${esc(s.teaser)}</div>
+              </div>
+              <div class="breaking-spot-arrow">↗</div>
+            </a>`).join('')}
+          </div>
+        </div>`;
+        })()}
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>
         <div class="grid" id="grid"></div>
         <div class="load-more-wrap" id="load-more-container" hidden>

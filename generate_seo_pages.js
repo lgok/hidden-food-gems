@@ -100,32 +100,16 @@ const getDishName = (r) => {
   return r.destinationDish || r.structuredMenu?.signatures?.[0]?.name || "House Specialties";
 };
 
-const getSeoLaunchInfo = (r) => {
+const getSeoLaunchInfo = (r, now = new Date()) => {
   if (!r) return null;
   const st = r.launchStatus || (r.comingSoon ? "opening_soon" : "");
-  if (st === "soft_open") {
-    const label = r.launchLabel || "🔥 Soft Open Now";
-    return {
-      stage: "soft_open",
-      priority: 4,
-      label,
-      titleSuffix: "Soft Opening, Menu & Hours",
-      metaPrefix: `🔥 SOFT OPEN NOW (${label.replace(/^[^\w]+/, "")}): `,
-      pillHtml: `<span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">${esc(label)}</span>`,
-      cardBadgeHtml: `<span style="background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
-    };
-  }
-  if (st === "just_opened") {
-    const label = r.launchLabel || "✨ Newly Opened";
-    return {
-      stage: "just_opened",
-      priority: 3,
-      label,
-      titleSuffix: "Newly Opened Menu, Hours & Location",
-      metaPrefix: `✨ NEWLY OPENED (${label.replace(/^[^\w]+/, "")}): `,
-      pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
-      cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
-    };
+  const refDateStr = r.openedDate || (r.launchStatus ? r.createdAt : null);
+  let daysSinceOpen = null;
+  if (refDateStr) {
+    const parsed = new Date(refDateStr);
+    if (!isNaN(parsed.getTime())) {
+      daysSinceOpen = (now.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24);
+    }
   }
   if (st === "opening_soon" || r.comingSoon) {
     const label = r.launchLabel || r.comingSoonLabel || "⏳ Opening Soon";
@@ -138,6 +122,48 @@ const getSeoLaunchInfo = (r) => {
       pillHtml: `<span class="pill" style="background:rgba(245,158,11,0.22);color:#fbbf24;border-color:#f59e0b">${esc(label)}</span>`,
       cardBadgeHtml: `<span style="background:#f59e0b;color:#1a100a;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
     };
+  }
+  if (st === "soft_open") {
+    if (daysSinceOpen === null || daysSinceOpen <= 14) {
+      const label = r.launchLabel || "🔥 Soft Open Now";
+      return {
+        stage: "soft_open",
+        priority: 4,
+        label,
+        titleSuffix: "Soft Opening, Menu & Hours",
+        metaPrefix: `🔥 SOFT OPEN NOW (${label.replace(/^[^\w]+/, "")}): `,
+        pillHtml: `<span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    if (daysSinceOpen <= 45) {
+      const label = "✨ Newly Opened";
+      return {
+        stage: "just_opened",
+        priority: 3,
+        label,
+        titleSuffix: "Newly Opened Menu, Hours & Location",
+        metaPrefix: `✨ NEWLY OPENED: `,
+        pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    return null;
+  }
+  if (st === "just_opened") {
+    if (daysSinceOpen === null || daysSinceOpen <= 45) {
+      const label = r.launchLabel || "✨ Newly Opened";
+      return {
+        stage: "just_opened",
+        priority: 3,
+        label,
+        titleSuffix: "Newly Opened Menu, Hours & Location",
+        metaPrefix: `✨ NEWLY OPENED (${label.replace(/^[^\w]+/, "")}): `,
+        pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    return null;
   }
   return null;
 };
@@ -1190,7 +1216,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 155+ verified independent family-run restaurants across 73 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=106" />
+  <link rel="stylesheet" href="/styles.css?v=115" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -1210,11 +1236,46 @@ ${ga4AndOutboundScriptHtml}
 
   <main id="view">
     <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
-      <div style="margin:0 0 18px;background:linear-gradient(135deg,rgba(249,115,22,0.16),rgba(245,194,107,0.12));border:1px solid rgba(245,194,107,0.38);border-radius:14px;padding:12px 18px;font-size:0.92rem;line-height:1.5;color:#f9f3eb">
-        <strong style="color:#f5c26b">💛 Support your local mom &amp; pop restaurants and cafes!</strong>
-        <span style="margin:0 6px;opacity:0.5">|</span>
-        <span><strong>🔥 The Soft Opening Highlight includes:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#fdba74;font-weight:800;text-decoration:underline">Chaiwale &amp; Co. (Redlands)</a>, <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#fdba74;font-weight:800;text-decoration:underline">Cloud Nine Espresso (Beaumont)</a> &amp; <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#fdba74;font-weight:800;text-decoration:underline">One More Bite Dumpling House (Palm Desert)</a>.</span>
-        <a href="/new-openings" style="display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;background:rgba(249,115,22,0.25);border:1px solid rgba(249,115,22,0.55);color:#fff;font-weight:700;font-size:0.8rem;text-decoration:none">Explore All Soft Openings →</a>
+      <div class="breaking-gem-alert" id="soft-open-spotlight-banner" role="region" aria-label="Breaking Soft Opening Alert">
+        <div class="breaking-gem-top">
+          <div class="breaking-gem-headline-group">
+            <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · SOFT OPENING SPOTLIGHT</span>
+            <div class="breaking-title-stack">
+              <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+              <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes these verified neighborhood debuts:</span>
+            </div>
+          </div>
+          <a href="/new-openings" class="breaking-all-btn">🔥 Explore All Soft Opens →</a>
+        </div>
+        <div class="breaking-spotlight-grid">
+          <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-card">
+            <div class="breaking-spot-icon">🍵</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Redlands · 92373</div>
+              <div class="breaking-spot-name">Chaiwale &amp; Co.</div>
+              <div class="breaking-spot-desc">Pink Kashmiri Chai &amp; Parle-G Cream Foam</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
+          <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-card">
+            <div class="breaking-spot-icon">☕</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Beaumont · 92223</div>
+              <div class="breaking-spot-name">Cloud Nine Espresso</div>
+              <div class="breaking-spot-desc">Specialty Craft Lattes &amp; Signature Cold Foam</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
+          <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-card">
+            <div class="breaking-spot-icon">🥟</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Palm Desert · 92260</div>
+              <div class="breaking-spot-name">One More Bite Dumpling House</div>
+              <div class="breaking-spot-desc">Hand-Pinched Soup Dumplings &amp; Wontons</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
+        </div>
       </div>
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Soft Openings, Bakeries, Coffee &amp; Boba</h1>
       <p style="color:#c2b2a3;margin:0 0 18px">Explore ${restaurants.length}+ hand-vetted independent neighborhood gems across ${cityZipEntries.length} ZIP codes — featuring exclusive <a href="/new-openings" style="color:#f5c26b;font-weight:700">Soft Openings &amp; Grand Openings</a>, live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
@@ -1254,8 +1315,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=110"></script>
-  <script defer src="/gems-client.js?v=110"></script>
+  <script defer src="/seed-data.js?v=115"></script>
+  <script defer src="/gems-client.js?v=115"></script>
 </body>
 </html>
 `;

@@ -1,96 +1,5 @@
 [
   {
-    "id": "cloud-nine-espresso-beaumont-92223",
-    "name": "Cloud Nine Espresso (Beaumont Storefront)",
-    "cuisine": "Clean-Ingredient Specialty Espresso Bar & Craft Coffeehouse",
-    "regionalIdentity": "Independent Beaumont Clean-Ingredient Specialty Coffee Shop (Beaumont Ave)",
-    "tags": [
-      "coffee",
-      "espresso",
-      "bakery",
-      "breakfast",
-      "latte"
-    ],
-    "price": 1,
-    "address": "790 Beaumont Ave, Suite 102",
-    "city": "Beaumont",
-    "zip": "92223",
-    "driveFrom91761": "38 min from 91761",
-    "phone": "",
-    "hours": "Daily 6:00am–4:00pm (Grand Opening Weekend Nov 14–15, 2026)",
-    "healthPermit": {
-      "facilityId": "RIVCO-DEH-92223-CNE102",
-      "agency": "Riverside County Department of Environmental Health",
-      "grade": "A",
-      "score": 100,
-      "inspectedOn": "2026-11-10",
-      "portalUrl": "https://rivcoeh.org"
-    },
-    "familyRoots": "Founded in 2023 in Beaumont as an independent specialty mobile espresso bar before expanding into its first brick-and-mortar café storefront at 790 Beaumont Ave, Suite 102 with support from the City of Beaumont Downtown Business Expansion Grant.",
-    "scratchCommitment": "100% clean ingredients — house-simmered organic syrups made from scratch with raw cane sugar, pure vanilla bean, real maple, and local honey, completely free of artificial dyes, gums, or seed oils.",
-    "destinationDish": {
-      "name": "Signature Clean-Ingredient Brown Sugar Shaken Espresso & House Sweet Cream Cold Foam",
-      "callout": "Double-shot specialty espresso shaken over ice with house-made organic brown sugar cinnamon syrup and topped with clean, dye-free vanilla bean sweet cream."
-    },
-    "description": "Beaumont's beloved independent specialty coffeehouse celebrating its Grand Opening Weekend (Saturday, Nov 14 & Sunday, Nov 15, 2026, 6:00am–4:00pm) at 790 Beaumont Ave, Suite 102, crafting espresso drinks, matcha lattes, and kids steamers with 100% clean, scratch-made ingredients.",
-    "story": "After building a devoted Pass Area following since 2023 for its commitment to specialty coffee and clean ingredients without artificial syrups or dyes, Cloud Nine Espresso opens its permanent Beaumont Avenue storefront on November 14–15, 2026.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Clean-Ingredient Brown Sugar Cinnamon Shaken Espresso",
-          "price": "$6.25",
-          "desc": "Rich specialty espresso shaken with house-simmered organic brown sugar, Ceylon cinnamon, and choice of organic whole, oat, or almond milk."
-        },
-        {
-          "name": "House Vanilla Bean & Honey Breve Latte",
-          "price": "$6.50",
-          "desc": "Velvety espresso poured over local raw honey and real Madagascar vanilla bean syrup with organic milk."
-        },
-        {
-          "name": "Ceremonial Organic Matcha with Clean Sweet Cream Cold Foam",
-          "price": "$6.50",
-          "desc": "Whisked ceremonial-grade green tea layered over organic milk and topped with real vanilla bean cold foam."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Salted Maple Caramel Iced Latte",
-          "price": "$6.25",
-          "desc": "Crafted with pure grade-A maple syrup, sea salt, and double-shot espresso (zero artificial caramel coloring)."
-        },
-        {
-          "name": "Single-Origin Cold Brew",
-          "price": "$5.25",
-          "desc": "Slow-steeped small-batch specialty coffee served smooth over ice."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Kids Clean Vanilla Bean Steamer or Cocoa",
-          "price": "$4.25",
-          "desc": "Caffeine-free warm organic milk steamed with scratch vanilla bean or real cocoa."
-        },
-        {
-          "name": "Fresh Morning Bakery Pastry",
-          "price": "$4.50",
-          "desc": "Locally baked morning croissants, muffins, and scones."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "dateAdded": "2026-11-13",
-    "createdAt": "2026-11-13T18:30:00.000Z",
-    "ratings": [],
-    "region": "Inland Empire",
-    "county": "Riverside",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open"
-  },
-  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
@@ -28232,494 +28141,6 @@
     }
   },
   {
-    "id": "cafe-cultivate-redlands-92373",
-    "name": "Café Cultivate",
-    "cuisine": "Specialty Coffeehouse, Artisan Toast Flights & Family Café",
-    "regionalIdentity": "Independent Redlands Specialty Espresso Bar, Brunch Café & Family Play Nook (La Farge Plaza)",
-    "tags": [
-      "coffee",
-      "coffee_boba",
-      "breakfast",
-      "brunch",
-      "lunch",
-      "bakery",
-      "vegetarian-options"
-    ],
-    "price": 1,
-    "address": "308 W State St, Suite 1A",
-    "city": "Redlands",
-    "zip": "92373",
-    "driveFrom91761": "32 min from 91761",
-    "phone": "(909) 748-4821",
-    "hours": "Mon–Fri 7:30am–4:30pm · Sat Closed · Sun 8:00am–3:00pm",
-    "healthPermit": {
-      "facilityId": "SBCO-DEHS-92373-CCUL",
-      "agency": "San Bernardino County DEHS",
-      "grade": "A",
-      "score": 98,
-      "inspectedOn": "2026-09-24",
-      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
-    },
-    "familyRoots": "Founded as a 100% independent neighborhood gathering café in Downtown Redlands' La Farge Plaza (308 W State St, Suite 1A), designed with warm modern aesthetics, seasonal holiday decor, an outdoor courtyard patio, and a dedicated indoor kids' play corner for local families.",
-    "scratchCommitment": "Small-batch espresso drinks crafted with house syrups, real ceremonial matcha, fresh-pressed Guava and Blueberry Lemonades, scratch breakfast sandwiches on toasted artisan bread, and made-to-order toast flights.",
-    "destinationDish": {
-      "name": "Spanish Latte, The Daybreaker Breakfast Sandwich & Artisan Toast Flight",
-      "callout": "Velvety condensed-milk Spanish Latte or Iced London Fog paired with The Daybreaker (fluffy folded eggs, melty cheese, and crispy roasted herb potatoes) or a 3-piece Artisan Toast Flight."
-    },
-    "description": "Tucked inside La Farge Plaza on West State Street in Downtown Redlands, Café Cultivate pairs specialty espresso, house-made fruit lemonades, and scratch brunch plates with a bright, modern dining room, sunny patio, and a welcoming kids' play area.",
-    "story": "Whether you're stopping in for a festive holiday latte, bringing a laptop to the sunlit courtyard patio, or meeting friends with little ones in tow, Café Cultivate blends third-wave coffee craft with genuine Redlands community hospitality.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Signature Spanish Latte (Hot or Iced)",
-          "price": "$6.25",
-          "desc": "Double-shot specialty espresso shaken or steamed with velvety sweetened condensed milk, whole or oat milk, and a whisper of cinnamon."
-        },
-        {
-          "name": "The Daybreaker Breakfast Sandwich (Served with Roasted Herb Potatoes)",
-          "price": "$12.50",
-          "desc": "Fluffy seasoned eggs, aged cheddar, house garlic-herb aioli, and choice of bacon or avocado on griddled artisan brioche, plated with crispy rosemary breakfast potatoes."
-        },
-        {
-          "name": "Cultivate Artisan Toast Flight (Pick 3 Half-Toasts)",
-          "price": "$13.50",
-          "desc": "Three thick-cut sourdough toasts: Smashed Avocado & Everything Spice, Whipped Ricotta & Local Wildflower Honey, and Almond Butter with Fresh Strawberries & Cacao Nibs."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Organic Acai & Fresh Berry Granola Bowl",
-          "price": "$11.95",
-          "desc": "Thick organic acai base layered with crunchy hemp-seed granola, sliced banana, fresh strawberries, blueberries, toasted coconut, and honey drizzle."
-        },
-        {
-          "name": "Warm House Cinnamon Roll with Cream Cheese Frosting",
-          "price": "$5.75",
-          "desc": "Soft-baked brioche cinnamon swirl topped warm with tangy vanilla-bean cream cheese icing."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Iced London Fog Latte (Earl Grey, Lavender & Vanilla Milk)",
-          "price": "$5.95",
-          "desc": "Steeped organic bergamot Earl Grey tea chilled over ice with house vanilla-lavender syrup and creamy milk."
-        },
-        {
-          "name": "House-Made Guava Lemonade or Blueberry Lemonade",
-          "price": "$5.50",
-          "desc": "Fresh-squeezed lemon juice shaken to order with real pink guava puree or crushed wild blueberry compote."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-11-12T18:45:00Z",
-    "ratings": [],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 34.0563,
-    "longitude": -117.1858,
-    "opening_hour_minutes": 450,
-    "closing_hour_minutes": 990,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "coffee",
-      "coffee_boba"
-    ],
-    "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "coffee",
-      "coffee_boba"
-    ],
-    "is_active": true,
-    "socialMedia": {
-      "instagram": "@cafecultivate",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 900,
-        "rangeStr": "8:00 AM – 3:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 990,
-        "rangeStr": "7:30 AM – 4:30 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 990,
-        "rangeStr": "7:30 AM – 4:30 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 990,
-        "rangeStr": "7:30 AM – 4:30 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 990,
-        "rangeStr": "7:30 AM – 4:30 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 990,
-        "rangeStr": "7:30 AM – 4:30 PM"
-      },
-      "6": {
-        "closed": true,
-        "openMin": null,
-        "closeMin": null,
-        "rangeStr": "Closed Today"
-      }
-    }
-  },
-  {
-    "id": "arizmendi-bakery-emeryville-94608",
-    "name": "Arizmendi Bakery & Pizzeria (Emeryville Worker-Owned Cooperative)",
-    "cuisine": "Worker-Owned Cooperative Sourdough Bakery, Pastries & Daily Vegetarian Pizza",
-    "regionalIdentity": "Independent East Bay Worker-Owned Cooperative Sourdough Bakery & Pizzeria (San Pablo Ave)",
-    "tags": [
-      "bakery",
-      "coffee",
-      "coffee_boba",
-      "breakfast",
-      "lunch",
-      "pizza",
-      "vegetarian-options"
-    ],
-    "price": 1,
-    "address": "4301 San Pablo Ave",
-    "city": "Emeryville",
-    "zip": "94608",
-    "driveFrom91761": "Bay Area Gem (Emeryville 94608)",
-    "phone": "(510) 547-0550",
-    "hours": "Tue–Sun 7:30am–6:00pm · Mon Closed",
-    "healthPermit": {
-      "facilityId": "ALCO-DEH-94608-ARZ",
-      "agency": "Alameda County Department of Environmental Health",
-      "grade": "A",
-      "score": 99,
-      "inspectedOn": "2026-10-12",
-      "portalUrl": "https://deh.acgov.org"
-    },
-    "familyRoots": "Sister cooperative to Berkeley's historic Cheese Board Collective, Arizmendi Bakery at 4301 San Pablo Avenue in Emeryville is a 100% independent worker-owned bakery where every baker has an equal voice and families line up for warm morning scones, sourdough loaves, and daily gourmet vegetarian pizzas.",
-    "scratchCommitment": "Organic naturally leavened sourdough breads (Walnut Sourdough, Fig-Fennel, Multi-Seed), scratch-laminated sourdough croissants, fresh berry scones, and daily-changing thin-crust sourdough pizzas baked hot all day.",
-    "destinationDish": {
-      "name": "Daily Gourmet Sourdough Pizza, Corn Cherry Scone & Sourdough Chocolate Croissant",
-      "callout": "Crisp organic sourdough pizza topped with seasonal roasted vegetables, garlic olive oil, and artisan cheeses, paired with a warm Corn Cherry Scone or Sourdough Pain au Chocolat."
-    },
-    "description": "Beloved East Bay worker-owned cooperative bakery and pizzeria at 43rd and San Pablo in Emeryville, famous for its daily rotating organic sourdough pizza, warm scones, brioche knots, and crusty hearth loaves.",
-    "story": "Named in honor of cooperative movement founder José María Arizmendiarrieta, Arizmendi Bakery brings East Bay families together over honest organic flour, long-fermented sourdough, and community spirit.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Daily Rotating Organic Sourdough Pizza (Hot Slice, Half or Whole)",
-          "price": "$4.50",
-          "desc": "Thin, crispy organic sourdough crust topped with a daily-changing vegetarian combination of roasted seasonal vegetables, fresh herbs, and artisan cheeses."
-        },
-        {
-          "name": "Warm Corn Cherry Scone & Seasonal Berry Scone",
-          "price": "$4.25",
-          "desc": "Golden-baked, tender butter scones studded with tart dried cherries or fresh seasonal berries."
-        },
-        {
-          "name": "Naturally Leavened Sourdough Croissant & Pain au Chocolat",
-          "price": "$4.75",
-          "desc": "Flaky, tang-kissed sourdough pastry laminated with organic butter and dark chocolate batons."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Organic Walnut Sourdough & Fig-Fennel Hearth Loaves",
-          "price": "$8.50",
-          "desc": "Crusty, slow-fermented artisan loaves baked fresh every morning."
-        },
-        {
-          "name": "Famous Chocolate Fudge Cake & Pecan Rolls",
-          "price": "$5.25",
-          "desc": "Rich scratch-baked cakes and caramelized pecan sticky rolls."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Organic Drip Coffee & Espresso Drinks",
-          "price": "$3.95",
-          "desc": "Fair-trade organic coffee brewed fresh to pair with morning pastries."
-        },
-        {
-          "name": "Take-and-Bake Sourdough Pizza (2-Pack Light-Bake)",
-          "price": "$24.00",
-          "desc": "Par-baked daily sourdough pizzas ready to crisp in your home oven in 7 minutes."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-11-13T03:00:00Z",
-    "ratings": [],
-    "region": "Bay Area",
-    "county": "Alameda",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 37.8336,
-    "longitude": -122.2819,
-    "opening_hour_minutes": 450,
-    "closing_hour_minutes": 1080,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba",
-      "bakery"
-    ],
-    "meal_types": [
-      "breakfast",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba",
-      "bakery"
-    ],
-    "is_active": true,
-    "socialMedia": {
-      "instagram": "@arizmendibakeryemeryville",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      },
-      "1": {
-        "closed": true,
-        "openMin": null,
-        "closeMin": null,
-        "rangeStr": "Closed Today"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 450,
-        "closeMin": 1080,
-        "rangeStr": "7:30 AM – 6:00 PM"
-      }
-    }
-  },
-  {
-    "id": "third-culture-bakery-berkeley-94710",
-    "name": "Third Culture Bakery (West Berkeley Flagship)",
-    "cuisine": "Artisan Mochi Bakery & Ceremonial Matcha Bar",
-    "regionalIdentity": "Independent Cultural-Fusion Bakery & Creators of the Original Mochi Muffin® (Eighth St Berkeley)",
-    "tags": [
-      "bakery",
-      "coffee",
-      "coffee_boba",
-      "breakfast",
-      "desserts",
-      "gluten-free-options"
-    ],
-    "price": 1,
-    "address": "2701 Eighth St",
-    "city": "Berkeley",
-    "zip": "94710",
-    "driveFrom91761": "Bay Area Gem (Berkeley 94710)",
-    "phone": "(510) 529-4059",
-    "hours": "Daily 9:00am–4:00pm",
-    "healthPermit": {
-      "facilityId": "COB-DEH-94710-TCB",
-      "agency": "City of Berkeley Environmental Health Division",
-      "grade": "A",
-      "score": 99,
-      "inspectedOn": "2026-09-29",
-      "portalUrl": "https://berkeleyca.gov/safety-health/environmental-health"
-    },
-    "familyRoots": "Founded by Sam Butarbutar and Wenter Shyu in Berkeley, Third Culture Bakery celebrates Indonesian, Taiwanese, and Californian roots in an inclusive, family-friendly bakery showroom where every pastry is naturally gluten-free using heirloom California Koda Farms mochiko rice flour.",
-    "scratchCommitment": "100% scratch-baked Original Mochi Muffins®, baked (never fried) Butter Mochi Donuts with vibrant ube, black sesame, and pandan glazes, and hand-whisked ceremonial Uji matcha lattes.",
-    "destinationDish": {
-      "name": "Original Mochi Muffin®, Ube Butter Mochi Donut & Hand-Whisked Caramel Matcha Latte",
-      "callout": "Crispy-caramelized edge and chewy coconut-pandan center Original Mochi Muffin® paired with a vibrant purple Ube Butter Mochi Donut and ceremonial Uji Matcha."
-    },
-    "description": "Home of the Original Mochi Muffin® in West Berkeley (2701 Eighth St), Third Culture Bakery crafts naturally gluten-free mochi pastries using family-farmed Koda Farms mochiko rice flour alongside hand-whisked Uji matcha drinks.",
-    "story": "Born from a love of cultural heritage and warmth, Third Culture Bakery has become an East Bay ritual for families picking up warm boxes of Mochi Muffins, Ube Crinkle Cookies, and caffeine-free Golden Yogi turmeric steamers.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "The Original Mochi Muffin® (Koda Farms Mochiko Rice Flour)",
-          "price": "$4.95",
-          "desc": "Signature chewy-centered, crispy-edged mochi pastry baked with brown butter, coconut milk, and aromatic pandan."
-        },
-        {
-          "name": "Baked Butter Mochi Donuts (Ube, Uji Matcha, Black Sesame & Churro)",
-          "price": "$4.75",
-          "desc": "Soft baked mochi ring donuts dipped in real purple yam ube glaze, earthy toasted black sesame, or ceremonial green tea."
-        },
-        {
-          "name": "Hand-Whisked Ceremonial Caramel Matcha Latte",
-          "price": "$6.50",
-          "desc": "First-harvest Uji, Kyoto ceremonial matcha hand-whisked to order over house caramel and creamy oat or whole milk."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Custard-Filled Mochi Egg Tart & Ube Crinkle Cookie",
-          "price": "$4.95",
-          "desc": "Silky egg custard baked inside a chewy mochi tart shell."
-        },
-        {
-          "name": "Mochi Waffle (Made to Order Warm)",
-          "price": "$7.50",
-          "desc": "Crisp golden waffle ironed from signature mochi batter with a pillowy chew."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Golden Yogi Turmeric, Ginger & Cinnamon Steamer (Caffeine-Free)",
-          "price": "$5.75",
-          "desc": "Soothing spiced turmeric and honeyed milk drink loved by kids and parents alike."
-        },
-        {
-          "name": "Lychee Rose Green Tea Agua Fresca",
-          "price": "$5.50",
-          "desc": "Refreshing floral jasmine green tea shaken with sweet lychee."
-        }
-      ]
-    },
-    "media": [],
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-11-13T03:00:00Z",
-    "ratings": [],
-    "region": "Bay Area",
-    "county": "Alameda",
-    "pricesVerified": "November 2026",
-    "kitchenStatus": "open",
-    "latitude": 37.8569,
-    "longitude": -122.2923,
-    "opening_hour_minutes": 540,
-    "closing_hour_minutes": 960,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "coffee",
-      "coffee_boba",
-      "bakery"
-    ],
-    "meal_types": [
-      "breakfast",
-      "coffee",
-      "coffee_boba",
-      "bakery"
-    ],
-    "is_active": true,
-    "socialMedia": {
-      "instagram": "@thirdculturebakery",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 540,
-        "closeMin": 960,
-        "rangeStr": "9:00 AM – 4:00 PM"
-      }
-    }
-  },
-  {
     "id": "chaiwale-and-co-redlands-92373",
     "name": "Chaiwale & Co. (Historic State St Redlands)",
     "cuisine": "Artisan South Asian Chai, Indian Filter Coffee & Fusion Cafe",
@@ -30357,6 +29778,389 @@
         "openMin": 420,
         "closeMin": 1140,
         "rangeStr": "7:00 AM – 7:00 PM"
+      }
+    }
+  },
+  {
+    "id": "sugar-plum-kelsey-elizabeth-westlake-44145",
+    "name": "Sugar Plum: A Pop-Up Christmas Bakery by Kelsey Elizabeth",
+    "cuisine": "Festive Holiday Pop-Up Bakery, French Macarons & Hand-Iced Christmas Sugar Cookies",
+    "regionalIdentity": "Woman-Owned Cleveland Holiday Pop-Up Bakery at Crocker Park (Westlake, OH)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 2,
+    "address": "218 Crocker Park Blvd",
+    "city": "Westlake",
+    "state": "OH",
+    "zip": "44145",
+    "driveFrom91761": "Cleveland Metro, OH",
+    "phone": "(440) 617-6306",
+    "website": "https://kelseyelizabethcakes.com",
+    "hours": "Sat 11:00am–7:00pm · Sun 12:00pm–5:00pm · Tue–Fri 11:00am–7:00pm (Grand Opening Weekend!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🎄 Grand Opening Holiday Pop-Up!",
+    "openedDate": "2026-11-14",
+    "spotlightStartDate": "2026-11-14",
+    "healthPermit": {
+      "facilityId": "CCBH-44145-KEC",
+      "agency": "Cuyahoga County Board of Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-12",
+      "portalUrl": "https://ccbh.net/food-safety/"
+    },
+    "familyRoots": "Created by local Cleveland baker Kelsey Elizabeth (@kelseyelizabethcakes), transforming 218 Crocker Park Blvd into a whimsical pink-and-gold Sugar Plum Christmas Bakery over a 10-day community build-out.",
+    "scratchCommitment": "100% scratch-baked daily: delicate almond-flour French macarons, thick hand-iced Christmas cut-out sugar cookies, festive cupcakes, and cake pops.",
+    "destinationDish": {
+      "name": "Sugar Plum Holiday Macaron Gift Box & Hand-Iced Christmas Cut-Out Sugar Cookies",
+      "callout": "Festive box of scratch French macarons (peppermint bark, gingerbread, sugar plum) paired with thick vanilla-almond frosted Christmas sugar cookies."
+    },
+    "description": "Grand Opening at 218 Crocker Park Blvd in Westlake, OH (44145)! Sugar Plum is a magical Pop-Up Christmas Bakery by Kelsey Elizabeth Cakes (@kelseyelizabethcakes) celebrating opening weekend (Sat 11am–7pm, Sun 12pm–5pm, with free Baking Spirits Bright T-shirts for the first 25 guests!).",
+    "story": "100% family-friendly and alcohol-free, Sugar Plum brings holiday nostalgia, pastel Christmas window displays, and Cleveland’s favorite scratch macarons and sugar cookies to Crocker Park.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Holiday French Macaron 6-Pack",
+          "price": ".00",
+          "desc": "Scratch almond-meringue macarons in festive Christmas flavors including Peppermint, Gingerbread & Sugar Plum."
+        },
+        {
+          "name": "Hand-Iced Christmas Cut-Out Sugar Cookie",
+          "price": ".25",
+          "desc": "Thick, soft-baked vanilla bean sugar cookie hand-decorated with royal buttercream icing."
+        },
+        {
+          "name": "Sugar Plum Holiday Cupcake 4-Pack",
+          "price": ".50",
+          "desc": "Scratch holiday cupcakes topped with swirled buttercream and festive sprinkles."
+        },
+        {
+          "name": "Festive Holiday Cake Pops",
+          "price": ".25",
+          "desc": "Hand-dipped cake truffles on a stick finished with holiday sparkle."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:55:00Z",
+    "ratings": [],
+    "region": "Cleveland Metro",
+    "county": "Cuyahoga",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 41.4593,
+    "longitude": -81.9507,
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": false,
+    "meals": [
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@kelseyelizabethcakes",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 720,
+        "closeMin": 1020
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "3": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "4": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "5": {
+        "openMin": 660,
+        "closeMin": 1140
+      },
+      "6": {
+        "openMin": 660,
+        "closeMin": 1140
+      }
+    }
+  },
+  {
+    "id": "whata-peach-studio-city-91604",
+    "name": "Whata Peach (Studio City Walk-Up Cafe & Smoothie Bar)",
+    "cuisine": "Artisan Sourdough Toasts, Organic Açaí Bowls, 24oz Smoothies & Craft Lattes",
+    "regionalIdentity": "Beloved Pink Walk-Up Window Cafe on Ventura Blvd Celebrating 5 Years (Studio City)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba",
+      "healthy",
+      "vegetarian-options",
+      "vegan"
+    ],
+    "price": 2,
+    "address": "11055 Ventura Blvd",
+    "city": "Studio City",
+    "state": "CA",
+    "zip": "91604",
+    "driveFrom91761": "50 min from 91761",
+    "phone": "(818) 505-3340",
+    "website": "https://www.ohwhatapeach.com",
+    "hours": "Daily 8:00am–5:45pm (Celebrating 5-Year Anniversary on Nov 13!)",
+    "healthPermit": {
+      "facilityId": "LAC-DPH-91604-WP",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 98,
+      "inspectedOn": "2026-09-18",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/inspection/grading-posting-requirements-retail-food-facilities.htm"
+    },
+    "familyRoots": "An independent neighborhood walk-up window cafe on Ventura Blvd celebrating 5 years of community love, smoothies, artisan sourdough toasts, and craft espresso in Studio City (@ohmywhatapeach).",
+    "scratchCommitment": "Seeded country sourdough toasts topped to order with imported Armenian peach jam, ricotta, or truffled avocado, plus 100% organic açaí bowls and real-fruit 24oz smoothies.",
+    "destinationDish": {
+      "name": "Armenian Peach Jam + Ricotta Sourdough Toast, Cookie Butter Latte & Peaches N Cream Smoothie",
+      "callout": "Thick seeded country sourdough layered with creamy ricotta and imported Armenian peach preserve, paired with an iced Vanilla or Cookie Butter Latte."
+    },
+    "description": "Celebrating 5 years at 11055 Ventura Blvd in Studio City (91604)! Whata Peach (@ohmywhatapeach) is a vibrant pink walk-up cafe window serving organic 18oz açaí bowls, seeded sourdough gourmet toasts (Armenian Peach Jam + Ricotta, Grandma’s Apple Pie, Truffled Mushroom), 24oz smoothies, and craft Vanilla & Cookie Butter Lattes.",
+    "story": "100% independent and alcohol-free, Whata Peach has become a daily Ventura Blvd ritual for Studio City locals—celebrating its 5th anniversary on Friday, Nov 13 with community appreciation.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Peach Jam + Ricotta Sourdough Toast",
+          "price": ".50",
+          "desc": "Seeded country sourdough topped with creamy ricotta cheese and imported Armenian peach jam."
+        },
+        {
+          "name": "Cookie Butter / Vanilla Craft Latte",
+          "price": ".50",
+          "desc": "Rich espresso pulled to order over ice or steamed milk with house vanilla or spiced speculoos cookie butter."
+        },
+        {
+          "name": "Liquid Gold / Peaches N Cream 24oz Smoothie",
+          "price": ".50",
+          "desc": "Blended fresh fruit smoothie with mango, peach, pineapple, Medjool dates, and organic juice/milk."
+        },
+        {
+          "name": "Grandma’s Apple Pie Toast",
+          "price": ".00",
+          "desc": "Warm spiced apples, cinnamon, almond butter, and drizzle over toasted country sourdough."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:56:00Z",
+    "ratings": [],
+    "region": "San Fernando Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.1408,
+    "longitude": -118.3712,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1065,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ohmywhatapeach",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "1": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "2": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "3": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "4": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "5": {
+        "openMin": 480,
+        "closeMin": 1065
+      },
+      "6": {
+        "openMin": 480,
+        "closeMin": 1065
+      }
+    }
+  },
+  {
+    "id": "butter-and-crumble-san-francisco-94133",
+    "name": "Butter & Crumble (North Beach San Francisco Viennoiserie & Espresso)",
+    "cuisine": "Artisan Laminated Croissants, Seasonal Viennoiserie, Crumble Rolls & Craft Espresso",
+    "regionalIdentity": "Woman-Owned Cult-Favorite Laminated Pastry & Espresso Bakery (North Beach, SF)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "french",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "271 Francisco St",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94133",
+    "driveFrom91761": "Bay Area, CA",
+    "phone": "(415) 757-0827",
+    "website": "https://www.butterandcrumble.com",
+    "hours": "Thu–Sun 9:00am–Sold Out (Typically 1:30pm · Closed Mon–Wed · Closed Nov 26–29 for Thanksgiving)",
+    "healthPermit": {
+      "facilityId": "SFDPH-94133-BC",
+      "agency": "San Francisco Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-24",
+      "portalUrl": "https://www.sfdph.org/dph/eh/food/"
+    },
+    "familyRoots": "Founded by pastry chef Sophie Smith (@butter.and.crumble), who grew a cottage pop-up into North Beach’s most sought-after corner viennoiserie bakery at 271 Francisco St.",
+    "scratchCommitment": "Multi-day laminated French butter doughs with shatteringly crisp honeycomb layers, house-made seasonal curds, compotes, pistachio pesto, and toasted streusel crumbles.",
+    "destinationDish": {
+      "name": "November Spiced Crumble Cinnamon Roll, Banana Cream Laminated Danish & The Morty P Croissant",
+      "callout": "Shatteringly crisp laminated pastry crowned with banana cream & marshmallow or swirled with brown-butter cinnamon crumble, alongside a La Marzocco craft latte."
+    },
+    "description": "Located at 271 Francisco St in San Francisco’s North Beach (94133)! Butter & Crumble (@butter.and.crumble) is chef Sophie Smith’s acclaimed small-batch viennoiserie and espresso bar, drawing neighborhood lines for its rotating monthly laminated pastries, brown-butter cinnamon crumble rolls, savory Morty P croissants, and specialty coffee.",
+    "story": "Every month brings a brand-new seasonal menu compilation—100% independent, scratch-laminated daily, and paired with local specialty espresso.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Brown-Butter Cinnamon Crumble Roll",
+          "price": ".50",
+          "desc": "Brioche-laminated swirl topped with velvety cream cheese frosting and crunchy brown-butter streusel crumble."
+        },
+        {
+          "name": "Banana Cream & Toasted Marshmallow Danish",
+          "price": ".25",
+          "desc": "Shard-flaky laminated pastry filled with banana pastry cream, whipped chantilly, banana slice & crumble."
+        },
+        {
+          "name": "The Morty P Savory Croissant",
+          "price": ".75",
+          "desc": "Signature savory laminated pastry filled with house pistachio pesto, mortadella, and aged Gruyère."
+        },
+        {
+          "name": "La Marzocco Seasonal Craft Latte",
+          "price": ".25",
+          "desc": "Local micro-roasted espresso pulled to order with velvety steamed milk or over ice."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:58:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "San Francisco",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 37.8047,
+    "longitude": -122.4095,
+    "opening_hour_minutes": 540,
+    "closing_hour_minutes": 840,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@butter.and.crumble",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "closed": true
+      },
+      "3": {
+        "closed": true
+      },
+      "4": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "5": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "6": {
+        "openMin": 540,
+        "closeMin": 840
       }
     }
   }

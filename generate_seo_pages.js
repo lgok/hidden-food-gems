@@ -589,6 +589,7 @@ ${ga4AndOutboundScriptHtml}
 
       ${r.holidaySpecial ? `
       <div class="holiday-special-banner" style="margin:18px 0;padding:18px 20px;border-radius:14px;background:linear-gradient(135deg,rgba(245,194,107,0.18),rgba(234,88,12,0.14));border:1.5px solid rgba(245,194,107,0.65);box-shadow:0 8px 28px rgba(245,194,107,0.15)">
+        ${r.holidaySpecial.image ? `<div style="margin-bottom:14px;border-radius:10px;overflow:hidden;border:1px solid rgba(245,194,107,0.4)"><img src="${esc(r.holidaySpecial.image)}" alt="${esc(r.name)} — ${esc(r.holidaySpecial.title)}" style="width:100%;max-height:320px;object-fit:cover;display:block" loading="eager" /></div>` : ""}
         <div style="font-weight:800;font-size:1.08rem;color:#fde047;margin-bottom:6px">${esc(r.holidaySpecial.title)}</div>
         <div style="font-size:0.96rem;color:#f8fafc;line-height:1.55;margin-bottom:${r.holidaySpecial.ctaText ? '12px' : '0'}">${esc(r.holidaySpecial.details)}</div>
         ${r.holidaySpecial.ctaText ? `<a href="${esc(r.holidaySpecial.ctaHref || `tel:${(r.phone || '').replace(/[^0-9+]/g, '')}`)}" class="btn" style="background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-weight:800;border:none">${esc(r.holidaySpecial.ctaText)}</a>` : ""}

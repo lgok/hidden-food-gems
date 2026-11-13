@@ -100,6 +100,48 @@ const getDishName = (r) => {
   return r.destinationDish || r.structuredMenu?.signatures?.[0]?.name || "House Specialties";
 };
 
+const getSeoLaunchInfo = (r) => {
+  if (!r) return null;
+  const st = r.launchStatus || (r.comingSoon ? "opening_soon" : "");
+  if (st === "soft_open") {
+    const label = r.launchLabel || "🔥 Soft Open Now";
+    return {
+      stage: "soft_open",
+      priority: 4,
+      label,
+      titleSuffix: "Soft Opening, Menu & Hours",
+      metaPrefix: `🔥 SOFT OPEN NOW (${label.replace(/^[^\w]+/, "")}): `,
+      pillHtml: `<span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">${esc(label)}</span>`,
+      cardBadgeHtml: `<span style="background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+    };
+  }
+  if (st === "just_opened") {
+    const label = r.launchLabel || "✨ Newly Opened";
+    return {
+      stage: "just_opened",
+      priority: 3,
+      label,
+      titleSuffix: "Newly Opened Menu, Hours & Location",
+      metaPrefix: `✨ NEWLY OPENED (${label.replace(/^[^\w]+/, "")}): `,
+      pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
+      cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+    };
+  }
+  if (st === "opening_soon" || r.comingSoon) {
+    const label = r.launchLabel || r.comingSoonLabel || "⏳ Opening Soon";
+    return {
+      stage: "opening_soon",
+      priority: 2,
+      label,
+      titleSuffix: "Opening Soon Sneak Peek, Menu & Location",
+      metaPrefix: `⏳ OPENING SOON (${label.replace(/^[^\w]+/, "")}): `,
+      pillHtml: `<span class="pill" style="background:rgba(245,158,11,0.22);color:#fbbf24;border-color:#f59e0b">${esc(label)}</span>`,
+      cardBadgeHtml: `<span style="background:#f59e0b;color:#1a100a;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+    };
+  }
+  return null;
+};
+
 const LGOK_CANONICAL_CITY_SLUGS = {
   ontario: "ontario",
   "rancho cucamonga": "rancho-cucamonga",
@@ -153,6 +195,19 @@ for (const r of restaurants) {
     });
   }
   zipMap.get(zip).directGems.push(r);
+}
+
+// Sort each ZIP code's directGems so Soft Opens (#1) & Newly Opened (#2) & Opening Soon (#3) always rank at the very top of the ZIP code!
+for (const entry of zipMap.values()) {
+  entry.directGems.sort((a, b) => {
+    const aPrio = getSeoLaunchInfo(a)?.priority || 0;
+    const bPrio = getSeoLaunchInfo(b)?.priority || 0;
+    if (bPrio !== aPrio) return bPrio - aPrio;
+    const aSpot = a.spotlightRank || 999;
+    const bSpot = b.spotlightRank || 999;
+    if (aSpot !== bSpot) return aSpot - bSpot;
+    return String(b.createdAt || "").localeCompare(String(a.createdAt || ""));
+  });
 }
 
 const cityZipEntries = Array.from(zipMap.values()).sort((a, b) =>
@@ -323,55 +378,135 @@ for (const r of restaurants) {
   const signatures = (r.structuredMenu && r.structuredMenu.signatures) || [];
   const classics = (r.structuredMenu && r.structuredMenu.regionalClassics) || [];
   const allDishes = [...signatures, ...classics].slice(0, 6);
+  const launchInfo = getSeoLaunchInfo(r);
 
-  const nearbyGems = restaurants
+  const rLat = Number(r.latitude ?? r.lat) || 34.05;
+  const rLng = Number(r.longitude ?? r.lng) || -117.65;
+  let nearbyGems = restaurants
     .filter((other) => other.id !== r.id && other.state === r.state)
-    .map((other) => ({
-      other,
-      dist: haversineMiles(r.latitude, r.longitude, other.latitude, other.longitude),
-    }))
+    .map((other) => {
+      const oLat = Number(other.latitude ?? other.lat) || 34.05;
+      const oLng = Number(other.longitude ?? other.lng) || -117.65;
+      const rawDist = haversineMiles(rLat, rLng, oLat, oLng);
+      return {
+        other,
+        dist: Number.isFinite(rawDist) ? rawDist : 999,
+      };
+    })
     .sort((a, b) => a.dist - b.dist)
     .slice(0, 6);
 
+  if (nearbyGems.length < 6) {
+    const existingIds = new Set([r.id, ...nearbyGems.map((x) => x.other.id)]);
+    const fallbackNationwide = restaurants
+      .filter((other) => !existingIds.has(other.id))
+      .map((other) => {
+        const oLat = Number(other.latitude ?? other.lat) || 34.05;
+        const oLng = Number(other.longitude ?? other.lng) || -117.65;
+        const rawDist = haversineMiles(rLat, rLng, oLat, oLng);
+        return {
+          other,
+          dist: Number.isFinite(rawDist) ? rawDist : 999,
+        };
+      })
+      .sort((a, b) => a.dist - b.dist)
+      .slice(0, 6 - nearbyGems.length);
+    nearbyGems = [...nearbyGems, ...fallbackNationwide];
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "@id": `${baseUrl}/gem/${r.id}#restaurant`,
-    name: r.name,
-    description: r.description || `${r.name} is a verified independent ${r.cuisine} restaurant in ${r.city}, ${r.state}. Signature dish: ${getDishName(r)}.`,
-    url: `${baseUrl}/gem/${r.id}`,
-    telephone: r.phone || "",
-    servesCuisine: r.cuisine,
-    priceRange: priceStr,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: r.address,
-      addressLocality: r.city,
-      addressRegion: r.state || "CA",
-      postalCode: String(r.zip),
-      addressCountry: "US",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: r.latitude,
-      longitude: r.longitude,
-    },
-    openingHours: r.hours,
-    ...(hasRealRatings
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: stars,
-            reviewCount: ratingCount,
-            bestRating: 5,
-            worstRating: 1,
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": `${baseUrl}/gem/${r.id}#restaurant`,
+        name: r.name,
+        description:
+          (launchInfo ? `${launchInfo.metaPrefix}` : "") +
+          (r.description || `${r.name} is a verified independent ${r.cuisine} restaurant in ${r.city}, ${r.state}. Signature dish: ${getDishName(r)}.`),
+        url: `${baseUrl}/gem/${r.id}`,
+        telephone: r.phone || "",
+        servesCuisine: r.cuisine,
+        priceRange: priceStr,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: r.address,
+          addressLocality: r.city,
+          addressRegion: r.state || "CA",
+          postalCode: String(r.zip),
+          addressCountry: "US",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: rLat,
+          longitude: rLng,
+        },
+        openingHours: r.hours,
+        ...(hasRealRatings
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: stars,
+                reviewCount: ratingCount,
+                bestRating: 5,
+                worstRating: 1,
+              },
+            }
+          : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "HiddenFoodGem.com",
+            item: `${baseUrl}/`,
           },
-        }
-      : {}),
+          ...(launchInfo
+            ? [
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Soft Openings & New Restaurants",
+                  item: `${baseUrl}/new-openings`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: `${r.city}, ${r.state || "CA"} (${r.zip})`,
+                  item: `${baseUrl}${cityPageUrl}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
+                  name: r.name,
+                  item: `${baseUrl}/gem/${r.id}`,
+                },
+              ]
+            : [
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: `${r.city}, ${r.state || "CA"} (${r.zip})`,
+                  item: `${baseUrl}${cityPageUrl}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: r.name,
+                  item: `${baseUrl}/gem/${r.id}`,
+                },
+              ]),
+        ],
+      },
+    ],
   };
 
-  const title = `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) — Menu, Hours & Health Grade | HiddenFoodGem.com`;
-  const metaDesc = `Verified Hidden Food Gem in ${r.city}, ${r.state || "CA"} (${r.zip}): ${r.name} (${r.cuisine}). Must-try: ${getDishName(r)}. Hours: ${r.hours}. Address: ${fullAddr}. Call counter directly: ${r.phone}.`;
+  const title = launchInfo
+    ? `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) — ${launchInfo.titleSuffix} | HiddenFoodGem.com`
+    : `${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) — Menu, Hours & Health Grade | HiddenFoodGem.com`;
+  const metaDesc = `${launchInfo ? launchInfo.metaPrefix : ""}Verified Hidden Food Gem in ${r.city}, ${r.state || "CA"} (${r.zip}): ${r.name} (${r.cuisine}). Must-try: ${getDishName(r)}. Hours: ${r.hours}. Address: ${fullAddr}.${r.phone ? ` Call counter directly: ${r.phone}.` : ""}`;
 
   const html = `<!doctype html>
 <html lang="en">
@@ -409,13 +544,13 @@ ${ga4AndOutboundScriptHtml}
 
   <main class="wrap">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a> › <a href="${esc(cityPageUrl)}">${esc(r.city)}, ${esc(r.state || "CA")} (${esc(r.zip)})</a> › <span>${esc(r.name)}</span>
+      <a href="/">Home</a> › ${launchInfo ? `<a href="/new-openings">🔥 Soft Opens &amp; New</a> › ` : ""}<a href="${esc(cityPageUrl)}">${esc(r.city)}, ${esc(r.state || "CA")} (${esc(r.zip)})</a> › <span>${esc(r.name)}</span>
     </nav>
 
     <article class="hero-card">
       <div class="pill-row">
         <span class="pill">💎 Verified Independent Gem</span>
-        ${r.comingSoon ? `<span class="pill" style="background:rgba(245,158,11,0.2);color:#fbbf24;border-color:#f59e0b">🚀 ${esc(r.comingSoonLabel || "Coming Soon")}</span>` : ""}
+        ${launchInfo ? launchInfo.pillHtml : ""}
         <span class="pill">${esc(r.cuisine)} · ${esc(priceStr)}</span>
         ${r.healthPermit ? `<span class="pill pill-green">✓ Official Grade ${esc(r.healthPermit.grade || "A")} (${esc(r.healthPermit.score || 98)}/100)</span>` : ""}
         ${hasRealRatings ? `<span class="pill">★ ${stars} (${ratingCount} local ratings)</span>` : `<span class="pill">✓ 100% Independent Family-Run</span>`}
@@ -599,10 +734,12 @@ ${ga4AndOutboundScriptHtml}
     <section class="section-card">
       <h2>🏆 Verified Independent Gems in ${esc(city)} (${esc(zip)})</h2>
       <div class="gem-grid">
-        ${directGems.map((r) => `
-          <article class="gem-card">
+        ${directGems.map((r) => {
+          const lInfo = getSeoLaunchInfo(r);
+          return `
+          <article class="gem-card"${lInfo ? ` style="border-color:rgba(249,115,22,0.5);box-shadow:0 8px 24px rgba(249,115,22,0.14)"` : ""}>
             <div>
-              <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${r.comingSoon ? `<span style="background:#f59e0b;color:#1a100a;padding:2px 8px;border-radius:999px;font-weight:800;margin-right:6px">🚀 Coming Soon</span>` : ""}${esc(r.cuisine)} · ${"$".repeat(r.price || 2)}</div>
+              <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${lInfo ? lInfo.cardBadgeHtml : ""}${esc(r.cuisine)} · ${"$".repeat(r.price || 2)}</div>
               <h3 style="margin:6px 0;font-size:1.15rem"><a href="/gem/${esc(r.id)}">${esc(r.name)}</a></h3>
               <p style="font-size:0.86rem;color:var(--muted);margin:4px 0 8px">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
               <p style="font-size:0.84rem;color:var(--muted);margin:4px 0 8px">🕒 ${esc(r.hours)}</p>
@@ -613,7 +750,8 @@ ${ga4AndOutboundScriptHtml}
               <a href="/?zip=${esc(zip)}&gem=${esc(r.id)}" class="btn btn-outline">Live Status</a>
             </div>
           </article>
-        `).join("")}
+        `;
+        }).join("")}
       </div>
     </section>
 
@@ -647,6 +785,137 @@ ${ga4AndOutboundScriptHtml}
 
   fs.writeFileSync(path.join(citiesDir, `${slug}.html`), html, "utf8");
 }
+
+// 2b. Generate public/new-openings.html (Dedicated SEO Authority Hub for Soft Openings, Newly Opened & Opening Soon)
+const softOpenGems = restaurants.filter((r) => getSeoLaunchInfo(r)?.stage === "soft_open");
+const justOpenedGems = restaurants.filter((r) => getSeoLaunchInfo(r)?.stage === "just_opened");
+const openingSoonGems = restaurants.filter((r) => getSeoLaunchInfo(r)?.stage === "opening_soon");
+const allLaunchGems = [...softOpenGems, ...justOpenedGems, ...openingSoonGems];
+
+const renderLaunchGrid = (list) =>
+  list
+    .map((r) => {
+      const lInfo = getSeoLaunchInfo(r);
+      const cEntry = zipMap.get(String(r.zip).trim());
+      const cUrl = cEntry ? `/cities/${cEntry.slug}` : `/?zip=${encodeURIComponent(r.zip)}`;
+      return `
+        <article class="gem-card" style="border-color:rgba(249,115,22,0.45);box-shadow:0 8px 24px rgba(0,0,0,0.35)">
+          <div>
+            <div style="margin-bottom:8px">${lInfo ? lInfo.cardBadgeHtml : ""}</div>
+            <div style="font-size:0.78rem;color:var(--gold);font-weight:700">${esc(r.cuisine)} · ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</div>
+            <h3 style="margin:6px 0;font-size:1.15rem"><a href="/gem/${esc(r.id)}">${esc(r.name)}</a></h3>
+            <p style="font-size:0.86rem;color:var(--muted);margin:4px 0 8px">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</p>
+            <p style="font-size:0.84rem;color:var(--muted);margin:4px 0 8px">🕒 ${esc(r.hours)}</p>
+            <p style="font-size:0.86rem;margin:6px 0 12px">🔥 <strong>Signature Must-Try:</strong> ${esc(getDishName(r))}</p>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a href="/gem/${esc(r.id)}" class="btn">Soft Open Menu &amp; Hours</a>
+            <a href="${esc(cUrl)}" class="btn btn-outline">${esc(r.city)} (${esc(r.zip)})</a>
+          </div>
+        </article>`;
+    })
+    .join("");
+
+const newOpeningsTitle = "New Restaurant Soft Openings, Grand Openings & Coming Soon Gems (2026) | HiddenFoodGem.com";
+const newOpeningsDesc = `Discover ${allLaunchGems.length} verified independent restaurant soft openings, grand openings, newly opened cafes, and coming-soon kitchens across the U.S. before they hit mainstream maps. Zero chains, 100% alcohol-free family-friendly gems.`;
+const newOpeningsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Verified Independent Restaurant Soft Openings, Grand Openings & Coming Soon Gems",
+  description: newOpeningsDesc,
+  url: `${baseUrl}/new-openings`,
+  numberOfItems: allLaunchGems.length,
+  itemListElement: allLaunchGems.map((r, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    item: {
+      "@type": "Restaurant",
+      name: r.name,
+      url: `${baseUrl}/gem/${r.id}`,
+      servesCuisine: r.cuisine,
+      description: `${getSeoLaunchInfo(r)?.label || "New Opening"} — ${r.description || getDishName(r)}`,
+      address: `${r.address}, ${r.city}, ${r.state || "CA"} ${r.zip}`,
+    },
+  })),
+};
+
+const newOpeningsHtml = `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(newOpeningsTitle)}</title>
+  <meta name="description" content="${esc(newOpeningsDesc)}" />
+  <link rel="canonical" href="${baseUrl}/new-openings" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="${esc(newOpeningsTitle)}" />
+  <meta property="og:description" content="${esc(newOpeningsDesc)}" />
+  <meta property="og:url" content="${baseUrl}/new-openings" />
+  <meta property="og:site_name" content="HiddenFoodGem.com" />
+  <meta property="og:image" content="${baseUrl}/img/inland_empire_food_gems_poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(newOpeningsTitle)}" />
+  <meta name="twitter:description" content="${esc(newOpeningsDesc)}" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+${ga4AndOutboundScriptHtml}
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script type="application/ld+json">${JSON.stringify(newOpeningsJsonLd)}</script>
+  <style>${seoStyles}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="brand"><span>💎</span><span>Hidden <em>Food</em> Gem.com</span></a>
+    <div style="display:flex;gap:8px;align-items:center">
+      <a href="/?meal=soft_open" class="btn">🔥 Open Interactive Soft Opens Map</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> › <span>🔥 New Restaurant Soft Openings, Grand Openings &amp; Coming Soon</span>
+    </nav>
+
+    <section class="hero-card">
+      <div class="pill-row">
+        <span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">🔥 ${softOpenGems.length} Soft Open Now</span>
+        <span class="pill pill-green">✨ ${justOpenedGems.length} Newly Opened</span>
+        <span class="pill" style="background:rgba(245,158,11,0.22);color:#fbbf24;border-color:#f59e0b">⏳ ${openingSoonGems.length} Opening Soon</span>
+      </div>
+      <h1>New Restaurant Soft Openings, Grand Openings &amp; Coming Soon Gems</h1>
+      <p>Google Maps and Yelp often lag 3 to 8 weeks behind independent restaurant soft openings. <strong>HiddenFoodGem.com</strong> tracks verified, family-owned scratch kitchens, specialty coffeehouses, and artisanal bakeries during their <strong>Soft Opening (Days 1–14)</strong>, <strong>Newly Opened (Days 15–45)</strong>, and <strong>Opening Soon</strong> stages — 100% independent, zero corporate chains, and strictly family-friendly.</p>
+      <div class="cta-bar">
+        <a href="/?meal=soft_open" class="btn">🔥 View Soft Openings Tab</a>
+        <a href="/?meal=opening_soon" class="btn btn-outline">🚀 View New Food &amp; Cafes Opening Soon Tab</a>
+        <a href="/contact" class="btn btn-outline">📩 Submit a Soft Opening or Coming Soon Spot</a>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2>🔥 Soft Open &amp; Grand Opening Right Now (Days 1–14)</h2>
+      <p style="color:var(--muted);margin-top:-6px;margin-bottom:16px">Be the first in your neighborhood to support these independent kitchens and specialty coffee bars during their soft-opening week.</p>
+      <div class="gem-grid">${renderLaunchGrid(softOpenGems)}</div>
+    </section>
+
+    <section class="section-card">
+      <h2>✨ Newly Opened Independent Gems (Days 15–45)</h2>
+      <p style="color:var(--muted);margin-top:-6px;margin-bottom:16px">Freshly opened neighborhood favorites in their first month of service.</p>
+      <div class="gem-grid">${renderLaunchGrid(justOpenedGems)}</div>
+    </section>
+
+    <section class="section-card">
+      <h2>⏳ Opening Soon Radar (Pre-Opening Sneak Peeks)</h2>
+      <p style="color:var(--muted);margin-top:-6px;margin-bottom:16px">Upcoming independent restaurants, specialty coffee flagships, and bakeries preparing to open their doors.</p>
+      <div class="gem-grid">${renderLaunchGrid(openingSoonGems)}</div>
+    </section>
+
+    <footer>
+      <p><a href="/">← Back to All ${restaurants.length} Verified Gems on HiddenFoodGem.com</a> · <a href="/contact">📩 Nominate a Soft Opening in Your ZIP Code</a></p>
+    </footer>
+  </main>
+</body>
+</html>`;
+fs.writeFileSync(path.join(publicDir, "new-openings.html"), newOpeningsHtml, "utf8");
+fs.writeFileSync(path.join(__dirname, "new-openings.html"), newOpeningsHtml, "utf8");
 
 // 3. Generate public/contact.html (so /contact returns HTTP 200 and renders a full Contact / Nominate / Partner page)
 const contactTitle = "Contact Us & Nominate a Local Restaurant | HiddenFoodGem.com";
@@ -777,6 +1046,7 @@ fs.writeFileSync(path.join(__dirname, "contact.html"), contactHtml, "utf8");
 // 3b. Generate public/sitemap.xml & public/robots.txt (Unified on https://www.hiddenfoodgem.com)
 const sitemapUrls = [
   `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>`,
+  `  <url>\n    <loc>${baseUrl}/new-openings</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.95</priority>\n  </url>`,
   `  <url>\n    <loc>${baseUrl}/contact</loc>\n    <lastmod>${todayISO}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
   ...cityZipEntries.map(
     (c) =>
@@ -803,27 +1073,35 @@ Sitemap: ${baseUrl}/sitemap.xml
 fs.writeFileSync(path.join(publicDir, "robots.txt"), robotsTxt, "utf8");
 
 // 4. Create public/llms.txt for AI Search Engines (ChatGPT, Perplexity, Claude, Gemini)
-const llmsTxt = `# HiddenFoodGem.com — Verified Independent Restaurants Directory
-> Discover 155+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 73 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, and IL. Zero national chains. Zero paid rankings.
+const llmsTxt = `# HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
+> Discover ${restaurants.length}+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across ${cityZipEntries.length} ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
+- Soft Opening & Pre-Opening Radar (${baseUrl}/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
 - Every restaurant listing includes verified operating hours, direct counter phone numbers (zero delivery-app markup), signature dishes with prices verified directly with the kitchen, and official County Health Department inspection grades.
 - Sister Family Events Platform: https://www.letsgetoutkids.com (Verified kid-friendly events, seasonal festivals, and upcoming family attractions).
 
+## Featured Soft Openings & Newly Opened Gems
+${allLaunchGems.map((r) => `- ${r.name} (${r.city}, ${r.state || "CA"} ${r.zip}) [${getSeoLaunchInfo(r)?.label || "New"}]: ${baseUrl}/gem/${r.id}`).join("\n")}
+
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: ${baseUrl}/
-- Full XML Sitemap (176 URLs): ${baseUrl}/sitemap.xml
+- New Restaurant Soft Openings & Coming Soon Hub: ${baseUrl}/new-openings
+- Full XML Sitemap (${sitemapUrls.length} URLs): ${baseUrl}/sitemap.xml
 - Featured Neighborhood Guides:
-${cityZipEntries.slice(0, 25).map((c) => `  - ${c.city}, ${c.state} (${c.zip}): ${baseUrl}/cities/${c.slug}`).join("\n")}
+${cityZipEntries.slice(0, 30).map((c) => `  - ${c.city}, ${c.state} (${c.zip}): ${baseUrl}/cities/${c.slug}`).join("\n")}
 `;
 fs.writeFileSync(path.join(publicDir, "llms.txt"), llmsTxt, "utf8");
 
 // 5. Pre-render featured listings directly inside <main id="view"> of index.html & app.js
-// Feature the newest independent food gems across all ZIP codes right on the front page
+// Feature Soft Opens, Grand Openings, and newest independent food gems right on the front page
 const sortedForPrerender = [...restaurants].sort((a, b) => {
   const aSpot = a.spotlightRank || 999;
   const bSpot = b.spotlightRank || 999;
   if (aSpot !== bSpot) return aSpot - bSpot;
+  const aPrio = getSeoLaunchInfo(a)?.priority || 0;
+  const bPrio = getSeoLaunchInfo(b)?.priority || 0;
+  if (bPrio !== aPrio) return bPrio - aPrio;
   const aDate = String(a.createdAt || '');
   const bDate = String(b.createdAt || '');
   return bDate.localeCompare(aDate);
@@ -831,14 +1109,17 @@ const sortedForPrerender = [...restaurants].sort((a, b) => {
 const featuredPrerender = sortedForPrerender.slice(0, 24);
 const prerenderCardsHtml = featuredPrerender
   .map(
-    (r) => `
+    (r) => {
+      const lInfo = getSeoLaunchInfo(r);
+      return `
       <article style="background:#1f1713;border:1px solid rgba(245,194,107,0.18);border-radius:16px;padding:16px">
-        <div style="font-size:0.76rem;color:#f5c26b;font-weight:700">${esc(r.cuisine)} · ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</div>
+        <div style="font-size:0.76rem;color:#f5c26b;font-weight:700">${lInfo ? lInfo.cardBadgeHtml : ""}${esc(r.cuisine)} · ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)}</div>
         <h2 style="margin:6px 0;font-size:1.1rem"><a href="/gem/${esc(r.id)}" style="color:#f9f3eb;text-decoration:none">${esc(r.name)}</a></h2>
         <p style="font-size:0.85rem;color:#c2b2a3;margin:4px 0">📍 ${esc(r.address)}, ${esc(r.city)}, ${esc(r.state || "CA")} ${esc(r.zip)} · 📞 ${esc(r.phone || "")}</p>
         <p style="font-size:0.84rem;color:#c2b2a3;margin:4px 0">🕒 ${esc(r.hours)}</p>
         <p style="font-size:0.85rem;color:#f9f3eb;margin:6px 0">🔥 <strong>Must-Try:</strong> ${esc(getDishName(r))}</p>
-      </article>`
+      </article>`;
+    }
   )
   .join("");
 
@@ -921,6 +1202,7 @@ ${ga4AndOutboundScriptHtml}
       <span class="brand-text">Hidden <em>Food</em> Gem<span style="font-size:0.72em;opacity:0.85;font-weight:700">.com</span></span>
     </a>
     <div style="display:flex;gap:8px;align-items:center">
+      <a href="/new-openings" class="btn btn-ghost btn-sm" title="New Restaurant Soft Openings, Grand Openings &amp; Coming Soon">🔥 Soft Opens</a>
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" title="Verified Family Events &amp; Activities">🎡 Family Events</a>
       <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" class="btn btn-ghost btn-sm">📩 Contact Us</a>
     </div>
@@ -928,8 +1210,14 @@ ${ga4AndOutboundScriptHtml}
 
   <main id="view">
     <section style="max-width:1200px;margin:0 auto;padding:24px 16px">
-      <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Bakeries, Coffee &amp; Boba</h1>
-      <p style="color:#c2b2a3;margin:0 0 18px">Explore 180+ hand-vetted independent neighborhood gems across 79 ZIP codes with live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
+      <div style="margin:0 0 18px;background:linear-gradient(135deg,rgba(249,115,22,0.16),rgba(245,194,107,0.12));border:1px solid rgba(245,194,107,0.38);border-radius:14px;padding:12px 18px;font-size:0.92rem;line-height:1.5;color:#f9f3eb">
+        <strong style="color:#f5c26b">💛 Support your local mom &amp; pop restaurants and cafes!</strong>
+        <span style="margin:0 6px;opacity:0.5">|</span>
+        <span><strong>🔥 The Soft Opening Highlight includes:</strong> <a href="/gem/chaiwale-and-co-redlands-92373" style="color:#fdba74;font-weight:800;text-decoration:underline">Chaiwale &amp; Co. (Redlands)</a>, <a href="/gem/cloud-nine-espresso-beaumont-92223" style="color:#fdba74;font-weight:800;text-decoration:underline">Cloud Nine Espresso (Beaumont)</a> &amp; <a href="/gem/one-more-bite-dumpling-palm-desert-92260" style="color:#fdba74;font-weight:800;text-decoration:underline">One More Bite Dumpling House (Palm Desert)</a>.</span>
+        <a href="/new-openings" style="display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;background:rgba(249,115,22,0.25);border:1px solid rgba(249,115,22,0.55);color:#fff;font-weight:700;font-size:0.8rem;text-decoration:none">Explore All Soft Openings →</a>
+      </div>
+      <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Soft Openings, Bakeries, Coffee &amp; Boba</h1>
+      <p style="color:#c2b2a3;margin:0 0 18px">Explore ${restaurants.length}+ hand-vetted independent neighborhood gems across ${cityZipEntries.length} ZIP codes — featuring exclusive <a href="/new-openings" style="color:#f5c26b;font-weight:700">Soft Openings &amp; Grand Openings</a>, live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">${prerenderCardsHtml}</div>
     </section>
   </main>
@@ -939,7 +1227,8 @@ ${ga4AndOutboundScriptHtml}
       <span style="font-size:1.1rem">💎</span>
       <span><strong>Hidden Food Gem</strong> · 100% Verified Independent Culinary Guide</span>
     </div>
-    <div style="display:flex;align-items:center;gap:16px">
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <a href="/new-openings" style="color:#f5c26b;text-decoration:none;font-weight:600">🔥 New &amp; Soft Openings</a>
       <a href="https://www.letsgetoutkids.com" target="_blank" rel="noopener" style="color:#f5c26b;text-decoration:none;font-weight:600">🎡 Let's Get Out, Kids!</a>
       <a href="/contact" onclick="if(window.location.pathname==='/'){location.hash='#/add';return false;}" style="color:#f5c26b;text-decoration:none;font-weight:600">📩 Partner / Contact Us</a>
     </div>
@@ -965,8 +1254,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=107"></script>
-  <script defer src="/gems-client.js?v=107"></script>
+  <script defer src="/seed-data.js?v=110"></script>
+  <script defer src="/gems-client.js?v=110"></script>
 </body>
 </html>
 `;
@@ -1008,10 +1297,11 @@ const notFoundHtml = `<!doctype html>
 fs.writeFileSync(path.join(publicDir, "404.html"), notFoundHtml, "utf8");
 fs.writeFileSync(path.join(__dirname, "404.html"), notFoundHtml, "utf8");
 
-// Update app.js so "/" serves indexHtml (200), "/contact" serves contactHtml (200) with edge caching + CSP, and any unmatched path returns HTTP 404
+// Update app.js so "/" serves indexHtml (200), "/new-openings" serves newOpeningsHtml (200), "/contact" serves contactHtml (200) with edge caching + CSP, and any unmatched path returns HTTP 404
 const appJsCode = `const http = require("http");
 
 const INDEX_HTML = ${JSON.stringify(indexHtml)};
+const NEW_OPENINGS_HTML = ${JSON.stringify(newOpeningsHtml)};
 const CONTACT_HTML = ${JSON.stringify(contactHtml)};
 const NOT_FOUND_HTML = ${JSON.stringify(notFoundHtml)};
 const CSP_VALUE = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' data: blob:; connect-src 'self' https://api.zippopotam.us https://nominatim.openstreetmap.org https://abacus.jasoncameron.dev https://www.google-analytics.com https://analytics.google.com https://vitals.vercel-insights.com; font-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:;";
@@ -1026,6 +1316,15 @@ const handler = (req, res) => {
       "Cache-Control": "public, max-age=60, s-maxage=600, stale-while-revalidate=86400"
     });
     res.end(INDEX_HTML);
+    return;
+  }
+  if (pathname === "/new-openings" || pathname === "/new-openings.html") {
+    res.writeHead(200, {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Security-Policy": CSP_VALUE,
+      "Cache-Control": "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+    });
+    res.end(NEW_OPENINGS_HTML);
     return;
   }
   if (pathname === "/contact" || pathname === "/contact.html") {

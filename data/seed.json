@@ -1,5 +1,96 @@
 [
   {
+    "id": "cloud-nine-espresso-beaumont-92223",
+    "name": "Cloud Nine Espresso (Beaumont Storefront)",
+    "cuisine": "Clean-Ingredient Specialty Espresso Bar & Craft Coffeehouse",
+    "regionalIdentity": "Independent Beaumont Clean-Ingredient Specialty Coffee Shop (Beaumont Ave)",
+    "tags": [
+      "coffee",
+      "espresso",
+      "bakery",
+      "breakfast",
+      "latte"
+    ],
+    "price": 1,
+    "address": "790 Beaumont Ave, Suite 102",
+    "city": "Beaumont",
+    "zip": "92223",
+    "driveFrom91761": "38 min from 91761",
+    "phone": "",
+    "hours": "Daily 6:00am–4:00pm (Grand Opening Weekend Nov 14–15, 2026)",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92223-CNE102",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-11-10",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded in 2023 in Beaumont as an independent specialty mobile espresso bar before expanding into its first brick-and-mortar café storefront at 790 Beaumont Ave, Suite 102 with support from the City of Beaumont Downtown Business Expansion Grant.",
+    "scratchCommitment": "100% clean ingredients — house-simmered organic syrups made from scratch with raw cane sugar, pure vanilla bean, real maple, and local honey, completely free of artificial dyes, gums, or seed oils.",
+    "destinationDish": {
+      "name": "Signature Clean-Ingredient Brown Sugar Shaken Espresso & House Sweet Cream Cold Foam",
+      "callout": "Double-shot specialty espresso shaken over ice with house-made organic brown sugar cinnamon syrup and topped with clean, dye-free vanilla bean sweet cream."
+    },
+    "description": "Beaumont's beloved independent specialty coffeehouse celebrating its Grand Opening Weekend (Saturday, Nov 14 & Sunday, Nov 15, 2026, 6:00am–4:00pm) at 790 Beaumont Ave, Suite 102, crafting espresso drinks, matcha lattes, and kids steamers with 100% clean, scratch-made ingredients.",
+    "story": "After building a devoted Pass Area following since 2023 for its commitment to specialty coffee and clean ingredients without artificial syrups or dyes, Cloud Nine Espresso opens its permanent Beaumont Avenue storefront on November 14–15, 2026.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Clean-Ingredient Brown Sugar Cinnamon Shaken Espresso",
+          "price": "$6.25",
+          "desc": "Rich specialty espresso shaken with house-simmered organic brown sugar, Ceylon cinnamon, and choice of organic whole, oat, or almond milk."
+        },
+        {
+          "name": "House Vanilla Bean & Honey Breve Latte",
+          "price": "$6.50",
+          "desc": "Velvety espresso poured over local raw honey and real Madagascar vanilla bean syrup with organic milk."
+        },
+        {
+          "name": "Ceremonial Organic Matcha with Clean Sweet Cream Cold Foam",
+          "price": "$6.50",
+          "desc": "Whisked ceremonial-grade green tea layered over organic milk and topped with real vanilla bean cold foam."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Salted Maple Caramel Iced Latte",
+          "price": "$6.25",
+          "desc": "Crafted with pure grade-A maple syrup, sea salt, and double-shot espresso (zero artificial caramel coloring)."
+        },
+        {
+          "name": "Single-Origin Cold Brew",
+          "price": "$5.25",
+          "desc": "Slow-steeped small-batch specialty coffee served smooth over ice."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Kids Clean Vanilla Bean Steamer or Cocoa",
+          "price": "$4.25",
+          "desc": "Caffeine-free warm organic milk steamed with scratch vanilla bean or real cocoa."
+        },
+        {
+          "name": "Fresh Morning Bakery Pastry",
+          "price": "$4.50",
+          "desc": "Locally baked morning croissants, muffins, and scones."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "dateAdded": "2026-11-13",
+    "createdAt": "2026-11-13T18:30:00.000Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open"
+  },
+  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
@@ -1635,7 +1726,10 @@
       "coffee_boba"
     ],
     "is_active": true,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "launchStatus": "opening_soon",
+    "launchLabel": "🚀 Coming Soon · Ontario Gateway Plaza",
+    "openedDate": "2026-11-20"
   },
   {
     "id": "goose-coffee-rancho-cucamonga-91730",
@@ -1978,7 +2072,10 @@
       "coffee_boba"
     ],
     "is_active": true,
-    "timezone": "America/Phoenix"
+    "timezone": "America/Phoenix",
+    "launchStatus": "opening_soon",
+    "launchLabel": "🚀 Coming Soon · Nov 2026 Grand Opening",
+    "openedDate": "2026-11-20"
   },
   {
     "id": "plus-bake-cafe-rancho-cucamonga-91730",
@@ -2178,7 +2275,10 @@
       "coffee_boba"
     ],
     "is_active": true,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "launchStatus": "opening_soon",
+    "launchLabel": "🚀 Coming Soon · New Vineyard Ave Location",
+    "openedDate": "2026-11-20"
   },
   {
     "id": "the-sipz-bar-ontario-ranch-91761",
@@ -2272,7 +2372,10 @@
       "coffee_boba"
     ],
     "is_active": true,
-    "timezone": "America/Los_Angeles"
+    "timezone": "America/Los_Angeles",
+    "launchStatus": "opening_soon",
+    "launchLabel": "🚀 Coming Soon · Ontario Ranch",
+    "openedDate": "2026-11-20"
   },
   {
     "id": "wild-carvery-burbank-91502",
@@ -28613,6 +28716,1647 @@
         "openMin": 540,
         "closeMin": 960,
         "rangeStr": "9:00 AM – 4:00 PM"
+      }
+    }
+  },
+  {
+    "id": "chaiwale-and-co-redlands-92373",
+    "name": "Chaiwale & Co. (Historic State St Redlands)",
+    "cuisine": "Artisan South Asian Chai, Indian Filter Coffee & Fusion Cafe",
+    "regionalIdentity": "Modern Desi Chai House & Espresso Bar (Downtown Redlands)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "tea",
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "indian",
+      "halal",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "233 E State St",
+    "city": "Redlands",
+    "state": "CA",
+    "zip": "92373",
+    "driveFrom91761": "28 min from 91761",
+    "phone": "(909) 335-2424",
+    "hours": "Daily 8:00am–8:00pm (Soft Open Now)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 Soft Open Now on State St",
+    "openedDate": "2026-11-12",
+    "healthPermit": {
+      "facilityId": "SBC-DEHS-92373-CW",
+      "agency": "San Bernardino County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-10",
+      "portalUrl": "https://wp.sbcounty.gov/dph/programs/ehs/"
+    },
+    "familyRoots": "An independent modern South Asian chai and coffee house celebrating traditional Desi grandma chai recipes, slow-simmered whole spices, and vibrant community murals on Historic State Street.",
+    "scratchCommitment": "Loose-leaf Assam and Darjeeling teas simmered with freshly crushed green cardamom, cinnamon, saffron, and ginger; authentic Indian drip filter coffee; and scratch fusion bites.",
+    "destinationDish": {
+      "name": "Tiramisu Cream Chai & Traditional Karak Chai",
+      "callout": "Velvety spiced chai topped with house mascarpone tiramisu cream and a cocoa-dusted ladyfinger biscuit, alongside authentic slow-simmered cardamom Karak."
+    },
+    "description": "Now soft open at 233 E. State St. in Downtown Redlands! Chaiwale & Co. brings authentic slow-simmered Masala & Karak chais, Kashmiri pink chai, Indian filter coffee, and Desi fusion bites to the Inland Empire in a vibrant, family-friendly setting (100% alcohol-free).",
+    "story": "Endorsed by Desi grandmas for authentic spice craft, Chaiwale & Co.'s brand-new Downtown Redlands storefront features custom wall murals, cozy seating, and late-afternoon chai sessions.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Tiramisu Cream Chai (with Ladyfinger Biscuit)",
+          "price": "$6.50",
+          "desc": "Spiced signature chai crowned with house-whipped tiramisu mascarpone cold foam and a dusted ladyfinger cookie."
+        },
+        {
+          "name": "Authentic Cardamom Karak Chai",
+          "price": "$5.50",
+          "desc": "Strong black tea slow-simmered with evaporated milk, crushed green cardamom pods, and cane sugar."
+        },
+        {
+          "name": "Kashmiri Pink Chai (Noon Chai)",
+          "price": "$5.95",
+          "desc": "Traditional pistachio-and-almond-kissed pink tea brewed from green tea leaves, cardamom, and star anise."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Butter Chicken or Butter Paneer Fusion Burrito",
+          "price": "$11.95",
+          "desc": "Warm flour tortilla wrapped around tandoori-spiced chicken or paneer, fragrant basmati rice, and rich tomato-fenugreek makhani sauce."
+        },
+        {
+          "name": "Kulfi Tres Leches Cake",
+          "price": "$7.50",
+          "desc": "Sponge cake soaked in cardamom-saffron kulfi milk reduction, topped with crushed pistachios and rose petals."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Masala Avocado Toast",
+          "price": "$8.95",
+          "desc": "Artisan toasted sourdough topped with spiced smashed avocado, chaat masala, pickled onions, and cilantro."
+        },
+        {
+          "name": "South Indian Filter Coffee",
+          "price": "$5.25",
+          "desc": "Traditional chicory-kissed slow-drip Indian coffee frothed with hot milk."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:00:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0558,
+    "longitude": -117.1812,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@chaiwaleandco",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1200,
+        "rangeStr": "8:00 AM – 8:00 PM"
+      }
+    }
+  },
+  {
+    "id": "one-more-bite-dumpling-palm-desert-92260",
+    "name": "One More Bite Dumpling House (Palm Desert)",
+    "cuisine": "Hand-Folded Xiao Long Bao (Soup Dumplings) & Artisan Dim Sum",
+    "regionalIdentity": "Scratch Shanghai Soup Dumpling & Dim Sum Kitchen (Coachella Valley)",
+    "tags": [
+      "chinese",
+      "pork",
+      "chicken",
+      "seafood",
+      "vegetarian-options",
+      "lunch",
+      "dinner",
+      "coffee_boba",
+      "soft_open"
+    ],
+    "price": 2,
+    "address": "73547 CA-111",
+    "city": "Palm Desert",
+    "state": "CA",
+    "zip": "92260",
+    "driveFrom91761": "65 min from 91761",
+    "phone": "(760) 895-8899",
+    "hours": "Daily 11:30am–9:00pm (Soft Open Now)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 Soft Open Now in Palm Desert",
+    "openedDate": "2026-11-12",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92260-OMB",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-11",
+      "portalUrl": "https://rivcoeh.org/"
+    },
+    "familyRoots": "Officially welcomed by the City of Palm Desert for its November 2026 soft opening, bringing an authentic glass-enclosed dumpling exhibition kitchen to the Coachella Valley.",
+    "scratchCommitment": "Every Xiao Long Bao soup dumpling, shrimp har gow, and crispy potsticker is hand-rolled, pleated, and steamed to order from scratch dough and slow-simmered collagen broth.",
+    "destinationDish": {
+      "name": "Hand-Pleated Pork & Black Truffle Xiao Long Bao (Soup Dumplings)",
+      "callout": "Delicate 18-pleat dumpling skins filled with heritage pork and rich, savory slow-simmered soup broth steamed in bamboo baskets."
+    },
+    "description": "Celebrating its soft opening at 73547 Hwy 111 in Palm Desert! One More Bite Dumpling House brings authentic hand-pleated Shanghai Xiao Long Bao soup dumplings, crystal shrimp har gow, beef noodle soups, and flaky baked egg tarts to the Coachella Valley.",
+    "story": "Diners can watch master dumpling chefs roll dough and pleat soup dumplings by hand right through the kitchen window. A 100% family-friendly dim sum destination.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Traditional Pork Xiao Long Bao (8 pcs)",
+          "price": "$13.95",
+          "desc": "Hand-pleated Shanghai soup dumplings bursting with rich savory broth and tender seasoned pork."
+        },
+        {
+          "name": "Black Truffle & Pork Xiao Long Bao (8 pcs)",
+          "price": "$15.95",
+          "desc": "Artisan soup dumplings infused with aromatic black truffle and slow-simmered bone broth."
+        },
+        {
+          "name": "Crispy Bottom Pan-Fried Pork Potstickers (6 pcs)",
+          "price": "$11.95",
+          "desc": "Handmade dumplings seared with a golden lacy snowflake crust."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Crystal Shrimp Har Gow & Pork Siu Mai Dim Sum Duo",
+          "price": "$13.50",
+          "desc": "Translucent pleated shrimp dumplings and open-top pork & shrimp siu mai steamed in bamboo."
+        },
+        {
+          "name": "Braised Beef Tendon & Brisket Noodle Soup",
+          "price": "$15.50",
+          "desc": "Slow-braised beef shank in aromatic star-anise broth over fresh noodles and bok choy."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Flaky Macau-Style Baked Egg Tarts (2 pcs)",
+          "price": "$5.95",
+          "desc": "Warm, caramelized custard baked inside a 100-layer flaky puff pastry shell."
+        },
+        {
+          "name": "Brown Sugar Boba Milk Tea",
+          "price": "$5.75",
+          "desc": "Warm tiger-striped brown sugar tapioca pearls with organic milk and Assam black tea."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:05:00Z",
+    "ratings": [],
+    "region": "Inland Empire & Coachella Valley",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.7222,
+    "longitude": -116.3814,
+    "opening_hour_minutes": 690,
+    "closing_hour_minutes": 1260,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 690,
+        "closeMin": 1260,
+        "rangeStr": "11:30 AM – 9:00 PM"
+      }
+    }
+  },
+  {
+    "id": "cloud-nine-espresso-beaumont-92223",
+    "name": "Cloud Nine Espresso (Downtown Beaumont)",
+    "cuisine": "Clean-Ingredient Specialty Coffee, Organic Syrups & Matcha",
+    "regionalIdentity": "Clean-Ingredient Specialty Espresso Bar (Beaumont / Pass Area)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "790 Beaumont Ave, Suite 102",
+    "city": "Beaumont",
+    "state": "CA",
+    "zip": "92223",
+    "driveFrom91761": "36 min from 91761",
+    "phone": "(909) 528-6920",
+    "hours": "Daily 6:00am–4:00pm (Grand Opening Nov 14–15)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🎉 Grand Opening Nov 14–15",
+    "openedDate": "2026-11-14",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92223-CNE",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-11-09",
+      "portalUrl": "https://rivcoeh.org/"
+    },
+    "familyRoots": "Established in 2023 as a beloved Pass Area mobile coffee cart and winner of the City of Beaumont's Downtown Business Attraction program, now celebrating its permanent storefront grand opening at 790 Beaumont Ave.",
+    "scratchCommitment": "100% clean ingredients: house-made organic syrups without artificial dyes, gums, or preservatives, paired with specialty small-batch roasted espresso and ceremonial matcha.",
+    "destinationDish": {
+      "name": "Signature Cloud Nine Cold Foam Latte & Clean-Ingredient Vanilla Bean Iced Espresso",
+      "callout": "Double-shot specialty espresso shaken with real Madagascar vanilla bean syrup and topped with velvety, dye-free sweet cream cold foam."
+    },
+    "description": "Grand Opening November 14–15, 2026 at 790 Beaumont Ave Suite 102! Cloud Nine Espresso brings clean-ingredient specialty coffee, scratch organic syrups, and ceremonial matcha to Downtown Beaumont from 6:00 AM to 4:00 PM daily.",
+    "story": "Built from the ground up with community support, Cloud Nine Espresso proves that specialty coffee tastes best when made with pure, clean, real-food ingredients.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Cloud Nine Signature Iced Latte",
+          "price": "$6.00",
+          "desc": "Specialty double espresso over clean milk of choice, house organic vanilla-honey syrup, and signature cloud cold foam."
+        },
+        {
+          "name": "Clean-Ingredient Brown Sugar Cinnamon Shaken Espresso",
+          "price": "$5.95",
+          "desc": "Espresso shaken vigorously with organic dark muscovado sugar, Ceylon cinnamon, and oat milk."
+        },
+        {
+          "name": "Ceremonial Organic Iced Matcha Cloud",
+          "price": "$6.25",
+          "desc": "First-harvest Japanese green tea whisked to order over ice with pure maple-vanilla cold foam."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "House-Brewed 20-Hour Cold Brew",
+          "price": "$5.00",
+          "desc": "Smooth, chocolatey single-origin cold brew steeped in filtered water."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Artisan Morning Pastries & Sourdough Croissants",
+          "price": "$4.75",
+          "desc": "Freshly baked flaky pastries delivered daily."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:10:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9295,
+    "longitude": -116.9772,
+    "opening_hour_minutes": 360,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@cloudninespresso",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 360,
+        "closeMin": 960,
+        "rangeStr": "6:00 AM – 4:00 PM"
+      }
+    }
+  },
+  {
+    "id": "stufft-doughnuts-inland-empire-91761",
+    "name": "Stufft Artisanal Brioche Doughnuts (@stufft_co)",
+    "cuisine": "Small-Batch Stuffed Brioche Bomboloni Doughnuts",
+    "regionalIdentity": "Cult-Favorite Inland Empire Small-Batch Brioche Donut Pop-Up (Ontario Ranch / Redlands / Riverside)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "4258 E Ontario Ranch Rd (Fri) · 2064 Orange Tree Ln Redlands (Sat) · 300 Mt Vernon Riverside (Sun)",
+    "city": "Ontario",
+    "state": "CA",
+    "zip": "91761",
+    "driveFrom91761": "5 min from 91761",
+    "phone": "",
+    "website": "https://www.stufftco.com",
+    "hours": "Fri 8:00am (Ontario Ranch) · Sat 9:00am (Redlands) · Sun 3:00pm (Riverside) until sold out",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 New Weekly Menu Drop",
+    "openedDate": "2026-11-13",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92501-STF",
+      "agency": "Inland Empire Environmental Health Permitted Bakery",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-20",
+      "portalUrl": "https://rivcoeh.org/"
+    },
+    "familyRoots": "Founded in July 2024 by Inland Empire couple Ashley and Leonard, who started with a few dozen handmade doughnuts on a street corner and built a massive local following across Ontario Ranch, Redlands, and Riverside.",
+    "scratchCommitment": "24-hour cold-fermented pillowy brioche dough fried fresh each morning and hand-stuffed with Madagascar vanilla cream, organic strawberries, coconut sticky rice, and Callebaut chocolate ganache.",
+    "destinationDish": {
+      "name": "Strawberry Bomb & Mango Sticky Rice Brioche Doughnut",
+      "callout": "Pillowy powdered brioche stuffed with Madagascar vanilla whipped cream and fresh organic strawberries, or coconut sticky rice with mango glaze."
+    },
+    "description": "Inland Empire's most sought-after small-batch stuffed brioche doughnuts by Ashley & Leonard! Catch their weekly drops in Ontario Ranch (Fridays 8am at 4258 E Ontario Ranch Rd), Redlands (Saturdays 9am at Citrus Blossom Market), and Riverside (Sundays 3pm at 300 Mt Vernon Ave).",
+    "story": "Every week brings new pastry-chef fillings like Cereal Milk Fruity Pebbles, Oreo Cheesecake, Cherry Tart, and Lotus Biscoff—selling out fast each morning.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Strawberry Bomb Brioche Doughnut",
+          "price": "$5.75",
+          "desc": "Madagascar vanilla whipped cream and fresh sliced organic strawberries sandwiched inside powdered brioche."
+        },
+        {
+          "name": "Mango Sticky Rice Brioche Doughnut",
+          "price": "$5.75",
+          "desc": "Filled with coconut sticky rice, mango glaze, mango whipped cream, mango coulis, and toasted sesame seeds."
+        },
+        {
+          "name": "Oreo Cheesecake & Cereal Milk Doughnuts (New Drop)",
+          "price": "$5.75",
+          "desc": "Whipped Oreo cheesecake cream or Fruity Pebbles cereal milk cream with white chocolate glaze."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Lotus Biscoff Ganache Doughnut",
+          "price": "$5.75",
+          "desc": "Filled with Biscoff cookie butter cream, glazed in Biscoff ganache, and crowned with speculoos cookies."
+        },
+        {
+          "name": "Callebaut Chocolate Eclair & Cherry Tart Doughnut",
+          "price": "$5.75",
+          "desc": "Rich vanilla bean pastry cream with Belgian Callebaut chocolate ganache or cherry pie filling with lemon zest glaze."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:15:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "San Bernardino",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0035,
+    "longitude": -117.5582,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@stufft_co",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 960,
+        "rangeStr": "8:00 AM – Sold Out"
+      }
+    }
+  },
+  {
+    "id": "lunas-sunday-cafe-moreno-valley-92553",
+    "name": "Luna's Sunday Cafe (Moreno Valley)",
+    "cuisine": "Hand-Whisked Matcha, Mini Concha Lattes & Homemade Syrups",
+    "regionalIdentity": "Family-Run Pop-Up Turned Brick-and-Mortar Specialty Cafe (Moreno Valley)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "mexican",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "22500 Town Circle, Suite 1099",
+    "city": "Moreno Valley",
+    "state": "CA",
+    "zip": "92553",
+    "driveFrom91761": "32 min from 91761",
+    "phone": "(951) 867-9009",
+    "website": "https://www.lunasundaycafe.com",
+    "hours": "Mon–Sat 10:00am–8:00pm · Sun 11:00am–7:00pm",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ Newly Opened Storefront",
+    "openedDate": "2026-11-01",
+    "healthPermit": {
+      "facilityId": "RIVCO-DEH-92553-LSC",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-25",
+      "portalUrl": "https://rivcoeh.org/"
+    },
+    "familyRoots": "Started as a Sunday backyard family pop-up in Moreno Valley and grew through word-of-mouth community love into a bustling brick-and-mortar specialty cafe.",
+    "scratchCommitment": "Small-batch homemade syrups, hand-whisked ceremonial matcha, real layered banana pudding, and fresh mini Mexican concha pan dulce perched atop iced lattes.",
+    "destinationDish": {
+      "name": "Mini Concha Mazapán Latte & 'The Stuart' Banana Pudding Matcha",
+      "callout": "Iced specialty latte or ceremonial matcha layered with real banana pudding, crushed Nilla wafers, or crowned with a warm mini Mexican concha."
+    },
+    "description": "From a beloved Sunday pop-up to Moreno Valley's favorite independent specialty coffee and matcha bar! Luna's Sunday Cafe crafts viral Mini Concha Lattes, 'The Stuart' Banana Pudding Matcha, and Fresas Con Crema drinks with house-made syrups.",
+    "story": "Every cup is stamped 'Support Your Local Coffee Dealer' and built with creative layers of cookie butter, brown sugar cold foam, and fresh bakery treats.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Stuart (Banana Pudding Latte or Matcha)",
+          "price": "$6.50",
+          "desc": "Vanilla-bean base with choice of milk, layered with real house banana pudding and topped with crushed Nilla wafers."
+        },
+        {
+          "name": "Mini Concha Specialty Iced Latte",
+          "price": "$6.75",
+          "desc": "Rich Latin espresso over ice with cinnamon-brown-sugar cold foam, crowned with a fresh mini Mexican concha pastry."
+        },
+        {
+          "name": "La Luna Cinnamon Brown Sugar Latte",
+          "price": "$6.00",
+          "desc": "House cinnamon syrup latte topped with velvety brown sugar soft top and dusted cinnamon."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Fresas Con Crema Iced Matcha",
+          "price": "$6.50",
+          "desc": "Hand-whisked ceremonial matcha layered over house strawberry cream."
+        },
+        {
+          "name": "Mazapán & Cookie Butter Iced Latte",
+          "price": "$6.25",
+          "desc": "Blended with real crushed peanut mazapán or speculoos cookie butter crumble."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:20:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.9375,
+    "longitude": -117.2695,
+    "opening_hour_minutes": 600,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@lunassundaycafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1200,
+        "rangeStr": "10:00 AM – 8:00 PM"
+      }
+    }
+  },
+  {
+    "id": "rashfa-cafe-falls-church-va-22046",
+    "name": "Rashfa Yemeni Coffee & Cafe (Falls Church)",
+    "cuisine": "Authentic Yemeni Spiced Coffee, Adeni Tea & Flaky Sabayah",
+    "regionalIdentity": "Independent Yemeni Coffee Roaster & Halal Weekend Breakfast House (Northern Virginia)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "tea",
+      "breakfast",
+      "brunch",
+      "halal",
+      "mediterranean",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 2,
+    "address": "310A S Washington St",
+    "city": "Falls Church",
+    "state": "VA",
+    "zip": "22046",
+    "driveFrom91761": "Northern Virginia / DC Metro",
+    "phone": "(804) 412-6027",
+    "website": "https://rashfacoffeeco.com",
+    "hours": "Daily 8:00am–11:00pm (Grand Opening Sat — First 100 Free Drink)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🎉 Grand Opening Sat (First 100 Free Drink)",
+    "openedDate": "2026-11-14",
+    "healthPermit": {
+      "facilityId": "FXCO-HD-22046-RSH",
+      "agency": "Fairfax County Health Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-05",
+      "portalUrl": "https://www.fairfaxcounty.gov/health/food"
+    },
+    "familyRoots": "Founded by Abdulrahman Al Harethi to bring centuries-old Yemeni mountain coffee heritage, warm hospitality, and late-night alcohol-free community gathering to Falls Church.",
+    "scratchCommitment": "Single-origin Yemeni coffee beans roasted and ground with whole green cardamom pods, cinnamon, and ginger; 300-layer flaky Sabayah pastry baked fresh; and weekend Yemeni breakfasts.",
+    "destinationDish": {
+      "name": "Traditional Mofawar Cardamom Coffee, Adeni Spiced Tea & Flaky Honey Sabayah",
+      "callout": "Aromatic medium-roast Yemeni coffee brewed with cardamom and cream, paired with multi-layered flaky Sabayah pastry drizzled with raw honey."
+    },
+    "description": "Celebrating its Grand Opening this Saturday at 310A S. Washington St in Falls Church, VA (First 100 customers receive a free drink)! Rashfa Cafe serves authentic Yemeni Mofawar coffee, spiced Adeni milk tea, flaky Sabayah pastry, and weekend Yemeni breakfasts until 11:00 PM daily.",
+    "story": "Designed with traditional woven majlis seating and warm brass accents, Rashfa offers Northern Virginia families and students a vibrant, 100% halal, alcohol-free social coffeehouse.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Mofawar Yemeni Cardamom & Cream Coffee",
+          "price": "$6.50",
+          "desc": "Traditional medium-roast Yemeni coffee simmered with freshly ground cardamom and rich cream."
+        },
+        {
+          "name": "Spiced Adeni Milk Tea (Shai Adeni)",
+          "price": "$5.95",
+          "desc": "Slow-brewed black tea infused with cardamom, cinnamon, nutmeg, cloves, and condensed milk."
+        },
+        {
+          "name": "Traditional Flaky Sabayah Pastry with Honey",
+          "price": "$10.00",
+          "desc": "Warm, golden multi-layered Yemeni flatbread pastry brushed with ghee, black seed, and raw honey."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Rashfa Signature Spiced Latte",
+          "price": "$6.25",
+          "desc": "Double espresso steamed with velvety milk, house cardamom syrup, and cinnamon."
+        },
+        {
+          "name": "Saffron & Pistachio Tres Leches Milk Cake",
+          "price": "$7.50",
+          "desc": "Airy sponge cake soaked in saffron-infused three-milk reduction."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:25:00Z",
+    "ratings": [],
+    "region": "Washington DC & DMV Metro",
+    "county": "Fairfax",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 38.8808,
+    "longitude": -77.1742,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1380,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dinner",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@rashfausa",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/New_York",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1380,
+        "rangeStr": "8:00 AM – 11:00 PM"
+      }
+    }
+  },
+  {
+    "id": "the-cupcake-route-hanford-93230",
+    "name": "The Cupcake Route Bakery (Hanford)",
+    "cuisine": "Scratch Small-Batch Cupcakes & Celebration Bakery",
+    "regionalIdentity": "Beloved Mobile Cupcake Truck Turned Brick-and-Mortar Bakery (Central Valley)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "1675 W Lacey Blvd",
+    "city": "Hanford",
+    "state": "CA",
+    "zip": "93230",
+    "driveFrom91761": "Central Valley, CA",
+    "phone": "(559) 707-2253",
+    "website": "https://thecupcakeroute.co",
+    "hours": "Tue–Sat 10:00am–6:00pm (or until sold out · Just Opened!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🎉 Grand Opening Week!",
+    "openedDate": "2026-11-11",
+    "healthPermit": {
+      "facilityId": "KCDPH-EH-93230-TCR",
+      "agency": "Kings County Department of Public Health",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-11-06",
+      "portalUrl": "https://www.kcdph.com"
+    },
+    "familyRoots": "Established in 2012 as a beloved Central Valley cupcake truck, The Cupcake Route just celebrated the grand opening of its first permanent brick-and-mortar bakery on W. Lacey Blvd in November 2026.",
+    "scratchCommitment": "Small-batch cupcakes baked fresh every morning from real butter, Madagascar vanilla, and scratch buttercreams until sold out.",
+    "destinationDish": {
+      "name": "Scratch Gourmet Cupcake Half-Dozen Box",
+      "callout": "Six rotating daily scratch-baked cupcakes ($3.50 each / $18 half-dozen / $35 dozen) topped with towering swirls of real buttercream."
+    },
+    "description": "Finally open at 1675 W. Lacey Blvd in Hanford! After years as the Central Valley's favorite cupcake route truck, their brand-new storefront serves scratch-baked gourmet cupcakes ($3.50 each, $18 for 6, $35 for a dozen) until sold out daily.",
+    "story": "Families lined up right after the Veterans Day parade to celebrate their opening day. Every batch is frosted by hand in small quantities.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Scratch Gourmet Single Cupcake (Rotating Daily Flavors)",
+          "price": "$3.50",
+          "desc": "Fresh-baked daily flavors including Red Velvet Cream Cheese, Wedding Cake Almond, Cookies & Cream, and Salted Caramel."
+        },
+        {
+          "name": "The Cupcake Route 6-Pack Box",
+          "price": "$18.00",
+          "desc": "Mix-and-match half dozen of today's freshly frosted showcase cupcakes."
+        },
+        {
+          "name": "Baker's Dozen / 12-Pack Celebration Box",
+          "price": "$35.00",
+          "desc": "Full dozen assorted gourmet cupcakes ideal for family gatherings and office celebrations."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:30:00Z",
+    "ratings": [],
+    "region": "Central Valley",
+    "county": "Kings",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 36.3275,
+    "longitude": -119.6685,
+    "opening_hour_minutes": 600,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "coffee"
+    ],
+    "meal_types": [
+      "lunch",
+      "coffee"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thecupcakeroute",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1080,
+        "rangeStr": "10:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1080,
+        "rangeStr": "10:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1080,
+        "rangeStr": "10:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1080,
+        "rangeStr": "10:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 600,
+        "closeMin": 1080,
+        "rangeStr": "10:00 AM – 6:00 PM"
+      }
+    }
+  },
+  {
+    "id": "nudes-yogurt-beverly-grove-90048",
+    "name": "nudes Mediterranean Frozen Yogurt (Beverly Grove)",
+    "cuisine": "Strained Mediterranean Soft-Serve Yogurt, Halva & Baklava Toppings",
+    "regionalIdentity": "Artisanal Protein-Rich Mediterranean Soft-Serve Bar (Los Angeles / Beverly Grove)",
+    "tags": [
+      "dessert",
+      "vegan",
+      "vegetarian-options",
+      "mediterranean",
+      "kosher",
+      "just_opened"
+    ],
+    "price": 2,
+    "address": "165 S Crescent Heights Blvd",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90048",
+    "driveFrom91761": "52 min from 91761",
+    "phone": "(323) 900-4800",
+    "website": "https://www.nudesyogurt.com",
+    "hours": "Daily 12:00pm–10:30pm (Newly Opened!)",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ Newly Opened in LA",
+    "openedDate": "2026-10-15",
+    "healthPermit": {
+      "facilityId": "LACO-DPH-90048-NDS",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-12",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/"
+    },
+    "familyRoots": "Created by Jason Afriat and Sasha Solonin in Beverly Grove to replace artificial powdered froyo chains with authentic, strained Mediterranean yogurt and culinary-grade toppings.",
+    "scratchCommitment": "Zero powdered mixes: thick, protein-rich strained yogurt and plant-based coconut/vegan chocolate swirls topped with Turkish halva, cold-pressed extra-virgin olive oil, pistachio cream, and crushed baklava.",
+    "destinationDish": {
+      "name": "Plain Tart Swirl with Turkish Halva, Cold-Pressed Olive Oil, Raw Honey & Pistachios",
+      "callout": "Velvety strained tart frozen yogurt drizzled with fruity olive oil, whipped raw honey, flaky sea salt, shredded sesame halva, and roasted pistachios."
+    },
+    "description": "Newly opened at 165 S. Crescent Heights Blvd in Beverly Grove! nudes reinvents frozen yogurt with strained, protein-rich Mediterranean soft serve (Plain Tart, Pomegranate, Vegan Chocolate & Coconut) paired with Turkish halva, crushed baklava, pistachio cream, and cold-pressed olive oil.",
+    "story": "Look under your cup on grand opening weeks for hidden surprise stickers! A clean-ingredient, culinary-driven dessert experience minutes from LACMA and The Grove.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Mediterranean Signature Cup (Plain Tart + Halva & Olive Oil)",
+          "price": "$9.50",
+          "desc": "Original strained tart frozen yogurt topped with shredded sesame halva, raw honey, extra-virgin olive oil, and crushed pistachios."
+        },
+        {
+          "name": "Baklava & Pistachio Cream Swirl",
+          "price": "$9.95",
+          "desc": "Strained yogurt crowned with crispy honey-walnut baklava crumbles and rich Sicilian pistachio cream."
+        },
+        {
+          "name": "Pomegranate & Vegan Dark Chocolate Twist",
+          "price": "$8.95",
+          "desc": "Dairy-free dark chocolate and tangy pomegranate soft serve topped with dates, dried figs, and flaky sea salt."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:35:00Z",
+    "ratings": [],
+    "region": "Los Angeles",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0736,
+    "longitude": -118.3692,
+    "opening_hour_minutes": 720,
+    "closing_hour_minutes": 1350,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@nudesyogurt",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 720,
+        "closeMin": 1350,
+        "rangeStr": "12:00 PM – 10:30 PM"
+      }
+    }
+  },
+  {
+    "id": "eternal-flavors-bakery-denver-80210",
+    "name": "Eternal Flavors Bakery (South Broadway Denver)",
+    "cuisine": "Mexican-Owned Family Bakery, Legendary Spring Fling Cake & Espresso",
+    "regionalIdentity": "Award-Winning Mexican-American Family Cake & Pastry House (Denver Platt Park)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "mexican",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 2,
+    "address": "1886 S Broadway",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80210",
+    "driveFrom91761": "Denver Metro, CO",
+    "phone": "(720) 328-4510",
+    "website": "https://eternalflavorsbakery.square.site",
+    "hours": "Tue–Sat 8:00am–6:00pm · Sun 9:00am–4:00pm · Closed Mon",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ New S. Broadway Location",
+    "openedDate": "2026-10-20",
+    "healthPermit": {
+      "facilityId": "DDPHE-80210-EFB",
+      "agency": "Denver Department of Public Health & Environment",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-18",
+      "portalUrl": "https://www.denvergov.org/Government/Agencies-Departments-Offices/Public-Health-Environment"
+    },
+    "familyRoots": "A proud Mexican-owned family bakery helmed by master baker Melchor Ocampo (who spent decades crafting cakes at Denver's historic Market at Larimer Square) alongside his family.",
+    "scratchCommitment": "Strictly small-batch family baking—never bulk or factory-made. Famous for keeping Denver's iconic zucchini-based Spring Fling cake alive both whole and by the slice.",
+    "destinationDish": {
+      "name": "The Legendary 'Spring Fling' Fresh Fruit Zucchini Cake Slice & Teddy Graham Latte",
+      "callout": "Moist spiced zucchini cake layered with tangy cream cheese frosting and piled high with glazed fresh strawberries, kiwi, blueberries, and mango."
+    },
+    "description": "Voted Westword's Best Bakery for Cakes! Now open in their new South Broadway home (1886 S. Broadway, Denver), Melchor Ocampo and family bake Denver's legendary Spring Fling Cake by the slice, Mango Cream Cakes, and craft lattes from scratch.",
+    "story": "When The Market at Larimer Square closed after 40 years, Denver locals thought the famous Spring Fling cake was gone forever—until its original baker Melchor Ocampo opened Eternal Flavors Bakery with his family.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Legendary 'Spring Fling' Cake (Generous Slice)",
+          "price": "$7.50",
+          "desc": "Melchor Ocampo's famous moist zucchini cake layered with house cream cheese frosting and loaded with fresh glazed berries and tropical fruit."
+        },
+        {
+          "name": "Fresh Mango Cream Cake Slice",
+          "price": "$7.25",
+          "desc": "Light sponge layered with whipped mango mousse and fresh sweet ataulfo mangoes."
+        },
+        {
+          "name": "Oreo Red Velvet Cake Slice",
+          "price": "$7.25",
+          "desc": "Classic cocoa red velvet layered with cookies-and-cream frosting and crunchy Oreo pieces."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Teddy Graham Cinnamon Honey Latte",
+          "price": "$5.95",
+          "desc": "Double espresso steamed with honey-cinnamon milk and topped with graham cracker crumble."
+        },
+        {
+          "name": "Banana Foster Iced Matcha",
+          "price": "$6.25",
+          "desc": "Ceremonial matcha layered over caramelized banana brown-sugar cream."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:40:00Z",
+    "ratings": [],
+    "region": "Denver Metro",
+    "county": "Denver",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 39.6826,
+    "longitude": -104.9872,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@eternalflavorsbakery",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Denver",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "1": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 480,
+        "closeMin": 1080,
+        "rangeStr": "8:00 AM – 6:00 PM"
+      }
+    }
+  },
+  {
+    "id": "tashtea-cafe-nashville-37013",
+    "name": "TashTea Cafe: Kurdish & Turkish Breakfast House (Nashville)",
+    "cuisine": "Traditional Kurdish & Turkish Kahvalti Breakfast Spreads, Borek & Sand Coffee",
+    "regionalIdentity": "Authentic Kurdish & Turkish Family Breakfast & Tea House (Nashville / Little Kurdistan)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba",
+      "tea",
+      "mediterranean",
+      "halal",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 2,
+    "address": "5372 Mount View Rd",
+    "city": "Antioch",
+    "state": "TN",
+    "zip": "37013",
+    "driveFrom91761": "Nashville Metro, TN",
+    "phone": "(615) 490-6553",
+    "website": "https://www.tashtea.com",
+    "hours": "Mon–Tue & Thu–Fri 7:30am–4:30pm · Sat–Sun 8:00am–5:00pm · Closed Wed (New Expansion Opening!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 New Dining Expansion & Menu",
+    "openedDate": "2026-11-12",
+    "healthPermit": {
+      "facilityId": "MPHD-37013-TTC",
+      "agency": "Metro Nashville Public Health Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-28",
+      "portalUrl": "https://www.nashville.gov/departments/health"
+    },
+    "familyRoots": "A cornerstone of South Nashville's vibrant Kurdish and Turkish community, expanding in November 2026 with a brand-new dining room sign, extra family seating, and new traditional menu items.",
+    "scratchCommitment": "Fresh homemade flatbreads, flaky hand-rolled spinach and cheese börek, slow-simmered Menemen skillet eggs, and pots of loose-leaf Kurdish tea.",
+    "destinationDish": {
+      "name": "Family-Size Kurdish & Turkish Kahvalti Breakfast Spread + Cardamom Latte",
+      "callout": "A lavish table platter of fresh-baked bread, Menemen skillet eggs, spiced Sujuk sausage, flaky cheese börek, kuymak fondue, honeycomb butter, olives, and Kurdish tea."
+    },
+    "description": "Celebrating its brand-new expansion at 5372 Mount View Rd in Nashville (Antioch 37013)! TashTea Cafe serves authentic Kurdish and Turkish Kahvalti family breakfast spreads, skillet Menemen, flaky house-baked börek, sand-brewed Turkish coffee, and spiced Cardamom Lattes.",
+    "story": "100% family-friendly and alcohol-free, TashTea brings the unhurried warmth of a traditional Middle Eastern morning tea house to Nashville.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "TashTea Traditional Kahvalti Spread (For 2)",
+          "price": "$34.00",
+          "desc": "Artisanal cheeses, olives, honeycomb & butter, grape molasses, kuymak, fresh cheese/spinach börek, tomatoes, cucumbers, house bread, and choice of Menemen or Sujuk eggs."
+        },
+        {
+          "name": "Skillet Menemen with House-Baked Bread",
+          "price": "$12.95",
+          "desc": "Eggs slow-cooked in olive oil with ripe tomatoes, green peppers, melted cheese, and warm spices."
+        },
+        {
+          "name": "Sahanda Sujuklu Yumurta (Spiced Turkish Sausage & Eggs)",
+          "price": "$13.50",
+          "desc": "Pan-seared halal beef sujuk sausage with sunny-side eggs and warm homemade bread."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Fresh-Baked Flaky Börek (Cheese, Spinach, or Potato)",
+          "price": "$7.95",
+          "desc": "Crispy layered phyllo pastry baked golden to order."
+        },
+        {
+          "name": "Iced Cardamom TashTea Latte & Pot of Kurdish Tea",
+          "price": "$5.75",
+          "desc": "Signature espresso infused with aromatic cardamom or a steaming pot of traditional Kurdish black/apple tea."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:45:00Z",
+    "ratings": [],
+    "region": "Nashville Metro",
+    "county": "Davidson",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 36.0465,
+    "longitude": -86.6432,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 990,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@tashteacafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Chicago",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "3": {
+        "closed": true,
+        "openMin": null,
+        "closeMin": null,
+        "rangeStr": "Closed"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 450,
+        "closeMin": 990,
+        "rangeStr": "7:30 AM – 4:30 PM"
+      }
+    }
+  },
+  {
+    "id": "coffee-boss-downtown-el-paso-79901",
+    "name": "Coffee Boss (New Downtown El Paso Flagship — Coming Soon)",
+    "cuisine": "Mexican Specialty Coffee, Abuelita Lattes & Gansito Frappes",
+    "regionalIdentity": "Beloved 915 Coffee Truck Expanding to a Brick-and-Mortar Downtown Storefront (El Paso)",
+    "tags": [
+      "coffee",
+      "coffee_boba",
+      "breakfast",
+      "brunch",
+      "mexican",
+      "dessert",
+      "coming_soon_cafe",
+      "opening_soon"
+    ],
+    "price": 1,
+    "address": "107 S Kansas St",
+    "city": "El Paso",
+    "state": "TX",
+    "zip": "79901",
+    "driveFrom91761": "El Paso, TX",
+    "phone": "(915) 209-9150",
+    "hours": "Coming Soon — New Downtown Storefront (Flagship Truck at 4020 Dyer St Open Now)",
+    "comingSoon": true,
+    "comingSoonLabel": "⏳ Coming Soon · New Downtown El Paso Storefront",
+    "launchStatus": "opening_soon",
+    "launchLabel": "⏳ Opening Soon · New Downtown Storefront",
+    "openedDate": "2026-11-25",
+    "healthPermit": {
+      "facilityId": "EP-DPH-79901-CB",
+      "agency": "City of El Paso Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-30",
+      "portalUrl": "https://www.elpasotexas.gov/public-health/"
+    },
+    "familyRoots": "Born in Northeast El Paso as a hustling local coffee truck at 4020 Dyer St, Coffee Boss (@coffeeboss915) is turning their dream into reality with a brand-new industrial-glass storefront in Downtown El Paso.",
+    "scratchCommitment": "100% Mexican specialty coffee beans roasted for bold crema, blended with authentic Abuelita chocolate, Mazapán peanut candy, and Gansito snack cake creations.",
+    "destinationDish": {
+      "name": "The Boss Latte, Abuelita Mexican Mocha & Gansito Frappe",
+      "callout": "Rich Mexican espresso steamed with spiced Abuelita chocolate or blended into an indulgent Gansito snack-cake frappe."
+    },
+    "description": "Coming Soon to 107 S. Kansas St in Downtown El Paso! After winning over the 915 from their Northeast coffee truck on Dyer St, Coffee Boss (@coffeeboss915) is opening a stunning new brick-and-mortar café serving Mexican roast espresso, Abuelita Lattes, Boss Lattes, and Gansito creations.",
+    "story": "Follow their build-out as they transform a historic downtown glass garage storefront into El Paso's premier independent Mexican coffee hub.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "The Signature Boss Latte",
+          "price": "$5.95",
+          "desc": "Double-shot Mexican specialty espresso with house sweetened condensed milk blend and cinnamon cold foam."
+        },
+        {
+          "name": "Abuelita Mexican Hot/Iced Latte",
+          "price": "$6.25",
+          "desc": "Espresso infused with authentic spiced Mexican Abuelita chocolate and velvety milk."
+        },
+        {
+          "name": "Gansito Cake Frappe",
+          "price": "$6.75",
+          "desc": "Blended iced coffee creation layered with strawberry jam, chocolate drizzle, whipped cream, and a real Gansito pastry."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T06:50:00Z",
+    "ratings": [],
+    "region": "West Texas & El Paso",
+    "county": "El Paso",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "coming_soon",
+    "latitude": 31.7587,
+    "longitude": -106.4869,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 1140,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@coffeeboss915",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Denver",
+    "weeklySchedule": {
+      "0": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "1": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "2": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "3": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "4": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "5": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
+      },
+      "6": {
+        "closed": false,
+        "openMin": 420,
+        "closeMin": 1140,
+        "rangeStr": "7:00 AM – 7:00 PM"
       }
     }
   }

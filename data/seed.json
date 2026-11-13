@@ -1,5 +1,172 @@
 [
   {
+    "id": "mi-latte-cafe-woodburn-or-97071",
+    "name": "Mi Latte Cafe — Specialty Matcha, Espresso & Croffles (Grand Opening Nov 15)",
+    "cuisine": "Specialty Coffee, Matcha & Croffle Cafe",
+    "regionalIdentity": "Independent Willamette Valley Specialty Matcha & Espresso Bar",
+    "city": "Woodburn",
+    "state": "OR",
+    "zip": "97071",
+    "county": "Marion County",
+    "region": "Pacific Northwest",
+    "address": "960 N Pacific Hwy, Woodburn, OR 97071",
+    "lat": 45.153,
+    "lng": -122.849,
+    "phone": "",
+    "price": 1,
+    "hours": "Mon–Fri 8:30 AM – 4:30 PM; Sat 10:00 AM – 4:30 PM; Sun 10:00 AM – 4:30 PM (Grand Opening Sun Nov 15 at 10:00 AM)",
+    "opening_hour_minutes": 510,
+    "closing_hour_minutes": 990,
+    "timezone": "America/Los_Angeles",
+    "is_active": true,
+    "isIndependent": true,
+    "ownerVerified": false,
+    "verifiedPhoto": false,
+    "freshlyAdded": true,
+    "launchStatus": "soft_open",
+    "openedDate": "2026-11-13",
+    "createdAt": "2026-11-13",
+    "pricesVerified": "November 2026",
+    "healthPermit": {
+      "grade": "A",
+      "score": 99,
+      "agency": "Marion County Environmental Health",
+      "status": "Verified Active"
+    },
+    "holidaySpecial": {
+      "title": "🎀 Official Grand Opening Celebration — Sunday, Nov 15 at 10:00 AM!",
+      "details": "Celebrate Mi Latte Cafe's official Grand Opening in Woodburn, Oregon on Sunday, November 15th starting at 10:00 AM! Come enjoy handcrafted fruit-foam matcha lattes, specialty espresso drinks, and warm pressed Nutella & strawberry croffles."
+    },
+    "scratchCommitment": "Hand-whisked ceremonial matcha layered with house-whipped fruit cold foams, small-batch espresso lattes, and golden croissant-waffles (croffles) pressed to order with fresh berries and cream.",
+    "description": "Woodburn, Oregon's beloved independent coffee and matcha bar (@milatte.co), celebrating its official Grand Opening on Sunday, November 15 at 10:00 AM with signature layered matcha lattes, artisanal espresso, and fresh-pressed sweet croffles.",
+    "story": "Built from the ground up through months of late nights and dedication to bringing specialty coffee and authentic matcha culture to Woodburn, Mi Latte Cafe has grown from a local favorite into a full-fledged community gathering spot.",
+    "destinationDish": {
+      "name": "Strawberry Cold Foam Ceremonial Matcha Latte & Fresh Berry Croffle",
+      "whyWorthDrive": "Woodburn's go-to independent cafe for vibrant fruit-foam layered matcha and warm, caramelized croissant-waffles."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Strawberry Cream Cold Foam Matcha Latte",
+          "price": "$6.50",
+          "desc": "Whisked ceremonial matcha over milk, topped with a thick ribbon of house-whipped sweet strawberry cold foam."
+        },
+        {
+          "name": "Nutella & Fresh Strawberry Pressed Croffle",
+          "price": "$7.50",
+          "desc": "Buttery flaky croissant dough caramelized in a waffle iron and topped with warm Nutella, sliced strawberries, and powdered sugar."
+        },
+        {
+          "name": "Berries & Sweet Cream Croffle",
+          "price": "$7.50",
+          "desc": "Crisp-on-the-outside, tender-on-the-inside croissant waffle crowned with fresh seasonal berries and house whipped cream."
+        },
+        {
+          "name": "Signature Mi Latte Dulce Espresso",
+          "price": "$6.00",
+          "desc": "Rich double-shot espresso steamed or iced with house caramelized sweet milk and warming cinnamon notes."
+        }
+      ]
+    },
+    "tags": [
+      "coffee_boba",
+      "soft_open",
+      "opening_soon",
+      "new_openings",
+      "breakfast",
+      "lunch",
+      "bakery",
+      "matcha",
+      "coffee",
+      "kid-friendly",
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "cinnapop-cafe-sacramento-95814",
+    "name": "Cinnapop Cafe — Handcrafted Cinnamon Rolls & Matcha (Soft Opening)",
+    "cuisine": "Artisanal Bakery, Cinnamon Rolls & Matcha Cafe",
+    "regionalIdentity": "Sacramento Farmers Market Pop-Up Turned Brick-and-Mortar Bakery",
+    "city": "Sacramento",
+    "state": "CA",
+    "zip": "95814",
+    "county": "Sacramento County",
+    "region": "Northern California",
+    "address": "611 16th St, Sacramento, CA 95814",
+    "lat": 38.5828,
+    "lng": -121.4844,
+    "phone": "",
+    "price": 1,
+    "hours": "Mon–Sun 11:00 AM – 8:00 PM (Soft Opening Starting Nov 13)",
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1200,
+    "timezone": "America/Los_Angeles",
+    "is_active": true,
+    "isIndependent": true,
+    "ownerVerified": false,
+    "verifiedPhoto": false,
+    "freshlyAdded": true,
+    "launchStatus": "soft_open",
+    "openedDate": "2026-11-13",
+    "createdAt": "2026-11-13",
+    "pricesVerified": "November 2026",
+    "healthPermit": {
+      "grade": "A",
+      "score": 99,
+      "agency": "Sacramento County EMD",
+      "status": "Pass / Verified Active"
+    },
+    "scratchCommitment": "Small-batch brioche cinnamon rolls proofed and baked fresh daily by 15-year master baker Tola Vong and Chhayleang Tang, topped with house-whipped ube, matcha, Dubai chocolate kataifi, and cream cheese frostings alongside ceremonial matcha lattes.",
+    "description": "Founded by husband-and-wife team Tola Vong and Chhayleang Tang after building a devoted following at Sacramento farmers markets, Cinnapop Cafe brings freshly baked gourmet cinnamon rolls, ceremonial matcha drinks, and soft-serve ice cream to Midtown Sacramento (611 16th St).",
+    "story": "After 15 years perfecting scratch baking and winning over Sacramento farmers markets as a beloved pop-up, Tola Vong and Chhayleang Tang officially opened the doors to their first brick-and-mortar storefront in Midtown on November 13.",
+    "destinationDish": {
+      "name": "Warm Ube & Matcha Frosted Brioche Cinnamon Rolls + Ceremonial Matcha Latte",
+      "whyWorthDrive": "Pillowy soft, fresh-out-of-the-oven cinnamon rolls glazed to order with creative dessert toppings like Chocolate Dubai, Ube, Tiramisu, and Matcha."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Warm Matcha & Ube Frosted Cinnamon Roll",
+          "price": "$6.50",
+          "desc": "Fluffy scratch-baked cinnamon roll swirled with brown sugar cinnamon and topped with rich ube or ceremonial matcha cream frosting."
+        },
+        {
+          "name": "Chocolate Dubai Pistachio Kataifi Cinnamon Roll",
+          "price": "$7.50",
+          "desc": "Freshly baked cinnamon roll loaded with crispy toasted kataifi pastry, pistachio cream, and Belgian chocolate drizzle."
+        },
+        {
+          "name": "Tiramisu & Oreo Cream Cinnamon Roll",
+          "price": "$6.75",
+          "desc": "Espresso-kissed mascarpone cream or crushed Oreo cookies over a warm, gooey house cinnamon roll."
+        },
+        {
+          "name": "Iced Ceremonial Matcha Latte",
+          "price": "$6.25",
+          "desc": "Whisked ceremonial-grade green tea poured over cold milk, perfectly balanced to pair with a warm cinnamon roll."
+        },
+        {
+          "name": "Artisanal Soft-Serve & Cinnamon Roll Swirl",
+          "price": "$6.95",
+          "desc": "Creamy house soft-serve ice cream served alongside or swirled over a warm freshly baked cinnamon roll."
+        }
+      ]
+    },
+    "tags": [
+      "coffee_boba",
+      "soft_open",
+      "new_openings",
+      "breakfast",
+      "lunch",
+      "late-night",
+      "bakery",
+      "matcha",
+      "cinnamon-rolls",
+      "kid-friendly",
+      "vegetarian"
+    ]
+  },
+  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",

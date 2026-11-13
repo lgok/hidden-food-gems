@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 206+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 102 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 208+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 104 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -7,6 +7,8 @@
 - Sister Family Events Platform: https://www.letsgetoutkids.com (Verified kid-friendly events, seasonal festivals, and upcoming family attractions).
 
 ## Featured Soft Openings & Newly Opened Gems
+- Mi Latte Cafe — Specialty Matcha, Espresso & Croffles (Grand Opening Nov 15) (Woodburn, OR 97071) [🔥 Soft Open Now]: https://www.hiddenfoodgem.com/gem/mi-latte-cafe-woodburn-or-97071
+- Cinnapop Cafe — Handcrafted Cinnamon Rolls & Matcha (Soft Opening) (Sacramento, CA 95814) [🔥 Soft Open Now]: https://www.hiddenfoodgem.com/gem/cinnapop-cafe-sacramento-95814
 - Chaiwale & Co. (Historic State St Redlands) (Redlands, CA 92373) [🔥 Soft Open Now on State St]: https://www.hiddenfoodgem.com/gem/chaiwale-and-co-redlands-92373
 - One More Bite Dumpling House (Palm Desert) (Palm Desert, CA 92260) [🔥 Soft Open Now in Palm Desert]: https://www.hiddenfoodgem.com/gem/one-more-bite-dumpling-palm-desert-92260
 - Cloud Nine Espresso (Downtown Beaumont) (Beaumont, CA 92223) [🎉 Grand Opening Nov 14–15]: https://www.hiddenfoodgem.com/gem/cloud-nine-espresso-beaumont-92223
@@ -32,7 +34,7 @@
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (311 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (315 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801

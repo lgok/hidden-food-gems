@@ -28,8 +28,8 @@
     "familyRoots": "Independent Downtown Riverside family roastery celebrating Latin American single-origin coffees, handcrafted Mazapán and Dulce de Leche lattes, and fresh pastries.",
     "scratchCommitment": "In-house roasted Arabica beans sourced directly from Latin American farms, scratch Mexican piloncillo-cinnamon syrups, and baked Mexican sweet breads.",
     "destinationDish": {
-      "name": "Signature Iced Mazapán Latte & Guava Cheese Pastelito",
-      "callout": "Double shot of rich espresso blended with sweet crushed peanut mazapán and creamy oat milk, paired with flaky guava pastry."
+      "name": "Holiday & Seasonal Lineup: Gingerbread Latte, Banana Cream Pie Latte, Cookie Butter Lover Latte & Strawberry Matcha",
+      "callout": "Handcrafted seasonal Gingerbread, Banana Cream Pie, and Cookie Butter Lover espresso lattes alongside layered Strawberry Matcha and famous Iced Mazapán Latte."
     },
     "description": "Downtown Riverside's premier independent specialty coffeehouse on the historic Main Street pedestrian mall, celebrated for creative Latin lattes, cold brew, and pastries.",
     "story": "Molinos Coffee is the living room of downtown Riverside, where community members, students, and families gather over expertly roasted coffees made with pride.",
@@ -38,20 +38,34 @@
     "structuredMenu": {
       "signatures": [
         {
+          "name": "Gingerbread Holiday Latte",
+          "price": ".25",
+          "desc": "House-roasted espresso steamed or iced with warm spiced gingerbread reduction, cinnamon, and velvety foam."
+        },
+        {
+          "name": "Banana Cream Pie Latte",
+          "price": ".50",
+          "desc": "Double espresso layered with house banana cream pie sweetness, vanilla wafer notes, and creamy cold foam."
+        },
+        {
+          "name": "Cookie Butter Lover Latte",
+          "price": ".50",
+          "desc": "Rich single-origin espresso blended with caramelized speculoos cookie butter and topped with cookie crumble."
+        },
+        {
+          "name": "Layered Strawberry Matcha",
+          "price": ".50",
+          "desc": "Ceremonial-grade whisked green tea matcha poured over real strawberry purée and milk over ice."
+        },
+        {
           "name": "Festival of Lights Reserved Holiday Experience & Specialty Latte",
-          "price": "$25.00",
-          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights.",
-          "description": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
+          "price": ".00",
+          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
         },
         {
-          "name": "Famous Iced Mazapán Latte",
-          "price": "$5.50",
-          "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
-        },
-        {
-          "name": "Café de Olla Latte",
-          "price": "$5.25",
-          "desc": "Espresso infused with raw piloncillo cane sugar, Mexican cinnamon, and cloves with steamed milk."
+          "name": "Famous Iced Mazapán Latte & Café de Olla",
+          "price": ".75",
+          "desc": "Double espresso with house-ground Mexican peanut mazapán candy or spiced piloncillo-cinnamon Café de Olla."
         }
       ],
       "regionalClassics": [

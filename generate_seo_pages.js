@@ -619,7 +619,7 @@ ${ga4AndOutboundScriptHtml}
         <a href="${esc(interactiveUrl)}" class="btn">💎 Launch Interactive Menu &amp; Live Clock</a>
         ${r.phone ? `<a href="tel:${esc(r.phone.replace(/[^0-9+]/g, ""))}" class="btn btn-outline">📞 Call ${esc(r.phone)}</a>` : ""}
         <a href="${esc(mapsUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🗺️ Turn-by-Turn Directions</a>
-        <a href="mailto:letsgetoutkids@gmail.com?subject=${encodeURIComponent(`Photo & Video Submission: ${r.name} (${r.city})`)}&body=${encodeURIComponent(`Hi HiddenFoodGem.com Team,\n\nHere are our official photos/videos to feature on our ${r.name} (${r.city}) page:\nhttps://www.hiddenfoodgem.com/gem/${r.id}\n\nThank you!`)}" class="btn btn-outline" style="border-color:rgba(245,194,107,0.55);color:#fde047">📸 Owner? Email Photos &amp; Video</a>
+        <a href="mailto:letsgetoutkids@gmail.com?subject=${encodeURIComponent(`Photo & Video Submission: ${r.name} (${r.city})`)}&body=${encodeURIComponent(`Hi HiddenFoodGem.com & LetsGetOutKids.com Team,\n\nHere are our official photos/videos (or neighborhood special) to feature on our ${r.name} (${r.city}) page:\nhttps://www.hiddenfoodgem.com/gem/${r.id}\n\nThank you!`)}" class="btn btn-outline" style="border-color:rgba(245,194,107,0.55);color:#fde047">📸 Owner? Email Photos &amp; Video</a>
         ${r.healthPermit && r.healthPermit.InspectorUrl ? `<a href="${esc(r.healthPermit.InspectorUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🛡️ Verify ${esc(r.healthPermit.agency || "County")} Health Permit</a>` : ""}
       </div>
     </article>

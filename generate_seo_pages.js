@@ -100,32 +100,16 @@ const getDishName = (r) => {
   return r.destinationDish || r.structuredMenu?.signatures?.[0]?.name || "House Specialties";
 };
 
-const getSeoLaunchInfo = (r) => {
+const getSeoLaunchInfo = (r, now = new Date()) => {
   if (!r) return null;
   const st = r.launchStatus || (r.comingSoon ? "opening_soon" : "");
-  if (st === "soft_open") {
-    const label = r.launchLabel || "🔥 Soft Open Now";
-    return {
-      stage: "soft_open",
-      priority: 4,
-      label,
-      titleSuffix: "Soft Opening, Menu & Hours",
-      metaPrefix: `🔥 SOFT OPEN NOW (${label.replace(/^[^\w]+/, "")}): `,
-      pillHtml: `<span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">${esc(label)}</span>`,
-      cardBadgeHtml: `<span style="background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
-    };
-  }
-  if (st === "just_opened") {
-    const label = r.launchLabel || "✨ Newly Opened";
-    return {
-      stage: "just_opened",
-      priority: 3,
-      label,
-      titleSuffix: "Newly Opened Menu, Hours & Location",
-      metaPrefix: `✨ NEWLY OPENED (${label.replace(/^[^\w]+/, "")}): `,
-      pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
-      cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
-    };
+  const refDateStr = r.openedDate || (r.launchStatus ? r.createdAt : null);
+  let daysSinceOpen = null;
+  if (refDateStr) {
+    const parsed = new Date(refDateStr);
+    if (!isNaN(parsed.getTime())) {
+      daysSinceOpen = (now.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24);
+    }
   }
   if (st === "opening_soon" || r.comingSoon) {
     const label = r.launchLabel || r.comingSoonLabel || "⏳ Opening Soon";
@@ -138,6 +122,48 @@ const getSeoLaunchInfo = (r) => {
       pillHtml: `<span class="pill" style="background:rgba(245,158,11,0.22);color:#fbbf24;border-color:#f59e0b">${esc(label)}</span>`,
       cardBadgeHtml: `<span style="background:#f59e0b;color:#1a100a;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
     };
+  }
+  if (st === "soft_open") {
+    if (daysSinceOpen === null || daysSinceOpen <= 14) {
+      const label = r.launchLabel || "🔥 Soft Open Now";
+      return {
+        stage: "soft_open",
+        priority: 4,
+        label,
+        titleSuffix: "Soft Opening, Menu & Hours",
+        metaPrefix: `🔥 SOFT OPEN NOW (${label.replace(/^[^\w]+/, "")}): `,
+        pillHtml: `<span class="pill" style="background:rgba(249,115,22,0.22);color:#fdba74;border-color:#f97316">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    if (daysSinceOpen <= 45) {
+      const label = "✨ Newly Opened";
+      return {
+        stage: "just_opened",
+        priority: 3,
+        label,
+        titleSuffix: "Newly Opened Menu, Hours & Location",
+        metaPrefix: `✨ NEWLY OPENED: `,
+        pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    return null;
+  }
+  if (st === "just_opened") {
+    if (daysSinceOpen === null || daysSinceOpen <= 45) {
+      const label = r.launchLabel || "✨ Newly Opened";
+      return {
+        stage: "just_opened",
+        priority: 3,
+        label,
+        titleSuffix: "Newly Opened Menu, Hours & Location",
+        metaPrefix: `✨ NEWLY OPENED (${label.replace(/^[^\w]+/, "")}): `,
+        pillHtml: `<span class="pill" style="background:rgba(52,211,153,0.2);color:#6ee7b7;border-color:#10b981">${esc(label)}</span>`,
+        cardBadgeHtml: `<span style="background:rgba(16,185,129,0.25);color:#6ee7b7;border:1px solid #10b981;padding:2px 9px;border-radius:999px;font-weight:800;margin-right:6px;display:inline-block">${esc(label)}</span>`,
+      };
+    }
+    return null;
   }
   return null;
 };
@@ -1190,7 +1216,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 155+ verified independent family-run restaurants across 73 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=114" />
+  <link rel="stylesheet" href="/styles.css?v=115" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -1289,8 +1315,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=114"></script>
-  <script defer src="/gems-client.js?v=114"></script>
+  <script defer src="/seed-data.js?v=115"></script>
+  <script defer src="/gems-client.js?v=115"></script>
 </body>
 </html>
 `;

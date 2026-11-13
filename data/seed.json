@@ -30163,5 +30163,130 @@
         "closeMin": 840
       }
     }
+  },
+  {
+    "id": "corona-asian-food-festival-citrus-park-92881",
+    "name": "Corona Asian Food Festival at Citrus Park (Dec 12–13 Pop-Up Showcase)",
+    "cuisine": "40+ Independent Asian Street Food, Boba, Dumpling, Skewers & Dessert Vendors",
+    "regionalIdentity": "Free Family-Friendly Weekend Asian Street Food & Night Market Pop-Up (Corona, CA)",
+    "tags": [
+      "lunch",
+      "dinner",
+      "dessert",
+      "boba",
+      "coffee_boba",
+      "asian",
+      "coming_soon_cafe",
+      "opening_soon"
+    ],
+    "price": 1,
+    "address": "1250 Santana Way (Citrus Park)",
+    "city": "Corona",
+    "state": "CA",
+    "zip": "92881",
+    "driveFrom91761": "20 min from 91761",
+    "phone": "(951) 736-2241",
+    "website": "https://www.instagram.com/asianglowfestca/",
+    "hours": "Sat Dec 12 & Sun Dec 13, 2026: 2:00pm–10:00pm (Free Admission · Family-Friendly)",
+    "comingSoon": true,
+    "comingSoonLabel": "🏮 Dec 12–13, 2026 · Free Family Food Fest (2pm–10pm)",
+    "launchStatus": "opening_soon",
+    "launchLabel": "🏮 Dec 12–13 · Free Asian Food Fest",
+    "openedDate": "2026-12-12",
+    "healthPermit": {
+      "facilityId": "RIVCO-TFF-92881-CAFF",
+      "agency": "Riverside County Department of Environmental Health (Permitted Community Event)",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-10",
+      "portalUrl": "https://rivcoeh.org/"
+    },
+    "familyRoots": "Hosted by Asian Glow Fest CA (@asianglowfestca) at Corona’s Citrus Park, bringing together over 40 independent mom-and-pop Asian street food kitchens, boba bars, and dessert makers.",
+    "scratchCommitment": "Fresh-grilled yakitori and street skewers, hand-folded dumplings, takoyaki,tanghulu fruit skewers, fresh sugarcane juice, and handcrafted boba milk teas made to order on-site.",
+    "destinationDish": {
+      "name": "40+ Mom & Pop Asian Street Food Stalls: Fresh Dumplings, Takoyaki, Skewers, Tanghulu & Craft Boba",
+      "callout": "Free-admission family food festival at Citrus Park featuring 40+ local Asian street food, boba, and dessert pop-up kitchens."
+    },
+    "description": "Coming December 12–13, 2026 (2:00 PM – 10:00 PM) to Citrus Park (1250 Santana Way, Corona, CA 92881)! The Corona Asian Food Festival (@asianglowfestca) is a FREE, family-friendly weekend food festival showcasing 40+ independent Asian street food vendors, boba tea bars, desserts, kids bounce Zone, and cultural performances.",
+    "story": "A celebration of independent Inland Empire & SoCal Asian culinary entrepreneurs—100% free entry for families in Corona.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Artisan Asian Street Skewers & Yakitori",
+          "price": ".00",
+          "desc": "Charcoal-grilled marinated skewers glazed to order by independent street food vendors."
+        },
+        {
+          "name": "Hand-Pinched Dumplings & Takoyaki",
+          "price": ".00",
+          "desc": "Pan-seared potstickers, bao buns, and griddled Japanese takoyaki topped with bonito flakes."
+        },
+        {
+          "name": "Fresh Fruit Tanghulu & Mochi Donuts",
+          "price": ".00",
+          "desc": "Glass-candied fresh strawberry & grape skewers and warm chewy mochi donuts."
+        },
+        {
+          "name": "Handcrafted Brown Sugar Boba & Sugarcane Juice",
+          "price": ".00",
+          "desc": "Fresh-pressed sugarcane juice and small-batch boba milk teas."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:05:00Z",
+    "ratings": [],
+    "region": "Inland Empire",
+    "county": "Riverside",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "coming_soon",
+    "latitude": 33.8654,
+    "longitude": -117.5355,
+    "opening_hour_minutes": 840,
+    "closing_hour_minutes": 1320,
+    "serves_breakfast": false,
+    "meals": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "lunch",
+      "dinner",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@asianglowfestca",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 840,
+        "closeMin": 1320
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "closed": true
+      },
+      "3": {
+        "closed": true
+      },
+      "4": {
+        "closed": true
+      },
+      "5": {
+        "closed": true
+      },
+      "6": {
+        "openMin": 840,
+        "closeMin": 1320
+      }
+    }
   }
 ]

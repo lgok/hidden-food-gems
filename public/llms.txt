@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 201+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 97 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 202+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 98 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -23,11 +23,12 @@
 - Bobo Cha Bar (New Vineyard Ave Flagship — Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · New Vineyard Ave Location]: https://www.hiddenfoodgem.com/gem/bobo-cha-bar-vineyard-ontario-91761
 - The Sipz Bar (Ontario Ranch — Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · Ontario Ranch]: https://www.hiddenfoodgem.com/gem/the-sipz-bar-ontario-ranch-91761
 - Coffee Boss (New Downtown El Paso Flagship — Coming Soon) (El Paso, TX 79901) [⏳ Opening Soon · New Downtown Storefront]: https://www.hiddenfoodgem.com/gem/coffee-boss-downtown-el-paso-79901
+- Corona Asian Food Festival at Citrus Park (Dec 12–13 Pop-Up Showcase) (Corona, CA 92881) [🏮 Dec 12–13 · Free Asian Food Fest]: https://www.hiddenfoodgem.com/gem/corona-asian-food-festival-citrus-park-92881
 
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (301 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (303 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801
@@ -58,4 +59,4 @@
   - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
   - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878
-  - Dallas, TX (75208): https://www.hiddenfoodgem.com/cities/dallas-tx-75208
+  - Corona, CA (92881): https://www.hiddenfoodgem.com/cities/corona-ca-92881

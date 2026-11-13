@@ -30550,5 +30550,140 @@
         "closeMin": 960
       }
     }
+  },
+  {
+    "id": "con-azucar-cafe-santa-cruz-95060",
+    "name": "Con Azúcar Café (Downtown Santa Cruz — Soft Open Now)",
+    "cuisine": "Mexican Specialty Coffee, Café de Olla, Concha Gigante & Tortas",
+    "regionalIdentity": "Vibrant Mexican-Owned Cultura & Specialty Coffee House on Pacific Ave (Santa Cruz)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "mexican",
+      "bakery",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "825 Pacific Ave",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "zip": "95060",
+    "driveFrom91761": "Monterey Bay / Santa Cruz, CA",
+    "phone": "(831) 295-6140",
+    "website": "https://www.instagram.com/santacruzconazucarcafe/",
+    "hours": "Daily 7:30am–6:00pm (Soft Open Now · Grand Opening Ribbon Cutting Sat Nov 21 at 11am!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 Soft Open · Grand Opening Nov 21",
+    "openedDate": "2026-11-12",
+    "spotlightStartDate": "2026-11-13",
+    "healthPermit": {
+      "facilityId": "SCC-EH-95060-CAC",
+      "agency": "Santa Cruz County Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-06",
+      "portalUrl": "https://scceh.com/Home/Programs/Consumer-Protection/Food-Safety.aspx"
+    },
+    "familyRoots": "A proud Mexican-owned specialty coffee and pan dulce house (@santacruzconazucarcafe) bringing warm Mexican cultura, Frida Kahlo mural art, and traditional family recipes to 825 Pacific Ave in Downtown Santa Cruz.",
+    "scratchCommitment": "Spiced piloncillo & cinnamon Café de Olla, Dulce de Leche lattes, fresh-baked Conchas (including the famous shareable Concha Gigante), and toasted telera Tortas de Jamón.",
+    "destinationDish": {
+      "name": "Café de Olla, Iced Dulce de Leche Latte, Concha Gigante & Torta de Jamón",
+      "callout": "Traditional cinnamon-piloncillo Café de Olla or Dulce de Leche Latte paired with warm Mexican pan dulce conchas."
+    },
+    "description": "Soft Open now at 825 Pacific Ave in Downtown Santa Cruz (95060), with its official Grand Opening & Ribbon Cutting Ceremony on Saturday, November 21 at 11:00 AM! Con Azúcar Café (@santacruzconazucarcafe) serves authentic Café de Olla, Dulce de Leche Lattes, nostalgic street-style Chocomil, Concha Gigante sweet bread, and savory Tortas de Jamón.",
+    "story": "100% family-friendly and alcohol-free, Con Azúcar Café celebrates Mexican heritage through specialty espresso and panadería classics in the heart of Downtown Santa Cruz.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Iced Dulce de Leche Latte / Café de Olla",
+          "price": ".25",
+          "desc": "Rich Mexican espresso crafted with caramelized dulce de leche or spiced piloncillo and Ceylon cinnamon."
+        },
+        {
+          "name": "Concha Gigante & Mini Pan Dulce Bag",
+          "price": ".50",
+          "desc": "Soft, pillowy traditional Mexican sweet bread topped with crunchy vanilla or chocolate sugar-shell crust."
+        },
+        {
+          "name": "Torta de Jamón on Toasted Telera",
+          "price": ".50",
+          "desc": "Warm telera roll layered with savory ham, queso fresco, avocado, tomato, onion, and pickled jalapeño."
+        },
+        {
+          "name": "Traditional Street-Style Chocomil",
+          "price": ".75",
+          "desc": "Nostalgic Mexican frothed chocolate milk served in a classic tied bag with a straw."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:13:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "Santa Cruz",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 36.9708,
+    "longitude": -122.0251,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@santacruzconazucarcafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "1": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "2": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "3": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "4": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "5": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "6": {
+        "openMin": 450,
+        "closeMin": 1080
+      }
+    }
   }
 ]

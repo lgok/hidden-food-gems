@@ -30039,5 +30039,129 @@
         "closeMin": 1065
       }
     }
+  },
+  {
+    "id": "butter-and-crumble-san-francisco-94133",
+    "name": "Butter & Crumble (North Beach San Francisco Viennoiserie & Espresso)",
+    "cuisine": "Artisan Laminated Croissants, Seasonal Viennoiserie, Crumble Rolls & Craft Espresso",
+    "regionalIdentity": "Woman-Owned Cult-Favorite Laminated Pastry & Espresso Bakery (North Beach, SF)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "french",
+      "vegetarian-options"
+    ],
+    "price": 2,
+    "address": "271 Francisco St",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94133",
+    "driveFrom91761": "Bay Area, CA",
+    "phone": "(415) 757-0827",
+    "website": "https://www.butterandcrumble.com",
+    "hours": "Thu–Sun 9:00am–Sold Out (Typically 1:30pm · Closed Mon–Wed · Closed Nov 26–29 for Thanksgiving)",
+    "healthPermit": {
+      "facilityId": "SFDPH-94133-BC",
+      "agency": "San Francisco Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-09-24",
+      "portalUrl": "https://www.sfdph.org/dph/eh/food/"
+    },
+    "familyRoots": "Founded by pastry chef Sophie Smith (@butter.and.crumble), who grew a cottage pop-up into North Beach’s most sought-after corner viennoiserie bakery at 271 Francisco St.",
+    "scratchCommitment": "Multi-day laminated French butter doughs with shatteringly crisp honeycomb layers, house-made seasonal curds, compotes, pistachio pesto, and toasted streusel crumbles.",
+    "destinationDish": {
+      "name": "November Spiced Crumble Cinnamon Roll, Banana Cream Laminated Danish & The Morty P Croissant",
+      "callout": "Shatteringly crisp laminated pastry crowned with banana cream & marshmallow or swirled with brown-butter cinnamon crumble, alongside a La Marzocco craft latte."
+    },
+    "description": "Located at 271 Francisco St in San Francisco’s North Beach (94133)! Butter & Crumble (@butter.and.crumble) is chef Sophie Smith’s acclaimed small-batch viennoiserie and espresso bar, drawing neighborhood lines for its rotating monthly laminated pastries, brown-butter cinnamon crumble rolls, savory Morty P croissants, and specialty coffee.",
+    "story": "Every month brings a brand-new seasonal menu compilation—100% independent, scratch-laminated daily, and paired with local specialty espresso.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Brown-Butter Cinnamon Crumble Roll",
+          "price": ".50",
+          "desc": "Brioche-laminated swirl topped with velvety cream cheese frosting and crunchy brown-butter streusel crumble."
+        },
+        {
+          "name": "Banana Cream & Toasted Marshmallow Danish",
+          "price": ".25",
+          "desc": "Shard-flaky laminated pastry filled with banana pastry cream, whipped chantilly, banana slice & crumble."
+        },
+        {
+          "name": "The Morty P Savory Croissant",
+          "price": ".75",
+          "desc": "Signature savory laminated pastry filled with house pistachio pesto, mortadella, and aged Gruyère."
+        },
+        {
+          "name": "La Marzocco Seasonal Craft Latte",
+          "price": ".25",
+          "desc": "Local micro-roasted espresso pulled to order with velvety steamed milk or over ice."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T19:58:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "San Francisco",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 37.8047,
+    "longitude": -122.4095,
+    "opening_hour_minutes": 540,
+    "closing_hour_minutes": 840,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@butter.and.crumble",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "closed": true
+      },
+      "3": {
+        "closed": true
+      },
+      "4": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "5": {
+        "openMin": 540,
+        "closeMin": 840
+      },
+      "6": {
+        "openMin": 540,
+        "closeMin": 840
+      }
+    }
   }
 ]

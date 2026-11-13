@@ -1190,7 +1190,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 155+ verified independent family-run restaurants across 73 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=106" />
+  <link rel="stylesheet" href="/styles.css?v=112" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -1254,8 +1254,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=111"></script>
-  <script defer src="/gems-client.js?v=111"></script>
+  <script defer src="/seed-data.js?v=112"></script>
+  <script defer src="/gems-client.js?v=112"></script>
 </body>
 </html>
 `;

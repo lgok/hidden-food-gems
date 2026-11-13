@@ -1525,10 +1525,19 @@
         <div class="filters-inner">
           <div class="meal-tabs-wrap">
             <div class="meal-tabs" id="meal-tabs" role="tablist" aria-label="Filter by Meal Time">
-              ${MEAL_TABS.map(([k, l, emo]) => `
+              ${MEAL_TABS.map(([k, l, emo]) => {
+                const pillTag = k === 'soft_open'
+                  ? '<span class="tab-cta-pill">HOT</span>'
+                  : k === 'opening_soon'
+                    ? '<span class="tab-cta-pill">SOON</span>'
+                    : k === 'coffee_boba'
+                      ? '<span class="tab-cta-pill">TOP 5</span>'
+                      : '';
+                return `
                 <button type="button" role="tab" class="meal-tab ${state.mealTab === k ? 'active' : ''}" data-meal="${k}" aria-selected="${state.mealTab === k}">
-                  <span class="cute-tab-icon">${emo}</span><span class="meal-label">${l}</span>
-                </button>`).join('')}
+                  <span class="cute-tab-icon">${emo}</span><span class="meal-label">${l}</span>${pillTag}
+                </button>`;
+              }).join('')}
             </div>
           </div>
           <div class="filter-bar">

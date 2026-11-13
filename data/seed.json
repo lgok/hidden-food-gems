@@ -1,5 +1,91 @@
 [
   {
+    "id": "eternal-flavors-bakery-denver-80227",
+    "name": "Eternal Flavors Bakery (Bear Valley Denver)",
+    "cuisine": "Artisan European-Style Fruit Cakes, Pastry Counter & Specialty Espresso Cafe",
+    "regionalIdentity": "Family-Owned Denver Bakery Home of the Iconic Spring Fling Cake (W Dartmouth Ave)",
+    "tags": [
+      "bakery",
+      "coffee",
+      "espresso",
+      "breakfast",
+      "latte"
+    ],
+    "price": 1,
+    "address": "5600 W Dartmouth Ave, Unit 104",
+    "city": "Denver",
+    "zip": "80227",
+    "driveFrom91761": "Denver, CO Gem (80227)",
+    "phone": "(720) 309-4721",
+    "hours": "Tue–Sat 6:00am–5:00pm; Sun 9:00am–4:00pm (Closed Mon)",
+    "healthPermit": {
+      "facilityId": "DDPHE-80227-EFB104",
+      "agency": "Denver Department of Public Health & Environment",
+      "grade": "A",
+      "score": 100,
+      "inspectedOn": "2026-10-22",
+      "portalUrl": "https://www.denvergov.org"
+    },
+    "familyRoots": "Founded in Southwest Denver by veteran master baker Melchor Ocampo (who spent decades perfecting Denver's legendary fruit-stacked Spring Fling Cake) alongside his family.",
+    "scratchCommitment": "Every cake sponge, fruit compote, mousse, cream puff, eclair, and house coffee syrup (like apple caramel butter and banana foster) is crafted from scratch in-house daily.",
+    "destinationDish": {
+      "name": "Signature Spring Fling Cake Slice & Iced Teddy Graham Latte",
+      "callout": "Moist zucchini-spice cake layered with scratch cream cheese frosting and piled high with fresh strawberries, kiwi, mango, and blueberries — available by the slice alongside a honey-foam Teddy Graham Latte."
+    },
+    "description": "Beloved family-owned Denver artisan bakery and sit-down coffeehouse at 5600 W Dartmouth Ave, Unit 104 (80227), famous for keeping Denver's iconic fruit-stacked Spring Fling Cake alive by the slice alongside scratch pastries and creative espresso drinks.",
+    "story": "When Denver's historic Market on Larimer Square closed, master baker Melchor Ocampo opened Eternal Flavors Bakery with his family so locals could still enjoy the authentic Spring Fling Cake, European fruit mousse cakes, and a cozy neighborhood cafe with plenty of seating and parking.",
+    "image": "",
+    "photos": [],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Iconic Spring Fling Cake (Generous Walk-In Slice)",
+          "price": ".75",
+          "desc": "Moist zucchini-spice cake layered with cream cheese frosting and loaded inside and out with fresh strawberries, mango, kiwi, and blueberries."
+        },
+        {
+          "name": "Teddy Graham Iced Latte",
+          "price": ".25",
+          "desc": "Double-shot espresso over ice with brown sugar cinnamon and house-whipped honey cold foam."
+        },
+        {
+          "name": "Fresh Strawberry Mousse or Mango Cake Slice",
+          "price": ".50",
+          "desc": "Light, not-too-sweet European sponge cake layered with real fruit mousse and fresh glazed fruit."
+        }
+      ],
+      "regionalClassics": [
+        {
+          "name": "Red Velvet Oreo Cream Cake Slice",
+          "price": ".50",
+          "desc": "Velvety cocoa sponge layered with Oreo cream filling and crunchy cookie pieces."
+        },
+        {
+          "name": "Scratch French Eclair or Cream Puff",
+          "price": ".25",
+          "desc": "Choux pastry baked fresh each morning and filled with scratch pastry cream."
+        }
+      ],
+      "sidesAndDrinks": [
+        {
+          "name": "Apple Crisp Chai or Banana Foster Matcha",
+          "price": ".50",
+          "desc": "Spiced chai with house apple caramel butter syrup, or ceremonial matcha over scratch banana foster syrup."
+        }
+      ]
+    },
+    "media": [],
+    "sample": false,
+    "featured": true,
+    "dateAdded": "2026-11-13",
+    "createdAt": "2026-11-13T20:12:00.000Z",
+    "ratings": [],
+    "region": "Denver Metro",
+    "county": "Denver",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open"
+  },
+  {
     "id": "molinos-coffee-riverside-92501",
     "name": "Molinos Coffee (Downtown Riverside)",
     "cuisine": "Artisan Latin-Inspired Micro-Roaster & Cafe",
@@ -30286,6 +30372,268 @@
       "6": {
         "openMin": 840,
         "closeMin": 1320
+      }
+    }
+  },
+  {
+    "id": "ladd-coffee-west-covina-91790",
+    "name": "LADD Coffee (West Covina Korean Cream-Top Coffee & Brioche Donuts)",
+    "cuisine": "Korean Einspänner Cream-Top Coffee, Iced Cookie Butta Lattes & Cream Brioche Donuts",
+    "regionalIdentity": "Independent Korean Specialty Cream-Coffee & Small-Batch Donut Bar (West Covina, SGV)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "korean",
+      "bakery",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "987 S Glendora Ave, Unit 3",
+    "city": "West Covina",
+    "state": "CA",
+    "zip": "91790",
+    "driveFrom91761": "22 min from 91761",
+    "phone": "(626) 699-1088",
+    "website": "https://www.instagram.com/ladd.coffee/",
+    "hours": "Daily 8:00am–8:00pm",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ SGV Cream-Coffee Gem",
+    "openedDate": "2026-10-25",
+    "healthPermit": {
+      "facilityId": "LAC-DPH-91790-LC",
+      "agency": "Los Angeles County Department of Public Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-14",
+      "portalUrl": "http://publichealth.lacounty.gov/eh/inspection/grading-posting-requirements-retail-food-facilities.htm"
+    },
+    "familyRoots": "An independent Korean-inspired specialty coffee counter at 987 S. Glendora Ave in West Covina (@ladd.coffee) with a relaxed turf-grass outdoor patio and blue-and-white tile espresso bar.",
+    "scratchCommitment": "Medium-dark Colombia/Brazil espresso & single-origin Kyoto cold brew topped with house-whipped sea-salt sweet cream, alongside small-batch hand-filled cream brioche donuts.",
+    "destinationDish": {
+      "name": "Iced Cookie Butta Latte, TYS (Treat Yo Self) Sea-Salt Einspänner & Matcha Crème Brûlée Donut",
+      "callout": "Rich espresso or Kyoto cold brew crowned with thick house-whipped sweet cream or speculoos cookie butter, paired with a small-batch cream-filled donut."
+    },
+    "description": "Located at 987 S. Glendora Ave, Unit 3 in West Covina (91790)! LADD Coffee (@ladd.coffee) is an independent Korean specialty cream-coffee and pastry bar famous for its Iced Cookie Butta Latte, TYS (Treat Yo Self) sea-salt cream coffee, Matcha Einspänner, Raspberry Danish Buns, and hand-filled brioche donuts.",
+    "story": "With its chill turf-grass outdoor patio and sippable sweet-cream Einspänner builds, LADD Coffee has quickly become a West Covina & San Gabriel Valley destination.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Iced Cookie Butta Latte",
+          "price": ".50",
+          "desc": "Signature espresso over ice blended with rich speculoos cookie butter and velvety cream."
+        },
+        {
+          "name": "TYS (Treat Yo Self) Sea-Salt Cream Coffee",
+          "price": ".25",
+          "desc": "Cold coffee crowned with a thick layer of house sweet cream and a pinch of sea salt—meant to be sipped straight from the rim."
+        },
+        {
+          "name": "Matcha Einspänner",
+          "price": ".50",
+          "desc": "Ceremonial-grade whisked matcha layered under pillowy house-whipped sweet cream."
+        },
+        {
+          "name": "Small-Batch Hand-Filled Cream Donut / Raspberry Danish Bun",
+          "price": ".25",
+          "desc": "Rotating small-batch brioche donuts filled with Strawberry Cream, Matcha Crème Brûlée, or Boston Cream."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:08:00Z",
+    "ratings": [],
+    "region": "San Gabriel Valley",
+    "county": "Los Angeles",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 34.0581,
+    "longitude": -117.9261,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 1200,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@ladd.coffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "1": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "2": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "3": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "4": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "5": {
+        "openMin": 480,
+        "closeMin": 1200
+      },
+      "6": {
+        "openMin": 480,
+        "closeMin": 1200
+      }
+    }
+  },
+  {
+    "id": "farmers-daughter-coffee-queen-creek-85142",
+    "name": "Farmer’s Daughter Coffee & Bakery at Schnepf Farms (Queen Creek, AZ)",
+    "cuisine": "Farmhouse Craft Espresso, Cold Foam Lattes, Scratch Peach Pies & Cinnamon Rolls",
+    "regionalIdentity": "New Family-Owned Farm Patio Coffee Shop & Scratch Country Bakery (Queen Creek, AZ)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "american",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "24810 S Rittenhouse Rd (Schnepf Farms Bakery Patio)",
+    "city": "Queen Creek",
+    "state": "AZ",
+    "zip": "85142",
+    "driveFrom91761": "Phoenix East Valley, AZ",
+    "phone": "(480) 987-3100",
+    "website": "https://schnepffarms.com",
+    "hours": "Thu–Sun 8:00am–4:00pm · Closed Mon–Wed (Free Farm Entry & Parking!)",
+    "launchStatus": "just_opened",
+    "launchLabel": "🌻 New Farm Patio Coffee Shop",
+    "openedDate": "2026-10-28",
+    "healthPermit": {
+      "facilityId": "MCESD-85142-FDC",
+      "agency": "Maricopa County Environmental Services Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-22",
+      "portalUrl": "https://www.maricopa.gov/5328/Food-Restaurants"
+    },
+    "familyRoots": "Located on the rustic wood-porch patio of 4th-generation family-run Schnepf Farms in Queen Creek (@farmersdaughter.coffee), inviting families to sip craft coffee under the trees while kids enjoy the petting zoo, jumping pillows, playground, and train ride.",
+    "scratchCommitment": "House-made seasonal syrups, graham-crumble cold foams, and farm-baked scratch peach pies, giant cinnamon rolls, and biscuits & gravy made fresh every Thursday through Sunday morning.",
+    "destinationDish": {
+      "name": "Graham-Crumble Cold Foam Iced Latte, Scratch Farm Cinnamon Roll & Famous Schnepf Peach Pie",
+      "callout": "Iced farmhouse espresso topped with sweet cream cold foam and graham cracker crumble, paired with a warm scratch-baked farm pastry."
+    },
+    "description": "Open Thu–Sun (8:00 AM – 4:00 PM) at Schnepf Farms (24810 S. Rittenhouse Rd, Queen Creek, AZ 85142)! Farmer’s Daughter Coffee (@farmersdaughter.coffee) is a charming new farmhouse patio coffee shop and scratch bakery offering house-syrup lattes, cold foam brews, warm cinnamon rolls, peach pies, and free admission to the farm’s petting zoo and playground.",
+    "story": "100% family-friendly and alcohol-free, Farmer’s Daughter Coffee turns a morning coffee run into a full family farm outing in Queen Creek.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Farmer’s Daughter Cold Foam Iced Latte",
+          "price": ".25",
+          "desc": "Rich espresso over ice crowned with velvety house sweet cream cold foam and toasted crumble."
+        },
+        {
+          "name": "Scratch Farmhouse Giant Cinnamon Roll",
+          "price": ".75",
+          "desc": "Baked fresh in the Schnepf Farms country bakery and slathered with warm vanilla icing."
+        },
+        {
+          "name": "Famous Schnepf Farms Scratch Peach Pie Slice",
+          "price": ".50",
+          "desc": "Made with orchard-grown Schnepf Farms peaches inside a flaky hand-rolled butter crust."
+        },
+        {
+          "name": "Farm-Fresh Biscuits & Gravy / Breakfast Sandwich",
+          "price": ".50",
+          "desc": "Served starting at 8:00 AM from the farm bakery kitchen alongside craft espresso and matcha."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:10:00Z",
+    "ratings": [],
+    "region": "Phoenix Metro",
+    "county": "Maricopa",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.2238,
+    "longitude": -111.5992,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@farmersdaughter.coffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Phoenix",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "closed": true
+      },
+      "3": {
+        "closed": true
+      },
+      "4": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "5": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "6": {
+        "openMin": 480,
+        "closeMin": 960
       }
     }
   }

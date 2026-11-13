@@ -433,6 +433,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hiddenfoodgem.com/cities/queen-creek-az-85142</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.hiddenfoodgem.com/cities/rancho-cucamonga-ca-91730</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -596,6 +602,12 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/cities/washington-dc-20036</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/cities/west-covina-ca-91790</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -1814,6 +1826,18 @@
   </url>
   <url>
     <loc>https://www.hiddenfoodgem.com/gem/corona-asian-food-festival-citrus-park-92881</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/ladd-coffee-west-covina-91790</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.hiddenfoodgem.com/gem/farmers-daughter-coffee-queen-creek-85142</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>

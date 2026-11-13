@@ -5,7 +5,8 @@
   // ---------- Config ----------
   const MEAL_TABS = [
     ['', 'All Meals', '✨'],
-    ['new_openings', 'Soft Opens & New', '🔥'],
+    ['soft_open', 'Soft Openings', '🔥'],
+    ['opening_soon', 'New Food & Cafes Opening Soon', '🚀'],
     ['coffee_boba', 'Top Coffee & Boba', '🧋'],
     ['breakfast', 'Breakfast', '🍳'],
     ['brunch', 'Brunch', '🥞'],
@@ -1020,11 +1021,18 @@
     if (!mealTab) return true;
     if (mealTab === 'open_now') return isOpenRightNow(r, now);
 
-    if (mealTab === 'new_openings') {
+    if (mealTab === 'soft_open' || mealTab === 'new_openings') {
+      const launch = getLaunchStage(r, now);
+      if (launch && (launch.stage === 'soft_open' || launch.stage === 'just_opened')) return true;
+      const tags = (r.tags || []).map((t) => String(t).toLowerCase());
+      return tags.includes('soft_open') || tags.includes('just_opened');
+    }
+
+    if (mealTab === 'opening_soon') {
       const launch = getLaunchStage(r, now);
       if (launch) return true;
       const tags = (r.tags || []).map((t) => String(t).toLowerCase());
-      if (tags.includes('soft_open') || tags.includes('just_opened') || tags.includes('opening_soon') || tags.includes('coming_soon_cafe')) return true;
+      if (tags.includes('opening_soon') || tags.includes('coming_soon_cafe') || tags.includes('soft_open') || tags.includes('just_opened')) return true;
       return Boolean(r.createdAt && r.createdAt >= '2026-11-05');
     }
 
@@ -1269,7 +1277,8 @@
     });
 
     // If GPS location, a 5-digit ZIP code, active Meal Tab, or proximity radius is active, order strictly by nearest distance first (ORDER BY distance ASC)
-    const sortByProximityFirst = isGpsActive || Boolean(activeZip) || (Boolean(state.mealTab) && state.mealTab !== 'new_openings') || state.radiusMiles > 0;
+    const isLaunchTab = state.mealTab === 'soft_open' || state.mealTab === 'opening_soon' || state.mealTab === 'new_openings';
+    const sortByProximityFirst = isGpsActive || Boolean(activeZip) || (Boolean(state.mealTab) && !isLaunchTab) || state.radiusMiles > 0;
 
     const sorters = {
       gem: (a, b) => {
@@ -1283,13 +1292,27 @@
         const aLaunchPrio = aLaunch ? aLaunch.priority : 0;
         const bLaunchPrio = bLaunch ? bLaunch.priority : 0;
 
-        // If on the "Soft Opens & New" tab, prioritize Soft Opens (#1) -> Newly Opened (#2) -> Opening Soon (#3), then newest/closest
-        if (state.mealTab === 'new_openings') {
+        // If on "Soft Openings" tab: Soft Open (prio 4) first, then Newly Opened (prio 3)
+        if (state.mealTab === 'soft_open' || state.mealTab === 'new_openings') {
           if (activeZip || isGpsActive) {
             const distDiff = getDistanceMiles(a) - getDistanceMiles(b);
             if (Math.abs(distDiff) > 2.5) return distDiff;
           }
           if (bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
+          const aDate = String(a.openedDate || a.createdAt || '');
+          const bDate = String(b.openedDate || b.createdAt || '');
+          return bDate.localeCompare(aDate) || getDistanceMiles(a) - getDistanceMiles(b);
+        }
+
+        // If on "New Food & Cafes Opening Soon" tab: Opening Soon (stage === 'opening_soon') #1 first, then Soft Opens & Newly Opened
+        if (state.mealTab === 'opening_soon') {
+          const aSoonPrio = aLaunch?.stage === 'opening_soon' ? 5 : aLaunchPrio;
+          const bSoonPrio = bLaunch?.stage === 'opening_soon' ? 5 : bLaunchPrio;
+          if (activeZip || isGpsActive) {
+            const distDiff = getDistanceMiles(a) - getDistanceMiles(b);
+            if (Math.abs(distDiff) > 2.5) return distDiff;
+          }
+          if (bSoonPrio !== aSoonPrio) return bSoonPrio - aSoonPrio;
           const aDate = String(a.openedDate || a.createdAt || '');
           const bDate = String(b.openedDate || b.createdAt || '');
           return bDate.localeCompare(aDate) || getDistanceMiles(a) - getDistanceMiles(b);
@@ -1336,7 +1359,7 @@
         const bLaunch = getLaunchStage(b, now);
         const aLaunchPrio = aLaunch ? aLaunch.priority : 0;
         const bLaunchPrio = bLaunch ? bLaunch.priority : 0;
-        if (state.mealTab === 'new_openings' && bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
+        if (isLaunchTab && bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
         if (activeZip && String(a.zip || '').trim() === activeZip && String(b.zip || '').trim() === activeZip && bLaunchPrio !== aLaunchPrio) {
           return bLaunchPrio - aLaunchPrio;
         }
@@ -1489,287 +1512,6 @@
             </button>
             <button class="btn" type="submit">Find gems</button>
           </form>
-        </div>
-      </section>
-            <!-- NOVEMBER 2026 COMMUNITY SHOWDOWN: BREAKFAST & BRUNCH BATTLE -->
-      <section class="vote-showdown-section" id="vote-showdown" style="background:linear-gradient(180deg,#1c130d 0%,#140d09 100%);border:1px solid rgba(245,194,107,0.22);border-radius:20px;padding:24px 20px;margin:24px auto 32px;max-width:1200px;box-shadow:0 12px 36px rgba(0,0,0,0.5)">
-        <div style="text-align:center;max-width:760px;margin:0 auto 20px">
-          <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,194,107,0.12);border:1px solid rgba(245,194,107,0.3);padding:4px 14px;border-radius:999px;font-size:0.75rem;font-weight:700;color:#f5c26b;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">
-            <span>☕ November Community Spotlight: Craft Coffee &amp; Cafe Vote</span>
-          </div>
-          <h2 style="font-size:1.75rem;font-weight:800;color:#fff;margin:0 0 8px;line-height:1.25">
-            Vote for the Inland Empire's <span style="background:linear-gradient(90deg,#f5c26b,#ff8a00);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Best Craft Coffee Roaster &amp; Cafe</span>
-          </h2>
-          <p style="font-size:0.92rem;color:#c2b2a3;margin:0 auto;line-height:1.5">
-            Head-to-head artisan coffee battle! Compare 4 iconic local micro-roasters &amp; specialty coffeehouses. One vote per device.
-          </p>
-        </div>
-
-        <div id="vote-cards-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:20px">
-          
-          <!-- Candidate 0: Molinos Coffee (Featured #1 Partner Spotlight) -->
-          <div class="vote-dish-card" data-candidate-id="molinos-coffee-riverside-92501" style="background:linear-gradient(160deg,#2c1d13 0%,#21150e 100%);border:2px solid #f5c26b;border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease;box-shadow:0 6px 24px rgba(245,194,107,0.22)" onclick="window.selectVoteCandidate('molinos-coffee-riverside-92501')">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:linear-gradient(135deg,#f5c26b,#ff8a00);color:#1a100a;padding:3px 10px;border-radius:999px;font-size:0.74rem;font-weight:800">🌟 #1 Spotlight · Riverside</span>
-                <span style="font-size:0.78rem;color:#f5c26b;font-weight:700">@molinoscoffee</span>
-              </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Molinos Coffee</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Iced Mazapán Latte &amp; Café de Olla</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Downtown Riverside's premier family-owned Latin micro-roaster on Main St with scratch Mazapán lattes &amp; guava pastelitos.</p>
-            </div>
-            
-            <div>
-              <div class="vote-result-bar" id="result-wrap-molinos-coffee-riverside-92501" style="display:none;margin-bottom:10px">
-                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-molinos-coffee-riverside-92501" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-molinos-coffee-riverside-92501" style="color:#f5c26b">0%</span>
-                </div>
-                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-molinos-coffee-riverside-92501" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
-                </div>
-              </div>
-
-              <button class="vote-btn-pill" id="btn-vote-molinos-coffee-riverside-92501" style="width:100%;background:rgba(245,194,107,0.18);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Molinos Coffee</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Candidate 1: Klatch Coffee -->
-          <div class="vote-dish-card" data-candidate-id="klatch-coffee-rancho-cucamonga" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('klatch-coffee-rancho-cucamonga')">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Rancho Cucamonga</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@klatchcoffee</span>
-              </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Klatch Coffee</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">World-Champion Espresso &amp; Pour-Over</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">World Barista Champion micro-roaster, Panama Geisha single-origin pour-overs &amp; velvet lattes.</p>
-            </div>
-            
-            <div>
-              <div class="vote-result-bar" id="result-wrap-klatch-coffee-rancho-cucamonga" style="display:none;margin-bottom:10px">
-                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-klatch-coffee-rancho-cucamonga" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-klatch-coffee-rancho-cucamonga" style="color:#f5c26b">0%</span>
-                </div>
-                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-klatch-coffee-rancho-cucamonga" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
-                </div>
-              </div>
-
-              <button class="vote-btn-pill" id="btn-vote-klatch-coffee-rancho-cucamonga" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Klatch Coffee</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Candidate 2: Qamaria Yemeni Coffee -->
-          <div class="vote-dish-card" data-candidate-id="qamaria-yemeni-coffee-rancho" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('qamaria-yemeni-coffee-rancho')">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">🫖 Rancho Cucamonga</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@qamariacoffee</span>
-              </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Qamaria Yemeni Coffee</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Traditional Spiced Mofawar &amp; Adeni Tea</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Slow-brewed authentic Yemeni heirloom beans infused with cardamom, cream, and honeycomb pastry.</p>
-            </div>
-            
-            <div>
-              <div class="vote-result-bar" id="result-wrap-qamaria-yemeni-coffee-rancho" style="display:none;margin-bottom:10px">
-                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-qamaria-yemeni-coffee-rancho" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-qamaria-yemeni-coffee-rancho" style="color:#f5c26b">0%</span>
-                </div>
-                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-qamaria-yemeni-coffee-rancho" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
-                </div>
-              </div>
-
-              <button class="vote-btn-pill" id="btn-vote-qamaria-yemeni-coffee-rancho" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Qamaria Yemeni</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Candidate 3: Mestiza Coffeehouse -->
-          <div class="vote-dish-card" data-candidate-id="mestiza-coffeehouse-ontario" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('mestiza-coffeehouse-ontario')">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Ontario, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@mestizacoffeehouse</span>
-              </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Mestiza Coffeehouse</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Mazapán Latte &amp; Horchata Cold Brew</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Latin-inspired craft espresso with Mexican peanut candy reduction, cinnamon foam &amp; warm conchas.</p>
-            </div>
-            
-            <div>
-              <div class="vote-result-bar" id="result-wrap-mestiza-coffeehouse-ontario" style="display:none;margin-bottom:10px">
-                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-mestiza-coffeehouse-ontario" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-mestiza-coffeehouse-ontario" style="color:#f5c26b">0%</span>
-                </div>
-                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-mestiza-coffeehouse-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
-                </div>
-              </div>
-
-              <button class="vote-btn-pill" id="btn-vote-mestiza-coffeehouse-ontario" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Mestiza</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Candidate 4: Iron & Kin Coffee Co. -->
-          <div class="vote-dish-card" data-candidate-id="iron-and-kin-coffee-claremont" style="background:#241913;border:2px solid rgba(245,194,107,0.2);border-radius:16px;padding:20px 18px;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease" onclick="window.selectVoteCandidate('iron-and-kin-coffee-claremont')">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.12);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.25)">☕ Claremont, CA</span>
-                <span style="font-size:0.78rem;color:#c2b2a3;font-weight:600">@ironandkincoffee</span>
-              </div>
-              <h3 style="font-size:1.25rem;color:#fff;margin:0 0 6px;font-weight:800">Iron &amp; Kin Coffee</h3>
-              <div style="font-size:0.92rem;font-weight:700;color:#ffae42;margin-bottom:8px">Single-Origin Roast &amp; Maple Sea Salt Latte</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Small-batch ethically roasted beans inside historic Claremont Packing House, crafted by master baristas.</p>
-            </div>
-            
-            <div>
-              <div class="vote-result-bar" id="result-wrap-iron-and-kin-coffee-claremont" style="display:none;margin-bottom:10px">
-                <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:4px">
-                  <span id="vote-count-iron-and-kin-coffee-claremont" style="color:#c2b2a3">0 votes</span>
-                  <span id="vote-percent-iron-and-kin-coffee-claremont" style="color:#f5c26b">0%</span>
-                </div>
-                <div style="background:rgba(255,255,255,0.1);height:7px;border-radius:999px;overflow:hidden">
-                  <div id="bar-fill-iron-and-kin-coffee-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.8s ease"></div>
-                </div>
-              </div>
-
-              <button class="vote-btn-pill" id="btn-vote-iron-and-kin-coffee-claremont" style="width:100%;background:rgba(245,194,107,0.12);border:1px solid #f5c26b;color:#f5c26b;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span>Vote for Iron &amp; Kin</span>
-              </button>
-            </div>
-          </div>
-
-        
-          <!-- Card 5: Nominate a Gem for December -->
-          <div class="vote-dish-card" style="background:#1d1510;border:2px dashed rgba(245,194,107,0.4);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(245,194,107,0.15);color:#f5c26b;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(245,194,107,0.3)">🗳️ Next Month</span>
-                <span style="font-size:0.78rem;color:#f5c26b;font-weight:700">December 2026</span>
-              </div>
-              <h3 style="font-size:1.2rem;color:#fff;margin:0 0 6px;font-weight:800">Nominate for December</h3>
-              <div style="font-size:0.9rem;font-weight:700;color:#ffae42;margin-bottom:8px">Know a Hidden Gem?</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Know a hidden family-owned spot in the Inland Empire? Nominate them for next month's community vote!</p>
-            </div>
-            
-            <div>
-              <button type="button" class="vote-btn-pill" id="btn-nominate-gem" onclick="window.openNominationSheet()" style="width:100%;background:linear-gradient(135deg,#f5c26b,#ff8a00);border:none;color:#1a100a;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;box-shadow:0 4px 12px rgba(245,194,107,0.25)">
-                <span>🗳️ Nominate a Spot</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 6: Share the Vote (Viral Growth) -->
-          <div class="vote-dish-card" style="background:#131c17;border:2px dashed rgba(52,211,153,0.5);border-radius:16px;padding:20px 18px;display:flex;flex-direction:column;justify-content:space-between;transition:all 0.2s ease">
-            <div>
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
-                <span style="background:rgba(52,211,153,0.15);color:#34d399;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;border:1px solid rgba(52,211,153,0.3)">📲 Spread the Word</span>
-                <span style="font-size:0.78rem;color:#34d399;font-weight:700">#SupportLocal</span>
-              </div>
-              <h3 style="font-size:1.2rem;color:#fff;margin:0 0 6px;font-weight:800">Share This Vote</h3>
-              <div style="font-size:0.9rem;font-weight:700;color:#34d399;margin-bottom:8px">Help Your Favorite Win #1</div>
-              <p style="font-size:0.82rem;color:#c2b2a3;margin:0 0 16px;line-height:1.45">Help your favorite local spot win #1! Share this with friends, family &amp; neighbors across the community.</p>
-            </div>
-            
-            <div>
-              <button type="button" class="vote-btn-pill" id="btn-share-vote" onclick="window.shareCommunityVote()" style="width:100%;background:rgba(52,211,153,0.14);border:1px solid #34d399;color:#34d399;padding:11px;border-radius:10px;font-size:0.88rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px">
-                <span id="share-btn-text">📲 Share with Friends</span>
-              </button>
-            </div>
-          </div>
-</div>
-
-        <div id="vote-status-banner" style="background:#1b120c;border:1px dashed rgba(245,194,107,0.3);border-radius:12px;padding:12px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px">
-          <div style="font-size:0.88rem;color:#f9f3eb" id="vote-info-msg">
-            ✨ <strong>Tap any coffee contender above to cast your device vote!</strong> One vote per device. Voting closes Nov 30.
-          </div>
-          <!-- Live Community Vote Standings & Accumulation Leaderboard -->
-        <div id="vote-live-leaderboard" style="background:#19110c;border:1px solid rgba(245,194,107,0.28);border-radius:16px;padding:18px 20px;margin-bottom:18px">
-          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px;border-bottom:1px solid rgba(245,194,107,0.15);padding-bottom:10px">
-            <div style="display:flex;align-items:center;gap:8px">
-              <span style="font-size:1.2rem">📊</span>
-              <h4 style="font-size:1.05rem;font-weight:800;color:#fff;margin:0">Live Community Vote Standings &amp; Real-Time Accumulation</h4>
-            </div>
-            <div style="background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.35);color:#4ade80;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:700;display:flex;align-items:center;gap:5px">
-              <span style="width:7px;height:7px;background:#4ade80;border-radius:50%;display:inline-block;animation:pulse 2s infinite"></span>
-              <span>LIVE CLOUD SYNC ACTIVE</span>
-            </div>
-          </div>
-
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px" id="vote-leaderboard-grid">
-            <div style="background:#261a12;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.45)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem">🌟 Molinos Coffee</span>
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-molinos-coffee-riverside-92501">0 votes</span>
-              </div>
-              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
-                <div id="lead-bar-molinos-coffee-riverside-92501" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
-              </div>
-              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-molinos-coffee-riverside-92501">0% of total</div>
-            </div>
-
-            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-                <span style="font-weight:700;color:#fff;font-size:0.88rem">Klatch Coffee</span>
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-klatch-coffee-rancho-cucamonga">0 votes</span>
-              </div>
-              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
-                <div id="lead-bar-klatch-coffee-rancho-cucamonga" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
-              </div>
-              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-klatch-coffee-rancho-cucamonga">0% of total</div>
-            </div>
-
-            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-                <span style="font-weight:700;color:#fff;font-size:0.88rem">Qamaria Yemeni Coffee</span>
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-qamaria-yemeni-coffee-rancho">0 votes</span>
-              </div>
-              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
-                <div id="lead-bar-qamaria-yemeni-coffee-rancho" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
-              </div>
-              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-qamaria-yemeni-coffee-rancho">0% of total</div>
-            </div>
-
-            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-                <span style="font-weight:700;color:#fff;font-size:0.88rem">Mestiza Coffeehouse</span>
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-mestiza-coffeehouse-ontario">0 votes</span>
-              </div>
-              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
-                <div id="lead-bar-mestiza-coffeehouse-ontario" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
-              </div>
-              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-mestiza-coffeehouse-ontario">0% of total</div>
-            </div>
-
-            <div style="background:#221711;padding:12px 14px;border-radius:12px;border:1px solid rgba(245,194,107,0.18)">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-                <span style="font-weight:700;color:#fff;font-size:0.88rem">Iron &amp; Kin Coffee</span>
-                <span style="font-weight:800;color:#f5c26b;font-size:0.88rem" id="lead-count-iron-and-kin-coffee-claremont">0 votes</span>
-              </div>
-              <div style="background:rgba(255,255,255,0.08);height:8px;border-radius:999px;overflow:hidden">
-                <div id="lead-bar-iron-and-kin-coffee-claremont" style="background:linear-gradient(90deg,#ffae42,#f5c26b);height:100%;width:0%;border-radius:999px;transition:width 0.6s ease"></div>
-              </div>
-              <div style="font-size:0.72rem;color:#c2b2a3;margin-top:4px" id="lead-pct-iron-and-kin-coffee-claremont">0% of total</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="font-size:0.85rem;color:#c2b2a3;font-weight:600" id="vote-total-counter">
-            Total Community Votes: <strong style="color:#f5c26b" id="vote-total-num">0</strong>
-          </div>
         </div>
       </section>
 
@@ -2107,7 +1849,7 @@
       b.setAttribute('aria-pressed', state.prices.has(p)); state.limit = 24; renderResults();
     });
     $('#clear').addEventListener('click', () => {
-      Object.assign(state, { q: '', mealTab: '', radiusMiles: 0, region: '', city: '', cuisine: '', gradeAOnly: false, sort: 'top', limit: 24, mobileFiltersOpen: false, userGpsCoords: null, userGpsLabel: '' });
+      Object.assign(state, { q: '', mealTab: '', radiusMiles: 0, region: '', city: '', cuisine: '', gradeAOnly: false, sort: 'gem', limit: 24, mobileFiltersOpen: false, userGpsCoords: null, userGpsLabel: '' });
       state.chips.clear(); state.prices.clear(); renderHome();
     });
     const loadMoreBtn = $('#btn-load-more');
@@ -2193,11 +1935,6 @@
     const grid = $('#grid'); if (!grid) return;
     syncCityDropdown();
 
-    // Showdown Voting is active and visible across all ZIP codes & regions nationwide:
-    const showdownSection = document.getElementById('vote-showdown');
-    if (showdownSection) {
-      showdownSection.style.display = 'block';
-    }
     const list = filtered();
     const activeZip = getActiveZipQuery();
     const isGpsActive = Boolean(state.userGpsCoords);
@@ -2962,8 +2699,11 @@
     const rawZip = getParam('zip');
     const rawRegion = getParam('region');
 
-    if (rawMeal && MEAL_TABS.some(([k]) => k === rawMeal.toLowerCase())) {
-      state.mealTab = rawMeal.toLowerCase();
+    if (rawMeal) {
+      const mNorm = rawMeal.toLowerCase() === 'new_openings' ? 'soft_open' : rawMeal.toLowerCase();
+      if (MEAL_TABS.some(([k]) => k === mNorm)) {
+        state.mealTab = mNorm;
+      }
     }
     if (rawZip && /^\d{5}$/.test(rawZip.trim())) {
       state.q = rawZip.trim();
@@ -3016,7 +2756,7 @@
     }
 
     if (page === '' || page === undefined) state.base = '#/';
-    if (!$('#grid')) { renderHome(); if (window.loadVoteStatus) window.loadVoteStatus(); }
+    if (!$('#grid')) { renderHome(); }
     else {
       if ($('#q')) $('#q').value = state.q;
       if ($('#region')) $('#region').value = state.region;
@@ -3089,211 +2829,14 @@
     });
 
 
-  // ---------- Integrated November Community Showdown Voting Module ----------
-  (function initCommunityShowdown() {
-    const CANDIDATES = ['molinos-coffee-riverside-92501', 'klatch-coffee-rancho-cucamonga', 'qamaria-yemeni-coffee-rancho', 'mestiza-coffeehouse-ontario', 'iron-and-kin-coffee-claremont'];
-    const STORAGE_KEY = 'hfg_voted_candidate_clean_v1';
-    const DEVICE_ID_KEY = 'hfg_device_uuid_v1';
-    const LOCAL_TALLIES_KEY = 'hfg_community_tallies_clean_v1';
-
-    // Baseline verified community votes distributed organically across contenders
-    const BASELINE_TALLIES = {
-      'molinos-coffee-riverside-92501': 0,
-      'klatch-coffee-rancho-cucamonga': 0,
-      'qamaria-yemeni-coffee-rancho': 0,
-      'mestiza-coffeehouse-ontario': 0,
-      'iron-and-kin-coffee-claremont': 0
-    };
-
-    function getDeviceId() {
-      let id = localStorage.getItem(DEVICE_ID_KEY);
-      if (!id) {
-        id = 'dev_' + Math.random().toString(36).substring(2) + Date.now().toString(36);
-        localStorage.setItem(DEVICE_ID_KEY, id);
-      }
-      return id;
-    }
-
-    function getStoredVote() {
-      try {
-        return localStorage.getItem(STORAGE_KEY);
-      } catch(e) {
-        return null;
-      }
-    }
-
-    function setStoredVote(candidateId) {
-      try {
-        localStorage.setItem(STORAGE_KEY, candidateId);
-      } catch(e) {}
-    }
-
-    function getLocalTallies() {
-      try {
-        const raw = localStorage.getItem(LOCAL_TALLIES_KEY);
-        if (raw) {
-          const parsed = JSON.parse(raw);
-          if (parsed && typeof parsed === 'object') {
-            return Object.assign({}, BASELINE_TALLIES, parsed);
-          }
-        }
-      } catch(e) {}
-      return Object.assign({}, BASELINE_TALLIES);
-    }
-
-    function saveLocalTallies(tallies) {
-      try {
-        localStorage.setItem(LOCAL_TALLIES_KEY, JSON.stringify(tallies));
-      } catch(e) {}
-    }
-
-    function renderResultsUI(tallies, userVotedCandidateId, animated = false) {
-      const totalCount = Object.values(tallies).reduce((a, b) => a + b, 0);
-      const totalEl = document.getElementById('vote-total-num');
-      if (totalEl) {
-        if (animated) {
-          totalEl.style.transition = 'transform 0.3s ease, color 0.3s ease';
-          totalEl.style.transform = 'scale(1.35)';
-          totalEl.style.color = '#22c55e';
-          setTimeout(() => {
-            totalEl.textContent = totalCount.toLocaleString();
-            setTimeout(() => {
-              totalEl.style.transform = 'scale(1)';
-              totalEl.style.color = '#f5c26b';
-            }, 300);
-          }, 150);
-        } else {
-          totalEl.textContent = totalCount.toLocaleString();
-        }
-      }
-
-      CANDIDATES.forEach(id => {
-        const count = tallies[id] || 0;
-        const pct = totalCount > 0 ? Math.round((count / totalCount) * 100) : 0;
-
-        const countEl = document.getElementById('vote-count-' + id);
-        const pctEl = document.getElementById('vote-percent-' + id);
-        const barFill = document.getElementById('bar-fill-' + id);
-        const wrap = document.getElementById('result-wrap-' + id);
-
-        const countText = count.toLocaleString() + ' ' + (count === 1 ? 'vote' : 'votes');
-        if (countEl) countEl.textContent = countText;
-        if (pctEl) pctEl.textContent = pct + '%';
-        if (barFill) {
-          barFill.style.width = pct + '%';
-        }
-        if (wrap) {
-          wrap.style.display = 'block';
-        }
-
-        // Also update the accumulation standings leaderboard
-        const leadCount = document.getElementById('lead-count-' + id);
-        const leadBar = document.getElementById('lead-bar-' + id);
-        const leadPct = document.getElementById('lead-pct-' + id);
-        if (leadCount) leadCount.textContent = countText;
-        if (leadBar) leadBar.style.width = pct + '%';
-        if (leadPct) leadPct.textContent = pct + '% of community total';
-      });
-    }
-
-    function markCardAsVoted(candidateId) {
-      const card = document.querySelector('.vote-dish-card[data-candidate-id="' + candidateId + '"]');
-      if (card) {
-        card.style.borderColor = '#22c55e';
-        card.style.boxShadow = '0 0 24px rgba(34,197,94,0.4)';
-        const btn = document.getElementById('btn-vote-' + candidateId);
-        if (btn) {
-          btn.style.background = '#22c55e';
-          btn.style.color = '#fff';
-          btn.style.borderColor = '#22c55e';
-          btn.innerHTML = '<span>✓ Your Device Vote (Counted!)</span>';
-        }
-      }
-
-      CANDIDATES.forEach(id => {
-        if (id !== candidateId) {
-          const btn = document.getElementById('btn-vote-' + id);
-          if (btn) {
-            btn.disabled = true;
-            btn.style.opacity = '0.55';
-            btn.style.cursor = 'default';
-            btn.innerHTML = '<span>Vote Recorded</span>';
-          }
-        }
-      });
-
-      const infoMsg = document.getElementById('vote-info-msg');
-      if (infoMsg) {
-        infoMsg.innerHTML = '🎉 <strong>Vote recorded! Your vote moved the counter up +1.</strong> Live community standings unlocked below!';
-      }
-    }
-
-    async function fetchCloudTallies() {
-      const tallies = {};
-      try {
-        const promises = CANDIDATES.map(async function(cid) {
-          try {
-            const r = await fetch('https://abacus.jasoncameron.dev/get/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(cid), { cache: 'no-store' });
-            if (r.ok) {
-              const d = await r.json();
-              if (d && typeof d.value === 'number') {
-                tallies[cid] = d.value;
-              }
-            }
-          } catch(e) {}
-        });
-        await Promise.all(promises);
-      } catch(e) {}
-      return tallies;
-    }
-
-    async function loadVoteStatus() {
-      let currentTallies = getLocalTallies();
-      
-      // Fetch live persistent cloud tallies across all voters
-      try {
-        const cloudVotes = await fetchCloudTallies();
-        if (Object.keys(cloudVotes).length > 0) {
-          CANDIDATES.forEach(function(cid) {
-            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
-          });
-          saveLocalTallies(currentTallies);
-        }
-      } catch(e) {}
-
-      const previousVote = getStoredVote();
-      if (previousVote) {
-        markCardAsVoted(previousVote);
-      }
-      
-      // Always show live tally bars so everyone sees real community counts!
-      renderResultsUI(currentTallies, previousVote, false);
-    }
-
-    // Auto-poll live votes every 8 seconds so new votes appear in real time without refreshing
-    setInterval(async function() {
-      try {
-        const cloudVotes = await fetchCloudTallies();
-        if (Object.keys(cloudVotes).length > 0) {
-          const currentTallies = getLocalTallies();
-          CANDIDATES.forEach(function(cid) {
-            currentTallies[cid] = Math.max(currentTallies[cid] || 0, cloudVotes[cid] || 0);
-          });
-          saveLocalTallies(currentTallies);
-          renderResultsUI(currentTallies, getStoredVote(), false);
-        }
-      } catch(e) {}
-    }, 8000);
-
-    
-  // ---------- Community Nomination & Share Handlers ----------
+  // ---------- Community Nomination & ZIP Request Handlers ----------
   window.openNominationSheet = function(prefillCityZip = '') {
     if (typeof openSheet === 'function') {
       openSheet(`
         <div class="form-head" style="text-align:center;padding:16px 0 10px">
-          <span class="eyebrow" style="color:#f5c26b;background:rgba(245,194,107,0.15);border:1px solid rgba(245,194,107,0.3);padding:4px 12px;border-radius:999px;font-size:0.8rem;font-weight:700">🗳️ Community Nomination &amp; ZIP Request</span>
-          <h2 style="margin:12px 0 6px;color:#1f1612;font-size:1.6rem">${prefillCityZip ? `Request ${esc(prefillCityZip)} &amp; Nominate a Gem` : 'Nominate a Gem for December'}</h2>
-          <p style="color:#4a3a32;font-size:0.9rem;max-width:540px;margin:0 auto">Know an authentic, family-owned restaurant, cafe, or bakery? Tell us which ZIP code and local spot we should verify next!</p>
+          <span class="eyebrow" style="color:#f5c26b;background:rgba(245,194,107,0.15);border:1px solid rgba(245,194,107,0.3);padding:4px 12px;border-radius:999px;font-size:0.8rem;font-weight:700">💎 Community Nomination &amp; ZIP Request</span>
+          <h2 style="margin:12px 0 6px;color:#1f1612;font-size:1.6rem">${prefillCityZip ? `Request ${esc(prefillCityZip)} &amp; Nominate a Gem` : 'Nominate a Hidden Gem or Soft Opening'}</h2>
+          <p style="color:#4a3a32;font-size:0.9rem;max-width:540px;margin:0 auto">Know an authentic, family-owned restaurant, soft opening, or coming-soon cafe? Tell us which ZIP code and local spot we should verify next!</p>
         </div>
         <form class="form detail-body" id="nomination-form" style="max-width:520px;margin:0 auto" onsubmit="window.handleNominationSubmit(event)">
           <div class="field" style="margin-bottom:14px">
@@ -3309,7 +2852,7 @@
             <input type="text" id="nom-dish" placeholder="e.g. Housemade Cinnamon Rolls or Horchata Cold Brew" style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem" />
           </div>
           <div class="field" style="margin-bottom:14px">
-            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Why do you love them?</label>
+            <label style="display:block;color:#f9f3eb;font-weight:700;font-size:0.88rem;margin-bottom:6px">Why do you love them? (Soft Open, Opening Soon, or Local Gem)</label>
             <textarea id="nom-why" rows="3" placeholder="Tell us what makes them a special hidden gem..." style="width:100%;padding:12px;border-radius:10px;background:#241913;border:1px solid rgba(245,194,107,0.3);color:#fff;font-size:0.95rem"></textarea>
           </div>
           <div class="field" style="margin-bottom:18px">
@@ -3323,7 +2866,7 @@
         </form>
       `);
     } else {
-      window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + encodeURIComponent('December Food Gem Nomination') + '&body=' + encodeURIComponent('Hi! I would like to nominate a hidden gem for next month.');
+      window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + encodeURIComponent('Hidden Food Gem Nomination') + '&body=' + encodeURIComponent('Hi! I would like to nominate a hidden gem.');
     }
   };
 
@@ -3335,19 +2878,18 @@
     const why = document.getElementById('nom-why')?.value || '';
     const email = document.getElementById('nom-email')?.value || '';
 
-    const subject = encodeURIComponent('December Gem Nomination: ' + name + ' (' + city + ')');
+    const subject = encodeURIComponent('Hidden Gem Nomination: ' + name + ' (' + city + ')');
     const body = encodeURIComponent(
       'Hi Hidden Food Gems Team,\n\n' +
-      'I would like to nominate the following local spot for next month\'s community vote:\n\n' +
+      'I would like to nominate the following local spot:\n\n' +
       '• Name: ' + name + '\n' +
       '• City / Location: ' + city + '\n' +
       '• Signature Dish / Drink: ' + dish + '\n' +
-      '• Why they\'re special: ' + why + '\n' +
+      '• Details: ' + why + '\n' +
       '• Nominated by: ' + (email || 'A local foodie') + '\n\n' +
       'Sent from HiddenFoodGem.com'
     );
 
-    // Open user's email client to deliver to letsgetoutkids@gmail.com
     window.location.href = 'mailto:letsgetoutkids@gmail.com?subject=' + subject + '&body=' + body;
 
     if (typeof toast === 'function') {
@@ -3357,84 +2899,5 @@
       setTimeout(closeSheet, 800);
     }
   };
-
-  window.shareCommunityVote = async function() {
-    const shareData = {
-      title: 'Vote for the Inland Empire\'s Best Craft Coffee & Cafe Gem!',
-      text: 'Vote for your favorite local craft coffee roaster & cafe on Hidden Food Gems! Support local independent kitchens.',
-      url: window.location.origin || 'https://www.hiddenfoodgem.com'
-    };
-
-    if (navigator.share) {
-      try {
-        await navigator.share(shareData);
-        if (typeof toast === 'function') toast('🎉 Thank you for sharing!');
-        return;
-      } catch (err) {
-        if (err.name !== 'AbortError') console.warn('Share error:', err);
-      }
-    }
-
-    // Fallback: Copy link to clipboard
-    try {
-      await navigator.clipboard.writeText(shareData.url);
-      const btnText = document.getElementById('share-btn-text');
-      if (btnText) {
-        const original = btnText.textContent;
-        btnText.textContent = '✓ Link Copied to Clipboard!';
-        setTimeout(() => { btnText.textContent = original; }, 2500);
-      }
-      if (typeof toast === 'function') {
-        toast('📋 Link copied to clipboard! Share it with your friends & neighbors.');
-      } else {
-        alert('Link copied to clipboard! Share with friends to help your favorite spot win.');
-      }
-    } catch (e) {
-      alert('Share this link: ' + shareData.url);
-    }
-  };
-
-    window.selectVoteCandidate = async function(candidateId) {
-      const existing = getStoredVote();
-      if (existing) {
-        alert('You have already cast your vote from this device for this month!');
-        return;
-      }
-
-      if (navigator.vibrate) {
-        try { navigator.vibrate([40, 60, 40]); } catch(e) {}
-      }
-
-      const deviceId = getDeviceId();
-      setStoredVote(candidateId);
-
-      // Self-counting increment: immediately add 1 to candidate and total
-      const tallies = getLocalTallies();
-      tallies[candidateId] = (tallies[candidateId] || 0) + 1;
-      saveLocalTallies(tallies);
-
-      // Mark UI as voted and animate counter moving up!
-      markCardAsVoted(candidateId);
-      renderResultsUI(tallies, candidateId, true);
-
-      // Trigger celebrate toast
-      if (typeof window.toast === 'function') {
-        window.toast('🎉 Vote counted! You moved the community counter up +1!');
-      }
-
-      // Sync to global persistent cloud counter
-      try {
-        await fetch('https://abacus.jasoncameron.dev/hit/hiddenfoodgem-coffee-nov26/' + encodeURIComponent(candidateId), { cache: 'no-store' });
-        await fetch('/api/vote', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ candidateId, deviceId })
-        }).catch(function(){});
-      } catch(e) {}
-    };
-
-    // Auto-load on view render
-    setTimeout(loadVoteStatus, 100);
-  })();
 
 })();

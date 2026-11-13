@@ -866,7 +866,7 @@ ${ga4AndOutboundScriptHtml}
   <header class="topbar">
     <a href="/" class="brand"><span>💎</span><span>Hidden <em>Food</em> Gem.com</span></a>
     <div style="display:flex;gap:8px;align-items:center">
-      <a href="/?meal=new_openings" class="btn">🔥 Open Interactive Soft Opens Map</a>
+      <a href="/?meal=soft_open" class="btn">🔥 Open Interactive Soft Opens Map</a>
     </div>
   </header>
 
@@ -884,7 +884,8 @@ ${ga4AndOutboundScriptHtml}
       <h1>New Restaurant Soft Openings, Grand Openings &amp; Coming Soon Gems</h1>
       <p>Google Maps and Yelp often lag 3 to 8 weeks behind independent restaurant soft openings. <strong>HiddenFoodGem.com</strong> tracks verified, family-owned scratch kitchens, specialty coffeehouses, and artisanal bakeries during their <strong>Soft Opening (Days 1–14)</strong>, <strong>Newly Opened (Days 15–45)</strong>, and <strong>Opening Soon</strong> stages — 100% independent, zero corporate chains, and strictly family-friendly.</p>
       <div class="cta-bar">
-        <a href="/?meal=new_openings" class="btn">🔥 Filter Live Map by Soft Opens &amp; New</a>
+        <a href="/?meal=soft_open" class="btn">🔥 View Soft Openings Tab</a>
+        <a href="/?meal=opening_soon" class="btn btn-outline">🚀 View New Food &amp; Cafes Opening Soon Tab</a>
         <a href="/contact" class="btn btn-outline">📩 Submit a Soft Opening or Coming Soon Spot</a>
       </div>
     </section>
@@ -1247,8 +1248,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=108"></script>
-  <script defer src="/gems-client.js?v=108"></script>
+  <script defer src="/seed-data.js?v=109"></script>
+  <script defer src="/gems-client.js?v=109"></script>
 </body>
 </html>
 `;

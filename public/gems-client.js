@@ -1698,6 +1698,17 @@
               <div class="breaking-spot-arrow">↗</div>
             </a>`).join('')}
           </div>
+          <a href="/gem/molinos-coffee-riverside-92501" class="molinos-exclusive-ribbon" style="margin-top:10px;padding:9px 13px;border-radius:11px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.68);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;text-decoration:none;color:#fef3c7;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+            <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 260px">
+              <img src="/photos/molinos-festival-of-lights.jpg" alt="Molinos Coffee Festival of Lights" style="width:44px;height:44px;border-radius:9px;object-fit:cover;border:1.5px solid rgba(245,194,107,0.75);flex-shrink:0" loading="eager" />
+              <div style="min-width:0;line-height:1.3">
+                <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.04em;color:#fde047;text-transform:uppercase">🎄 Exclusive Holiday Feature · Downtown Riverside (92501)</div>
+                <div style="font-size:0.9rem;font-weight:800;color:#ffffff">Molinos Coffee — Festival of Lights Reserved Seating ($25/Person · Starts Nov 21)</div>
+                <div style="font-size:0.77rem;color:rgba(255,255,255,0.88)">Sip Gingerbread, Banana Cream Pie &amp; Cookie Butter Lover Lattes or Strawberry Matcha overlooking the lights!</div>
+              </div>
+            </div>
+            <span style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-size:0.78rem;font-weight:800;white-space:nowrap;flex-shrink:0">🪑 View Feature &amp; Book Seat →</span>
+          </a>
         </div>`;
         })()}
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>

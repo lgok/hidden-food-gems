@@ -30419,5 +30419,136 @@
         "closeMin": 1200
       }
     }
+  },
+  {
+    "id": "farmers-daughter-coffee-queen-creek-85142",
+    "name": "Farmer’s Daughter Coffee & Bakery at Schnepf Farms (Queen Creek, AZ)",
+    "cuisine": "Farmhouse Craft Espresso, Cold Foam Lattes, Scratch Peach Pies & Cinnamon Rolls",
+    "regionalIdentity": "New Family-Owned Farm Patio Coffee Shop & Scratch Country Bakery (Queen Creek, AZ)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "american",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "24810 S Rittenhouse Rd (Schnepf Farms Bakery Patio)",
+    "city": "Queen Creek",
+    "state": "AZ",
+    "zip": "85142",
+    "driveFrom91761": "Phoenix East Valley, AZ",
+    "phone": "(480) 987-3100",
+    "website": "https://schnepffarms.com",
+    "hours": "Thu–Sun 8:00am–4:00pm · Closed Mon–Wed (Free Farm Entry & Parking!)",
+    "launchStatus": "just_opened",
+    "launchLabel": "🌻 New Farm Patio Coffee Shop",
+    "openedDate": "2026-10-28",
+    "healthPermit": {
+      "facilityId": "MCESD-85142-FDC",
+      "agency": "Maricopa County Environmental Services Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-22",
+      "portalUrl": "https://www.maricopa.gov/5328/Food-Restaurants"
+    },
+    "familyRoots": "Located on the rustic wood-porch patio of 4th-generation family-run Schnepf Farms in Queen Creek (@farmersdaughter.coffee), inviting families to sip craft coffee under the trees while kids enjoy the petting zoo, jumping pillows, playground, and train ride.",
+    "scratchCommitment": "House-made seasonal syrups, graham-crumble cold foams, and farm-baked scratch peach pies, giant cinnamon rolls, and biscuits & gravy made fresh every Thursday through Sunday morning.",
+    "destinationDish": {
+      "name": "Graham-Crumble Cold Foam Iced Latte, Scratch Farm Cinnamon Roll & Famous Schnepf Peach Pie",
+      "callout": "Iced farmhouse espresso topped with sweet cream cold foam and graham cracker crumble, paired with a warm scratch-baked farm pastry."
+    },
+    "description": "Open Thu–Sun (8:00 AM – 4:00 PM) at Schnepf Farms (24810 S. Rittenhouse Rd, Queen Creek, AZ 85142)! Farmer’s Daughter Coffee (@farmersdaughter.coffee) is a charming new farmhouse patio coffee shop and scratch bakery offering house-syrup lattes, cold foam brews, warm cinnamon rolls, peach pies, and free admission to the farm’s petting zoo and playground.",
+    "story": "100% family-friendly and alcohol-free, Farmer’s Daughter Coffee turns a morning coffee run into a full family farm outing in Queen Creek.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Farmer’s Daughter Cold Foam Iced Latte",
+          "price": ".25",
+          "desc": "Rich espresso over ice crowned with velvety house sweet cream cold foam and toasted crumble."
+        },
+        {
+          "name": "Scratch Farmhouse Giant Cinnamon Roll",
+          "price": ".75",
+          "desc": "Baked fresh in the Schnepf Farms country bakery and slathered with warm vanilla icing."
+        },
+        {
+          "name": "Famous Schnepf Farms Scratch Peach Pie Slice",
+          "price": ".50",
+          "desc": "Made with orchard-grown Schnepf Farms peaches inside a flaky hand-rolled butter crust."
+        },
+        {
+          "name": "Farm-Fresh Biscuits & Gravy / Breakfast Sandwich",
+          "price": ".50",
+          "desc": "Served starting at 8:00 AM from the farm bakery kitchen alongside craft espresso and matcha."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:10:00Z",
+    "ratings": [],
+    "region": "Phoenix Metro",
+    "county": "Maricopa",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.2238,
+    "longitude": -111.5992,
+    "opening_hour_minutes": 480,
+    "closing_hour_minutes": 960,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@farmersdaughter.coffee",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Phoenix",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "1": {
+        "closed": true
+      },
+      "2": {
+        "closed": true
+      },
+      "3": {
+        "closed": true
+      },
+      "4": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "5": {
+        "openMin": 480,
+        "closeMin": 960
+      },
+      "6": {
+        "openMin": 480,
+        "closeMin": 960
+      }
+    }
   }
 ]

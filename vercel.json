@@ -46,7 +46,7 @@
       ]
     },
     {
-      "source": "/(contact|sitemap\\.xml|robots\\.txt|llms\\.txt)",
+      "source": "/(contact|new-openings|sitemap\\.xml|robots\\.txt|llms\\.txt)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -65,6 +65,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/new-openings",
+      "destination": "/new-openings.html"
+    },
     {
       "source": "/contact",
       "destination": "/contact.html"

@@ -5,6 +5,7 @@
   // ---------- Config ----------
   const MEAL_TABS = [
     ['', 'All Meals', '✨'],
+    ['new_openings', 'Soft Opens & New', '🔥'],
     ['coffee_boba', 'Top Coffee & Boba', '🧋'],
     ['breakfast', 'Breakfast', '🍳'],
     ['brunch', 'Brunch', '🥞'],
@@ -67,7 +68,7 @@
     city: '',
     cuisine: '',
     gradeAOnly: false,
-    sort: 'top',
+    sort: 'gem',
     limit: 24,
     userGpsCoords: null, // [latitude, longitude] when "Near Me" GPS is active
     userGpsLabel: '', // e.g. "Current Location" or reverse geocoded city
@@ -103,16 +104,89 @@
   const isComingSoon = (r) => Boolean(
     r && (
       r.comingSoon ||
+      r.launchStatus === 'opening_soon' ||
       r.kitchenStatus === 'coming_soon' ||
       (Array.isArray(r.tags) && r.tags.includes('coming_soon_cafe')) ||
-      /\b(coming soon|reopening soon|grand opening)\b/i.test(r.hours || '') ||
-      /\bcoming soon\b/i.test(r.name || '')
+      /\b(coming soon|reopening soon|opening soon)\b/i.test(r.hours || '') ||
+      /\b(coming soon|opening soon)\b/i.test(r.name || '')
     )
   );
+  // Automatic Time-Decay Launch Stage Helper:
+  // - Days 0–14 from openedDate (or explicit soft_open within 14d): 'soft_open' (🔥 Soft Open / Grand Opening)
+  // - Days 15–45 from openedDate (or explicit just_opened within 45d): 'just_opened' (✨ Newly Opened)
+  // - Day 45+: automatically graduates to standard Verified Gem (null)
+  // - Pre-opening: 'opening_soon' (⏳ Opening Soon)
+  const getLaunchStage = (r, now = new Date()) => {
+    if (!r) return null;
+    if (r.launchStatus === 'opening_soon' || isComingSoon(r)) {
+      return {
+        stage: 'opening_soon',
+        priority: 2,
+        cls: 'coming',
+        txt: r.launchLabel || r.comingSoonLabel || '⏳ Opening Soon'
+      };
+    }
+    const refDateStr = r.openedDate || (r.launchStatus ? r.createdAt : null);
+    let daysSinceOpen = null;
+    if (refDateStr) {
+      const parsed = new Date(refDateStr);
+      if (!isNaN(parsed.getTime())) {
+        daysSinceOpen = (now.getTime() - parsed.getTime()) / (1000 * 60 * 60 * 24);
+      }
+    }
+    if (r.launchStatus === 'soft_open') {
+      if (daysSinceOpen === null || daysSinceOpen <= 14) {
+        return {
+          stage: 'soft_open',
+          priority: 4,
+          cls: 'coming',
+          txt: r.launchLabel || '🔥 Soft Open Now'
+        };
+      }
+      if (daysSinceOpen <= 45) {
+        return {
+          stage: 'just_opened',
+          priority: 3,
+          cls: 'new',
+          txt: '✨ Newly Opened'
+        };
+      }
+      return null;
+    }
+    if (r.launchStatus === 'just_opened') {
+      if (daysSinceOpen === null || daysSinceOpen <= 45) {
+        return {
+          stage: 'just_opened',
+          priority: 3,
+          cls: 'new',
+          txt: r.launchLabel || '✨ Newly Opened'
+        };
+      }
+      return null;
+    }
+    if (daysSinceOpen !== null && daysSinceOpen >= -2 && daysSinceOpen <= 14) {
+      return {
+        stage: 'soft_open',
+        priority: 4,
+        cls: 'coming',
+        txt: r.launchLabel || '🔥 Soft Open Now'
+      };
+    }
+    if (daysSinceOpen !== null && daysSinceOpen > 14 && daysSinceOpen <= 45) {
+      return {
+        stage: 'just_opened',
+        priority: 3,
+        cls: 'new',
+        txt: r.launchLabel || '✨ Newly Opened'
+      };
+    }
+    return null;
+  };
   const badge = (r) => {
-    if (isComingSoon(r)) return { cls: 'coming', txt: '🚀 Coming Soon' };
+    const launch = getLaunchStage(r);
+    if (launch) return { cls: launch.cls, txt: launch.txt };
     // If added recently (November 2026 expansion batch), badge as Freshly Added
-    const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08') || r.createdAt.startsWith('2026-11-11')));
+    const isRecentlyAdded = Boolean(r.createdAt && (r.createdAt.startsWith('2026-11-05') || r.createdAt.startsWith('2026-11-06') || r.createdAt.startsWith('2026-11-07') || r.createdAt.startsWith('2026-11-08') || r.createdAt.startsWith('2026-11-11') || r.createdAt.startsWith('2026-11-12') || r.createdAt.startsWith('2026-11-13')));
     if (isRecentlyAdded) return { cls: 'new', txt: '✨ Freshly Added' };
     const a = avg(r), n = (r.ratings && r.ratings.length);
     if (!n) return { cls: 'gem', txt: '💎 Verified Gem' };
@@ -351,10 +425,26 @@
     'Chicago': [41.8781, -87.6298],
     'Astoria': [40.7644, -73.9235],
     'Annandale': [38.8304, -77.1964],
-    'Dallas': [32.7767, -96.7970]
+    'Falls Church': [38.8823, -77.1711],
+    'Dallas': [32.7767, -96.7970],
+    'Beaumont': [33.9295, -116.9772],
+    'Palm Desert': [33.7222, -116.3745],
+    'Hanford': [36.3275, -119.6457],
+    'Los Angeles': [34.0736, -118.3712],
+    'Denver': [39.6828, -104.9876],
+    'Nashville': [36.0465, -86.6435],
+    'El Paso': [31.7587, -106.4869]
   };
 
   const ZIP_COORDS = {
+    '92223': [33.9368, -116.9772],
+    '92260': [33.7222, -116.3888],
+    '93230': [36.3275, -119.6698],
+    '90048': [34.0736, -118.3712],
+    '80210': [39.6828, -104.9876],
+    '37013': [36.0465, -86.6435],
+    '79901': [31.7587, -106.4869],
+    '22046': [38.8798, -77.1738],
     '92860': [33.9235, -117.5586],
     '48310': [42.5908, -83.0725],
     '91761': [34.0395, -117.6190], '91762': [34.0560, -117.6610], '91764': [34.0695, -117.5980],
@@ -930,6 +1020,14 @@
     if (!mealTab) return true;
     if (mealTab === 'open_now') return isOpenRightNow(r, now);
 
+    if (mealTab === 'new_openings') {
+      const launch = getLaunchStage(r, now);
+      if (launch) return true;
+      const tags = (r.tags || []).map((t) => String(t).toLowerCase());
+      if (tags.includes('soft_open') || tags.includes('just_opened') || tags.includes('opening_soon') || tags.includes('coming_soon_cafe')) return true;
+      return Boolean(r.createdAt && r.createdAt >= '2026-11-05');
+    }
+
     if (mealTab === 'coffee_boba') {
       const isCoffeeBoba = isComingSoon(r) ||
         (r.tags || []).some((t) => ['coffee_boba', 'coffee', 'boba', 'tea', 'coming_soon_cafe'].includes(String(t).toLowerCase())) ||
@@ -998,6 +1096,10 @@
   }
 
   function getOperationalPill(r, now = new Date()) {
+    const launch = getLaunchStage(r, now);
+    if (launch && launch.stage === 'opening_soon') {
+      return { cls: 'coming_soon', dot: '⏳', text: r.launchLabel || r.comingSoonLabel || 'Opening Soon' };
+    }
     if (isComingSoon(r)) {
       return { cls: 'coming_soon', dot: '🚀', text: 'Coming Soon' };
     }
@@ -1015,6 +1117,9 @@
     }
     if (st === 'low_prep') {
       return { cls: 'low_prep', dot: '🟡', text: 'Low on Prep' };
+    }
+    if (launch && launch.stage === 'soft_open') {
+      return { cls: 'open', dot: '🔥', text: 'Soft Open Now' };
     }
     return { cls: 'open', dot: '🟢', text: 'Open Now' };
   }
@@ -1164,7 +1269,7 @@
     });
 
     // If GPS location, a 5-digit ZIP code, active Meal Tab, or proximity radius is active, order strictly by nearest distance first (ORDER BY distance ASC)
-    const sortByProximityFirst = isGpsActive || Boolean(activeZip) || Boolean(state.mealTab) || state.radiusMiles > 0;
+    const sortByProximityFirst = isGpsActive || Boolean(activeZip) || (Boolean(state.mealTab) && state.mealTab !== 'new_openings') || state.radiusMiles > 0;
 
     const sorters = {
       gem: (a, b) => {
@@ -1173,23 +1278,70 @@
           const bNameMatch = b.name.toLowerCase().includes(q) ? 1 : 0;
           if (bNameMatch !== aNameMatch) return bNameMatch - aNameMatch;
         }
+        const aLaunch = getLaunchStage(a, now);
+        const bLaunch = getLaunchStage(b, now);
+        const aLaunchPrio = aLaunch ? aLaunch.priority : 0;
+        const bLaunchPrio = bLaunch ? bLaunch.priority : 0;
+
+        // If on the "Soft Opens & New" tab, prioritize Soft Opens (#1) -> Newly Opened (#2) -> Opening Soon (#3), then newest/closest
+        if (state.mealTab === 'new_openings') {
+          if (activeZip || isGpsActive) {
+            const distDiff = getDistanceMiles(a) - getDistanceMiles(b);
+            if (Math.abs(distDiff) > 2.5) return distDiff;
+          }
+          if (bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
+          const aDate = String(a.openedDate || a.createdAt || '');
+          const bDate = String(b.openedDate || b.createdAt || '');
+          return bDate.localeCompare(aDate) || getDistanceMiles(a) - getDistanceMiles(b);
+        }
+
+        // Pin Soft Opens & Newly Opened spots as #1 within their own ZIP code or active city!
+        if (activeZip) {
+          const aInZip = String(a.zip || '').trim() === activeZip ? 1 : 0;
+          const bInZip = String(b.zip || '').trim() === activeZip ? 1 : 0;
+          if (aInZip && bInZip && bLaunchPrio !== aLaunchPrio) {
+            return bLaunchPrio - aLaunchPrio;
+          }
+        } else if (state.city) {
+          if (bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
+        }
+
         const aSpot = a.spotlightRank || 999;
         const bSpot = b.spotlightRank || 999;
         if (!activeZip && !isGpsActive && aSpot !== bSpot) {
           return aSpot - bSpot;
         }
         if (sortByProximityFirst) {
+          const distA = getDistanceMiles(a);
+          const distB = getDistanceMiles(b);
+          // Within the same neighborhood (<1.5 mi difference), float Soft Opens & Newly Opened to #1
+          if (Math.abs(distA - distB) <= 1.5 && bLaunchPrio !== aLaunchPrio) {
+            return bLaunchPrio - aLaunchPrio;
+          }
           const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
           const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
-          return getDistanceMiles(a) - getDistanceMiles(b) || (aSpot - bSpot) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
+          return distA - distB || (bLaunchPrio - aLaunchPrio) || (aSpot - bSpot) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || gemScore(b) - gemScore(a);
         }
-        // Default home view: Feature newly added restaurants across all ZIP codes right at the top
+        // Default home view: Feature Soft Opens, Grand Openings, and newly added restaurants right at the top
+        if (bLaunchPrio !== aLaunchPrio && aSpot === bSpot) {
+          return bLaunchPrio - aLaunchPrio;
+        }
         const aNew = (a.createdAt && a.createdAt >= '2026-11-05') ? 1 : 0;
         const bNew = (b.createdAt && b.createdAt >= '2026-11-05') ? 1 : 0;
-        return (aSpot - bSpot) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
+        return (aSpot - bSpot) || (bLaunchPrio - aLaunchPrio) || bNew - aNew || (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || getDistanceMiles(a) - getDistanceMiles(b) || gemScore(b) - gemScore(a);
       },
       health: (a, b) => (b.healthPermit?.score || 0) - (a.healthPermit?.score || 0) || getDistanceMiles(a) - getDistanceMiles(b),
-      top: (a, b) => avg(b) - avg(a) || getDistanceMiles(a) - getDistanceMiles(b),
+      top: (a, b) => {
+        const aLaunch = getLaunchStage(a, now);
+        const bLaunch = getLaunchStage(b, now);
+        const aLaunchPrio = aLaunch ? aLaunch.priority : 0;
+        const bLaunchPrio = bLaunch ? bLaunch.priority : 0;
+        if (state.mealTab === 'new_openings' && bLaunchPrio !== aLaunchPrio) return bLaunchPrio - aLaunchPrio;
+        if (activeZip && String(a.zip || '').trim() === activeZip && String(b.zip || '').trim() === activeZip && bLaunchPrio !== aLaunchPrio) {
+          return bLaunchPrio - aLaunchPrio;
+        }
+        return avg(b) - avg(a) || getDistanceMiles(a) - getDistanceMiles(b);
+      },
       hidden: (a, b) => a.ratings.length - b.ratings.length || getDistanceMiles(a) - getDistanceMiles(b),
       newest: (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
       az: (a, b) => a.name.localeCompare(b.name),
@@ -2806,7 +2958,7 @@
 
     const getParam = (key) => searchParams.get(key) || hashParams.get(key);
     const rawCity = getParam('city');
-    const rawMeal = getParam('meal');
+    const rawMeal = getParam('meal') || getParam('tab');
     const rawZip = getParam('zip');
     const rawRegion = getParam('region');
 

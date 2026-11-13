@@ -1190,7 +1190,7 @@ const indexHtml = `<!doctype html>
   <meta name="twitter:description" content="Discover 155+ verified independent family-run restaurants across 73 ZIP codes with live operating hours &amp; official health inspection grades." />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/styles.css?v=113" />
+  <link rel="stylesheet" href="/styles.css?v=114" />
   <script type="application/ld+json">${JSON.stringify(homeSchemaJsonLd)}</script>
 ${ga4AndOutboundScriptHtml}
   <script defer src="/_vercel/insights/script.js"></script>
@@ -1213,16 +1213,42 @@ ${ga4AndOutboundScriptHtml}
       <div class="breaking-gem-alert" id="soft-open-spotlight-banner" role="region" aria-label="Breaking Soft Opening Alert">
         <div class="breaking-gem-top">
           <div class="breaking-gem-headline-group">
-            <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · LOCAL GEM ALERT</span>
-            <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+            <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · SOFT OPENING SPOTLIGHT</span>
+            <div class="breaking-title-stack">
+              <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+              <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes these verified neighborhood debuts:</span>
+            </div>
           </div>
-          <a href="/new-openings" class="breaking-all-btn">🔥 See All Soft Opens →</a>
+          <a href="/new-openings" class="breaking-all-btn">🔥 Explore All Soft Opens →</a>
         </div>
-        <div class="breaking-gem-bottom">
-          <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes:</span>
-          <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-pill">☕ Chaiwale &amp; Co. <small>(Redlands)</small> ↗</a>
-          <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-pill">☁️ Cloud Nine Espresso <small>(Beaumont)</small> ↗</a>
-          <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-pill">🥟 One More Bite Dumpling House <small>(Palm Desert)</small> ↗</a>
+        <div class="breaking-spotlight-grid">
+          <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-card">
+            <div class="breaking-spot-icon">🍵</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Redlands · 92373</div>
+              <div class="breaking-spot-name">Chaiwale &amp; Co.</div>
+              <div class="breaking-spot-desc">Pink Kashmiri Chai &amp; Parle-G Cream Foam</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
+          <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-card">
+            <div class="breaking-spot-icon">☕</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Beaumont · 92223</div>
+              <div class="breaking-spot-name">Cloud Nine Espresso</div>
+              <div class="breaking-spot-desc">Specialty Craft Lattes &amp; Signature Cold Foam</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
+          <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-card">
+            <div class="breaking-spot-icon">🥟</div>
+            <div class="breaking-spot-body">
+              <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Palm Desert · 92260</div>
+              <div class="breaking-spot-name">One More Bite Dumpling House</div>
+              <div class="breaking-spot-desc">Hand-Pinched Soup Dumplings &amp; Wontons</div>
+            </div>
+            <div class="breaking-spot-arrow">↗</div>
+          </a>
         </div>
       </div>
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Soft Openings, Bakeries, Coffee &amp; Boba</h1>
@@ -1263,8 +1289,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=113"></script>
-  <script defer src="/gems-client.js?v=113"></script>
+  <script defer src="/seed-data.js?v=114"></script>
+  <script defer src="/gems-client.js?v=114"></script>
 </body>
 </html>
 `;

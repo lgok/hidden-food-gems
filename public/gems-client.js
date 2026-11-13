@@ -1583,16 +1583,42 @@
         <div class="breaking-gem-alert" id="soft-open-spotlight-banner" role="region" aria-label="Breaking Soft Opening Alert">
           <div class="breaking-gem-top">
             <div class="breaking-gem-headline-group">
-              <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · LOCAL GEM ALERT</span>
-              <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+              <span class="breaking-badge"><span class="breaking-live-dot"></span>BREAKING · SOFT OPENING SPOTLIGHT</span>
+              <div class="breaking-title-stack">
+                <span class="breaking-headline">💛 Support your local <em>mom &amp; pop</em> restaurants and cafes!</span>
+                <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes these verified neighborhood debuts:</span>
+              </div>
             </div>
-            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" class="breaking-all-btn">🔥 See All Soft Opens →</a>
+            <a href="/new-openings" onclick="const t=document.querySelector('[data-meal=soft_open]');if(t){t.click();return false;}" class="breaking-all-btn">🔥 Explore All Soft Opens →</a>
           </div>
-          <div class="breaking-gem-bottom">
-            <span class="breaking-sub-label">🔥 The Soft Opening Highlight includes:</span>
-            <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-pill">☕ Chaiwale &amp; Co. <small>(Redlands)</small> ↗</a>
-            <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-pill">☁️ Cloud Nine Espresso <small>(Beaumont)</small> ↗</a>
-            <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-pill">🥟 One More Bite Dumpling House <small>(Palm Desert)</small> ↗</a>
+          <div class="breaking-spotlight-grid">
+            <a href="/gem/chaiwale-and-co-redlands-92373" class="breaking-spot-card">
+              <div class="breaking-spot-icon">🍵</div>
+              <div class="breaking-spot-body">
+                <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Redlands · 92373</div>
+                <div class="breaking-spot-name">Chaiwale &amp; Co.</div>
+                <div class="breaking-spot-desc">Pink Kashmiri Chai &amp; Parle-G Cream Foam</div>
+              </div>
+              <div class="breaking-spot-arrow">↗</div>
+            </a>
+            <a href="/gem/cloud-nine-espresso-beaumont-92223" class="breaking-spot-card">
+              <div class="breaking-spot-icon">☕</div>
+              <div class="breaking-spot-body">
+                <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Beaumont · 92223</div>
+                <div class="breaking-spot-name">Cloud Nine Espresso</div>
+                <div class="breaking-spot-desc">Specialty Craft Lattes &amp; Signature Cold Foam</div>
+              </div>
+              <div class="breaking-spot-arrow">↗</div>
+            </a>
+            <a href="/gem/one-more-bite-dumpling-palm-desert-92260" class="breaking-spot-card">
+              <div class="breaking-spot-icon">🥟</div>
+              <div class="breaking-spot-body">
+                <div class="breaking-spot-kicker"><span class="breaking-spot-tag">SOFT OPEN</span> 📍 Palm Desert · 92260</div>
+                <div class="breaking-spot-name">One More Bite Dumpling House</div>
+                <div class="breaking-spot-desc">Hand-Pinched Soup Dumplings &amp; Wontons</div>
+              </div>
+              <div class="breaking-spot-arrow">↗</div>
+            </a>
           </div>
         </div>
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>

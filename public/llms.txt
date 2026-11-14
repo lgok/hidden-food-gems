@@ -1,5 +1,5 @@
 # HiddenFoodGem.com — Verified Independent Restaurants & Soft Openings Directory
-> Discover 202+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 97 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
+> Discover 209+ verified independent, family-owned restaurants, bakeries, coffee roasters, and boba shops across 105 ZIP codes in CA, TX, NY, NJ, MD, DC, VA, CO, TN, IL, and MI. Zero national chains. Zero alcohol. Zero paid rankings.
 
 ## Key Features
 - Soft Opening & Pre-Opening Radar (https://www.hiddenfoodgem.com/new-openings): Tracks independent restaurant soft openings (Days 1–14), newly opened kitchens (Days 15–45), and coming-soon neighborhood cafes before mainstream map platforms index them.
@@ -7,6 +7,8 @@
 - Sister Family Events Platform: https://www.letsgetoutkids.com (Verified kid-friendly events, seasonal festivals, and upcoming family attractions).
 
 ## Featured Soft Openings & Newly Opened Gems
+- Mi Latte Cafe — Specialty Matcha, Espresso & Croffles (Grand Opening Nov 15) (Woodburn, OR 97071) [🔥 Soft Open Now]: https://www.hiddenfoodgem.com/gem/mi-latte-cafe-woodburn-or-97071
+- Cinnapop Cafe — Handcrafted Cinnamon Rolls & Matcha (Soft Opening) (Sacramento, CA 95814) [🔥 Soft Open Now]: https://www.hiddenfoodgem.com/gem/cinnapop-cafe-sacramento-95814
 - Chaiwale & Co. (Historic State St Redlands) (Redlands, CA 92373) [🔥 Soft Open Now on State St]: https://www.hiddenfoodgem.com/gem/chaiwale-and-co-redlands-92373
 - One More Bite Dumpling House (Palm Desert) (Palm Desert, CA 92260) [🔥 Soft Open Now in Palm Desert]: https://www.hiddenfoodgem.com/gem/one-more-bite-dumpling-palm-desert-92260
 - Cloud Nine Espresso (Downtown Beaumont) (Beaumont, CA 92223) [🎉 Grand Opening Nov 14–15]: https://www.hiddenfoodgem.com/gem/cloud-nine-espresso-beaumont-92223
@@ -14,19 +16,25 @@
 - Rashfa Yemeni Coffee & Cafe (Falls Church) (Falls Church, VA 22046) [🎉 Grand Opening Sat (First 100 Free Drink)]: https://www.hiddenfoodgem.com/gem/rashfa-cafe-falls-church-va-22046
 - The Cupcake Route Bakery (Hanford) (Hanford, CA 93230) [🎉 Grand Opening Week!]: https://www.hiddenfoodgem.com/gem/the-cupcake-route-hanford-93230
 - TashTea Cafe: Kurdish & Turkish Breakfast House (Nashville) (Antioch, TN 37013) [🔥 New Dining Expansion & Menu]: https://www.hiddenfoodgem.com/gem/tashtea-cafe-nashville-37013
+- Sugar Plum: A Pop-Up Christmas Bakery by Kelsey Elizabeth (Westlake, OH 44145) [🎄 Grand Opening Holiday Pop-Up!]: https://www.hiddenfoodgem.com/gem/sugar-plum-kelsey-elizabeth-westlake-44145
+- Con Azúcar Café (Downtown Santa Cruz — Soft Open Now) (Santa Cruz, CA 95060) [🔥 Soft Open · Grand Opening Nov 21]: https://www.hiddenfoodgem.com/gem/con-azucar-cafe-santa-cruz-95060
 - Luna's Sunday Cafe (Moreno Valley) (Moreno Valley, CA 92553) [✨ Newly Opened Storefront]: https://www.hiddenfoodgem.com/gem/lunas-sunday-cafe-moreno-valley-92553
 - nudes Mediterranean Frozen Yogurt (Beverly Grove) (Los Angeles, CA 90048) [✨ Newly Opened in LA]: https://www.hiddenfoodgem.com/gem/nudes-yogurt-beverly-grove-90048
 - Eternal Flavors Bakery (South Broadway Denver) (Denver, CO 80210) [✨ New S. Broadway Location]: https://www.hiddenfoodgem.com/gem/eternal-flavors-bakery-denver-80210
+- LADD Coffee (West Covina Korean Cream-Top Coffee & Brioche Donuts) (West Covina, CA 91790) [✨ SGV Cream-Coffee Gem]: https://www.hiddenfoodgem.com/gem/ladd-coffee-west-covina-91790
+- Farmer’s Daughter Coffee & Bakery at Schnepf Farms (Queen Creek, AZ) (Queen Creek, AZ 85142) [🌻 New Farm Patio Coffee Shop]: https://www.hiddenfoodgem.com/gem/farmers-daughter-coffee-queen-creek-85142
+- The Brew Box Coffee Company (Peoria, AZ) (Peoria, AZ 85381) [✨ Holiday Cold-Foam Flight Out Now]: https://www.hiddenfoodgem.com/gem/the-brew-box-coffee-peoria-az-85381
 - Goose Coffee (@_goosecoffee — Ontario Ranch Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · Ontario Gateway Plaza]: https://www.hiddenfoodgem.com/gem/goose-coffee-ontario-ranch-91761
 - The Christmas Cafe (@thechristmascafeaz) (Peoria, AZ 85383) [🚀 Coming Soon · Nov 2026 Grand Opening]: https://www.hiddenfoodgem.com/gem/the-christmas-cafe-peoria-az-85383
 - Bobo Cha Bar (New Vineyard Ave Flagship — Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · New Vineyard Ave Location]: https://www.hiddenfoodgem.com/gem/bobo-cha-bar-vineyard-ontario-91761
 - The Sipz Bar (Ontario Ranch — Coming Soon) (Ontario, CA 91761) [🚀 Coming Soon · Ontario Ranch]: https://www.hiddenfoodgem.com/gem/the-sipz-bar-ontario-ranch-91761
 - Coffee Boss (New Downtown El Paso Flagship — Coming Soon) (El Paso, TX 79901) [⏳ Opening Soon · New Downtown Storefront]: https://www.hiddenfoodgem.com/gem/coffee-boss-downtown-el-paso-79901
+- Corona Asian Food Festival at Citrus Park (Dec 12–13 Pop-Up Showcase) (Corona, CA 92881) [🏮 Dec 12–13 · Free Asian Food Fest]: https://www.hiddenfoodgem.com/gem/corona-asian-food-festival-citrus-park-92881
 
 ## Primary Entry Points
 - Homepage & Interactive ZIP Finder: https://www.hiddenfoodgem.com/
 - New Restaurant Soft Openings & Coming Soon Hub: https://www.hiddenfoodgem.com/new-openings
-- Full XML Sitemap (302 URLs): https://www.hiddenfoodgem.com/sitemap.xml
+- Full XML Sitemap (317 URLs): https://www.hiddenfoodgem.com/sitemap.xml
 - Featured Neighborhood Guides:
   - Alexandria, VA (22301): https://www.hiddenfoodgem.com/cities/alexandria-va-22301
   - Alhambra, CA (91801): https://www.hiddenfoodgem.com/cities/alhambra-ca-91801
@@ -40,7 +48,6 @@
   - Austin, TX (78756): https://www.hiddenfoodgem.com/cities/austin-tx-78756
   - Austin, TX (78757): https://www.hiddenfoodgem.com/cities/austin-tx-78757
   - Beaumont, CA (92223): https://www.hiddenfoodgem.com/cities/beaumont-ca-92223
-  - Berkeley, CA (94710): https://www.hiddenfoodgem.com/cities/berkeley-ca-94710
   - Bethesda, MD (20814): https://www.hiddenfoodgem.com/cities/bethesda-md-20814
   - Boyle Heights, CA (90033): https://www.hiddenfoodgem.com/cities/boyle-heights-ca-90033
   - Bronx, NY (10462): https://www.hiddenfoodgem.com/cities/bronx-ny-10462
@@ -58,3 +65,4 @@
   - Chino Hills, CA (91709): https://www.hiddenfoodgem.com/cities/chino-hills-ca-91709
   - Claremont, CA (91711): https://www.hiddenfoodgem.com/cities/claremont-ca-91711
   - Corona, CA (92878): https://www.hiddenfoodgem.com/cities/corona-ca-92878
+  - Corona, CA (92881): https://www.hiddenfoodgem.com/cities/corona-ca-92881

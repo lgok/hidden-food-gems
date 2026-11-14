@@ -1,89 +1,352 @@
 [
   {
-    "id": "eternal-flavors-bakery-denver-80227",
-    "name": "Eternal Flavors Bakery (Bear Valley Denver)",
-    "cuisine": "Artisan European-Style Fruit Cakes, Pastry Counter & Specialty Espresso Cafe",
-    "regionalIdentity": "Family-Owned Denver Bakery Home of the Iconic Spring Fling Cake (W Dartmouth Ave)",
+    "id": "luxweet-bakery-cafe-chino-hills-91709",
+    "name": "L'uxweet Bakery Cafe (Chino Hills)",
+    "cuisine": "Traditional Taiwanese Egg Pancakes (Dan Bing), Thick-Cut Toasts & Artisan Bakery",
+    "regionalIdentity": "Authentic Taipei-Style Morning Kitchen & Handcrafted Pastry Cafe in Chino Hills",
     "tags": [
       "bakery",
-      "coffee",
-      "espresso",
+      "taiwanese",
       "breakfast",
-      "latte"
+      "cafe",
+      "tea",
+      "pastries"
     ],
     "price": 1,
-    "address": "5600 W Dartmouth Ave, Unit 104",
-    "city": "Denver",
-    "zip": "80227",
-    "driveFrom91761": "Denver, CO Gem (80227)",
-    "phone": "(720) 309-4721",
-    "hours": "Tue–Sat 6:00am–5:00pm; Sun 9:00am–4:00pm (Closed Mon)",
+    "address": "4200 Chino Hills Pkwy, Suite 125",
+    "city": "Chino Hills",
+    "zip": "91709",
+    "driveFrom91761": "16 min from 91761",
+    "phone": "(909) 306-7169",
+    "hours": "Mon–Sun: 7:30 AM – 2:00 PM",
     "healthPermit": {
-      "facilityId": "DDPHE-80227-EFB104",
-      "agency": "Denver Department of Public Health & Environment",
+      "facilityId": "SBC-FA0094128",
+      "agency": "San Bernardino County Environmental Health Services",
       "grade": "A",
-      "score": 100,
+      "score": 98,
       "inspectedOn": "2026-10-22",
-      "portalUrl": "https://www.denvergov.org"
+      "portalUrl": "https://ehs.sbcounty.gov"
     },
-    "familyRoots": "Founded in Southwest Denver by veteran master baker Melchor Ocampo (who spent decades perfecting Denver's legendary fruit-stacked Spring Fling Cake) alongside his family.",
-    "scratchCommitment": "Every cake sponge, fruit compote, mousse, cream puff, eclair, and house coffee syrup (like apple caramel butter and banana foster) is crafted from scratch in-house daily.",
-    "destinationDish": {
-      "name": "Signature Spring Fling Cake Slice & Iced Teddy Graham Latte",
-      "callout": "Moist zucchini-spice cake layered with scratch cream cheese frosting and piled high with fresh strawberries, kiwi, mango, and blueberries — available by the slice alongside a honey-foam Teddy Graham Latte."
-    },
-    "description": "Beloved family-owned Denver artisan bakery and sit-down coffeehouse at 5600 W Dartmouth Ave, Unit 104 (80227), famous for keeping Denver's iconic fruit-stacked Spring Fling Cake alive by the slice alongside scratch pastries and creative espresso drinks.",
-    "story": "When Denver's historic Market on Larimer Square closed, master baker Melchor Ocampo opened Eternal Flavors Bakery with his family so locals could still enjoy the authentic Spring Fling Cake, European fruit mousse cakes, and a cozy neighborhood cafe with plenty of seating and parking.",
-    "image": "",
-    "photos": [],
+    "familyRoots": "Family-operated Taiwanese breakfast and pastry cafe bringing authentic Taipei morning street classics and scratch pastries to Chino Hills.",
+    "scratchCommitment": "Griddled-to-order Taiwanese Dan Bing (egg crepes), house-marinated BBQ pork, thick-cut toasted milk bread sandwiches, and slow-brewed old-fashioned Taiwanese black tea.",
+    "destinationDish": "House BBQ Pork & Kimchi Taiwanese Egg Pancake (Dan Bing / 蛋餅) with Old-Fashioned Black Tea",
+    "description": "Beloved Chino Hills morning gem at 4200 Chino Hills Pkwy (#125) specializing in griddled-to-order Taiwanese Egg Pancakes (Dan Bing), layered Taipei toast sandwiches, savory rice boxes, and artisanal pastries.",
+    "story": "Locals line up on weekend mornings for crispy-chewy Dan Bing egg pancakes filled with house BBQ pork and kimchi alongside thick-cut Taiwanese breakfast toasts and old-fashioned black tea.",
+    "image": "/img/gem-placeholder.jpg",
+    "photos": [
+      "/img/gem-placeholder.jpg"
+    ],
     "structuredMenu": {
       "signatures": [
         {
-          "name": "Iconic Spring Fling Cake (Generous Walk-In Slice)",
-          "price": ".75",
-          "desc": "Moist zucchini-spice cake layered with cream cheese frosting and loaded inside and out with fresh strawberries, mango, kiwi, and blueberries."
+          "name": "House BBQ Pork & Kimchi Egg Pancake (Dan Bing)",
+          "price": "$8.95",
+          "desc": "Crispy griddled Taiwanese scallion-egg pancake rolled with house-marinated BBQ pork and tangy kimchi."
         },
         {
-          "name": "Teddy Graham Iced Latte",
-          "price": ".25",
-          "desc": "Double-shot espresso over ice with brown sugar cinnamon and house-whipped honey cold foam."
-        },
-        {
-          "name": "Fresh Strawberry Mousse or Mango Cake Slice",
-          "price": ".50",
-          "desc": "Light, not-too-sweet European sponge cake layered with real fruit mousse and fresh glazed fruit."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Red Velvet Oreo Cream Cake Slice",
-          "price": ".50",
-          "desc": "Velvety cocoa sponge layered with Oreo cream filling and crunchy cookie pieces."
-        },
-        {
-          "name": "Scratch French Eclair or Cream Puff",
-          "price": ".25",
-          "desc": "Choux pastry baked fresh each morning and filled with scratch pastry cream."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Apple Crisp Chai or Banana Foster Matcha",
-          "price": ".50",
-          "desc": "Spiced chai with house apple caramel butter syrup, or ceremonial matcha over scratch banana foster syrup."
+          "name": "Taipei BBQ Pork & Egg Thick-Cut Toast",
+          "price": "$8.50",
+          "desc": "Fluffy toasted milk bread layered with griddled egg, house BBQ pork, cucumber, tomato, and house dressing."
         }
       ]
     },
-    "media": [],
-    "sample": false,
     "featured": true,
-    "dateAdded": "2026-11-13",
-    "createdAt": "2026-11-13T20:12:00.000Z",
-    "ratings": [],
-    "region": "Denver Metro",
-    "county": "Denver",
+    "createdAt": "2026-11-14T11:00:00.000Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.8,
+        "count": 185
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "San Bernardino County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 12,
+      "shares": 2
+    },
+    "latitude": 33.9891,
+    "longitude": -117.7176,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 840,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "is_active": true,
+    "website": "https://luxweetchinohills.com",
+    "socialMedia": {
+      "instagram": "@luxweet_cafe"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "eastbrew-cafe-bakery-eastvale-91752",
+    "name": "EastBrew Café and Bakery",
+    "cuisine": "Organic Specialty Coffee, House-Spiced Café de Olla & Scratch Bakery",
+    "regionalIdentity": "Family-Owned Eastvale Organic Espresso Bar, House-Made Nut Milks & Scratch Brunch Kitchen",
+    "tags": [
+      "coffee",
+      "bakery",
+      "cafe",
+      "breakfast",
+      "brunch",
+      "pastries"
+    ],
+    "price": 2,
+    "address": "12303 Limonite Ave, Suite 710",
+    "city": "Eastvale",
+    "zip": "91752",
+    "driveFrom91761": "12 min from 91761",
+    "phone": "(951) 934-3577",
+    "hours": "Mon–Sun: 7:00 AM – 3:00 PM (Weekend Brunch 7:00 AM – 2:00 PM)",
+    "healthPermit": {
+      "facilityId": "RIV-PR0089412",
+      "agency": "Riverside County Department of Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-18",
+      "portalUrl": "https://rivcoeh.org"
+    },
+    "familyRoots": "Founded by an Eastvale family dedicated to bringing 100% organic specialty coffee, house-pressed almond and oat milks, and scratch-baked morning pastries to the Limonite corridor.",
+    "scratchCommitment": "Every syrup (cardamom, pistachio, cinnamon piloncillo), nut milk, and pastry batch is crafted in-house without artificial preservatives or commercial mixes.",
+    "destinationDish": "House-Spiced Café de Olla & Cardamom Pistachio Oat Latte with Warm Scratch Pastries",
+    "description": "Independent family-owned coffeehouse and scratch bakery at 12303 Limonite Ave in Eastvale serving organic espresso, house-spiced Café de Olla, pistachio and cardamom lattes with house-made almond/oat milk, and weekend brunch plates.",
+    "story": "A true neighborhood gathering spot for Eastvale and Jurupa Valley families, pairing small-batch organic coffee roasts with scratch bakery muffins, cookies, and weekend brunch.",
+    "image": "/img/gem-placeholder.jpg",
+    "photos": [
+      "/img/gem-placeholder.jpg"
+    ],
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "House-Spiced Café de Olla",
+          "price": "$6.25",
+          "desc": "Organic espresso and brewed coffee infused with Mexican cinnamon, piloncillo, and orange peel."
+        },
+        {
+          "name": "Cardamom or Pistachio House-Milk Latte",
+          "price": "$6.75",
+          "desc": "Double-shot organic espresso over house-pressed almond or oat milk with scratch pistachio or cardamom syrup."
+        }
+      ]
+    },
+    "featured": true,
+    "createdAt": "2026-11-14T11:00:00.000Z",
+    "ratings": [
+      {
+        "source": "Local Community",
+        "stars": 4.8,
+        "count": 310
+      }
+    ],
+    "region": "Inland Empire",
+    "county": "Riverside County",
+    "pricesVerified": true,
+    "kitchenStatus": "Active",
+    "analytics": {
+      "views": 14,
+      "shares": 3
+    },
+    "latitude": 33.9756,
+    "longitude": -117.5582,
+    "opening_hour_minutes": 420,
+    "closing_hour_minutes": 900,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch"
+    ],
+    "is_active": true,
+    "website": "https://www.eastbrewcafe.com",
+    "socialMedia": {
+      "instagram": "@eastbrewcafe"
+    },
+    "state": "CA",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "id": "mi-latte-cafe-woodburn-or-97071",
+    "name": "Mi Latte Cafe — Specialty Matcha, Espresso & Croffles (Grand Opening Nov 15)",
+    "cuisine": "Specialty Coffee, Matcha & Croffle Cafe",
+    "regionalIdentity": "Independent Willamette Valley Specialty Matcha & Espresso Bar",
+    "city": "Woodburn",
+    "state": "OR",
+    "zip": "97071",
+    "county": "Marion County",
+    "region": "Pacific Northwest",
+    "address": "960 N Pacific Hwy, Woodburn, OR 97071",
+    "lat": 45.153,
+    "lng": -122.849,
+    "phone": "",
+    "price": 1,
+    "hours": "Mon–Fri 8:30 AM – 4:30 PM; Sat 10:00 AM – 4:30 PM; Sun 10:00 AM – 4:30 PM (Grand Opening Sun Nov 15 at 10:00 AM)",
+    "opening_hour_minutes": 510,
+    "closing_hour_minutes": 990,
+    "timezone": "America/Los_Angeles",
+    "is_active": true,
+    "isIndependent": true,
+    "ownerVerified": false,
+    "verifiedPhoto": false,
+    "freshlyAdded": true,
+    "launchStatus": "soft_open",
+    "openedDate": "2026-11-13",
+    "createdAt": "2026-11-13",
     "pricesVerified": "November 2026",
-    "kitchenStatus": "open"
+    "healthPermit": {
+      "grade": "A",
+      "score": 99,
+      "agency": "Marion County Environmental Health",
+      "status": "Verified Active"
+    },
+    "holidaySpecial": {
+      "title": "🎀 Official Grand Opening Celebration — Sunday, Nov 15 at 10:00 AM!",
+      "details": "Celebrate Mi Latte Cafe's official Grand Opening in Woodburn, Oregon on Sunday, November 15th starting at 10:00 AM! Come enjoy handcrafted fruit-foam matcha lattes, specialty espresso drinks, and warm pressed Nutella & strawberry croffles."
+    },
+    "scratchCommitment": "Hand-whisked ceremonial matcha layered with house-whipped fruit cold foams, small-batch espresso lattes, and golden croissant-waffles (croffles) pressed to order with fresh berries and cream.",
+    "description": "Woodburn, Oregon's beloved independent coffee and matcha bar (@milatte.co), celebrating its official Grand Opening on Sunday, November 15 at 10:00 AM with signature layered matcha lattes, artisanal espresso, and fresh-pressed sweet croffles.",
+    "story": "Built from the ground up through months of late nights and dedication to bringing specialty coffee and authentic matcha culture to Woodburn, Mi Latte Cafe has grown from a local favorite into a full-fledged community gathering spot.",
+    "destinationDish": {
+      "name": "Strawberry Cold Foam Ceremonial Matcha Latte & Fresh Berry Croffle",
+      "whyWorthDrive": "Woodburn's go-to independent cafe for vibrant fruit-foam layered matcha and warm, caramelized croissant-waffles."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Strawberry Cream Cold Foam Matcha Latte",
+          "price": "$6.50",
+          "desc": "Whisked ceremonial matcha over milk, topped with a thick ribbon of house-whipped sweet strawberry cold foam."
+        },
+        {
+          "name": "Nutella & Fresh Strawberry Pressed Croffle",
+          "price": "$7.50",
+          "desc": "Buttery flaky croissant dough caramelized in a waffle iron and topped with warm Nutella, sliced strawberries, and powdered sugar."
+        },
+        {
+          "name": "Berries & Sweet Cream Croffle",
+          "price": "$7.50",
+          "desc": "Crisp-on-the-outside, tender-on-the-inside croissant waffle crowned with fresh seasonal berries and house whipped cream."
+        },
+        {
+          "name": "Signature Mi Latte Dulce Espresso",
+          "price": "$6.00",
+          "desc": "Rich double-shot espresso steamed or iced with house caramelized sweet milk and warming cinnamon notes."
+        }
+      ]
+    },
+    "tags": [
+      "coffee_boba",
+      "soft_open",
+      "opening_soon",
+      "new_openings",
+      "breakfast",
+      "lunch",
+      "bakery",
+      "matcha",
+      "coffee",
+      "kid-friendly",
+      "vegetarian"
+    ]
+  },
+  {
+    "id": "cinnapop-cafe-sacramento-95814",
+    "name": "Cinnapop Cafe — Handcrafted Cinnamon Rolls & Matcha (Soft Opening)",
+    "cuisine": "Artisanal Bakery, Cinnamon Rolls & Matcha Cafe",
+    "regionalIdentity": "Sacramento Farmers Market Pop-Up Turned Brick-and-Mortar Bakery",
+    "city": "Sacramento",
+    "state": "CA",
+    "zip": "95814",
+    "county": "Sacramento County",
+    "region": "Northern California",
+    "address": "611 16th St, Sacramento, CA 95814",
+    "lat": 38.5828,
+    "lng": -121.4844,
+    "phone": "",
+    "price": 1,
+    "hours": "Mon–Sun 11:00 AM – 8:00 PM (Soft Opening Starting Nov 13)",
+    "opening_hour_minutes": 660,
+    "closing_hour_minutes": 1200,
+    "timezone": "America/Los_Angeles",
+    "is_active": true,
+    "isIndependent": true,
+    "ownerVerified": false,
+    "verifiedPhoto": false,
+    "freshlyAdded": true,
+    "launchStatus": "soft_open",
+    "openedDate": "2026-11-13",
+    "createdAt": "2026-11-13",
+    "pricesVerified": "November 2026",
+    "healthPermit": {
+      "grade": "A",
+      "score": 99,
+      "agency": "Sacramento County EMD",
+      "status": "Pass / Verified Active"
+    },
+    "scratchCommitment": "Small-batch brioche cinnamon rolls proofed and baked fresh daily by 15-year master baker Tola Vong and Chhayleang Tang, topped with house-whipped ube, matcha, Dubai chocolate kataifi, and cream cheese frostings alongside ceremonial matcha lattes.",
+    "description": "Founded by husband-and-wife team Tola Vong and Chhayleang Tang after building a devoted following at Sacramento farmers markets, Cinnapop Cafe brings freshly baked gourmet cinnamon rolls, ceremonial matcha drinks, and soft-serve ice cream to Midtown Sacramento (611 16th St).",
+    "story": "After 15 years perfecting scratch baking and winning over Sacramento farmers markets as a beloved pop-up, Tola Vong and Chhayleang Tang officially opened the doors to their first brick-and-mortar storefront in Midtown on November 13.",
+    "destinationDish": {
+      "name": "Warm Ube & Matcha Frosted Brioche Cinnamon Rolls + Ceremonial Matcha Latte",
+      "whyWorthDrive": "Pillowy soft, fresh-out-of-the-oven cinnamon rolls glazed to order with creative dessert toppings like Chocolate Dubai, Ube, Tiramisu, and Matcha."
+    },
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Warm Matcha & Ube Frosted Cinnamon Roll",
+          "price": "$6.50",
+          "desc": "Fluffy scratch-baked cinnamon roll swirled with brown sugar cinnamon and topped with rich ube or ceremonial matcha cream frosting."
+        },
+        {
+          "name": "Chocolate Dubai Pistachio Kataifi Cinnamon Roll",
+          "price": "$7.50",
+          "desc": "Freshly baked cinnamon roll loaded with crispy toasted kataifi pastry, pistachio cream, and Belgian chocolate drizzle."
+        },
+        {
+          "name": "Tiramisu & Oreo Cream Cinnamon Roll",
+          "price": "$6.75",
+          "desc": "Espresso-kissed mascarpone cream or crushed Oreo cookies over a warm, gooey house cinnamon roll."
+        },
+        {
+          "name": "Iced Ceremonial Matcha Latte",
+          "price": "$6.25",
+          "desc": "Whisked ceremonial-grade green tea poured over cold milk, perfectly balanced to pair with a warm cinnamon roll."
+        },
+        {
+          "name": "Artisanal Soft-Serve & Cinnamon Roll Swirl",
+          "price": "$6.95",
+          "desc": "Creamy house soft-serve ice cream served alongside or swirled over a warm freshly baked cinnamon roll."
+        }
+      ]
+    },
+    "tags": [
+      "coffee_boba",
+      "soft_open",
+      "new_openings",
+      "breakfast",
+      "lunch",
+      "late-night",
+      "bakery",
+      "matcha",
+      "cinnamon-rolls",
+      "kid-friendly",
+      "vegetarian"
+    ]
   },
   {
     "id": "molinos-coffee-riverside-92501",
@@ -114,30 +377,44 @@
     "familyRoots": "Independent Downtown Riverside family roastery celebrating Latin American single-origin coffees, handcrafted Mazapán and Dulce de Leche lattes, and fresh pastries.",
     "scratchCommitment": "In-house roasted Arabica beans sourced directly from Latin American farms, scratch Mexican piloncillo-cinnamon syrups, and baked Mexican sweet breads.",
     "destinationDish": {
-      "name": "Signature Iced Mazapán Latte & Guava Cheese Pastelito",
-      "callout": "Double shot of rich espresso blended with sweet crushed peanut mazapán and creamy oat milk, paired with flaky guava pastry."
+      "name": "Holiday & Seasonal Lineup: Gingerbread Latte, Banana Cream Pie Latte, Cookie Butter Lover Latte & Strawberry Matcha",
+      "callout": "Handcrafted seasonal Gingerbread, Banana Cream Pie, and Cookie Butter Lover espresso lattes alongside layered Strawberry Matcha and famous Iced Mazapán Latte."
     },
     "description": "Downtown Riverside's premier independent specialty coffeehouse on the historic Main Street pedestrian mall, celebrated for creative Latin lattes, cold brew, and pastries.",
     "story": "Molinos Coffee is the living room of downtown Riverside, where community members, students, and families gather over expertly roasted coffees made with pride.",
-    "image": "",
-    "photos": [],
+    "image": "/photos/molinos-festival-of-lights.jpg",
+    "photos": [
+      {
+        "file": "/photos/molinos-festival-of-lights.jpg",
+        "label": "Molinos Coffee Storefront & Festival of Lights"
+      }
+    ],
     "structuredMenu": {
       "signatures": [
         {
-          "name": "Festival of Lights Reserved Holiday Experience & Specialty Latte",
+          "name": "🎄 Festival of Lights Reserved Indoor/Outdoor Seat ($25/Person · Starts Nov 21)",
           "price": "$25.00",
-          "desc": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights.",
-          "description": "Reserved indoor/outdoor holiday seating during Riverside’s historic Festival of Lights starting Nov 21. Skip the crowds with your favorite handcrafted holiday latte & pastries in the warm glow of the Mission Inn lights."
+          "desc": "Skip the crowds and enjoy Riverside's Festival of Lights from reserved indoor or outdoor seating at Molinos Coffee — call (951) 347-9518 to reserve."
         },
         {
-          "name": "Famous Iced Mazapán Latte",
-          "price": "$5.50",
-          "desc": "Double espresso, house-ground Mexican peanut mazapán candy, vanilla, and choice of organic milk over ice."
+          "name": "Gingerbread Holiday Latte (Hot or Iced)",
+          "price": "$6.50",
+          "desc": "Small-batch espresso steamed with spiced gingerbread syrup, warming winter spices, and velvety microfoam."
         },
         {
-          "name": "Café de Olla Latte",
-          "price": "$5.25",
-          "desc": "Espresso infused with raw piloncillo cane sugar, Mexican cinnamon, and cloves with steamed milk."
+          "name": "Banana Cream Pie Latte (Hot or Iced)",
+          "price": "$6.75",
+          "desc": "Rich espresso blended with sweet banana custard notes, vanilla cream, and a dusting of graham cracker crumble."
+        },
+        {
+          "name": "Cookie Butter Lover Latte (Hot or Iced)",
+          "price": "$6.75",
+          "desc": "Creamy caramelized Biscoff speculoos cookie butter melted into double-shot espresso with a cookie butter drizzle."
+        },
+        {
+          "name": "Layered Strawberry Matcha",
+          "price": "$6.75",
+          "desc": "Ceremonial-grade whisked green tea layered over house strawberry puree and cold milk."
         }
       ],
       "regionalClassics": [
@@ -240,9 +517,13 @@
     },
     "spotlightRank": 1,
     "holidaySpecial": {
-      "title": "✨ Riverside Festival of Lights Experience (Starts Nov 21)",
-      "details": "Reserved indoor & outdoor patio seating available right on the Main St pedestrian mall with panoramic views of the Mission Inn light displays (/person). Skip the massive holiday crowds and savor handcrafted seasonal lattes in cozy comfort."
-    }
+      "title": "🎄 Festival of Lights at Molinos Coffee — Book a Reserved Seat ($25/Person · Starts Nov 21)",
+      "details": "The magic of Riverside's Festival of Lights begins November 21, and Molinos Coffee has the perfect spot! Skip the crowds, avoid the wait, and enjoy the festivities from the comfort of your own reserved indoor or outdoor seating ($25 per person). Make it a cozy evening with family and friends, sip on your favorite seasonal coffee, and soak in the holiday magic without fighting the crowds. Limited seating available — call (951) 347-9518 to reserve your spot before they're fully booked!",
+      "ctaText": "🪑 Call (951) 347-9518 to Reserve Your Seat ($25/Person)",
+      "ctaHref": "tel:9513479518",
+      "image": "/photos/molinos-festival-of-lights.jpg"
+    },
+    "verifiedPhoto": true
   },
   {
     "id": "monday-to-sunday-dessert-cafe-rancho",
@@ -2090,7 +2371,7 @@
     "state": "CA",
     "zip": "91730",
     "driveFrom91761": "14 min from 91761",
-    "phone": "(909) 980-8812",
+    "phone": "(909) 256-4016",
     "hours": "Daily 7:30am–3:30pm",
     "healthPermit": {
       "facilityId": "SBC-DEHS-91730-PBK",
@@ -2192,7 +2473,7 @@
     "state": "CA",
     "zip": "91761",
     "driveFrom91761": "4 min from 91761",
-    "phone": "(909) 930-5588",
+    "phone": "(909) 295-9200",
     "hours": "Daily 11:30am–9:30pm (Reopening Soon at 2570 S. Vineyard Ave)",
     "healthPermit": {
       "facilityId": "SBC-DEHS-91761-BCB",
@@ -12744,165 +13025,6 @@
     "closing_hour_minutes": 1260
   },
   {
-    "id": "qamaria-yemeni-coffee-rancho",
-    "name": "Qamaria Yemeni Coffee Co. (Rancho Cucamonga)",
-    "cuisine": "Traditional Yemeni Spiced Coffee & Tea",
-    "regionalIdentity": "Authentic Cardamom, Ginger & Qishr Coffee Lounge",
-    "tags": [
-      "coffee",
-      "tea",
-      "breakfast",
-      "brunch",
-      "lunch"
-    ],
-    "price": 2,
-    "address": "12729 W Foothill Blvd",
-    "city": "Rancho Cucamonga",
-    "zip": "91730",
-    "driveFrom91761": "14 min from 91761",
-    "phone": "(909) 987-9999",
-    "hours": "Daily 8:00am–11:00pm",
-    "healthPermit": {
-      "facilityId": "FA0007204",
-      "agency": "San Bernardino County DEHS",
-      "grade": "A",
-      "score": 97,
-      "inspectedOn": "2026-03-02",
-      "portalUrl": "https://ehscsp.dph.sbcounty.gov/FacilityList/Food"
-    },
-    "familyRoots": "Celebrating ancient Yemeni coffee traditions sourced directly from highland terraced mountain farms in Yemen.",
-    "scratchCommitment": "Traditional Dallah pots brewed with fresh cracked green cardamom, cinnamon, and ginger; scratch Sabaya honeycomb bread with black seed and honey.",
-    "destinationDish": {
-      "name": "Signature Adeni Chai & Mofawar Cardamom Coffee",
-      "callout": "Simmered spiced Yemeni tea with sweet evaporated milk and warm Sabaya honeycomb pastry."
-    },
-    "description": "Opulent modern Yemeni coffee lounge with plush seating, warm hanging brass lamps, vibrant community conversations, and 4.8 stars across hundreds of reviews.",
-    "story": "Bringing the world's original coffee culture to Foothill Blvd with warm hospitality, spice-infused brews, and late-night community vibes.",
-    "image": "",
-    "photos": [],
-    "structuredMenu": {
-      "signatures": [
-        {
-          "name": "Adeni Spiced Chai",
-          "price": "$5.75",
-          "desc": "Rich black tea slow-simmered with cardamom, cinnamon, cloves, and sweetened condensed milk."
-        },
-        {
-          "name": "Mofawar Traditional Yemeni Coffee",
-          "price": "$6.50",
-          "desc": "Medium-roasted Yemeni coffee brewed with whole cardamom and a splash of cream."
-        },
-        {
-          "name": "Warm Sabaya Honeycomb Bread",
-          "price": "$8.95",
-          "desc": "Layers of flaky butter dough drizzled with Yemeni clover honey and nigella seeds."
-        }
-      ],
-      "regionalClassics": [
-        {
-          "name": "Qishr (Spiced Coffee Husk Tea)",
-          "price": "$5.25",
-          "desc": "Delicate cascara brew infused with crushed ginger root and cinnamon bark."
-        }
-      ],
-      "combosAndTrays": [
-        {
-          "name": "Sana'a Family Dallah Pot (Serves 4-6)",
-          "price": "$18.50",
-          "desc": "Full ornate brass Dallah of spiced coffee served with fresh demitasse cups."
-        }
-      ],
-      "sidesAndDrinks": [
-        {
-          "name": "Pistachio Milk Cake",
-          "price": "$7.25",
-          "desc": "Decadent sponge soaked in saffron-pistachio three-milk reduction."
-        }
-      ]
-    },
-    "sample": false,
-    "featured": true,
-    "createdAt": "2026-10-26T08:00:00Z",
-    "ratings": [],
-    "region": "Inland Empire",
-    "county": "San Bernardino",
-    "pricesVerified": "October 2026",
-    "socialMedia": {
-      "instagram": "@qamariacoffee",
-      "platform": "Instagram",
-      "verifiedActive": true
-    },
-    "latitude": 34.1082,
-    "longitude": -117.5312,
-    "opening_hour_minutes": 480,
-    "serves_breakfast": true,
-    "meals": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba"
-    ],
-    "meal_types": [
-      "breakfast",
-      "brunch",
-      "lunch",
-      "dinner",
-      "coffee",
-      "coffee_boba"
-    ],
-    "is_active": true,
-    "state": "CA",
-    "timezone": "America/Los_Angeles",
-    "kitchenStatus": "open",
-    "weeklySchedule": {
-      "0": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "1": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "2": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "3": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "4": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "5": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      },
-      "6": {
-        "closed": false,
-        "openMin": 480,
-        "closeMin": 1380,
-        "rangeStr": "8:00 AM – 11:00 PM"
-      }
-    },
-    "closing_hour_minutes": 1380
-  },
-  {
     "id": "bubblicity-tea-boba-rancho",
     "name": "Bubblicity Tea Lounge & Boba",
     "cuisine": "Artisanal Milk Tea & Fresh Fruit Boba",
@@ -12918,7 +13040,7 @@
     "city": "Rancho Cucamonga",
     "zip": "91730",
     "driveFrom91761": "11 min from 91761",
-    "phone": "(909) 484-8889",
+    "phone": "(909) 803-0050",
     "hours": "Daily 11:30am–10:30pm",
     "healthPermit": {
       "facilityId": "FA0006935",
@@ -13068,11 +13190,11 @@
       "lunch"
     ],
     "price": 2,
-    "address": "10700 4th St",
+    "address": "7945 Vineyard Ave, Unit D1, Rancho Cucamonga, CA 91730",
     "city": "Rancho Cucamonga",
     "zip": "91730",
     "driveFrom91761": "9 min from 91761",
-    "phone": "(909) 689-5100",
+    "phone": "(760) 799-3436",
     "hours": "Daily 7:00am–4:00pm",
     "healthPermit": {
       "facilityId": "FA0007341",
@@ -13228,7 +13350,7 @@
     "city": "Ontario",
     "zip": "91762",
     "driveFrom91761": "7 min from 91761",
-    "phone": "(909) 395-5000",
+    "phone": "(909) 395-0077",
     "hours": "Daily 7:00am–5:00pm",
     "healthPermit": {
       "facilityId": "FA0008129",
@@ -13543,7 +13665,7 @@
     "city": "Ontario",
     "zip": "91764",
     "driveFrom91761": "5 min from 91761",
-    "phone": "(909) 390-8800",
+    "phone": "(909) 912-5204",
     "hours": "Daily 7:00am–4:00pm",
     "healthPermit": {
       "facilityId": "FA0008599",
@@ -30634,6 +30756,274 @@
       "6": {
         "openMin": 480,
         "closeMin": 960
+      }
+    }
+  },
+  {
+    "id": "con-azucar-cafe-santa-cruz-95060",
+    "name": "Con Azúcar Café (Downtown Santa Cruz — Soft Open Now)",
+    "cuisine": "Mexican Specialty Coffee, Café de Olla, Concha Gigante & Tortas",
+    "regionalIdentity": "Vibrant Mexican-Owned Cultura & Specialty Coffee House on Pacific Ave (Santa Cruz)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "mexican",
+      "bakery",
+      "vegetarian-options",
+      "soft_open"
+    ],
+    "price": 1,
+    "address": "825 Pacific Ave",
+    "city": "Santa Cruz",
+    "state": "CA",
+    "zip": "95060",
+    "driveFrom91761": "Monterey Bay / Santa Cruz, CA",
+    "phone": "(831) 295-6140",
+    "website": "https://www.instagram.com/santacruzconazucarcafe/",
+    "hours": "Daily 7:30am–6:00pm (Soft Open Now · Grand Opening Ribbon Cutting Sat Nov 21 at 11am!)",
+    "launchStatus": "soft_open",
+    "launchLabel": "🔥 Soft Open · Grand Opening Nov 21",
+    "openedDate": "2026-11-12",
+    "spotlightStartDate": "2026-11-13",
+    "healthPermit": {
+      "facilityId": "SCC-EH-95060-CAC",
+      "agency": "Santa Cruz County Environmental Health",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-11-06",
+      "portalUrl": "https://scceh.com/Home/Programs/Consumer-Protection/Food-Safety.aspx"
+    },
+    "familyRoots": "A proud Mexican-owned specialty coffee and pan dulce house (@santacruzconazucarcafe) bringing warm Mexican cultura, Frida Kahlo mural art, and traditional family recipes to 825 Pacific Ave in Downtown Santa Cruz.",
+    "scratchCommitment": "Spiced piloncillo & cinnamon Café de Olla, Dulce de Leche lattes, fresh-baked Conchas (including the famous shareable Concha Gigante), and toasted telera Tortas de Jamón.",
+    "destinationDish": {
+      "name": "Café de Olla, Iced Dulce de Leche Latte, Concha Gigante & Torta de Jamón",
+      "callout": "Traditional cinnamon-piloncillo Café de Olla or Dulce de Leche Latte paired with warm Mexican pan dulce conchas."
+    },
+    "description": "Soft Open now at 825 Pacific Ave in Downtown Santa Cruz (95060), with its official Grand Opening & Ribbon Cutting Ceremony on Saturday, November 21 at 11:00 AM! Con Azúcar Café (@santacruzconazucarcafe) serves authentic Café de Olla, Dulce de Leche Lattes, nostalgic street-style Chocomil, Concha Gigante sweet bread, and savory Tortas de Jamón.",
+    "story": "100% family-friendly and alcohol-free, Con Azúcar Café celebrates Mexican heritage through specialty espresso and panadería classics in the heart of Downtown Santa Cruz.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Iced Dulce de Leche Latte / Café de Olla",
+          "price": ".25",
+          "desc": "Rich Mexican espresso crafted with caramelized dulce de leche or spiced piloncillo and Ceylon cinnamon."
+        },
+        {
+          "name": "Concha Gigante & Mini Pan Dulce Bag",
+          "price": ".50",
+          "desc": "Soft, pillowy traditional Mexican sweet bread topped with crunchy vanilla or chocolate sugar-shell crust."
+        },
+        {
+          "name": "Torta de Jamón on Toasted Telera",
+          "price": ".50",
+          "desc": "Warm telera roll layered with savory ham, queso fresco, avocado, tomato, onion, and pickled jalapeño."
+        },
+        {
+          "name": "Traditional Street-Style Chocomil",
+          "price": ".75",
+          "desc": "Nostalgic Mexican frothed chocolate milk served in a classic tied bag with a straw."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:13:00Z",
+    "ratings": [],
+    "region": "Bay Area",
+    "county": "Santa Cruz",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 36.9708,
+    "longitude": -122.0251,
+    "opening_hour_minutes": 450,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@santacruzconazucarcafe",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Los_Angeles",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "1": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "2": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "3": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "4": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "5": {
+        "openMin": 450,
+        "closeMin": 1080
+      },
+      "6": {
+        "openMin": 450,
+        "closeMin": 1080
+      }
+    }
+  },
+  {
+    "id": "the-brew-box-coffee-peoria-az-85381",
+    "name": "The Brew Box Coffee Company (Peoria, AZ)",
+    "cuisine": "Artisan Cold-Foam Espresso, Biscoff & Tiramisu Lattes, Creative Matcha & Breakfast Bagels",
+    "regionalIdentity": "Independent West Valley Specialty Coffee, Matcha & Breakfast Cafe (Peoria, AZ)",
+    "tags": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "dessert",
+      "coffee",
+      "coffee_boba",
+      "bakery",
+      "vegetarian-options",
+      "just_opened"
+    ],
+    "price": 1,
+    "address": "7518 W Thunderbird Rd, Ste 4",
+    "city": "Peoria",
+    "state": "AZ",
+    "zip": "85381",
+    "driveFrom91761": "Phoenix West Valley, AZ",
+    "phone": "(480) 534-7569",
+    "website": "https://www.brewboxcoffeecompany.com",
+    "hours": "Daily 6:00am–6:00pm",
+    "launchStatus": "just_opened",
+    "launchLabel": "✨ Holiday Cold-Foam Flight Out Now",
+    "openedDate": "2026-10-28",
+    "healthPermit": {
+      "facilityId": "MCESD-85381-BBCC",
+      "agency": "Maricopa County Environmental Services Department",
+      "grade": "A",
+      "score": 99,
+      "inspectedOn": "2026-10-16",
+      "portalUrl": "https://www.maricopa.gov/5328/Food-Restaurants"
+    },
+    "familyRoots": "An independent West Valley neighborhood coffeehouse at 7518 W. Thunderbird Rd in Peoria (@thebrewboxcoffeecompany) built around organic beans, culinary cold-foam toppings, and scratch morning bites.",
+    "scratchCommitment": "Organically sourced espresso and ceremonial matcha crowned with thick house-whipped cold foams, dehydrated citrus wheels, crushed Biscoff cookies, graham cracker crumble, and cocoa dusting.",
+    "destinationDish": {
+      "name": "4-Cup Signature Flight: Brew Box OG Pecan Shaken Espresso, Tiramisu Cold Foam, Biscoff Crumble & Key Lime Matcha",
+      "callout": "Four-pack flight of iced specialty lattes and matcha topped with cocoa-dusted tiramisu foam, crushed Biscoff, and graham-lime cold foam."
+    },
+    "description": "Open daily 6:00 AM – 6:00 PM at 7518 W. Thunderbird Rd, Ste 4 in Peoria, AZ (85381)! The Brew Box Coffee Company (@thebrewboxcoffeecompany) crafts viral 4-cup cold-foam flights, the signature Brew Box OG (pecan & white mocha shaken espresso), Mango Sticky Rice Matcha, Caramelized Banana Chai, breakfast burritos, and organic açaí bowls.",
+    "story": "100% independent and family-friendly, The Brew Box brings dessert-level artistry to every iced latte and matcha cup in Peoria.",
+    "structuredMenu": {
+      "signatures": [
+        {
+          "name": "Brew Box OG Shaken Espresso",
+          "price": ".25",
+          "desc": "Organically sourced espresso shaken with roasted pecan and white mocha, finished with creamy oat milk."
+        },
+        {
+          "name": "Tiramisu & Biscoff Cookie Crumble Cold Foam Lattes",
+          "price": ".75",
+          "desc": "Iced espresso layered under thick mascarpone-style sweet cream dusted with cocoa or crushed Biscoff cookies."
+        },
+        {
+          "name": "Key Lime Graham-Crumble Matcha & Mango Sticky Rice Matcha",
+          "price": ".75",
+          "desc": "Ceremonial matcha crowned with graham cracker crumble, sweet cream foam, and a dehydrated lime wheel."
+        },
+        {
+          "name": "Build-Your-Own Breakfast Burrito / Jalapeño Pizza Bagel",
+          "price": ".95",
+          "desc": "Hot made-to-order morning breakfast burritos, sandwiches, avocado toast, and açaí bowls."
+        }
+      ]
+    },
+    "featured": true,
+    "spotlightRank": 1,
+    "createdAt": "2026-11-13T20:15:00Z",
+    "ratings": [],
+    "region": "Phoenix Metro",
+    "county": "Maricopa",
+    "pricesVerified": "November 2026",
+    "kitchenStatus": "open",
+    "latitude": 33.6105,
+    "longitude": -112.2206,
+    "opening_hour_minutes": 360,
+    "closing_hour_minutes": 1080,
+    "serves_breakfast": true,
+    "meals": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "meal_types": [
+      "breakfast",
+      "brunch",
+      "lunch",
+      "coffee",
+      "coffee_boba"
+    ],
+    "is_active": true,
+    "socialMedia": {
+      "instagram": "@thebrewboxcoffeecompany",
+      "platform": "Instagram",
+      "verifiedActive": true
+    },
+    "timezone": "America/Phoenix",
+    "weeklySchedule": {
+      "0": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "1": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "2": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "3": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "4": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "5": {
+        "openMin": 360,
+        "closeMin": 1080
+      },
+      "6": {
+        "openMin": 360,
+        "closeMin": 1080
       }
     }
   }

@@ -1490,15 +1490,15 @@
     if (!availableCats.length) return '';
 
     let items = [...(sm.signatures || [])];
-    if (items.length < 3) {
+    if (items.length < 5) {
       for (const [k] of availableCats) {
         if (k === 'signatures') continue;
         for (const it of (sm[k] || [])) {
-          if (items.length < 3) items.push(it);
+          if (items.length < 5) items.push(it);
         }
       }
     }
-    items = items.slice(0, 3);
+    items = items.slice(0, 5);
 
     return `
       <div class="card-menu-box" data-menu-box="${esc(r.id)}">
@@ -1698,6 +1698,17 @@
               <div class="breaking-spot-arrow">↗</div>
             </a>`).join('')}
           </div>
+          <a href="/gem/molinos-coffee-riverside-92501" class="molinos-exclusive-ribbon" style="margin-top:10px;padding:9px 13px;border-radius:11px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.68);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;text-decoration:none;color:#fef3c7;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+            <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 260px">
+              <img src="/photos/molinos-festival-of-lights.jpg" alt="Molinos Coffee Festival of Lights" style="width:44px;height:44px;border-radius:9px;object-fit:cover;border:1.5px solid rgba(245,194,107,0.75);flex-shrink:0" loading="eager" />
+              <div style="min-width:0;line-height:1.3">
+                <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.04em;color:#fde047;text-transform:uppercase">🎄 Exclusive Holiday Feature · Downtown Riverside (92501)</div>
+                <div style="font-size:0.9rem;font-weight:800;color:#ffffff">Molinos Coffee — Festival of Lights Reserved Seating ($25/Person · Starts Nov 21)</div>
+                <div style="font-size:0.77rem;color:rgba(255,255,255,0.88)">Sip Gingerbread, Banana Cream Pie &amp; Cookie Butter Lover Lattes or Strawberry Matcha overlooking the lights!</div>
+              </div>
+            </div>
+            <span style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-size:0.78rem;font-weight:800;white-space:nowrap;flex-shrink:0">🪑 View Feature &amp; Book Seat →</span>
+          </a>
         </div>`;
         })()}
         <div class="results-head"><h2 id="results-title">Verified gems across the United States</h2><span id="results-count"></span></div>
@@ -2245,6 +2256,13 @@
               </div>
             ` : ''}
 
+            ${r.holidaySpecial ? `
+              <div class="holiday-special-card-box" style="margin:8px 0;padding:10px 12px;border-radius:10px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.65);color:#fef3c7;font-size:0.84rem;line-height:1.45">
+                <div style="font-weight:800;color:#fde047;margin-bottom:3px">${esc(r.holidaySpecial.title)}</div>
+                <div>${esc(r.holidaySpecial.details)}</div>
+              </div>
+            ` : ''}
+
             <!-- 3. Legible Front-of-Card Non-PDF Price List + Dotted Leader Price Alignment -->
             ${renderCardMenuSection(r)}
 
@@ -2621,6 +2639,14 @@
         ${r.scratchCommitment ? `
           <div class="roots-scratch-block">
             <div class="roots-scratch-line">⏱️ <b>Scratch-Made:</b> ${esc(r.scratchCommitment)}</div>
+          </div>
+        ` : ''}
+
+        ${r.holidaySpecial ? `
+          <div class="holiday-special-modal-box" style="margin:10px 0 14px;padding:14px 16px;border-radius:12px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.7);color:#fef3c7;font-size:0.92rem;line-height:1.5">
+            <div style="font-weight:800;font-size:1rem;color:#fde047;margin-bottom:4px">${esc(r.holidaySpecial.title)}</div>
+            <div style="margin-bottom:${r.holidaySpecial.ctaText ? '10px' : '0'}">${esc(r.holidaySpecial.details)}</div>
+            ${r.holidaySpecial.ctaText ? `<a href="${esc(r.holidaySpecial.ctaHref || `tel:${cleanTel}`)}" class="btn btn-gold" style="display:inline-flex;align-items:center;gap:6px;font-weight:800;padding:8px 14px;border-radius:8px;text-decoration:none">${esc(r.holidaySpecial.ctaText)}</a>` : ''}
           </div>
         ` : ''}
 

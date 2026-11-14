@@ -52,7 +52,7 @@ const slimClientRestaurants = restaurants.map((r) => {
       ...(c.structuredMenu.signatures || []),
       ...(c.structuredMenu.regionalClassics || []),
       ...(c.structuredMenu.sidesAndDrinks || [])
-    ].slice(0, 3).map((i) => ({ name: i.name, price: i.price }));
+    ].slice(0, 6).map((i) => ({ name: i.name, price: i.price, desc: i.desc }));
     c.structuredMenu = { signatures: items };
   }
   return c;
@@ -587,6 +587,15 @@ ${ga4AndOutboundScriptHtml}
       <p>${esc(r.description || "")}</p>
       ${r.story ? `<p style="color:var(--muted);font-size:0.95rem">${esc(r.story)}</p>` : ""}
 
+      ${r.holidaySpecial ? `
+      <div class="holiday-special-banner" style="margin:18px 0;padding:18px 20px;border-radius:14px;background:linear-gradient(135deg,rgba(245,194,107,0.18),rgba(234,88,12,0.14));border:1.5px solid rgba(245,194,107,0.65);box-shadow:0 8px 28px rgba(245,194,107,0.15)">
+        ${r.holidaySpecial.image ? `<div style="margin-bottom:14px;border-radius:10px;overflow:hidden;border:1px solid rgba(245,194,107,0.4)"><img src="${esc(r.holidaySpecial.image)}" alt="${esc(r.name)} — ${esc(r.holidaySpecial.title)}" style="width:100%;max-height:320px;object-fit:cover;display:block" loading="eager" /></div>` : ""}
+        <div style="font-weight:800;font-size:1.08rem;color:#fde047;margin-bottom:6px">${esc(r.holidaySpecial.title)}</div>
+        <div style="font-size:0.96rem;color:#f8fafc;line-height:1.55;margin-bottom:${r.holidaySpecial.ctaText ? '12px' : '0'}">${esc(r.holidaySpecial.details)}</div>
+        ${r.holidaySpecial.ctaText ? `<a href="${esc(r.holidaySpecial.ctaHref || `tel:${(r.phone || '').replace(/[^0-9+]/g, '')}`)}" class="btn" style="background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-weight:800;border:none">${esc(r.holidaySpecial.ctaText)}</a>` : ""}
+      </div>
+      ` : ""}
+
       <div class="meta-grid">
         <div class="meta-box">
           <div class="meta-label">📍 Verified Street Address</div>
@@ -610,6 +619,7 @@ ${ga4AndOutboundScriptHtml}
         <a href="${esc(interactiveUrl)}" class="btn">💎 Launch Interactive Menu &amp; Live Clock</a>
         ${r.phone ? `<a href="tel:${esc(r.phone.replace(/[^0-9+]/g, ""))}" class="btn btn-outline">📞 Call ${esc(r.phone)}</a>` : ""}
         <a href="${esc(mapsUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🗺️ Turn-by-Turn Directions</a>
+        <a href="mailto:letsgetoutkids@gmail.com?subject=${encodeURIComponent(`Photo & Video Submission: ${r.name} (${r.city})`)}&body=${encodeURIComponent(`Hi HiddenFoodGem.com & LetsGetOutKids.com Team,\n\nHere are our official photos/videos (or neighborhood special) to feature on our ${r.name} (${r.city}) page:\nhttps://www.hiddenfoodgem.com/gem/${r.id}\n\nThank you!`)}" class="btn btn-outline" style="border-color:rgba(245,194,107,0.55);color:#fde047">📸 Owner? Email Photos &amp; Video</a>
         ${r.healthPermit && r.healthPermit.InspectorUrl ? `<a href="${esc(r.healthPermit.InspectorUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🛡️ Verify ${esc(r.healthPermit.agency || "County")} Health Permit</a>` : ""}
       </div>
     </article>
@@ -1276,6 +1286,17 @@ ${ga4AndOutboundScriptHtml}
             <div class="breaking-spot-arrow">↗</div>
           </a>
         </div>
+        <a href="/gem/molinos-coffee-riverside-92501" class="molinos-exclusive-ribbon" style="margin-top:10px;padding:9px 13px;border-radius:11px;background:linear-gradient(135deg,rgba(245,194,107,0.22),rgba(234,88,12,0.16));border:1.5px solid rgba(245,194,107,0.68);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;text-decoration:none;color:#fef3c7;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+          <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 260px">
+            <img src="/photos/molinos-festival-of-lights.jpg" alt="Molinos Coffee Festival of Lights" style="width:44px;height:44px;border-radius:9px;object-fit:cover;border:1.5px solid rgba(245,194,107,0.75);flex-shrink:0" loading="eager" />
+            <div style="min-width:0;line-height:1.3">
+              <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.04em;color:#fde047;text-transform:uppercase">🎄 Exclusive Holiday Feature · Downtown Riverside (92501)</div>
+              <div style="font-size:0.9rem;font-weight:800;color:#ffffff">Molinos Coffee — Festival of Lights Reserved Seating ($25/Person · Starts Nov 21)</div>
+              <div style="font-size:0.77rem;color:rgba(255,255,255,0.88)">Sip Gingerbread, Banana Cream Pie &amp; Cookie Butter Lover Lattes or Strawberry Matcha overlooking the lights!</div>
+            </div>
+          </div>
+          <span style="display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#fde047,#f59e0b);color:#111827;font-size:0.78rem;font-weight:800;white-space:nowrap;flex-shrink:0">🪑 View Feature &amp; Book Seat →</span>
+        </a>
       </div>
       <h1 style="font-size:1.8rem;margin:0 0 8px">Verified Independent Family-Run Restaurants, Soft Openings, Bakeries, Coffee &amp; Boba</h1>
       <p style="color:#c2b2a3;margin:0 0 18px">Explore ${restaurants.length}+ hand-vetted independent neighborhood gems across ${cityZipEntries.length} ZIP codes — featuring exclusive <a href="/new-openings" style="color:#f5c26b;font-weight:700">Soft Openings &amp; Grand Openings</a>, live operating hours, kitchen-verified signature dish prices, and official County Health inspection grades.</p>
@@ -1315,8 +1336,8 @@ ${ga4AndOutboundScriptHtml}
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script defer src="/seed-data.js?v=115"></script>
-  <script defer src="/gems-client.js?v=115"></script>
+  <script defer src="/seed-data.js?v=117"></script>
+  <script defer src="/gems-client.js?v=117"></script>
 </body>
 </html>
 `;
